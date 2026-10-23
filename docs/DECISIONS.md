@@ -66,3 +66,10 @@ One entry per non-obvious decision. Format: date, task, options, choice, reason.
 
 ## D-015 (2026-10-23, T3.2) EasyOCR timings
 - The EasyOCR pass over the 320 corpus images ran partly while other jobs (drift, fusion, a package install) used the CPU, and was resumed after an out-of-memory stop. Mean 3.46 s per image (3.74 s on v2 eval images) is therefore an upper estimate for this laptop. It is used only as the cost axis of the cascade Pareto curve; Tier 2 latency is measured separately in T3.6.
+
+## D-016 (2026-10-23, T4.3) Figure tool
+- Options: Graphviz, draw.io XML, TikZ. No Graphviz, LaTeX or draw.io was installed; a system-wide install needs gate G-DESTRUCT.
+- Choice: Graphviz. The portable Windows zip (Graphviz 12.2.1, 9.6 MB) was unpacked into `external/graphviz/` (gitignored), not installed. `tools/render_figures.py` finds `dot` on PATH or there. Editable source: `figures/architecture.dot`.
+
+## D-017 (2026-10-23, T3.2) PaddleOCR runtime
+- paddlepaddle 3.3.1 (CPU) with paddleocr 3.4.0 in `.venv-paddle` (CPython 3.12.13 via uv). The default oneDNN path fails on Windows with "ConvertPirAttribute2RuntimeAttribute not support"; `enable_mkldnn=False` works but runs at about 14 s per image on this CPU. No GPU paddle build was installed (about 1 GB more over a slow link); PaddleOCR GPU latency is therefore not measured.

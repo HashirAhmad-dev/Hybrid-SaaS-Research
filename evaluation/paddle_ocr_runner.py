@@ -47,7 +47,10 @@ def main() -> None:
             if d["category"] != "text_extractable"]
     if args.limit:
         docs = docs[:args.limit]
-    ocr = PaddleOCR(lang="en", device=args.device, use_doc_orientation_classify=False,
+    # enable_mkldnn=False: paddle 3.3.1 + oneDNN on Windows CPU raises
+    # "ConvertPirAttribute2RuntimeAttribute not support" in the PIR executor.
+    ocr = PaddleOCR(lang="en", device=args.device, enable_mkldnn=False,
+                    use_doc_orientation_classify=False,
                     use_doc_unwarping=False, use_textline_orientation=False)
     out_path = OUT / f"ocr_paddleocr_{args.device}.json"
     OUT.mkdir(parents=True, exist_ok=True)
