@@ -4572,6 +4572,2430 @@
    "run_id": "baseline_20261023",
    "value": 0.6805555555555556
   },
+  "baseline.anomaly.train3seed.benign_burst.ewma_flag_rate.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.5925925925925926
+  },
+  "baseline.anomaly.train3seed.benign_burst.ewma_flag_rate.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.ewma_flag_rate.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.ewma_legacy_tau_flag_rate.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.6666666666666666
+  },
+  "baseline.anomaly.train3seed.benign_burst.ewma_legacy_tau_flag_rate.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.ewma_legacy_tau_flag_rate.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.fpr_on_ordinary_negatives_ewma.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.0515926424405563
+  },
+  "baseline.anomaly.train3seed.benign_burst.fpr_on_ordinary_negatives_ewma.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.fpr_on_ordinary_negatives_ewma.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.fpr_on_ordinary_negatives_hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.00044863167339614175
+  },
+  "baseline.anomaly.train3seed.benign_burst.fpr_on_ordinary_negatives_hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0006344609970269606
+  },
+  "baseline.anomaly.train3seed.benign_burst.fpr_on_ordinary_negatives_hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0007770528522067642
+  },
+  "baseline.anomaly.train3seed.benign_burst.hybrid_action_counts.ALERT.mean": {
+   "run_id": "baseline_20261023",
+   "value": 10.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.hybrid_action_counts.ALERT.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.hybrid_action_counts.ALERT.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.hybrid_action_counts.PERMIT.mean": {
+   "run_id": "baseline_20261023",
+   "value": 17.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.hybrid_action_counts.PERMIT.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.hybrid_action_counts.PERMIT.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.hybrid_flag_rate.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.hybrid_flag_rate.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.hybrid_flag_rate.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_a_hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.316271148874936
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_a_hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.004890514817777002
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_a_hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.005989632941536955
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_a_if.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.3248640535101889
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_a_if.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.013881063555485306
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_a_if.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.017000761399041324
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_a_lstm.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.309124796682873
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_a_lstm.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0292649433700722
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_a_lstm.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.035842089304061214
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_activity_rate_ratio.mean": {
+   "run_id": "baseline_20261023",
+   "value": 7.573218219281681
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_activity_rate_ratio.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_activity_rate_ratio.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_sbrs.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.1896005260588385
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_sbrs.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 9.365450219179266e-06
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_sbrs.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.1470287124213039e-05
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_sensitivity.mean": {
+   "run_id": "baseline_20261023",
+   "value": 16.48148148148148
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_sensitivity.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.mean_sensitivity.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.n_test_benign_burst_sessions.mean": {
+   "run_id": "baseline_20261023",
+   "value": 27.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.n_test_benign_burst_sessions.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.benign_burst.n_test_benign_burst_sessions.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.active_sessions.mean": {
+   "run_id": "baseline_20261023",
+   "value": 16297.0
+  },
+  "baseline.anomaly.train3seed.dataset.active_sessions.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.active_sessions.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.dropped_no_history.mean": {
+   "run_id": "baseline_20261023",
+   "value": 836.0
+  },
+  "baseline.anomaly.train3seed.dataset.dropped_no_history.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.dropped_no_history.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.grid_rows.mean": {
+   "run_id": "baseline_20261023",
+   "value": 25200.0
+  },
+  "baseline.anomaly.train3seed.dataset.grid_rows.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.grid_rows.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.benign_bursts.mean": {
+   "run_id": "baseline_20261023",
+   "value": 27.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.benign_bursts.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.benign_bursts.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.negatives.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2256.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.negatives.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.negatives.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.positives.mean": {
+   "run_id": "baseline_20261023",
+   "value": 96.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.positives.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.positives.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.sessions.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2352.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.sessions.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.test.sessions.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.benign_bursts.mean": {
+   "run_id": "baseline_20261023",
+   "value": 114.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.benign_bursts.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.benign_bursts.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.negatives.mean": {
+   "run_id": "baseline_20261023",
+   "value": 10159.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.negatives.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.negatives.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.positives.mean": {
+   "run_id": "baseline_20261023",
+   "value": 434.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.positives.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.positives.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.sessions.mean": {
+   "run_id": "baseline_20261023",
+   "value": 10593.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.sessions.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.train.sessions.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.benign_bursts.mean": {
+   "run_id": "baseline_20261023",
+   "value": 30.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.benign_bursts.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.benign_bursts.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.negatives.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2421.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.negatives.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.negatives.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.positives.mean": {
+   "run_id": "baseline_20261023",
+   "value": 95.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.positives.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.positives.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.sessions.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2516.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.sessions.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.per_split.val.sessions.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.positive_rate.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.03933239246487084
+  },
+  "baseline.anomaly.train3seed.dataset.positive_rate.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.positive_rate.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.positives_total.mean": {
+   "run_id": "baseline_20261023",
+   "value": 641.0
+  },
+  "baseline.anomaly.train3seed.dataset.positives_total.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.positives_total.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.scoreable_sessions.mean": {
+   "run_id": "baseline_20261023",
+   "value": 15461.0
+  },
+  "baseline.anomaly.train3seed.dataset.scoreable_sessions.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.scoreable_sessions.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.users.mean": {
+   "run_id": "baseline_20261023",
+   "value": 50.0
+  },
+  "baseline.anomaly.train3seed.dataset.users.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.dataset.users.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.compromised_account.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9982837788688852
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.compromised_account.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.00011251471786474791
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.compromised_account.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.00013780182366092162
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.malicious_insider.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.6866801093960042
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.malicious_insider.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.008977383581872186
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.malicious_insider.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.010995004500413014
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.negligent_insider.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9957069214604676
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.negligent_insider.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.00036210836945282525
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.negligent_insider.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.00044349036837531853
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.overall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.8318419400118203
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.overall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.004837054578973933
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.overall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.005924157788239527
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.overscoped_thirdparty.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9954090678824722
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.overscoped_thirdparty.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.00018096112165951118
+  },
+  "baseline.anomaly.train3seed.diagnostic_auc_next_step_prediction_error.overscoped_thirdparty.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.00022163120567375572
+  },
+  "baseline.anomaly.train3seed.latency.max_ms.mean": {
+   "run_id": "baseline_20261023",
+   "value": 28.044666663239088
+  },
+  "baseline.anomaly.train3seed.latency.max_ms.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.3876394729008297
+  },
+  "baseline.anomaly.train3seed.latency.max_ms.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.699504327775819
+  },
+  "baseline.anomaly.train3seed.latency.mean_ms.mean": {
+   "run_id": "baseline_20261023",
+   "value": 17.88337906677043
+  },
+  "baseline.anomaly.train3seed.latency.mean_ms.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0988912346606546
+  },
+  "baseline.anomaly.train3seed.latency.mean_ms.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.12111653247621887
+  },
+  "baseline.anomaly.train3seed.latency.n_calls.mean": {
+   "run_id": "baseline_20261023",
+   "value": 500.0
+  },
+  "baseline.anomaly.train3seed.latency.n_calls.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.latency.n_calls.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.latency.p50_ms.mean": {
+   "run_id": "baseline_20261023",
+   "value": 18.112433336985607
+  },
+  "baseline.anomaly.train3seed.latency.p50_ms.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.15236804968410403
+  },
+  "baseline.anomaly.train3seed.latency.p50_ms.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.18661198741454524
+  },
+  "baseline.anomaly.train3seed.latency.p95_ms.mean": {
+   "run_id": "baseline_20261023",
+   "value": 19.811855000201223
+  },
+  "baseline.anomaly.train3seed.latency.p95_ms.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.4033452940608606
+  },
+  "baseline.anomaly.train3seed.latency.p95_ms.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.4939950803009714
+  },
+  "baseline.anomaly.train3seed.latency.p99_ms.mean": {
+   "run_id": "baseline_20261023",
+   "value": 21.668572668422712
+  },
+  "baseline.anomaly.train3seed.latency.p99_ms.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.8019145784579411
+  },
+  "baseline.anomaly.train3seed.latency.p99_ms.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 2.2068856386521007
+  },
+  "baseline.anomaly.train3seed.latency.torch_threads.mean": {
+   "run_id": "baseline_20261023",
+   "value": 4.0
+  },
+  "baseline.anomaly.train3seed.latency.torch_threads.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.latency.torch_threads.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.auc_hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9999659028914349
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.auc_hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 2.7840172562980802e-05
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.auc_hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 3.4097108565167566e-05
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.auc_if.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.auc_if.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.auc_if.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.auc_lstm.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.985383706128387
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.auc_lstm.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0014899911929545657
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.auc_lstm.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0018248590719897398
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.episodes.mean": {
+   "run_id": "baseline_20261023",
+   "value": 9.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.episodes.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.episodes.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_episode_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.6666666666666666
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_episode_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_episode_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.4615384615384615
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 5.551115123125783e-17
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 6.798699777552591e-17
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_recall_ci.0.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.23205754301488138
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_recall_ci.0.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 2.7755575615628914e-17
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_recall_ci.0.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 3.3993498887762956e-17
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_recall_ci.1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.7085656756816796
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_recall_ci.1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.ewma_recall_ci.1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_episode_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9629629629629629
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_episode_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.05237828008789243
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_episode_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.06415002990995845
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9743589743589745
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.03626188621469472
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.04441155916843272
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_recall_ci.0.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.7368836582023143
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_recall_ci.0.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.04951797900118918
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_recall_ci.0.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.06064689082338284
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_recall_ci.1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9954299778734347
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_recall_ci.1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.006462987271733967
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_recall_ci.1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.007915510514925294
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.mean_a_hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.8595274825857362
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.mean_a_hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.033444824042139144
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.mean_a_hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.04096137672020403
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.mean_a_if.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9676096612693912
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.mean_a_if.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.009374492074312856
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.mean_a_if.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.01148136108991577
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.mean_a_lstm.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.6573163664504149
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.mean_a_lstm.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.01660834568892152
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.mean_a_lstm.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.02034098620480524
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.windows.mean": {
+   "run_id": "baseline_20261023",
+   "value": 13.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.windows.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.compromised_account.windows.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.7016105200945626
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0277455009222871
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.03398115995876173
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_if.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.6196098711352153
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_if.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.006207901330012486
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_if.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.007603095316037816
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_lstm.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.7613394057386548
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_lstm.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.028871327131577616
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_lstm.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.03536000983466853
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.episodes.mean": {
+   "run_id": "baseline_20261023",
+   "value": 6.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.episodes.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.episodes.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_episode_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.3333333333333333
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_episode_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_episode_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.0392156862745098
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_recall_ci.0.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.010820856268751206
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_recall_ci.0.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_recall_ci.0.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_recall_ci.1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.13216548986265267
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_recall_ci.1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.ewma_recall_ci.1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_episode_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.16666666666666666
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_episode_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_episode_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.0196078431372549
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_recall_ci.0.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.003469603253442241
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_recall_ci.0.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_recall_ci.0.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_recall_ci.1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.10304807675589372
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_recall_ci.1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.hybrid_recall_ci.1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.mean_a_hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.1802077304197636
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.mean_a_hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.015609782987044926
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.mean_a_hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.019118001656918952
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.mean_a_if.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.12366041466762907
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.mean_a_if.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0012603500521547986
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.mean_a_if.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0015436072625347114
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.mean_a_lstm.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.28340362437331246
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.mean_a_lstm.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.007846692838859044
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.mean_a_lstm.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.009610196811777723
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.windows.mean": {
+   "run_id": "baseline_20261023",
+   "value": 51.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.windows.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.malicious_insider.windows.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.auc_hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9997865773574993
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.auc_hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0001031800391546673
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.auc_hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.00012636922378466212
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.auc_if.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9999425400577883
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.auc_if.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 4.643464546798325e-05
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.auc_if.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 5.687059389179918e-05
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.auc_lstm.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9899445101129499
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.auc_lstm.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.001292216616178657
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.auc_lstm.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0015826356733918037
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.episodes.mean": {
+   "run_id": "baseline_20261023",
+   "value": 11.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.episodes.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.episodes.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_episode_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.1818181818181818
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_episode_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 2.7755575615628914e-17
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_episode_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 3.3993498887762956e-17
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.16666666666666666
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_recall_ci.0.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.05836470400465757
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_recall_ci.0.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_recall_ci.0.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_recall_ci.1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.39222499638359243
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_recall_ci.1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.ewma_recall_ci.1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_episode_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_episode_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_episode_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.8888888888888888
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_recall_ci.0.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.6719975513339578
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_recall_ci.0.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_recall_ci.0.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_recall_ci.1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9689811315464172
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_recall_ci.1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.hybrid_recall_ci.1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.mean_a_hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.8351485661856147
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.mean_a_hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.022541884907382435
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.mean_a_hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.027608057931816102
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.mean_a_if.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.884187255866213
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.mean_a_if.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.02643162500417924
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.mean_a_if.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.032371997166414215
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.mean_a_lstm.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.7425424056483182
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.mean_a_lstm.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.008440506905422022
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.mean_a_lstm.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.010337467544360915
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.windows.mean": {
+   "run_id": "baseline_20261023",
+   "value": 18.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.windows.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.negligent_insider.windows.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.auc_hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.auc_hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.auc_hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.auc_if.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.auc_if.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.auc_if.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.auc_lstm.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9942798041202296
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.auc_lstm.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.00042661649213542225
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.auc_lstm.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0005224963607939286
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.episodes.mean": {
+   "run_id": "baseline_20261023",
+   "value": 5.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.episodes.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.episodes.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_episode_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.4000000000000001
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_episode_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 5.551115123125783e-17
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_episode_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 6.798699777552591e-17
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.21428571428571427
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_recall_ci.0.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.0757124833691637
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_recall_ci.0.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_recall_ci.0.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_recall_ci.1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.47589723773208287
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_recall_ci.1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 5.551115123125783e-17
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.ewma_recall_ci.1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 6.798699777552591e-17
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_episode_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_episode_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_episode_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_recall_ci.0.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.7846829880728187
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_recall_ci.0.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.1102230246251565e-16
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_recall_ci.0.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.3597399555105182e-16
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_recall_ci.1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_recall_ci.1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.hybrid_recall_ci.1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.mean_a_hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.8797933842979342
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.mean_a_hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.013406049803947878
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.mean_a_hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.01641899074300538
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.mean_a_if.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9095118839524394
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.mean_a_if.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.017679919175650944
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.mean_a_if.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.021653390336996304
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.mean_a_lstm.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.8268369241516401
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.mean_a_lstm.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.014144636948579616
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.mean_a_lstm.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.017323571560468858
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.windows.mean": {
+   "run_id": "baseline_20261023",
+   "value": 14.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.windows.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.per_class_recall.overscoped_thirdparty.windows.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_auc_overall.hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.8414359547379826
+  },
+  "baseline.anomaly.train3seed.test_auc_overall.hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.014727468576008273
+  },
+  "baseline.anomaly.train3seed.test_auc_overall.hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.018037391607046923
+  },
+  "baseline.anomaly.train3seed.test_auc_overall.if.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.7979069703014184
+  },
+  "baseline.anomaly.train3seed.test_auc_overall.if.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.003301834053312923
+  },
+  "baseline.anomaly.train3seed.test_auc_overall.if.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0040439043229811055
+  },
+  "baseline.anomaly.train3seed.test_auc_overall.lstm.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.8685126699172576
+  },
+  "baseline.anomaly.train3seed.test_auc_overall.lstm.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.015792140090542136
+  },
+  "baseline.anomaly.train3seed.test_auc_overall.lstm.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.019341342584188986
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.11618257261410787
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.3877787807814457e-17
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.6996749443881478e-17
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.fn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 82.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.fn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.fn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.fp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 131.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.fp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.fp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.fpr.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.05806737588652482
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.fpr.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.fpr.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.precision.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.09655172413793105
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.precision.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.3877787807814457e-17
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.precision.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.6996749443881478e-17
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.14583333333333334
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.tn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2125.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.tn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.tn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.tp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 14.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.tp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.ewma_base_action_block.tp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.08661541302019866
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.9217554409124853e-05
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 2.3536601203264482e-05
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.fn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 4.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.fn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.fn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.fp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1936.3333333333333
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.fp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.4714045207910317
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.fp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.5773502691896258
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.fpr.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.8583037825059101
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.fpr.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0002089559046059508
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.fpr.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.00025591767251312834
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.precision.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.045357438768364955
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.precision.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.0539780654082275e-05
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.precision.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.2908542301679554e-05
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9583333333333334
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.tn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 319.6666666666667
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.tn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.4714045207910317
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.tn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.5773502691896258
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.tp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 92.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.tp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_alert_or_block.tp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.1537024957129776
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0005953461780595589
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0007291471782810286
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.fn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 15.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.fn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.fn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.fp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 877.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.fp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 4.08248290463863
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.fp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 5.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.fpr.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.3887411347517731
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.fpr.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0018096112165951344
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.fpr.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.002216312056737585
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.precision.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.0845526837228211
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.precision.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0003603231600390845
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.precision.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.00044130394230147945
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.84375
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.tn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1379.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.tn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 4.08248290463863
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.tn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 5.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.tp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 81.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.tp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.hybrid_block_only.tp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.1326960242476173
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0006770261409416532
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0008291842939163288
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.fn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 12.666666666666666
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.fn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.4714045207910317
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.fn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.5773502691896257
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.fp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1076.6666666666667
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.fp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.4714045207910317
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.fp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.5773502691896258
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.fpr.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.47724586288416077
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.fpr.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0002089559046059508
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.fpr.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.00025591767251312834
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.precision.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.07183886840192256
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.precision.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0003633048259237499
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.precision.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.00044495572230192674
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.8680555555555557
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.004910463758239896
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.00601406530405858
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.tn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1179.3333333333333
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.tn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.4714045207910317
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.tn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.5773502691896258
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.tp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 83.33333333333333
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.tp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.4714045207910317
+  },
+  "baseline.anomaly.train3seed.test_enforcement_bands.paper_doc_bands_alert_or_block.tp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.5773502691896257
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.10000000000000002
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.3877787807814457e-17
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.6996749443881478e-17
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.fn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 82.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.fn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.fn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.fp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 170.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.fp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.fp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.fpr.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.07535460992907801
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.fpr.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.fpr.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.precision.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.07608695652173914
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.precision.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.precision.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.14583333333333334
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.tn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2086.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.tn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.tn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.tp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 14.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.tp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_legacy_tau.tp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.11618257261410787
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.3877787807814457e-17
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.6996749443881478e-17
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.fn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 82.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.fn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.fn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.fp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 131.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.fp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.fp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.fpr.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.05806737588652482
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.fpr.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.fpr.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.precision.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.09655172413793105
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.precision.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.3877787807814457e-17
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.precision.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.6996749443881478e-17
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.14583333333333334
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.tn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2125.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.tn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.tn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.tp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 14.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.tp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.ewma_tuned.tp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.6208870266424223
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.005600227553286132
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.006858849974513057
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.fn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 52.333333333333336
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.fn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.4714045207910317
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.fn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.5773502691896258
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.fp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.fp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.4142135623730951
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.fp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.7320508075688772
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.fpr.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.0004432624113475177
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.fpr.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0006268677138178612
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.fpr.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0007677530175393959
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.precision.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9787234042553191
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.precision.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.03008965026325733
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.precision.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.036852144841891
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.4548611111111111
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.004910463758239896
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.00601406530405858
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.tn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2255.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.tn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.4142135623730951
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.tn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.7320508075688772
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.tp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 43.666666666666664
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.tp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.4714045207910317
+  },
+  "baseline.anomaly.train3seed.test_flag_level.hybrid.tp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.5773502691896258
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.6244336358211097
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0075226065476748484
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.009213273788761557
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.fn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 51.666666666666664
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.fn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.4714045207910317
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.fn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.5773502691896258
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.fp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 1.6666666666666667
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.fp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.9428090415820634
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.fp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.1547005383792517
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.fpr.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.0007387706855791961
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.fpr.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.00041791180921190753
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.fpr.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0005118353450262639
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.precision.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9640696200363176
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.precision.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0197288458683698
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.precision.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.024162802795761055
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.4618055555555555
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0049104637582399226
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.006014065304058613
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.tn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2254.3333333333335
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.tn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.9428090415820634
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.tn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.1547005383792517
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.tp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 44.333333333333336
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.tp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.4714045207910317
+  },
+  "baseline.anomaly.train3seed.test_flag_level.if_only.tp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.5773502691896258
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.3947902036473776
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0393099291579186
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.04814463413092749
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.fn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 68.33333333333333
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.fn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 3.858612300930075
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.fn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 4.725815626252608
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.fp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 16.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.fp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 2.943920288775949
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.fp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 3.605551275463989
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.fpr.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.0070921985815602835
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.fpr.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.001304929206017708
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.fpr.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.001598205352599286
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.precision.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.6347305881965702
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.precision.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.04035325085689058
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.precision.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.04942243703095498
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.2881944444444444
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.040193878134688284
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.04922724610679801
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.tn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2240.0
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.tn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 2.943920288775949
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.tn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 3.605551275463989
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.tp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 27.666666666666668
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.tp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 3.8586123009300755
+  },
+  "baseline.anomaly.train3seed.test_flag_level.lstm_only.tp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 4.725815626252609
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.alpha.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.9333333333333332
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.alpha.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.062360956446232366
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.alpha.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.07637626158259735
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.benign_burst_flag_rate.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.24691358024691357
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.benign_burst_flag_rate.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.08729713347982068
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.benign_burst_flag_rate.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.10691671651659736
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.48154596292493346
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.02369448013688576
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.02901969302794071
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.fn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 38.666666666666664
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.fn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 2.0548046676563256
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.fn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 2.516611478423583
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.fp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 85.66666666666667
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.fp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 17.326921891156037
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.fp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 21.22105872319601
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.fpr.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.037972813238770685
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.fpr.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.007680373178703918
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.fpr.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.00940649766099114
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.malicious_insider_recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.24836601307189543
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.malicious_insider_recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.033326924925443036
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.malicious_insider_recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.04081698038168888
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.precision.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.4060336682382877
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.precision.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.03895491628977075
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.precision.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.04770983394138539
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.recall.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.5972222222222222
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.recall.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.021404215288086736
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.recall.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.026214702900245676
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.tau.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.44333333333333336
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.tau.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.049888765156985884
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.tau.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.061101009266077866
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.tn.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2170.3333333333335
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.tn.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 17.326921891156037
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.tn.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 21.221058723196006
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.tp.mean": {
+   "run_id": "baseline_20261023",
+   "value": 57.333333333333336
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.tp.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 2.0548046676563256
+  },
+  "baseline.anomaly.train3seed.test_insider_oriented_operating_point.tp.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 2.516611478423583
+  },
+  "baseline.anomaly.train3seed.tuning.alpha.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.35000000000000003
+  },
+  "baseline.anomaly.train3seed.tuning.alpha.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.08164965809277261
+  },
+  "baseline.anomaly.train3seed.tuning.alpha.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.1
+  },
+  "baseline.anomaly.train3seed.tuning.ewma_val_f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.11578947368421051
+  },
+  "baseline.anomaly.train3seed.tuning.ewma_val_f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 1.3877787807814457e-17
+  },
+  "baseline.anomaly.train3seed.tuning.ewma_val_f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 1.6996749443881478e-17
+  },
+  "baseline.anomaly.train3seed.tuning.legacy_tau_ewma.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2.0
+  },
+  "baseline.anomaly.train3seed.tuning.legacy_tau_ewma.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.tuning.legacy_tau_ewma.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.tuning.tau_ewma.mean": {
+   "run_id": "baseline_20261023",
+   "value": 2.5
+  },
+  "baseline.anomaly.train3seed.tuning.tau_ewma.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.tuning.tau_ewma.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.0
+  },
+  "baseline.anomaly.train3seed.tuning.tau_hybrid.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.7266666666666666
+  },
+  "baseline.anomaly.train3seed.tuning.tau_hybrid.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.026246692913372727
+  },
+  "baseline.anomaly.train3seed.tuning.tau_hybrid.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.03214550253664321
+  },
+  "baseline.anomaly.train3seed.tuning.val_f1.mean": {
+   "run_id": "baseline_20261023",
+   "value": 0.6850474116062212
+  },
+  "baseline.anomaly.train3seed.tuning.val_f1.sd_pop": {
+   "run_id": "baseline_20261023",
+   "value": 0.003715806971680621
+  },
+  "baseline.anomaly.train3seed.tuning.val_f1.sd_sample": {
+   "run_id": "baseline_20261023",
+   "value": 0.004550915531646952
+  },
   "baseline.generation.args.days": {
    "run_id": "baseline_20261023",
    "value": 21
@@ -15657,13 +18081,14 @@
     "spacy": "3.8.13",
     "torch": "2.13.0"
    },
-   "note": "Ingested from files produced before paper-v2 (commits 69ef162, 9b4f86b). Tag baseline-pre-v2 = 2521134 contains them unchanged.",
+   "note": "Training-seed spread only; one generated dataset (data seed 42).",
    "platform": "Windows-10-10.0.19045-SP0",
    "prefixes": [
     "baseline.anomaly.s42",
     "baseline.anomaly.seedfile.s2024",
     "baseline.anomaly.seedfile.s42",
     "baseline.anomaly.seedfile.s7",
+    "baseline.anomaly.train3seed",
     "baseline.generation",
     "baseline.pii.gemma4b",
     "baseline.pii.partial_default",
@@ -15672,10 +18097,27 @@
     "baseline.sbrs"
    ],
    "python": "3.14.4",
-   "script": "results/baseline_20261023/pii_metrics.json",
+   "script": "tools/ingest_baseline.py (summary of metrics_seed{42,7,2024}.json)",
+   "scripts": {
+    "baseline.anomaly.s42": "results/baseline_20261023/metrics.json",
+    "baseline.anomaly.seedfile.s2024": "results/baseline_20261023/metrics_seed2024.json",
+    "baseline.anomaly.seedfile.s42": "results/baseline_20261023/metrics_seed42.json",
+    "baseline.anomaly.seedfile.s7": "results/baseline_20261023/metrics_seed7.json",
+    "baseline.anomaly.train3seed": "tools/ingest_baseline.py (summary of metrics_seed{42,7,2024}.json)",
+    "baseline.generation": "results/baseline_20261023/generation_config.json",
+    "baseline.pii.gemma4b": "results/baseline_20261023/pii_metrics_google-gemma-3-4b-it-deepinfra.json",
+    "baseline.pii.partial_default": "results/baseline_20261023/pii_metrics.json",
+    "baseline.pii.partial_qwen72b": "results/baseline_20261023/pii_metrics_Qwen-Qwen2-5-VL-72B-Instruct.json",
+    "baseline.pii.qwen72b": "results/baseline_20261023/pii_metrics_Qwen-Qwen2-5-VL-72B-Instruct-ovhcloud.json",
+    "baseline.sbrs": "results/baseline_20261023/sbrs_calibration.json"
+   },
    "seeds": {
     "data": 42,
-    "train": "see file"
+    "train": [
+     42,
+     7,
+     2024
+    ]
    }
   },
   "calibrate_sbrs-20261023T110551Z": {

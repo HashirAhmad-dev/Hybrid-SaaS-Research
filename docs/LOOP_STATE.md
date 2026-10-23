@@ -2,19 +2,19 @@
 
 After any restart or context compaction: re-read CLAUDE.md, this file and docs/FIXES_SUMMARY.md first.
 
-- Iteration: 1
-- Current task: T1.2
-- Last evidence path: results/manifest.json, logs/t1.1_calib_run*.log
+- Iteration: 2
+- Current task: T1.3
+- Last evidence path: logs/t1.2_refresh.log, results/claims/
 - Open gates: none yet (Q-001..Q-003 in OPEN_QUESTIONS.md are asked when their tasks are reached)
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)
-- Goal: T1.2 remove stale numbers and labels (risk_orchestrator docstring, pii_pipeline labels, README, DEPLOYMENT, .env.example, REAL_RESULTS section 4).
-- Smallest change: edit text and labels only; numbers cite manifest keys; no model change.
-- Verify: grep for old numbers/labels; claims file for every number left in those files passes check_numbers.
+- Goal: T1.3 one-command reproduction (reproduce.ps1 / reproduce.sh), pinned requirements, README section.
+- Smallest change: scripts that chain generate -> train -> refresh -> calibrate -> check_numbers; requirements-lock.txt from pip freeze.
+- Verify: run reproduce from a clean shell twice; regenerated seed-42 data hash equals baseline; manifest numbers equal baseline within tolerance.
 
 ## Next action
-Start T1.2.
+Start T1.3.
 
 ## Status table
 
@@ -22,7 +22,7 @@ Start T1.2.
 |---|---|---|---|
 | T0.1 | M | DONE | |
 | T1.1 | M | DONE | |
-| T1.2 | M | PENDING | |
+| T1.2 | M | DONE | |
 | T1.3 | M | PENDING | |
 | T1.4 | M | PENDING | |
 | T1.5 | M | PENDING | |

@@ -1,0 +1,10 @@
+# Numbers quoted in backend/risk_orchestrator.py docstring
+old config enforcement F1 | baseline.sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged_f1 | 0.087
+shipped bands enforcement F1 | baseline.anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.f1 | 0.475
+unrounded bands enforcement F1 | baseline.sbrs.test.new_calibrated.flagged_f1 | 0.479
+old benign ALERT+BLOCK | baseline.sbrs.test.old_code_beta0.5_bands0.20_0.60.benign_alert_or_block_rate | 85.9%
+new benign ALERT+BLOCK (shipped) | baseline.anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.fpr | 4.0%
+old benign auto-BLOCK | baseline.sbrs.test.old_code_beta0.5_bands0.20_0.60.benign_block_rate | 38.9%
+new benign auto-BLOCK (shipped) | baseline.anomaly.s42.test_enforcement_bands.hybrid_block_only.fpr | 0.4%
+derived t_alert | baseline.sbrs.bands.t_alert | 1.22382
+derived t_block | baseline.sbrs.bands.t_block | 1.84367

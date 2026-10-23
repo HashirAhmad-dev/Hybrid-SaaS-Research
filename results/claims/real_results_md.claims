@@ -1,0 +1,60 @@
+# evaluation/REAL_RESULTS.md section 4 (3-seed means, population sd) and section 5
+LSTM-only FPR mean | baseline.anomaly.train3seed.test_flag_level.lstm_only.fpr.mean | 0.0071
+LSTM-only FPR sd | baseline.anomaly.train3seed.test_flag_level.lstm_only.fpr.sd_pop | 0.0013
+LSTM-only recall mean | baseline.anomaly.train3seed.test_flag_level.lstm_only.recall.mean | 0.2882
+LSTM-only recall sd | baseline.anomaly.train3seed.test_flag_level.lstm_only.recall.sd_pop | 0.0402
+LSTM-only precision | baseline.anomaly.train3seed.test_flag_level.lstm_only.precision.mean | 0.6347
+LSTM-only F1 mean | baseline.anomaly.train3seed.test_flag_level.lstm_only.f1.mean | 0.3948
+LSTM-only F1 sd | baseline.anomaly.train3seed.test_flag_level.lstm_only.f1.sd_pop | 0.0393
+IF-only FPR mean | baseline.anomaly.train3seed.test_flag_level.if_only.fpr.mean | 0.0007
+IF-only FPR sd | baseline.anomaly.train3seed.test_flag_level.if_only.fpr.sd_pop | 0.0004
+IF-only recall mean | baseline.anomaly.train3seed.test_flag_level.if_only.recall.mean | 0.4618
+IF-only recall sd | baseline.anomaly.train3seed.test_flag_level.if_only.recall.sd_pop | 0.0049
+IF-only precision | baseline.anomaly.train3seed.test_flag_level.if_only.precision.mean | 0.9641
+IF-only F1 mean | baseline.anomaly.train3seed.test_flag_level.if_only.f1.mean | 0.6244
+IF-only F1 sd | baseline.anomaly.train3seed.test_flag_level.if_only.f1.sd_pop | 0.0075
+Hybrid FPR mean | baseline.anomaly.train3seed.test_flag_level.hybrid.fpr.mean | 0.0004
+Hybrid FPR sd | baseline.anomaly.train3seed.test_flag_level.hybrid.fpr.sd_pop | 0.0006
+Hybrid recall mean | baseline.anomaly.train3seed.test_flag_level.hybrid.recall.mean | 0.4549
+Hybrid recall sd | baseline.anomaly.train3seed.test_flag_level.hybrid.recall.sd_pop | 0.0049
+Hybrid precision | baseline.anomaly.train3seed.test_flag_level.hybrid.precision.mean | 0.9787
+Hybrid F1 mean | baseline.anomaly.train3seed.test_flag_level.hybrid.f1.mean | 0.6209
+Hybrid F1 sd | baseline.anomaly.train3seed.test_flag_level.hybrid.f1.sd_pop | 0.0056
+AUC LSTM mean | baseline.anomaly.train3seed.test_auc_overall.lstm.mean | 0.869
+AUC LSTM sd | baseline.anomaly.train3seed.test_auc_overall.lstm.sd_pop | 0.016
+AUC IF mean | baseline.anomaly.train3seed.test_auc_overall.if.mean | 0.798
+AUC IF sd | baseline.anomaly.train3seed.test_auc_overall.if.sd_pop | 0.003
+AUC hybrid mean | baseline.anomaly.train3seed.test_auc_overall.hybrid.mean | 0.841
+AUC hybrid sd | baseline.anomaly.train3seed.test_auc_overall.hybrid.sd_pop | 0.015
+alpha mean | baseline.anomaly.train3seed.tuning.alpha.mean | 0.35
+alpha sd | baseline.anomaly.train3seed.tuning.alpha.sd_pop | 0.08
+tau mean | baseline.anomaly.train3seed.tuning.tau_hybrid.mean | 0.727
+tau sd | baseline.anomaly.train3seed.tuning.tau_hybrid.sd_pop | 0.026
+val F1 mean | baseline.anomaly.train3seed.tuning.val_f1.mean | 0.685
+val F1 sd | baseline.anomaly.train3seed.tuning.val_f1.sd_pop | 0.004
+Malicious AUC LSTM (3-seed) | baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_lstm.mean | 0.761
+Malicious AUC IF (3-seed) | baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_if.mean | 0.620
+Malicious AUC hybrid (3-seed) | baseline.anomaly.train3seed.per_class_recall.malicious_insider.auc_hybrid.mean | 0.702
+Malicious AUC LSTM (seed 42) | baseline.anomaly.s42.per_class_recall.malicious_insider.auc_lstm | 0.744
+Malicious AUC IF (seed 42) | baseline.anomaly.s42.per_class_recall.malicious_insider.auc_if | 0.615
+Malicious AUC hybrid (seed 42) | baseline.anomaly.s42.per_class_recall.malicious_insider.auc_hybrid | 0.674
+Malicious window recall (seed 42) | baseline.anomaly.s42.per_class_recall.malicious_insider.hybrid_recall | 0.020
+Malicious episode recall (seed 42) | baseline.anomaly.s42.per_class_recall.malicious_insider.hybrid_episode_recall | 0.167
+Compromised recall mean | baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_recall.mean | 0.974
+Compromised recall sd | baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_recall.sd_pop | 0.036
+Compromised episode recall mean | baseline.anomaly.train3seed.per_class_recall.compromised_account.hybrid_episode_recall.mean | 0.963
+Negligent window recall (seed 42) | baseline.anomaly.s42.per_class_recall.negligent_insider.hybrid_recall | 0.889
+Latency mean seed 42 | baseline.anomaly.seedfile.s42.latency.mean_ms | 17.83
+Latency mean seed 7 | baseline.anomaly.seedfile.s7.latency.mean_ms | 18.02
+Latency mean seed 2024 | baseline.anomaly.seedfile.s2024.latency.mean_ms | 17.80
+Benign burst all PERMIT (new bands) | baseline.anomaly.s42.benign_burst.hybrid_action_counts.PERMIT | 27
+Benign burst mean SBRS (new bands) | baseline.anomaly.s42.benign_burst.mean_sbrs | 0.289
+Benign burst PERMIT (old bands) | baseline.anomaly.seedfile.s42.benign_burst.hybrid_action_counts.PERMIT | 17
+Benign burst ALERT (old bands) | baseline.anomaly.seedfile.s42.benign_burst.hybrid_action_counts.ALERT | 10
+Benign burst mean SBRS (old bands) | baseline.anomaly.seedfile.s42.benign_burst.mean_sbrs | 0.190
+Insider op alpha mean | baseline.anomaly.train3seed.test_insider_oriented_operating_point.alpha.mean | 0.93
+Insider op alpha sd | baseline.anomaly.train3seed.test_insider_oriented_operating_point.alpha.sd_pop | 0.06
+Insider op malicious recall mean | baseline.anomaly.train3seed.test_insider_oriented_operating_point.malicious_insider_recall.mean | 0.248
+Insider op malicious recall sd | baseline.anomaly.train3seed.test_insider_oriented_operating_point.malicious_insider_recall.sd_pop | 0.033
+Insider op F1 mean | baseline.anomaly.train3seed.test_insider_oriented_operating_point.f1.mean | 0.482
+Insider op FPR mean | baseline.anomaly.train3seed.test_insider_oriented_operating_point.fpr.mean | 3.80%

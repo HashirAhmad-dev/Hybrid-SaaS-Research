@@ -1,26 +1,33 @@
 """
 pii_pipeline.py
 ===============
-Simulated Multimodal PII Detection pipeline (Section III.B of the paper).
+Replay of recorded PII outcomes for the dashboard demo (Section III.B of the paper).
 
-Three branches:
-  Branch 1 - Microsoft Presidio       (text-extractable payloads)
-  Branch 2 - OCR -> Presidio          (scanned PDF / image, OCR conf >= 0.85)
-  Branch 3 - VLM fallback             (OCR conf < 0.85, e.g. handwriting)
+This module does NOT run a PII engine. The legacy demo events in
+`hybridSaaS_events.json` carry a pre-written PII result for each event, and this
+module replays it and recomputes the sensitivity score from the stored counts.
+Those records were written by hand for the demo; no OCR engine or VLM produced
+them. Their `engine` field says "PaddleOCR + Microsoft Presidio" or
+"PaliGemma-3B VLM + Presidio", but neither engine ever ran in this project, so
+`scan_event` marks every replayed engine label as a replayed demo record.
 
-The `Branch2_PaddleOCR` literal below is the label recorded in the legacy demo
-events, kept so replayed events keep matching. The real cascade that produced the
-measured numbers lives in `evaluation/run_pipeline.py` (EasyOCR + gemma-3-4b-it);
-see `evaluation/REAL_RESULTS_PII.md` for why those substitutions were forced.
+The cascade that was actually executed and measured lives in
+`evaluation/run_pipeline.py`: Branch 1 Microsoft Presidio, Branch 2 EasyOCR then
+Presidio, Branch 3 a vision-language model. See `evaluation/REAL_RESULTS_PII.md`
+and `results/manifest.json` (keys `pii.*`, `baseline.pii.*`) for its numbers.
 
-Sensitivity score formula (from the simulated events JSON, faithful to the
-paper's weighted entity model):
+Three branches (routing logic only):
+  Branch 1 - Presidio on extractable text
+  Branch 2 - OCR -> Presidio            (image, OCR conf >= tau_ocr)
+  Branch 3 - VLM                        (image, OCR conf <  tau_ocr)
+
+Sensitivity score formula (the paper's weighted entity model):
 
     S = min(10 * high_count + 5 * medium_count + 1 * low_count, 100)
 
-This module does NOT call any real PII engine. It either:
-  (a) replays the deterministic outcome stored in `hybridSaaS_events.json`
-      for a known event_id (preferred for the demo); or
+The module either
+  (a) replays the outcome stored in `hybridSaaS_events.json` for a known
+      event_id; or
   (b) recomputes the score from raw entity counts using the same formula.
 """
 from __future__ import annotations
@@ -31,7 +38,8 @@ from .data_loader import HybridSaaSDataset
 from .schemas import PIIEntity, PIIResult
 
 
-OCR_CONFIDENCE_THRESHOLD: float = 0.85  # tau_ocr from paper, Section III.B
+OCR_CONFIDENCE_THRESHOLD: float = 0.85  # tau_ocr from paper, Section III.B (routing label only)
+REPLAY_NOTE = "replayed demo record, no engine ran"
 ENTITY_WEIGHTS = {"HIGH": 10, "MEDIUM": 5, "LOW": 1}
 
 
@@ -51,9 +59,9 @@ def _route_branch(file_type: str, ocr_confidence: Optional[float]) -> str:
         return "Branch1_Presidio"
     if ocr_confidence is None:
         # No OCR pass yet - assume routed to OCR branch
-        return "Branch2_PaddleOCR"
+        return "Branch2_OCR_Presidio"
     if ocr_confidence >= OCR_CONFIDENCE_THRESHOLD:
-        return "Branch2_PaddleOCR"
+        return "Branch2_OCR_Presidio"
     return "Branch3_VLM"
 
 
@@ -99,11 +107,11 @@ def _normalise_entity(raw: Dict[str, Any]) -> PIIEntity:
 
 
 def scan_event(event: Dict[str, Any]) -> PIIResult:
-    """Run the (simulated) multimodal PII pipeline against a single event.
+    """Replay the recorded PII outcome of one legacy demo event.
 
-    The HybridSaaS-Sec event log already carries deterministic ground-truth
-    PII output for each intercepted call, so we faithfully replay it and
-    only recompute the score to prove the formula matches.
+    The demo event log carries a hand-written PII result for each event. It is
+    replayed here, and the score is recomputed from the stored counts to check
+    the formula. No PII engine runs.
     """
     pii = event.get("pii_detection") or {}
     request = event.get("request") or {}
@@ -135,9 +143,11 @@ def scan_event(event: Dict[str, Any]) -> PIIResult:
         or pii.get("branch")
         or _route_branch(request.get("file_type", ""), ocr_conf)
     )
+    # The demo records name engines that never ran here; keep only the branch.
+    branch = branch.replace("_PaliGemma", "").replace("_PaddleOCR", "_OCR")
 
     return PIIResult(
-        engine=pii.get("engine", "Microsoft Presidio v2.2"),
+        engine=f"none ({REPLAY_NOTE}; the record says '{pii.get('engine', 'unspecified')}')",
         branch=branch,
         ocr_confidence=ocr_conf,
         ocr_threshold=OCR_CONFIDENCE_THRESHOLD,

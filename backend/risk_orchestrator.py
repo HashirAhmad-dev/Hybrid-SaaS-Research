@@ -25,10 +25,15 @@ verified once on the held-out test split by `evaluation/calibrate_sbrs.py`:
                    distribution: the SOC reviews ~5% of normal traffic, and
                    auto-block fires on the ~0.5% tail normal traffic never reaches.
 
-Recalibration result on the held-out test split (see SBRS_RECALIBRATION.md):
-    enforcement F1         0.087 -> 0.479
-    benign ALERT+BLOCK     85.9% -> 3.9%
-    benign auto-BLOCK      38.9% -> 0.4%
+Recalibration result on the held-out test split at the SHIPPED (rounded) bands
+1.22 / 1.84 (see SBRS_RECALIBRATION.md; numbers live in results/manifest.json):
+    enforcement F1         0.087 -> 0.475   baseline.sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged_f1
+                                            -> baseline.anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.f1
+    benign ALERT+BLOCK     85.9% -> 4.0%    (FPR of the same two rows)
+    benign auto-BLOCK      38.9% -> 0.4%    ...old_code_beta0.5_bands0.20_0.60.benign_block_rate
+                                            -> ...hybrid_block_only.fpr
+At the unrounded derived cut-points 1.22382 / 1.84367 the F1 is 0.479
+(baseline.sbrs.test.new_calibrated.flagged_f1); the shipped constants are 0.475.
 
     SBRS  < 1.22 -> SAFE      -> PERMIT
     SBRS  < 1.84 -> SENSITIVE -> ALERT

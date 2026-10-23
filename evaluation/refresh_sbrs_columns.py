@@ -30,7 +30,7 @@ import json
 import numpy as np
 import pandas as pd
 
-from .common import (CSV_COLUMNS, PAPER_DOC_BANDS, SBRS_BANDS, SBRS_BETA,
+from .common import (CSV_COLUMNS, PAPER_DOC_BANDS, PAPER_DOC_BETA, SBRS_BANDS, SBRS_BETA,
                      band, binary_metrics, sbrs)
 from .train_and_evaluate import METRICS_JSON, SCORED_ALL, V2_CSV
 
@@ -61,7 +61,8 @@ def main() -> None:
 
     y = test.is_true_threat.astype(bool).to_numpy()
     act = test.hybrid_action.to_numpy()
-    doc = np.array([band(v, PAPER_DOC_BANDS)[1] for v in test.sbrs_value])
+    doc = np.array([band(sbrs(float(s), float(a), PAPER_DOC_BETA), PAPER_DOC_BANDS)[1]
+                    for s, a in zip(test.pii_sensitivity_score, test.hybrid_anomaly_score)])
 
     m = json.loads(METRICS_JSON.read_text(encoding="utf-8"))
     m["sbrs_enforcement_config"] = {

@@ -17,7 +17,7 @@ class PIIEntity(BaseModel):
 class PIIResult(BaseModel):
     engine: str
     branch: str = Field(
-        description="Branch1_Presidio | Branch2_PaddleOCR | Branch3_VLM"
+        description="Branch1_Presidio | Branch2_OCR_Presidio | Branch3_VLM (as recorded in the demo event)"
     )
     ocr_confidence: Optional[float] = None
     ocr_threshold: float = 0.85

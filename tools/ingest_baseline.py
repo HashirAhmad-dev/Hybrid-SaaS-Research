@@ -48,6 +48,27 @@ def main() -> None:
                     "Tag baseline-pre-v2 = 2521134 contains them unchanged.")
         print(f"recorded {prefix} <- {name}")
 
+    # The 3-seed summary quoted in REAL_RESULTS.md section 4: mean and POPULATION
+    # standard deviation (numpy default, ddof=0) over the seed files 42 / 7 / 2024.
+    # Only training varied across those seeds; the dataset was the seed-42 one.
+    import numpy as np
+    from tools.manifest import flatten
+    flats = [flatten(json.loads((BASE / f"metrics_seed{s}.json").read_text(encoding="utf-8")))
+             for s in (42, 7, 2024)]
+    keys = [k for k in flats[0] if all(k in f for f in flats)
+            and not k.startswith(("tuning.alpha_grid", "lstm_val_mse_history"))]
+    summary = {}
+    for k in keys:
+        v = np.array([f[k] for f in flats], dtype=float)
+        summary[k] = {"mean": float(v.mean()), "sd_pop": float(v.std()),
+                      "sd_sample": float(v.std(ddof=1))}
+    record("baseline.anomaly.train3seed", summary,
+           script="tools/ingest_baseline.py (summary of metrics_seed{42,7,2024}.json)",
+           run_id="baseline_20261023", git=git, date_utc="2026-07-12T13:04:30+00:00",
+           seeds={"data": 42, "train": [42, 7, 2024]},
+           note="Training-seed spread only; one generated dataset (data seed 42).")
+    print(f"recorded baseline.anomaly.train3seed ({len(summary)} keys)")
+
 
 if __name__ == "__main__":
     main()

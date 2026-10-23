@@ -139,8 +139,29 @@ AUC ≈ 1.00, so the F1 objective leans on it. This is itself the finding in §5
 
 ## 4. Test-set results (held out, scored once)
 
-Mean ± sd over 3 seeds (42, 7, 2024). Only the LSTM/forest depend on the seed;
-EWMA is deterministic.
+> **Reconciliation note (added 2026-10-23, paper-v2 task T1.2).** This section
+> mixes two kinds of number, which is why it disagreed with `metrics.json` and
+> with context.md:
+>
+> * The flag-level table, the AUC line and the "± sd" values are **means over
+>   three training seeds (42, 7, 2024) on one generated dataset (data seed 42)**.
+>   The "±" is the **population** standard deviation (numpy default, ddof = 0)
+>   of three values. Manifest keys: `baseline.anomaly.train3seed.<key>.mean`
+>   and `.sd_pop`.
+> * `evaluation/data/metrics.json` holds the **seed-42 run only**. It is the
+>   source of context.md's numbers (for example LSTM AUC 0.859, hybrid F1 0.629).
+>   Manifest keys: `baseline.anomaly.s42.<key>`.
+> * The per-class table below was labelled "seed 42" but its AUC column and the
+>   compromised-account recall cells were 3-seed means. The labels are now
+>   corrected; no number was changed.
+>
+> Every number in this section is checked by
+> `python tools/check_numbers.py results/claims/real_results_md.claims`.
+> These spreads reflect training randomness only. Spread across independently
+> generated datasets is reported by paper-v2 task T1.4.
+
+Mean ± population sd over 3 training seeds (42, 7, 2024), one dataset. Only the
+LSTM/forest depend on the seed; EWMA is deterministic.
 
 ### Flag level — `A_hybrid ≥ τ` vs `is_true_threat`
 
@@ -166,7 +187,11 @@ LSTM **0.869 ± 0.016**, IF 0.798 ± 0.003, hybrid 0.841 ± 0.015.
 *The fused score has lower AUC than the LSTM alone* — the F1-optimal α trades
 ranking quality for precision at the operating point.
 
-### Recall per attack class (hybrid, seed 42; 95 % Wilson CI)
+### Recall per attack class (hybrid; 95 % Wilson CI)
+
+Window recall, its Wilson interval, episode recall and the EWMA columns are the
+**seed-42** run. Cells written "mean ± sd" and the whole AUC column are **3-seed
+means** (seed 42 alone: malicious-insider AUC 0.744 / 0.615 / 0.674).
 
 | Class | Windows | Window recall | Episode recall | EWMA window / episode | AUC (LSTM / IF / hybrid) |
 |---|---|---|---|---|---|
@@ -265,10 +290,12 @@ anomaly-flag level.** Mean scores on these sessions: `a_LSTM` 0.309, `a_IF`
 univariate EWMA sees only the 7.57× rate spike. For contrast, on *ordinary*
 negatives (no burst) EWMA still fires at 5.16 % vs the hybrid's 0.04 %.
 
-**But the enforcement layer partially undoes it.** Of those 27 benign bursts,
-SBRS bands emit **17 PERMIT and 10 ALERT** — a 37.0 % alert rate — driven purely
-by content sensitivity (mean `S` = 16.5, mean SBRS = 0.190, straddling the 0.20
-SENSITIVE boundary), not by behaviour. So the claim "SBRS mathematically
+**Under the old enforcement bands the enforcement layer partially undid it.** With
+β = 0.5 and bands 0.20 / 0.60, the 27 benign bursts got **17 PERMIT and 10 ALERT**
+(a 37.0 % alert rate), driven by content sensitivity (mean `S` = 16.5, mean SBRS
+0.190, straddling the 0.20 boundary), not by behaviour. **After the recalibration
+(β = 2.5, bands 1.22 / 1.84) all 27 are PERMIT** (mean SBRS 0.289;
+`baseline.anomaly.s42.benign_burst.hybrid_action_counts.PERMIT`). So the claim "SBRS mathematically
 suppresses the false-positive cascade" holds for the *behavioural* score and
 fails at the *band* threshold. See §4.
 

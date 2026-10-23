@@ -6,16 +6,22 @@ An interactive, paper-faithful demonstration of the framework introduced in:
 > and Multimodal Data Leakage Prevention in Enterprise Cloud Environments_,
 > Software Design and Architecture Research Paper, 2026.
 
-The framework simulates a Man-in-the-Middle (MITM) proxy that intercepts
-SaaS API traffic, runs a **multimodal PII pipeline** (Presidio /
-PaddleOCR / PaliGemma-3B VLM), evaluates **hybrid behavioural anomalies**
-(LSTM h=128 + Isolation Forest), and orchestrates a unified
-**Semantic-Behavioral Risk Score (SBRS)** for enforcement.
+The framework is a Man-in-the-Middle (MITM) proxy design that intercepts
+SaaS API traffic, runs a **multimodal PII pipeline**, evaluates **hybrid
+behavioural anomalies** (LSTM h=128 + Isolation Forest), and orchestrates a
+unified **Semantic-Behavioral Risk Score (SBRS)** for enforcement.
 
-All numbers surfaced in the dashboard - **EWMA FPR 42.7 % vs Hybrid FPR
-11.2 %**, **SBRS F1 = 0.93**, **overall PII coverage 0.91** - come directly
-from the paper and the shipped simulation artefacts (`*.csv`, `*.json`).
-Nothing is invented.
+What was actually run: Branch 1 is Microsoft Presidio, Branch 2 is EasyOCR
+followed by Presidio, and Branch 3 is a vision-language model (evaluated so
+far: gemma-3-4b-it and Qwen2.5-VL-72B through a hosted router). The design
+names PaddleOCR and an on-box PaliGemma-3B; neither has been run yet. All data
+is synthetic.
+
+The numbers the dashboard shows are read from the measured evaluation files
+(`evaluation/data/metrics.json`), not from the paper draft. The earlier draft
+figures (EWMA FPR 42.7 % vs hybrid 11.2 %, SBRS F1 0.93, PII coverage 0.91) did
+not reproduce. Every number the paper may quote is recorded in
+`results/manifest.json` and can be checked with `tools/check_numbers.py`.
 
 ---
 
@@ -26,8 +32,8 @@ SDA Research Project/
 +-- backend/                       # FastAPI + scoring core
 |   +-- __init__.py
 |   +-- data_loader.py             # Pandas ingestion of CSV/JSON artefacts
-|   +-- pii_pipeline.py            # Branch 1/2/3 multimodal PII (simulated)
-|   +-- anomaly_engine.py          # LSTM + Isolation Forest (simulated)
+|   +-- pii_pipeline.py            # replays the recorded PII result of each demo event
+|   +-- anomaly_engine.py          # trained LSTM + Isolation Forest, real inference
 |   +-- risk_orchestrator.py       # SBRS = S * (1 + beta * A_hybrid) / 100
 |   +-- schemas.py                 # Pydantic models
 |   +-- main.py                    # FastAPI service
@@ -88,7 +94,7 @@ exercise the REST surface (e.g. via `curl` or the Swagger UI at `/docs`).
 | Method | Path | Description |
 |--------|------|-------------|
 | `GET`  | `/`                        | Health + dataset summary |
-| `GET`  | `/metrics`                 | Paper-published metrics (FPR, F1, coverage) |
+| `GET`  | `/metrics`                 | Measured metrics next to the earlier paper claims |
 | `GET`  | `/events?limit=N`          | List of intercepted events |
 | `GET`  | `/events/{event_id}`       | Raw event payload |
 | `GET`  | `/score/{event_id}`        | Full pipeline result (PII + Anomaly + SBRS) |
@@ -97,9 +103,10 @@ exercise the REST surface (e.g. via `curl` or the Swagger UI at `/docs`).
 | `GET`  | `/audit/blocked`           | Audit trail of BLOCK enforcement actions |
 | `GET`  | `/comparison`              | Tidy EWMA vs Hybrid per-event evaluation |
 
-Query parameters `alpha` (LSTM weight, default 0.5) and `beta` (enterprise
-risk multiplier, default 0.5) on `/score` let you replay the simulation
-under different SBRS configurations.
+Query parameters `alpha` (LSTM weight; default read from the trained
+artefacts, 0.25 for the shipped engine) and `beta` (enterprise risk
+multiplier, default 2.5) on `/score` let you score an event under different
+SBRS configurations.
 
 ---
 
@@ -113,16 +120,18 @@ SBRS     = S * (1 + beta * A_hybrid) / 100
 * `S`         in `[0, 100]` from `min(10*high + 5*medium + 1*low, 100)`.
 * `a_LSTM`    in `[0, 1]` - cosine similarity vs user's 24h memory bank.
 * `a_IF`      in `[0, 1]` - Isolation Forest outlier score vs global pop.
-* `alpha`     dynamic LSTM weighting (default 0.5).
-* `beta`      enterprise risk multiplier (default 0.5).
+* `alpha`     LSTM weight, chosen on the validation split (0.25 for the shipped engine).
+* `beta`      enterprise risk multiplier, 2.5 (validation-calibrated, see
+  `evaluation/SBRS_RECALIBRATION.md`).
 
-Enforcement bands (calibrated to `anomaly_detection_comparison.csv`):
+Enforcement bands (95th and 99.5th percentile of benign validation SBRS,
+`evaluation/calibrate_sbrs.py`):
 
 | SBRS range | Category   | Action |
 |------------|------------|--------|
-| `< 0.20`   | SAFE       | PERMIT |
-| `< 0.60`   | SENSITIVE  | ALERT  |
-| `>= 0.60`  | HIGH-RISK  | BLOCK  |
+| `< 1.22`   | SAFE       | PERMIT |
+| `< 1.84`   | SENSITIVE  | ALERT  |
+| `>= 1.84`  | HIGH-RISK  | BLOCK  |
 
 ---
 

@@ -98,8 +98,12 @@ SBRS_BANDS = [
     (0.00, "SAFE", "PERMIT"),
 ]
 
-# The pre-calibration bands (beta=0.5, cut-points 0.50/1.00). Kept only as the
-# sensitivity check reported in REAL_RESULTS.md / SBRS_RECALIBRATION.md.
+# The pre-calibration bands documented in Context/.../SBRS.md (beta=0.5, cut-points
+# 0.50/1.00). Kept only as the sensitivity check reported in REAL_RESULTS.md /
+# SBRS_RECALIBRATION.md. They must be applied to SBRS computed at PAPER_DOC_BETA:
+# before paper-v2 (T1.2) they were applied to SBRS at beta 2.5, which matched
+# neither old configuration (metrics.json F1 0.131 instead of 0.134).
+PAPER_DOC_BETA = 0.5
 PAPER_DOC_BANDS = [
     (1.00, "HIGH-RISK", "BLOCK"),
     (0.50, "SENSITIVE", "ALERT"),

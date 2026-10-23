@@ -70,7 +70,7 @@ from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import StandardScaler
 
 from .common import (CSV_COLUMNS, DATA_DIR, EVAL_DIR, EWMA_LAMBDA, FEATURES, GEN_CONFIG,
-                     HYBRID_FLAG_THRESHOLD, LEGACY_EWMA_TAU, PAPER_DOC_BANDS,
+                     HYBRID_FLAG_THRESHOLD, LEGACY_EWMA_TAU, PAPER_DOC_BANDS, PAPER_DOC_BETA,
                      SBRS_BETA, SEQ_LEN, SESSIONS_RAW, THREAT_CLASSES, V2_CSV,
                      RobustCalibrator, band, binary_metrics, ewma_stream, sbrs,
                      wilson_ci)
@@ -535,7 +535,8 @@ def main() -> None:
     enf_alert_plus = binary_metrics(yt, hybrid_action[te] != "PERMIT")
     enf_block_only = binary_metrics(yt, hybrid_action[te] == "BLOCK")
     enf_base = binary_metrics(yt, base_action[te] == "BLOCK")
-    doc_bands = np.array([band(v_, PAPER_DOC_BANDS)[1] for v_ in sbrs_vals])
+    doc_bands = np.array([band(sbrs(s, a, PAPER_DOC_BETA), PAPER_DOC_BANDS)[1]
+                          for s, a in zip(sens, a_hybrid)])
     enf_docbands = binary_metrics(yt, doc_bands[te] != "PERMIT")
 
     # Per-class recall (window level + episode level), with Wilson intervals

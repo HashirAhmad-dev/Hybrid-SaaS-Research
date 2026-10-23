@@ -162,8 +162,10 @@ requirement.
 
 After whichever host you pick, click through:
 
-1. **System Overview tab** -- the four metric cards render with the paper's
-   numbers (42.7%, 11.2%, 0.93, 0.91).
+1. **System Overview tab** -- the four metric cards render the measured
+   numbers from `evaluation/data/metrics.json` (EWMA FPR, hybrid FPR, hybrid
+   F1, scoring latency). They read "not measured" if the trained artefacts are
+   missing.
 2. **Live Simulation tab** -- the default event is in the SENSITIVE band;
    drag the sidebar `beta` slider, the gauge needle moves.
 3. **Comparative Metrics tab** -- the EWMA-vs-Hybrid summary table loads

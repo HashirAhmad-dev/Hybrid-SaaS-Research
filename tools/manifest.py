@@ -130,6 +130,7 @@ def record(prefix: str, values: Mapping[str, Any], *, script: str,
     prefixes = set(run.get("prefixes", []))
     prefixes.add(prefix)
     run["prefixes"] = sorted(prefixes)
+    run.setdefault("scripts", {})[prefix] = script   # one run id may cover several files
     m["runs"][run_id] = run
     for k, v in flatten(values, prefix).items():
         m["entries"][k] = {"value": v, "run_id": run_id}
