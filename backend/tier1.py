@@ -68,9 +68,16 @@ def tier1_score(text: str, user_id: Optional[str], features: List[float],
                                        history=np.asarray(history, dtype=float) if history else None)
     t2 = time.perf_counter()
     sb = compute_sbrs(S, sc["a_hybrid"], beta=beta)
+    # T4.1: configured decision (gated fusion + per-user CUSUM drift), with sources
+    from .final_config import DRIFT, decide
+    mu, sd = art["user_stats"].get(user_id, art["global_stats"])
+    z = np.clip((np.asarray(features, dtype=float) - mu) / sd, -art["z_clip"], art["z_clip"])
+    drift = DRIFT.update(user_id or "_unknown", z)
+    final = decide(S, sc["a_hybrid"], drift_alarm=drift)
     t3 = time.perf_counter()
     return {"tier": 1, "entities": ents, "sensitivity": S, "a_lstm": sc["a_lstm"], "a_if": sc["a_if"],
-            "a_hybrid": sc["a_hybrid"], "sbrs": sb.sbrs_value, "action": sb.enforcement_action,
+            "a_hybrid": sc["a_hybrid"], "sbrs": sb.sbrs_value, "sbrs_action": sb.enforcement_action,
+            "drift_alarm": drift, "action": final["action"], "decision": final,
             "timing_ms": {"pii_text": (t1 - t0) * 1e3, "anomaly": (t2 - t1) * 1e3,
                           "sbrs": (t3 - t2) * 1e3, "total": (t3 - t0) * 1e3}}
 

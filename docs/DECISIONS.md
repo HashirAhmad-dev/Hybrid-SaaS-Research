@@ -73,3 +73,8 @@ One entry per non-obvious decision. Format: date, task, options, choice, reason.
 
 ## D-017 (2026-10-23, T3.2) PaddleOCR runtime
 - paddlepaddle 3.3.1 (CPU) with paddleocr 3.4.0 in `.venv-paddle` (CPython 3.12.13 via uv). The default oneDNN path fails on Windows with "ConvertPirAttribute2RuntimeAttribute not support"; `enable_mkldnn=False` works but runs at about 14 s per image on this CPU. No GPU paddle build was installed (about 1 GB more over a slow link); PaddleOCR GPU latency is therefore not measured.
+
+## D-018 (2026-10-23, T4.1) Enforcement shipped in the backend
+- Options: keep the multiplicative SBRS (paper design); switch to the form that measured best at equal budget (gated, T2.5).
+- Choice: gated fusion with dataset-42 validation settings (beta 2.5, tau_A 0.7507, t_alert 1.2238, t_block 1.8437), plus a per-user CUSUM drift alarm (k 1.0, h 8.0) that can only raise PERMIT to ALERT. The multiplicative `compute_sbrs` stays available and is still reported (`sbrs_action`) so the old behaviour remains reproducible (H-R10).
+- Reason: gated fusion caught more threats at the same benign budget on 10 datasets and is the only form that handles the reviewer's low-S/high-A case; the drift alarm costs FPR, so it routes to review, not auto-block. Values come from `backend/config/final_config.json`, generated from the manifest; `tests/test_final_config.py` checks both.
