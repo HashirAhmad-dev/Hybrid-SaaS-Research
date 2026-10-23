@@ -39,5 +39,13 @@ if [ "$QUICK" = 0 ]; then
 fi
 # Later paper-v2 stages are appended here as their tasks land.
 
+if [ "${WITH_PII:-0}" = 1 ]; then   # Phase 3 PII track; slow OCR stages
+  stage pii_corpus_v2   -m evaluation.build_pii_corpus_v2
+  stage pii_easyocr     -m evaluation.pii_v2 ocr-easyocr
+  [ -x .venv-paddle/Scripts/python.exe ] && .venv-paddle/Scripts/python.exe evaluation/paddle_ocr_runner.py > logs/reproduce_pii_paddleocr.log 2>&1
+  [ -n "${VLM_MODEL:-}" ] && stage pii_vlm -m evaluation.pii_v2 vlm --model "$VLM_MODEL"
+  stage pii_presidio    -m evaluation.pii_v2 presidio
+  stage pii_score       -m evaluation.pii_v2 score
+fi
 stage check_numbers     tools/check_numbers.py results/claims --quiet
 echo "reproduce.sh finished in $(( ($(date +%s) - t0) / 60 )) min (quick=$QUICK)"

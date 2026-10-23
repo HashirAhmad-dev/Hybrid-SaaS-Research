@@ -7,7 +7,7 @@
 # Every stage writes its numbers into results\manifest.json (with run id, seeds,
 # git hash and library versions). The last stage checks every claims file in
 # results\claims against the manifest and fails the script on any mismatch.
-param([switch]$Quick)
+param([switch]$Quick, [switch]$WithPII, [string]$VlmModel = "")
 
 $ErrorActionPreference = "Stop"
 Set-Location -Path $PSScriptRoot
@@ -47,5 +47,17 @@ if (-not $Quick) {
 }
 # Later paper-v2 stages (ablation, statistics, PII) are appended below as their tasks land.
 
+if ($WithPII) {
+    # Phase 3 PII track (T3.1-T3.5). OCR stages are slow on CPU (EasyOCR ~20 min, PaddleOCR ~90 min).
+    Stage "pii_corpus_v2"  @("-m", "evaluation.build_pii_corpus_v2")
+    Stage "pii_easyocr"    @("-m", "evaluation.pii_v2", "ocr-easyocr")
+    if (Test-Path ".venv-paddle\Scripts\python.exe") {
+        Write-Host "== pii_paddleocr"
+        & ".venv-paddle\Scripts\python.exe" "evaluation\paddle_ocr_runner.py" *> logseproduce_pii_paddleocr.log
+    }
+    if ($VlmModel) { Stage "pii_vlm" @("-m", "evaluation.pii_v2", "vlm", "--model", $VlmModel) }  # needs LM Studio running
+    Stage "pii_presidio"   @("-m", "evaluation.pii_v2", "presidio")
+    Stage "pii_score"      @("-m", "evaluation.pii_v2", "score")
+}
 Stage "check_numbers"      @("tools\check_numbers.py", "results\claims", "--quiet")
 Write-Host ("reproduce.ps1 finished in {0:N1} min" -f ((Get-Date) - $t0).TotalMinutes)
