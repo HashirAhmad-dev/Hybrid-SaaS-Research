@@ -2,19 +2,19 @@
 
 After any restart or context compaction: re-read CLAUDE.md, this file and docs/FIXES_SUMMARY.md first.
 
-- Iteration: 10
-- Current task: T2.7
-- Last evidence path: results/sbrs_fusion/
+- Iteration: 11
+- Current task: PHASE2-GATE
+- Last evidence path: results/operating_points/
 - Open gates: Q-001 (CERT, default skip applied). Phase 1 gate PASSED 2026-10-23.
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)
-- Goal: T2.7 one labelled operating-point table (F1-optimal, insider-oriented, enforcement shipped/per-dataset, BLOCK only, hybrid OR CUSUM).
-- Smallest change: evaluation/operating_points.py (drafted) from manifest + scored CSVs.
-- Verify: values equal multiseed/drift keys; claims; rerun identical.
+- Goal: Phase 2 gate (pytest, full reproduce, check_numbers, git status, FIXES entries, H-R4/H-R5 scan).
+- Smallest change: run full reproduce in background while Phase 3 OCR work runs.
+- Verify: five checks recorded in FIXES_SUMMARY gate records.
 
 ## Next action
-Start T2.7.
+Start PHASE2-GATE.
 
 ## Status table
 
@@ -32,7 +32,7 @@ Start T2.7.
 | T2.4 | M | DONE | |
 | T2.5 | M | DONE | |
 | T2.6 | S | SKIPPED | every CERT release with insiders > 2 GB; figshare link ~1 KB/s here (D-011); default of Q-001 applied, can be reopened |
-| T2.7 | M | PENDING | |
+| T2.7 | M | DONE | |
 | T3.1 | M | PENDING | |
 | T3.2 | M | PENDING | |
 | T3.3 | M | PENDING | |

@@ -1,0 +1,21 @@
+# T2.7 operating points, mean over 10 datasets (written from the manifest)
+f1_optimal_flag recall | oppoints.summary.f1_optimal_flag.recall.mean | 0.4944
+f1_optimal_flag fpr | oppoints.summary.f1_optimal_flag.fpr.mean | 0.0025
+f1_optimal_flag f1 | oppoints.summary.f1_optimal_flag.f1.mean | 0.6348
+insider_oriented_flag recall | oppoints.summary.insider_oriented_flag.recall.mean | 0.6631
+insider_oriented_flag fpr | oppoints.summary.insider_oriented_flag.fpr.mean | 0.0496
+insider_oriented_flag f1 | oppoints.summary.insider_oriented_flag.f1.mean | 0.4710
+enforcement_shipped_alert_or_block recall | oppoints.summary.enforcement_shipped_alert_or_block.recall.mean | 0.5744
+enforcement_shipped_alert_or_block fpr | oppoints.summary.enforcement_shipped_alert_or_block.fpr.mean | 0.0445
+enforcement_shipped_alert_or_block f1 | oppoints.summary.enforcement_shipped_alert_or_block.f1.mean | 0.4414
+enforcement_shipped_block_only recall | oppoints.summary.enforcement_shipped_block_only.recall.mean | 0.3453
+enforcement_shipped_block_only fpr | oppoints.summary.enforcement_shipped_block_only.fpr.mean | 0.0055
+enforcement_shipped_block_only f1 | oppoints.summary.enforcement_shipped_block_only.f1.mean | 0.4681
+enforcement_per_dataset_alert_or_block recall | oppoints.summary.enforcement_per_dataset_alert_or_block.recall.mean | 0.5887
+enforcement_per_dataset_alert_or_block fpr | oppoints.summary.enforcement_per_dataset_alert_or_block.fpr.mean | 0.0470
+enforcement_per_dataset_alert_or_block f1 | oppoints.summary.enforcement_per_dataset_alert_or_block.f1.mean | 0.4382
+hybrid_or_cusum_drift recall | oppoints.summary.hybrid_or_cusum_drift.recall.mean | 0.5319
+hybrid_or_cusum_drift fpr | oppoints.summary.hybrid_or_cusum_drift.fpr.mean | 0.0080
+hybrid_or_cusum_drift f1 | oppoints.summary.hybrid_or_cusum_drift.f1.mean | 0.6188
+cross-check: shipped bands F1 equals T1.4 key | oppoints.summary.enforcement_shipped_alert_or_block.f1.mean | 0.4414
+cross-check T1.4 shipped bands F1 | anomaly.multiseed.enf_f1_shipped_bands.mean | 0.4414

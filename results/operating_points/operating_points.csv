@@ -1,0 +1,7 @@
+operating_point,selection,recall_mean,fpr_mean,precision_mean,f1_mean,malicious_recall_mean,benign_burst_flag_rate_mean,recall_sd,fpr_sd,precision_sd,f1_sd,malicious_recall_sd,benign_burst_flag_rate_sd
+f1_optimal_flag,F1-optimal flag (val),0.4944,0.0025,0.9083,0.6348,0.0288,0.0148,0.0669,0.0033,0.0878,0.0491,0.0634,0.0468
+insider_oriented_flag,"Insider-oriented flag (val, FPR at most 5%)",0.6631,0.0496,0.3667,0.4710,0.3231,0.3242,0.0627,0.0090,0.0456,0.0483,0.1295,0.1870
+enforcement_shipped_alert_or_block,"SBRS ALERT or BLOCK, shipped bands",0.5744,0.0445,0.3597,0.4414,0.2739,0.0000,0.0609,0.0082,0.0604,0.0598,0.1070,0.0000
+enforcement_shipped_block_only,"SBRS BLOCK only, shipped bands",0.3453,0.0055,0.7344,0.4681,0.0476,0.0000,0.0361,0.0021,0.0697,0.0387,0.0566,0.0000
+enforcement_per_dataset_alert_or_block,"SBRS ALERT or BLOCK, per-dataset val bands",0.5887,0.0470,0.3499,0.4382,0.2860,0.0000,0.0831,0.0059,0.0526,0.0612,0.1192,0.0000
+hybrid_or_cusum_drift,F1-optimal flag OR CUSUM drift alarm (malicious: episode recall),0.5319,0.0080,0.7499,0.6188,nan,0.2138,0.0482,0.0037,0.0769,0.0293,nan,0.0634
