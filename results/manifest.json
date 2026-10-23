@@ -48212,6 +48212,4326 @@
    "run_id": "baseline_20261023",
    "value": 95
   },
+  "drift.ds1.cusum.h": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 4.0
+  },
+  "drift.ds1.cusum.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0
+  },
+  "drift.ds1.cusum.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.6973684210526316
+  },
+  "drift.ds1.cusum.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0004399472063352398
+  },
+  "drift.ds1.cusum.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds1.cusum.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.9814814814814815
+  },
+  "drift.ds1.cusum.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.5408163265306123
+  },
+  "drift.ds1.cusum.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.19230769230769232
+  },
+  "drift.ds1.cusum.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.6358381502890174
+  },
+  "drift.ds1.cusum.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.008798944126704795
+  },
+  "drift.ds1.cusum.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.5
+  },
+  "drift.ds1.cusum.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.7333333333333333
+  },
+  "drift.ds1.cusum.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.5612244897959183
+  },
+  "drift.ds1.cusum.k": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.5
+  },
+  "drift.ds1.cusum.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 9
+  },
+  "drift.ds1.cusum.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.0
+  },
+  "drift.ds1.cusum.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 9
+  },
+  "drift.ds1.cusum.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0
+  },
+  "drift.ds1.cusum.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0
+  },
+  "drift.ds1.cusum.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.0
+  },
+  "drift.ds1.cusum.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 3
+  },
+  "drift.ds1.cusum.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.5
+  },
+  "drift.ds1.cusum.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 6
+  },
+  "drift.ds1.cusum.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 7.0
+  },
+  "drift.ds1.cusum.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 5.0
+  },
+  "drift.ds1.cusum.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0851063829787234
+  },
+  "drift.ds1.cusum.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 11
+  },
+  "drift.ds1.cusum.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.0
+  },
+  "drift.ds1.cusum.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 11
+  },
+  "drift.ds1.cusum.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0
+  },
+  "drift.ds1.cusum.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0
+  },
+  "drift.ds1.cusum.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.0
+  },
+  "drift.ds1.cusum.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 5
+  },
+  "drift.ds1.cusum.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.0
+  },
+  "drift.ds1.cusum.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 5
+  },
+  "drift.ds1.cusum.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0
+  },
+  "drift.ds1.cusum.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0
+  },
+  "drift.ds1.cusum.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.0
+  },
+  "drift.ds1.cusum.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.19230769230769232
+  },
+  "drift.ds1.cusum.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.006675567423230975
+  },
+  "drift.ds1.cusum.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0069958847736625515
+  },
+  "drift.ds1.cusum.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds1.ph.h": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 9.0
+  },
+  "drift.ds1.ph.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0
+  },
+  "drift.ds1.ph.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.6973684210526316
+  },
+  "drift.ds1.ph.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0004399472063352398
+  },
+  "drift.ds1.ph.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds1.ph.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.9814814814814815
+  },
+  "drift.ds1.ph.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.5408163265306123
+  },
+  "drift.ds1.ph.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.11538461538461539
+  },
+  "drift.ds1.ph.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.6242774566473988
+  },
+  "drift.ds1.ph.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.009238891333040036
+  },
+  "drift.ds1.ph.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.5
+  },
+  "drift.ds1.ph.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.72
+  },
+  "drift.ds1.ph.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.5510204081632653
+  },
+  "drift.ds1.ph.k": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.5
+  },
+  "drift.ds1.ph.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 6
+  },
+  "drift.ds1.ph.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds1.ph.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 9
+  },
+  "drift.ds1.ph.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds1.ph.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.0
+  },
+  "drift.ds1.ph.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.3157894736842105
+  },
+  "drift.ds1.ph.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 2
+  },
+  "drift.ds1.ph.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds1.ph.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 6
+  },
+  "drift.ds1.ph.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 9.5
+  },
+  "drift.ds1.ph.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 9.5
+  },
+  "drift.ds1.ph.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0425531914893617
+  },
+  "drift.ds1.ph.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 4
+  },
+  "drift.ds1.ph.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.36363636363636365
+  },
+  "drift.ds1.ph.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 11
+  },
+  "drift.ds1.ph.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.5
+  },
+  "drift.ds1.ph.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.5
+  },
+  "drift.ds1.ph.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.2857142857142857
+  },
+  "drift.ds1.ph.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 5
+  },
+  "drift.ds1.ph.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.0
+  },
+  "drift.ds1.ph.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 5
+  },
+  "drift.ds1.ph.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.2
+  },
+  "drift.ds1.ph.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 1.0
+  },
+  "drift.ds1.ph.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.2777777777777778
+  },
+  "drift.ds1.ph.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.11538461538461539
+  },
+  "drift.ds1.ph.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.0075656430796617715
+  },
+  "drift.ds1.ph.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.004526748971193415
+  },
+  "drift.ds1.ph.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds1.supervised_probe.test_auc_all": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.9124864199969474
+  },
+  "drift.ds1.supervised_probe.test_auc_malicious": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.8221021987999738
+  },
+  "drift.ds1.supervised_probe.test_f1": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.5478260869565218
+  },
+  "drift.ds1.supervised_probe.test_fpr": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.030356357237131544
+  },
+  "drift.ds1.supervised_probe.test_malicious_window_recall": {
+   "run_id": "drift_detector-20261023T124705Z",
+   "value": 0.2765957446808511
+  },
+  "drift.ds1001.cusum.h": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 7.0
+  },
+  "drift.ds1001.cusum.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.0
+  },
+  "drift.ds1001.cusum.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.510948905109489
+  },
+  "drift.ds1001.cusum.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.002286236854138089
+  },
+  "drift.ds1001.cusum.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.0
+  },
+  "drift.ds1001.cusum.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.875
+  },
+  "drift.ds1001.cusum.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.36082474226804123
+  },
+  "drift.ds1001.cusum.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.23333333333333334
+  },
+  "drift.ds1001.cusum.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.573248407643312
+  },
+  "drift.ds1001.cusum.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.006858710562414266
+  },
+  "drift.ds1001.cusum.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds1001.cusum.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.75
+  },
+  "drift.ds1001.cusum.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.4639175257731959
+  },
+  "drift.ds1001.cusum.k": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.cusum.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 7
+  },
+  "drift.ds1001.cusum.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.7777777777777778
+  },
+  "drift.ds1001.cusum.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 9
+  },
+  "drift.ds1001.cusum.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.cusum.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.cusum.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.3888888888888889
+  },
+  "drift.ds1001.cusum.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 4
+  },
+  "drift.ds1001.cusum.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds1001.cusum.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 6
+  },
+  "drift.ds1001.cusum.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 5.0
+  },
+  "drift.ds1001.cusum.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 5.0
+  },
+  "drift.ds1001.cusum.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.1568627450980392
+  },
+  "drift.ds1001.cusum.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 5
+  },
+  "drift.ds1001.cusum.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.45454545454545453
+  },
+  "drift.ds1001.cusum.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 11
+  },
+  "drift.ds1001.cusum.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.cusum.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.cusum.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.3125
+  },
+  "drift.ds1001.cusum.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 5
+  },
+  "drift.ds1001.cusum.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.cusum.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 5
+  },
+  "drift.ds1001.cusum.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.cusum.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.cusum.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.5
+  },
+  "drift.ds1001.cusum.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.23333333333333334
+  },
+  "drift.ds1001.cusum.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.0018544274455261937
+  },
+  "drift.ds1001.cusum.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.005874947545111205
+  },
+  "drift.ds1001.cusum.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds1001.ph.h": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 8.0
+  },
+  "drift.ds1001.ph.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.0
+  },
+  "drift.ds1001.ph.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.510948905109489
+  },
+  "drift.ds1001.ph.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.002286236854138089
+  },
+  "drift.ds1001.ph.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.0
+  },
+  "drift.ds1001.ph.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.875
+  },
+  "drift.ds1001.ph.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.36082474226804123
+  },
+  "drift.ds1001.ph.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.26666666666666666
+  },
+  "drift.ds1001.ph.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.4855491329479769
+  },
+  "drift.ds1001.ph.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.015546410608139003
+  },
+  "drift.ds1001.ph.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds1001.ph.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.5526315789473685
+  },
+  "drift.ds1001.ph.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.4329896907216495
+  },
+  "drift.ds1001.ph.k": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.5
+  },
+  "drift.ds1001.ph.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 5
+  },
+  "drift.ds1001.ph.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.5555555555555556
+  },
+  "drift.ds1001.ph.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 9
+  },
+  "drift.ds1001.ph.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.2
+  },
+  "drift.ds1001.ph.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.ph.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.2777777777777778
+  },
+  "drift.ds1001.ph.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 4
+  },
+  "drift.ds1001.ph.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds1001.ph.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 6
+  },
+  "drift.ds1001.ph.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 5.0
+  },
+  "drift.ds1001.ph.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 5.0
+  },
+  "drift.ds1001.ph.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.0784313725490196
+  },
+  "drift.ds1001.ph.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 4
+  },
+  "drift.ds1001.ph.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.36363636363636365
+  },
+  "drift.ds1001.ph.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 11
+  },
+  "drift.ds1001.ph.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.5
+  },
+  "drift.ds1001.ph.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.5
+  },
+  "drift.ds1001.ph.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.25
+  },
+  "drift.ds1001.ph.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 5
+  },
+  "drift.ds1001.ph.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.ph.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 5
+  },
+  "drift.ds1001.ph.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.ph.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 1.0
+  },
+  "drift.ds1001.ph.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.4166666666666667
+  },
+  "drift.ds1001.ph.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.26666666666666666
+  },
+  "drift.ds1001.ph.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.010662957811775614
+  },
+  "drift.ds1001.ph.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.008812421317666807
+  },
+  "drift.ds1001.ph.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds1001.supervised_probe.test_auc_all": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.9404352806414662
+  },
+  "drift.ds1001.supervised_probe.test_auc_malicious": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.8929054932443943
+  },
+  "drift.ds1001.supervised_probe.test_f1": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.6237623762376238
+  },
+  "drift.ds1001.supervised_probe.test_fpr": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.019204389574759947
+  },
+  "drift.ds1001.supervised_probe.test_malicious_window_recall": {
+   "run_id": "drift_detector-20261023T124729Z",
+   "value": 0.4117647058823529
+  },
+  "drift.ds123.cusum.h": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 16.0
+  },
+  "drift.ds123.cusum.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.0
+  },
+  "drift.ds123.cusum.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.6482758620689656
+  },
+  "drift.ds123.cusum.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.0022381378692927483
+  },
+  "drift.ds123.cusum.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.0
+  },
+  "drift.ds123.cusum.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.9038461538461539
+  },
+  "drift.ds123.cusum.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.5053763440860215
+  },
+  "drift.ds123.cusum.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.125
+  },
+  "drift.ds123.cusum.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.6282051282051282
+  },
+  "drift.ds123.cusum.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.006266786034019696
+  },
+  "drift.ds123.cusum.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds123.cusum.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.7777777777777778
+  },
+  "drift.ds123.cusum.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.5268817204301075
+  },
+  "drift.ds123.cusum.k": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.25
+  },
+  "drift.ds123.cusum.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 3
+  },
+  "drift.ds123.cusum.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds123.cusum.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 9
+  },
+  "drift.ds123.cusum.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.0
+  },
+  "drift.ds123.cusum.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.0
+  },
+  "drift.ds123.cusum.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.17647058823529413
+  },
+  "drift.ds123.cusum.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 2
+  },
+  "drift.ds123.cusum.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds123.cusum.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 6
+  },
+  "drift.ds123.cusum.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 12.5
+  },
+  "drift.ds123.cusum.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 12.5
+  },
+  "drift.ds123.cusum.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.044444444444444446
+  },
+  "drift.ds123.cusum.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 3
+  },
+  "drift.ds123.cusum.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.2727272727272727
+  },
+  "drift.ds123.cusum.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 11
+  },
+  "drift.ds123.cusum.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds123.cusum.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 1.0
+  },
+  "drift.ds123.cusum.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.1875
+  },
+  "drift.ds123.cusum.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 5
+  },
+  "drift.ds123.cusum.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 1.0
+  },
+  "drift.ds123.cusum.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 5
+  },
+  "drift.ds123.cusum.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 2.2
+  },
+  "drift.ds123.cusum.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 1.0
+  },
+  "drift.ds123.cusum.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds123.cusum.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.125
+  },
+  "drift.ds123.cusum.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.0027149321266968325
+  },
+  "drift.ds123.cusum.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.00917048770320967
+  },
+  "drift.ds123.cusum.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds123.ph.h": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 11.0
+  },
+  "drift.ds123.ph.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.0
+  },
+  "drift.ds123.ph.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.6482758620689656
+  },
+  "drift.ds123.ph.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.0022381378692927483
+  },
+  "drift.ds123.ph.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.0
+  },
+  "drift.ds123.ph.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.9038461538461539
+  },
+  "drift.ds123.ph.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.5053763440860215
+  },
+  "drift.ds123.ph.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.125
+  },
+  "drift.ds123.ph.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.53475935828877
+  },
+  "drift.ds123.ph.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.019695613249776187
+  },
+  "drift.ds123.ph.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.5
+  },
+  "drift.ds123.ph.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.5319148936170213
+  },
+  "drift.ds123.ph.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.5376344086021505
+  },
+  "drift.ds123.ph.k": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.25
+  },
+  "drift.ds123.ph.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 4
+  },
+  "drift.ds123.ph.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.4444444444444444
+  },
+  "drift.ds123.ph.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 9
+  },
+  "drift.ds123.ph.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 1.25
+  },
+  "drift.ds123.ph.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 1.5
+  },
+  "drift.ds123.ph.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.23529411764705882
+  },
+  "drift.ds123.ph.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 3
+  },
+  "drift.ds123.ph.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.5
+  },
+  "drift.ds123.ph.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 6
+  },
+  "drift.ds123.ph.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 10.333333333333334
+  },
+  "drift.ds123.ph.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 11.0
+  },
+  "drift.ds123.ph.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.06666666666666667
+  },
+  "drift.ds123.ph.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 5
+  },
+  "drift.ds123.ph.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.45454545454545453
+  },
+  "drift.ds123.ph.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 11
+  },
+  "drift.ds123.ph.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 1.4
+  },
+  "drift.ds123.ph.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 1.0
+  },
+  "drift.ds123.ph.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.3125
+  },
+  "drift.ds123.ph.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 4
+  },
+  "drift.ds123.ph.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.8
+  },
+  "drift.ds123.ph.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 5
+  },
+  "drift.ds123.ph.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 2.25
+  },
+  "drift.ds123.ph.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 2.0
+  },
+  "drift.ds123.ph.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.26666666666666666
+  },
+  "drift.ds123.ph.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.125
+  },
+  "drift.ds123.ph.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.0167420814479638
+  },
+  "drift.ds123.ph.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.008753647353063776
+  },
+  "drift.ds123.ph.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds123.supervised_probe.test_auc_all": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.9245795670045532
+  },
+  "drift.ds123.supervised_probe.test_auc_malicious": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.8509698597433601
+  },
+  "drift.ds123.supervised_probe.test_f1": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.5757575757575757
+  },
+  "drift.ds123.supervised_probe.test_fpr": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.021486123545210387
+  },
+  "drift.ds123.supervised_probe.test_malicious_window_recall": {
+   "run_id": "drift_detector-20261023T124718Z",
+   "value": 0.26666666666666666
+  },
+  "drift.ds13.cusum.h": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 10.0
+  },
+  "drift.ds13.cusum.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.0
+  },
+  "drift.ds13.cusum.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.6405228758169934
+  },
+  "drift.ds13.cusum.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.0017985611510791368
+  },
+  "drift.ds13.cusum.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.0
+  },
+  "drift.ds13.cusum.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.9245283018867925
+  },
+  "drift.ds13.cusum.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.49
+  },
+  "drift.ds13.cusum.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.20689655172413793
+  },
+  "drift.ds13.cusum.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.5964912280701754
+  },
+  "drift.ds13.cusum.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.008992805755395683
+  },
+  "drift.ds13.cusum.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds13.cusum.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.7183098591549296
+  },
+  "drift.ds13.cusum.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.51
+  },
+  "drift.ds13.cusum.k": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.5
+  },
+  "drift.ds13.cusum.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 5
+  },
+  "drift.ds13.cusum.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.5555555555555556
+  },
+  "drift.ds13.cusum.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 9
+  },
+  "drift.ds13.cusum.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 1.0
+  },
+  "drift.ds13.cusum.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 1.0
+  },
+  "drift.ds13.cusum.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds13.cusum.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 2
+  },
+  "drift.ds13.cusum.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds13.cusum.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 6
+  },
+  "drift.ds13.cusum.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 14.0
+  },
+  "drift.ds13.cusum.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 14.0
+  },
+  "drift.ds13.cusum.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.04
+  },
+  "drift.ds13.cusum.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 4
+  },
+  "drift.ds13.cusum.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.36363636363636365
+  },
+  "drift.ds13.cusum.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 11
+  },
+  "drift.ds13.cusum.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 1.25
+  },
+  "drift.ds13.cusum.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 1.0
+  },
+  "drift.ds13.cusum.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.21052631578947367
+  },
+  "drift.ds13.cusum.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 5
+  },
+  "drift.ds13.cusum.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 1.0
+  },
+  "drift.ds13.cusum.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 5
+  },
+  "drift.ds13.cusum.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.8
+  },
+  "drift.ds13.cusum.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 1.0
+  },
+  "drift.ds13.cusum.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.46153846153846156
+  },
+  "drift.ds13.cusum.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.20689655172413793
+  },
+  "drift.ds13.cusum.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.005011389521640091
+  },
+  "drift.ds13.cusum.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.007056870070568701
+  },
+  "drift.ds13.cusum.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds13.ph.h": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 11.0
+  },
+  "drift.ds13.ph.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.0
+  },
+  "drift.ds13.ph.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.6405228758169934
+  },
+  "drift.ds13.ph.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.0017985611510791368
+  },
+  "drift.ds13.ph.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.0
+  },
+  "drift.ds13.ph.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.9245283018867925
+  },
+  "drift.ds13.ph.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.49
+  },
+  "drift.ds13.ph.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.20689655172413793
+  },
+  "drift.ds13.ph.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.5408163265306124
+  },
+  "drift.ds13.ph.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.01933453237410072
+  },
+  "drift.ds13.ph.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds13.ph.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.5520833333333334
+  },
+  "drift.ds13.ph.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.53
+  },
+  "drift.ds13.ph.k": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.25
+  },
+  "drift.ds13.ph.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 4
+  },
+  "drift.ds13.ph.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.4444444444444444
+  },
+  "drift.ds13.ph.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 9
+  },
+  "drift.ds13.ph.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 1.25
+  },
+  "drift.ds13.ph.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 1.5
+  },
+  "drift.ds13.ph.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.2222222222222222
+  },
+  "drift.ds13.ph.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 4
+  },
+  "drift.ds13.ph.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds13.ph.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 6
+  },
+  "drift.ds13.ph.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 10.75
+  },
+  "drift.ds13.ph.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 7.5
+  },
+  "drift.ds13.ph.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.08
+  },
+  "drift.ds13.ph.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 2
+  },
+  "drift.ds13.ph.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.18181818181818182
+  },
+  "drift.ds13.ph.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 11
+  },
+  "drift.ds13.ph.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 1.5
+  },
+  "drift.ds13.ph.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 1.5
+  },
+  "drift.ds13.ph.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.10526315789473684
+  },
+  "drift.ds13.ph.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 4
+  },
+  "drift.ds13.ph.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.8
+  },
+  "drift.ds13.ph.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 5
+  },
+  "drift.ds13.ph.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.75
+  },
+  "drift.ds13.ph.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 1.0
+  },
+  "drift.ds13.ph.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.3076923076923077
+  },
+  "drift.ds13.ph.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.20689655172413793
+  },
+  "drift.ds13.ph.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.015489749430523917
+  },
+  "drift.ds13.ph.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.008302200083022002
+  },
+  "drift.ds13.ph.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds13.supervised_probe.test_auc_all": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.9472796762589928
+  },
+  "drift.ds13.supervised_probe.test_auc_malicious": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.9060341726618705
+  },
+  "drift.ds13.supervised_probe.test_f1": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.5688073394495413
+  },
+  "drift.ds13.supervised_probe.test_fpr": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.025179856115107913
+  },
+  "drift.ds13.supervised_probe.test_malicious_window_recall": {
+   "run_id": "drift_detector-20261023T124709Z",
+   "value": 0.3
+  },
+  "drift.ds2024.cusum.h": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 14.0
+  },
+  "drift.ds2024.cusum.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.0
+  },
+  "drift.ds2024.cusum.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.6174496644295302
+  },
+  "drift.ds2024.cusum.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.003589053387169134
+  },
+  "drift.ds2024.cusum.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.16666666666666666
+  },
+  "drift.ds2024.cusum.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.8518518518518519
+  },
+  "drift.ds2024.cusum.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.4842105263157895
+  },
+  "drift.ds2024.cusum.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.14814814814814814
+  },
+  "drift.ds2024.cusum.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.5714285714285714
+  },
+  "drift.ds2024.cusum.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.011215791834903545
+  },
+  "drift.ds2024.cusum.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.5
+  },
+  "drift.ds2024.cusum.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.6575342465753424
+  },
+  "drift.ds2024.cusum.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.5052631578947369
+  },
+  "drift.ds2024.cusum.k": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.25
+  },
+  "drift.ds2024.cusum.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 5
+  },
+  "drift.ds2024.cusum.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.5555555555555556
+  },
+  "drift.ds2024.cusum.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 9
+  },
+  "drift.ds2024.cusum.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.6
+  },
+  "drift.ds2024.cusum.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.0
+  },
+  "drift.ds2024.cusum.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.29411764705882354
+  },
+  "drift.ds2024.cusum.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 2
+  },
+  "drift.ds2024.cusum.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds2024.cusum.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 6
+  },
+  "drift.ds2024.cusum.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 6.0
+  },
+  "drift.ds2024.cusum.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 6.0
+  },
+  "drift.ds2024.cusum.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.041666666666666664
+  },
+  "drift.ds2024.cusum.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 4
+  },
+  "drift.ds2024.cusum.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.36363636363636365
+  },
+  "drift.ds2024.cusum.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 11
+  },
+  "drift.ds2024.cusum.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.0
+  },
+  "drift.ds2024.cusum.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.0
+  },
+  "drift.ds2024.cusum.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.23529411764705882
+  },
+  "drift.ds2024.cusum.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 5
+  },
+  "drift.ds2024.cusum.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.0
+  },
+  "drift.ds2024.cusum.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 5
+  },
+  "drift.ds2024.cusum.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.4
+  },
+  "drift.ds2024.cusum.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.0
+  },
+  "drift.ds2024.cusum.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.38461538461538464
+  },
+  "drift.ds2024.cusum.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.14814814814814814
+  },
+  "drift.ds2024.cusum.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.005903723887375113
+  },
+  "drift.ds2024.cusum.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.009983361064891847
+  },
+  "drift.ds2024.cusum.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds2024.ph.h": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 12.0
+  },
+  "drift.ds2024.ph.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.0
+  },
+  "drift.ds2024.ph.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.6174496644295302
+  },
+  "drift.ds2024.ph.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.003589053387169134
+  },
+  "drift.ds2024.ph.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.16666666666666666
+  },
+  "drift.ds2024.ph.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.8518518518518519
+  },
+  "drift.ds2024.ph.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.4842105263157895
+  },
+  "drift.ds2024.ph.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.07407407407407407
+  },
+  "drift.ds2024.ph.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.6075949367088607
+  },
+  "drift.ds2024.ph.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.006729475100942127
+  },
+  "drift.ds2024.ph.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.5
+  },
+  "drift.ds2024.ph.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.7619047619047619
+  },
+  "drift.ds2024.ph.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.5052631578947369
+  },
+  "drift.ds2024.ph.k": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.5
+  },
+  "drift.ds2024.ph.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 5
+  },
+  "drift.ds2024.ph.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.5555555555555556
+  },
+  "drift.ds2024.ph.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 9
+  },
+  "drift.ds2024.ph.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.8
+  },
+  "drift.ds2024.ph.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.0
+  },
+  "drift.ds2024.ph.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.29411764705882354
+  },
+  "drift.ds2024.ph.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 2
+  },
+  "drift.ds2024.ph.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds2024.ph.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 6
+  },
+  "drift.ds2024.ph.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 6.0
+  },
+  "drift.ds2024.ph.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 6.0
+  },
+  "drift.ds2024.ph.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.041666666666666664
+  },
+  "drift.ds2024.ph.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 5
+  },
+  "drift.ds2024.ph.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.45454545454545453
+  },
+  "drift.ds2024.ph.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 11
+  },
+  "drift.ds2024.ph.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.0
+  },
+  "drift.ds2024.ph.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.0
+  },
+  "drift.ds2024.ph.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.29411764705882354
+  },
+  "drift.ds2024.ph.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 5
+  },
+  "drift.ds2024.ph.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.0
+  },
+  "drift.ds2024.ph.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 5
+  },
+  "drift.ds2024.ph.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.4
+  },
+  "drift.ds2024.ph.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 1.0
+  },
+  "drift.ds2024.ph.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.38461538461538464
+  },
+  "drift.ds2024.ph.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.07407407407407407
+  },
+  "drift.ds2024.ph.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.002270663033605813
+  },
+  "drift.ds2024.ph.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.0020798668885191347
+  },
+  "drift.ds2024.ph.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds2024.supervised_probe.test_auc_all": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.8958182805600812
+  },
+  "drift.ds2024.supervised_probe.test_auc_malicious": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.8355951846867056
+  },
+  "drift.ds2024.supervised_probe.test_f1": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.4903225806451614
+  },
+  "drift.ds2024.supervised_probe.test_fpr": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.00986989681471512
+  },
+  "drift.ds2024.supervised_probe.test_malicious_window_recall": {
+   "run_id": "drift_detector-20261023T124701Z",
+   "value": 0.041666666666666664
+  },
+  "drift.ds314.cusum.h": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 10.0
+  },
+  "drift.ds314.cusum.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.0
+  },
+  "drift.ds314.cusum.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.6708860759493671
+  },
+  "drift.ds314.cusum.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.002273760800363802
+  },
+  "drift.ds314.cusum.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.0
+  },
+  "drift.ds314.cusum.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.9137931034482759
+  },
+  "drift.ds314.cusum.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.53
+  },
+  "drift.ds314.cusum.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.28125
+  },
+  "drift.ds314.cusum.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.6270270270270271
+  },
+  "drift.ds314.cusum.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.01227830832196453
+  },
+  "drift.ds314.cusum.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds314.cusum.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.6823529411764706
+  },
+  "drift.ds314.cusum.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.58
+  },
+  "drift.ds314.cusum.k": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.5
+  },
+  "drift.ds314.cusum.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 6
+  },
+  "drift.ds314.cusum.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds314.cusum.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 9
+  },
+  "drift.ds314.cusum.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.3333333333333333
+  },
+  "drift.ds314.cusum.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.0
+  },
+  "drift.ds314.cusum.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds314.cusum.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 5
+  },
+  "drift.ds314.cusum.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds314.cusum.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 6
+  },
+  "drift.ds314.cusum.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 6.8
+  },
+  "drift.ds314.cusum.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 6.0
+  },
+  "drift.ds314.cusum.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.1111111111111111
+  },
+  "drift.ds314.cusum.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 6
+  },
+  "drift.ds314.cusum.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.5454545454545454
+  },
+  "drift.ds314.cusum.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 11
+  },
+  "drift.ds314.cusum.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.8333333333333333
+  },
+  "drift.ds314.cusum.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.0
+  },
+  "drift.ds314.cusum.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds314.cusum.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 5
+  },
+  "drift.ds314.cusum.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.0
+  },
+  "drift.ds314.cusum.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 5
+  },
+  "drift.ds314.cusum.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 2.2
+  },
+  "drift.ds314.cusum.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.0
+  },
+  "drift.ds314.cusum.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.47368421052631576
+  },
+  "drift.ds314.cusum.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.28125
+  },
+  "drift.ds314.cusum.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.005999077065066913
+  },
+  "drift.ds314.cusum.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.009042334566378957
+  },
+  "drift.ds314.cusum.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds314.ph.h": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 12.0
+  },
+  "drift.ds314.ph.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.0
+  },
+  "drift.ds314.ph.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.6708860759493671
+  },
+  "drift.ds314.ph.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.002273760800363802
+  },
+  "drift.ds314.ph.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.0
+  },
+  "drift.ds314.ph.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.9137931034482759
+  },
+  "drift.ds314.ph.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.53
+  },
+  "drift.ds314.ph.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.1875
+  },
+  "drift.ds314.ph.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.5894736842105264
+  },
+  "drift.ds314.ph.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.015461573442473852
+  },
+  "drift.ds314.ph.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.5
+  },
+  "drift.ds314.ph.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.6222222222222222
+  },
+  "drift.ds314.ph.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.56
+  },
+  "drift.ds314.ph.k": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.25
+  },
+  "drift.ds314.ph.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 6
+  },
+  "drift.ds314.ph.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds314.ph.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 9
+  },
+  "drift.ds314.ph.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.5
+  },
+  "drift.ds314.ph.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.5
+  },
+  "drift.ds314.ph.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds314.ph.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 3
+  },
+  "drift.ds314.ph.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.5
+  },
+  "drift.ds314.ph.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 6
+  },
+  "drift.ds314.ph.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 8.333333333333334
+  },
+  "drift.ds314.ph.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 9.0
+  },
+  "drift.ds314.ph.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.06666666666666667
+  },
+  "drift.ds314.ph.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 3
+  },
+  "drift.ds314.ph.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.2727272727272727
+  },
+  "drift.ds314.ph.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 11
+  },
+  "drift.ds314.ph.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.6666666666666667
+  },
+  "drift.ds314.ph.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.0
+  },
+  "drift.ds314.ph.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.16666666666666666
+  },
+  "drift.ds314.ph.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 5
+  },
+  "drift.ds314.ph.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.0
+  },
+  "drift.ds314.ph.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 5
+  },
+  "drift.ds314.ph.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 2.4
+  },
+  "drift.ds314.ph.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 1.0
+  },
+  "drift.ds314.ph.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.2631578947368421
+  },
+  "drift.ds314.ph.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.1875
+  },
+  "drift.ds314.ph.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.010613751730503
+  },
+  "drift.ds314.ph.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.009453349773941636
+  },
+  "drift.ds314.ph.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds314.supervised_probe.test_auc_all": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.9444429286039109
+  },
+  "drift.ds314.supervised_probe.test_auc_malicious": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.8891718457884897
+  },
+  "drift.ds314.supervised_probe.test_f1": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.5194805194805194
+  },
+  "drift.ds314.supervised_probe.test_fpr": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.006366530241018645
+  },
+  "drift.ds314.supervised_probe.test_malicious_window_recall": {
+   "run_id": "drift_detector-20261023T124722Z",
+   "value": 0.0
+  },
+  "drift.ds42.cusum.h": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 8.0
+  },
+  "drift.ds42.cusum.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.0
+  },
+  "drift.ds42.cusum.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.6285714285714286
+  },
+  "drift.ds42.cusum.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.0
+  },
+  "drift.ds42.cusum.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.16666666666666666
+  },
+  "drift.ds42.cusum.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 1.0
+  },
+  "drift.ds42.cusum.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.4583333333333333
+  },
+  "drift.ds42.cusum.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.14814814814814814
+  },
+  "drift.ds42.cusum.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.6578947368421053
+  },
+  "drift.ds42.cusum.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.0026595744680851063
+  },
+  "drift.ds42.cusum.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds42.cusum.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.8928571428571429
+  },
+  "drift.ds42.cusum.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.5208333333333334
+  },
+  "drift.ds42.cusum.k": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 1.0
+  },
+  "drift.ds42.cusum.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 4
+  },
+  "drift.ds42.cusum.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.4444444444444444
+  },
+  "drift.ds42.cusum.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 9
+  },
+  "drift.ds42.cusum.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 2.0
+  },
+  "drift.ds42.cusum.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 1.0
+  },
+  "drift.ds42.cusum.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.3076923076923077
+  },
+  "drift.ds42.cusum.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 4
+  },
+  "drift.ds42.cusum.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds42.cusum.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 6
+  },
+  "drift.ds42.cusum.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 8.5
+  },
+  "drift.ds42.cusum.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 6.0
+  },
+  "drift.ds42.cusum.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.09803921568627451
+  },
+  "drift.ds42.cusum.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 6
+  },
+  "drift.ds42.cusum.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.5454545454545454
+  },
+  "drift.ds42.cusum.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 11
+  },
+  "drift.ds42.cusum.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 1.3333333333333333
+  },
+  "drift.ds42.cusum.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 1.0
+  },
+  "drift.ds42.cusum.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds42.cusum.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 5
+  },
+  "drift.ds42.cusum.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 1.0
+  },
+  "drift.ds42.cusum.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 5
+  },
+  "drift.ds42.cusum.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 2.0
+  },
+  "drift.ds42.cusum.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 1.0
+  },
+  "drift.ds42.cusum.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.5
+  },
+  "drift.ds42.cusum.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.14814814814814814
+  },
+  "drift.ds42.cusum.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.0008972633467922835
+  },
+  "drift.ds42.cusum.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.003304419661296985
+  },
+  "drift.ds42.cusum.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds42.ph.h": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 19.0
+  },
+  "drift.ds42.ph.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.0
+  },
+  "drift.ds42.ph.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.6285714285714286
+  },
+  "drift.ds42.ph.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.0
+  },
+  "drift.ds42.ph.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.16666666666666666
+  },
+  "drift.ds42.ph.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 1.0
+  },
+  "drift.ds42.ph.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.4583333333333333
+  },
+  "drift.ds42.ph.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.037037037037037035
+  },
+  "drift.ds42.ph.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.6225165562913907
+  },
+  "drift.ds42.ph.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.0035460992907801418
+  },
+  "drift.ds42.ph.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds42.ph.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.8545454545454545
+  },
+  "drift.ds42.ph.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.4895833333333333
+  },
+  "drift.ds42.ph.k": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.25
+  },
+  "drift.ds42.ph.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 1
+  },
+  "drift.ds42.ph.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.1111111111111111
+  },
+  "drift.ds42.ph.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 9
+  },
+  "drift.ds42.ph.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 2.0
+  },
+  "drift.ds42.ph.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 2.0
+  },
+  "drift.ds42.ph.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.07692307692307693
+  },
+  "drift.ds42.ph.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 3
+  },
+  "drift.ds42.ph.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.5
+  },
+  "drift.ds42.ph.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 6
+  },
+  "drift.ds42.ph.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 9.333333333333334
+  },
+  "drift.ds42.ph.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 7.0
+  },
+  "drift.ds42.ph.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.058823529411764705
+  },
+  "drift.ds42.ph.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 3
+  },
+  "drift.ds42.ph.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.2727272727272727
+  },
+  "drift.ds42.ph.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 11
+  },
+  "drift.ds42.ph.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 1.0
+  },
+  "drift.ds42.ph.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 1.0
+  },
+  "drift.ds42.ph.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.16666666666666666
+  },
+  "drift.ds42.ph.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 2
+  },
+  "drift.ds42.ph.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.4
+  },
+  "drift.ds42.ph.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 5
+  },
+  "drift.ds42.ph.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 3.5
+  },
+  "drift.ds42.ph.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 3.5
+  },
+  "drift.ds42.ph.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.14285714285714285
+  },
+  "drift.ds42.ph.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.037037037037037035
+  },
+  "drift.ds42.ph.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.0031404217137729925
+  },
+  "drift.ds42.ph.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.0008261049153242462
+  },
+  "drift.ds42.ph.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.5
+  },
+  "drift.ds42.supervised_probe.test_auc_all": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.9196679225768322
+  },
+  "drift.ds42.supervised_probe.test_auc_malicious": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.8723056598525936
+  },
+  "drift.ds42.supervised_probe.test_f1": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.5576923076923077
+  },
+  "drift.ds42.supervised_probe.test_fpr": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.023936170212765957
+  },
+  "drift.ds42.supervised_probe.test_malicious_window_recall": {
+   "run_id": "drift_detector-20261023T124653Z",
+   "value": 0.43137254901960786
+  },
+  "drift.ds7.cusum.h": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 9.0
+  },
+  "drift.ds7.cusum.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.0
+  },
+  "drift.ds7.cusum.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.6363636363636364
+  },
+  "drift.ds7.cusum.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.00043782837127845885
+  },
+  "drift.ds7.cusum.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.0
+  },
+  "drift.ds7.cusum.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.9767441860465116
+  },
+  "drift.ds7.cusum.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.47191011235955055
+  },
+  "drift.ds7.cusum.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.20689655172413793
+  },
+  "drift.ds7.cusum.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.6344827586206896
+  },
+  "drift.ds7.cusum.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.0043782837127845885
+  },
+  "drift.ds7.cusum.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5
+  },
+  "drift.ds7.cusum.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.8214285714285714
+  },
+  "drift.ds7.cusum.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5168539325842697
+  },
+  "drift.ds7.cusum.k": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5
+  },
+  "drift.ds7.cusum.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 4
+  },
+  "drift.ds7.cusum.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.4444444444444444
+  },
+  "drift.ds7.cusum.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 9
+  },
+  "drift.ds7.cusum.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 1.0
+  },
+  "drift.ds7.cusum.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 1.0
+  },
+  "drift.ds7.cusum.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.25
+  },
+  "drift.ds7.cusum.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 3
+  },
+  "drift.ds7.cusum.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5
+  },
+  "drift.ds7.cusum.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 6
+  },
+  "drift.ds7.cusum.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 7.666666666666667
+  },
+  "drift.ds7.cusum.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 8.0
+  },
+  "drift.ds7.cusum.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.07142857142857142
+  },
+  "drift.ds7.cusum.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 4
+  },
+  "drift.ds7.cusum.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.36363636363636365
+  },
+  "drift.ds7.cusum.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 11
+  },
+  "drift.ds7.cusum.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5
+  },
+  "drift.ds7.cusum.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5
+  },
+  "drift.ds7.cusum.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.25
+  },
+  "drift.ds7.cusum.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 5
+  },
+  "drift.ds7.cusum.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 1.0
+  },
+  "drift.ds7.cusum.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 5
+  },
+  "drift.ds7.cusum.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.6
+  },
+  "drift.ds7.cusum.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 1.0
+  },
+  "drift.ds7.cusum.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5333333333333333
+  },
+  "drift.ds7.cusum.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.20689655172413793
+  },
+  "drift.ds7.cusum.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.0013303769401330377
+  },
+  "drift.ds7.cusum.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.006430868167202572
+  },
+  "drift.ds7.cusum.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5
+  },
+  "drift.ds7.ph.h": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 8.0
+  },
+  "drift.ds7.ph.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.0
+  },
+  "drift.ds7.ph.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.6363636363636364
+  },
+  "drift.ds7.ph.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.00043782837127845885
+  },
+  "drift.ds7.ph.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.0
+  },
+  "drift.ds7.ph.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.9767441860465116
+  },
+  "drift.ds7.ph.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.47191011235955055
+  },
+  "drift.ds7.ph.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.1724137931034483
+  },
+  "drift.ds7.ph.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5962732919254659
+  },
+  "drift.ds7.ph.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.010507880910683012
+  },
+  "drift.ds7.ph.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds7.ph.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds7.ph.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5393258426966292
+  },
+  "drift.ds7.ph.k": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5
+  },
+  "drift.ds7.ph.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 4
+  },
+  "drift.ds7.ph.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.4444444444444444
+  },
+  "drift.ds7.ph.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 9
+  },
+  "drift.ds7.ph.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 1.0
+  },
+  "drift.ds7.ph.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 1.0
+  },
+  "drift.ds7.ph.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.25
+  },
+  "drift.ds7.ph.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 4
+  },
+  "drift.ds7.ph.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds7.ph.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 6
+  },
+  "drift.ds7.ph.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 8.5
+  },
+  "drift.ds7.ph.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 6.5
+  },
+  "drift.ds7.ph.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.09523809523809523
+  },
+  "drift.ds7.ph.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 7
+  },
+  "drift.ds7.ph.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.6363636363636364
+  },
+  "drift.ds7.ph.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 11
+  },
+  "drift.ds7.ph.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5714285714285714
+  },
+  "drift.ds7.ph.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 1.0
+  },
+  "drift.ds7.ph.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.4375
+  },
+  "drift.ds7.ph.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 4
+  },
+  "drift.ds7.ph.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.8
+  },
+  "drift.ds7.ph.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 5
+  },
+  "drift.ds7.ph.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5
+  },
+  "drift.ds7.ph.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.5
+  },
+  "drift.ds7.ph.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.26666666666666666
+  },
+  "drift.ds7.ph.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.1724137931034483
+  },
+  "drift.ds7.ph.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.007982261640798226
+  },
+  "drift.ds7.ph.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.007636655948553055
+  },
+  "drift.ds7.ph.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds7.supervised_probe.test_auc_all": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.9177374603986698
+  },
+  "drift.ds7.supervised_probe.test_auc_malicious": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.8400675506629972
+  },
+  "drift.ds7.supervised_probe.test_f1": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.56
+  },
+  "drift.ds7.supervised_probe.test_fpr": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.016199649737302976
+  },
+  "drift.ds7.supervised_probe.test_malicious_window_recall": {
+   "run_id": "drift_detector-20261023T124657Z",
+   "value": 0.19047619047619047
+  },
+  "drift.ds777.cusum.h": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 9.0
+  },
+  "drift.ds777.cusum.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.14814814814814814
+  },
+  "drift.ds777.cusum.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6590909090909091
+  },
+  "drift.ds777.cusum.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.01152073732718894
+  },
+  "drift.ds777.cusum.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds777.cusum.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6987951807228916
+  },
+  "drift.ds777.cusum.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6236559139784946
+  },
+  "drift.ds777.cusum.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.2962962962962963
+  },
+  "drift.ds777.cusum.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.644808743169399
+  },
+  "drift.ds777.cusum.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.014285714285714285
+  },
+  "drift.ds777.cusum.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds777.cusum.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6555555555555556
+  },
+  "drift.ds777.cusum.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6344086021505376
+  },
+  "drift.ds777.cusum.k": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.cusum.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 6
+  },
+  "drift.ds777.cusum.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds777.cusum.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 9
+  },
+  "drift.ds777.cusum.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 2.0
+  },
+  "drift.ds777.cusum.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.cusum.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.3
+  },
+  "drift.ds777.cusum.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 2
+  },
+  "drift.ds777.cusum.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds777.cusum.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 6
+  },
+  "drift.ds777.cusum.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 14.5
+  },
+  "drift.ds777.cusum.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 14.5
+  },
+  "drift.ds777.cusum.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.045454545454545456
+  },
+  "drift.ds777.cusum.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 6
+  },
+  "drift.ds777.cusum.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.5454545454545454
+  },
+  "drift.ds777.cusum.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 11
+  },
+  "drift.ds777.cusum.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.cusum.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.cusum.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.35294117647058826
+  },
+  "drift.ds777.cusum.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 5
+  },
+  "drift.ds777.cusum.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.cusum.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 5
+  },
+  "drift.ds777.cusum.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.cusum.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.cusum.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.5
+  },
+  "drift.ds777.cusum.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.18518518518518517
+  },
+  "drift.ds777.cusum.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.0013999066728884741
+  },
+  "drift.ds777.cusum.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.002129471890971039
+  },
+  "drift.ds777.cusum.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds777.ph.h": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 9.0
+  },
+  "drift.ds777.ph.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.14814814814814814
+  },
+  "drift.ds777.ph.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6590909090909091
+  },
+  "drift.ds777.ph.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.01152073732718894
+  },
+  "drift.ds777.ph.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds777.ph.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6987951807228916
+  },
+  "drift.ds777.ph.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6236559139784946
+  },
+  "drift.ds777.ph.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.18518518518518517
+  },
+  "drift.ds777.ph.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6516853932584269
+  },
+  "drift.ds777.ph.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.012442396313364055
+  },
+  "drift.ds777.ph.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds777.ph.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6823529411764706
+  },
+  "drift.ds777.ph.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6236559139784946
+  },
+  "drift.ds777.ph.k": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.ph.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 6
+  },
+  "drift.ds777.ph.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.6666666666666666
+  },
+  "drift.ds777.ph.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 9
+  },
+  "drift.ds777.ph.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 2.0
+  },
+  "drift.ds777.ph.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.ph.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.3
+  },
+  "drift.ds777.ph.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0
+  },
+  "drift.ds777.ph.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.0
+  },
+  "drift.ds777.ph.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 6
+  },
+  "drift.ds777.ph.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": NaN
+  },
+  "drift.ds777.ph.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": NaN
+  },
+  "drift.ds777.ph.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.0
+  },
+  "drift.ds777.ph.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 6
+  },
+  "drift.ds777.ph.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.5454545454545454
+  },
+  "drift.ds777.ph.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 11
+  },
+  "drift.ds777.ph.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.ph.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.ph.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.35294117647058826
+  },
+  "drift.ds777.ph.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 5
+  },
+  "drift.ds777.ph.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.ph.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 5
+  },
+  "drift.ds777.ph.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.ph.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 1.0
+  },
+  "drift.ds777.ph.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.4166666666666667
+  },
+  "drift.ds777.ph.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.07407407407407407
+  },
+  "drift.ds777.ph.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.0009332711152589828
+  },
+  "drift.ds777.ph.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.0008517887563884157
+  },
+  "drift.ds777.ph.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.8333333333333334
+  },
+  "drift.ds777.supervised_probe.test_auc_all": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.9636341112928002
+  },
+  "drift.ds777.supervised_probe.test_auc_malicious": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.9313678257226644
+  },
+  "drift.ds777.supervised_probe.test_f1": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.5465116279069767
+  },
+  "drift.ds777.supervised_probe.test_fpr": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.014746543778801843
+  },
+  "drift.ds777.supervised_probe.test_malicious_window_recall": {
+   "run_id": "drift_detector-20261023T124725Z",
+   "value": 0.1590909090909091
+  },
+  "drift.ds99.cusum.h": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 8.0
+  },
+  "drift.ds99.cusum.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0
+  },
+  "drift.ds99.cusum.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.6382978723404257
+  },
+  "drift.ds99.cusum.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0008658008658008658
+  },
+  "drift.ds99.cusum.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0
+  },
+  "drift.ds99.cusum.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.9574468085106383
+  },
+  "drift.ds99.cusum.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.4787234042553192
+  },
+  "drift.ds99.cusum.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.3
+  },
+  "drift.ds99.cusum.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.618421052631579
+  },
+  "drift.ds99.cusum.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.004761904761904762
+  },
+  "drift.ds99.cusum.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds99.cusum.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.8103448275862069
+  },
+  "drift.ds99.cusum.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.5
+  },
+  "drift.ds99.cusum.k": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.0
+  },
+  "drift.ds99.cusum.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 4
+  },
+  "drift.ds99.cusum.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.4444444444444444
+  },
+  "drift.ds99.cusum.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 9
+  },
+  "drift.ds99.cusum.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.25
+  },
+  "drift.ds99.cusum.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0
+  },
+  "drift.ds99.cusum.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.36363636363636365
+  },
+  "drift.ds99.cusum.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 2
+  },
+  "drift.ds99.cusum.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.3333333333333333
+  },
+  "drift.ds99.cusum.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 6
+  },
+  "drift.ds99.cusum.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 12.0
+  },
+  "drift.ds99.cusum.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 12.0
+  },
+  "drift.ds99.cusum.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.041666666666666664
+  },
+  "drift.ds99.cusum.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 4
+  },
+  "drift.ds99.cusum.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.36363636363636365
+  },
+  "drift.ds99.cusum.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 11
+  },
+  "drift.ds99.cusum.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.75
+  },
+  "drift.ds99.cusum.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.0
+  },
+  "drift.ds99.cusum.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.26666666666666666
+  },
+  "drift.ds99.cusum.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 5
+  },
+  "drift.ds99.cusum.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.0
+  },
+  "drift.ds99.cusum.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 5
+  },
+  "drift.ds99.cusum.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.6
+  },
+  "drift.ds99.cusum.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.0
+  },
+  "drift.ds99.cusum.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.45
+  },
+  "drift.ds99.cusum.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.3
+  },
+  "drift.ds99.cusum.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0
+  },
+  "drift.ds99.cusum.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.004401760704281713
+  },
+  "drift.ds99.cusum.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.0
+  },
+  "drift.ds99.ph.h": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 9.0
+  },
+  "drift.ds99.ph.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0
+  },
+  "drift.ds99.ph.hybrid_only.f1": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.6382978723404257
+  },
+  "drift.ds99.ph.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0008658008658008658
+  },
+  "drift.ds99.ph.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0
+  },
+  "drift.ds99.ph.hybrid_only.precision": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.9574468085106383
+  },
+  "drift.ds99.ph.hybrid_only.recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.4787234042553192
+  },
+  "drift.ds99.ph.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.16666666666666666
+  },
+  "drift.ds99.ph.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.609271523178808
+  },
+  "drift.ds99.ph.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.004761904761904762
+  },
+  "drift.ds99.ph.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.16666666666666666
+  },
+  "drift.ds99.ph.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.8070175438596491
+  },
+  "drift.ds99.ph.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.48936170212765956
+  },
+  "drift.ds99.ph.k": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.0
+  },
+  "drift.ds99.ph.per_class.compromised_account.detected": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 2
+  },
+  "drift.ds99.ph.per_class.compromised_account.episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.2222222222222222
+  },
+  "drift.ds99.ph.per_class.compromised_account.episodes": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 9
+  },
+  "drift.ds99.ph.per_class.compromised_account.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0
+  },
+  "drift.ds99.ph.per_class.compromised_account.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0
+  },
+  "drift.ds99.ph.per_class.compromised_account.window_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.18181818181818182
+  },
+  "drift.ds99.ph.per_class.malicious_insider.detected": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1
+  },
+  "drift.ds99.ph.per_class.malicious_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.16666666666666666
+  },
+  "drift.ds99.ph.per_class.malicious_insider.episodes": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 6
+  },
+  "drift.ds99.ph.per_class.malicious_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 16.0
+  },
+  "drift.ds99.ph.per_class.malicious_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 16.0
+  },
+  "drift.ds99.ph.per_class.malicious_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.020833333333333332
+  },
+  "drift.ds99.ph.per_class.negligent_insider.detected": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 4
+  },
+  "drift.ds99.ph.per_class.negligent_insider.episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.36363636363636365
+  },
+  "drift.ds99.ph.per_class.negligent_insider.episodes": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 11
+  },
+  "drift.ds99.ph.per_class.negligent_insider.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.5
+  },
+  "drift.ds99.ph.per_class.negligent_insider.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.0
+  },
+  "drift.ds99.ph.per_class.negligent_insider.window_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.26666666666666666
+  },
+  "drift.ds99.ph.per_class.overscoped_thirdparty.detected": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 4
+  },
+  "drift.ds99.ph.per_class.overscoped_thirdparty.episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.8
+  },
+  "drift.ds99.ph.per_class.overscoped_thirdparty.episodes": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 5
+  },
+  "drift.ds99.ph.per_class.overscoped_thirdparty.ttd_hours_mean": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.5
+  },
+  "drift.ds99.ph.per_class.overscoped_thirdparty.ttd_hours_median": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.0
+  },
+  "drift.ds99.ph.per_class.overscoped_thirdparty.window_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.2
+  },
+  "drift.ds99.ph.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.16666666666666666
+  },
+  "drift.ds99.ph.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0017543859649122807
+  },
+  "drift.ds99.ph.val_fa_rate": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0024009603841536613
+  },
+  "drift.ds99.ph.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 1.0
+  },
+  "drift.ds99.supervised_probe.test_auc_all": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.9237542599244727
+  },
+  "drift.ds99.supervised_probe.test_auc_malicious": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.8589556277056277
+  },
+  "drift.ds99.supervised_probe.test_f1": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.5521472392638037
+  },
+  "drift.ds99.supervised_probe.test_fpr": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.01038961038961039
+  },
+  "drift.ds99.supervised_probe.test_malicious_window_recall": {
+   "run_id": "drift_detector-20261023T124714Z",
+   "value": 0.0625
+  },
+  "drift.summary.cusum.h.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 16.0
+  },
+  "drift.summary.cusum.h.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 9.5
+  },
+  "drift.summary.cusum.h.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 4.0
+  },
+  "drift.summary.cusum.h.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.h.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 3.4075080500434787
+  },
+  "drift.summary.cusum.hybrid_only.f1.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6973684210526316
+  },
+  "drift.summary.cusum.hybrid_only.f1.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6347775650793376
+  },
+  "drift.summary.cusum.hybrid_only.f1.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.510948905109489
+  },
+  "drift.summary.cusum.hybrid_only.f1.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.hybrid_only.f1.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.04912004412025508
+  },
+  "drift.summary.cusum.hybrid_only.fpr.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.01152073732718894
+  },
+  "drift.summary.cusum.hybrid_only.fpr.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.002545006383264642
+  },
+  "drift.summary.cusum.hybrid_only.fpr.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0
+  },
+  "drift.summary.cusum.hybrid_only.fpr.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.hybrid_only.fpr.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.003343549788645475
+  },
+  "drift.summary.cusum.hybrid_only.malicious_episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6666666666666666
+  },
+  "drift.summary.cusum.hybrid_only.malicious_episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.13333333333333333
+  },
+  "drift.summary.cusum.hybrid_only.malicious_episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0
+  },
+  "drift.summary.cusum.hybrid_only.malicious_episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.hybrid_only.malicious_episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.21942686286812776
+  },
+  "drift.summary.cusum.hybrid_only.recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6236559139784946
+  },
+  "drift.summary.cusum.hybrid_only.recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.4943850703127162
+  },
+  "drift.summary.cusum.hybrid_only.recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.36082474226804123
+  },
+  "drift.summary.cusum.hybrid_only.recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.hybrid_only.recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.06688904125850562
+  },
+  "drift.summary.cusum.hybrid_or_drift.f1.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6578947368421053
+  },
+  "drift.summary.cusum.hybrid_or_drift.f1.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6187845803927005
+  },
+  "drift.summary.cusum.hybrid_or_drift.f1.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.5714285714285714
+  },
+  "drift.summary.cusum.hybrid_or_drift.f1.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.hybrid_or_drift.f1.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.029276580331383237
+  },
+  "drift.summary.cusum.hybrid_or_drift.fpr.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.014285714285714285
+  },
+  "drift.summary.cusum.hybrid_or_drift.fpr.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.008049682386389126
+  },
+  "drift.summary.cusum.hybrid_or_drift.fpr.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0026595744680851063
+  },
+  "drift.summary.cusum.hybrid_or_drift.fpr.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.hybrid_or_drift.fpr.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.003744381592991832
+  },
+  "drift.summary.cusum.hybrid_or_drift.malicious_episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.8333333333333334
+  },
+  "drift.summary.cusum.hybrid_or_drift.malicious_episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.5666666666666667
+  },
+  "drift.summary.cusum.hybrid_or_drift.malicious_episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.3333333333333333
+  },
+  "drift.summary.cusum.hybrid_or_drift.malicious_episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.hybrid_or_drift.malicious_episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.21081851067789198
+  },
+  "drift.summary.cusum.hybrid_or_drift.recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6344086021505376
+  },
+  "drift.summary.cusum.hybrid_or_drift.recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.5319382761962099
+  },
+  "drift.summary.cusum.hybrid_or_drift.recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.4639175257731959
+  },
+  "drift.summary.cusum.hybrid_or_drift.recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.hybrid_or_drift.recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.04817091228225964
+  },
+  "drift.summary.cusum.k.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 1.5
+  },
+  "drift.summary.cusum.k.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.75
+  },
+  "drift.summary.cusum.k.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.25
+  },
+  "drift.summary.cusum.k.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.k.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.408248290463863
+  },
+  "drift.summary.cusum.per_class.compromised_account.episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 1.0
+  },
+  "drift.summary.cusum.per_class.compromised_account.episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.5888888888888889
+  },
+  "drift.summary.cusum.per_class.compromised_account.episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.3333333333333333
+  },
+  "drift.summary.cusum.per_class.compromised_account.episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.per_class.compromised_account.episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.196331233788127
+  },
+  "drift.summary.cusum.per_class.malicious_insider.episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.8333333333333334
+  },
+  "drift.summary.cusum.per_class.malicious_insider.episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.4833333333333333
+  },
+  "drift.summary.cusum.per_class.malicious_insider.episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.3333333333333333
+  },
+  "drift.summary.cusum.per_class.malicious_insider.episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.per_class.malicious_insider.episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.18341748910243533
+  },
+  "drift.summary.cusum.per_class.malicious_insider.ttd_hours_median.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 14.5
+  },
+  "drift.summary.cusum.per_class.malicious_insider.ttd_hours_median.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 8.9
+  },
+  "drift.summary.cusum.per_class.malicious_insider.ttd_hours_median.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 5.0
+  },
+  "drift.summary.cusum.per_class.malicious_insider.ttd_hours_median.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.per_class.malicious_insider.ttd_hours_median.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 3.8930136855083823
+  },
+  "drift.summary.cusum.per_class.negligent_insider.episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 1.0
+  },
+  "drift.summary.cusum.per_class.negligent_insider.episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.48181818181818176
+  },
+  "drift.summary.cusum.per_class.negligent_insider.episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.2727272727272727
+  },
+  "drift.summary.cusum.per_class.negligent_insider.episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.per_class.negligent_insider.episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.20574842662749038
+  },
+  "drift.summary.cusum.per_class.overscoped_thirdparty.episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 1.0
+  },
+  "drift.summary.cusum.per_class.overscoped_thirdparty.episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 1.0
+  },
+  "drift.summary.cusum.per_class.overscoped_thirdparty.episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 1.0
+  },
+  "drift.summary.cusum.per_class.overscoped_thirdparty.episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.per_class.overscoped_thirdparty.episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0
+  },
+  "drift.summary.cusum.test_false_alarm_rate_benign_bursts.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.3
+  },
+  "drift.summary.cusum.test_false_alarm_rate_benign_bursts.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.2027165610570783
+  },
+  "drift.summary.cusum.test_false_alarm_rate_benign_bursts.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.125
+  },
+  "drift.summary.cusum.test_false_alarm_rate_benign_bursts.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.test_false_alarm_rate_benign_bursts.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.05677918323477498
+  },
+  "drift.summary.cusum.test_false_alarm_rate_ordinary_negatives.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.006675567423230975
+  },
+  "drift.summary.cusum.test_false_alarm_rate_ordinary_negatives.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.003178666442934991
+  },
+  "drift.summary.cusum.test_false_alarm_rate_ordinary_negatives.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0
+  },
+  "drift.summary.cusum.test_false_alarm_rate_ordinary_negatives.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.cusum.test_false_alarm_rate_ordinary_negatives.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0024681388352066217
+  },
+  "drift.summary.ph.h.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 19.0
+  },
+  "drift.summary.ph.h.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10.8
+  },
+  "drift.summary.ph.h.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 8.0
+  },
+  "drift.summary.ph.h.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.h.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 3.259175083088085
+  },
+  "drift.summary.ph.hybrid_only.f1.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6973684210526316
+  },
+  "drift.summary.ph.hybrid_only.f1.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6347775650793376
+  },
+  "drift.summary.ph.hybrid_only.f1.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.510948905109489
+  },
+  "drift.summary.ph.hybrid_only.f1.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.hybrid_only.f1.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.04912004412025508
+  },
+  "drift.summary.ph.hybrid_only.fpr.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.01152073732718894
+  },
+  "drift.summary.ph.hybrid_only.fpr.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.002545006383264642
+  },
+  "drift.summary.ph.hybrid_only.fpr.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0
+  },
+  "drift.summary.ph.hybrid_only.fpr.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.hybrid_only.fpr.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.003343549788645475
+  },
+  "drift.summary.ph.hybrid_only.malicious_episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6666666666666666
+  },
+  "drift.summary.ph.hybrid_only.malicious_episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.13333333333333333
+  },
+  "drift.summary.ph.hybrid_only.malicious_episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0
+  },
+  "drift.summary.ph.hybrid_only.malicious_episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.hybrid_only.malicious_episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.21942686286812776
+  },
+  "drift.summary.ph.hybrid_only.recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6236559139784946
+  },
+  "drift.summary.ph.hybrid_only.recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.4943850703127162
+  },
+  "drift.summary.ph.hybrid_only.recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.36082474226804123
+  },
+  "drift.summary.ph.hybrid_only.recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.hybrid_only.recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.06688904125850562
+  },
+  "drift.summary.ph.hybrid_or_drift.f1.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6516853932584269
+  },
+  "drift.summary.ph.hybrid_or_drift.f1.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.5862217659988236
+  },
+  "drift.summary.ph.hybrid_or_drift.f1.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.4855491329479769
+  },
+  "drift.summary.ph.hybrid_or_drift.f1.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.hybrid_or_drift.f1.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0505478410912535
+  },
+  "drift.summary.ph.hybrid_or_drift.fpr.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.019695613249776187
+  },
+  "drift.summary.ph.hybrid_or_drift.fpr.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.01172647773852039
+  },
+  "drift.summary.ph.hybrid_or_drift.fpr.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0035460992907801418
+  },
+  "drift.summary.ph.hybrid_or_drift.fpr.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.hybrid_or_drift.fpr.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0057591661297929815
+  },
+  "drift.summary.ph.hybrid_or_drift.malicious_episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6666666666666666
+  },
+  "drift.summary.ph.hybrid_or_drift.malicious_episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.55
+  },
+  "drift.summary.ph.hybrid_or_drift.malicious_episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.16666666666666666
+  },
+  "drift.summary.ph.hybrid_or_drift.malicious_episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.hybrid_or_drift.malicious_episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.15811388300841897
+  },
+  "drift.summary.ph.hybrid_or_drift.recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6236559139784946
+  },
+  "drift.summary.ph.hybrid_or_drift.recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.525883445751792
+  },
+  "drift.summary.ph.hybrid_or_drift.recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.4329896907216495
+  },
+  "drift.summary.ph.hybrid_or_drift.recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.hybrid_or_drift.recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.05098689678344097
+  },
+  "drift.summary.ph.k.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 1.0
+  },
+  "drift.summary.ph.k.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.5
+  },
+  "drift.summary.ph.k.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.25
+  },
+  "drift.summary.ph.k.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.k.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.28867513459481287
+  },
+  "drift.summary.ph.per_class.compromised_account.episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6666666666666666
+  },
+  "drift.summary.ph.per_class.compromised_account.episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.47777777777777775
+  },
+  "drift.summary.ph.per_class.compromised_account.episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.1111111111111111
+  },
+  "drift.summary.ph.per_class.compromised_account.episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.per_class.compromised_account.episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.18921540406584886
+  },
+  "drift.summary.ph.per_class.malicious_insider.episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6666666666666666
+  },
+  "drift.summary.ph.per_class.malicious_insider.episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.4333333333333333
+  },
+  "drift.summary.ph.per_class.malicious_insider.episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0
+  },
+  "drift.summary.ph.per_class.malicious_insider.episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.per_class.malicious_insider.episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.2249828525701843
+  },
+  "drift.summary.ph.per_class.malicious_insider.ttd_hours_median.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 16.0
+  },
+  "drift.summary.ph.per_class.malicious_insider.ttd_hours_median.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 8.61111111111111
+  },
+  "drift.summary.ph.per_class.malicious_insider.ttd_hours_median.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 5.0
+  },
+  "drift.summary.ph.per_class.malicious_insider.ttd_hours_median.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 9
+  },
+  "drift.summary.ph.per_class.malicious_insider.ttd_hours_median.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 3.3426951866885966
+  },
+  "drift.summary.ph.per_class.negligent_insider.episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6363636363636364
+  },
+  "drift.summary.ph.per_class.negligent_insider.episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.39090909090909093
+  },
+  "drift.summary.ph.per_class.negligent_insider.episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.18181818181818182
+  },
+  "drift.summary.ph.per_class.negligent_insider.episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.per_class.negligent_insider.episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.13585764709975692
+  },
+  "drift.summary.ph.per_class.overscoped_thirdparty.episode_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 1.0
+  },
+  "drift.summary.ph.per_class.overscoped_thirdparty.episode_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.8600000000000001
+  },
+  "drift.summary.ph.per_class.overscoped_thirdparty.episode_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.4
+  },
+  "drift.summary.ph.per_class.overscoped_thirdparty.episode_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.per_class.overscoped_thirdparty.episode_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.18973665961010275
+  },
+  "drift.summary.ph.test_false_alarm_rate_benign_bursts.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.26666666666666666
+  },
+  "drift.summary.ph.test_false_alarm_rate_benign_bursts.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.142571347873072
+  },
+  "drift.summary.ph.test_false_alarm_rate_benign_bursts.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.037037037037037035
+  },
+  "drift.summary.ph.test_false_alarm_rate_benign_bursts.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.test_false_alarm_rate_benign_bursts.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.07039273494150325
+  },
+  "drift.summary.ph.test_false_alarm_rate_ordinary_negatives.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0167420814479638
+  },
+  "drift.summary.ph.test_false_alarm_rate_ordinary_negatives.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.007715518696877641
+  },
+  "drift.summary.ph.test_false_alarm_rate_ordinary_negatives.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0009332711152589828
+  },
+  "drift.summary.ph.test_false_alarm_rate_ordinary_negatives.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.ph.test_false_alarm_rate_ordinary_negatives.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.005688294183441983
+  },
+  "drift.summary.supervised_probe.test_auc_all.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.9636341112928002
+  },
+  "drift.summary.supervised_probe.test_auc_all.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.9289835907258727
+  },
+  "drift.summary.supervised_probe.test_auc_all.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.8958182805600812
+  },
+  "drift.summary.supervised_probe.test_auc_all.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.supervised_probe.test_auc_all.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.019825994545223047
+  },
+  "drift.summary.supervised_probe.test_auc_malicious.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.9313678257226644
+  },
+  "drift.summary.supervised_probe.test_auc_malicious.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.8699475418868676
+  },
+  "drift.summary.supervised_probe.test_auc_malicious.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.8221021987999738
+  },
+  "drift.summary.supervised_probe.test_auc_malicious.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.supervised_probe.test_auc_malicious.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.03467299312672682
+  },
+  "drift.summary.supervised_probe.test_f1.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.6237623762376238
+  },
+  "drift.summary.supervised_probe.test_f1.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.5542307653390031
+  },
+  "drift.summary.supervised_probe.test_f1.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.4903225806451614
+  },
+  "drift.summary.supervised_probe.test_f1.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.supervised_probe.test_f1.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.03488484717954607
+  },
+  "drift.summary.supervised_probe.test_malicious_window_recall.max": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.43137254901960786
+  },
+  "drift.summary.supervised_probe.test_malicious_window_recall.mean": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.2140133432483245
+  },
+  "drift.summary.supervised_probe.test_malicious_window_recall.min": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.0
+  },
+  "drift.summary.supervised_probe.test_malicious_window_recall.n": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 10
+  },
+  "drift.summary.supervised_probe.test_malicious_window_recall.sd": {
+   "run_id": "drift_detector-20261023T124730Z",
+   "value": 0.1499870782827914
+  },
   "generation.s1.active_sessions": {
    "run_id": "generate_sessions-20261023T113805Z",
    "value": 16326
@@ -150609,6 +154929,413 @@
      42,
      7,
      2024
+    ]
+   }
+  },
+  "drift_detector-20261023T124627Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py --seeds 42",
+   "date_utc": "2026-10-23T12:46:27+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.ds42"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.ds42": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "data_and_train": 42
+   }
+  },
+  "drift_detector-20261023T124653Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+   "date_utc": "2026-10-23T12:46:53+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.ds42"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.ds42": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "data_and_train": 42
+   }
+  },
+  "drift_detector-20261023T124657Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+   "date_utc": "2026-10-23T12:46:57+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.ds7"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.ds7": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "data_and_train": 7
+   }
+  },
+  "drift_detector-20261023T124701Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+   "date_utc": "2026-10-23T12:47:01+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.ds2024"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.ds2024": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "data_and_train": 2024
+   }
+  },
+  "drift_detector-20261023T124705Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+   "date_utc": "2026-10-23T12:47:05+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.ds1"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.ds1": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "data_and_train": 1
+   }
+  },
+  "drift_detector-20261023T124709Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+   "date_utc": "2026-10-23T12:47:09+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.ds13"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.ds13": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "data_and_train": 13
+   }
+  },
+  "drift_detector-20261023T124714Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+   "date_utc": "2026-10-23T12:47:14+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.ds99"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.ds99": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "data_and_train": 99
+   }
+  },
+  "drift_detector-20261023T124718Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+   "date_utc": "2026-10-23T12:47:18+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.ds123"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.ds123": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "data_and_train": 123
+   }
+  },
+  "drift_detector-20261023T124722Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+   "date_utc": "2026-10-23T12:47:22+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.ds314"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.ds314": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "data_and_train": 314
+   }
+  },
+  "drift_detector-20261023T124725Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+   "date_utc": "2026-10-23T12:47:25+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.ds777"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.ds777": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "data_and_train": 777
+   }
+  },
+  "drift_detector-20261023T124729Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+   "date_utc": "2026-10-23T12:47:29+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.ds1001"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.ds1001": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "data_and_train": 1001
+   }
+  },
+  "drift_detector-20261023T124730Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+   "date_utc": "2026-10-23T12:47:30+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "drift.summary"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "drift.summary": "evaluation/drift_detector.py"
+   },
+   "seeds": {
+    "datasets": [
+     42,
+     7,
+     2024,
+     1,
+     13,
+     99,
+     123,
+     314,
+     777,
+     1001
     ]
    }
   },

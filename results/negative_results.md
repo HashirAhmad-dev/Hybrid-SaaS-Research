@@ -59,3 +59,14 @@ For balance (not negative): the hybrid's F1 is significantly above LSTM alone (+
 | N-028 | Isolation Forest gains least from louder attacks (0.728 to 0.820 from intensity 0.25 to 1.5) and stays near chance on the malicious-insider class (0.641 even at 1.5). | `sweep.summary.o0p0.*.iforest.*` |
 
 Neutral: adding benign look-alike episodes (overlap 0.5) lowers AUC by at most about 0.03 for any detector at default intensity.
+
+## T2.4: dedicated drift detector (keys `drift.summary.*`, `results/drift/drift_summary.csv`)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-029 | Adding a CUSUM drift detector next to the hybrid raises malicious-insider episode recall from 0.133 to 0.567, but lowers overall F1 from 0.635 to 0.619 and triples the false-positive rate (0.25 to 0.80 percent). It is a trade, not a free gain. | `drift.summary.cusum.hybrid_or_drift.*`, `.hybrid_only.*` |
+| N-030 | The drift detector fires on 20 percent of benign-burst hours, partly undoing the hybrid's burst suppression. | `drift.summary.cusum.test_false_alarm_rate_benign_bursts` |
+| N-031 | Page-Hinkley is worse than CUSUM on every summary metric (malicious episode recall 0.433, combined F1 0.586). | `drift.summary.ph.*` |
+| N-032 | Each test split holds only about 6 malicious episodes; per-dataset episode recall moves in steps of 1/6 and ranges 0.33 to 0.83 for CUSUM. | per-dataset keys `drift.ds<s>.cusum.per_class.malicious_insider.*` |
+
+The supervised probe (labels used for training, not deployable) reaches malicious-insider AUC 0.870 but only 0.214 window recall at its validation-F1 threshold. The unsupervised LSTM reaches AUC 0.744 on the same class. The signal is in the data; a threshold that serves all classes does not extract it.

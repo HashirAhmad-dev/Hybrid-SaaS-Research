@@ -1,0 +1,152 @@
+{
+ "provenance": {
+  "script": "evaluation/drift_detector.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py --seeds 42",
+  "seeds": {
+   "data_and_train": 42
+  },
+  "date_utc": "2026-10-23T12:47:57+00:00",
+  "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": "cpu"
+ },
+ "cusum": {
+  "k": 1.0,
+  "h": 8.0,
+  "val_fa_rate": 0.003304419661296985,
+  "val_malicious_episode_recall": 0.8333333333333334,
+  "test_false_alarm_rate_ordinary_negatives": 0.0008972633467922835,
+  "test_false_alarm_rate_benign_bursts": 0.14814814814814814,
+  "per_class": {
+   "malicious_insider": {
+    "episodes": 6,
+    "detected": 4,
+    "episode_recall": 0.6666666666666666,
+    "window_recall": 0.09803921568627451,
+    "ttd_hours_median": 6.0,
+    "ttd_hours_mean": 8.5
+   },
+   "compromised_account": {
+    "episodes": 9,
+    "detected": 4,
+    "episode_recall": 0.4444444444444444,
+    "window_recall": 0.3076923076923077,
+    "ttd_hours_median": 1.0,
+    "ttd_hours_mean": 2.0
+   },
+   "negligent_insider": {
+    "episodes": 11,
+    "detected": 6,
+    "episode_recall": 0.5454545454545454,
+    "window_recall": 0.3333333333333333,
+    "ttd_hours_median": 1.0,
+    "ttd_hours_mean": 1.3333333333333333
+   },
+   "overscoped_thirdparty": {
+    "episodes": 5,
+    "detected": 5,
+    "episode_recall": 1.0,
+    "window_recall": 0.5,
+    "ttd_hours_median": 1.0,
+    "ttd_hours_mean": 2.0
+   }
+  },
+  "hybrid_only": {
+   "precision": 1.0,
+   "recall": 0.4583333333333333,
+   "f1": 0.6285714285714286,
+   "fpr": 0.0,
+   "malicious_episode_recall": 0.16666666666666666,
+   "benign_burst_flag_rate": 0.0
+  },
+  "hybrid_or_drift": {
+   "precision": 0.8928571428571429,
+   "recall": 0.5208333333333334,
+   "f1": 0.6578947368421053,
+   "fpr": 0.0026595744680851063,
+   "malicious_episode_recall": 0.8333333333333334,
+   "benign_burst_flag_rate": 0.14814814814814814
+  }
+ },
+ "ph": {
+  "k": 0.25,
+  "h": 19.0,
+  "val_fa_rate": 0.0008261049153242462,
+  "val_malicious_episode_recall": 0.5,
+  "test_false_alarm_rate_ordinary_negatives": 0.0031404217137729925,
+  "test_false_alarm_rate_benign_bursts": 0.037037037037037035,
+  "per_class": {
+   "malicious_insider": {
+    "episodes": 6,
+    "detected": 3,
+    "episode_recall": 0.5,
+    "window_recall": 0.058823529411764705,
+    "ttd_hours_median": 7.0,
+    "ttd_hours_mean": 9.333333333333334
+   },
+   "compromised_account": {
+    "episodes": 9,
+    "detected": 1,
+    "episode_recall": 0.1111111111111111,
+    "window_recall": 0.07692307692307693,
+    "ttd_hours_median": 2.0,
+    "ttd_hours_mean": 2.0
+   },
+   "negligent_insider": {
+    "episodes": 11,
+    "detected": 3,
+    "episode_recall": 0.2727272727272727,
+    "window_recall": 0.16666666666666666,
+    "ttd_hours_median": 1.0,
+    "ttd_hours_mean": 1.0
+   },
+   "overscoped_thirdparty": {
+    "episodes": 5,
+    "detected": 2,
+    "episode_recall": 0.4,
+    "window_recall": 0.14285714285714285,
+    "ttd_hours_median": 3.5,
+    "ttd_hours_mean": 3.5
+   }
+  },
+  "hybrid_only": {
+   "precision": 1.0,
+   "recall": 0.4583333333333333,
+   "f1": 0.6285714285714286,
+   "fpr": 0.0,
+   "malicious_episode_recall": 0.16666666666666666,
+   "benign_burst_flag_rate": 0.0
+  },
+  "hybrid_or_drift": {
+   "precision": 0.8545454545454545,
+   "recall": 0.4895833333333333,
+   "f1": 0.6225165562913907,
+   "fpr": 0.0035460992907801418,
+   "malicious_episode_recall": 0.6666666666666666,
+   "benign_burst_flag_rate": 0.037037037037037035
+  }
+ },
+ "supervised_probe": {
+  "test_auc_all": 0.9196679225768322,
+  "test_auc_malicious": 0.8723056598525936,
+  "test_malicious_window_recall": 0.43137254901960786,
+  "test_f1": 0.5576923076923077,
+  "test_fpr": 0.023936170212765957,
+  "note": "supervised upper bound: trained with labels on TRAIN; not deployable as an unsupervised detector"
+ }
+}

@@ -38,6 +38,7 @@ if (-not $Quick) {
 }
 Stage "ablation"           @("-m", "evaluation.ablation")          # T2.1, ~3.5 min
 Stage "ablation_report"    @("-m", "evaluation.ablation_report")
+Stage "drift_detector"     @("-m", "evaluation.drift_detector")    # T2.4, ~2 min
 if (-not $Quick) {
     Stage "bootstrap"      @("-m", "evaluation.bootstrap_stats")   # T2.2, 10000 resamples, ~35 min
     Stage "difficulty_sweep" @("-m", "evaluation.difficulty_sweep") # T2.3, 27 new runs, ~45 min

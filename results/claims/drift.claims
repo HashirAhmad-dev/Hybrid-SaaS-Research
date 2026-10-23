@@ -1,0 +1,16 @@
+# T2.4 drift detector, mean over 10 datasets (written from the manifest)
+CUSUM malicious episode recall | drift.summary.cusum.per_class.malicious_insider.episode_recall.mean | 0.4833
+CUSUM malicious ttd median hours | drift.summary.cusum.per_class.malicious_insider.ttd_hours_median.mean | 8.9000
+CUSUM false alarm ordinary negatives | drift.summary.cusum.test_false_alarm_rate_ordinary_negatives.mean | 0.0032
+CUSUM false alarm benign bursts | drift.summary.cusum.test_false_alarm_rate_benign_bursts.mean | 0.2027
+Hybrid OR CUSUM F1 | drift.summary.cusum.hybrid_or_drift.f1.mean | 0.6188
+Hybrid OR CUSUM FPR | drift.summary.cusum.hybrid_or_drift.fpr.mean | 0.0080
+Hybrid OR CUSUM recall | drift.summary.cusum.hybrid_or_drift.recall.mean | 0.5319
+Hybrid OR CUSUM malicious episode recall | drift.summary.cusum.hybrid_or_drift.malicious_episode_recall.mean | 0.5667
+Hybrid only malicious episode recall | drift.summary.cusum.hybrid_only.malicious_episode_recall.mean | 0.1333
+Hybrid only F1 | drift.summary.cusum.hybrid_only.f1.mean | 0.6348
+Hybrid only FPR | drift.summary.cusum.hybrid_only.fpr.mean | 0.0025
+PH malicious episode recall | drift.summary.ph.per_class.malicious_insider.episode_recall.mean | 0.4333
+Hybrid OR PH F1 | drift.summary.ph.hybrid_or_drift.f1.mean | 0.5862
+Supervised probe malicious AUC | drift.summary.supervised_probe.test_auc_malicious.mean | 0.8699
+Supervised probe malicious window recall | drift.summary.supervised_probe.test_malicious_window_recall.mean | 0.2140

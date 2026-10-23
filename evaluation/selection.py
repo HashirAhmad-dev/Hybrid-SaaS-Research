@@ -222,3 +222,30 @@ def choose_by_val_auc(scores_by_param: Dict, y: np.ndarray, splits: Sequence):
         aucs[p] = auc_rank(np.asarray(s, dtype=float), np.asarray(y, dtype=bool))
     best = max(aucs, key=lambda p: (aucs[p], -list(aucs).index(p)))
     return best, aucs
+
+
+def choose_drift_params(alarms_by_param: Dict, y: np.ndarray, threat_class: np.ndarray,
+                        episode_id: np.ndarray, splits: Sequence, fa_budget: float,
+                        target: str = "malicious_insider"):
+    """Drift-detector (k, h): maximise TARGET-class episode recall on the selection
+    split subject to false-alarm rate (alarms on negative rows) <= fa_budget.
+    Ties: fewer false alarms, then grid order. Returns (param, table)."""
+    require_selection_split(splits, what="choose_drift_params")
+    y = np.asarray(y, dtype=bool)
+    tc, eid = np.asarray(threat_class), np.asarray(episode_id)
+    eps = [e for e in dict.fromkeys(eid[tc == target]) if e is not None and e == e]
+    table, best, best_key = {}, None, None
+    for p, a in alarms_by_param.items():
+        _check_aligned(splits, a, y)
+        a = np.asarray(a, dtype=bool)
+        fa = float(a[~y].mean()) if (~y).any() else 0.0
+        rec = float(np.mean([a[eid == e].any() for e in eps])) if eps else 0.0
+        table[p] = {"fa_rate": fa, "episode_recall": rec}
+        if fa > fa_budget:
+            continue
+        key = (rec, -fa)
+        if best is None or key > best_key:
+            best, best_key = p, key
+    if best is None:                       # nothing meets the budget: the quietest setting
+        best = min(table, key=lambda q: table[q]["fa_rate"])
+    return best, table

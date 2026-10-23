@@ -1,0 +1,152 @@
+{
+ "provenance": {
+  "script": "evaluation/drift_detector.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py",
+  "seeds": {
+   "data_and_train": 314
+  },
+  "date_utc": "2026-10-23T12:47:21+00:00",
+  "git_hash": "53a3bb382ae360a78ad48ce8c6c2274a6f198c2f",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": "cpu"
+ },
+ "cusum": {
+  "k": 0.5,
+  "h": 10.0,
+  "val_fa_rate": 0.009042334566378957,
+  "val_malicious_episode_recall": 0.6666666666666666,
+  "test_false_alarm_rate_ordinary_negatives": 0.005999077065066913,
+  "test_false_alarm_rate_benign_bursts": 0.28125,
+  "per_class": {
+   "malicious_insider": {
+    "episodes": 6,
+    "detected": 5,
+    "episode_recall": 0.8333333333333334,
+    "window_recall": 0.1111111111111111,
+    "ttd_hours_median": 6.0,
+    "ttd_hours_mean": 6.8
+   },
+   "compromised_account": {
+    "episodes": 9,
+    "detected": 6,
+    "episode_recall": 0.6666666666666666,
+    "window_recall": 0.3333333333333333,
+    "ttd_hours_median": 1.0,
+    "ttd_hours_mean": 1.3333333333333333
+   },
+   "negligent_insider": {
+    "episodes": 11,
+    "detected": 6,
+    "episode_recall": 0.5454545454545454,
+    "window_recall": 0.3333333333333333,
+    "ttd_hours_median": 1.0,
+    "ttd_hours_mean": 1.8333333333333333
+   },
+   "overscoped_thirdparty": {
+    "episodes": 5,
+    "detected": 5,
+    "episode_recall": 1.0,
+    "window_recall": 0.47368421052631576,
+    "ttd_hours_median": 1.0,
+    "ttd_hours_mean": 2.2
+   }
+  },
+  "hybrid_only": {
+   "precision": 0.9137931034482759,
+   "recall": 0.53,
+   "f1": 0.6708860759493671,
+   "fpr": 0.002273760800363802,
+   "malicious_episode_recall": 0.0,
+   "benign_burst_flag_rate": 0.0
+  },
+  "hybrid_or_drift": {
+   "precision": 0.6823529411764706,
+   "recall": 0.58,
+   "f1": 0.6270270270270271,
+   "fpr": 0.01227830832196453,
+   "malicious_episode_recall": 0.8333333333333334,
+   "benign_burst_flag_rate": 0.28125
+  }
+ },
+ "ph": {
+  "k": 0.25,
+  "h": 12.0,
+  "val_fa_rate": 0.009453349773941636,
+  "val_malicious_episode_recall": 0.8333333333333334,
+  "test_false_alarm_rate_ordinary_negatives": 0.010613751730503,
+  "test_false_alarm_rate_benign_bursts": 0.1875,
+  "per_class": {
+   "malicious_insider": {
+    "episodes": 6,
+    "detected": 3,
+    "episode_recall": 0.5,
+    "window_recall": 0.06666666666666667,
+    "ttd_hours_median": 9.0,
+    "ttd_hours_mean": 8.333333333333334
+   },
+   "compromised_account": {
+    "episodes": 9,
+    "detected": 6,
+    "episode_recall": 0.6666666666666666,
+    "window_recall": 0.3333333333333333,
+    "ttd_hours_median": 1.5,
+    "ttd_hours_mean": 1.5
+   },
+   "negligent_insider": {
+    "episodes": 11,
+    "detected": 3,
+    "episode_recall": 0.2727272727272727,
+    "window_recall": 0.16666666666666666,
+    "ttd_hours_median": 1.0,
+    "ttd_hours_mean": 1.6666666666666667
+   },
+   "overscoped_thirdparty": {
+    "episodes": 5,
+    "detected": 5,
+    "episode_recall": 1.0,
+    "window_recall": 0.2631578947368421,
+    "ttd_hours_median": 1.0,
+    "ttd_hours_mean": 2.4
+   }
+  },
+  "hybrid_only": {
+   "precision": 0.9137931034482759,
+   "recall": 0.53,
+   "f1": 0.6708860759493671,
+   "fpr": 0.002273760800363802,
+   "malicious_episode_recall": 0.0,
+   "benign_burst_flag_rate": 0.0
+  },
+  "hybrid_or_drift": {
+   "precision": 0.6222222222222222,
+   "recall": 0.56,
+   "f1": 0.5894736842105264,
+   "fpr": 0.015461573442473852,
+   "malicious_episode_recall": 0.5,
+   "benign_burst_flag_rate": 0.1875
+  }
+ },
+ "supervised_probe": {
+  "test_auc_all": 0.9444429286039109,
+  "test_auc_malicious": 0.8891718457884897,
+  "test_malicious_window_recall": 0.0,
+  "test_f1": 0.5194805194805194,
+  "test_fpr": 0.006366530241018645,
+  "note": "supervised upper bound: trained with labels on TRAIN; not deployable as an unsupervised detector"
+ }
+}
