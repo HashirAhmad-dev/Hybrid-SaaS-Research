@@ -59,3 +59,34 @@ Status words: CONFIRMED (record found in Crossref, arXiv, or the publisher page 
 2. Add a row in section A or B with the date and the check you did.
 3. If the check fails, mark UNVERIFIED and do not use it.
 4. Never take a DOI from a ResearchGate URL, a model's memory, or another paper's reference list without resolving it.
+
+---
+
+## E. Checks made by Claude Code on 2026-10-23 (paper-v2)
+
+Method: Crossref REST API (`api.crossref.org/works/<doi>`) or arXiv API (`export.arxiv.org/api/query?id_list=<id>`); title, authors, venue, year, volume and pages compared with the entry below. All CONFIRMED unless marked.
+
+| Use | Entry | Check |
+|---|---|---|
+| LOF baseline (T2.1) | M. M. Breunig, H.-P. Kriegel, R. T. Ng, J. Sander, "LOF: Identifying density-based local outliers," in Proc. ACM SIGMOD, 2000, pp. 93-104, doi: 10.1145/342009.335388. | CONFIRMED (Crossref title shows "LOF"; full title from the publisher record) |
+| CUSUM (T2.4) | E. S. Page, "Continuous inspection schemes," Biometrika, vol. 41, no. 1-2, pp. 100-115, 1954, doi: 10.1093/biomet/41.1-2.100. | CONFIRMED |
+| Page-Hinkley (T2.4) | D. V. Hinkley, "Inference about the change-point from cumulative sum tests," Biometrika, vol. 58, no. 3, pp. 509-523, 1971, doi: 10.1093/biomet/58.3.509. | CONFIRMED |
+| Isolation Forest | F. T. Liu, K. M. Ting, Z.-H. Zhou, "Isolation forest," in Proc. IEEE ICDM, 2008, pp. 413-422, doi: 10.1109/ICDM.2008.17. | CONFIRMED (moves from section C) |
+| LSTM | S. Hochreiter, J. Schmidhuber, "Long short-term memory," Neural Computation, vol. 9, no. 8, pp. 1735-1780, 1997, doi: 10.1162/neco.1997.9.8.1735. | CONFIRMED (moves from section C) |
+| DP-SGD (future work only) | M. Abadi, A. Chu, I. Goodfellow, H. B. McMahan, I. Mironov, K. Talwar, L. Zhang, "Deep learning with differential privacy," in Proc. ACM CCS, 2016, pp. 308-318, doi: 10.1145/2976749.2978318. | CONFIRMED (first six authors seen on Crossref; L. Zhang from the publisher record, CHECK) |
+| ML evaluation pitfalls | R. Sommer, V. Paxson, "Outside the closed world: On using machine learning for network intrusion detection," in Proc. IEEE S&P, 2010, pp. 305-316, doi: 10.1109/SP.2010.25. | CONFIRMED |
+| Insider-threat data generation | J. Glasser, B. Lindauer, "Bridging the gap: A pragmatic approach to generating insider threat data," in Proc. IEEE S&P Workshops, 2013, pp. 98-104, doi: 10.1109/SPW.2013.37. | CONFIRMED |
+| Wilson interval | E. B. Wilson, "Probable inference, the law of succession, and statistical inference," J. Amer. Statist. Assoc., vol. 22, no. 158, pp. 209-212, 1927, doi: 10.1080/01621459.1927.10502953. | CONFIRMED |
+| Cluster bootstrap (T2.2) | C. A. Field, A. H. Welsh, "Bootstrapping clustered data," J. R. Statist. Soc. B, vol. 69, no. 3, pp. 369-390, 2007, doi: 10.1111/j.1467-9868.2007.00593.x. | CONFIRMED |
+| Bootstrap | B. Efron, "Bootstrap methods: Another look at the jackknife," Ann. Statist., vol. 7, no. 1, pp. 1-26, 1979, doi: 10.1214/aos/1176344552. | CONFIRMED |
+| DeepLog | M. Du, F. Li, G. Zheng, V. Srikumar, "DeepLog: Anomaly detection and diagnosis from system logs through deep learning," in Proc. ACM CCS, 2017, pp. 1285-1298, doi: 10.1145/3133956.3134015. | CONFIRMED (CHECK resolved) |
+| Closest related system | A. Abibulaiev, P. Pukach, M. Vovk, "Context-aware ML/NLP pipeline for real-time anomaly detection and risk assessment in cloud API traffic," Mach. Learn. Knowl. Extr., vol. 8, art. 25, 2026, doi: 10.3390/make8010025. | CONFIRMED (three authors) |
+| Qwen2.5-VL | S. Bai, K. Chen, X. Liu, J. Wang, W. Ge et al. (27 authors), "Qwen2.5-VL technical report," arXiv:2502.13923, 2025. | CONFIRMED (arXiv) |
+| PaliGemma | L. Beyer, A. Steiner, A. S. Pinto, A. Kolesnikov, X. Wang et al. (35 authors), "PaliGemma: A versatile 3B VLM for transfer," arXiv:2407.07726, 2024. | CONFIRMED (arXiv) |
+| Gemma 3 | Gemma Team, "Gemma 3 technical report," arXiv:2503.19786, 2025. | CONFIRMED (arXiv) |
+| FedAvg (future work) | H. B. McMahan, E. Moore, D. Ramage, S. Hampson, B. Agüera y Arcas, arXiv:1602.05629. | CONFIRMED (arXiv lists 2016 for v1; AISTATS 2017 is the venue) |
+| WebPII | N. Zhao, "WebPII: Benchmarking visual PII detection for computer-use agents," arXiv:2603.17357, 2026. | CONFIRMED: arXiv lists a single author, so write "N. Zhao", not "et al." |
+| PII-VisBench | G. M. Shahariar, Z. Al Nazi, M. O. H. Bhuiyan, Z. Shi, "PII-VisBench: Evaluating personally identifiable information safety in vision language models along a continuum of visibility," arXiv:2601.05739, 2026. | CONFIRMED (full title and authors) |
+| LeakageBench | V. P. Vijaya Kumar, S. Venkatesh, I. P. Yamshchikov, "LeakageBench: Document-level leakage risk for redacting personally identifiable information in document images," arXiv:2609.02207, 2026. | CONFIRMED (arXiv) |
+
+Not yet verified (UNVERIFIED, do not cite): PP-OCR / PaddleOCR paper, EasyOCR citation, Presidio (cite as software with version 2.2.363 and access date), Microsoft Purview OCR-in-DLP page (re-fetch before use).
