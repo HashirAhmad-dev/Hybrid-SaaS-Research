@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Slow-drift detectors beside the hybrid, mean $\pm$ s.d.\ over 10 datasets. Episode recall is the share of malicious-insider episodes with at least one alarm.}
+\label{tab:drift}
+\begin{tabular}{lccccc}
+\hline
+System & Malicious episode recall & Median time to detect (h) & FPR & F1 & Burst alarm rate \\
+\hline
+Hybrid only & 0.133 $\pm$ 0.219 & n/a & 0.003 $\pm$ 0.003 & 0.635 $\pm$ 0.049 & n/a \\
+Hybrid OR CUSUM & 0.567 $\pm$ 0.211 & 8.900 $\pm$ 3.893 & 0.008 $\pm$ 0.004 & 0.619 $\pm$ 0.029 & 0.203 $\pm$ 0.057 \\
+Hybrid OR Page-Hinkley & 0.550 $\pm$ 0.158 & 8.611 $\pm$ 3.343 & 0.012 $\pm$ 0.006 & 0.586 $\pm$ 0.051 & 0.143 $\pm$ 0.070 \\
+\hline
+\end{tabular}
+\end{table}

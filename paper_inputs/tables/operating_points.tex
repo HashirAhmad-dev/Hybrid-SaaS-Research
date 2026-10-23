@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Operating points of the anomaly engine. Every setting is chosen on validation; values are test, mean $\pm$ s.d.\ over 10 generated datasets.}
+\label{tab:oppoints}
+\begin{tabular}{lcccc}
+\hline
+Operating point & Recall & FPR & F1 & Malicious recall \\
+\hline
+F1-optimal flag (val) & 0.494 $\pm$ 0.067 & 0.003 $\pm$ 0.003 & 0.635 $\pm$ 0.049 & 0.029 $\pm$ 0.063 \\
+Insider-oriented flag (val, FPR at most 5\%) & 0.663 $\pm$ 0.063 & 0.050 $\pm$ 0.009 & 0.471 $\pm$ 0.048 & 0.323 $\pm$ 0.130 \\
+SBRS ALERT or BLOCK, shipped bands & 0.574 $\pm$ 0.061 & 0.044 $\pm$ 0.008 & 0.441 $\pm$ 0.060 & 0.274 $\pm$ 0.107 \\
+SBRS BLOCK only, shipped bands & 0.345 $\pm$ 0.036 & 0.006 $\pm$ 0.002 & 0.468 $\pm$ 0.039 & 0.048 $\pm$ 0.057 \\
+SBRS ALERT or BLOCK, per-dataset val bands & 0.589 $\pm$ 0.083 & 0.047 $\pm$ 0.006 & 0.438 $\pm$ 0.061 & 0.286 $\pm$ 0.119 \\
+F1-optimal flag OR CUSUM drift alarm (malicious: episode recall) & 0.532 $\pm$ 0.048 & 0.008 $\pm$ 0.004 & 0.619 $\pm$ 0.029 & 0.567 $\pm$ 0.211 \\
+\hline
+\end{tabular}
+\end{table}

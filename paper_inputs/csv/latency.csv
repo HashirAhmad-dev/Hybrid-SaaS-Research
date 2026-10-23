@@ -1,0 +1,4 @@
+Tier,n,p50 (ms),p95 (ms),p99 (ms)
+"Tier 1 inline, warm",1000,33.7,40.5,44.6
+"Tier 1, first request after start",5,9004,9144,9167
+Tier 2 hold (EasyOCR),20,3435,5256,5427
