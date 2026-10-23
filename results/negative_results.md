@@ -39,3 +39,13 @@ when a later run looks better; later runs are added below with their own run id.
 | N-020 | Max fusion beats the paper's weighted mean on AUC (0.855 vs 0.821) and on R@5%FPR, but loses on F1 (0.605 vs 0.629). No fusion form wins on every metric. | `ablation.summary.hybrid_max.*` |
 | N-021 | The LSTM is the only component with signal on slow drift (malicious-insider AUC 0.744, recall 0.170 at its own F1 threshold), and the weighted fusion throws most of it away (hybrid malicious recall 0.027). | `ablation.summary.lstm.per_class.malicious_insider.*` |
 | N-022 | LOF at the sklearn default k=20 is below chance on this data (injected training-period attacks form dense clusters); with k chosen on validation (200 to 500) it reaches AUC 0.779 but AP only 0.246. | `ablation.summary.lof.*`, D-008 |
+
+## T2.2: cluster bootstrap, paired comparisons (keys `stats.*`, `results/stats/paired_vs_hybrid.csv`)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-023 | Hybrid minus Isolation Forest F1 = 0.003, 95 percent cluster-bootstrap CI [-0.013, 0.020]. The hybrid is not shown to beat the forest on F1. | `stats.iforest.paired_vs_hybrid.f1.*` |
+| N-024 | The hybrid's AUC is significantly BELOW three alternatives: LSTM alone (-0.048, CI upper bound -0.024), per-user z-score (-0.027, CI upper bound -0.002), and max fusion (-0.034, CI upper bound -0.016). | `stats.lstm/zscore/hybrid_max.paired_vs_hybrid.auc.*` |
+| N-025 | With honest clustering, hybrid malicious-insider window recall is 0.027 with CI [0.008, 0.048]. | `stats.hybrid_weighted.recall_malicious_insider.*` |
+
+For balance (not negative): the hybrid's F1 is significantly above LSTM alone (+0.100, CI lower 0.062), per-user z-score (+0.075, CI lower 0.046), LOF (+0.179) and EWMA (+0.518, CI lower 0.454).

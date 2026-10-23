@@ -30,6 +30,9 @@ if [ "$QUICK" = 0 ]; then
 fi
 stage ablation          -m evaluation.ablation          # T2.1, ~3.5 min
 stage ablation_report   -m evaluation.ablation_report
+if [ "$QUICK" = 0 ]; then
+  stage bootstrap       -m evaluation.bootstrap_stats   # T2.2, ~35 min
+fi
 # Later paper-v2 stages are appended here as their tasks land.
 
 stage check_numbers     tools/check_numbers.py results/claims --quiet

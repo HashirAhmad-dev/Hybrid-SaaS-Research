@@ -2,19 +2,19 @@
 
 After any restart or context compaction: re-read CLAUDE.md, this file and docs/FIXES_SUMMARY.md first.
 
-- Iteration: 6
-- Current task: T2.2
-- Last evidence path: results/ablation/, logs/t2.1_ablation.log
+- Iteration: 7
+- Current task: T2.3
+- Last evidence path: results/stats/
 - Open gates: Q-001 (CERT, default skip applied). Phase 1 gate PASSED 2026-10-23.
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)
-- Goal: T2.2 cluster bootstrap (users then episodes, 10000 resamples, fixed seed) for headline numbers; paired hybrid vs each baseline; per-class confusion; Wilson as secondary.
-- Smallest change: evaluation/bootstrap_stats.py (drafted) over the T2.1 row_scores.
-- Verify: run twice identical; hand case for bootstrap mechanics in a unit test; claims checked.
+- Goal: T2.3 difficulty sweep (5 intensities x 2 benign overlaps x 3 seeds), plot detection vs intensity.
+- Smallest change: generator knobs (done, defaults byte-identical) + evaluation/difficulty_sweep.py.
+- Verify: tests/test_generator_defaults.py; one cell rerun identical; figure check.
 
 ## Next action
-Start T2.2.
+Start T2.3.
 
 ## Status table
 
@@ -27,7 +27,7 @@ Start T2.2.
 | T1.4 | M | DONE | |
 | T1.5 | M | DONE | |
 | T2.1 | M | DONE | |
-| T2.2 | M | PENDING | |
+| T2.2 | M | DONE | |
 | T2.3 | M | PENDING | |
 | T2.4 | M | PENDING | |
 | T2.5 | M | PENDING | |

@@ -1,0 +1,27 @@
+# T2.2 cluster bootstrap (users then episodes, 10000 resamples, seed 20261023), mean over 10 datasets
+Hybrid F1 point | stats.hybrid_weighted.f1.point | 0.629
+Hybrid F1 CI lo | stats.hybrid_weighted.f1.ci_lo | 0.564
+Hybrid F1 CI hi | stats.hybrid_weighted.f1.ci_hi | 0.702
+Hybrid AUC CI lo | stats.hybrid_weighted.auc.ci_lo | 0.794
+Hybrid AUC CI hi | stats.hybrid_weighted.auc.ci_hi | 0.865
+Hybrid FPR point | stats.hybrid_weighted.fpr.point | 0.0023
+Hybrid malicious recall point | stats.hybrid_weighted.recall_malicious_insider.point | 0.027
+Hybrid malicious recall CI hi | stats.hybrid_weighted.recall_malicious_insider.ci_hi | 0.048
+IF F1 CI lo | stats.iforest.f1.ci_lo | 0.561
+IF F1 CI hi | stats.iforest.f1.ci_hi | 0.701
+LSTM AUC CI lo | stats.lstm.auc.ci_lo | 0.845
+LSTM AUC CI hi | stats.lstm.auc.ci_hi | 0.902
+Hybrid minus IF F1 | stats.iforest.paired_vs_hybrid.f1.hybrid_minus_this | 0.003
+Hybrid minus IF F1 CI lo | stats.iforest.paired_vs_hybrid.f1.ci_lo | -0.013
+Hybrid minus IF F1 CI hi | stats.iforest.paired_vs_hybrid.f1.ci_hi | 0.020
+Hybrid minus IF AUC | stats.iforest.paired_vs_hybrid.auc.hybrid_minus_this | 0.043
+Hybrid minus IF AUC CI lo | stats.iforest.paired_vs_hybrid.auc.ci_lo | 0.024
+Hybrid minus LSTM AUC | stats.lstm.paired_vs_hybrid.auc.hybrid_minus_this | -0.048
+Hybrid minus LSTM AUC CI hi | stats.lstm.paired_vs_hybrid.auc.ci_hi | -0.024
+Hybrid minus LSTM F1 | stats.lstm.paired_vs_hybrid.f1.hybrid_minus_this | 0.100
+Hybrid minus LSTM F1 CI lo | stats.lstm.paired_vs_hybrid.f1.ci_lo | 0.062
+Hybrid minus z-score F1 CI lo | stats.zscore.paired_vs_hybrid.f1.ci_lo | 0.046
+Hybrid minus z-score AUC CI hi | stats.zscore.paired_vs_hybrid.auc.ci_hi | -0.002
+Hybrid minus EWMA F1 | stats.ewma.paired_vs_hybrid.f1.hybrid_minus_this | 0.518
+Hybrid minus EWMA F1 CI lo | stats.ewma.paired_vs_hybrid.f1.ci_lo | 0.454
+Hybrid minus max-fusion AUC CI hi | stats.hybrid_max.paired_vs_hybrid.auc.ci_hi | -0.016

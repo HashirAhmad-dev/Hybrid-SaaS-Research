@@ -38,6 +38,9 @@ if (-not $Quick) {
 }
 Stage "ablation"           @("-m", "evaluation.ablation")          # T2.1, ~3.5 min
 Stage "ablation_report"    @("-m", "evaluation.ablation_report")
+if (-not $Quick) {
+    Stage "bootstrap"      @("-m", "evaluation.bootstrap_stats")   # T2.2, 10000 resamples, ~35 min
+}
 # Later paper-v2 stages (ablation, statistics, PII) are appended below as their tasks land.
 
 Stage "check_numbers"      @("tools\check_numbers.py", "results\claims", "--quiet")
