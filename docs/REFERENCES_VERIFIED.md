@@ -90,3 +90,9 @@ Method: Crossref REST API (`api.crossref.org/works/<doi>`) or arXiv API (`export
 | LeakageBench | V. P. Vijaya Kumar, S. Venkatesh, I. P. Yamshchikov, "LeakageBench: Document-level leakage risk for redacting personally identifiable information in document images," arXiv:2609.02207, 2026. | CONFIRMED (arXiv) |
 
 Not yet verified (UNVERIFIED, do not cite): PP-OCR / PaddleOCR paper, EasyOCR citation, Presidio (cite as software with version 2.2.363 and access date), Microsoft Purview OCR-in-DLP page (re-fetch before use).
+
+### Microsoft Purview OCR (re-fetched 2026-10-23, as context.md asked)
+
+- URL: https://learn.microsoft.com/en-us/purview/ocr-learn-about ("Learn about optical character recognition in Microsoft Purview"), page metadata ms.date 2026-04-30, updated 2026-06-15. CONFIRMED.
+- What it says (paraphrased, check the page before quoting): OCR is an optional, pay-as-you-go tenant feature; once enabled, existing DLP, records-management and insider-risk policies apply to text in images in Exchange, SharePoint, OneDrive, Teams, and Windows/macOS devices; insider risk management "considers sensitive information types and trainable classifiers present in images for risk scoring". Each scanned image is billed as one transaction.
+- Consequence for the paper: "legacy DLP is blind to images" is false for Purview. Together with Adaptive Protection (behaviour-driven risk levels feeding DLP), Purview already combines image content and behaviour. The defensible difference is narrower: an open, auditable, per-user design with measured trade-offs and published negative results, running locally without per-image cloud billing.
