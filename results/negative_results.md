@@ -97,3 +97,11 @@ Reversal of an earlier finding: on v2, EasyOCR confidence DOES rank difficulty (
 |---|---|---|
 | N-039 | The design's single "300 ms end to end" goal cannot hold for image payloads: Tier 2 (EasyOCR + Presidio on CPU) holds an upload for 3.4 s at p50 and 5.3 s at p95. Only the inline text-and-behaviour tier meets a sub-300 ms budget (p99 44.6 ms). | `latency.tier2.hold_ms.*`, `latency.tier1.warm_client_ms.*` |
 | N-040 | A cold proxy process needs about 9 s for its first Tier 1 decision (model loading); a deployment must pre-load. | `latency.tier1.cold_client_ms.*` |
+
+## T3.2: PaddleOCR vs EasyOCR (keys `pii2.*.ocr.*`)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-041 | Substituting EasyOCR for the designed PaddleOCR cost a lot of accuracy: on v2 images OCR+Presidio+ F1 is 0.516 with EasyOCR and 0.701 with PaddleOCR (hard images 0.223 vs 0.554; v1 images 0.793 vs 0.955). The original evaluation understated what the designed OCR branch can do. | `pii2.v2.ocr.*.presidio_plus.all.f1` |
+| N-042 | PaddleOCR is about 5 times slower on this CPU (mean 19.8 s per image vs 3.7 s; oneDNN had to be disabled, D-017). GPU latency was not measured. | `pii2.v2.ocr.paddleocr_cpu.confidence.seconds_per_image_mean` |
+| N-043 | PaddleOCR's confidence is nearly saturated (mean 0.986 easy, 0.961 hard), so it separates easy from hard documents worse than EasyOCR's (AUC 0.762 vs 0.884). A fixed tau_ocr = 0.85 would send almost nothing to the VLM with PaddleOCR. | `pii2.v2.ocr.*.confidence.*` |

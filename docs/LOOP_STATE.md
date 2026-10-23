@@ -2,19 +2,19 @@
 
 After any restart or context compaction: re-read CLAUDE.md, this file and docs/FIXES_SUMMARY.md first.
 
-- Iteration: 13
-- Current task: T3.2
-- Last evidence path: results/latency/
+- Iteration: 14
+- Current task: T3.3
+- Last evidence path: results/pii_v2/
 - Open gates: Q-001 (CERT), Q-004 (FUNSD), defaults applied. Phase 1 and Phase 2 gates PASSED 2026-10-23.
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)
-- Goal: T3.2 PaddleOCR vs EasyOCR on identical images.
-- Smallest change: finish uv install, run paddle_ocr_runner.py, rerun presidio + score.
-- Verify: same doc ids; manifest keys pii2.*.ocr.paddleocr_cpu.*
+- Goal: T3.3 local VLM via LM Studio (Qwen2.5-VL-3B Q4_K_M), accuracy per entity type, VRAM, tokens/s, s/image.
+- Smallest change: finish append-only download (tools/fetch_resumable.py), lms load, python -m evaluation.pii_v2 vlm --model <id>.
+- Verify: cache keyed by model/prompt/image; rerun from cache identical; record GPU peak.
 
 ## Next action
-Start T3.2.
+Start T3.3.
 
 ## Status table
 
@@ -34,7 +34,7 @@ Start T3.2.
 | T2.6 | S | SKIPPED | every CERT release with insiders > 2 GB; figshare link ~1 KB/s here (D-011); default of Q-001 applied, can be reopened |
 | T2.7 | M | DONE | |
 | T3.1 | M | IN_PROGRESS | corpus built and scored for Presidio/OCR; acceptance (strongest available model < 1.000) waits for a VLM |
-| T3.2 | M | PENDING | |
+| T3.2 | M | DONE | |
 | T3.3 | M | PENDING | |
 | T3.4 | M | PENDING | |
 | T3.5 | M | DONE | |

@@ -1,0 +1,25 @@
+# T3.2 EasyOCR vs PaddleOCR on identical images, EVAL documents (written from the manifest)
+v2 easyocr_cpu OCR+Presidio+ F1 | pii2.v2.ocr.easyocr_cpu.presidio_plus.all.f1 | 0.5157
+v2 easyocr_cpu OCR+Presidio F1 | pii2.v2.ocr.easyocr_cpu.presidio.all.f1 | 0.4856
+v2 easyocr_cpu s per image mean | pii2.v2.ocr.easyocr_cpu.confidence.seconds_per_image_mean | 3.7418
+v2 easyocr_cpu spearman | pii2.v2.ocr.easyocr_cpu.confidence.spearman_conf_vs_doc_f1 | 0.5518
+v2 easyocr_cpu F1 hard | pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.hard.f1 | 0.2234
+v2 easyocr_cpu conf AUC easy vs hard | pii2.v2.ocr.easyocr_cpu.confidence.auc_conf_easy_vs_hard | 0.8836
+v2 easyocr_cpu mean conf hard | pii2.v2.ocr.easyocr_cpu.confidence.mean_by_difficulty.hard | 0.4383
+v2 easyocr_cpu mean conf easy | pii2.v2.ocr.easyocr_cpu.confidence.mean_by_difficulty.easy | 0.7788
+v2 paddleocr_cpu OCR+Presidio+ F1 | pii2.v2.ocr.paddleocr_cpu.presidio_plus.all.f1 | 0.7011
+v2 paddleocr_cpu OCR+Presidio F1 | pii2.v2.ocr.paddleocr_cpu.presidio.all.f1 | 0.6562
+v2 paddleocr_cpu s per image mean | pii2.v2.ocr.paddleocr_cpu.confidence.seconds_per_image_mean | 19.7489
+v2 paddleocr_cpu spearman | pii2.v2.ocr.paddleocr_cpu.confidence.spearman_conf_vs_doc_f1 | 0.3495
+v2 paddleocr_cpu F1 hard | pii2.v2.ocr.paddleocr_cpu.presidio_plus.by_difficulty.hard.f1 | 0.5538
+v2 paddleocr_cpu conf AUC easy vs hard | pii2.v2.ocr.paddleocr_cpu.confidence.auc_conf_easy_vs_hard | 0.7619
+v2 paddleocr_cpu mean conf hard | pii2.v2.ocr.paddleocr_cpu.confidence.mean_by_difficulty.hard | 0.9609
+v2 paddleocr_cpu mean conf easy | pii2.v2.ocr.paddleocr_cpu.confidence.mean_by_difficulty.easy | 0.9863
+v1 easyocr_cpu OCR+Presidio+ F1 | pii2.v1.ocr.easyocr_cpu.presidio_plus.all.f1 | 0.7935
+v1 easyocr_cpu OCR+Presidio F1 | pii2.v1.ocr.easyocr_cpu.presidio.all.f1 | 0.7155
+v1 easyocr_cpu s per image mean | pii2.v1.ocr.easyocr_cpu.confidence.seconds_per_image_mean | 2.6259
+v1 easyocr_cpu spearman | pii2.v1.ocr.easyocr_cpu.confidence.spearman_conf_vs_doc_f1 | 0.1865
+v1 paddleocr_cpu OCR+Presidio+ F1 | pii2.v1.ocr.paddleocr_cpu.presidio_plus.all.f1 | 0.9554
+v1 paddleocr_cpu OCR+Presidio F1 | pii2.v1.ocr.paddleocr_cpu.presidio.all.f1 | 0.8804
+v1 paddleocr_cpu s per image mean | pii2.v1.ocr.paddleocr_cpu.confidence.seconds_per_image_mean | 49.3893
+v1 paddleocr_cpu spearman | pii2.v1.ocr.paddleocr_cpu.confidence.spearman_conf_vs_doc_f1 | 0.1553
