@@ -2,19 +2,19 @@
 
 After any restart or context compaction: re-read CLAUDE.md, this file and docs/FIXES_SUMMARY.md first.
 
-- Iteration: 7
-- Current task: T2.3
-- Last evidence path: results/stats/
+- Iteration: 8
+- Current task: T2.4
+- Last evidence path: results/sweep/
 - Open gates: Q-001 (CERT, default skip applied). Phase 1 gate PASSED 2026-10-23.
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)
-- Goal: T2.3 difficulty sweep (5 intensities x 2 benign overlaps x 3 seeds), plot detection vs intensity.
-- Smallest change: generator knobs (done, defaults byte-identical) + evaluation/difficulty_sweep.py.
-- Verify: tests/test_generator_defaults.py; one cell rerun identical; figure check.
+- Goal: T2.4 dedicated slow-drift detector (CUSUM, Page-Hinkley) next to the hybrid; episode recall, time to detect, false alarms; supervised-probe upper bound.
+- Smallest change: evaluation/drift_detector.py (drafted, vectorised, unit-tested) with guarded selection on validation.
+- Verify: tests/test_drift.py; rerun one seed identical; claims.
 
 ## Next action
-Start T2.3.
+Start T2.4.
 
 ## Status table
 
@@ -28,7 +28,7 @@ Start T2.3.
 | T1.5 | M | DONE | |
 | T2.1 | M | DONE | |
 | T2.2 | M | DONE | |
-| T2.3 | M | PENDING | |
+| T2.3 | M | DONE | |
 | T2.4 | M | PENDING | |
 | T2.5 | M | PENDING | |
 | T2.6 | S | SKIPPED | every CERT release with insiders > 2 GB; figshare link ~1 KB/s here (D-011); default of Q-001 applied, can be reopened |

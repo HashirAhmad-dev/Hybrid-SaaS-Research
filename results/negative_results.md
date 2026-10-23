@@ -49,3 +49,13 @@ when a later run looks better; later runs are added below with their own run id.
 | N-025 | With honest clustering, hybrid malicious-insider window recall is 0.027 with CI [0.008, 0.048]. | `stats.hybrid_weighted.recall_malicious_insider.*` |
 
 For balance (not negative): the hybrid's F1 is significantly above LSTM alone (+0.100, CI lower 0.062), per-user z-score (+0.075, CI lower 0.046), LOF (+0.179) and EWMA (+0.518, CI lower 0.454).
+
+## T2.3: difficulty sweep (keys `sweep.summary.*`, `results/sweep/`)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-026 | At attack intensity 0.25 every detector falls to AUC 0.72 to 0.74, and malicious-insider AUC is at chance for all of them (LSTM 0.500, hybrid 0.507). The three "loud" classes stay separable only because their default signatures are strong. | `sweep.summary.o0p0.i0p25.*` |
+| N-027 | The weighted hybrid is never the best detector by AUC at intensity 0.75 or above; the LSTM alone leads (0.895 at intensity 1.5 vs hybrid 0.865). At 0.25 and 0.5 the differences between hybrid, z-score, IF and LSTM are within one sd. | `sweep.summary.o0p0.*.auc` |
+| N-028 | Isolation Forest gains least from louder attacks (0.728 to 0.820 from intensity 0.25 to 1.5) and stays near chance on the malicious-insider class (0.641 even at 1.5). | `sweep.summary.o0p0.*.iforest.*` |
+
+Neutral: adding benign look-alike episodes (overlap 0.5) lowers AUC by at most about 0.03 for any detector at default intensity.

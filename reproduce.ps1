@@ -40,6 +40,7 @@ Stage "ablation"           @("-m", "evaluation.ablation")          # T2.1, ~3.5 
 Stage "ablation_report"    @("-m", "evaluation.ablation_report")
 if (-not $Quick) {
     Stage "bootstrap"      @("-m", "evaluation.bootstrap_stats")   # T2.2, 10000 resamples, ~35 min
+    Stage "difficulty_sweep" @("-m", "evaluation.difficulty_sweep") # T2.3, 27 new runs, ~45 min
 }
 # Later paper-v2 stages (ablation, statistics, PII) are appended below as their tasks land.
 

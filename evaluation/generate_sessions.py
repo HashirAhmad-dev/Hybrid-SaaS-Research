@@ -246,15 +246,51 @@ def _active_positions(df: pd.DataFrame, user: str, split: str) -> np.ndarray:
     return np.flatnonzero(m)
 
 
+def _lerp(orig: float, attacked: float, intensity: float) -> float:
+    """Interpolate a perturbed feature between its normal and its attacked value.
+
+    intensity 1.0 returns `attacked` EXACTLY (no float arithmetic), so the default
+    dataset is byte-identical to the one produced before the knob existed.
+    0.0 leaves the normal value; above 1.0 exaggerates the perturbation.
+    """
+    if intensity == 1.0:
+        return attacked
+    return orig + intensity * (attacked - orig)
+
+
 def inject_episodes(df: pd.DataFrame, profiles: pd.DataFrame,
-                    rng: np.random.Generator, plan: Dict[str, int]) -> pd.DataFrame:
-    """Mutate consecutive active sessions in place. Episodes stay inside one split."""
+                    rng: np.random.Generator, plan: Dict[str, int],
+                    intensity: float = 1.0, benign_overlap: float = 0.0,
+                    rng_x: np.random.Generator | None = None) -> pd.DataFrame:
+    """Mutate consecutive active sessions in place. Episodes stay inside one split.
+
+    Difficulty knobs (paper-v2 T2.3). Both default to the original behaviour,
+    and at the defaults NO extra random numbers are drawn from `rng`, so the
+    dataset is byte-identical to the pre-knob generator (checked by hash).
+      intensity       scales every attack perturbation between "looks normal" (0)
+                      and the original signature (1); categorical changes
+                      (file class, endpoint) are applied with probability
+                      min(intensity, 1). Extra draws come from `rng_x`.
+      benign_overlap  adds labelled-NEGATIVE look-alike episodes: for each attack
+                      class, round(benign_overlap * plan[class]) episodes that
+                      apply the same perturbation to benign users (legitimate
+                      travel, admin permission work, quiet solo work on
+                      sensitive files). Flag column `is_benign_lookalike`.
+                      All their randomness comes from `rng_x`.
+    """
     prof = profiles.set_index("user_id")
     users = list(profiles.user_id)
     # Allocate episodes across splits proportional to split duration (70/15/15).
     split_weights = {"train": 0.70, "val": 0.15, "test": 0.15}
     episode_counter = 0
     used: set[int] = set()   # row positions already claimed by some episode
+    p_cat = min(max(intensity, 0.0), 1.0)
+
+    def keep_categorical(r: np.random.Generator) -> bool:
+        """True -> leave the categorical feature at its normal value."""
+        if p_cat >= 1.0:
+            return False                     # no draw at full intensity
+        return bool((rng_x if rng_x is not None else r).random() >= p_cat)
 
     def claim(positions: np.ndarray) -> bool:
         if any(int(p) in used for p in positions):
@@ -262,18 +298,18 @@ def inject_episodes(df: pd.DataFrame, profiles: pd.DataFrame,
         used.update(int(p) for p in positions)
         return True
 
-    def pick_window(user: str, split: str, length: int) -> np.ndarray | None:
+    def pick_window(r: np.random.Generator, user: str, split: str, length: int) -> np.ndarray | None:
         pos = _active_positions(df, user, split)
         if len(pos) < length + 2:
             return None
         for _ in range(12):  # bounded retries to avoid overlapping episodes
-            s = int(rng.integers(1, len(pos) - length))
+            s = int(r.integers(1, len(pos) - length))
             win = pos[s:s + length]
             if claim(win):
                 return win
         return None
 
-    def episodes_for(kind: str, n_total: int, len_lo: int, len_hi: int):
+    def episodes_for(r: np.random.Generator, kind: str, n_total: int, len_lo: int, len_hi: int):
         nonlocal episode_counter
         for split, w in split_weights.items():
             n = int(round(n_total * w))
@@ -281,9 +317,9 @@ def inject_episodes(df: pd.DataFrame, profiles: pd.DataFrame,
             attempts = 0
             while placed < n and attempts < n * 40:
                 attempts += 1
-                user = users[int(rng.integers(len(users)))]
-                length = int(rng.integers(len_lo, len_hi + 1))
-                win = pick_window(user, split, length)
+                user = users[int(r.integers(len(users)))]
+                length = int(r.integers(len_lo, len_hi + 1))
+                win = pick_window(r, user, split, length)
                 if win is None:
                     continue
                 episode_counter += 1
@@ -291,66 +327,97 @@ def inject_episodes(df: pd.DataFrame, profiles: pd.DataFrame,
                 yield kind, user, win, eid
                 placed += 1
 
+    def label(pos, cls: str, eid: str, positive: bool) -> None:
+        df.at[pos, "is_true_threat"] = positive
+        df.at[pos, "threat_class"] = cls if positive else None
+        df.at[pos, "episode_id"] = eid
+        if not positive:
+            df.at[pos, "is_benign_lookalike"] = True
+            df.at[pos, "lookalike_class"] = cls
+
     # --- (a) malicious insider: slow drift, each per-window step small ---------
-    for kind, user, win, eid in episodes_for("malicious_insider", plan["malicious_insider"], 6, 10):
+    def apply_malicious(r, user, win, eid, positive):
         n = len(win)
         for k, pos in enumerate(win):
             frac = (k + 1) / n                      # 0 -> 1 across the episode
             # activity creeps up gently; EWMA adapts, so per-window ratio stays low
-            df.at[pos, "calls"] = int(df.at[pos, "calls"] * (1.0 + 0.55 * frac))
+            c0 = df.at[pos, "calls"]
+            df.at[pos, "calls"] = int(_lerp(c0, c0 * (1.0 + 0.55 * frac), intensity))
             # progressively reaches for more sensitive material
-            if frac > 0.35:
+            if frac > 0.35 and not keep_categorical(r):
                 df.at[pos, "file_class"] = "confidential" if frac < 0.7 else "restricted"
             # works alone: collaboration degree collapses
-            df.at[pos, "collaboration_density"] = float(
-                max(df.at[pos, "collaboration_density"] * (1.0 - 0.75 * frac), 0.0))
-            df.at[pos, "endpoint_class"] = "read"
-            df.at[pos, "is_true_threat"] = True
-            df.at[pos, "threat_class"] = "malicious_insider"
-            df.at[pos, "episode_id"] = eid
+            col0 = df.at[pos, "collaboration_density"]
+            df.at[pos, "collaboration_density"] = float(np.clip(_lerp(
+                col0, max(col0 * (1.0 - 0.75 * frac), 0.0), intensity), 0.0, 1.0))
+            if not keep_categorical(r):
+                df.at[pos, "endpoint_class"] = "read"
+            label(pos, "malicious_insider", eid, positive)
 
     # --- (b) compromised account: burst from unfamiliar geo/endpoint ----------
-    for kind, user, win, eid in episodes_for("compromised_account", plan["compromised_account"], 1, 3):
+    def apply_compromised(r, user, win, eid, positive):
         home_xy = HOME_CITIES[prof.at[user, "home_city"]]
-        city = list(FOREIGN_CITIES)[int(rng.integers(len(FOREIGN_CITIES)))]
+        city = list(FOREIGN_CITIES)[int(r.integers(len(FOREIGN_CITIES)))]
         gi = min(_haversine_km(FOREIGN_CITIES[city], home_xy) / GEO_NORM_KM, 1.0)
         for pos in win:
-            df.at[pos, "calls"] = int(max(df.at[pos, "calls"], 4) * rng.uniform(3.5, 7.0))
+            c0 = df.at[pos, "calls"]
+            df.at[pos, "calls"] = int(_lerp(c0, max(c0, 4) * r.uniform(3.5, 7.0), intensity))
             df.at[pos, "origin_city"] = city
-            df.at[pos, "geo_index"] = gi
-            df.at[pos, "file_class"] = "restricted" if rng.random() < 0.6 else "confidential"
-            df.at[pos, "endpoint_class"] = "share" if rng.random() < 0.5 else "delete"
-            df.at[pos, "permission_scope_delta"] = float(rng.uniform(0.25, 0.6))
-            df.at[pos, "is_true_threat"] = True
-            df.at[pos, "threat_class"] = "compromised_account"
-            df.at[pos, "episode_id"] = eid
+            df.at[pos, "geo_index"] = float(np.clip(_lerp(df.at[pos, "geo_index"], gi, intensity), 0.0, 1.0))
+            fc = "restricted" if r.random() < 0.6 else "confidential"
+            if not keep_categorical(r):
+                df.at[pos, "file_class"] = fc
+            ep = "share" if r.random() < 0.5 else "delete"
+            if not keep_categorical(r):
+                df.at[pos, "endpoint_class"] = ep
+            df.at[pos, "permission_scope_delta"] = float(np.clip(_lerp(
+                df.at[pos, "permission_scope_delta"], float(r.uniform(0.25, 0.6)), intensity), 0.0, 1.0))
+            label(pos, "compromised_account", eid, positive)
 
     # --- (c) negligent insider: oversharing spike, no precursor ---------------
-    for kind, user, win, eid in episodes_for("negligent_insider", plan["negligent_insider"], 1, 2):
+    def apply_negligent(r, user, win, eid, positive):
         for pos in win:
-            df.at[pos, "endpoint_class"] = "share" if rng.random() < 0.65 else "permission_change"
-            df.at[pos, "permission_scope_delta"] = float(rng.uniform(0.45, 0.85))
-            df.at[pos, "collaboration_density"] = float(np.clip(rng.uniform(0.75, 0.98), 0, 1))
-            df.at[pos, "file_class"] = "confidential" if rng.random() < 0.7 else "restricted"
+            ep = "share" if r.random() < 0.65 else "permission_change"
+            if not keep_categorical(r):
+                df.at[pos, "endpoint_class"] = ep
+            df.at[pos, "permission_scope_delta"] = float(np.clip(_lerp(
+                df.at[pos, "permission_scope_delta"], float(r.uniform(0.45, 0.85)), intensity), 0.0, 1.0))
+            df.at[pos, "collaboration_density"] = float(np.clip(_lerp(
+                df.at[pos, "collaboration_density"],
+                float(np.clip(r.uniform(0.75, 0.98), 0, 1)), intensity), 0.0, 1.0))
+            fc = "confidential" if r.random() < 0.7 else "restricted"
+            if not keep_categorical(r):
+                df.at[pos, "file_class"] = fc
             # activity rate stays ordinary -> invisible to a rate-only detector
-            df.at[pos, "is_true_threat"] = True
-            df.at[pos, "threat_class"] = "negligent_insider"
-            df.at[pos, "episode_id"] = eid
+            label(pos, "negligent_insider", eid, positive)
 
     # --- (d) over-scoped third-party app: sustained permission_scope_delta ----
-    for kind, user, win, eid in episodes_for("overscoped_thirdparty", plan["overscoped_thirdparty"], 2, 4):
-        scope = float(rng.uniform(0.82, 1.0))
+    def apply_overscoped(r, user, win, eid, positive):
+        scope = float(r.uniform(0.82, 1.0))
         for pos in win:
-            df.at[pos, "permission_scope_delta"] = scope
-            df.at[pos, "endpoint_class"] = "permission_change"
-            df.at[pos, "calls"] = int(max(df.at[pos, "calls"], 2) * rng.uniform(1.1, 1.8))
-            df.at[pos, "file_class"] = "confidential" if rng.random() < 0.5 else "internal"
-            df.at[pos, "is_true_threat"] = True
-            df.at[pos, "threat_class"] = "overscoped_thirdparty"
-            df.at[pos, "episode_id"] = eid
+            df.at[pos, "permission_scope_delta"] = float(np.clip(_lerp(
+                df.at[pos, "permission_scope_delta"], scope, intensity), 0.0, 1.0))
+            if not keep_categorical(r):
+                df.at[pos, "endpoint_class"] = "permission_change"
+            c0 = df.at[pos, "calls"]
+            df.at[pos, "calls"] = int(_lerp(c0, max(c0, 2) * r.uniform(1.1, 1.8), intensity))
+            fc = "confidential" if r.random() < 0.5 else "internal"
+            if not keep_categorical(r):
+                df.at[pos, "file_class"] = fc
+            label(pos, "overscoped_thirdparty", eid, positive)
+
+    APPLY = {
+        "malicious_insider": (apply_malicious, 6, 10),
+        "compromised_account": (apply_compromised, 1, 3),
+        "negligent_insider": (apply_negligent, 1, 2),
+        "overscoped_thirdparty": (apply_overscoped, 2, 4),
+    }
+    for cls, (fn, lo, hi) in APPLY.items():
+        for kind, user, win, eid in episodes_for(rng, cls, plan[cls], lo, hi):
+            fn(rng, user, win, eid, True)
 
     # --- (e) BENIGN burst: the false-positive trap. Label stays negative. -----
-    for kind, user, win, eid in episodes_for("benign_burst", plan["benign_burst"], 1, 3):
+    for kind, user, win, eid in episodes_for(rng, "benign_burst", plan["benign_burst"], 1, 3):
         for pos in win:
             # massive rate spike ...
             df.at[pos, "calls"] = int(max(df.at[pos, "calls"], 5) * rng.uniform(5.0, 11.0))
@@ -366,6 +433,17 @@ def inject_episodes(df: pd.DataFrame, profiles: pd.DataFrame,
             df.at[pos, "threat_class"] = None
             df.at[pos, "is_benign_burst"] = True
             df.at[pos, "episode_id"] = eid
+
+    # --- (f) BENIGN look-alikes (only when benign_overlap > 0) -----------------
+    if benign_overlap > 0:
+        if rng_x is None:
+            raise ValueError("benign_overlap needs rng_x")
+        df["is_benign_lookalike"] = False
+        df["lookalike_class"] = None
+        for cls, (fn, lo, hi) in APPLY.items():
+            n = int(round(benign_overlap * plan[cls]))
+            for kind, user, win, eid in episodes_for(rng_x, f"lookalike_{cls}", n, lo, hi):
+                fn(rng_x, user, win, eid, False)
 
     return df
 
@@ -442,6 +520,10 @@ def main() -> None:
     ap.add_argument("--n-negligent", type=int, default=72)
     ap.add_argument("--n-overscoped", type=int, default=34)
     ap.add_argument("--n-benign-burst", type=int, default=96)
+    ap.add_argument("--intensity", type=float, default=1.0,
+                    help="attack perturbation strength (T2.3); 1.0 = original dataset")
+    ap.add_argument("--benign-overlap", type=float, default=0.0,
+                    help="labelled-negative look-alike episodes per attack episode (T2.3)")
     ap.add_argument("--out-dir", type=Path, default=DATA_DIR,
                     help="where to write sessions_raw.csv, user_profiles.csv, "
                          "generation_config.json (default evaluation/data)")
@@ -470,7 +552,10 @@ def main() -> None:
         "overscoped_thirdparty": args.n_overscoped,
         "benign_burst": args.n_benign_burst,
     }
-    df = inject_episodes(df, profiles, rng, plan)
+    # extra randomness for the T2.3 knobs only; never touched at the defaults
+    rng_x = np.random.default_rng([args.seed, 2303])
+    df = inject_episodes(df, profiles, rng, plan, intensity=args.intensity,
+                         benign_overlap=args.benign_overlap, rng_x=rng_x)
 
     print("[4/5] deriving causal features ...")
     df = derive_features(df, profiles, rng, fake)
@@ -507,7 +592,8 @@ def main() -> None:
     from tools.manifest import provenance, record
     config["provenance"] = provenance("evaluation/generate_sessions.py", {"data": args.seed})
     gen_config.write_text(json.dumps(config, indent=2, default=str), encoding="utf-8")
-    record(f"generation.s{args.seed}", counts, script="evaluation/generate_sessions.py",
+    knobs = "" if (args.intensity == 1.0 and args.benign_overlap == 0.0) else         f".i{str(args.intensity).replace('.', 'p')}.o{str(args.benign_overlap).replace('.', 'p')}"
+    record(f"generation.s{args.seed}{knobs}", counts, script="evaluation/generate_sessions.py",
            seeds={"data": args.seed})
 
     print(f"\n  grid rows        : {counts['grid_rows']:,}")

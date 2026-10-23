@@ -122,6 +122,36 @@ def record(prefix: str, values: Mapping[str, Any], *, script: str,
     Returns the run id. `git` and `date_utc` are only overridden when ingesting
     files produced by an earlier commit (see tools/ingest_baseline.py).
     """
+    if os.environ.get("HYBRIDSAAS_MANIFEST_READONLY"):   # tests: never touch the real manifest
+        return run_id or "readonly"
+    with _lock(path):
+        return _record_locked(prefix, values, script=script, seeds=seeds, run_id=run_id,
+                              device=device, note=note, git=git, date_utc=date_utc, path=path)
+
+
+class _lock:
+    """Cross-process lock (exclusive create of <manifest>.lock) around read-modify-write."""
+
+    def __init__(self, path: Path):
+        self.lock = path.with_suffix(".lock")
+
+    def __enter__(self):
+        import time
+        self.lock.parent.mkdir(parents=True, exist_ok=True)
+        for _ in range(3000):                       # up to ~10 min
+            try:
+                self.fd = os.open(self.lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+                return self
+            except FileExistsError:
+                time.sleep(0.2)
+        raise TimeoutError(f"could not lock {self.lock}; delete it if no job is running")
+
+    def __exit__(self, *exc):
+        os.close(self.fd)
+        os.remove(self.lock)
+
+
+def _record_locked(prefix, values, *, script, seeds, run_id, device, note, git, date_utc, path) -> str:
     m = load(path)
     run_id = run_id or new_run_id(script)
     run = m["runs"].get(run_id, {})

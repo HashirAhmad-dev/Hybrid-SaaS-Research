@@ -34,3 +34,6 @@ results/runs/**/artifacts/
 
 # downloaded third-party data (licences recorded in docs/)
 external/
+results/manifest.lock
+results/manifest.json.tmp
+evaluation/pii_testset_v2/

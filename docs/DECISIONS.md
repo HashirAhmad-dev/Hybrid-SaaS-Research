@@ -51,3 +51,15 @@ One entry per non-obvious decision. Format: date, task, options, choice, reason.
 - Checked (no data download): figshare record 12841247, licence CC BY 4.0. Release archives: r1 0.09 GB, r2 8.66 GB, r3.1 4.25 GB, r3.2 4.29 GB, r4.1 5.02 GB, r4.2 4.82 GB, r5.x about 11 GB, r6.x 20 to 24 GB. The answer key (1.25 MB) lists insider scenarios for r3.x and later only, so every usable release exceeds the 2 GB G-DATA limit.
 - Measured throughput from this machine to figshare: the 1.25 MB answer file arrived truncated twice (about 0.5 MB in 10 minutes). A 4 to 5 GB release is not feasible over this link even with approval.
 - Choice: T2.6 SKIPPED with this reason unless the user approves (Q-001) and fetches a release by another route (for example a browser download into `external/cert/`). CERT is described as future external validation in the threats-to-validity input.
+
+## D-012 (2026-10-23, T3.3) Which local VLMs, given the network
+- Measured download throughput to Hugging Face from this laptop: 80 to 200 KB/s, and the LM Studio downloader timed out on the first 3.27 GB model. Free disk: 13 GB.
+- Options: download Qwen2.5-VL-3B, gemma-3-4b-it and a 7B in parallel; or one model at a time with a resumable downloader.
+- Choice: Qwen2.5-VL-3B-Instruct Q4_K_M plus its f16 vision projector first (3.27 GB, closest to the paper's 3B design), fetched with `curl -C -` in a retry loop into the LM Studio models folder. gemma-3-4b-it Q4_K_M (3.34 GB) second if time allows. A 7B model is skipped: about 6 GB with projector does not fit the 6 GB VRAM next to the display and would take about 8 hours to download here. PaliGemma GGUF builds are not in the lmstudio-community catalogue and the original weights are gated; not attempted.
+
+## D-013 (2026-10-23, T3.1) FUNSD real-scan subset
+- Checked the FUNSD terms page: use is "solely for non-commercial, research and educational purposes", the user must be 18 or older and accept the terms, and the images carry their own copyright (RVL-CDIP). FUNSD labels are question/answer/header/other, not PII types, so a PII gold list would have to be derived heuristically and would be incomplete.
+- Choice: not downloaded. Accepting licence terms is the user's call (Q-004). Default: skip; the threats-to-validity input states that no real scans were evaluated.
+
+## D-014 (2026-10-23, T3.1) Corpus v2 is the main PII set
+- 360 new documents (3 modalities x 3 difficulty levels x 40), seed 2610, 1428 gold entities, 49 PII-free documents, near-miss strings at medium and hard. The v1 corpus (120 documents) is included in the same ground-truth file as subset "v1" and reported separately. A fixed 25/75 calib/eval split, stratified by subset x modality x difficulty, is used for every PII selection (tau, router).

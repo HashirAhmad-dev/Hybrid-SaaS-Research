@@ -1,0 +1,522 @@
+{
+ "provenance": {
+  "script": "evaluation/difficulty_sweep.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\difficulty_sweep.py",
+  "seeds": {
+   "data_and_train": 42,
+   "intensity": 1.0,
+   "overlap": 0.5
+  },
+  "date_utc": "2026-10-23T12:38:22+00:00",
+  "git_hash": "e6d136ab14340eb52dc26626b17d852bbfefb9c5",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": "cpu"
+ },
+ "detectors": {
+  "_params": {
+   "alpha": 0.55,
+   "lof_k": 300
+  },
+  "ewma": {
+   "auc": 0.6151327940307328,
+   "auc_raw_unclipped": NaN,
+   "average_precision": 0.06481485957793476,
+   "recall_at_fpr01_testcurve": 0.010416666666666666,
+   "recall_at_fpr05_testcurve": 0.13541666666666666,
+   "recall_at_fpr01_valthreshold": 0.07291666666666667,
+   "fpr_realised_at_fpr01_valthreshold": 0.020390070921985817,
+   "recall_at_fpr05_valthreshold": 0.14583333333333334,
+   "fpr_realised_at_fpr05_valthreshold": 0.07180851063829788,
+   "val_threshold_f1": 2.5352640542719076,
+   "val_f1": 0.11458333333333331,
+   "threshold_fpr01": 4.82972234793759,
+   "threshold_fpr05": 2.0890911046403424,
+   "valf1_tp": 14,
+   "valf1_fp": 132,
+   "valf1_fn": 82,
+   "valf1_tn": 2124,
+   "valf1_precision": 0.0958904109589041,
+   "valf1_recall": 0.14583333333333334,
+   "valf1_f1": 0.11570247933884298,
+   "valf1_fpr": 0.05851063829787234,
+   "benign_burst_flag_rate": 0.5925925925925926,
+   "per_class": {
+    "malicious_insider": {
+     "windows": 51,
+     "episodes": 6,
+     "auc": 0.5496627729105826,
+     "recall": 0.0392156862745098,
+     "episode_recall": 0.3333333333333333
+    },
+    "compromised_account": {
+     "windows": 13,
+     "episodes": 9,
+     "auc": 0.8381751227495908,
+     "recall": 0.46153846153846156,
+     "episode_recall": 0.6666666666666666
+    },
+    "negligent_insider": {
+     "windows": 18,
+     "episodes": 11,
+     "auc": 0.5902777777777778,
+     "recall": 0.16666666666666666,
+     "episode_recall": 0.18181818181818182
+    },
+    "overscoped_thirdparty": {
+     "windows": 14,
+     "episodes": 5,
+     "auc": 0.678476443768997,
+     "recall": 0.21428571428571427,
+     "episode_recall": 0.4
+    }
+   }
+  },
+  "zscore": {
+   "auc": 0.8409865359042553,
+   "auc_raw_unclipped": 0.8463126108156028,
+   "average_precision": 0.3456732393191173,
+   "recall_at_fpr01_testcurve": 0.21875,
+   "recall_at_fpr05_testcurve": 0.59375,
+   "recall_at_fpr01_valthreshold": 0.20833333333333334,
+   "fpr_realised_at_fpr01_valthreshold": 0.0070921985815602835,
+   "recall_at_fpr05_valthreshold": 0.59375,
+   "fpr_realised_at_fpr05_valthreshold": 0.050975177304964536,
+   "val_threshold_f1": 0.4977057412145404,
+   "val_f1": 0.4857142857142857,
+   "threshold_fpr01": 0.8986830104905411,
+   "threshold_fpr05": 0.2936844497171518,
+   "valf1_tp": 45,
+   "valf1_fp": 59,
+   "valf1_fn": 51,
+   "valf1_tn": 2197,
+   "valf1_precision": 0.4326923076923077,
+   "valf1_recall": 0.46875,
+   "valf1_f1": 0.45,
+   "valf1_fpr": 0.026152482269503546,
+   "benign_burst_flag_rate": 0.4444444444444444,
+   "per_class": {
+    "malicious_insider": {
+     "windows": 51,
+     "episodes": 6,
+     "auc": 0.7113492560144625,
+     "recall": 0.0784313725490196,
+     "episode_recall": 0.5
+    },
+    "compromised_account": {
+     "windows": 13,
+     "episodes": 9,
+     "auc": 0.9890548281505729,
+     "recall": 1.0,
+     "episode_recall": 1.0
+    },
+    "negligent_insider": {
+     "windows": 18,
+     "episodes": 11,
+     "auc": 0.9829220843183609,
+     "recall": 0.7777777777777778,
+     "episode_recall": 0.9090909090909091
+    },
+    "overscoped_thirdparty": {
+     "windows": 14,
+     "episodes": 5,
+     "auc": 0.9932560790273556,
+     "recall": 1.0,
+     "episode_recall": 1.0
+    }
+   }
+  },
+  "lstm": {
+   "auc": 0.8429442782210402,
+   "auc_raw_unclipped": 0.8432928856382979,
+   "average_precision": 0.2501366032405989,
+   "recall_at_fpr01_testcurve": 0.14583333333333334,
+   "recall_at_fpr05_testcurve": 0.3854166666666667,
+   "recall_at_fpr01_valthreshold": 0.22916666666666666,
+   "fpr_realised_at_fpr01_valthreshold": 0.018173758865248225,
+   "recall_at_fpr05_valthreshold": 0.5208333333333334,
+   "fpr_realised_at_fpr05_valthreshold": 0.06870567375886524,
+   "val_threshold_f1": 0.5500456175930826,
+   "val_f1": 0.45714285714285713,
+   "threshold_fpr01": 0.6963999997726741,
+   "threshold_fpr05": 0.429919685240416,
+   "valf1_tp": 34,
+   "valf1_fp": 101,
+   "valf1_fn": 62,
+   "valf1_tn": 2155,
+   "valf1_precision": 0.2518518518518518,
+   "valf1_recall": 0.3541666666666667,
+   "valf1_f1": 0.2943722943722944,
+   "valf1_fpr": 0.04476950354609929,
+   "benign_burst_flag_rate": 0.14814814814814814,
+   "per_class": {
+    "malicious_insider": {
+     "windows": 51,
+     "episodes": 6,
+     "auc": 0.7330126199415936,
+     "recall": 0.0784313725490196,
+     "episode_recall": 0.16666666666666666
+    },
+    "compromised_account": {
+     "windows": 13,
+     "episodes": 9,
+     "auc": 0.9504569012547736,
+     "recall": 0.46153846153846156,
+     "episode_recall": 0.4444444444444444
+    },
+    "negligent_insider": {
+     "windows": 18,
+     "episodes": 11,
+     "auc": 0.9713110717100079,
+     "recall": 0.7222222222222222,
+     "episode_recall": 0.9090909090909091
+    },
+    "overscoped_thirdparty": {
+     "windows": 14,
+     "episodes": 5,
+     "auc": 0.978533434650456,
+     "recall": 0.7857142857142857,
+     "episode_recall": 1.0
+    }
+   }
+  },
+  "lstm_nextstep": {
+   "auc": 0.7871601654846335,
+   "auc_raw_unclipped": 0.78568724143026,
+   "average_precision": 0.37939682377030853,
+   "recall_at_fpr01_testcurve": 0.28125,
+   "recall_at_fpr05_testcurve": 0.5625,
+   "recall_at_fpr01_valthreshold": 0.25,
+   "fpr_realised_at_fpr01_valthreshold": 0.008421985815602837,
+   "recall_at_fpr05_valthreshold": 0.5625,
+   "fpr_realised_at_fpr05_valthreshold": 0.050975177304964536,
+   "val_threshold_f1": 0.2242672856761859,
+   "val_f1": 0.49494949494949503,
+   "threshold_fpr01": 0.5194914213813699,
+   "threshold_fpr05": 0.09803454394877796,
+   "valf1_tp": 47,
+   "valf1_fp": 50,
+   "valf1_fn": 49,
+   "valf1_tn": 2206,
+   "valf1_precision": 0.4845360824742268,
+   "valf1_recall": 0.4895833333333333,
+   "valf1_f1": 0.48704663212435234,
+   "valf1_fpr": 0.022163120567375887,
+   "benign_burst_flag_rate": 0.18518518518518517,
+   "per_class": {
+    "malicious_insider": {
+     "windows": 51,
+     "episodes": 6,
+     "auc": 0.6077822973160896,
+     "recall": 0.09803921568627451,
+     "episode_recall": 0.5
+    },
+    "compromised_account": {
+     "windows": 13,
+     "episodes": 9,
+     "auc": 0.9925668303327878,
+     "recall": 0.9230769230769231,
+     "episode_recall": 1.0
+    },
+    "negligent_insider": {
+     "windows": 18,
+     "episodes": 11,
+     "auc": 0.9892385736800631,
+     "recall": 0.9444444444444444,
+     "episode_recall": 1.0
+    },
+    "overscoped_thirdparty": {
+     "windows": 14,
+     "episodes": 5,
+     "auc": 0.9900582573454914,
+     "recall": 0.9285714285714286,
+     "episode_recall": 1.0
+    }
+   }
+  },
+  "iforest": {
+   "auc": 0.7711796320921985,
+   "auc_raw_unclipped": 0.7625175458037825,
+   "average_precision": 0.38270071211325324,
+   "recall_at_fpr01_testcurve": 0.4166666666666667,
+   "recall_at_fpr05_testcurve": 0.5,
+   "recall_at_fpr01_valthreshold": 0.34375,
+   "fpr_realised_at_fpr01_valthreshold": 0.008865248226950355,
+   "recall_at_fpr05_valthreshold": 0.5,
+   "fpr_realised_at_fpr05_valthreshold": 0.04875886524822695,
+   "val_threshold_f1": 0.6681942972163709,
+   "val_f1": 0.5494505494505495,
+   "threshold_fpr01": 0.7880207234170022,
+   "threshold_fpr05": 0.42033763447899386,
+   "valf1_tp": 46,
+   "valf1_fp": 31,
+   "valf1_fn": 50,
+   "valf1_tn": 2225,
+   "valf1_precision": 0.5974025974025974,
+   "valf1_recall": 0.4791666666666667,
+   "valf1_f1": 0.5317919075144508,
+   "valf1_fpr": 0.01374113475177305,
+   "benign_burst_flag_rate": 0.0,
+   "per_class": {
+    "malicious_insider": {
+     "windows": 51,
+     "episodes": 6,
+     "auc": 0.5740248226950354,
+     "recall": 0.0196078431372549,
+     "episode_recall": 0.16666666666666666
+    },
+    "compromised_account": {
+     "windows": 13,
+     "episodes": 9,
+     "auc": 0.9981928532460448,
+     "recall": 1.0,
+     "episode_recall": 1.0
+    },
+    "negligent_insider": {
+     "windows": 18,
+     "episodes": 11,
+     "auc": 0.992686170212766,
+     "recall": 1.0,
+     "episode_recall": 1.0
+    },
+    "overscoped_thirdparty": {
+     "windows": 14,
+     "episodes": 5,
+     "auc": 0.9937943262411347,
+     "recall": 1.0,
+     "episode_recall": 1.0
+    }
+   }
+  },
+  "lof": {
+   "auc": 0.7631339575945626,
+   "auc_raw_unclipped": 0.7794584810874704,
+   "average_precision": 0.20623956932579032,
+   "recall_at_fpr01_testcurve": 0.09375,
+   "recall_at_fpr05_testcurve": 0.5208333333333334,
+   "recall_at_fpr01_valthreshold": 0.03125,
+   "fpr_realised_at_fpr01_valthreshold": 0.008865248226950355,
+   "recall_at_fpr05_valthreshold": 0.5208333333333334,
+   "fpr_realised_at_fpr05_valthreshold": 0.050088652482269506,
+   "val_threshold_f1": 0.36300487728771885,
+   "val_f1": 0.4224137931034483,
+   "threshold_fpr01": 0.6846435141902449,
+   "threshold_fpr05": 0.26131666042538687,
+   "valf1_tp": 47,
+   "valf1_fp": 75,
+   "valf1_fn": 49,
+   "valf1_tn": 2181,
+   "valf1_precision": 0.38524590163934425,
+   "valf1_recall": 0.4895833333333333,
+   "valf1_f1": 0.43119266055045863,
+   "valf1_fpr": 0.03324468085106383,
+   "benign_burst_flag_rate": 0.0,
+   "per_class": {
+    "malicious_insider": {
+     "windows": 51,
+     "episodes": 6,
+     "auc": 0.5723777986371854,
+     "recall": 0.058823529411764705,
+     "episode_recall": 0.3333333333333333
+    },
+    "compromised_account": {
+     "windows": 13,
+     "episodes": 9,
+     "auc": 0.9866339334424441,
+     "recall": 0.9230769230769231,
+     "episode_recall": 1.0
+    },
+    "negligent_insider": {
+     "windows": 18,
+     "episodes": 11,
+     "auc": 0.9778615051221434,
+     "recall": 1.0,
+     "episode_recall": 1.0
+    },
+    "overscoped_thirdparty": {
+     "windows": 14,
+     "episodes": 5,
+     "auc": 0.9744174265450861,
+     "recall": 1.0,
+     "episode_recall": 1.0
+    }
+   }
+  },
+  "hybrid_weighted": {
+   "auc": 0.8373781028368794,
+   "auc_raw_unclipped": NaN,
+   "average_precision": 0.38722740357541685,
+   "recall_at_fpr01_testcurve": 0.3229166666666667,
+   "recall_at_fpr05_testcurve": 0.53125,
+   "recall_at_fpr01_valthreshold": 0.4166666666666667,
+   "fpr_realised_at_fpr01_valthreshold": 0.015957446808510637,
+   "recall_at_fpr05_valthreshold": 0.5729166666666666,
+   "fpr_realised_at_fpr05_valthreshold": 0.0625,
+   "val_threshold_f1": 0.6267467209400065,
+   "val_f1": 0.5903614457831325,
+   "threshold_fpr01": 0.6174612325876782,
+   "threshold_fpr05": 0.34427582258266926,
+   "valf1_tp": 40,
+   "valf1_fp": 35,
+   "valf1_fn": 56,
+   "valf1_tn": 2221,
+   "valf1_precision": 0.5333333333333333,
+   "valf1_recall": 0.4166666666666667,
+   "valf1_f1": 0.46783625730994155,
+   "valf1_fpr": 0.01551418439716312,
+   "benign_burst_flag_rate": 0.0,
+   "per_class": {
+    "malicious_insider": {
+     "windows": 51,
+     "episodes": 6,
+     "auc": 0.700328535669587,
+     "recall": 0.0196078431372549,
+     "episode_recall": 0.16666666666666666
+    },
+    "compromised_account": {
+     "windows": 13,
+     "episodes": 9,
+     "auc": 0.9916121112929623,
+     "recall": 0.9230769230769231,
+     "episode_recall": 1.0
+    },
+    "negligent_insider": {
+     "windows": 18,
+     "episodes": 11,
+     "auc": 0.9922675334909378,
+     "recall": 0.8888888888888888,
+     "episode_recall": 0.9090909090909091
+    },
+    "overscoped_thirdparty": {
+     "windows": 14,
+     "episodes": 5,
+     "auc": 0.9942692502532928,
+     "recall": 0.7857142857142857,
+     "episode_recall": 1.0
+    }
+   }
+  },
+  "hybrid_max": {
+   "auc": 0.8319273603723404,
+   "auc_raw_unclipped": NaN,
+   "average_precision": 0.37192787144937656,
+   "recall_at_fpr01_testcurve": 0.3229166666666667,
+   "recall_at_fpr05_testcurve": 0.5104166666666666,
+   "recall_at_fpr01_valthreshold": 0.3229166666666667,
+   "fpr_realised_at_fpr01_valthreshold": 0.00975177304964539,
+   "recall_at_fpr05_valthreshold": 0.5208333333333334,
+   "fpr_realised_at_fpr05_valthreshold": 0.057624113475177305,
+   "val_threshold_f1": 0.7700377979774344,
+   "val_f1": 0.5217391304347827,
+   "threshold_fpr01": 0.8396355073939155,
+   "threshold_fpr05": 0.537659338470363,
+   "valf1_tp": 43,
+   "valf1_fp": 39,
+   "valf1_fn": 53,
+   "valf1_tn": 2217,
+   "valf1_precision": 0.524390243902439,
+   "valf1_recall": 0.4479166666666667,
+   "valf1_f1": 0.4831460674157303,
+   "valf1_fpr": 0.017287234042553192,
+   "benign_burst_flag_rate": 0.037037037037037035,
+   "per_class": {
+    "malicious_insider": {
+     "windows": 51,
+     "episodes": 6,
+     "auc": 0.6907679738562091,
+     "recall": 0.0196078431372549,
+     "episode_recall": 0.16666666666666666
+    },
+    "compromised_account": {
+     "windows": 13,
+     "episodes": 9,
+     "auc": 0.9967266775777414,
+     "recall": 1.0,
+     "episode_recall": 1.0
+    },
+    "negligent_insider": {
+     "windows": 18,
+     "episodes": 11,
+     "auc": 0.9883643617021277,
+     "recall": 0.8333333333333334,
+     "episode_recall": 1.0
+    },
+    "overscoped_thirdparty": {
+     "windows": 14,
+     "episodes": 5,
+     "auc": 0.9919896149949341,
+     "recall": 1.0,
+     "episode_recall": 1.0
+    }
+   }
+  },
+  "hybrid_rankavg": {
+   "auc": 0.8208850472813238,
+   "auc_raw_unclipped": NaN,
+   "average_precision": 0.3704733066666671,
+   "recall_at_fpr01_testcurve": 0.3541666666666667,
+   "recall_at_fpr05_testcurve": 0.5520833333333334,
+   "recall_at_fpr01_valthreshold": 0.3958333333333333,
+   "fpr_realised_at_fpr01_valthreshold": 0.015957446808510637,
+   "recall_at_fpr05_valthreshold": 0.5833333333333334,
+   "fpr_realised_at_fpr05_valthreshold": 0.07092198581560284,
+   "val_threshold_f1": 0.9498044328552803,
+   "val_f1": 0.5798816568047338,
+   "threshold_fpr01": 0.9511082138200782,
+   "threshold_fpr05": 0.8478922207735767,
+   "valf1_tp": 39,
+   "valf1_fp": 36,
+   "valf1_fn": 57,
+   "valf1_tn": 2220,
+   "valf1_precision": 0.52,
+   "valf1_recall": 0.40625,
+   "valf1_f1": 0.45614035087719296,
+   "valf1_fpr": 0.015957446808510637,
+   "benign_burst_flag_rate": 0.0,
+   "per_class": {
+    "malicious_insider": {
+     "windows": 51,
+     "episodes": 6,
+     "auc": 0.6697477749965234,
+     "recall": 0.0196078431372549,
+     "episode_recall": 0.16666666666666666
+    },
+    "compromised_account": {
+     "windows": 13,
+     "episodes": 9,
+     "auc": 0.9909472176759411,
+     "recall": 0.7692307692307693,
+     "episode_recall": 0.7777777777777778
+    },
+    "negligent_insider": {
+     "windows": 18,
+     "episodes": 11,
+     "auc": 0.9917996453900709,
+     "recall": 0.8888888888888888,
+     "episode_recall": 0.9090909090909091
+    },
+    "overscoped_thirdparty": {
+     "windows": 14,
+     "episodes": 5,
+     "auc": 0.9937943262411347,
+     "recall": 0.8571428571428571,
+     "episode_recall": 1.0
+    }
+   }
+  }
+ }
+}

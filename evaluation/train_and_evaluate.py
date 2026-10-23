@@ -611,7 +611,7 @@ def main() -> None:
         band(sbrs(float(sens[i]), ah, SBRS_BETA))
         lat.append((time.perf_counter() - t0) * 1000.0)
     torch.set_grad_enabled(True)
-    lat = np.array(lat)
+    lat = np.array(lat) if lat else np.array([np.nan])     # --latency-samples 0 skips timing
     latency = {
         "n_calls": int(len(lat)), "mean_ms": float(lat.mean()),
         "p50_ms": float(np.percentile(lat, 50)), "p95_ms": float(np.percentile(lat, 95)),

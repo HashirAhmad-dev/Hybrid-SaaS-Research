@@ -1,0 +1,15 @@
+# T2.3 difficulty sweep, mean over data seeds 42, 7, 2024 (values written from the manifest at 3 decimals)
+Sweep hybrid AUC I=0.25 O=0 | sweep.summary.o0p0.i0p25.hybrid_weighted.auc.mean | 0.739
+Sweep LSTM AUC I=0.25 O=0 | sweep.summary.o0p0.i0p25.lstm.auc.mean | 0.715
+Sweep IF AUC I=0.25 O=0 | sweep.summary.o0p0.i0p25.iforest.auc.mean | 0.728
+Sweep LSTM AUC I=1.5 O=0 | sweep.summary.o0p0.i1p5.lstm.auc.mean | 0.895
+Sweep IF AUC I=1.5 O=0 | sweep.summary.o0p0.i1p5.iforest.auc.mean | 0.820
+Sweep hybrid AUC I=1.5 O=0 | sweep.summary.o0p0.i1p5.hybrid_weighted.auc.mean | 0.865
+Sweep LSTM malicious AUC I=0.25 | sweep.summary.o0p0.i0p25.lstm.per_class.malicious_insider.auc.mean | 0.500
+Sweep hybrid malicious AUC I=0.25 | sweep.summary.o0p0.i0p25.hybrid_weighted.per_class.malicious_insider.auc.mean | 0.507
+Sweep LSTM malicious AUC I=1.5 | sweep.summary.o0p0.i1p5.lstm.per_class.malicious_insider.auc.mean | 0.803
+Sweep IF malicious AUC I=1.5 | sweep.summary.o0p0.i1p5.iforest.per_class.malicious_insider.auc.mean | 0.641
+Sweep hybrid AUC I=1 O=0.5 | sweep.summary.o0p5.i1p0.hybrid_weighted.auc.mean | 0.834
+Sweep IF AUC I=1 O=0.5 | sweep.summary.o0p5.i1p0.iforest.auc.mean | 0.769
+Sweep EWMA recall@5%valFPR I=1 | sweep.summary.o0p0.i1p0.ewma.recall_at_fpr05_valthreshold.mean | 0.167
+Sweep hybrid recall@5%valFPR I=0.25 | sweep.summary.o0p0.i0p25.hybrid_weighted.recall_at_fpr05_valthreshold.mean | 0.451

@@ -1,0 +1,455 @@
+{
+  "dataset": {
+    "users": 50,
+    "grid_rows": 25200,
+    "active_sessions": 16246,
+    "scoreable_sessions": 15406,
+    "dropped_no_history": 840,
+    "positives_total": 653,
+    "positive_rate": 0.04019450941770282,
+    "per_split": {
+      "train": {
+        "sessions": 10584,
+        "positives": 426,
+        "negatives": 10158,
+        "benign_bursts": 133
+      },
+      "val": {
+        "sessions": 2498,
+        "positives": 94,
+        "negatives": 2404,
+        "benign_bursts": 29
+      },
+      "test": {
+        "sessions": 2324,
+        "positives": 95,
+        "negatives": 2229,
+        "benign_bursts": 27
+      }
+    }
+  },
+  "split_strategy": "chronological (by time): train=first 70% of hours, val=next 15%, test=last 15%. TRAIN internally split into FIT (75%) / CALIB (25%) with a 24 h buffer.",
+  "tuning": {
+    "alpha": 0.3,
+    "tau_hybrid": 0.62,
+    "val_f1": 0.32967032967032966,
+    "tau_ewma": 0.5,
+    "ewma_val_f1": 0.06529209621993129,
+    "legacy_tau_ewma": 2.0,
+    "alpha_grid": [
+      {
+        "alpha": 0.0,
+        "best_f1": 0.31884057971014496,
+        "best_tau": 0.85
+      },
+      {
+        "alpha": 0.05,
+        "best_f1": 0.3142857142857143,
+        "best_tau": 0.82
+      },
+      {
+        "alpha": 0.1,
+        "best_f1": 0.30769230769230765,
+        "best_tau": 0.7
+      },
+      {
+        "alpha": 0.15,
+        "best_f1": 0.31521739130434784,
+        "best_tau": 0.65
+      },
+      {
+        "alpha": 0.2,
+        "best_f1": 0.3258426966292135,
+        "best_tau": 0.65
+      },
+      {
+        "alpha": 0.25,
+        "best_f1": 0.3225806451612903,
+        "best_tau": 0.62
+      },
+      {
+        "alpha": 0.3,
+        "best_f1": 0.32967032967032966,
+        "best_tau": 0.62
+      },
+      {
+        "alpha": 0.35,
+        "best_f1": 0.32967032967032966,
+        "best_tau": 0.6
+      },
+      {
+        "alpha": 0.4,
+        "best_f1": 0.3191489361702128,
+        "best_tau": 0.57
+      },
+      {
+        "alpha": 0.45,
+        "best_f1": 0.313953488372093,
+        "best_tau": 0.63
+      },
+      {
+        "alpha": 0.5,
+        "best_f1": 0.30857142857142855,
+        "best_tau": 0.61
+      },
+      {
+        "alpha": 0.55,
+        "best_f1": 0.2937853107344633,
+        "best_tau": 0.59
+      },
+      {
+        "alpha": 0.6,
+        "best_f1": 0.28205128205128205,
+        "best_tau": 0.67
+      },
+      {
+        "alpha": 0.65,
+        "best_f1": 0.27947598253275113,
+        "best_tau": 0.47
+      },
+      {
+        "alpha": 0.7,
+        "best_f1": 0.2666666666666666,
+        "best_tau": 0.44
+      },
+      {
+        "alpha": 0.75,
+        "best_f1": 0.2564102564102564,
+        "best_tau": 0.46
+      },
+      {
+        "alpha": 0.8,
+        "best_f1": 0.24489795918367344,
+        "best_tau": 0.45
+      },
+      {
+        "alpha": 0.85,
+        "best_f1": 0.23868312757201646,
+        "best_tau": 0.44
+      },
+      {
+        "alpha": 0.9,
+        "best_f1": 0.23715415019762845,
+        "best_tau": 0.42
+      },
+      {
+        "alpha": 0.95,
+        "best_f1": 0.22053231939163498,
+        "best_tau": 0.4
+      },
+      {
+        "alpha": 1.0,
+        "best_f1": 0.2173913043478261,
+        "best_tau": 0.63
+      }
+    ]
+  },
+  "lstm_val_mse_history": [
+    0.5665284395217896,
+    0.5634050965309143,
+    0.5607569217681885,
+    0.5595853328704834,
+    0.5569807291030884,
+    0.5555210113525391,
+    0.554354727268219,
+    0.5556548237800598,
+    0.553893506526947,
+    0.553582489490509,
+    0.5524681210517883,
+    0.5529334545135498,
+    0.5520496964454651,
+    0.5518621802330017,
+    0.5530893802642822,
+    0.5520073175430298,
+    0.5520520806312561,
+    0.5521653294563293,
+    0.5541684627532959,
+    0.5534624457359314
+  ],
+  "test_flag_level": {
+    "ewma_tuned": {
+      "tp": 37,
+      "fp": 562,
+      "fn": 58,
+      "tn": 1667,
+      "precision": 0.06176961602671119,
+      "recall": 0.3894736842105263,
+      "f1": 0.10662824207492796,
+      "fpr": 0.2521310004486317
+    },
+    "ewma_legacy_tau": {
+      "tp": 15,
+      "fp": 177,
+      "fn": 80,
+      "tn": 2052,
+      "precision": 0.078125,
+      "recall": 0.15789473684210525,
+      "f1": 0.10452961672473868,
+      "fpr": 0.07940780619111709
+    },
+    "hybrid": {
+      "tp": 29,
+      "fp": 43,
+      "fn": 66,
+      "tn": 2186,
+      "precision": 0.4027777777777778,
+      "recall": 0.30526315789473685,
+      "f1": 0.3473053892215569,
+      "fpr": 0.019291161956034097
+    },
+    "lstm_only": {
+      "tp": 16,
+      "fp": 36,
+      "fn": 79,
+      "tn": 2193,
+      "precision": 0.3076923076923077,
+      "recall": 0.16842105263157894,
+      "f1": 0.217687074829932,
+      "fpr": 0.016150740242261104
+    },
+    "if_only": {
+      "tp": 33,
+      "fp": 80,
+      "fn": 62,
+      "tn": 2149,
+      "precision": 0.2920353982300885,
+      "recall": 0.3473684210526316,
+      "f1": 0.31730769230769235,
+      "fpr": 0.03589053387169134
+    }
+  },
+  "test_insider_oriented_operating_point": {
+    "tp": 30,
+    "fp": 70,
+    "fn": 65,
+    "tn": 2159,
+    "precision": 0.3,
+    "recall": 0.3157894736842105,
+    "f1": 0.3076923076923077,
+    "fpr": 0.03140421713772992,
+    "malicious_insider_recall": 0.020833333333333332,
+    "benign_burst_flag_rate": 0.2962962962962963,
+    "alpha": 0.0,
+    "tau": 0.66
+  },
+  "test_enforcement_bands": {
+    "hybrid_alert_or_block": {
+      "tp": 30,
+      "fp": 124,
+      "fn": 65,
+      "tn": 2105,
+      "precision": 0.19480519480519481,
+      "recall": 0.3157894736842105,
+      "f1": 0.24096385542168672,
+      "fpr": 0.05563032750112158
+    },
+    "hybrid_block_only": {
+      "tp": 17,
+      "fp": 26,
+      "fn": 78,
+      "tn": 2203,
+      "precision": 0.3953488372093023,
+      "recall": 0.17894736842105263,
+      "f1": 0.2463768115942029,
+      "fpr": 0.011664423508299685
+    },
+    "ewma_base_action_block": {
+      "tp": 37,
+      "fp": 562,
+      "fn": 58,
+      "tn": 1667,
+      "precision": 0.06176961602671119,
+      "recall": 0.3894736842105263,
+      "f1": 0.10662824207492796,
+      "fpr": 0.2521310004486317
+    },
+    "paper_doc_bands_alert_or_block": {
+      "tp": 65,
+      "fp": 1058,
+      "fn": 30,
+      "tn": 1171,
+      "precision": 0.0578806767586821,
+      "recall": 0.6842105263157895,
+      "f1": 0.10673234811165845,
+      "fpr": 0.474652310453118
+    }
+  },
+  "test_auc_overall": {
+    "lstm": 0.7161767136549314,
+    "if": 0.7314396354277349,
+    "hybrid": 0.741885669759864
+  },
+  "diagnostic_auc_next_step_prediction_error": {
+    "overall": 0.7585180987461926,
+    "malicious_insider": 0.5613410348437267,
+    "compromised_account": 0.9549521019713404,
+    "negligent_insider": 0.955585464333782,
+    "overscoped_thirdparty": 0.9719777754771025
+  },
+  "per_class_recall": {
+    "malicious_insider": {
+      "windows": 48,
+      "hybrid_recall": 0.0,
+      "hybrid_recall_ci": [
+        0.0,
+        0.0741026511527422
+      ],
+      "ewma_recall": 0.3333333333333333,
+      "ewma_recall_ci": [
+        0.2167660137089678,
+        0.47460153667527943
+      ],
+      "episodes": 6,
+      "hybrid_episode_recall": 0.0,
+      "ewma_episode_recall": 1.0,
+      "mean_a_hybrid": 0.09185558558916718,
+      "mean_a_lstm": 0.05731109796186803,
+      "mean_a_if": 0.10666036600086681,
+      "auc_lstm": 0.48512972932555704,
+      "auc_if": 0.5026637505607896,
+      "auc_hybrid": 0.5165432929564827
+    },
+    "compromised_account": {
+      "windows": 17,
+      "hybrid_recall": 0.9411764705882353,
+      "hybrid_recall_ci": [
+        0.730174547964372,
+        0.9895398693548358
+      ],
+      "ewma_recall": 0.7647058823529411,
+      "ewma_recall_ci": [
+        0.5273775411082839,
+        0.9044511092832406
+      ],
+      "episodes": 9,
+      "hybrid_episode_recall": 0.8888888888888888,
+      "ewma_episode_recall": 0.7777777777777778,
+      "mean_a_hybrid": 0.8381606730433723,
+      "mean_a_lstm": 0.6751166173705331,
+      "mean_a_if": 0.9080366969031607,
+      "auc_lstm": 0.975246087667907,
+      "auc_if": 0.9935608159818436,
+      "auc_hybrid": 0.99411500804898
+    },
+    "negligent_insider": {
+      "windows": 17,
+      "hybrid_recall": 0.29411764705882354,
+      "hybrid_recall_ci": [
+        0.13279793865556402,
+        0.5313353332621391
+      ],
+      "ewma_recall": 0.23529411764705882,
+      "ewma_recall_ci": [
+        0.0955488907167594,
+        0.47262245889171595
+      ],
+      "episodes": 11,
+      "hybrid_episode_recall": 0.45454545454545453,
+      "ewma_episode_recall": 0.36363636363636365,
+      "mean_a_hybrid": 0.4914700686718285,
+      "mean_a_lstm": 0.4087367196119615,
+      "mean_a_if": 0.5269272182689143,
+      "auc_lstm": 0.920618583907318,
+      "auc_if": 0.9287731243237537,
+      "auc_hybrid": 0.9440793814160927
+    },
+    "overscoped_thirdparty": {
+      "windows": 13,
+      "hybrid_recall": 0.6153846153846154,
+      "hybrid_recall_ci": [
+        0.35522480972268555,
+        0.8229055341876319
+      ],
+      "ewma_recall": 0.3076923076923077,
+      "ewma_recall_ci": [
+        0.12680497161618087,
+        0.5763111218666236
+      ],
+      "episodes": 5,
+      "hybrid_episode_recall": 0.8,
+      "ewma_episode_recall": 0.4,
+      "mean_a_hybrid": 0.6619434645002454,
+      "mean_a_lstm": 0.5155385532156014,
+      "mean_a_if": 0.7246884264793787,
+      "auc_lstm": 0.9631431825240708,
+      "auc_if": 0.9753252579632122,
+      "auc_hybrid": 0.9796735341822825
+    }
+  },
+  "benign_burst": {
+    "n_test_benign_burst_sessions": 27,
+    "ewma_flag_rate": 0.9259259259259259,
+    "hybrid_flag_rate": 0.07407407407407407,
+    "ewma_legacy_tau_flag_rate": 0.6296296296296297,
+    "hybrid_action_counts": {
+      "PERMIT": 27
+    },
+    "mean_a_lstm": 0.2900080259166164,
+    "mean_a_if": 0.49260667184077345,
+    "mean_a_hybrid": 0.43182707806352627,
+    "mean_sensitivity": 11.481481481481481,
+    "mean_sbrs": 0.23094696292556416,
+    "fpr_on_ordinary_negatives_ewma": 0.2438692098092643,
+    "fpr_on_ordinary_negatives_hybrid": 0.018619436875567667,
+    "mean_activity_rate_ratio": 7.799626617740881
+  },
+  "latency": {
+    "n_calls": 1,
+    "mean_ms": NaN,
+    "p50_ms": NaN,
+    "p95_ms": NaN,
+    "p99_ms": NaN,
+    "max_ms": NaN,
+    "note": "anomaly scoring only (LSTM + memory bank + IF + fusion + SBRS band). Excludes the PII/OCR pipeline, so NOT comparable to the paper's 279 ms end-to-end figure.",
+    "device": "cpu",
+    "torch_threads": 4
+  },
+  "sbrs_enforcement_config": {
+    "beta": 2.5,
+    "bands": [
+      [
+        1.84,
+        "HIGH-RISK",
+        "BLOCK"
+      ],
+      [
+        1.22,
+        "SENSITIVE",
+        "ALERT"
+      ],
+      [
+        0.0,
+        "SAFE",
+        "PERMIT"
+      ]
+    ],
+    "source": "evaluation/calibrate_sbrs.py (validation-calibrated); see evaluation/SBRS_RECALIBRATION.md"
+  },
+  "provenance": {
+    "script": "evaluation/train_and_evaluate.py",
+    "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\train_and_evaluate.py --seed 2024 --data-dir C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\results\\runs\\sweep\\i0.25_o0\\ds2024\\data --out-dir C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\results\\runs\\sweep\\i0.25_o0\\ds2024\\run --manifest-prefix sweep.i0p25.o0p0.ds2024.engine --latency-samples 0",
+    "seeds": {
+      "data": 2024,
+      "train": 2024
+    },
+    "date_utc": "2026-10-23T12:17:45+00:00",
+    "git_hash": "e6d136ab14340eb52dc26626b17d852bbfefb9c5",
+    "git_dirty": true,
+    "python": "3.14.4",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "libraries": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.18.0",
+      "torch": "2.13.0",
+      "presidio_analyzer": "2.2.363",
+      "spacy": "3.8.13",
+      "easyocr": "1.7.2",
+      "Faker": "40.28.1",
+      "pillow": "12.2.0",
+      "openai": "2.44.0"
+    },
+    "device": "cpu"
+  }
+}
