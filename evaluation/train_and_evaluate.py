@@ -70,6 +70,7 @@ import torch.nn as nn
 from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import StandardScaler
 
+from . import selection
 from .common import (CSV_COLUMNS, DATA_DIR, EVAL_DIR, EWMA_LAMBDA, FEATURES, GEN_CONFIG,
                      HYBRID_FLAG_THRESHOLD, LEGACY_EWMA_TAU, PAPER_DOC_BANDS, PAPER_DOC_BETA,
                      SBRS_BANDS, SBRS_BETA, SEQ_LEN, SESSIONS_RAW, THREAT_CLASSES, V2_CSV,
@@ -324,56 +325,8 @@ def roc_auc(pos: np.ndarray, neg: np.ndarray) -> float:
     return float((ranks.sum() - len(pos) * (len(pos) + 1) / 2) / (len(pos) * len(neg)))
 
 
-# ---------------------------------------------------------------------------
-# Tuning helpers
-# ---------------------------------------------------------------------------
-def tune_ewma_tau(dev: np.ndarray, y: np.ndarray) -> Tuple[float, float]:
-    best = (LEGACY_EWMA_TAU, -1.0)
-    for tau in np.arange(0.25, 12.01, 0.25):
-        f1 = binary_metrics(y, dev > tau)["f1"]
-        if f1 > best[1]:
-            best = (float(tau), f1)
-    return best
-
-
-def tune_alpha_tau_constrained(a_lstm: np.ndarray, a_if: np.ndarray, y: np.ndarray,
-                               tc: np.ndarray, target: str, fpr_budget: float):
-    """VAL-only search for a *recall-oriented* operating point.
-
-    Maximise recall on one hard threat class subject to a false-positive budget.
-    The F1-optimal point abandons slow insiders (they are a minority of positives
-    and expensive to catch), so a deployment that actually cares about them needs
-    a different alpha/tau. Selected on VAL, reported on TEST, like everything else.
-    """
-    sel = tc == target
-    best = {"alpha": 1.0, "tau": 0.5, "recall": -1.0, "fpr": 1.0}
-    for alpha in np.round(np.arange(0.0, 1.001, 0.05), 3):
-        fused = alpha * a_lstm + (1 - alpha) * a_if
-        for tau in np.round(np.arange(0.02, 0.99, 0.01), 3):
-            pred = fused >= tau
-            fpr = float(pred[~y].mean()) if (~y).any() else 1.0
-            if fpr > fpr_budget:
-                continue
-            rec = float(pred[sel].mean()) if sel.any() else 0.0
-            if rec > best["recall"] or (rec == best["recall"] and fpr < best["fpr"]):
-                best = {"alpha": float(alpha), "tau": float(tau), "recall": rec, "fpr": fpr}
-    return best
-
-
-def tune_alpha_tau(a_lstm: np.ndarray, a_if: np.ndarray, y: np.ndarray):
-    best = {"alpha": 0.5, "tau": HYBRID_FLAG_THRESHOLD, "f1": -1.0}
-    grid = []
-    for alpha in np.round(np.arange(0.0, 1.001, 0.05), 3):
-        fused = alpha * a_lstm + (1 - alpha) * a_if
-        row = {"alpha": float(alpha), "best_f1": -1.0, "best_tau": 0.5}
-        for tau in np.round(np.arange(0.02, 0.99, 0.01), 3):
-            f1 = binary_metrics(y, fused >= tau)["f1"]
-            if f1 > row["best_f1"]:
-                row["best_f1"], row["best_tau"] = f1, float(tau)
-            if f1 > best["f1"]:
-                best = {"alpha": float(alpha), "tau": float(tau), "f1": f1}
-        grid.append(row)
-    return best, grid
+# Tuning helpers live in evaluation/selection.py. Each one takes the split labels of
+# its rows and refuses anything that is not validation data (hard rule H-R4).
 
 
 # ---------------------------------------------------------------------------
@@ -514,15 +467,18 @@ def main() -> None:
     dev = df.loc[row_index, "ewma_deviation"].to_numpy()
 
     v = split == "val"
-    tau_ewma, ewma_val_f1 = tune_ewma_tau(dev[v], y[v])
-    best, alpha_grid = tune_alpha_tau(a_lstm[v], a_if[v], y[v])
+    tau_ewma, ewma_val_f1 = selection.tune_ewma_tau(dev[v], y[v], split[v],
+                                                    default_tau=LEGACY_EWMA_TAU)
+    best, alpha_grid = selection.tune_alpha_tau(a_lstm[v], a_if[v], y[v], split[v],
+                                                default_tau=HYBRID_FLAG_THRESHOLD)
     alpha, tau_h = best["alpha"], best["tau"]
     print(f"[7/8] tuned on VAL -> tau_ewma={tau_ewma:.2f} (F1={ewma_val_f1:.3f}) | "
           f"alpha={alpha:.2f} tau_hybrid={tau_h:.2f} (F1={best['f1']:.3f})")
 
     tc_all = S.threat_class.to_numpy()
-    insider_op = tune_alpha_tau_constrained(a_lstm[v], a_if[v], y[v], tc_all[v],
-                                            "malicious_insider", fpr_budget=0.05)
+    insider_op = selection.tune_alpha_tau_constrained(a_lstm[v], a_if[v], y[v], tc_all[v],
+                                                      split[v], "malicious_insider",
+                                                      fpr_budget=0.05)
     print(f"      insider-oriented op (val FPR<=5%): alpha={insider_op['alpha']:.2f} "
           f"tau={insider_op['tau']:.2f} val_malicious_recall={insider_op['recall']:.3f}")
 

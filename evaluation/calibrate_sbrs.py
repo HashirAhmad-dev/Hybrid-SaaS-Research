@@ -49,6 +49,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from evaluation import selection
+
 SCORED = Path(__file__).resolve().parent / "data" / "scored_all_splits.csv"
 OUT_JSON = Path(__file__).resolve().parent / "data" / "sbrs_calibration.json"
 
@@ -114,21 +116,6 @@ def enforcement_metrics(S, A, y, beta, t_alert, t_block, bursts=None) -> dict:
     return m
 
 
-def derive_bands(S, A, y, beta):
-    """Band cut-points = upper-tail percentiles of the BENIGN SBRS distribution.
-
-    A false-positive budget: t_alert lets ~5% of benign traffic into the review
-    queue, t_block auto-blocks only the ~0.5% tail. Returns (t_alert, t_block,
-    val flagged-F1 at t_alert) computed on the given (validation) split.
-    """
-    v = sbrs(S, A, beta)
-    benign = v[~y.astype(bool)]
-    t_alert = float(np.percentile(benign, ALERT_BENIGN_PCTL))
-    t_block = float(np.percentile(benign, BLOCK_BENIGN_PCTL))
-    val_f1 = prf(v >= t_alert, y)["f1"]
-    return t_alert, t_block, val_f1
-
-
 def main() -> None:
     import argparse
     ap = argparse.ArgumentParser()
@@ -146,6 +133,7 @@ def main() -> None:
                 df.is_benign_burst.values.astype(bool))
 
     Sv, Av, yv, bv = cols(va)
+    split_v = va.split.to_numpy()          # all "val"; the selectors check it (H-R4)
     St, At, yt, bt = cols(te)
     print(f"val: {len(va)} sessions ({yv.sum()} threats) | "
           f"test: {len(te)} sessions ({yt.sum()} threats)  [scored once]\n")
@@ -160,15 +148,14 @@ def main() -> None:
     # -- Step 3: beta from separation (val AUC), take the knee ------------
     betas = np.round(np.concatenate([np.arange(0, 5.01, 0.5),
                                      np.arange(6, 21, 2)]), 2)
-    aucs = {float(b): auc(sbrs(Sv, Av, b), yv) for b in betas}
-    auc_max = max(aucs.values())
-    knee = min(b for b, a in aucs.items() if a >= 0.99 * auc_max)
+    knee, aucs, auc_max = selection.choose_beta_knee(Sv, Av, yv, split_v, betas)
     print(f"\n[beta] val AUC(SBRS vs threat): max={auc_max:.4f} at "
           f"beta={max(aucs, key=aucs.get)}; knee (>=99% of max) = beta={knee}")
     beta = knee
 
     # -- Step 4: bands from val score distribution -----------------------
-    t_alert, t_block, val_f1 = derive_bands(Sv, Av, yv, beta)
+    t_alert, t_block, val_f1 = selection.derive_bands(Sv, Av, yv, beta, split_v,
+                                                      ALERT_BENIGN_PCTL, BLOCK_BENIGN_PCTL)
     print(f"[bands] derived on val: t_alert={t_alert:.3f}  t_block={t_block:.3f} "
           f"(val flagged-F1={val_f1:.3f})")
 

@@ -12661,1155 +12661,1155 @@
    "value": 3.4399612400917157
   },
   "anomaly.s42.benign_burst.ewma_flag_rate": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5925925925925926
   },
   "anomaly.s42.benign_burst.ewma_legacy_tau_flag_rate": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6666666666666666
   },
   "anomaly.s42.benign_burst.fpr_on_ordinary_negatives_ewma": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.0515926424405563
   },
   "anomaly.s42.benign_burst.fpr_on_ordinary_negatives_hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.0
   },
   "anomaly.s42.benign_burst.hybrid_action_counts.PERMIT": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 27
   },
   "anomaly.s42.benign_burst.hybrid_flag_rate": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.0
   },
   "anomaly.s42.benign_burst.mean_a_hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.32189031967272114
   },
   "anomaly.s42.benign_burst.mean_a_if": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.3178075409934081
   },
   "anomaly.s42.benign_burst.mean_a_lstm": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.33413865571066065
   },
   "anomaly.s42.benign_burst.mean_activity_rate_ratio": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 7.573218219281681
   },
   "anomaly.s42.benign_burst.mean_sbrs": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.2887080750881967
   },
   "anomaly.s42.benign_burst.mean_sensitivity": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 16.48148148148148
   },
   "anomaly.s42.benign_burst.n_test_benign_burst_sessions": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 27
   },
   "anomaly.s42.dataset.active_sessions": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 16297
   },
   "anomaly.s42.dataset.dropped_no_history": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 836
   },
   "anomaly.s42.dataset.grid_rows": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 25200
   },
   "anomaly.s42.dataset.per_split.test.benign_bursts": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 27
   },
   "anomaly.s42.dataset.per_split.test.negatives": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2256
   },
   "anomaly.s42.dataset.per_split.test.positives": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 96
   },
   "anomaly.s42.dataset.per_split.test.sessions": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2352
   },
   "anomaly.s42.dataset.per_split.train.benign_bursts": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 114
   },
   "anomaly.s42.dataset.per_split.train.negatives": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 10159
   },
   "anomaly.s42.dataset.per_split.train.positives": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 434
   },
   "anomaly.s42.dataset.per_split.train.sessions": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 10593
   },
   "anomaly.s42.dataset.per_split.val.benign_bursts": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 30
   },
   "anomaly.s42.dataset.per_split.val.negatives": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2421
   },
   "anomaly.s42.dataset.per_split.val.positives": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 95
   },
   "anomaly.s42.dataset.per_split.val.sessions": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2516
   },
   "anomaly.s42.dataset.positive_rate": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.03933239246487084
   },
   "anomaly.s42.dataset.positives_total": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 641
   },
   "anomaly.s42.dataset.scoreable_sessions": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 15461
   },
   "anomaly.s42.dataset.users": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 50
   },
   "anomaly.s42.diagnostic_auc_next_step_prediction_error.compromised_account": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9982610474631751
   },
   "anomaly.s42.diagnostic_auc_next_step_prediction_error.malicious_insider": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6981469892921708
   },
   "anomaly.s42.diagnostic_auc_next_step_prediction_error.negligent_insider": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9959121355397951
   },
   "anomaly.s42.diagnostic_auc_next_step_prediction_error.overall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.8379691193853428
   },
   "anomaly.s42.diagnostic_auc_next_step_prediction_error.overscoped_thirdparty": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9954090678824722
   },
   "anomaly.s42.latency.max_ms": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
-   "value": 32.24089999275748
+   "run_id": "train_and_evaluate-20261023T113134Z",
+   "value": 118.00360000052024
   },
   "anomaly.s42.latency.mean_ms": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
-   "value": 16.797440399881452
+   "run_id": "train_and_evaluate-20261023T113134Z",
+   "value": 24.031184200022835
   },
   "anomaly.s42.latency.n_calls": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 500
   },
   "anomaly.s42.latency.p50_ms": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
-   "value": 16.813150003144983
+   "run_id": "train_and_evaluate-20261023T113134Z",
+   "value": 22.830050002085045
   },
   "anomaly.s42.latency.p95_ms": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
-   "value": 20.958110007632058
+   "run_id": "train_and_evaluate-20261023T113134Z",
+   "value": 30.440285007352937
   },
   "anomaly.s42.latency.p99_ms": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
-   "value": 23.215429998090247
+   "run_id": "train_and_evaluate-20261023T113134Z",
+   "value": 40.80347201161202
   },
   "anomaly.s42.latency.torch_threads": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 4
   },
   "anomaly.s42.lstm_val_mse_history.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6137601733207703
   },
   "anomaly.s42.lstm_val_mse_history.1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6072713136672974
   },
   "anomaly.s42.lstm_val_mse_history.10": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5964641571044922
   },
   "anomaly.s42.lstm_val_mse_history.11": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5967756509780884
   },
   "anomaly.s42.lstm_val_mse_history.12": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5960866212844849
   },
   "anomaly.s42.lstm_val_mse_history.13": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5942151546478271
   },
   "anomaly.s42.lstm_val_mse_history.14": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5955194234848022
   },
   "anomaly.s42.lstm_val_mse_history.15": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5954505801200867
   },
   "anomaly.s42.lstm_val_mse_history.16": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5945415496826172
   },
   "anomaly.s42.lstm_val_mse_history.17": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5968939661979675
   },
   "anomaly.s42.lstm_val_mse_history.18": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5943500399589539
   },
   "anomaly.s42.lstm_val_mse_history.19": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5949940085411072
   },
   "anomaly.s42.lstm_val_mse_history.2": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6043052077293396
   },
   "anomaly.s42.lstm_val_mse_history.3": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6023116111755371
   },
   "anomaly.s42.lstm_val_mse_history.4": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.599938690662384
   },
   "anomaly.s42.lstm_val_mse_history.5": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5967552661895752
   },
   "anomaly.s42.lstm_val_mse_history.6": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5974786877632141
   },
   "anomaly.s42.lstm_val_mse_history.7": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5963913798332214
   },
   "anomaly.s42.lstm_val_mse_history.8": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5973379015922546
   },
   "anomaly.s42.lstm_val_mse_history.9": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5956141352653503
   },
   "anomaly.s42.per_class_recall.compromised_account.auc_hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.per_class_recall.compromised_account.auc_if": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.per_class_recall.compromised_account.auc_lstm": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9835310965630114
   },
   "anomaly.s42.per_class_recall.compromised_account.episodes": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 9
   },
   "anomaly.s42.per_class_recall.compromised_account.ewma_episode_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6666666666666666
   },
   "anomaly.s42.per_class_recall.compromised_account.ewma_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.46153846153846156
   },
   "anomaly.s42.per_class_recall.compromised_account.ewma_recall_ci.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.2320575430148814
   },
   "anomaly.s42.per_class_recall.compromised_account.ewma_recall_ci.1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.7085656756816796
   },
   "anomaly.s42.per_class_recall.compromised_account.hybrid_episode_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.per_class_recall.compromised_account.hybrid_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.per_class_recall.compromised_account.hybrid_recall_ci.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.7718981569447083
   },
   "anomaly.s42.per_class_recall.compromised_account.hybrid_recall_ci.1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.per_class_recall.compromised_account.mean_a_hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.893996205718566
   },
   "anomaly.s42.per_class_recall.compromised_account.mean_a_if": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9758135675109121
   },
   "anomaly.s42.per_class_recall.compromised_account.mean_a_lstm": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6485441203415289
   },
   "anomaly.s42.per_class_recall.compromised_account.windows": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 13
   },
   "anomaly.s42.per_class_recall.malicious_insider.auc_hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6744585245445696
   },
   "anomaly.s42.per_class_recall.malicious_insider.auc_if": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6147571617299402
   },
   "anomaly.s42.per_class_recall.malicious_insider.auc_lstm": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.744307120011125
   },
   "anomaly.s42.per_class_recall.malicious_insider.episodes": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 6
   },
   "anomaly.s42.per_class_recall.malicious_insider.ewma_episode_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.3333333333333333
   },
   "anomaly.s42.per_class_recall.malicious_insider.ewma_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.0392156862745098
   },
   "anomaly.s42.per_class_recall.malicious_insider.ewma_recall_ci.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.010820856268751206
   },
   "anomaly.s42.per_class_recall.malicious_insider.ewma_recall_ci.1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.13216548986265267
   },
   "anomaly.s42.per_class_recall.malicious_insider.hybrid_episode_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.16666666666666666
   },
   "anomaly.s42.per_class_recall.malicious_insider.hybrid_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.0196078431372549
   },
   "anomaly.s42.per_class_recall.malicious_insider.hybrid_recall_ci.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.003469603253442241
   },
   "anomaly.s42.per_class_recall.malicious_insider.hybrid_recall_ci.1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.10304807675589372
   },
   "anomaly.s42.per_class_recall.malicious_insider.mean_a_hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.16150918589036686
   },
   "anomaly.s42.per_class_recall.malicious_insider.mean_a_if": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.12329527454605398
   },
   "anomaly.s42.per_class_recall.malicious_insider.mean_a_lstm": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.2761509199233054
   },
   "anomaly.s42.per_class_recall.malicious_insider.windows": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 51
   },
   "anomaly.s42.per_class_recall.negligent_insider.auc_hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9999261229314421
   },
   "anomaly.s42.per_class_recall.negligent_insider.auc_if": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9999753743104807
   },
   "anomaly.s42.per_class_recall.negligent_insider.auc_lstm": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9895833333333334
   },
   "anomaly.s42.per_class_recall.negligent_insider.episodes": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 11
   },
   "anomaly.s42.per_class_recall.negligent_insider.ewma_episode_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.18181818181818182
   },
   "anomaly.s42.per_class_recall.negligent_insider.ewma_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.16666666666666666
   },
   "anomaly.s42.per_class_recall.negligent_insider.ewma_recall_ci.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.05836470400465757
   },
   "anomaly.s42.per_class_recall.negligent_insider.ewma_recall_ci.1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.39222499638359243
   },
   "anomaly.s42.per_class_recall.negligent_insider.hybrid_episode_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.per_class_recall.negligent_insider.hybrid_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.8888888888888888
   },
   "anomaly.s42.per_class_recall.negligent_insider.hybrid_recall_ci.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6719975513339578
   },
   "anomaly.s42.per_class_recall.negligent_insider.hybrid_recall_ci.1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9689811315464172
   },
   "anomaly.s42.per_class_recall.negligent_insider.mean_a_hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.8489549024772923
   },
   "anomaly.s42.per_class_recall.negligent_insider.mean_a_if": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.8808881965346184
   },
   "anomaly.s42.per_class_recall.negligent_insider.mean_a_lstm": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.753155020305314
   },
   "anomaly.s42.per_class_recall.negligent_insider.windows": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 18
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.auc_hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.auc_if": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.auc_lstm": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9942692502532928
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.episodes": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 5
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.ewma_episode_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.4
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.ewma_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.21428571428571427
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.ewma_recall_ci.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.0757124833691637
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.ewma_recall_ci.1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.4758972377320828
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.hybrid_episode_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.hybrid_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.hybrid_recall_ci.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.7846829880728186
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.hybrid_recall_ci.1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.mean_a_hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.8857685019166283
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.mean_a_if": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.8988226727157873
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.mean_a_lstm": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.8466059895191512
   },
   "anomaly.s42.per_class_recall.overscoped_thirdparty.windows": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 14
   },
   "anomaly.s42.sbrs_enforcement_config.bands.0.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.84
   },
   "anomaly.s42.sbrs_enforcement_config.bands.1.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.22
   },
   "anomaly.s42.sbrs_enforcement_config.bands.2.0": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.0
   },
   "anomaly.s42.sbrs_enforcement_config.beta": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2.5
   },
   "anomaly.s42.test_auc_overall.hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.827042239213948
   },
   "anomaly.s42.test_auc_overall.if": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.7953351248522459
   },
   "anomaly.s42.test_auc_overall.lstm": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.8591441341607565
   },
   "anomaly.s42.test_enforcement_bands.ewma_base_action_block.f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.11618257261410789
   },
   "anomaly.s42.test_enforcement_bands.ewma_base_action_block.fn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 82
   },
   "anomaly.s42.test_enforcement_bands.ewma_base_action_block.fp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 131
   },
   "anomaly.s42.test_enforcement_bands.ewma_base_action_block.fpr": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.05806737588652482
   },
   "anomaly.s42.test_enforcement_bands.ewma_base_action_block.precision": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.09655172413793103
   },
   "anomaly.s42.test_enforcement_bands.ewma_base_action_block.recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.14583333333333334
   },
   "anomaly.s42.test_enforcement_bands.ewma_base_action_block.tn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2125
   },
   "anomaly.s42.test_enforcement_bands.ewma_base_action_block.tp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 14
   },
   "anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.47540983606557374
   },
   "anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.fn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 38
   },
   "anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.fp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 90
   },
   "anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.fpr": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.0398936170212766
   },
   "anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.precision": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.3918918918918919
   },
   "anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6041666666666666
   },
   "anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.tn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2166
   },
   "anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.tp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 58
   },
   "anomaly.s42.test_enforcement_bands.hybrid_block_only.f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.39694656488549623
   },
   "anomaly.s42.test_enforcement_bands.hybrid_block_only.fn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 70
   },
   "anomaly.s42.test_enforcement_bands.hybrid_block_only.fp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 9
   },
   "anomaly.s42.test_enforcement_bands.hybrid_block_only.fpr": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.003989361702127659
   },
   "anomaly.s42.test_enforcement_bands.hybrid_block_only.precision": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.7428571428571429
   },
   "anomaly.s42.test_enforcement_bands.hybrid_block_only.recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.2708333333333333
   },
   "anomaly.s42.test_enforcement_bands.hybrid_block_only.tn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2247
   },
   "anomaly.s42.test_enforcement_bands.hybrid_block_only.tp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 26
   },
   "anomaly.s42.test_enforcement_bands.paper_doc_bands_alert_or_block.f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.13365155131264916
   },
   "anomaly.s42.test_enforcement_bands.paper_doc_bands_alert_or_block.fn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 12
   },
   "anomaly.s42.test_enforcement_bands.paper_doc_bands_alert_or_block.fp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1077
   },
   "anomaly.s42.test_enforcement_bands.paper_doc_bands_alert_or_block.fpr": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.4773936170212766
   },
   "anomaly.s42.test_enforcement_bands.paper_doc_bands_alert_or_block.precision": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.07235142118863049
   },
   "anomaly.s42.test_enforcement_bands.paper_doc_bands_alert_or_block.recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.875
   },
   "anomaly.s42.test_enforcement_bands.paper_doc_bands_alert_or_block.tn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1179
   },
   "anomaly.s42.test_enforcement_bands.paper_doc_bands_alert_or_block.tp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 84
   },
   "anomaly.s42.test_flag_level.ewma_legacy_tau.f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.1
   },
   "anomaly.s42.test_flag_level.ewma_legacy_tau.fn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 82
   },
   "anomaly.s42.test_flag_level.ewma_legacy_tau.fp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 170
   },
   "anomaly.s42.test_flag_level.ewma_legacy_tau.fpr": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.07535460992907801
   },
   "anomaly.s42.test_flag_level.ewma_legacy_tau.precision": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.07608695652173914
   },
   "anomaly.s42.test_flag_level.ewma_legacy_tau.recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.14583333333333334
   },
   "anomaly.s42.test_flag_level.ewma_legacy_tau.tn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2086
   },
   "anomaly.s42.test_flag_level.ewma_legacy_tau.tp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 14
   },
   "anomaly.s42.test_flag_level.ewma_tuned.f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.11618257261410789
   },
   "anomaly.s42.test_flag_level.ewma_tuned.fn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 82
   },
   "anomaly.s42.test_flag_level.ewma_tuned.fp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 131
   },
   "anomaly.s42.test_flag_level.ewma_tuned.fpr": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.05806737588652482
   },
   "anomaly.s42.test_flag_level.ewma_tuned.precision": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.09655172413793103
   },
   "anomaly.s42.test_flag_level.ewma_tuned.recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.14583333333333334
   },
   "anomaly.s42.test_flag_level.ewma_tuned.tn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2125
   },
   "anomaly.s42.test_flag_level.ewma_tuned.tp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 14
   },
   "anomaly.s42.test_flag_level.hybrid.f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6285714285714286
   },
   "anomaly.s42.test_flag_level.hybrid.fn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 52
   },
   "anomaly.s42.test_flag_level.hybrid.fp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0
   },
   "anomaly.s42.test_flag_level.hybrid.fpr": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.0
   },
   "anomaly.s42.test_flag_level.hybrid.precision": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.test_flag_level.hybrid.recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.4583333333333333
   },
   "anomaly.s42.test_flag_level.hybrid.tn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2256
   },
   "anomaly.s42.test_flag_level.hybrid.tp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 44
   },
   "anomaly.s42.test_flag_level.if_only.f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6338028169014085
   },
   "anomaly.s42.test_flag_level.if_only.fn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 51
   },
   "anomaly.s42.test_flag_level.if_only.fp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1
   },
   "anomaly.s42.test_flag_level.if_only.fpr": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.0004432624113475177
   },
   "anomaly.s42.test_flag_level.if_only.precision": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9782608695652174
   },
   "anomaly.s42.test_flag_level.if_only.recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.46875
   },
   "anomaly.s42.test_flag_level.if_only.tn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2255
   },
   "anomaly.s42.test_flag_level.if_only.tp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 45
   },
   "anomaly.s42.test_flag_level.lstm_only.f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.35036496350364965
   },
   "anomaly.s42.test_flag_level.lstm_only.fn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 72
   },
   "anomaly.s42.test_flag_level.lstm_only.fp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 17
   },
   "anomaly.s42.test_flag_level.lstm_only.fpr": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.007535460992907801
   },
   "anomaly.s42.test_flag_level.lstm_only.precision": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5853658536585366
   },
   "anomaly.s42.test_flag_level.lstm_only.recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.25
   },
   "anomaly.s42.test_flag_level.lstm_only.tn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2239
   },
   "anomaly.s42.test_flag_level.lstm_only.tp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 24
   },
   "anomaly.s42.test_insider_oriented_operating_point.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.85
   },
   "anomaly.s42.test_insider_oriented_operating_point.benign_burst_flag_rate": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.37037037037037035
   },
   "anomaly.s42.test_insider_oriented_operating_point.f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.4511278195488722
   },
   "anomaly.s42.test_insider_oriented_operating_point.fn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 36
   },
   "anomaly.s42.test_insider_oriented_operating_point.fp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 110
   },
   "anomaly.s42.test_insider_oriented_operating_point.fpr": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.04875886524822695
   },
   "anomaly.s42.test_insider_oriented_operating_point.malicious_insider_recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.29411764705882354
   },
   "anomaly.s42.test_insider_oriented_operating_point.precision": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.35294117647058826
   },
   "anomaly.s42.test_insider_oriented_operating_point.recall": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.625
   },
   "anomaly.s42.test_insider_oriented_operating_point.tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.39
   },
   "anomaly.s42.test_insider_oriented_operating_point.tn": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2146
   },
   "anomaly.s42.test_insider_oriented_operating_point.tp": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 60
   },
   "anomaly.s42.tuning.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.25
   },
   "anomaly.s42.tuning.alpha_grid.0.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.0
   },
   "anomaly.s42.tuning.alpha_grid.0.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6666666666666666
   },
   "anomaly.s42.tuning.alpha_grid.0.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.79
   },
   "anomaly.s42.tuning.alpha_grid.1.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.05
   },
   "anomaly.s42.tuning.alpha_grid.1.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6666666666666667
   },
   "anomaly.s42.tuning.alpha_grid.1.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.76
   },
   "anomaly.s42.tuning.alpha_grid.10.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5
   },
   "anomaly.s42.tuning.alpha_grid.10.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.684931506849315
   },
   "anomaly.s42.tuning.alpha_grid.10.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.7
   },
   "anomaly.s42.tuning.alpha_grid.11.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.55
   },
   "anomaly.s42.tuning.alpha_grid.11.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6758620689655174
   },
   "anomaly.s42.tuning.alpha_grid.11.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.7
   },
   "anomaly.s42.tuning.alpha_grid.12.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6
   },
   "anomaly.s42.tuning.alpha_grid.12.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.68
   },
   "anomaly.s42.tuning.alpha_grid.12.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.66
   },
   "anomaly.s42.tuning.alpha_grid.13.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.65
   },
   "anomaly.s42.tuning.alpha_grid.13.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6493506493506493
   },
   "anomaly.s42.tuning.alpha_grid.13.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.66
   },
   "anomaly.s42.tuning.alpha_grid.14.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.7
   },
   "anomaly.s42.tuning.alpha_grid.14.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6134969325153375
   },
   "anomaly.s42.tuning.alpha_grid.14.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.64
   },
   "anomaly.s42.tuning.alpha_grid.15.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.75
   },
   "anomaly.s42.tuning.alpha_grid.15.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5988023952095808
   },
   "anomaly.s42.tuning.alpha_grid.15.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.63
   },
   "anomaly.s42.tuning.alpha_grid.16.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.8
   },
   "anomaly.s42.tuning.alpha_grid.16.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5828571428571427
   },
   "anomaly.s42.tuning.alpha_grid.16.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.62
   },
   "anomaly.s42.tuning.alpha_grid.17.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.85
   },
   "anomaly.s42.tuning.alpha_grid.17.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5621621621621621
   },
   "anomaly.s42.tuning.alpha_grid.17.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6
   },
   "anomaly.s42.tuning.alpha_grid.18.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.9
   },
   "anomaly.s42.tuning.alpha_grid.18.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5517241379310346
   },
   "anomaly.s42.tuning.alpha_grid.18.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.65
   },
   "anomaly.s42.tuning.alpha_grid.19.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.95
   },
   "anomaly.s42.tuning.alpha_grid.19.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5365853658536586
   },
   "anomaly.s42.tuning.alpha_grid.19.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.57
   },
   "anomaly.s42.tuning.alpha_grid.2.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.1
   },
   "anomaly.s42.tuning.alpha_grid.2.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6712328767123289
   },
   "anomaly.s42.tuning.alpha_grid.2.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.76
   },
   "anomaly.s42.tuning.alpha_grid.20.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 1.0
   },
   "anomaly.s42.tuning.alpha_grid.20.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.5229357798165137
   },
   "anomaly.s42.tuning.alpha_grid.20.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.54
   },
   "anomaly.s42.tuning.alpha_grid.3.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.15
   },
   "anomaly.s42.tuning.alpha_grid.3.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6802721088435374
   },
   "anomaly.s42.tuning.alpha_grid.3.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.74
   },
   "anomaly.s42.tuning.alpha_grid.4.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.2
   },
   "anomaly.s42.tuning.alpha_grid.4.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6805555555555556
   },
   "anomaly.s42.tuning.alpha_grid.4.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.76
   },
   "anomaly.s42.tuning.alpha_grid.5.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.25
   },
   "anomaly.s42.tuning.alpha_grid.5.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6896551724137931
   },
   "anomaly.s42.tuning.alpha_grid.5.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.75
   },
   "anomaly.s42.tuning.alpha_grid.6.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.3
   },
   "anomaly.s42.tuning.alpha_grid.6.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6896551724137931
   },
   "anomaly.s42.tuning.alpha_grid.6.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.73
   },
   "anomaly.s42.tuning.alpha_grid.7.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.35
   },
   "anomaly.s42.tuning.alpha_grid.7.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6896551724137931
   },
   "anomaly.s42.tuning.alpha_grid.7.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.72
   },
   "anomaly.s42.tuning.alpha_grid.8.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.4
   },
   "anomaly.s42.tuning.alpha_grid.8.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6896551724137931
   },
   "anomaly.s42.tuning.alpha_grid.8.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.72
   },
   "anomaly.s42.tuning.alpha_grid.9.alpha": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.45
   },
   "anomaly.s42.tuning.alpha_grid.9.best_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6896551724137931
   },
   "anomaly.s42.tuning.alpha_grid.9.best_tau": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.71
   },
   "anomaly.s42.tuning.ewma_val_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.11578947368421053
   },
   "anomaly.s42.tuning.legacy_tau_ewma": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2.0
   },
   "anomaly.s42.tuning.tau_ewma": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 2.5
   },
   "anomaly.s42.tuning.tau_hybrid": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.75
   },
   "anomaly.s42.tuning.val_f1": {
-   "run_id": "train_and_evaluate-20261023T111635Z",
+   "run_id": "train_and_evaluate-20261023T113134Z",
    "value": 0.6896551724137931
   },
   "baseline.anomaly.s42.benign_burst.ewma_flag_rate": {
@@ -32233,143 +32233,143 @@
    "value": 638
   },
   "generation.s42.active_sessions": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 16297
   },
   "generation.s42.benign_burst_sessions": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 185
   },
   "generation.s42.by_threat_class.compromised_account": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 120
   },
   "generation.s42.by_threat_class.malicious_insider": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 310
   },
   "generation.s42.by_threat_class.negligent_insider": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 110
   },
   "generation.s42.by_threat_class.overscoped_thirdparty": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 101
   },
   "generation.s42.episodes.benign_burst": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 95
   },
   "generation.s42.episodes.compromised_account": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 60
   },
   "generation.s42.episodes.malicious_insider": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 39
   },
   "generation.s42.episodes.negligent_insider": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 72
   },
   "generation.s42.episodes.overscoped_thirdparty": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 34
   },
   "generation.s42.grid_rows": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 25200
   },
   "generation.s42.per_split.test.benign_bursts": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 27
   },
   "generation.s42.per_split.test.by_class.compromised_account": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 13
   },
   "generation.s42.per_split.test.by_class.malicious_insider": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 51
   },
   "generation.s42.per_split.test.by_class.negligent_insider": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 18
   },
   "generation.s42.per_split.test.by_class.overscoped_thirdparty": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 14
   },
   "generation.s42.per_split.test.positives": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 96
   },
   "generation.s42.per_split.test.sessions": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 2352
   },
   "generation.s42.per_split.train.benign_bursts": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 128
   },
   "generation.s42.per_split.train.by_class.compromised_account": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 92
   },
   "generation.s42.per_split.train.by_class.malicious_insider": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 213
   },
   "generation.s42.per_split.train.by_class.negligent_insider": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 72
   },
   "generation.s42.per_split.train.by_class.overscoped_thirdparty": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 73
   },
   "generation.s42.per_split.train.positives": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 450
   },
   "generation.s42.per_split.train.sessions": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 11429
   },
   "generation.s42.per_split.val.benign_bursts": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 30
   },
   "generation.s42.per_split.val.by_class.compromised_account": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 15
   },
   "generation.s42.per_split.val.by_class.malicious_insider": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 46
   },
   "generation.s42.per_split.val.by_class.negligent_insider": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 20
   },
   "generation.s42.per_split.val.by_class.overscoped_thirdparty": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 14
   },
   "generation.s42.per_split.val.positives": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 95
   },
   "generation.s42.per_split.val.sessions": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 2516
   },
   "generation.s42.positive_rate": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 0.03933239246487084
   },
   "generation.s42.positive_sessions": {
-   "run_id": "generate_sessions-20261023T111757Z",
+   "run_id": "generate_sessions-20261023T113037Z",
    "value": 641
   },
   "generation.s7.active_sessions": {
@@ -35065,95 +35065,95 @@
    "value": 0.6896551724137931
   },
   "sbrs.bands.t_alert": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 1.22382
   },
   "sbrs.bands.t_block": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 1.8436665000000028
   },
   "sbrs.beta.chosen": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 2.5
   },
   "sbrs.beta.val_auc_by_beta.0.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.6934498576056001
   },
   "sbrs.beta.val_auc_by_beta.0.5": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.7841387856257744
   },
   "sbrs.beta.val_auc_by_beta.1.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8156699058675189
   },
   "sbrs.beta.val_auc_by_beta.1.5": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8239353029413683
   },
   "sbrs.beta.val_auc_by_beta.10.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.838918237352986
   },
   "sbrs.beta.val_auc_by_beta.12.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8389878040826975
   },
   "sbrs.beta.val_auc_by_beta.14.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8387964955759908
   },
   "sbrs.beta.val_auc_by_beta.16.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.838626926672319
   },
   "sbrs.beta.val_auc_by_beta.18.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8381182199613035
   },
   "sbrs.beta.val_auc_by_beta.2.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8293658557794734
   },
   "sbrs.beta.val_auc_by_beta.2.5": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8326876671231983
   },
   "sbrs.beta.val_auc_by_beta.20.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8378399530424574
   },
   "sbrs.beta.val_auc_by_beta.3.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8349529337594296
   },
   "sbrs.beta.val_auc_by_beta.3.5": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8367225374464662
   },
   "sbrs.beta.val_auc_by_beta.4.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8373790734581187
   },
   "sbrs.beta.val_auc_by_beta.4.5": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.837913867692776
   },
   "sbrs.beta.val_auc_by_beta.5.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8381486554055523
   },
   "sbrs.beta.val_auc_by_beta.6.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8383312680710451
   },
   "sbrs.beta.val_auc_by_beta.8.0": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8384617056892542
   },
   "sbrs.beta.val_auc_max": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8389878040826975
   },
   "sbrs.ds1.bands.t_alert": {
@@ -39957,391 +39957,391 @@
    "value": 94
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.auto_alert_or_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.49362244897959184
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.auto_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.025510204081632654
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.benign_alert_or_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.4773936170212766
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.benign_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.018173758865248225
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.benign_burst_alert_or_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.0
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.benign_burst_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.0
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.block.f1": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.2435897435897436
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.block.fn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 77
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.block.fp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 41
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.block.fpr": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.018173758865248225
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.block.precision": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.31666666666666665
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.block.recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.19791666666666666
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.block.tn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 2215
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.block.tp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 19
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.flagged.f1": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.13365155131264916
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.flagged.fn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 12
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.flagged.fp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 1077
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.flagged.fpr": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.4773936170212766
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.flagged.precision": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.07235142118863049
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.flagged.recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.875
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.flagged.tn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 1179
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.flagged.tp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 84
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.flagged_f1": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.13365155131264916
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.n_alert": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 1101
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.n_block": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 60
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.n_permit": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 1191
   },
   "sbrs.test.doc_beta0.5_bands0.50_1.00.threat_permit_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.125
   },
   "sbrs.test.new_calibrated.auto_alert_or_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.06207482993197279
   },
   "sbrs.test.new_calibrated.auto_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.01488095238095238
   },
   "sbrs.test.new_calibrated.benign_alert_or_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.03900709219858156
   },
   "sbrs.test.new_calibrated.benign_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.003989361702127659
   },
   "sbrs.test.new_calibrated.benign_burst_alert_or_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.0
   },
   "sbrs.test.new_calibrated.benign_burst_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.0
   },
   "sbrs.test.new_calibrated.block.f1": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.39694656488549623
   },
   "sbrs.test.new_calibrated.block.fn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 70
   },
   "sbrs.test.new_calibrated.block.fp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 9
   },
   "sbrs.test.new_calibrated.block.fpr": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.003989361702127659
   },
   "sbrs.test.new_calibrated.block.precision": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.7428571428571429
   },
   "sbrs.test.new_calibrated.block.recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.2708333333333333
   },
   "sbrs.test.new_calibrated.block.tn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 2247
   },
   "sbrs.test.new_calibrated.block.tp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 26
   },
   "sbrs.test.new_calibrated.flagged.f1": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.4793388429752066
   },
   "sbrs.test.new_calibrated.flagged.fn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 38
   },
   "sbrs.test.new_calibrated.flagged.fp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 88
   },
   "sbrs.test.new_calibrated.flagged.fpr": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.03900709219858156
   },
   "sbrs.test.new_calibrated.flagged.precision": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.3972602739726027
   },
   "sbrs.test.new_calibrated.flagged.recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.6041666666666666
   },
   "sbrs.test.new_calibrated.flagged.tn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 2168
   },
   "sbrs.test.new_calibrated.flagged.tp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 58
   },
   "sbrs.test.new_calibrated.flagged_f1": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.4793388429752066
   },
   "sbrs.test.new_calibrated.n_alert": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 111
   },
   "sbrs.test.new_calibrated.n_block": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 35
   },
   "sbrs.test.new_calibrated.n_permit": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 2206
   },
   "sbrs.test.new_calibrated.threat_permit_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.3958333333333333
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.auto_alert_or_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8626700680272109
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.auto_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.407312925170068
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.benign_alert_or_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8585992907801419
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.benign_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.3887411347517731
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.benign_burst_alert_or_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.37037037037037035
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.benign_burst_block_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.0
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.block.f1": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.15370018975332067
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.block.fn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 15
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.block.fp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 877
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.block.fpr": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.3887411347517731
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.block.precision": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.08455114822546973
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.block.recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.84375
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.block.tn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 1379
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.block.tp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 81
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged.f1": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.08658823529411765
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged.fn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 4
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged.fp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 1937
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged.fpr": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8585992907801419
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged.precision": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.045342533267619514
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged.recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.9583333333333334
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged.tn": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 319
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged.tp": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 92
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged_f1": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.08658823529411765
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.n_alert": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 1071
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.n_block": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 958
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.n_permit": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 323
   },
   "sbrs.test.old_code_beta0.5_bands0.20_0.60.threat_permit_rate": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.041666666666666664
   },
   "sbrs.test_per_class_recall_new.compromised_account.alert_or_block_recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 1.0
   },
   "sbrs.test_per_class_recall_new.compromised_account.block_recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.8461538461538461
   },
   "sbrs.test_per_class_recall_new.compromised_account.n": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 13
   },
   "sbrs.test_per_class_recall_new.malicious_insider.alert_or_block_recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.3333333333333333
   },
   "sbrs.test_per_class_recall_new.malicious_insider.block_recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.0196078431372549
   },
   "sbrs.test_per_class_recall_new.malicious_insider.n": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 51
   },
   "sbrs.test_per_class_recall_new.negligent_insider.alert_or_block_recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 1.0
   },
   "sbrs.test_per_class_recall_new.negligent_insider.block_recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.5555555555555556
   },
   "sbrs.test_per_class_recall_new.negligent_insider.n": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 18
   },
   "sbrs.test_per_class_recall_new.overscoped_thirdparty.alert_or_block_recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.7142857142857143
   },
   "sbrs.test_per_class_recall_new.overscoped_thirdparty.block_recall": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 0.2857142857142857
   },
   "sbrs.test_per_class_recall_new.overscoped_thirdparty.n": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 14
   },
   "sbrs.test_sessions": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 2352
   },
   "sbrs.test_threats": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 96
   },
   "sbrs.val_sessions": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 2516
   },
   "sbrs.val_threats": {
-   "run_id": "calibrate_sbrs-20261023T111638Z",
+   "run_id": "calibrate_sbrs-20261023T113138Z",
    "value": 95
   }
  },
@@ -40891,6 +40891,37 @@
    },
    "seeds": {}
   },
+  "calibrate_sbrs-20261023T113138Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\calibrate_sbrs.py",
+   "date_utc": "2026-10-23T11:31:38+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "34477745b624a1e735305fbb1ddca8c311dcc7d9",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "sbrs"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/calibrate_sbrs.py",
+   "scripts": {
+    "sbrs": "evaluation/calibrate_sbrs.py"
+   },
+   "seeds": {}
+  },
   "generate_sessions-20261023T111144Z": {
    "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\generate_sessions.py --out-dir results/runs/repro_s42/data",
    "date_utc": "2026-10-23T11:11:44+00:00",
@@ -41351,6 +41382,39 @@
    },
    "seeds": {
     "data": 7
+   }
+  },
+  "generate_sessions-20261023T113037Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\generate_sessions.py --seed 42",
+   "date_utc": "2026-10-23T11:30:37+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "34477745b624a1e735305fbb1ddca8c311dcc7d9",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "generation.s42"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/generate_sessions.py",
+   "scripts": {
+    "generation.s42": "evaluation/generate_sessions.py"
+   },
+   "seeds": {
+    "data": 42
    }
   },
   "multiseed-20261023T112806Z": {
@@ -41905,6 +41969,40 @@
    "seeds": {
     "data": 7,
     "train": 7
+   }
+  },
+  "train_and_evaluate-20261023T113134Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\train_and_evaluate.py --seed 42",
+   "date_utc": "2026-10-23T11:31:34+00:00",
+   "device": "cpu",
+   "git_dirty": true,
+   "git_hash": "34477745b624a1e735305fbb1ddca8c311dcc7d9",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "anomaly.s42"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/train_and_evaluate.py",
+   "scripts": {
+    "anomaly.s42": "evaluation/train_and_evaluate.py"
+   },
+   "seeds": {
+    "data": 42,
+    "train": 42
    }
   }
  },

@@ -20,6 +20,7 @@ stage() {
 }
 
 t0=$(date +%s)
+stage pytest            -m pytest -q tests
 stage baseline_manifest -m tools.ingest_baseline
 stage generate_s42      -m evaluation.generate_sessions --seed 42
 stage train_s42         -m evaluation.train_and_evaluate --seed 42

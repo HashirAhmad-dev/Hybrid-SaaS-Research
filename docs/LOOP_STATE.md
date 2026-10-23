@@ -2,19 +2,19 @@
 
 After any restart or context compaction: re-read CLAUDE.md, this file and docs/FIXES_SUMMARY.md first.
 
-- Iteration: 4
-- Current task: T1.5
-- Last evidence path: results/multiseed_summary.csv, logs/t1.4_rerun_seed7.log
+- Iteration: 5
+- Current task: PHASE1-GATE
+- Last evidence path: tests/, logs/reproduce_*.log
 - Open gates: none yet (Q-001..Q-003 in OPEN_QUESTIONS.md are asked when their tasks are reached)
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)
-- Goal: T1.5 pytest for SBRS, metrics, matching, validation-only selection (H-R4), splits; wire selection.py into train/calibrate.
-- Smallest change: tests/ (already drafted, 74 pass); replace inline selectors in train_and_evaluate.py and calibrate_sbrs.py with evaluation/selection.py calls that pass split labels.
-- Verify: pytest; reproduce quick gives identical s42 numbers; selector guard tests fail on test rows.
+- Goal: Phase 1 gate (pytest, full reproduce from clean shell, check_numbers, git status, FIXES entries, H-R4/H-R5 scan).
+- Smallest change: run checks; write gate record into FIXES_SUMMARY.
+- Verify: all five checks pass, recorded with commands.
 
 ## Next action
-Start T1.5.
+Start PHASE1-GATE.
 
 ## Status table
 
@@ -25,7 +25,7 @@ Start T1.5.
 | T1.2 | M | DONE | |
 | T1.3 | M | DONE | |
 | T1.4 | M | DONE | |
-| T1.5 | M | PENDING | |
+| T1.5 | M | DONE | |
 | T2.1 | M | PENDING | |
 | T2.2 | M | PENDING | |
 | T2.3 | M | PENDING | |

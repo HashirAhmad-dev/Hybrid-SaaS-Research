@@ -238,3 +238,20 @@ def binary_metrics(y_true: np.ndarray, y_pred: np.ndarray) -> dict:
         "tp": tp, "fp": fp, "fn": fn, "tn": tn,
         "precision": precision, "recall": recall, "f1": f1, "fpr": fpr,
     }
+
+
+# ---------------------------------------------------------------------------
+# Time split boundaries (paper-v2 T1.5: one definition, unit-tested)
+# ---------------------------------------------------------------------------
+def time_boundaries(total_hours: int) -> dict:
+    """Hour indices of the chronological split, as train_and_evaluate.py uses them.
+
+    TRAIN = [0, train_end), VAL = [train_end, val_end), TEST = [val_end, total).
+    TRAIN is cut into FIT = [0, fit_end) and CALIB = windows ending in
+    [calib_lo, train_end), with calib_lo = fit_end + SEQ_LEN so that no CALIB
+    window (24 hours ending at its hour) contains a FIT hour.
+    """
+    train_end = int(np.floor(total_hours * 0.70))
+    fit_end = int(np.floor(train_end * 0.75))
+    return {"train_end": train_end, "fit_end": fit_end,
+            "calib_lo": fit_end + SEQ_LEN, "val_end": int(total_hours * 0.85)}

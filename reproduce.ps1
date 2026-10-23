@@ -27,6 +27,7 @@ function Stage([string]$name, [string[]]$pyArgs) {
 }
 
 $t0 = Get-Date
+Stage "pytest"             @("-m", "pytest", "-q", "tests")
 Stage "baseline_manifest"  @("-m", "tools.ingest_baseline")
 Stage "generate_s42"       @("-m", "evaluation.generate_sessions", "--seed", "42")
 Stage "train_s42"          @("-m", "evaluation.train_and_evaluate", "--seed", "42")
