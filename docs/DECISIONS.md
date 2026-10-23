@@ -78,3 +78,8 @@ One entry per non-obvious decision. Format: date, task, options, choice, reason.
 - Options: keep the multiplicative SBRS (paper design); switch to the form that measured best at equal budget (gated, T2.5).
 - Choice: gated fusion with dataset-42 validation settings (beta 2.5, tau_A 0.7507, t_alert 1.2238, t_block 1.8437), plus a per-user CUSUM drift alarm (k 1.0, h 8.0) that can only raise PERMIT to ALERT. The multiplicative `compute_sbrs` stays available and is still reported (`sbrs_action`) so the old behaviour remains reproducible (H-R10).
 - Reason: gated fusion caught more threats at the same benign budget on 10 datasets and is the only form that handles the reviewer's low-S/high-A case; the drift alarm costs FPR, so it routes to review, not auto-block. Values come from `backend/config/final_config.json`, generated from the manifest; `tests/test_final_config.py` checks both.
+
+## D-019 (2026-10-24, T3.2) Presidio tie-break made deterministic
+- Found by the determinism check: two Presidio runs on identical text disagreed on one v2 document (a password recognised as PASSWORD in one run and as LOCATION/ADDRESS in the other). Both results had the same span and score; `_dedupe_overlaps` kept whichever came first, and Presidio's recogniser order varies between processes.
+- Fix: `evaluation/pii_v2.dedupe_deterministic` breaks ties by longer span, then entity-type name. Two consecutive runs now give identical entities on all 160 text and 640 OCR transcripts. The v1 helper in `run_pipeline.py` is unchanged so the old numbers stay reproducible as they were; the v1 subset inside the v2 scorer uses the new tie-break.
+- Effect: the deterministic result equals the first run (v2 Branch 1 F1 0.7275 / 0.7686), so the T3.5 numbers already recorded stand.

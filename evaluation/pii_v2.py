@@ -180,13 +180,26 @@ def build_analyzer_plus():
 PLUS_MAP = {**PRESIDIO_MAP, "STREET_ADDRESS": "ADDRESS"}
 
 
+def dedupe_deterministic(results) -> list:
+    """Like run_pipeline._dedupe_overlaps, but ties (same score, same start) are broken
+    by longer span, then entity-type name. Presidio returns recogniser results in an
+    order that varies between processes, so the original tie-break was not repeatable
+    (found in T3.2: one document flipped PASSWORD/ADDRESS between two runs)."""
+    kept = []
+    for r in sorted(results, key=lambda x: (-x.score, x.start, -(x.end - x.start), x.entity_type)):
+        if any(r.start < k.end and k.start < r.end for k in kept):
+            continue
+        kept.append(r)
+    return sorted(kept, key=lambda x: x.start)
+
+
 def analyse(analyzer, text: str, plus: bool, luhn_check: bool = True) -> List[Dict[str, str]]:
     from evaluation.build_pii_corpus_v2 import luhn_ok
     m = PLUS_MAP if plus else PRESIDIO_MAP
     res = analyzer.analyze(text=text, language="en", entities=list(m.keys()),
                            score_threshold=PRESIDIO_MIN_SCORE)
     out = []
-    for r in _dedupe_overlaps(res):
+    for r in dedupe_deterministic(res):
         t = m.get(r.entity_type)
         v = text[r.start:r.end].strip()
         if not t:
