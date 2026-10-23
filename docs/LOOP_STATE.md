@@ -2,19 +2,19 @@
 
 After any restart or context compaction: re-read CLAUDE.md, this file and docs/FIXES_SUMMARY.md first.
 
-- Iteration: 5
-- Current task: T2.1
-- Last evidence path: tests/, logs/reproduce_*.log
+- Iteration: 6
+- Current task: T2.2
+- Last evidence path: results/ablation/, logs/t2.1_ablation.log
 - Open gates: Q-001 (CERT, default skip applied). Phase 1 gate PASSED 2026-10-23.
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)
-- Goal: Phase 1 gate (pytest, full reproduce from clean shell, check_numbers, git status, FIXES entries, H-R4/H-R5 scan).
-- Smallest change: run checks; write gate record into FIXES_SUMMARY.
-- Verify: all five checks pass, recorded with commands.
+- Goal: T2.2 cluster bootstrap (users then episodes, 10000 resamples, fixed seed) for headline numbers; paired hybrid vs each baseline; per-class confusion; Wilson as secondary.
+- Smallest change: evaluation/bootstrap_stats.py (drafted) over the T2.1 row_scores.
+- Verify: run twice identical; hand case for bootstrap mechanics in a unit test; claims checked.
 
 ## Next action
-Start PHASE1-GATE.
+Start T2.2.
 
 ## Status table
 
@@ -26,7 +26,7 @@ Start PHASE1-GATE.
 | T1.3 | M | DONE | |
 | T1.4 | M | DONE | |
 | T1.5 | M | DONE | |
-| T2.1 | M | PENDING | |
+| T2.1 | M | DONE | |
 | T2.2 | M | PENDING | |
 | T2.3 | M | PENDING | |
 | T2.4 | M | PENDING | |

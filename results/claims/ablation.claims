@@ -1,0 +1,21 @@
+# T2.1 ablation, mean over 10 datasets (keys ablation.summary.<detector>.<metric>.mean)
+Hybrid weighted AUC | ablation.summary.hybrid_weighted.auc.mean | 0.821
+Hybrid weighted F1 | ablation.summary.hybrid_weighted.valf1_f1.mean | 0.629
+Hybrid weighted AP | ablation.summary.hybrid_weighted.average_precision.mean | 0.578
+IF AUC | ablation.summary.iforest.auc.mean | 0.779
+IF F1 | ablation.summary.iforest.valf1_f1.mean | 0.626
+LSTM AUC | ablation.summary.lstm.auc.mean | 0.869
+LSTM F1 | ablation.summary.lstm.valf1_f1.mean | 0.528
+z-score AUC | ablation.summary.zscore.auc.mean | 0.849
+z-score F1 | ablation.summary.zscore.valf1_f1.mean | 0.554
+Hybrid max AUC | ablation.summary.hybrid_max.auc.mean | 0.855
+Hybrid max F1 | ablation.summary.hybrid_max.valf1_f1.mean | 0.605
+Hybrid rankavg F1 | ablation.summary.hybrid_rankavg.valf1_f1.mean | 0.603
+LOF AUC | ablation.summary.lof.auc.mean | 0.779
+LOF AP | ablation.summary.lof.average_precision.mean | 0.246
+EWMA AUC | ablation.summary.ewma.auc.mean | 0.612
+LSTM next-step AUC | ablation.summary.lstm_nextstep.auc.mean | 0.825
+Malicious AUC LSTM | ablation.summary.lstm.per_class.malicious_insider.auc.mean | 0.744
+Malicious AUC hybrid | ablation.summary.hybrid_weighted.per_class.malicious_insider.auc.mean | 0.640
+Malicious recall LSTM (val F1 thr) | ablation.summary.lstm.per_class.malicious_insider.recall.mean | 0.170
+Malicious recall hybrid (val F1 thr) | ablation.summary.hybrid_weighted.per_class.malicious_insider.recall.mean | 0.027

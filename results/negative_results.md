@@ -29,3 +29,13 @@ when a later run looks better; later runs are added below with their own run id.
 | N-015 | Enforcement F1 at the shipped bands averages 0.441 ± 0.060, below the single seed-42 value 0.475 the paper would otherwise quote. | `anomaly.multiseed.enf_f1_shipped_bands` |
 | N-016 | Benign-burst suppression is not perfect on every dataset: the hybrid flags 14.8 percent of bursts in one dataset (mean 1.5 percent; EWMA mean 66.8 percent). | `anomaly.multiseed.benign_burst_flag_rate_hybrid.max` |
 | N-017 | The validation-calibrated beta is not stable: it ranges from 2.0 to 8.0 across datasets (knee rule). The single value 2.5 is a property of seed 42. | `anomaly.multiseed.sbrs_beta_recalibrated.*` |
+
+## T2.1: detector and fusion ablation, 10 datasets (keys `ablation.summary.*`, `results/ablation/ablation_table.csv`)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-018 | Weighted-mean hybrid F1 at the validation threshold (0.629) equals Isolation Forest alone (0.626). Fusion adds AP (0.578 vs 0.552) but no F1. | `ablation.summary.hybrid_weighted.valf1_f1`, `.iforest.valf1_f1` |
+| N-019 | A simple per-user z-score (max absolute personal z) reaches AUC 0.849, above the weighted hybrid (0.821) and the forest (0.779). The deep component is not needed to beat the forest on ranking. | `ablation.summary.zscore.auc` |
+| N-020 | Max fusion beats the paper's weighted mean on AUC (0.855 vs 0.821) and on R@5%FPR, but loses on F1 (0.605 vs 0.629). No fusion form wins on every metric. | `ablation.summary.hybrid_max.*` |
+| N-021 | The LSTM is the only component with signal on slow drift (malicious-insider AUC 0.744, recall 0.170 at its own F1 threshold), and the weighted fusion throws most of it away (hybrid malicious recall 0.027). | `ablation.summary.lstm.per_class.malicious_insider.*` |
+| N-022 | LOF at the sklearn default k=20 is below chance on this data (injected training-period attacks form dense clusters); with k chosen on validation (200 to 500) it reaches AUC 0.779 but AP only 0.246. | `ablation.summary.lof.*`, D-008 |

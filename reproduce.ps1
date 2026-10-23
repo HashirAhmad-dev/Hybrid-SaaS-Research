@@ -36,6 +36,8 @@ if (-not $Quick) {
     # T1.4: 10 independently generated datasets (seeds in evaluation\config\seeds.json), ~13 min
     Stage "multiseed"      @("-m", "evaluation.multiseed")
 }
+Stage "ablation"           @("-m", "evaluation.ablation")          # T2.1, ~3.5 min
+Stage "ablation_report"    @("-m", "evaluation.ablation_report")
 # Later paper-v2 stages (ablation, statistics, PII) are appended below as their tasks land.
 
 Stage "check_numbers"      @("tools\check_numbers.py", "results\claims", "--quiet")

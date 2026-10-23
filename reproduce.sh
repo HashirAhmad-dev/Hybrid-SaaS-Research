@@ -28,6 +28,8 @@ stage calibrate_sbrs    -m evaluation.calibrate_sbrs
 if [ "$QUICK" = 0 ]; then
   stage multiseed       -m evaluation.multiseed   # T1.4, 10 datasets, ~13 min
 fi
+stage ablation          -m evaluation.ablation          # T2.1, ~3.5 min
+stage ablation_report   -m evaluation.ablation_report
 # Later paper-v2 stages are appended here as their tasks land.
 
 stage check_numbers     tools/check_numbers.py results/claims --quiet
