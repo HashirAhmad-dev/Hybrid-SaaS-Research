@@ -52532,6 +52532,5166 @@
    "run_id": "drift_detector-20261023T124730Z",
    "value": 0.1499870782827914
   },
+  "fusion.ds1.additive.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 85
+  },
+  "fusion.ds1.additive.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 10
+  },
+  "fusion.ds1.additive.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2178
+  },
+  "fusion.ds1.additive.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.04179498460184778
+  },
+  "fusion.ds1.additive.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.004399472063352398
+  },
+  "fusion.ds1.additive.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds1.additive.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.4921875
+  },
+  "fusion.ds1.additive.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds1.additive.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds1.additive.params.w": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.45
+  },
+  "fusion.ds1.additive.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds1.additive.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.2553191489361702
+  },
+  "fusion.ds1.additive.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds1.additive.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds1.additive.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.48829286895651364
+  },
+  "fusion.ds1.additive.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6501346715545946
+  },
+  "fusion.ds1.additive.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 16
+  },
+  "fusion.ds1.additive.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 47
+  },
+  "fusion.ds1.additive.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 35
+  },
+  "fusion.ds1.additive.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.47959183673469385
+  },
+  "fusion.ds1.additive.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6428571428571429
+  },
+  "fusion.ds1.gated.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 86
+  },
+  "fusion.ds1.gated.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 9
+  },
+  "fusion.ds1.gated.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2178
+  },
+  "fusion.ds1.gated.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.04179498460184778
+  },
+  "fusion.ds1.gated.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.003959524857017158
+  },
+  "fusion.ds1.gated.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds1.gated.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.4921875
+  },
+  "fusion.ds1.gated.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds1.gated.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds1.gated.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2.5
+  },
+  "fusion.ds1.gated.params.tau_A": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.7017709112831958
+  },
+  "fusion.ds1.gated.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds1.gated.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.2553191489361702
+  },
+  "fusion.ds1.gated.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds1.gated.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds1.gated.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.227260453661299
+  },
+  "fusion.ds1.gated.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.88469867771628
+  },
+  "fusion.ds1.gated.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 10
+  },
+  "fusion.ds1.gated.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 53
+  },
+  "fusion.ds1.gated.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 35
+  },
+  "fusion.ds1.gated.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.5408163265306123
+  },
+  "fusion.ds1.gated.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6428571428571429
+  },
+  "fusion.ds1.logistic.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 93
+  },
+  "fusion.ds1.logistic.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 13
+  },
+  "fusion.ds1.logistic.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2167
+  },
+  "fusion.ds1.logistic.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.04663440387153542
+  },
+  "fusion.ds1.logistic.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.005719313682358117
+  },
+  "fusion.ds1.logistic.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds1.logistic.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.46616541353383456
+  },
+  "fusion.ds1.logistic.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds1.logistic.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds1.logistic.params.coef.0": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2.3017302548604683
+  },
+  "fusion.ds1.logistic.params.coef.1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5.50567930738019
+  },
+  "fusion.ds1.logistic.params.coef.2": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6335122142925624
+  },
+  "fusion.ds1.logistic.params.intercept": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": -5.6937234805067085
+  },
+  "fusion.ds1.logistic.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds1.logistic.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.23404255319148937
+  },
+  "fusion.ds1.logistic.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds1.logistic.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds1.logistic.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.07986743850548651
+  },
+  "fusion.ds1.logistic.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.3101385585671257
+  },
+  "fusion.ds1.logistic.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 9
+  },
+  "fusion.ds1.logistic.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 53
+  },
+  "fusion.ds1.logistic.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 36
+  },
+  "fusion.ds1.logistic.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.5408163265306123
+  },
+  "fusion.ds1.logistic.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6326530612244898
+  },
+  "fusion.ds1.max.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 108
+  },
+  "fusion.ds1.max.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 11
+  },
+  "fusion.ds1.max.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2154
+  },
+  "fusion.ds1.max.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.052353717553893536
+  },
+  "fusion.ds1.max.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.004839419269687638
+  },
+  "fusion.ds1.max.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds1.max.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.23577235772357724
+  },
+  "fusion.ds1.max.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0
+  },
+  "fusion.ds1.max.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds1.max.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.8947368421052632
+  },
+  "fusion.ds1.max.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.10638297872340426
+  },
+  "fusion.ds1.max.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.5
+  },
+  "fusion.ds1.max.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds1.max.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.89
+  },
+  "fusion.ds1.max.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.99
+  },
+  "fusion.ds1.max.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 20
+  },
+  "fusion.ds1.max.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 9
+  },
+  "fusion.ds1.max.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 69
+  },
+  "fusion.ds1.max.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.09183673469387756
+  },
+  "fusion.ds1.max.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.29591836734693877
+  },
+  "fusion.ds1.multiplicative.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 87
+  },
+  "fusion.ds1.multiplicative.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 9
+  },
+  "fusion.ds1.multiplicative.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2177
+  },
+  "fusion.ds1.multiplicative.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.04223493180818302
+  },
+  "fusion.ds1.multiplicative.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.003959524857017158
+  },
+  "fusion.ds1.multiplicative.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds1.multiplicative.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.448
+  },
+  "fusion.ds1.multiplicative.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0
+  },
+  "fusion.ds1.multiplicative.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds1.multiplicative.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2.5
+  },
+  "fusion.ds1.multiplicative.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds1.multiplicative.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.2553191489361702
+  },
+  "fusion.ds1.multiplicative.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds1.multiplicative.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6111111111111112
+  },
+  "fusion.ds1.multiplicative.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.2239411070128996
+  },
+  "fusion.ds1.multiplicative.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.8813732698337464
+  },
+  "fusion.ds1.multiplicative.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 23
+  },
+  "fusion.ds1.multiplicative.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 33
+  },
+  "fusion.ds1.multiplicative.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 42
+  },
+  "fusion.ds1.multiplicative.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.336734693877551
+  },
+  "fusion.ds1.multiplicative.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.5714285714285714
+  },
+  "fusion.ds1001.additive.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 111
+  },
+  "fusion.ds1001.additive.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 7
+  },
+  "fusion.ds1001.additive.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2069
+  },
+  "fusion.ds1001.additive.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.053955189757658895
+  },
+  "fusion.ds1001.additive.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.003200731595793324
+  },
+  "fusion.ds1001.additive.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.ds1001.additive.f1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.37735849056603776
+  },
+  "fusion.ds1001.additive.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1
+  },
+  "fusion.ds1001.additive.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1
+  },
+  "fusion.ds1001.additive.params.w": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5
+  },
+  "fusion.ds1001.additive.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds1001.additive.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0784313725490196
+  },
+  "fusion.ds1001.additive.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds1001.additive.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds1001.additive.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.524775633410429
+  },
+  "fusion.ds1001.additive.t_block": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.7026834718967012
+  },
+  "fusion.ds1001.additive.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 15
+  },
+  "fusion.ds1001.additive.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 35
+  },
+  "fusion.ds1001.additive.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 47
+  },
+  "fusion.ds1001.additive.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.36082474226804123
+  },
+  "fusion.ds1001.additive.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5154639175257731
+  },
+  "fusion.ds1001.gated.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 105
+  },
+  "fusion.ds1001.gated.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 10
+  },
+  "fusion.ds1001.gated.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2072
+  },
+  "fusion.ds1001.gated.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.05258344764517604
+  },
+  "fusion.ds1001.gated.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.004572473708276178
+  },
+  "fusion.ds1001.gated.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.ds1001.gated.f1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.36923076923076925
+  },
+  "fusion.ds1001.gated.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1
+  },
+  "fusion.ds1001.gated.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1
+  },
+  "fusion.ds1001.gated.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.0
+  },
+  "fusion.ds1001.gated.params.tau_A": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.8147262762956908
+  },
+  "fusion.ds1001.gated.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds1001.gated.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0784313725490196
+  },
+  "fusion.ds1001.gated.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.9375
+  },
+  "fusion.ds1001.gated.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.9166666666666666
+  },
+  "fusion.ds1001.gated.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.1695085598183275
+  },
+  "fusion.ds1001.gated.t_block": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.7748720561464089
+  },
+  "fusion.ds1001.gated.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 13
+  },
+  "fusion.ds1001.gated.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 35
+  },
+  "fusion.ds1001.gated.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 49
+  },
+  "fusion.ds1001.gated.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.36082474226804123
+  },
+  "fusion.ds1001.gated.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.4948453608247423
+  },
+  "fusion.ds1001.logistic.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 112
+  },
+  "fusion.ds1001.logistic.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 5
+  },
+  "fusion.ds1001.logistic.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2070
+  },
+  "fusion.ds1001.logistic.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.053497942386831275
+  },
+  "fusion.ds1001.logistic.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.002286236854138089
+  },
+  "fusion.ds1001.logistic.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.03333333333333333
+  },
+  "fusion.ds1001.logistic.f1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.3726235741444867
+  },
+  "fusion.ds1001.logistic.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1
+  },
+  "fusion.ds1001.logistic.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1
+  },
+  "fusion.ds1001.logistic.params.coef.0": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.5978228421362775
+  },
+  "fusion.ds1001.logistic.params.coef.1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 4.917395206845961
+  },
+  "fusion.ds1001.logistic.params.coef.2": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.8290135032230825
+  },
+  "fusion.ds1001.logistic.params.intercept": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": -5.7971223510025345
+  },
+  "fusion.ds1001.logistic.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds1001.logistic.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.058823529411764705
+  },
+  "fusion.ds1001.logistic.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds1001.logistic.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds1001.logistic.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.09387751319092673
+  },
+  "fusion.ds1001.logistic.t_block": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.4598839193001398
+  },
+  "fusion.ds1001.logistic.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 12
+  },
+  "fusion.ds1001.logistic.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 37
+  },
+  "fusion.ds1001.logistic.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 48
+  },
+  "fusion.ds1001.logistic.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.38144329896907214
+  },
+  "fusion.ds1001.logistic.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5051546391752577
+  },
+  "fusion.ds1001.max.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 104
+  },
+  "fusion.ds1001.max.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 24
+  },
+  "fusion.ds1001.max.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2059
+  },
+  "fusion.ds1001.max.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.05852766346593507
+  },
+  "fusion.ds1001.max.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.010973936899862825
+  },
+  "fusion.ds1001.max.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.ds1001.max.f1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.21428571428571427
+  },
+  "fusion.ds1001.max.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0
+  },
+  "fusion.ds1001.max.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1
+  },
+  "fusion.ds1001.max.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.8333333333333334
+  },
+  "fusion.ds1001.max.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.09803921568627451
+  },
+  "fusion.ds1001.max.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.375
+  },
+  "fusion.ds1001.max.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.08333333333333333
+  },
+  "fusion.ds1001.max.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.89
+  },
+  "fusion.ds1001.max.t_block": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.97
+  },
+  "fusion.ds1001.max.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 10
+  },
+  "fusion.ds1001.max.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 17
+  },
+  "fusion.ds1001.max.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 70
+  },
+  "fusion.ds1001.max.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.17525773195876287
+  },
+  "fusion.ds1001.max.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.27835051546391754
+  },
+  "fusion.ds1001.multiplicative.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 105
+  },
+  "fusion.ds1001.multiplicative.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 10
+  },
+  "fusion.ds1001.multiplicative.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2072
+  },
+  "fusion.ds1001.multiplicative.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.05258344764517604
+  },
+  "fusion.ds1001.multiplicative.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.004572473708276178
+  },
+  "fusion.ds1001.multiplicative.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.ds1001.multiplicative.f1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.35019455252918286
+  },
+  "fusion.ds1001.multiplicative.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0
+  },
+  "fusion.ds1001.multiplicative.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1
+  },
+  "fusion.ds1001.multiplicative.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.0
+  },
+  "fusion.ds1001.multiplicative.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds1001.multiplicative.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0784313725490196
+  },
+  "fusion.ds1001.multiplicative.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.9375
+  },
+  "fusion.ds1001.multiplicative.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.6666666666666666
+  },
+  "fusion.ds1001.multiplicative.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.1695085598183275
+  },
+  "fusion.ds1001.multiplicative.t_block": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.7748720561464089
+  },
+  "fusion.ds1001.multiplicative.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 20
+  },
+  "fusion.ds1001.multiplicative.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 25
+  },
+  "fusion.ds1001.multiplicative.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 52
+  },
+  "fusion.ds1001.multiplicative.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.25773195876288657
+  },
+  "fusion.ds1001.multiplicative.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.4639175257731959
+  },
+  "fusion.ds123.additive.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 98
+  },
+  "fusion.ds123.additive.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 20
+  },
+  "fusion.ds123.additive.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2116
+  },
+  "fusion.ds123.additive.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.052820053715308866
+  },
+  "fusion.ds123.additive.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.008952551477170993
+  },
+  "fusion.ds123.additive.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds123.additive.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.4485294117647059
+  },
+  "fusion.ds123.additive.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds123.additive.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds123.additive.params.w": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5
+  },
+  "fusion.ds123.additive.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds123.additive.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.28888888888888886
+  },
+  "fusion.ds123.additive.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds123.additive.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds123.additive.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5109135279125024
+  },
+  "fusion.ds123.additive.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.6437204152918199
+  },
+  "fusion.ds123.additive.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 18
+  },
+  "fusion.ds123.additive.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 43
+  },
+  "fusion.ds123.additive.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 32
+  },
+  "fusion.ds123.additive.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.46236559139784944
+  },
+  "fusion.ds123.additive.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.6559139784946236
+  },
+  "fusion.ds123.gated.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 119
+  },
+  "fusion.ds123.gated.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 12
+  },
+  "fusion.ds123.gated.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2103
+  },
+  "fusion.ds123.gated.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.05863921217547001
+  },
+  "fusion.ds123.gated.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.005371530886302597
+  },
+  "fusion.ds123.gated.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds123.gated.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.4225352112676056
+  },
+  "fusion.ds123.gated.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds123.gated.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds123.gated.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2.5
+  },
+  "fusion.ds123.gated.params.tau_A": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.7220502874397585
+  },
+  "fusion.ds123.gated.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds123.gated.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.26666666666666666
+  },
+  "fusion.ds123.gated.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds123.gated.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds123.gated.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.179789779594583
+  },
+  "fusion.ds123.gated.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.8565636047592358
+  },
+  "fusion.ds123.gated.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 12
+  },
+  "fusion.ds123.gated.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 48
+  },
+  "fusion.ds123.gated.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 33
+  },
+  "fusion.ds123.gated.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5161290322580645
+  },
+  "fusion.ds123.gated.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.6451612903225806
+  },
+  "fusion.ds123.logistic.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 114
+  },
+  "fusion.ds123.logistic.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 15
+  },
+  "fusion.ds123.logistic.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2105
+  },
+  "fusion.ds123.logistic.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.05774395702775291
+  },
+  "fusion.ds123.logistic.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.006714413607878245
+  },
+  "fusion.ds123.logistic.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.20833333333333334
+  },
+  "fusion.ds123.logistic.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.4142857142857143
+  },
+  "fusion.ds123.logistic.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds123.logistic.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds123.logistic.params.coef.0": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2.1807193111123997
+  },
+  "fusion.ds123.logistic.params.coef.1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 5.6649783960712075
+  },
+  "fusion.ds123.logistic.params.coef.2": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.6966852638455936
+  },
+  "fusion.ds123.logistic.params.intercept": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": -5.684265241537539
+  },
+  "fusion.ds123.logistic.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds123.logistic.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.2222222222222222
+  },
+  "fusion.ds123.logistic.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds123.logistic.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds123.logistic.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.07272087200039917
+  },
+  "fusion.ds123.logistic.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.2871149475558113
+  },
+  "fusion.ds123.logistic.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 8
+  },
+  "fusion.ds123.logistic.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 50
+  },
+  "fusion.ds123.logistic.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 35
+  },
+  "fusion.ds123.logistic.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5376344086021505
+  },
+  "fusion.ds123.logistic.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.6236559139784946
+  },
+  "fusion.ds123.max.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 102
+  },
+  "fusion.ds123.max.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 17
+  },
+  "fusion.ds123.max.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2115
+  },
+  "fusion.ds123.max.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.05326768128916741
+  },
+  "fusion.ds123.max.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.007609668755595345
+  },
+  "fusion.ds123.max.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds123.max.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.26229508196721313
+  },
+  "fusion.ds123.max.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds123.max.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds123.max.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.9411764705882353
+  },
+  "fusion.ds123.max.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.13333333333333333
+  },
+  "fusion.ds123.max.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.4375
+  },
+  "fusion.ds123.max.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.2
+  },
+  "fusion.ds123.max.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.8909999999999991
+  },
+  "fusion.ds123.max.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.98
+  },
+  "fusion.ds123.max.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 17
+  },
+  "fusion.ds123.max.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 15
+  },
+  "fusion.ds123.max.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 61
+  },
+  "fusion.ds123.max.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.16129032258064516
+  },
+  "fusion.ds123.max.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.34408602150537637
+  },
+  "fusion.ds123.multiplicative.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 110
+  },
+  "fusion.ds123.multiplicative.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 19
+  },
+  "fusion.ds123.multiplicative.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2105
+  },
+  "fusion.ds123.multiplicative.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.05774395702775291
+  },
+  "fusion.ds123.multiplicative.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.008504923903312443
+  },
+  "fusion.ds123.multiplicative.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds123.multiplicative.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.3971119133574007
+  },
+  "fusion.ds123.multiplicative.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds123.multiplicative.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds123.multiplicative.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2.5
+  },
+  "fusion.ds123.multiplicative.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds123.multiplicative.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.26666666666666666
+  },
+  "fusion.ds123.multiplicative.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds123.multiplicative.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.6666666666666666
+  },
+  "fusion.ds123.multiplicative.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.173569107030642
+  },
+  "fusion.ds123.multiplicative.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.7686546692716545
+  },
+  "fusion.ds123.multiplicative.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 21
+  },
+  "fusion.ds123.multiplicative.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 34
+  },
+  "fusion.ds123.multiplicative.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 38
+  },
+  "fusion.ds123.multiplicative.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.3655913978494624
+  },
+  "fusion.ds123.multiplicative.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5913978494623656
+  },
+  "fusion.ds13.additive.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 102
+  },
+  "fusion.ds13.additive.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 7
+  },
+  "fusion.ds13.additive.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2115
+  },
+  "fusion.ds13.additive.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.049010791366906475
+  },
+  "fusion.ds13.additive.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.003147482014388489
+  },
+  "fusion.ds13.additive.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds13.additive.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.46886446886446886
+  },
+  "fusion.ds13.additive.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 3
+  },
+  "fusion.ds13.additive.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds13.additive.params.w": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.45
+  },
+  "fusion.ds13.additive.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds13.additive.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.3
+  },
+  "fusion.ds13.additive.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds13.additive.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.9230769230769231
+  },
+  "fusion.ds13.additive.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.48970202838664084
+  },
+  "fusion.ds13.additive.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6776802899223302
+  },
+  "fusion.ds13.additive.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 23
+  },
+  "fusion.ds13.additive.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 41
+  },
+  "fusion.ds13.additive.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 36
+  },
+  "fusion.ds13.additive.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.41
+  },
+  "fusion.ds13.additive.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.64
+  },
+  "fusion.ds13.gated.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 91
+  },
+  "fusion.ds13.gated.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 10
+  },
+  "fusion.ds13.gated.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2123
+  },
+  "fusion.ds13.gated.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.045413669064748204
+  },
+  "fusion.ds13.gated.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0044964028776978415
+  },
+  "fusion.ds13.gated.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds13.gated.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.4830188679245283
+  },
+  "fusion.ds13.gated.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds13.gated.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds13.gated.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 3.0
+  },
+  "fusion.ds13.gated.params.tau_A": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.7037921707686416
+  },
+  "fusion.ds13.gated.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds13.gated.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.28
+  },
+  "fusion.ds13.gated.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds13.gated.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds13.gated.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.3441308739484166
+  },
+  "fusion.ds13.gated.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2.246236527326006
+  },
+  "fusion.ds13.gated.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 15
+  },
+  "fusion.ds13.gated.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 49
+  },
+  "fusion.ds13.gated.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 36
+  },
+  "fusion.ds13.gated.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.49
+  },
+  "fusion.ds13.gated.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.64
+  },
+  "fusion.ds13.logistic.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 111
+  },
+  "fusion.ds13.logistic.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 7
+  },
+  "fusion.ds13.logistic.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2106
+  },
+  "fusion.ds13.logistic.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.053057553956834536
+  },
+  "fusion.ds13.logistic.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.003147482014388489
+  },
+  "fusion.ds13.logistic.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.2413793103448276
+  },
+  "fusion.ds13.logistic.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.44285714285714284
+  },
+  "fusion.ds13.logistic.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds13.logistic.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds13.logistic.params.coef.0": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.9966940551208978
+  },
+  "fusion.ds13.logistic.params.coef.1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5.931012698048677
+  },
+  "fusion.ds13.logistic.params.coef.2": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.9604187671440995
+  },
+  "fusion.ds13.logistic.params.intercept": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": -5.573724530911386
+  },
+  "fusion.ds13.logistic.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds13.logistic.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.24
+  },
+  "fusion.ds13.logistic.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds13.logistic.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds13.logistic.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.09253614083916413
+  },
+  "fusion.ds13.logistic.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.4253497453196293
+  },
+  "fusion.ds13.logistic.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 13
+  },
+  "fusion.ds13.logistic.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 49
+  },
+  "fusion.ds13.logistic.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 38
+  },
+  "fusion.ds13.logistic.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.49
+  },
+  "fusion.ds13.logistic.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.62
+  },
+  "fusion.ds13.max.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 91
+  },
+  "fusion.ds13.max.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 19
+  },
+  "fusion.ds13.max.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2114
+  },
+  "fusion.ds13.max.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.04946043165467626
+  },
+  "fusion.ds13.max.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0085431654676259
+  },
+  "fusion.ds13.max.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds13.max.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.20512820512820512
+  },
+  "fusion.ds13.max.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0
+  },
+  "fusion.ds13.max.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds13.max.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6666666666666666
+  },
+  "fusion.ds13.max.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.12
+  },
+  "fusion.ds13.max.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.2631578947368421
+  },
+  "fusion.ds13.max.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.07692307692307693
+  },
+  "fusion.ds13.max.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.89
+  },
+  "fusion.ds13.max.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.97
+  },
+  "fusion.ds13.max.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 21
+  },
+  "fusion.ds13.max.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 3
+  },
+  "fusion.ds13.max.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 76
+  },
+  "fusion.ds13.max.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.03
+  },
+  "fusion.ds13.max.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.24
+  },
+  "fusion.ds13.multiplicative.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 92
+  },
+  "fusion.ds13.multiplicative.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 8
+  },
+  "fusion.ds13.multiplicative.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2124
+  },
+  "fusion.ds13.multiplicative.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.044964028776978415
+  },
+  "fusion.ds13.multiplicative.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0035971223021582736
+  },
+  "fusion.ds13.multiplicative.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds13.multiplicative.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.4496124031007752
+  },
+  "fusion.ds13.multiplicative.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0
+  },
+  "fusion.ds13.multiplicative.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds13.multiplicative.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 3.0
+  },
+  "fusion.ds13.multiplicative.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds13.multiplicative.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.28
+  },
+  "fusion.ds13.multiplicative.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds13.multiplicative.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.5384615384615384
+  },
+  "fusion.ds13.multiplicative.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.3343694806147568
+  },
+  "fusion.ds13.multiplicative.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2.2114559815363446
+  },
+  "fusion.ds13.multiplicative.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 29
+  },
+  "fusion.ds13.multiplicative.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 29
+  },
+  "fusion.ds13.multiplicative.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 42
+  },
+  "fusion.ds13.multiplicative.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.29
+  },
+  "fusion.ds13.multiplicative.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.58
+  },
+  "fusion.ds2024.additive.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 88
+  },
+  "fusion.ds2024.additive.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 8
+  },
+  "fusion.ds2024.additive.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2133
+  },
+  "fusion.ds2024.additive.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.04306864064602961
+  },
+  "fusion.ds2024.additive.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.003589053387169134
+  },
+  "fusion.ds2024.additive.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.037037037037037035
+  },
+  "fusion.ds2024.additive.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.472
+  },
+  "fusion.ds2024.additive.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds2024.additive.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds2024.additive.params.w": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.1
+  },
+  "fusion.ds2024.additive.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds2024.additive.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.25
+  },
+  "fusion.ds2024.additive.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds2024.additive.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds2024.additive.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.40088342800755017
+  },
+  "fusion.ds2024.additive.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.7489250000000007
+  },
+  "fusion.ds2024.additive.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 14
+  },
+  "fusion.ds2024.additive.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 45
+  },
+  "fusion.ds2024.additive.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 36
+  },
+  "fusion.ds2024.additive.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.47368421052631576
+  },
+  "fusion.ds2024.additive.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6210526315789474
+  },
+  "fusion.ds2024.gated.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 85
+  },
+  "fusion.ds2024.gated.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 6
+  },
+  "fusion.ds2024.gated.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2138
+  },
+  "fusion.ds2024.gated.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0408254822790489
+  },
+  "fusion.ds2024.gated.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0026917900403768506
+  },
+  "fusion.ds2024.gated.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds2024.gated.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.5238095238095238
+  },
+  "fusion.ds2024.gated.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds2024.gated.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds2024.gated.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5.0
+  },
+  "fusion.ds2024.gated.params.tau_A": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.8
+  },
+  "fusion.ds2024.gated.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds2024.gated.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.3958333333333333
+  },
+  "fusion.ds2024.gated.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds2024.gated.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds2024.gated.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.7207406080172376
+  },
+  "fusion.ds2024.gated.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4.2843969229896155
+  },
+  "fusion.ds2024.gated.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 24
+  },
+  "fusion.ds2024.gated.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 42
+  },
+  "fusion.ds2024.gated.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 29
+  },
+  "fusion.ds2024.gated.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.4421052631578947
+  },
+  "fusion.ds2024.gated.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6947368421052632
+  },
+  "fusion.ds2024.logistic.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 76
+  },
+  "fusion.ds2024.logistic.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 8
+  },
+  "fusion.ds2024.logistic.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2145
+  },
+  "fusion.ds2024.logistic.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.03768506056527591
+  },
+  "fusion.ds2024.logistic.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.003589053387169134
+  },
+  "fusion.ds2024.logistic.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds2024.logistic.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.5206611570247934
+  },
+  "fusion.ds2024.logistic.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds2024.logistic.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds2024.logistic.params.coef.0": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.9500609783001872
+  },
+  "fusion.ds2024.logistic.params.coef.1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4.911457122902396
+  },
+  "fusion.ds2024.logistic.params.coef.2": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 3.757869096471859
+  },
+  "fusion.ds2024.logistic.params.intercept": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": -5.5131917210719745
+  },
+  "fusion.ds2024.logistic.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds2024.logistic.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.3333333333333333
+  },
+  "fusion.ds2024.logistic.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds2024.logistic.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds2024.logistic.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.15940743583766673
+  },
+  "fusion.ds2024.logistic.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.7996889260375318
+  },
+  "fusion.ds2024.logistic.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 24
+  },
+  "fusion.ds2024.logistic.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 39
+  },
+  "fusion.ds2024.logistic.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 32
+  },
+  "fusion.ds2024.logistic.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.4105263157894737
+  },
+  "fusion.ds2024.logistic.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6631578947368421
+  },
+  "fusion.ds2024.max.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 117
+  },
+  "fusion.ds2024.max.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds2024.max.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2108
+  },
+  "fusion.ds2024.max.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.054284432480933155
+  },
+  "fusion.ds2024.max.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.001794526693584567
+  },
+  "fusion.ds2024.max.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds2024.max.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.31906614785992216
+  },
+  "fusion.ds2024.max.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 3
+  },
+  "fusion.ds2024.max.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds2024.max.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.5882352941176471
+  },
+  "fusion.ds2024.max.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.1875
+  },
+  "fusion.ds2024.max.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6470588235294118
+  },
+  "fusion.ds2024.max.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.8461538461538461
+  },
+  "fusion.ds2024.max.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.89
+  },
+  "fusion.ds2024.max.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.9998500000000012
+  },
+  "fusion.ds2024.max.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 28
+  },
+  "fusion.ds2024.max.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 13
+  },
+  "fusion.ds2024.max.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 54
+  },
+  "fusion.ds2024.max.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.1368421052631579
+  },
+  "fusion.ds2024.max.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.43157894736842106
+  },
+  "fusion.ds2024.multiplicative.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 84
+  },
+  "fusion.ds2024.multiplicative.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 8
+  },
+  "fusion.ds2024.multiplicative.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2137
+  },
+  "fusion.ds2024.multiplicative.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.04127411395244504
+  },
+  "fusion.ds2024.multiplicative.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.003589053387169134
+  },
+  "fusion.ds2024.multiplicative.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds2024.multiplicative.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.5099601593625498
+  },
+  "fusion.ds2024.multiplicative.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0
+  },
+  "fusion.ds2024.multiplicative.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds2024.multiplicative.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5.0
+  },
+  "fusion.ds2024.multiplicative.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds2024.multiplicative.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.4375
+  },
+  "fusion.ds2024.multiplicative.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds2024.multiplicative.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6923076923076923
+  },
+  "fusion.ds2024.multiplicative.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.6952899831000996
+  },
+  "fusion.ds2024.multiplicative.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 3.3743293001833177
+  },
+  "fusion.ds2024.multiplicative.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 36
+  },
+  "fusion.ds2024.multiplicative.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 28
+  },
+  "fusion.ds2024.multiplicative.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 31
+  },
+  "fusion.ds2024.multiplicative.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.29473684210526313
+  },
+  "fusion.ds2024.multiplicative.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6736842105263158
+  },
+  "fusion.ds314.additive.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 81
+  },
+  "fusion.ds314.additive.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 13
+  },
+  "fusion.ds314.additive.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2105
+  },
+  "fusion.ds314.additive.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.042746703046839474
+  },
+  "fusion.ds314.additive.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.005911778080945885
+  },
+  "fusion.ds314.additive.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds314.additive.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5190839694656488
+  },
+  "fusion.ds314.additive.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds314.additive.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds314.additive.params.w": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5
+  },
+  "fusion.ds314.additive.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds314.additive.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.28888888888888886
+  },
+  "fusion.ds314.additive.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds314.additive.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds314.additive.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5223206295607128
+  },
+  "fusion.ds314.additive.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.6812880332234003
+  },
+  "fusion.ds314.additive.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 20
+  },
+  "fusion.ds314.additive.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 48
+  },
+  "fusion.ds314.additive.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 32
+  },
+  "fusion.ds314.additive.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.48
+  },
+  "fusion.ds314.additive.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.68
+  },
+  "fusion.ds314.gated.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 83
+  },
+  "fusion.ds314.gated.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 12
+  },
+  "fusion.ds314.gated.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2104
+  },
+  "fusion.ds314.gated.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.04320145520691223
+  },
+  "fusion.ds314.gated.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.005457025920873124
+  },
+  "fusion.ds314.gated.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds314.gated.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5171102661596958
+  },
+  "fusion.ds314.gated.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds314.gated.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds314.gated.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2.0
+  },
+  "fusion.ds314.gated.params.tau_A": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.7709220601082085
+  },
+  "fusion.ds314.gated.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds314.gated.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.28888888888888886
+  },
+  "fusion.ds314.gated.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds314.gated.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds314.gated.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.1425098067968986
+  },
+  "fusion.ds314.gated.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.7290313406300324
+  },
+  "fusion.ds314.gated.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 15
+  },
+  "fusion.ds314.gated.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 53
+  },
+  "fusion.ds314.gated.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 32
+  },
+  "fusion.ds314.gated.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.53
+  },
+  "fusion.ds314.gated.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.68
+  },
+  "fusion.ds314.logistic.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 102
+  },
+  "fusion.ds314.logistic.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 11
+  },
+  "fusion.ds314.logistic.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2086
+  },
+  "fusion.ds314.logistic.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.05138699408822192
+  },
+  "fusion.ds314.logistic.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0050022737608003635
+  },
+  "fusion.ds314.logistic.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.25
+  },
+  "fusion.ds314.logistic.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.4620938628158845
+  },
+  "fusion.ds314.logistic.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds314.logistic.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds314.logistic.params.coef.0": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2.1824803817150635
+  },
+  "fusion.ds314.logistic.params.coef.1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 5.328250600172766
+  },
+  "fusion.ds314.logistic.params.coef.2": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.5307764980809686
+  },
+  "fusion.ds314.logistic.params.intercept": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": -5.699686922688444
+  },
+  "fusion.ds314.logistic.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds314.logistic.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.2
+  },
+  "fusion.ds314.logistic.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds314.logistic.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds314.logistic.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.09097665887124248
+  },
+  "fusion.ds314.logistic.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.42046213792967374
+  },
+  "fusion.ds314.logistic.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 8
+  },
+  "fusion.ds314.logistic.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 56
+  },
+  "fusion.ds314.logistic.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 36
+  },
+  "fusion.ds314.logistic.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.56
+  },
+  "fusion.ds314.logistic.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.64
+  },
+  "fusion.ds314.max.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 103
+  },
+  "fusion.ds314.max.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 13
+  },
+  "fusion.ds314.max.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2083
+  },
+  "fusion.ds314.max.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0527512505684402
+  },
+  "fusion.ds314.max.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.005911778080945885
+  },
+  "fusion.ds314.max.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds314.max.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.2857142857142857
+  },
+  "fusion.ds314.max.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 3
+  },
+  "fusion.ds314.max.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds314.max.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.8333333333333334
+  },
+  "fusion.ds314.max.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.15555555555555556
+  },
+  "fusion.ds314.max.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.2222222222222222
+  },
+  "fusion.ds314.max.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5263157894736842
+  },
+  "fusion.ds314.max.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.9
+  },
+  "fusion.ds314.max.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.99
+  },
+  "fusion.ds314.max.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 24
+  },
+  "fusion.ds314.max.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 12
+  },
+  "fusion.ds314.max.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 64
+  },
+  "fusion.ds314.max.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.12
+  },
+  "fusion.ds314.max.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.36
+  },
+  "fusion.ds314.multiplicative.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 82
+  },
+  "fusion.ds314.multiplicative.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 12
+  },
+  "fusion.ds314.multiplicative.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2105
+  },
+  "fusion.ds314.multiplicative.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.042746703046839474
+  },
+  "fusion.ds314.multiplicative.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.005457025920873124
+  },
+  "fusion.ds314.multiplicative.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds314.multiplicative.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.47843137254901963
+  },
+  "fusion.ds314.multiplicative.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds314.multiplicative.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds314.multiplicative.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2.0
+  },
+  "fusion.ds314.multiplicative.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds314.multiplicative.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.28888888888888886
+  },
+  "fusion.ds314.multiplicative.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds314.multiplicative.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.631578947368421
+  },
+  "fusion.ds314.multiplicative.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.1415431920314323
+  },
+  "fusion.ds314.multiplicative.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.6981523697433796
+  },
+  "fusion.ds314.multiplicative.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 27
+  },
+  "fusion.ds314.multiplicative.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 34
+  },
+  "fusion.ds314.multiplicative.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 39
+  },
+  "fusion.ds314.multiplicative.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.34
+  },
+  "fusion.ds314.multiplicative.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.61
+  },
+  "fusion.ds42.additive.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 83
+  },
+  "fusion.ds42.additive.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 10
+  },
+  "fusion.ds42.additive.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2163
+  },
+  "fusion.ds42.additive.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.041223404255319146
+  },
+  "fusion.ds42.additive.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.004432624113475178
+  },
+  "fusion.ds42.additive.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.0
+  },
+  "fusion.ds42.additive.f1": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.488
+  },
+  "fusion.ds42.additive.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1
+  },
+  "fusion.ds42.additive.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2
+  },
+  "fusion.ds42.additive.params.w": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.5
+  },
+  "fusion.ds42.additive.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.0
+  },
+  "fusion.ds42.additive.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.3333333333333333
+  },
+  "fusion.ds42.additive.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.0
+  },
+  "fusion.ds42.additive.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.9285714285714286
+  },
+  "fusion.ds42.additive.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.515504202658857
+  },
+  "fusion.ds42.additive.t_block": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.6592373175972854
+  },
+  "fusion.ds42.additive.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 20
+  },
+  "fusion.ds42.additive.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 41
+  },
+  "fusion.ds42.additive.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 35
+  },
+  "fusion.ds42.additive.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.4270833333333333
+  },
+  "fusion.ds42.additive.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.6354166666666666
+  },
+  "fusion.ds42.gated.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 79
+  },
+  "fusion.ds42.gated.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 9
+  },
+  "fusion.ds42.gated.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2168
+  },
+  "fusion.ds42.gated.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.03900709219858156
+  },
+  "fusion.ds42.gated.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.003989361702127659
+  },
+  "fusion.ds42.gated.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.0
+  },
+  "fusion.ds42.gated.f1": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.5040650406504065
+  },
+  "fusion.ds42.gated.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2
+  },
+  "fusion.ds42.gated.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2
+  },
+  "fusion.ds42.gated.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2.5
+  },
+  "fusion.ds42.gated.params.tau_A": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.7507250765381084
+  },
+  "fusion.ds42.gated.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.0
+  },
+  "fusion.ds42.gated.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.3333333333333333
+  },
+  "fusion.ds42.gated.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.0
+  },
+  "fusion.ds42.gated.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.0
+  },
+  "fusion.ds42.gated.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.223797299025728
+  },
+  "fusion.ds42.gated.t_block": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.8437410840230226
+  },
+  "fusion.ds42.gated.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 18
+  },
+  "fusion.ds42.gated.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 44
+  },
+  "fusion.ds42.gated.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 34
+  },
+  "fusion.ds42.gated.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.4583333333333333
+  },
+  "fusion.ds42.gated.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.6458333333333334
+  },
+  "fusion.ds42.logistic.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 86
+  },
+  "fusion.ds42.logistic.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 12
+  },
+  "fusion.ds42.logistic.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2158
+  },
+  "fusion.ds42.logistic.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.04343971631205674
+  },
+  "fusion.ds42.logistic.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.005319148936170213
+  },
+  "fusion.ds42.logistic.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.0
+  },
+  "fusion.ds42.logistic.f1": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.484375
+  },
+  "fusion.ds42.logistic.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2
+  },
+  "fusion.ds42.logistic.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2
+  },
+  "fusion.ds42.logistic.params.coef.0": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2.8051799315535204
+  },
+  "fusion.ds42.logistic.params.coef.1": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 5.795233215511531
+  },
+  "fusion.ds42.logistic.params.coef.2": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.2428830003386322
+  },
+  "fusion.ds42.logistic.params.intercept": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": -6.035255850712443
+  },
+  "fusion.ds42.logistic.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.0
+  },
+  "fusion.ds42.logistic.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.3333333333333333
+  },
+  "fusion.ds42.logistic.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.0
+  },
+  "fusion.ds42.logistic.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.0
+  },
+  "fusion.ds42.logistic.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.09882726260766433
+  },
+  "fusion.ds42.logistic.t_block": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.43995257832072676
+  },
+  "fusion.ds42.logistic.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 18
+  },
+  "fusion.ds42.logistic.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 44
+  },
+  "fusion.ds42.logistic.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 34
+  },
+  "fusion.ds42.logistic.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.4583333333333333
+  },
+  "fusion.ds42.logistic.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.6458333333333334
+  },
+  "fusion.ds42.max.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 109
+  },
+  "fusion.ds42.max.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 27
+  },
+  "fusion.ds42.max.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2120
+  },
+  "fusion.ds42.max.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.06028368794326241
+  },
+  "fusion.ds42.max.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.011968085106382979
+  },
+  "fusion.ds42.max.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.0
+  },
+  "fusion.ds42.max.f1": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.2490566037735849
+  },
+  "fusion.ds42.max.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1
+  },
+  "fusion.ds42.max.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2
+  },
+  "fusion.ds42.max.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.6923076923076923
+  },
+  "fusion.ds42.max.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.17647058823529413
+  },
+  "fusion.ds42.max.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.3888888888888889
+  },
+  "fusion.ds42.max.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.5714285714285714
+  },
+  "fusion.ds42.max.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.88
+  },
+  "fusion.ds42.max.t_block": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.96
+  },
+  "fusion.ds42.max.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 31
+  },
+  "fusion.ds42.max.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2
+  },
+  "fusion.ds42.max.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 63
+  },
+  "fusion.ds42.max.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.020833333333333332
+  },
+  "fusion.ds42.max.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.34375
+  },
+  "fusion.ds42.multiplicative.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 79
+  },
+  "fusion.ds42.multiplicative.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 9
+  },
+  "fusion.ds42.multiplicative.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2168
+  },
+  "fusion.ds42.multiplicative.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.03900709219858156
+  },
+  "fusion.ds42.multiplicative.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.003989361702127659
+  },
+  "fusion.ds42.multiplicative.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.0
+  },
+  "fusion.ds42.multiplicative.f1": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.4793388429752066
+  },
+  "fusion.ds42.multiplicative.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0
+  },
+  "fusion.ds42.multiplicative.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2
+  },
+  "fusion.ds42.multiplicative.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 2.5
+  },
+  "fusion.ds42.multiplicative.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.0
+  },
+  "fusion.ds42.multiplicative.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.3333333333333333
+  },
+  "fusion.ds42.multiplicative.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.0
+  },
+  "fusion.ds42.multiplicative.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.7142857142857143
+  },
+  "fusion.ds42.multiplicative.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.223797299025728
+  },
+  "fusion.ds42.multiplicative.t_block": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 1.8437410840230226
+  },
+  "fusion.ds42.multiplicative.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 32
+  },
+  "fusion.ds42.multiplicative.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 26
+  },
+  "fusion.ds42.multiplicative.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 38
+  },
+  "fusion.ds42.multiplicative.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.2708333333333333
+  },
+  "fusion.ds42.multiplicative.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124856Z",
+   "value": 0.6041666666666666
+  },
+  "fusion.ds7.additive.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 103
+  },
+  "fusion.ds7.additive.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 9
+  },
+  "fusion.ds7.additive.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2172
+  },
+  "fusion.ds7.additive.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.04903677758318739
+  },
+  "fusion.ds7.additive.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.00394045534150613
+  },
+  "fusion.ds7.additive.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds7.additive.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.4235294117647059
+  },
+  "fusion.ds7.additive.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds7.additive.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds7.additive.params.w": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.45
+  },
+  "fusion.ds7.additive.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds7.additive.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.16666666666666666
+  },
+  "fusion.ds7.additive.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds7.additive.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds7.additive.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.47326633112499494
+  },
+  "fusion.ds7.additive.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6565699774626731
+  },
+  "fusion.ds7.additive.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 15
+  },
+  "fusion.ds7.additive.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 39
+  },
+  "fusion.ds7.additive.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 35
+  },
+  "fusion.ds7.additive.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.43820224719101125
+  },
+  "fusion.ds7.additive.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6067415730337079
+  },
+  "fusion.ds7.gated.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 102
+  },
+  "fusion.ds7.gated.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 9
+  },
+  "fusion.ds7.gated.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2173
+  },
+  "fusion.ds7.gated.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.04859894921190893
+  },
+  "fusion.ds7.gated.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.00394045534150613
+  },
+  "fusion.ds7.gated.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds7.gated.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.43137254901960786
+  },
+  "fusion.ds7.gated.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds7.gated.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds7.gated.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4.0
+  },
+  "fusion.ds7.gated.params.tau_A": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.7813001965594841
+  },
+  "fusion.ds7.gated.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds7.gated.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.19047619047619047
+  },
+  "fusion.ds7.gated.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds7.gated.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds7.gated.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.391374195645185
+  },
+  "fusion.ds7.gated.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2.4806572618198883
+  },
+  "fusion.ds7.gated.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 11
+  },
+  "fusion.ds7.gated.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 44
+  },
+  "fusion.ds7.gated.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 34
+  },
+  "fusion.ds7.gated.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.4943820224719101
+  },
+  "fusion.ds7.gated.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6179775280898876
+  },
+  "fusion.ds7.logistic.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 108
+  },
+  "fusion.ds7.logistic.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4
+  },
+  "fusion.ds7.logistic.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2172
+  },
+  "fusion.ds7.logistic.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.04903677758318739
+  },
+  "fusion.ds7.logistic.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0017513134851138354
+  },
+  "fusion.ds7.logistic.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.034482758620689655
+  },
+  "fusion.ds7.logistic.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.41732283464566927
+  },
+  "fusion.ds7.logistic.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds7.logistic.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds7.logistic.params.coef.0": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2.554515884431045
+  },
+  "fusion.ds7.logistic.params.coef.1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5.938292123952409
+  },
+  "fusion.ds7.logistic.params.coef.2": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.8184462974031954
+  },
+  "fusion.ds7.logistic.params.intercept": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": -5.853623992080931
+  },
+  "fusion.ds7.logistic.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds7.logistic.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.14285714285714285
+  },
+  "fusion.ds7.logistic.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds7.logistic.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds7.logistic.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.08078982263403184
+  },
+  "fusion.ds7.logistic.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.4855833845281865
+  },
+  "fusion.ds7.logistic.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 7
+  },
+  "fusion.ds7.logistic.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 46
+  },
+  "fusion.ds7.logistic.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 36
+  },
+  "fusion.ds7.logistic.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.5168539325842697
+  },
+  "fusion.ds7.logistic.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.5955056179775281
+  },
+  "fusion.ds7.max.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 129
+  },
+  "fusion.ds7.max.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 12
+  },
+  "fusion.ds7.max.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2143
+  },
+  "fusion.ds7.max.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0617338003502627
+  },
+  "fusion.ds7.max.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.005253940455341506
+  },
+  "fusion.ds7.max.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds7.max.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.23754789272030652
+  },
+  "fusion.ds7.max.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2
+  },
+  "fusion.ds7.max.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds7.max.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.875
+  },
+  "fusion.ds7.max.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.11904761904761904
+  },
+  "fusion.ds7.max.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.1875
+  },
+  "fusion.ds7.max.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6
+  },
+  "fusion.ds7.max.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.89
+  },
+  "fusion.ds7.max.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.99
+  },
+  "fusion.ds7.max.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 23
+  },
+  "fusion.ds7.max.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 8
+  },
+  "fusion.ds7.max.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 58
+  },
+  "fusion.ds7.max.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0898876404494382
+  },
+  "fusion.ds7.max.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.34831460674157305
+  },
+  "fusion.ds7.multiplicative.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 103
+  },
+  "fusion.ds7.multiplicative.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 9
+  },
+  "fusion.ds7.multiplicative.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2172
+  },
+  "fusion.ds7.multiplicative.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.04903677758318739
+  },
+  "fusion.ds7.multiplicative.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.00394045534150613
+  },
+  "fusion.ds7.multiplicative.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.0
+  },
+  "fusion.ds7.multiplicative.f1": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.392
+  },
+  "fusion.ds7.multiplicative.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0
+  },
+  "fusion.ds7.multiplicative.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 5
+  },
+  "fusion.ds7.multiplicative.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 4.0
+  },
+  "fusion.ds7.multiplicative.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds7.multiplicative.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.19047619047619047
+  },
+  "fusion.ds7.multiplicative.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.0
+  },
+  "fusion.ds7.multiplicative.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.6
+  },
+  "fusion.ds7.multiplicative.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 1.3898340607541655
+  },
+  "fusion.ds7.multiplicative.t_block": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 2.4449787960431575
+  },
+  "fusion.ds7.multiplicative.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 15
+  },
+  "fusion.ds7.multiplicative.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 34
+  },
+  "fusion.ds7.multiplicative.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 40
+  },
+  "fusion.ds7.multiplicative.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.38202247191011235
+  },
+  "fusion.ds7.multiplicative.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124857Z",
+   "value": 0.550561797752809
+  },
+  "fusion.ds777.additive.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 101
+  },
+  "fusion.ds777.additive.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 4
+  },
+  "fusion.ds777.additive.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2065
+  },
+  "fusion.ds777.additive.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.04838709677419355
+  },
+  "fusion.ds777.additive.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0018433179723502304
+  },
+  "fusion.ds777.additive.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5185185185185185
+  },
+  "fusion.ds777.additive.f1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.49429657794676807
+  },
+  "fusion.ds777.additive.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2
+  },
+  "fusion.ds777.additive.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2
+  },
+  "fusion.ds777.additive.params.w": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.ds777.additive.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.additive.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.36363636363636365
+  },
+  "fusion.ds777.additive.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.additive.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.additive.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.30389365820457054
+  },
+  "fusion.ds777.additive.t_block": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.6
+  },
+  "fusion.ds777.additive.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 16
+  },
+  "fusion.ds777.additive.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 49
+  },
+  "fusion.ds777.additive.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 28
+  },
+  "fusion.ds777.additive.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5268817204301075
+  },
+  "fusion.ds777.additive.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.6989247311827957
+  },
+  "fusion.ds777.gated.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 107
+  },
+  "fusion.ds777.gated.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 4
+  },
+  "fusion.ds777.gated.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2059
+  },
+  "fusion.ds777.gated.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.05115207373271889
+  },
+  "fusion.ds777.gated.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0018433179723502304
+  },
+  "fusion.ds777.gated.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.14814814814814814
+  },
+  "fusion.ds777.gated.f1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5109489051094891
+  },
+  "fusion.ds777.gated.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2
+  },
+  "fusion.ds777.gated.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2
+  },
+  "fusion.ds777.gated.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 8.0
+  },
+  "fusion.ds777.gated.params.tau_A": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.477429101654715
+  },
+  "fusion.ds777.gated.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.gated.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.4772727272727273
+  },
+  "fusion.ds777.gated.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.gated.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.gated.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.888272090311681
+  },
+  "fusion.ds777.gated.t_block": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 9.6
+  },
+  "fusion.ds777.gated.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 21
+  },
+  "fusion.ds777.gated.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 49
+  },
+  "fusion.ds777.gated.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 23
+  },
+  "fusion.ds777.gated.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5268817204301075
+  },
+  "fusion.ds777.gated.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.7526881720430108
+  },
+  "fusion.ds777.logistic.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 101
+  },
+  "fusion.ds777.logistic.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 11
+  },
+  "fusion.ds777.logistic.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2058
+  },
+  "fusion.ds777.logistic.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.05161290322580645
+  },
+  "fusion.ds777.logistic.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.005069124423963134
+  },
+  "fusion.ds777.logistic.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.14814814814814814
+  },
+  "fusion.ds777.logistic.f1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.509090909090909
+  },
+  "fusion.ds777.logistic.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2
+  },
+  "fusion.ds777.logistic.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2
+  },
+  "fusion.ds777.logistic.params.coef.0": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.5551066985997002
+  },
+  "fusion.ds777.logistic.params.coef.1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 6.644584811197407
+  },
+  "fusion.ds777.logistic.params.coef.2": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 4.482858069481956
+  },
+  "fusion.ds777.logistic.params.intercept": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": -5.64187749695721
+  },
+  "fusion.ds777.logistic.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.logistic.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.4772727272727273
+  },
+  "fusion.ds777.logistic.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.logistic.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.logistic.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.094766588239698
+  },
+  "fusion.ds777.logistic.t_block": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.6225059197961416
+  },
+  "fusion.ds777.logistic.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 17
+  },
+  "fusion.ds777.logistic.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 53
+  },
+  "fusion.ds777.logistic.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 23
+  },
+  "fusion.ds777.logistic.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5698924731182796
+  },
+  "fusion.ds777.logistic.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.7526881720430108
+  },
+  "fusion.ds777.max.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 112
+  },
+  "fusion.ds777.max.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 8
+  },
+  "fusion.ds777.max.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2050
+  },
+  "fusion.ds777.max.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.055299539170506916
+  },
+  "fusion.ds777.max.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.003686635944700461
+  },
+  "fusion.ds777.max.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.ds777.max.f1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.19491525423728814
+  },
+  "fusion.ds777.max.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0
+  },
+  "fusion.ds777.max.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2
+  },
+  "fusion.ds777.max.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.45
+  },
+  "fusion.ds777.max.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.18181818181818182
+  },
+  "fusion.ds777.max.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.17647058823529413
+  },
+  "fusion.ds777.max.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.25
+  },
+  "fusion.ds777.max.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.89
+  },
+  "fusion.ds777.max.t_block": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.max.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 20
+  },
+  "fusion.ds777.max.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3
+  },
+  "fusion.ds777.max.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 70
+  },
+  "fusion.ds777.max.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.03225806451612903
+  },
+  "fusion.ds777.max.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.24731182795698925
+  },
+  "fusion.ds777.multiplicative.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 98
+  },
+  "fusion.ds777.multiplicative.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 8
+  },
+  "fusion.ds777.multiplicative.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2064
+  },
+  "fusion.ds777.multiplicative.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.04884792626728111
+  },
+  "fusion.ds777.multiplicative.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.003686635944700461
+  },
+  "fusion.ds777.multiplicative.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.ds777.multiplicative.f1": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5204460966542751
+  },
+  "fusion.ds777.multiplicative.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1
+  },
+  "fusion.ds777.multiplicative.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2
+  },
+  "fusion.ds777.multiplicative.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 8.0
+  },
+  "fusion.ds777.multiplicative.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.multiplicative.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5
+  },
+  "fusion.ds777.multiplicative.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.ds777.multiplicative.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.9166666666666666
+  },
+  "fusion.ds777.multiplicative.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.7989580022696996
+  },
+  "fusion.ds777.multiplicative.t_block": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.8444314825448505
+  },
+  "fusion.ds777.multiplicative.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 23
+  },
+  "fusion.ds777.multiplicative.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 47
+  },
+  "fusion.ds777.multiplicative.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 23
+  },
+  "fusion.ds777.multiplicative.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5053763440860215
+  },
+  "fusion.ds777.multiplicative.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.7526881720430108
+  },
+  "fusion.ds99.additive.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 108
+  },
+  "fusion.ds99.additive.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 12
+  },
+  "fusion.ds99.additive.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2190
+  },
+  "fusion.ds99.additive.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.05194805194805195
+  },
+  "fusion.ds99.additive.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.005194805194805195
+  },
+  "fusion.ds99.additive.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds99.additive.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.42066420664206644
+  },
+  "fusion.ds99.additive.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds99.additive.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds99.additive.params.w": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5
+  },
+  "fusion.ds99.additive.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.additive.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.22916666666666666
+  },
+  "fusion.ds99.additive.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.additive.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.additive.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5023133676353371
+  },
+  "fusion.ds99.additive.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.6729518019523412
+  },
+  "fusion.ds99.additive.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 24
+  },
+  "fusion.ds99.additive.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 33
+  },
+  "fusion.ds99.additive.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 37
+  },
+  "fusion.ds99.additive.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.35106382978723405
+  },
+  "fusion.ds99.additive.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.6063829787234043
+  },
+  "fusion.ds99.gated.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 103
+  },
+  "fusion.ds99.gated.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 11
+  },
+  "fusion.ds99.gated.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2196
+  },
+  "fusion.ds99.gated.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.04935064935064935
+  },
+  "fusion.ds99.gated.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.004761904761904762
+  },
+  "fusion.ds99.gated.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds99.gated.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.43018867924528303
+  },
+  "fusion.ds99.gated.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds99.gated.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds99.gated.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2.5
+  },
+  "fusion.ds99.gated.params.tau_A": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.7427381195571524
+  },
+  "fusion.ds99.gated.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.gated.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.22916666666666666
+  },
+  "fusion.ds99.gated.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.gated.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.gated.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.177604506002042
+  },
+  "fusion.ds99.gated.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.9309927411756969
+  },
+  "fusion.ds99.gated.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 13
+  },
+  "fusion.ds99.gated.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 44
+  },
+  "fusion.ds99.gated.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 37
+  },
+  "fusion.ds99.gated.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.46808510638297873
+  },
+  "fusion.ds99.gated.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.6063829787234043
+  },
+  "fusion.ds99.logistic.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 97
+  },
+  "fusion.ds99.logistic.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 11
+  },
+  "fusion.ds99.logistic.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2202
+  },
+  "fusion.ds99.logistic.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.046753246753246755
+  },
+  "fusion.ds99.logistic.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.004761904761904762
+  },
+  "fusion.ds99.logistic.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.03333333333333333
+  },
+  "fusion.ds99.logistic.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.43410852713178294
+  },
+  "fusion.ds99.logistic.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds99.logistic.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds99.logistic.params.coef.0": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2.2910507326821765
+  },
+  "fusion.ds99.logistic.params.coef.1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 5.096851858904119
+  },
+  "fusion.ds99.logistic.params.coef.2": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.2787730157906276
+  },
+  "fusion.ds99.logistic.params.intercept": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": -5.705867330371168
+  },
+  "fusion.ds99.logistic.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.logistic.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.20833333333333334
+  },
+  "fusion.ds99.logistic.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.logistic.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.logistic.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.08063972531237677
+  },
+  "fusion.ds99.logistic.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.33756583648507354
+  },
+  "fusion.ds99.logistic.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 9
+  },
+  "fusion.ds99.logistic.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 47
+  },
+  "fusion.ds99.logistic.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 38
+  },
+  "fusion.ds99.logistic.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5
+  },
+  "fusion.ds99.logistic.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.5957446808510638
+  },
+  "fusion.ds99.max.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 114
+  },
+  "fusion.ds99.max.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 12
+  },
+  "fusion.ds99.max.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2184
+  },
+  "fusion.ds99.max.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.05454545454545454
+  },
+  "fusion.ds99.max.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.005194805194805195
+  },
+  "fusion.ds99.max.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds99.max.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.23293172690763053
+  },
+  "fusion.ds99.max.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds99.max.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds99.max.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.max.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.08333333333333333
+  },
+  "fusion.ds99.max.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.4666666666666667
+  },
+  "fusion.ds99.max.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.35
+  },
+  "fusion.ds99.max.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.89
+  },
+  "fusion.ds99.max.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.98
+  },
+  "fusion.ds99.max.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 20
+  },
+  "fusion.ds99.max.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 9
+  },
+  "fusion.ds99.max.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 65
+  },
+  "fusion.ds99.max.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.09574468085106383
+  },
+  "fusion.ds99.max.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.30851063829787234
+  },
+  "fusion.ds99.multiplicative.benign_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 106
+  },
+  "fusion.ds99.multiplicative.benign_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 12
+  },
+  "fusion.ds99.multiplicative.benign_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2192
+  },
+  "fusion.ds99.multiplicative.benign_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.05108225108225108
+  },
+  "fusion.ds99.multiplicative.benign_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.005194805194805195
+  },
+  "fusion.ds99.multiplicative.benign_burst_alert_or_block_rate": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.0
+  },
+  "fusion.ds99.multiplicative.f1": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.35658914728682173
+  },
+  "fusion.ds99.multiplicative.low_S_high_A_escalated": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0
+  },
+  "fusion.ds99.multiplicative.low_S_high_A_threats": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 6
+  },
+  "fusion.ds99.multiplicative.params.beta": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 2.5
+  },
+  "fusion.ds99.multiplicative.per_class_recall.compromised_account": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.multiplicative.per_class_recall.malicious_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.22916666666666666
+  },
+  "fusion.ds99.multiplicative.per_class_recall.negligent_insider": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.0
+  },
+  "fusion.ds99.multiplicative.per_class_recall.overscoped_thirdparty": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.45
+  },
+  "fusion.ds99.multiplicative.t_alert": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.169132215766904
+  },
+  "fusion.ds99.multiplicative.t_block": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 1.8689312155001452
+  },
+  "fusion.ds99.multiplicative.threat_actions.ALERT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 17
+  },
+  "fusion.ds99.multiplicative.threat_actions.BLOCK": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 29
+  },
+  "fusion.ds99.multiplicative.threat_actions.PERMIT": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 48
+  },
+  "fusion.ds99.multiplicative.threat_block_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.30851063829787234
+  },
+  "fusion.ds99.multiplicative.threat_recall": {
+   "run_id": "sbrs_fusion-20261023T124858Z",
+   "value": 0.48936170212765956
+  },
+  "fusion.summary.additive.benign_actions.ALERT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 960.0
+  },
+  "fusion.summary.additive.benign_actions.BLOCK.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 100.0
+  },
+  "fusion.summary.additive.benign_actions.PERMIT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 21306.0
+  },
+  "fusion.summary.additive.benign_alert_or_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.04739916936953432
+  },
+  "fusion.summary.additive.benign_alert_or_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.004821948584670591
+  },
+  "fusion.summary.additive.benign_alert_or_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.47399169369534316
+  },
+  "fusion.summary.additive.benign_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.004461227124095695
+  },
+  "fusion.summary.additive.benign_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0019441929180220709
+  },
+  "fusion.summary.additive.benign_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.04461227124095696
+  },
+  "fusion.summary.additive.benign_burst_alert_or_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.05555555555555556
+  },
+  "fusion.summary.additive.benign_burst_alert_or_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.16308450387188772
+  },
+  "fusion.summary.additive.benign_burst_alert_or_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5555555555555556
+  },
+  "fusion.summary.additive.f1.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.4604514037014401
+  },
+  "fusion.summary.additive.f1.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.04287753742342204
+  },
+  "fusion.summary.additive.f1.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 4.604514037014401
+  },
+  "fusion.summary.additive.low_S_high_A_escalated.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.3
+  },
+  "fusion.summary.additive.low_S_high_A_escalated.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.2135943621178655
+  },
+  "fusion.summary.additive.low_S_high_A_escalated.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 33.0
+  },
+  "fusion.summary.additive.low_S_high_A_threats.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.5
+  },
+  "fusion.summary.additive.low_S_high_A_threats.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.1213203435596424
+  },
+  "fusion.summary.additive.low_S_high_A_threats.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 35.0
+  },
+  "fusion.summary.additive.per_class_recall.compromised_account.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.summary.additive.per_class_recall.compromised_account.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.additive.per_class_recall.compromised_account.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 10.0
+  },
+  "fusion.summary.additive.per_class_recall.malicious_insider.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.2554331329565998
+  },
+  "fusion.summary.additive.per_class_recall.malicious_insider.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0829522815296473
+  },
+  "fusion.summary.additive.per_class_recall.malicious_insider.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.554331329565998
+  },
+  "fusion.summary.additive.per_class_recall.negligent_insider.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.summary.additive.per_class_recall.negligent_insider.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.additive.per_class_recall.negligent_insider.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 10.0
+  },
+  "fusion.summary.additive.per_class_recall.overscoped_thirdparty.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.9851648351648352
+  },
+  "fusion.summary.additive.per_class_recall.overscoped_thirdparty.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.03130207558395914
+  },
+  "fusion.summary.additive.per_class_recall.overscoped_thirdparty.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 9.851648351648352
+  },
+  "fusion.summary.additive.threat_actions.ALERT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 181.0
+  },
+  "fusion.summary.additive.threat_actions.BLOCK.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 421.0
+  },
+  "fusion.summary.additive.threat_actions.PERMIT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 353.0
+  },
+  "fusion.summary.additive.threat_block_recall.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.4409697511668586
+  },
+  "fusion.summary.additive.threat_block_recall.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.055367283186411605
+  },
+  "fusion.summary.additive.threat_block_recall.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 4.409697511668586
+  },
+  "fusion.summary.additive.threat_recall.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.6302753620063062
+  },
+  "fusion.summary.additive.threat_recall.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.05001480749299543
+  },
+  "fusion.summary.additive.threat_recall.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 6.302753620063061
+  },
+  "fusion.summary.gated.benign_actions.ALERT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 960.0
+  },
+  "fusion.summary.gated.benign_actions.BLOCK.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 92.0
+  },
+  "fusion.summary.gated.benign_actions.PERMIT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 21314.0
+  },
+  "fusion.summary.gated.benign_alert_or_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.047056701546706194
+  },
+  "fusion.summary.gated.benign_alert_or_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.006128120267681299
+  },
+  "fusion.summary.gated.benign_alert_or_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.4705670154670619
+  },
+  "fusion.summary.gated.benign_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.004108378806843253
+  },
+  "fusion.summary.gated.benign_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0011259164327633436
+  },
+  "fusion.summary.gated.benign_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.041083788068432534
+  },
+  "fusion.summary.gated.benign_burst_alert_or_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.014814814814814814
+  },
+  "fusion.summary.gated.benign_burst_alert_or_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.04684855792842044
+  },
+  "fusion.summary.gated.benign_burst_alert_or_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.14814814814814814
+  },
+  "fusion.summary.gated.f1.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.468446731241691
+  },
+  "fusion.summary.gated.f1.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.051719431941396464
+  },
+  "fusion.summary.gated.f1.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 4.68446731241691
+  },
+  "fusion.summary.gated.low_S_high_A_escalated.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.5
+  },
+  "fusion.summary.gated.low_S_high_A_escalated.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.1213203435596424
+  },
+  "fusion.summary.gated.low_S_high_A_escalated.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 35.0
+  },
+  "fusion.summary.gated.low_S_high_A_threats.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.5
+  },
+  "fusion.summary.gated.low_S_high_A_threats.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.1213203435596424
+  },
+  "fusion.summary.gated.low_S_high_A_threats.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 35.0
+  },
+  "fusion.summary.gated.per_class_recall.compromised_account.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.summary.gated.per_class_recall.compromised_account.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.gated.per_class_recall.compromised_account.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 10.0
+  },
+  "fusion.summary.gated.per_class_recall.malicious_insider.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.2795388328122997
+  },
+  "fusion.summary.gated.per_class_recall.malicious_insider.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.10917396621092729
+  },
+  "fusion.summary.gated.per_class_recall.malicious_insider.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.7953883281229968
+  },
+  "fusion.summary.gated.per_class_recall.negligent_insider.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.99375
+  },
+  "fusion.summary.gated.per_class_recall.negligent_insider.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.01976423537605237
+  },
+  "fusion.summary.gated.per_class_recall.negligent_insider.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 9.9375
+  },
+  "fusion.summary.gated.per_class_recall.overscoped_thirdparty.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.9916666666666666
+  },
+  "fusion.summary.gated.per_class_recall.overscoped_thirdparty.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.026352313834736504
+  },
+  "fusion.summary.gated.per_class_recall.overscoped_thirdparty.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 9.916666666666666
+  },
+  "fusion.summary.gated.threat_actions.ALERT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 152.0
+  },
+  "fusion.summary.gated.threat_actions.BLOCK.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 461.0
+  },
+  "fusion.summary.gated.threat_actions.PERMIT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 342.0
+  },
+  "fusion.summary.gated.threat_block_recall.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.48275575468329424
+  },
+  "fusion.summary.gated.threat_block_recall.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.053937094282616976
+  },
+  "fusion.summary.gated.threat_block_recall.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 4.827557546832942
+  },
+  "fusion.summary.gated.threat_recall.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.6420482648299365
+  },
+  "fusion.summary.gated.threat_recall.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.06667215372205507
+  },
+  "fusion.summary.gated.threat_recall.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 6.420482648299365
+  },
+  "fusion.summary.logistic.benign_actions.ALERT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1000.0
+  },
+  "fusion.summary.logistic.benign_actions.BLOCK.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 97.0
+  },
+  "fusion.summary.logistic.benign_actions.PERMIT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 21269.0
+  },
+  "fusion.summary.logistic.benign_alert_or_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.049084855577074926
+  },
+  "fusion.summary.logistic.benign_alert_or_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.005727079152523326
+  },
+  "fusion.summary.logistic.benign_alert_or_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.49084855577074926
+  },
+  "fusion.summary.logistic.benign_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.004336026491388438
+  },
+  "fusion.summary.logistic.benign_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0015829794147633061
+  },
+  "fusion.summary.logistic.benign_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.04336026491388439
+  },
+  "fusion.summary.logistic.benign_burst_alert_or_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.09490102171136654
+  },
+  "fusion.summary.logistic.benign_burst_alert_or_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.10512630851913879
+  },
+  "fusion.summary.logistic.benign_burst_alert_or_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.9490102171136654
+  },
+  "fusion.summary.logistic.f1.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.4523584135530217
+  },
+  "fusion.summary.logistic.f1.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.04552449179393602
+  },
+  "fusion.summary.logistic.f1.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 4.523584135530217
+  },
+  "fusion.summary.logistic.low_S_high_A_escalated.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.5
+  },
+  "fusion.summary.logistic.low_S_high_A_escalated.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.1213203435596424
+  },
+  "fusion.summary.logistic.low_S_high_A_escalated.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 35.0
+  },
+  "fusion.summary.logistic.low_S_high_A_threats.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.5
+  },
+  "fusion.summary.logistic.low_S_high_A_threats.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.1213203435596424
+  },
+  "fusion.summary.logistic.low_S_high_A_threats.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 35.0
+  },
+  "fusion.summary.logistic.per_class_recall.compromised_account.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.summary.logistic.per_class_recall.compromised_account.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.logistic.per_class_recall.compromised_account.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 10.0
+  },
+  "fusion.summary.logistic.per_class_recall.malicious_insider.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.24502181749553462
+  },
+  "fusion.summary.logistic.per_class_recall.malicious_insider.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.11483531654878311
+  },
+  "fusion.summary.logistic.per_class_recall.malicious_insider.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.450218174955346
+  },
+  "fusion.summary.logistic.per_class_recall.negligent_insider.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.summary.logistic.per_class_recall.negligent_insider.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.logistic.per_class_recall.negligent_insider.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 10.0
+  },
+  "fusion.summary.logistic.per_class_recall.overscoped_thirdparty.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.summary.logistic.per_class_recall.overscoped_thirdparty.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.logistic.per_class_recall.overscoped_thirdparty.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 10.0
+  },
+  "fusion.summary.logistic.threat_actions.ALERT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 125.0
+  },
+  "fusion.summary.logistic.threat_actions.BLOCK.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 474.0
+  },
+  "fusion.summary.logistic.threat_actions.PERMIT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 356.0
+  },
+  "fusion.summary.logistic.threat_block_recall.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.49655000889271916
+  },
+  "fusion.summary.logistic.threat_block_recall.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.06291939492069859
+  },
+  "fusion.summary.logistic.threat_block_recall.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 4.965500088927191
+  },
+  "fusion.summary.logistic.threat_recall.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.627439331332002
+  },
+  "fusion.summary.logistic.threat_recall.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.061944327431693445
+  },
+  "fusion.summary.logistic.threat_recall.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 6.2743933133200205
+  },
+  "fusion.summary.max.benign_actions.ALERT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1089.0
+  },
+  "fusion.summary.max.benign_actions.BLOCK.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 147.0
+  },
+  "fusion.summary.max.benign_actions.PERMIT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 21130.0
+  },
+  "fusion.summary.max.benign_alert_or_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.05525076590225322
+  },
+  "fusion.summary.max.benign_alert_or_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0038243779756934704
+  },
+  "fusion.summary.max.benign_alert_or_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5525076590225322
+  },
+  "fusion.summary.max.benign_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.00657759618685323
+  },
+  "fusion.summary.max.benign_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0031916204854626844
+  },
+  "fusion.summary.max.benign_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0657759618685323
+  },
+  "fusion.summary.max.benign_burst_alert_or_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.max.benign_burst_alert_or_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.max.benign_burst_alert_or_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.max.f1.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.24367132703177274
+  },
+  "fusion.summary.max.f1.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0376671167046423
+  },
+  "fusion.summary.max.f1.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.4367132703177274
+  },
+  "fusion.summary.max.low_S_high_A_escalated.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.9
+  },
+  "fusion.summary.max.low_S_high_A_escalated.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.286683937707919
+  },
+  "fusion.summary.max.low_S_high_A_escalated.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 9.0
+  },
+  "fusion.summary.max.low_S_high_A_threats.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.5
+  },
+  "fusion.summary.max.low_S_high_A_threats.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.1213203435596424
+  },
+  "fusion.summary.max.low_S_high_A_threats.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 35.0
+  },
+  "fusion.summary.max.per_class_recall.compromised_account.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.777478963245217
+  },
+  "fusion.summary.max.per_class_recall.compromised_account.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.17269138109106652
+  },
+  "fusion.summary.max.per_class_recall.compromised_account.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 7.774789632452171
+  },
+  "fusion.summary.max.per_class_recall.malicious_insider.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.1361480805732996
+  },
+  "fusion.summary.max.per_class_recall.malicious_insider.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.03713950573418236
+  },
+  "fusion.summary.max.per_class_recall.malicious_insider.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.3614808057329961
+  },
+  "fusion.summary.max.per_class_recall.negligent_insider.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.3664465084279326
+  },
+  "fusion.summary.max.per_class_recall.negligent_insider.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.15341707623333725
+  },
+  "fusion.summary.max.per_class_recall.negligent_insider.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.6644650842793256
+  },
+  "fusion.summary.max.per_class_recall.overscoped_thirdparty.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.35041546173125127
+  },
+  "fusion.summary.max.per_class_recall.overscoped_thirdparty.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.2767804785705432
+  },
+  "fusion.summary.max.per_class_recall.overscoped_thirdparty.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.5041546173125124
+  },
+  "fusion.summary.max.threat_actions.ALERT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 214.0
+  },
+  "fusion.summary.max.threat_actions.BLOCK.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 91.0
+  },
+  "fusion.summary.max.threat_actions.PERMIT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 650.0
+  },
+  "fusion.summary.max.threat_block_recall.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.09539506136464078
+  },
+  "fusion.summary.max.threat_block_recall.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.05467972747929858
+  },
+  "fusion.summary.max.threat_block_recall.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.9539506136464078
+  },
+  "fusion.summary.max.threat_recall.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.31978209246810885
+  },
+  "fusion.summary.max.threat_recall.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.05785564692159148
+  },
+  "fusion.summary.max.threat_recall.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.1978209246810883
+  },
+  "fusion.summary.multiplicative.benign_actions.ALERT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 946.0
+  },
+  "fusion.summary.multiplicative.benign_actions.BLOCK.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 104.0
+  },
+  "fusion.summary.multiplicative.benign_actions.PERMIT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 21316.0
+  },
+  "fusion.summary.multiplicative.benign_alert_or_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0469521229388676
+  },
+  "fusion.summary.multiplicative.benign_alert_or_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.005891864270321137
+  },
+  "fusion.summary.multiplicative.benign_alert_or_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.469521229388676
+  },
+  "fusion.summary.multiplicative.benign_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.004649138226194576
+  },
+  "fusion.summary.multiplicative.benign_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0015053027273227576
+  },
+  "fusion.summary.multiplicative.benign_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.046491382261945755
+  },
+  "fusion.summary.multiplicative.benign_burst_alert_or_block_rate.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.multiplicative.benign_burst_alert_or_block_rate.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.multiplicative.benign_burst_alert_or_block_rate.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.multiplicative.f1.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.43816844878152317
+  },
+  "fusion.summary.multiplicative.f1.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.06117292660421394
+  },
+  "fusion.summary.multiplicative.f1.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 4.381684487815232
+  },
+  "fusion.summary.multiplicative.low_S_high_A_escalated.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.1
+  },
+  "fusion.summary.multiplicative.low_S_high_A_escalated.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.31622776601683794
+  },
+  "fusion.summary.multiplicative.low_S_high_A_escalated.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.summary.multiplicative.low_S_high_A_threats.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.5
+  },
+  "fusion.summary.multiplicative.low_S_high_A_threats.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.1213203435596424
+  },
+  "fusion.summary.multiplicative.low_S_high_A_threats.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 35.0
+  },
+  "fusion.summary.multiplicative.per_class_recall.compromised_account.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 1.0
+  },
+  "fusion.summary.multiplicative.per_class_recall.compromised_account.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.0
+  },
+  "fusion.summary.multiplicative.per_class_recall.compromised_account.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 10.0
+  },
+  "fusion.summary.multiplicative.per_class_recall.malicious_insider.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.2859782267516936
+  },
+  "fusion.summary.multiplicative.per_class_recall.malicious_insider.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.11915801313479825
+  },
+  "fusion.summary.multiplicative.per_class_recall.malicious_insider.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 2.8597822675169358
+  },
+  "fusion.summary.multiplicative.per_class_recall.negligent_insider.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.99375
+  },
+  "fusion.summary.multiplicative.per_class_recall.negligent_insider.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.01976423537605237
+  },
+  "fusion.summary.multiplicative.per_class_recall.negligent_insider.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 9.9375
+  },
+  "fusion.summary.multiplicative.per_class_recall.overscoped_thirdparty.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.6487745003534477
+  },
+  "fusion.summary.multiplicative.per_class_recall.overscoped_thirdparty.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.12218690206396061
+  },
+  "fusion.summary.multiplicative.per_class_recall.overscoped_thirdparty.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 6.487745003534478
+  },
+  "fusion.summary.multiplicative.threat_actions.ALERT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 243.0
+  },
+  "fusion.summary.multiplicative.threat_actions.BLOCK.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 319.0
+  },
+  "fusion.summary.multiplicative.threat_actions.PERMIT.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 393.0
+  },
+  "fusion.summary.multiplicative.threat_block_recall.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.3351537680222503
+  },
+  "fusion.summary.multiplicative.threat_block_recall.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.07198637008537409
+  },
+  "fusion.summary.multiplicative.threat_block_recall.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 3.3515376802225028
+  },
+  "fusion.summary.multiplicative.threat_recall.mean": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.5887206495780595
+  },
+  "fusion.summary.multiplicative.threat_recall.sd": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 0.08305412995826568
+  },
+  "fusion.summary.multiplicative.threat_recall.sum": {
+   "run_id": "sbrs_fusion-20261023T124859Z",
+   "value": 5.887206495780595
+  },
   "generation.s1.active_sessions": {
    "run_id": "generate_sessions-20261023T113805Z",
    "value": 16326
@@ -157262,6 +162422,163 @@
    },
    "seeds": {
     "data_and_train": [
+     42,
+     7,
+     2024,
+     1,
+     13,
+     99,
+     123,
+     314,
+     777,
+     1001
+    ]
+   }
+  },
+  "sbrs_fusion-20261023T124856Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\sbrs_fusion.py",
+   "date_utc": "2026-10-23T12:48:56+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "e581381037ebc3364e2b99103c629bf2db1a12ac",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "fusion.ds42"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/sbrs_fusion.py",
+   "scripts": {
+    "fusion.ds42": "evaluation/sbrs_fusion.py"
+   },
+   "seeds": {
+    "data_and_train": 42
+   }
+  },
+  "sbrs_fusion-20261023T124857Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\sbrs_fusion.py",
+   "date_utc": "2026-10-23T12:48:57+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "e581381037ebc3364e2b99103c629bf2db1a12ac",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "fusion.ds1",
+    "fusion.ds13",
+    "fusion.ds2024",
+    "fusion.ds7"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/sbrs_fusion.py",
+   "scripts": {
+    "fusion.ds1": "evaluation/sbrs_fusion.py",
+    "fusion.ds13": "evaluation/sbrs_fusion.py",
+    "fusion.ds2024": "evaluation/sbrs_fusion.py",
+    "fusion.ds7": "evaluation/sbrs_fusion.py"
+   },
+   "seeds": {
+    "data_and_train": 13
+   }
+  },
+  "sbrs_fusion-20261023T124858Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\sbrs_fusion.py",
+   "date_utc": "2026-10-23T12:48:58+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "e581381037ebc3364e2b99103c629bf2db1a12ac",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "fusion.ds123",
+    "fusion.ds314",
+    "fusion.ds99"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/sbrs_fusion.py",
+   "scripts": {
+    "fusion.ds123": "evaluation/sbrs_fusion.py",
+    "fusion.ds314": "evaluation/sbrs_fusion.py",
+    "fusion.ds99": "evaluation/sbrs_fusion.py"
+   },
+   "seeds": {
+    "data_and_train": 314
+   }
+  },
+  "sbrs_fusion-20261023T124859Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\sbrs_fusion.py",
+   "date_utc": "2026-10-23T12:48:59+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "e581381037ebc3364e2b99103c629bf2db1a12ac",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "fusion.ds1001",
+    "fusion.ds777",
+    "fusion.summary"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/sbrs_fusion.py",
+   "scripts": {
+    "fusion.ds1001": "evaluation/sbrs_fusion.py",
+    "fusion.ds777": "evaluation/sbrs_fusion.py",
+    "fusion.summary": "evaluation/sbrs_fusion.py"
+   },
+   "seeds": {
+    "datasets": [
      42,
      7,
      2024,

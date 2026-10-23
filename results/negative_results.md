@@ -70,3 +70,13 @@ Neutral: adding benign look-alike episodes (overlap 0.5) lowers AUC by at most a
 | N-032 | Each test split holds only about 6 malicious episodes; per-dataset episode recall moves in steps of 1/6 and ranges 0.33 to 0.83 for CUSUM. | per-dataset keys `drift.ds<s>.cusum.per_class.malicious_insider.*` |
 
 The supervised probe (labels used for training, not deployable) reaches malicious-insider AUC 0.870 but only 0.214 window recall at its validation-F1 threshold. The unsupervised LSTM reaches AUC 0.744 on the same class. The signal is in the data; a threshold that serves all classes does not extract it.
+
+## T2.5: SBRS fusion study (keys `fusion.summary.*`, `results/sbrs_fusion/`)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-033 | Reviewer 2 was right: the multiplicative SBRS escalates only 1 of 35 threats that have low content sensitivity (S < 30) and a high anomaly score (A at or above the hybrid's threshold), across 10 datasets. Gated fusion escalates 35 of 35, additive 33 of 35. | `fusion.summary.*.low_S_high_A_escalated.sum` |
+| N-034 | At the same benign budget (about 4.7 percent of benign sessions ALERT or BLOCK), the multiplicative form catches fewer threats (recall 0.589) than gated (0.642), additive (0.630) or logistic (0.627) fusion. The shipped design is not the best of the forms tested. | `fusion.summary.*.threat_recall.mean` |
+| N-035 | Max fusion is the worst form (recall 0.320): S/100 alone puts many benign sensitive-file sessions above the budget. | `fusion.summary.max.*` |
+
+For balance: the multiplicative form never flags a benign burst (0 percent), gated flags 1.5 percent, additive 5.6 percent, logistic 9.5 percent.

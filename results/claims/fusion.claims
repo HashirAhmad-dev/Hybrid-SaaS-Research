@@ -1,0 +1,32 @@
+# T2.5 SBRS fusion study, mean (or sum) over 10 datasets (written from the manifest)
+multiplicative threat recall | fusion.summary.multiplicative.threat_recall.mean | 0.5887
+multiplicative benign alert-or-block | fusion.summary.multiplicative.benign_alert_or_block_rate.mean | 0.0470
+multiplicative F1 | fusion.summary.multiplicative.f1.mean | 0.4382
+multiplicative low-S high-A escalated (sum) | fusion.summary.multiplicative.low_S_high_A_escalated.sum | 1.0000
+multiplicative burst flag rate | fusion.summary.multiplicative.benign_burst_alert_or_block_rate.mean | 0.0000
+multiplicative malicious recall | fusion.summary.multiplicative.per_class_recall.malicious_insider.mean | 0.2860
+additive threat recall | fusion.summary.additive.threat_recall.mean | 0.6303
+additive benign alert-or-block | fusion.summary.additive.benign_alert_or_block_rate.mean | 0.0474
+additive F1 | fusion.summary.additive.f1.mean | 0.4605
+additive low-S high-A escalated (sum) | fusion.summary.additive.low_S_high_A_escalated.sum | 33.0000
+additive burst flag rate | fusion.summary.additive.benign_burst_alert_or_block_rate.mean | 0.0556
+additive malicious recall | fusion.summary.additive.per_class_recall.malicious_insider.mean | 0.2554
+max threat recall | fusion.summary.max.threat_recall.mean | 0.3198
+max benign alert-or-block | fusion.summary.max.benign_alert_or_block_rate.mean | 0.0553
+max F1 | fusion.summary.max.f1.mean | 0.2437
+max low-S high-A escalated (sum) | fusion.summary.max.low_S_high_A_escalated.sum | 9.0000
+max burst flag rate | fusion.summary.max.benign_burst_alert_or_block_rate.mean | 0.0000
+max malicious recall | fusion.summary.max.per_class_recall.malicious_insider.mean | 0.1361
+gated threat recall | fusion.summary.gated.threat_recall.mean | 0.6420
+gated benign alert-or-block | fusion.summary.gated.benign_alert_or_block_rate.mean | 0.0471
+gated F1 | fusion.summary.gated.f1.mean | 0.4684
+gated low-S high-A escalated (sum) | fusion.summary.gated.low_S_high_A_escalated.sum | 35.0000
+gated burst flag rate | fusion.summary.gated.benign_burst_alert_or_block_rate.mean | 0.0148
+gated malicious recall | fusion.summary.gated.per_class_recall.malicious_insider.mean | 0.2795
+logistic threat recall | fusion.summary.logistic.threat_recall.mean | 0.6274
+logistic benign alert-or-block | fusion.summary.logistic.benign_alert_or_block_rate.mean | 0.0491
+logistic F1 | fusion.summary.logistic.f1.mean | 0.4524
+logistic low-S high-A escalated (sum) | fusion.summary.logistic.low_S_high_A_escalated.sum | 35.0000
+logistic burst flag rate | fusion.summary.logistic.benign_burst_alert_or_block_rate.mean | 0.0949
+logistic malicious recall | fusion.summary.logistic.per_class_recall.malicious_insider.mean | 0.2450
+low-S high-A threats (sum) | fusion.summary.multiplicative.low_S_high_A_threats.sum | 35.0000

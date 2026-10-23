@@ -2,19 +2,19 @@
 
 After any restart or context compaction: re-read CLAUDE.md, this file and docs/FIXES_SUMMARY.md first.
 
-- Iteration: 9
-- Current task: T2.5
-- Last evidence path: results/drift/
+- Iteration: 10
+- Current task: T2.7
+- Last evidence path: results/sbrs_fusion/
 - Open gates: Q-001 (CERT, default skip applied). Phase 1 gate PASSED 2026-10-23.
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)
-- Goal: T2.5 SBRS fusion study (multiplicative, additive, max, gated, logistic) at the same benign budget; low S / high A case.
-- Smallest change: evaluation/sbrs_fusion.py (drafted) over T2.1 row scores.
-- Verify: rerun identical; corner table sanity by hand; claims.
+- Goal: T2.7 one labelled operating-point table (F1-optimal, insider-oriented, enforcement shipped/per-dataset, BLOCK only, hybrid OR CUSUM).
+- Smallest change: evaluation/operating_points.py (drafted) from manifest + scored CSVs.
+- Verify: values equal multiseed/drift keys; claims; rerun identical.
 
 ## Next action
-Start T2.5.
+Start T2.7.
 
 ## Status table
 
@@ -30,7 +30,7 @@ Start T2.5.
 | T2.2 | M | DONE | |
 | T2.3 | M | DONE | |
 | T2.4 | M | DONE | |
-| T2.5 | M | PENDING | |
+| T2.5 | M | DONE | |
 | T2.6 | S | SKIPPED | every CERT release with insiders > 2 GB; figshare link ~1 KB/s here (D-011); default of Q-001 applied, can be reopened |
 | T2.7 | M | PENDING | |
 | T3.1 | M | PENDING | |

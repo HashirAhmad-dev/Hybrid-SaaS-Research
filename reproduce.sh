@@ -31,6 +31,7 @@ fi
 stage ablation          -m evaluation.ablation          # T2.1, ~3.5 min
 stage ablation_report   -m evaluation.ablation_report
 stage drift_detector    -m evaluation.drift_detector    # T2.4, ~2 min
+stage sbrs_fusion       -m evaluation.sbrs_fusion       # T2.5, <1 min
 if [ "$QUICK" = 0 ]; then
   stage bootstrap       -m evaluation.bootstrap_stats   # T2.2, ~35 min
   stage difficulty_sweep -m evaluation.difficulty_sweep # T2.3, ~45 min
