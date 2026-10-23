@@ -1,0 +1,47 @@
+# T3.1/T3.5 PII v2 corpus, EVAL documents (written from the manifest)
+v2 B1 presidio F1 | pii2.v2.branch1.presidio.all.f1 | 0.7275
+v2 B1 presidio precision | pii2.v2.branch1.presidio.all.precision | 0.6360
+v2 B1 presidio recall | pii2.v2.branch1.presidio.all.recall | 0.8498
+v2 B1 presidio ADDRESS recall | pii2.v2.branch1.presidio.by_type.ADDRESS.recall | 0.0526
+v2 B1 presidio ADDRESS precision | pii2.v2.branch1.presidio.by_type.ADDRESS.precision | 0.0833
+v2 B1 presidio CREDIT_CARD recall | pii2.v2.branch1.presidio.by_type.CREDIT_CARD.recall | 0.8000
+v2 B1 presidio DOB precision | pii2.v2.branch1.presidio.by_type.DOB.precision | 0.4086
+v2 B1 presidio FPs on PII-free docs | pii2.v2.branch1.presidio.pii_free_docs_false_positives | 49.0000
+v2 OCR+presidio F1 | pii2.v2.ocr.easyocr_cpu.presidio.all.f1 | 0.4856
+v2 B1 presidio_plus F1 | pii2.v2.branch1.presidio_plus.all.f1 | 0.7686
+v2 B1 presidio_plus precision | pii2.v2.branch1.presidio_plus.all.precision | 0.6638
+v2 B1 presidio_plus recall | pii2.v2.branch1.presidio_plus.all.recall | 0.9129
+v2 B1 presidio_plus ADDRESS recall | pii2.v2.branch1.presidio_plus.by_type.ADDRESS.recall | 0.4737
+v2 B1 presidio_plus ADDRESS precision | pii2.v2.branch1.presidio_plus.by_type.ADDRESS.precision | 0.3529
+v2 B1 presidio_plus CREDIT_CARD recall | pii2.v2.branch1.presidio_plus.by_type.CREDIT_CARD.recall | 1.0000
+v2 B1 presidio_plus DOB precision | pii2.v2.branch1.presidio_plus.by_type.DOB.precision | 0.4222
+v2 B1 presidio_plus FPs on PII-free docs | pii2.v2.branch1.presidio_plus.pii_free_docs_false_positives | 50.0000
+v2 OCR+presidio_plus F1 | pii2.v2.ocr.easyocr_cpu.presidio_plus.all.f1 | 0.5157
+v1 B1 presidio F1 | pii2.v1.branch1.presidio.all.f1 | 0.8556
+v1 B1 presidio precision | pii2.v1.branch1.presidio.all.precision | 0.8750
+v1 B1 presidio recall | pii2.v1.branch1.presidio.all.recall | 0.8370
+v1 B1 presidio ADDRESS recall | pii2.v1.branch1.presidio.by_type.ADDRESS.recall | 0.1000
+v1 B1 presidio ADDRESS precision | pii2.v1.branch1.presidio.by_type.ADDRESS.precision | 0.5000
+v1 B1 presidio CREDIT_CARD recall | pii2.v1.branch1.presidio.by_type.CREDIT_CARD.recall | 0.8889
+v1 B1 presidio DOB precision | pii2.v1.branch1.presidio.by_type.DOB.precision | 0.8750
+v1 B1 presidio FPs on PII-free docs | pii2.v1.branch1.presidio.pii_free_docs_false_positives | 0.0000
+v1 OCR+presidio F1 | pii2.v1.ocr.easyocr_cpu.presidio.all.f1 | 0.7155
+v1 B1 presidio_plus F1 | pii2.v1.branch1.presidio_plus.all.f1 | 0.8757
+v1 B1 presidio_plus precision | pii2.v1.branch1.presidio_plus.all.precision | 0.8710
+v1 B1 presidio_plus recall | pii2.v1.branch1.presidio_plus.all.recall | 0.8804
+v1 B1 presidio_plus ADDRESS recall | pii2.v1.branch1.presidio_plus.by_type.ADDRESS.recall | 0.4000
+v1 B1 presidio_plus ADDRESS precision | pii2.v1.branch1.presidio_plus.by_type.ADDRESS.precision | 0.4444
+v1 B1 presidio_plus CREDIT_CARD recall | pii2.v1.branch1.presidio_plus.by_type.CREDIT_CARD.recall | 1.0000
+v1 B1 presidio_plus DOB precision | pii2.v1.branch1.presidio_plus.by_type.DOB.precision | 0.8750
+v1 B1 presidio_plus FPs on PII-free docs | pii2.v1.branch1.presidio_plus.pii_free_docs_false_positives | 0.0000
+v1 OCR+presidio_plus F1 | pii2.v1.ocr.easyocr_cpu.presidio_plus.all.f1 | 0.7935
+v2 OCR conf AUC easy vs hard | pii2.v2.ocr.easyocr_cpu.confidence.auc_conf_easy_vs_hard | 0.8836
+v2 OCR conf Spearman vs doc F1 | pii2.v2.ocr.easyocr_cpu.confidence.spearman_conf_vs_doc_f1 | 0.5518
+v1 OCR conf Spearman vs doc F1 | pii2.v1.ocr.easyocr_cpu.confidence.spearman_conf_vs_doc_f1 | 0.1865
+v2 EasyOCR s per image | pii2.v2.ocr.easyocr_cpu.confidence.seconds_per_image_mean | 3.7418
+v2 OCR+presidio_plus F1 easy | pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.easy.f1 | 0.7539
+v2 EasyOCR mean conf easy | pii2.v2.ocr.easyocr_cpu.confidence.mean_by_difficulty.easy | 0.7788
+v2 OCR+presidio_plus F1 medium | pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.medium.f1 | 0.6072
+v2 EasyOCR mean conf medium | pii2.v2.ocr.easyocr_cpu.confidence.mean_by_difficulty.medium | 0.7830
+v2 OCR+presidio_plus F1 hard | pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.hard.f1 | 0.2234
+v2 EasyOCR mean conf hard | pii2.v2.ocr.easyocr_cpu.confidence.mean_by_difficulty.hard | 0.4383

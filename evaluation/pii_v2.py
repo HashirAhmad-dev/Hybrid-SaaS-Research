@@ -213,7 +213,7 @@ def stage_presidio() -> None:
                 res["text"][d["doc_id"]] = {"entities": ents, "elapsed_ms": (time.perf_counter() - t0) * 1000}
         for f in ocr_files:
             ocr = json.loads(f.read_text(encoding="utf-8"))
-            eng = f.stem.replace("ocr_", "")
+            eng = f.stem.removeprefix("ocr_")
             res[eng] = {}
             for did, rec in ocr.items():
                 if did.startswith("_"):

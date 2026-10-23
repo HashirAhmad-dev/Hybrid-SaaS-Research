@@ -80,3 +80,13 @@ The supervised probe (labels used for training, not deployable) reaches maliciou
 | N-035 | Max fusion is the worst form (recall 0.320): S/100 alone puts many benign sensitive-file sessions above the budget. | `fusion.summary.max.*` |
 
 For balance: the multiplicative form never flags a benign burst (0 percent), gated flags 1.5 percent, additive 5.6 percent, logistic 9.5 percent.
+
+## T3.1 / T3.5: PII corpus v2 (keys `pii2.*`, `results/pii_v2/pii_v2_metrics.json`, EVAL documents)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-036 | On the harder v2 corpus Branch 1 (Presidio on clean text) falls from F1 0.856 (v1) to 0.728, mainly through false positives on near-miss strings: DOB precision 0.41 (document dates), PERSON precision 0.62 (company names), 49 false entities on PII-free documents. | `pii2.v2.branch1.presidio.*` |
+| N-037 | OCR+Presidio on v2 images reaches F1 0.486 overall and 0.211 on hard images. | `pii2.v2.ocr.easyocr_cpu.presidio.*` |
+| N-038 | The T3.5 street-address recogniser raises ADDRESS recall from 0.05 to 0.47 but its precision is only 0.35; the Mastercard recogniser closes the gap fully (recall 0.80 to 1.00, precision 1.00). Overall Branch 1 F1 rises 0.728 to 0.769. | `pii2.v2.branch1.presidio_plus.by_type.*` |
+
+Reversal of an earlier finding: on v2, EasyOCR confidence DOES rank difficulty (AUC 0.884 easy vs hard, Spearman 0.552 with per-document F1), unlike on v1 (Spearman 0.187). The v1 statement "confidence does not rank difficulty" held for v1's narrow degradation range only.

@@ -100,9 +100,9 @@ def score_all() -> None:
     docs = load_docs()
     split = assign_split(docs)
     pres = json.loads((DATA / "presidio_predictions.json").read_text(encoding="utf-8"))
-    ocr_engines = {f.stem.replace("ocr_", ""): json.loads(f.read_text(encoding="utf-8"))
+    ocr_engines = {f.stem.removeprefix("ocr_"): json.loads(f.read_text(encoding="utf-8"))
                    for f in sorted(DATA.glob("ocr_*.json"))}
-    vlms = {f.stem.replace("vlm_", ""): json.loads(f.read_text(encoding="utf-8"))
+    vlms = {f.stem.removeprefix("vlm_"): json.loads(f.read_text(encoding="utf-8"))
             for f in sorted(DATA.glob("vlm_*.json"))}
     OUT.mkdir(parents=True, exist_ok=True)
     results: Dict[str, dict] = {"_meta": {"split_counts": {s: sum(1 for v in split.values() if v == s)

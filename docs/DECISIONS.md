@@ -63,3 +63,6 @@ One entry per non-obvious decision. Format: date, task, options, choice, reason.
 
 ## D-014 (2026-10-23, T3.1) Corpus v2 is the main PII set
 - 360 new documents (3 modalities x 3 difficulty levels x 40), seed 2610, 1428 gold entities, 49 PII-free documents, near-miss strings at medium and hard. The v1 corpus (120 documents) is included in the same ground-truth file as subset "v1" and reported separately. A fixed 25/75 calib/eval split, stratified by subset x modality x difficulty, is used for every PII selection (tau, router).
+
+## D-015 (2026-10-23, T3.2) EasyOCR timings
+- The EasyOCR pass over the 320 corpus images ran partly while other jobs (drift, fusion, a package install) used the CPU, and was resumed after an out-of-memory stop. Mean 3.46 s per image (3.74 s on v2 eval images) is therefore an upper estimate for this laptop. It is used only as the cost axis of the cascade Pareto curve; Tier 2 latency is measured separately in T3.6.

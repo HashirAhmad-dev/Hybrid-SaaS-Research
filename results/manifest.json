@@ -64984,6 +64984,2430 @@
    "run_id": "operating_points-20261023T125005Z",
    "value": 0.06244108334173013
   },
+  "pii2._meta.split_counts.calib": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 120
+  },
+  "pii2._meta.split_counts.eval": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 360
+  },
+  "pii2.v1.branch1.presidio.all.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8555555555555556
+  },
+  "pii2.v1.branch1.presidio.all.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 15
+  },
+  "pii2.v1.branch1.presidio.all.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 11
+  },
+  "pii2.v1.branch1.presidio.all.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.875
+  },
+  "pii2.v1.branch1.presidio.all.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8369565217391305
+  },
+  "pii2.v1.branch1.presidio.all.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 77
+  },
+  "pii2.v1.branch1.presidio.by_difficulty.v1.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8555555555555556
+  },
+  "pii2.v1.branch1.presidio.by_difficulty.v1.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 15
+  },
+  "pii2.v1.branch1.presidio.by_difficulty.v1.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 11
+  },
+  "pii2.v1.branch1.presidio.by_difficulty.v1.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.875
+  },
+  "pii2.v1.branch1.presidio.by_difficulty.v1.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8369565217391305
+  },
+  "pii2.v1.branch1.presidio.by_difficulty.v1.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 77
+  },
+  "pii2.v1.branch1.presidio.by_type.ADDRESS.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.16666666666666669
+  },
+  "pii2.v1.branch1.presidio.by_type.ADDRESS.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 9
+  },
+  "pii2.v1.branch1.presidio.by_type.ADDRESS.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.branch1.presidio.by_type.ADDRESS.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5
+  },
+  "pii2.v1.branch1.presidio.by_type.ADDRESS.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.1
+  },
+  "pii2.v1.branch1.presidio.by_type.ADDRESS.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.branch1.presidio.by_type.CREDIT_CARD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9411764705882353
+  },
+  "pii2.v1.branch1.presidio.by_type.CREDIT_CARD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.branch1.presidio.by_type.CREDIT_CARD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio.by_type.CREDIT_CARD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.CREDIT_CARD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8888888888888888
+  },
+  "pii2.v1.branch1.presidio.by_type.CREDIT_CARD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 8
+  },
+  "pii2.v1.branch1.presidio.by_type.DOB.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9333333333333333
+  },
+  "pii2.v1.branch1.presidio.by_type.DOB.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio.by_type.DOB.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.branch1.presidio.by_type.DOB.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.875
+  },
+  "pii2.v1.branch1.presidio.by_type.DOB.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.DOB.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 7
+  },
+  "pii2.v1.branch1.presidio.by_type.EMAIL.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.EMAIL.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio.by_type.EMAIL.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio.by_type.EMAIL.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.EMAIL.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.EMAIL.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 17
+  },
+  "pii2.v1.branch1.presidio.by_type.NID.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.NID.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio.by_type.NID.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio.by_type.NID.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.NID.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.NID.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 3
+  },
+  "pii2.v1.branch1.presidio.by_type.PASSWORD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.PASSWORD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio.by_type.PASSWORD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio.by_type.PASSWORD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.PASSWORD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.PASSWORD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 10
+  },
+  "pii2.v1.branch1.presidio.by_type.PERSON.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7450980392156864
+  },
+  "pii2.v1.branch1.presidio.by_type.PERSON.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 4
+  },
+  "pii2.v1.branch1.presidio.by_type.PERSON.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 9
+  },
+  "pii2.v1.branch1.presidio.by_type.PERSON.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6785714285714286
+  },
+  "pii2.v1.branch1.presidio.by_type.PERSON.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8260869565217391
+  },
+  "pii2.v1.branch1.presidio.by_type.PERSON.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 19
+  },
+  "pii2.v1.branch1.presidio.by_type.PHONE.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9600000000000001
+  },
+  "pii2.v1.branch1.presidio.by_type.PHONE.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.branch1.presidio.by_type.PHONE.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio.by_type.PHONE.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio.by_type.PHONE.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9230769230769231
+  },
+  "pii2.v1.branch1.presidio.by_type.PHONE.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 12
+  },
+  "pii2.v1.branch1.presidio.pii_free_docs_false_positives": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio_plus.all.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8756756756756756
+  },
+  "pii2.v1.branch1.presidio_plus.all.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 11
+  },
+  "pii2.v1.branch1.presidio_plus.all.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 12
+  },
+  "pii2.v1.branch1.presidio_plus.all.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8709677419354839
+  },
+  "pii2.v1.branch1.presidio_plus.all.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8804347826086957
+  },
+  "pii2.v1.branch1.presidio_plus.all.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 81
+  },
+  "pii2.v1.branch1.presidio_plus.by_difficulty.v1.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8756756756756756
+  },
+  "pii2.v1.branch1.presidio_plus.by_difficulty.v1.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 11
+  },
+  "pii2.v1.branch1.presidio_plus.by_difficulty.v1.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 12
+  },
+  "pii2.v1.branch1.presidio_plus.by_difficulty.v1.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8709677419354839
+  },
+  "pii2.v1.branch1.presidio_plus.by_difficulty.v1.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8804347826086957
+  },
+  "pii2.v1.branch1.presidio_plus.by_difficulty.v1.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 81
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.ADDRESS.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4210526315789474
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.ADDRESS.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 6
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.ADDRESS.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 5
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.ADDRESS.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4444444444444444
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.ADDRESS.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.ADDRESS.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 4
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.CREDIT_CARD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.CREDIT_CARD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.CREDIT_CARD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.CREDIT_CARD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.CREDIT_CARD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.CREDIT_CARD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 9
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.DOB.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9333333333333333
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.DOB.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.DOB.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.DOB.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.875
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.DOB.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.DOB.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 7
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.EMAIL.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.EMAIL.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.EMAIL.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.EMAIL.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.EMAIL.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.EMAIL.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 17
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.NID.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.NID.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.NID.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.NID.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.NID.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.NID.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 3
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PASSWORD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PASSWORD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PASSWORD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PASSWORD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PASSWORD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PASSWORD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 10
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PERSON.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7916666666666667
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PERSON.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 4
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PERSON.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 6
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PERSON.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.76
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PERSON.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8260869565217391
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PERSON.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 19
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PHONE.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9600000000000001
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PHONE.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PHONE.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PHONE.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PHONE.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9230769230769231
+  },
+  "pii2.v1.branch1.presidio_plus.by_type.PHONE.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 12
+  },
+  "pii2.v1.branch1.presidio_plus.pii_free_docs_false_positives": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.n_calib_docs": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 30
+  },
+  "pii2.v1.n_eval_docs": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 90
+  },
+  "pii2.v1.n_eval_entities": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 283
+  },
+  "pii2.v1.ocr.easyocr_cpu.confidence.auc_conf_easy_vs_hard": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": NaN
+  },
+  "pii2.v1.ocr.easyocr_cpu.confidence.mean_by_category.handwritten": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.833420228228107
+  },
+  "pii2.v1.ocr.easyocr_cpu.confidence.mean_by_category.scanned": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8409700801533072
+  },
+  "pii2.v1.ocr.easyocr_cpu.confidence.mean_by_difficulty.v1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8371951541907072
+  },
+  "pii2.v1.ocr.easyocr_cpu.confidence.n_images": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 60
+  },
+  "pii2.v1.ocr.easyocr_cpu.confidence.seconds_per_image_mean": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 2.6258649149987225
+  },
+  "pii2.v1.ocr.easyocr_cpu.confidence.seconds_per_image_p95": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 3.2135623199916155
+  },
+  "pii2.v1.ocr.easyocr_cpu.confidence.spearman_conf_vs_doc_f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.1865325897408227
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.all.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7154929577464788
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.all.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 64
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.all.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 37
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.all.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.774390243902439
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.all.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6649214659685864
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.all.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 127
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.handwritten.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5866666666666667
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.handwritten.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 37
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.handwritten.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 25
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.handwritten.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6376811594202898
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.handwritten.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5432098765432098
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.handwritten.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 44
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.scanned.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8097560975609758
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.scanned.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 27
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.scanned.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 12
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.scanned.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8736842105263158
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.scanned.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7545454545454545
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_category.scanned.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 83
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_difficulty.v1.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7154929577464788
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_difficulty.v1.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 64
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_difficulty.v1.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 37
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_difficulty.v1.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.774390243902439
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_difficulty.v1.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6649214659685864
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_difficulty.v1.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 127
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.ADDRESS.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.06666666666666667
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.ADDRESS.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 22
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.ADDRESS.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 6
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.ADDRESS.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.14285714285714285
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.ADDRESS.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.043478260869565216
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.ADDRESS.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9032258064516129
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 3
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8235294117647058
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 14
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.DOB.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9375
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.DOB.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.DOB.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.DOB.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9375
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.DOB.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9375
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.DOB.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 15
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.EMAIL.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5652173913043478
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.EMAIL.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 20
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.EMAIL.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.EMAIL.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.EMAIL.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.3939393939393939
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.EMAIL.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 13
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.NID.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.NID.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.NID.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.NID.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.NID.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.NID.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 14
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PASSWORD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6666666666666667
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PASSWORD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 3
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PASSWORD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 5
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PASSWORD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6153846153846154
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PASSWORD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7272727272727273
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PASSWORD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 8
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PERSON.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7438016528925621
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PERSON.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 8
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PERSON.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 23
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PERSON.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6617647058823529
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PERSON.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8490566037735849
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PERSON.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 45
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PHONE.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7906976744186046
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PHONE.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 7
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PHONE.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 2
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PHONE.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8947368421052632
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PHONE.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7083333333333334
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio.by_type.PHONE.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 17
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.all.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7934782608695652
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.all.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 45
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.all.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 31
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.all.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8248587570621468
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.all.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7643979057591623
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.all.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 146
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6753246753246753
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 29
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 21
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7123287671232876
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6419753086419753
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 52
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.scanned.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8785046728971962
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.scanned.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 16
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.scanned.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 10
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.scanned.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9038461538461539
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.scanned.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8545454545454545
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_category.scanned.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 94
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_difficulty.v1.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7934782608695652
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_difficulty.v1.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 45
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_difficulty.v1.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 31
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_difficulty.v1.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8248587570621468
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_difficulty.v1.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7643979057591623
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_difficulty.v1.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 146
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.693877551020408
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 6
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 9
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6538461538461539
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7391304347826086
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 17
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 17
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.DOB.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9375
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.DOB.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.DOB.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.DOB.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9375
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.DOB.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9375
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.DOB.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 15
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5652173913043478
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 20
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.3939393939393939
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 13
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.NID.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.NID.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.NID.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.NID.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.NID.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.NID.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 14
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6666666666666667
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 3
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 5
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6153846153846154
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7272727272727273
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 8
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8035714285714285
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 8
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 14
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7627118644067796
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8490566037735849
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 45
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7906976744186046
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 7
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 2
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8947368421052632
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7083333333333334
+  },
+  "pii2.v1.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 17
+  },
+  "pii2.v2.branch1.presidio.all.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7275064267352186
+  },
+  "pii2.v2.branch1.presidio.all.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 50
+  },
+  "pii2.v2.branch1.presidio.all.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 162
+  },
+  "pii2.v2.branch1.presidio.all.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6359550561797753
+  },
+  "pii2.v2.branch1.presidio.all.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8498498498498499
+  },
+  "pii2.v2.branch1.presidio.all.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 283
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.easy.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8059701492537314
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.easy.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 24
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.easy.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 28
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.easy.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7941176470588235
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.easy.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8181818181818182
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.easy.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 108
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.hard.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.625
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.hard.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 12
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.hard.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 84
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.hard.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4878048780487805
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.hard.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8695652173913043
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.hard.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 80
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.medium.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.748031496062992
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.medium.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 14
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.medium.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 50
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.medium.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6551724137931034
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.medium.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8715596330275229
+  },
+  "pii2.v2.branch1.presidio.by_difficulty.medium.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 95
+  },
+  "pii2.v2.branch1.presidio.by_type.ADDRESS.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.06451612903225808
+  },
+  "pii2.v2.branch1.presidio.by_type.ADDRESS.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 36
+  },
+  "pii2.v2.branch1.presidio.by_type.ADDRESS.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 22
+  },
+  "pii2.v2.branch1.presidio.by_type.ADDRESS.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.08333333333333333
+  },
+  "pii2.v2.branch1.presidio.by_type.ADDRESS.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.05263157894736842
+  },
+  "pii2.v2.branch1.presidio.by_type.ADDRESS.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 2
+  },
+  "pii2.v2.branch1.presidio.by_type.CREDIT_CARD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.888888888888889
+  },
+  "pii2.v2.branch1.presidio.by_type.CREDIT_CARD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 5
+  },
+  "pii2.v2.branch1.presidio.by_type.CREDIT_CARD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.branch1.presidio.by_type.CREDIT_CARD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio.by_type.CREDIT_CARD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8
+  },
+  "pii2.v2.branch1.presidio.by_type.CREDIT_CARD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 20
+  },
+  "pii2.v2.branch1.presidio.by_type.DOB.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5801526717557252
+  },
+  "pii2.v2.branch1.presidio.by_type.DOB.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.branch1.presidio.by_type.DOB.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 55
+  },
+  "pii2.v2.branch1.presidio.by_type.DOB.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.40860215053763443
+  },
+  "pii2.v2.branch1.presidio.by_type.DOB.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio.by_type.DOB.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 38
+  },
+  "pii2.v2.branch1.presidio.by_type.EMAIL.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio.by_type.EMAIL.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.branch1.presidio.by_type.EMAIL.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.branch1.presidio.by_type.EMAIL.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio.by_type.EMAIL.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio.by_type.EMAIL.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 53
+  },
+  "pii2.v2.branch1.presidio.by_type.NID.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8611111111111112
+  },
+  "pii2.v2.branch1.presidio.by_type.NID.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.branch1.presidio.by_type.NID.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 10
+  },
+  "pii2.v2.branch1.presidio.by_type.NID.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7560975609756098
+  },
+  "pii2.v2.branch1.presidio.by_type.NID.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio.by_type.NID.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 31
+  },
+  "pii2.v2.branch1.presidio.by_type.PASSWORD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7272727272727273
+  },
+  "pii2.v2.branch1.presidio.by_type.PASSWORD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 2
+  },
+  "pii2.v2.branch1.presidio.by_type.PASSWORD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 13
+  },
+  "pii2.v2.branch1.presidio.by_type.PASSWORD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6060606060606061
+  },
+  "pii2.v2.branch1.presidio.by_type.PASSWORD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9090909090909091
+  },
+  "pii2.v2.branch1.presidio.by_type.PASSWORD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 20
+  },
+  "pii2.v2.branch1.presidio.by_type.PERSON.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.744186046511628
+  },
+  "pii2.v2.branch1.presidio.by_type.PERSON.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 5
+  },
+  "pii2.v2.branch1.presidio.by_type.PERSON.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 50
+  },
+  "pii2.v2.branch1.presidio.by_type.PERSON.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6153846153846154
+  },
+  "pii2.v2.branch1.presidio.by_type.PERSON.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9411764705882353
+  },
+  "pii2.v2.branch1.presidio.by_type.PERSON.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 80
+  },
+  "pii2.v2.branch1.presidio.by_type.PHONE.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8478260869565216
+  },
+  "pii2.v2.branch1.presidio.by_type.PHONE.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 2
+  },
+  "pii2.v2.branch1.presidio.by_type.PHONE.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 12
+  },
+  "pii2.v2.branch1.presidio.by_type.PHONE.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7647058823529411
+  },
+  "pii2.v2.branch1.presidio.by_type.PHONE.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9512195121951219
+  },
+  "pii2.v2.branch1.presidio.by_type.PHONE.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 39
+  },
+  "pii2.v2.branch1.presidio.pii_free_docs_false_positives": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 49
+  },
+  "pii2.v2.branch1.presidio_plus.all.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7686472819216181
+  },
+  "pii2.v2.branch1.presidio_plus.all.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 29
+  },
+  "pii2.v2.branch1.presidio_plus.all.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 154
+  },
+  "pii2.v2.branch1.presidio_plus.all.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6637554585152838
+  },
+  "pii2.v2.branch1.presidio_plus.all.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9129129129129129
+  },
+  "pii2.v2.branch1.presidio_plus.all.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 304
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.easy.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8695652173913043
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.easy.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 12
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.easy.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 24
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.easy.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8333333333333334
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.easy.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9090909090909091
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.easy.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 120
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.hard.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6692607003891051
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.hard.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 6
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.hard.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 79
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.hard.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5212121212121212
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.hard.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9347826086956522
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.hard.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 86
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.medium.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7596899224806203
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.medium.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 11
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.medium.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 51
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.medium.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6577181208053692
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.medium.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8990825688073395
+  },
+  "pii2.v2.branch1.presidio_plus.by_difficulty.medium.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 98
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.ADDRESS.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.40449438202247195
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.ADDRESS.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 20
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.ADDRESS.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 33
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.ADDRESS.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.35294117647058826
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.ADDRESS.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.47368421052631576
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.ADDRESS.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 18
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.CREDIT_CARD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.CREDIT_CARD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.CREDIT_CARD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.CREDIT_CARD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.CREDIT_CARD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.CREDIT_CARD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 25
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.DOB.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.59375
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.DOB.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.DOB.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 52
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.DOB.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4222222222222222
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.DOB.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.DOB.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 38
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.EMAIL.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.EMAIL.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.EMAIL.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.EMAIL.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.EMAIL.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.EMAIL.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 53
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.NID.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8611111111111112
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.NID.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.NID.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 10
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.NID.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7560975609756098
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.NID.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.NID.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 31
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PASSWORD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7272727272727273
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PASSWORD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 2
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PASSWORD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 13
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PASSWORD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6060606060606061
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PASSWORD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9090909090909091
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PASSWORD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 20
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PERSON.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7999999999999999
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PERSON.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 5
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PERSON.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 35
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PERSON.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6956521739130435
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PERSON.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9411764705882353
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PERSON.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 80
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PHONE.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8571428571428571
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PHONE.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 2
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PHONE.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 11
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PHONE.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.78
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PHONE.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9512195121951219
+  },
+  "pii2.v2.branch1.presidio_plus.by_type.PHONE.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 39
+  },
+  "pii2.v2.branch1.presidio_plus.pii_free_docs_false_positives": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 50
+  },
+  "pii2.v2.n_calib_docs": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 90
+  },
+  "pii2.v2.n_eval_docs": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 270
+  },
+  "pii2.v2.n_eval_entities": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1080
+  },
+  "pii2.v2.ocr.easyocr_cpu.confidence.auc_conf_easy_vs_hard": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.8836111111111111
+  },
+  "pii2.v2.ocr.easyocr_cpu.confidence.mean_by_category.handwritten": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6472786665347194
+  },
+  "pii2.v2.ocr.easyocr_cpu.confidence.mean_by_category.scanned": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6861484445727123
+  },
+  "pii2.v2.ocr.easyocr_cpu.confidence.mean_by_difficulty.easy": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7787538456002925
+  },
+  "pii2.v2.ocr.easyocr_cpu.confidence.mean_by_difficulty.hard": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4383488843690952
+  },
+  "pii2.v2.ocr.easyocr_cpu.confidence.mean_by_difficulty.medium": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7830379366917597
+  },
+  "pii2.v2.ocr.easyocr_cpu.confidence.n_images": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 180
+  },
+  "pii2.v2.ocr.easyocr_cpu.confidence.seconds_per_image_mean": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 3.7418211788890603
+  },
+  "pii2.v2.ocr.easyocr_cpu.confidence.seconds_per_image_p95": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 5.1322795250103805
+  },
+  "pii2.v2.ocr.easyocr_cpu.confidence.spearman_conf_vs_doc_f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5518249180574136
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.all.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.48557089084065247
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.all.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 360
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.all.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 460
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.all.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.45690672963400236
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.all.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5180722891566265
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.all.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 387
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.handwritten.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.46231155778894467
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.handwritten.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 197
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.handwritten.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 231
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.handwritten.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4433734939759036
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.handwritten.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.48293963254593175
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.handwritten.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 184
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.scanned.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5087719298245614
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.scanned.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 163
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.scanned.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 229
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.scanned.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4699074074074074
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.scanned.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5546448087431693
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_category.scanned.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 203
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.easy.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7114624505928854
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.easy.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 80
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.easy.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 66
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.easy.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7317073170731707
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.easy.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6923076923076923
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.easy.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 180
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.hard.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.210896309314587
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.hard.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 189
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.hard.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 260
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.hard.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.1875
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.hard.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.24096385542168675
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.hard.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 60
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.medium.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5664739884393063
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.medium.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 91
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.medium.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 134
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.medium.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5231316725978647
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.medium.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6176470588235294
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_difficulty.medium.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 147
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.ADDRESS.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.046511627906976744
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.ADDRESS.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 77
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.ADDRESS.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 46
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.ADDRESS.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.061224489795918366
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.ADDRESS.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.0375
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.ADDRESS.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 3
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6776859504132231
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 38
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9761904761904762
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5189873417721519
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.CREDIT_CARD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 41
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.DOB.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4609929078014185
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.DOB.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 18
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.DOB.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 134
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.DOB.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.32663316582914576
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.DOB.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7831325301204819
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.DOB.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 65
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.EMAIL.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.32
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.EMAIL.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 85
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.EMAIL.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.EMAIL.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.EMAIL.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.19047619047619047
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.EMAIL.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 20
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.NID.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6762589928057553
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.NID.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 18
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.NID.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 27
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.NID.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6351351351351351
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.NID.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7230769230769231
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.NID.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 47
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PASSWORD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.3783783783783784
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PASSWORD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 25
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PASSWORD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 44
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PASSWORD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.3230769230769231
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PASSWORD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.45652173913043476
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PASSWORD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 21
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PERSON.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5080645161290323
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PERSON.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 65
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PERSON.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 179
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PERSON.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4131147540983607
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PERSON.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6596858638743456
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PERSON.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 126
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PHONE.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6701570680628272
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PHONE.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 34
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PHONE.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 29
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PHONE.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6881720430107527
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PHONE.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6530612244897959
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio.by_type.PHONE.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 64
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.all.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5157310302282542
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.all.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 329
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.all.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 456
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.all.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4782608695652174
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.all.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5595716198125836
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.all.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 418
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4950495049504951
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 181
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 227
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.468384074941452
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5249343832020997
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.handwritten.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 200
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.scanned.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5362853628536285
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.scanned.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 148
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.scanned.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 229
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.scanned.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.48769574944071586
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.scanned.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5956284153005464
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_category.scanned.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 218
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.easy.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7539062500000001
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.easy.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 67
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.easy.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 59
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.easy.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7658730158730159
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.easy.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7423076923076923
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.easy.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 193
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.hard.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.22336769759450173
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.hard.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 184
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.hard.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 268
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.hard.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.19519519519519518
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.hard.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.26104417670682734
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.hard.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 65
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.medium.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6072106261859583
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.medium.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 78
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.medium.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 129
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.medium.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5536332179930796
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.medium.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6722689075630253
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.medium.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 160
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.2822085889570552
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 57
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 60
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.27710843373493976
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.2875
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 23
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7878787878787878
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 27
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.9811320754716981
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6582278481012658
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.CREDIT_CARD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 52
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.DOB.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.4626334519572953
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.DOB.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 18
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.DOB.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 133
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.DOB.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.3282828282828283
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.DOB.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7831325301204819
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.DOB.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 65
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.32
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 85
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 1.0
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.19047619047619047
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.EMAIL.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 20
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.NID.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6762589928057553
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.NID.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 18
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.NID.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 27
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.NID.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6351351351351351
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.NID.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7230769230769231
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.NID.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 47
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.3783783783783784
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 25
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 44
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.3230769230769231
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.45652173913043476
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PASSWORD.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 21
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.5239085239085238
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 65
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 164
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.43448275862068964
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6596858638743456
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 126
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.f1": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6772486772486773
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.fn": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 34
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.fp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 27
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.precision": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.7032967032967034
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.recall": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 0.6530612244897959
+  },
+  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.tp": {
+   "run_id": "pii_v2_score-20261023T152555Z",
+   "value": 64
+  },
   "repro.run1.anomaly.s42.benign_burst.ewma_flag_rate": {
    "run_id": "train_and_evaluate-20261023T111230Z",
    "value": 0.5925925925925926
@@ -164633,6 +167057,40 @@
      777,
      1001
     ]
+   }
+  },
+  "pii_v2_score-20261023T152555Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\pii_v2.py score",
+   "date_utc": "2026-10-23T15:25:55+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "62e0ca026c328d262e76a597d4594a5885cbc007",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "pii2"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/pii_v2_score.py",
+   "scripts": {
+    "pii2": "evaluation/pii_v2_score.py"
+   },
+   "seeds": {
+    "corpus": 2610,
+    "split": 2610
    }
   },
   "sbrs_fusion-20261023T124856Z": {
