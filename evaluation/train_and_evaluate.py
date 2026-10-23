@@ -69,7 +69,7 @@ import torch.nn as nn
 from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import StandardScaler
 
-from .common import (CSV_COLUMNS, DATA_DIR, EVAL_DIR, EWMA_LAMBDA, FEATURES,
+from .common import (CSV_COLUMNS, DATA_DIR, EVAL_DIR, EWMA_LAMBDA, FEATURES, GEN_CONFIG,
                      HYBRID_FLAG_THRESHOLD, LEGACY_EWMA_TAU, PAPER_DOC_BANDS,
                      SBRS_BETA, SEQ_LEN, SESSIONS_RAW, THREAT_CLASSES, V2_CSV,
                      RobustCalibrator, band, binary_metrics, ewma_stream, sbrs,
@@ -383,6 +383,8 @@ def main() -> None:
     ap.add_argument("--epochs", type=int, default=20)
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--latency-samples", type=int, default=500)
+    ap.add_argument("--manifest-prefix", type=str, default=None,
+                    help="results/manifest.json key prefix (default anomaly.s<seed>)")
     args = ap.parse_args()
 
     np.random.seed(args.seed)
@@ -727,7 +729,14 @@ def main() -> None:
         "benign_burst": burst,
         "latency": latency,
     }
+    from tools.manifest import provenance, record
+    data_seed = json.loads(GEN_CONFIG.read_text(encoding="utf-8"))["args"]["seed"]         if GEN_CONFIG.exists() else None
+    seeds = {"data": data_seed, "train": args.seed}
+    metrics["provenance"] = provenance("evaluation/train_and_evaluate.py", seeds, device="cpu")
     METRICS_JSON.write_text(json.dumps(metrics, indent=2, default=float), encoding="utf-8")
+    record(args.manifest_prefix or f"anomaly.s{args.seed}",
+           {k: v for k, v in metrics.items() if k != "provenance"},
+           script="evaluation/train_and_evaluate.py", seeds=seeds, device="cpu")
 
     # -- Console summary ----------------------------------------------------
     print("\n" + "=" * 72)

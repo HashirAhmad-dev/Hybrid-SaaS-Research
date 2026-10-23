@@ -497,7 +497,11 @@ def main() -> None:
         },
     }
     config = {"args": vars(args), "episode_plan": plan, "realised": counts}
+    from tools.manifest import provenance, record
+    config["provenance"] = provenance("evaluation/generate_sessions.py", {"data": args.seed})
     GEN_CONFIG.write_text(json.dumps(config, indent=2), encoding="utf-8")
+    record(f"generation.s{args.seed}", counts, script="evaluation/generate_sessions.py",
+           seeds={"data": args.seed})
 
     print(f"\n  grid rows        : {counts['grid_rows']:,}")
     print(f"  active sessions  : {counts['active_sessions']:,}")

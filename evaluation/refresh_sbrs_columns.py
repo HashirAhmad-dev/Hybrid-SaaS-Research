@@ -81,6 +81,12 @@ def main() -> None:
     m["benign_burst"]["mean_sbrs"] = float(bb.sbrs_value.mean())
 
     METRICS_JSON.write_text(json.dumps(m, indent=2), encoding="utf-8")
+    from tools.manifest import record
+    seed = (m.get("provenance") or {}).get("seeds", {}).get("train")
+    if seed is not None:          # files written before the manifest have no provenance
+        record(f"anomaly.s{seed}", {"test_enforcement_bands": m["test_enforcement_bands"],
+                                    "benign_burst": m["benign_burst"]},
+               script="evaluation/refresh_sbrs_columns.py", seeds={"train": seed})
 
     enf = m["test_enforcement_bands"]["hybrid_alert_or_block"]
     print(f"beta={SBRS_BETA}  bands={[b[0] for b in SBRS_BANDS[:2]]}")

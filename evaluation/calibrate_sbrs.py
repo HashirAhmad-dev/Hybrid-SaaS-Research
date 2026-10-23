@@ -209,7 +209,11 @@ def main() -> None:
                  "doc_beta0.5_bands0.50_1.00": doc},
         "test_per_class_recall_new": per_class,
     }
+    from tools.manifest import provenance, record
+    result["provenance"] = provenance("evaluation/calibrate_sbrs.py")
     OUT_JSON.write_text(json.dumps(result, indent=1, default=float), encoding="utf-8")
+    record("sbrs", {k: v for k, v in result.items() if k != "provenance"},
+           script="evaluation/calibrate_sbrs.py")
 
     # -- Console before/after --------------------------------------------
     print("\n" + "=" * 74)

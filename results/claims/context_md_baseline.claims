@@ -1,0 +1,65 @@
+# context.md section 3 headline numbers, checked against the frozen baseline (run baseline_20261023).
+# label | manifest key | value as written in context.md | tolerance (optional)
+Active sessions | baseline.anomaly.s42.dataset.active_sessions | 16297
+Positives total | baseline.anomaly.s42.dataset.positives_total | 641
+Positive rate | baseline.anomaly.s42.dataset.positive_rate | 3.93%
+Test sessions | baseline.anomaly.s42.dataset.per_split.test.sessions | 2352
+Test threats | baseline.anomaly.s42.dataset.per_split.test.positives | 96
+Test benign bursts | baseline.anomaly.s42.dataset.per_split.test.benign_bursts | 27
+Flag F1 EWMA tuned | baseline.anomaly.s42.test_flag_level.ewma_tuned.f1 | 0.116
+Flag F1 LSTM only | baseline.anomaly.s42.test_flag_level.lstm_only.f1 | 0.350
+Flag F1 IF only | baseline.anomaly.s42.test_flag_level.if_only.f1 | 0.634
+Flag F1 hybrid | baseline.anomaly.s42.test_flag_level.hybrid.f1 | 0.629
+AUC LSTM | baseline.anomaly.s42.test_auc_overall.lstm | 0.859
+AUC IF | baseline.anomaly.s42.test_auc_overall.if | 0.795
+AUC hybrid | baseline.anomaly.s42.test_auc_overall.hybrid | 0.827
+alpha (val) | baseline.anomaly.s42.tuning.alpha | 0.25
+tau hybrid (val) | baseline.anomaly.s42.tuning.tau_hybrid | 0.75
+Enforcement precision | baseline.anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.precision | 0.392
+Enforcement recall | baseline.anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.recall | 0.604
+Enforcement F1 (shipped bands 1.22/1.84) | baseline.anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.f1 | 0.475
+Enforcement FPR | baseline.anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.fpr | 3.99%
+Enforcement tp | baseline.anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.tp | 58
+Enforcement fp | baseline.anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.fp | 90
+Enforcement F1 (unrounded bands, paper value) | baseline.sbrs.test.new_calibrated.flagged_f1 | 0.479
+Enforcement fp (unrounded bands, paper value) | baseline.sbrs.test.new_calibrated.flagged.fp | 88
+BLOCK-only precision | baseline.anomaly.s42.test_enforcement_bands.hybrid_block_only.precision | 0.743
+BLOCK-only recall | baseline.anomaly.s42.test_enforcement_bands.hybrid_block_only.recall | 0.271
+BLOCK-only F1 | baseline.anomaly.s42.test_enforcement_bands.hybrid_block_only.f1 | 0.397
+BLOCK-only FPR | baseline.anomaly.s42.test_enforcement_bands.hybrid_block_only.fpr | 0.40%
+Old code config F1 (beta 0.5, 0.20/0.60) | baseline.sbrs.test.old_code_beta0.5_bands0.20_0.60.flagged_f1 | 0.087
+Old doc config F1 (beta 0.5, 0.50/1.00) | baseline.sbrs.test.doc_beta0.5_bands0.50_1.00.flagged_f1 | 0.134
+Mislabelled row in context.md (beta 2.5, 0.50/1.00) F1 | baseline.anomaly.s42.test_enforcement_bands.paper_doc_bands_alert_or_block.f1 | 0.131
+Benign-burst flag rate EWMA | baseline.anomaly.s42.benign_burst.ewma_flag_rate | 59.3%
+Benign-burst flag rate hybrid | baseline.anomaly.s42.benign_burst.hybrid_flag_rate | 0
+Insider op recall | baseline.anomaly.s42.test_insider_oriented_operating_point.recall | 0.625
+Insider op FPR | baseline.anomaly.s42.test_insider_oriented_operating_point.fpr | 4.9%
+Insider op F1 | baseline.anomaly.s42.test_insider_oriented_operating_point.f1 | 0.451
+Insider op malicious recall | baseline.anomaly.s42.test_insider_oriented_operating_point.malicious_insider_recall | 0.294
+Insider op benign-burst flag rate | baseline.anomaly.s42.test_insider_oriented_operating_point.benign_burst_flag_rate | 37%
+Anomaly latency mean ms | baseline.anomaly.s42.latency.mean_ms | 16.9
+Anomaly latency p95 ms | baseline.anomaly.s42.latency.p95_ms | 18.2
+Malicious insider window recall | baseline.anomaly.s42.per_class_recall.malicious_insider.hybrid_recall | 0.02
+Malicious insider episode recall | baseline.anomaly.s42.per_class_recall.malicious_insider.hybrid_episode_recall | 0.167
+Malicious insider AUC LSTM | baseline.anomaly.s42.per_class_recall.malicious_insider.auc_lstm | 0.744
+Malicious insider AUC IF | baseline.anomaly.s42.per_class_recall.malicious_insider.auc_if | 0.615
+Malicious insider AUC hybrid | baseline.anomaly.s42.per_class_recall.malicious_insider.auc_hybrid | 0.674
+Negligent insider recall | baseline.anomaly.s42.per_class_recall.negligent_insider.hybrid_recall | 0.89
+SBRS beta | baseline.sbrs.beta.chosen | 2.5
+SBRS max val AUC | baseline.sbrs.beta.val_auc_max | 0.839
+Branch 1 Presidio P | baseline.pii.gemma4b.results.paper_tau_0.85.by_category.text_extractable.precision | 0.891
+Branch 1 Presidio R | baseline.pii.gemma4b.results.paper_tau_0.85.by_category.text_extractable.recall | 0.828
+Branch 1 Presidio F1 | baseline.pii.gemma4b.results.paper_tau_0.85.by_category.text_extractable.f1 | 0.858
+OCR+Presidio on 80 images F1 | baseline.pii.gemma4b.head_to_head_on_images_the_vlm_saw.ocr_presidio.f1 | 0.699
+gemma VLM F1 on 80 images | baseline.pii.gemma4b.head_to_head_on_images_the_vlm_saw.vlm.f1 | 0.936
+Qwen72B VLM F1 on 80 images | baseline.pii.qwen72b.head_to_head_on_images_the_vlm_saw.vlm.f1 | 1.000
+Cascade tau 0.85 F1 gemma | baseline.pii.gemma4b.results.paper_tau_0.85.overall_micro.f1 | 0.857
+Cascade tau 0.85 F1 Qwen72B | baseline.pii.qwen72b.results.paper_tau_0.85.overall_micro.f1 | 0.877
+Cascade tau 0.98 F1 gemma (not held out) | baseline.pii.gemma4b.results.calibrated_tau.overall_micro.f1 | 0.908
+Cascade tau 0.98 F1 Qwen72B (not held out) | baseline.pii.qwen72b.results.calibrated_tau.overall_micro.f1 | 0.949
+Text-only baseline weighted recall | baseline.pii.gemma4b.baseline_text_only.overall_weighted_recall | 0.276
+EasyOCR mean conf scanned | baseline.pii.gemma4b.ocr.mean_confidence_by_category.scanned | 0.844
+EasyOCR mean conf handwritten | baseline.pii.gemma4b.ocr.mean_confidence_by_category.handwritten | 0.820
+EasyOCR pristine render conf | baseline.pii.gemma4b.ocr.pristine_render_confidence_note | 0.804
+Branch 3 mean latency ms Qwen72B | baseline.pii.qwen72b.latency_ms.branch3_mean | 3117
+Branch 3 mean latency ms gemma | baseline.pii.gemma4b.latency_ms.branch3_mean | 3468

@@ -4,7 +4,7 @@ Human-readable report of the paper-v2 work. Updated at the end of every task.
 
 ## 1. Status
 
-Phase 0 is complete. Work happens on branch `paper-v2`; the starting commit 2521134 is tagged
+Phase 0 is complete. T1.1 is complete: every evaluation script now writes its numbers, with run id, seeds, date, git hash and library versions, into `results/manifest.json`, and `tools/check_numbers.py` checks quoted numbers against it. Work happens on branch `paper-v2`; the starting commit 2521134 is tagged
 `baseline-pre-v2` and its outputs are preserved in `results/baseline_20261023/`. The environment is
 recorded in `docs/ENVIRONMENT.md`. The headline numbers in context.md were checked against the metrics
 files; five corrections are listed in section 3. No code has changed yet.
@@ -14,6 +14,7 @@ files; five corrections are listed in section 3. No code has changed yet.
 | Task | Status | What was wrong | What changed (files) | Reproduce | Before | After |
 |---|---|---|---|---|---|---|
 | T0.1 | DONE | No branch, no preserved baseline, no environment record, context.md unchecked | `docs/ENVIRONMENT.md`, `docs/LOOP_STATE.md`, `docs/DECISIONS.md`, `docs/OPEN_QUESTIONS.md`, `docs/FIXES_SUMMARY.md`, `results/negative_results.md`, `results/baseline_20261023/*`, `CLAUDE.md` | `git diff baseline-pre-v2` | n/a | Baseline frozen; 5 context.md corrections found |
+| T1.1 | DONE | No single source of truth for numbers; nothing checked quoted numbers | `tools/manifest.py`, `tools/check_numbers.py`, `tools/ingest_baseline.py`, `results/manifest.json`, `results/claims/context_md_baseline.claims`; manifest hooks in `generate_sessions.py`, `train_and_evaluate.py`, `calibrate_sbrs.py`, `refresh_sbrs_columns.py`, `run_pipeline.py` | `python -m tools.ingest_baseline`; `python tools/check_numbers.py results/claims/context_md_baseline.claims` | n/a | 63/63 context.md numbers match the manifest (after the 5 corrections); a wrong value or missing key exits 1; repeat run of calibrate_sbrs gives identical manifest values |
 
 ## 3. Corrections to context.md
 

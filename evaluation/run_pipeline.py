@@ -735,7 +735,13 @@ def main() -> None:
             "branch3_note": "network round-trip to a hosted model, not on-box compute",
         },
     }
+    from tools.manifest import provenance, record
+    metrics["provenance"] = provenance("evaluation/run_pipeline.py",
+                                       seeds={"calib_split": args.seed}, device="cpu")
     metrics_path.write_text(json.dumps(metrics, indent=1, default=float), encoding="utf-8")
+    record(f"pii.{slug}", {k: v for k, v in metrics.items() if k != "provenance"},
+           script="evaluation/run_pipeline.py", seeds={"calib_split": args.seed},
+           device="cpu")
     predictions_path.write_text(json.dumps(
         {"branch1": b1, "branch2": b2, "branch3": b3}, indent=1, default=float),
         encoding="utf-8")
