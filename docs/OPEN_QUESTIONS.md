@@ -4,6 +4,6 @@ Questions waiting on the user. Each has the default that is applied if there is 
 
 | ID | Gate | Question | Default if unanswered | Status |
 |---|---|---|---|---|
-| Q-001 | G-DATA | T2.6: may I download the CERT Insider Threat Test Dataset (CC BY 4.0, doi 10.1184/R1/12841247)? The full set is about 87 GB; I would only fetch one release (for example r4.2 or r6.2) if its archive is under a size you approve. | Skip CERT; document the reason in threats to validity. | OPEN (asked when T2.6 is reached) |
+| Q-001 | G-DATA | T2.6: CERT (CC BY 4.0) releases with insider scenarios start at 4.25 GB (r3.1); r4.2 is 4.82 GB. Figshare throughput from this laptop was about 1 KB/s (D-011). Do you want to download r4.2 yourself (browser) into `external/cert/` so I can map it? | Skip CERT (T2.6 SKIPPED), describe as future external validation. | OPEN, default applied |
 | Q-002 | G-SPEND | T3.7: hosted upper-bound VLM run on the new PII corpus (Hugging Face router, paid). | No hosted calls. | OPEN (asked when T3.7 is reached) |
 | Q-003 | G-DOCS | T4.2: apply the prepared diff to `Context/`, README and DEPLOYMENT. | Leave unchanged; keep the diff ready. | OPEN (asked when T4.2 is reached) |

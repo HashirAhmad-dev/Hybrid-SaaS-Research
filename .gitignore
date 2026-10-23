@@ -31,3 +31,6 @@ logs/
 # per-run scratch outputs: keep metrics JSON, drop CSVs and model artefacts
 results/runs/**/*.csv
 results/runs/**/artifacts/
+
+# downloaded third-party data (licences recorded in docs/)
+external/

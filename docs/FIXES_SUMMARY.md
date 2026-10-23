@@ -68,3 +68,18 @@ See `docs/OPEN_QUESTIONS.md`. No task is BLOCKED.
 ## 8. How to reproduce everything
 
 Not yet available (task T1.3).
+
+## Gate records
+
+### Phase 1 gate (2026-10-23)
+- a. `python -m pytest -q tests`: 75 passed.
+- b. `pwsh -NoProfile -File .\reproduce.ps1` from a clean shell (full, with the 10-dataset stage): exit 0 in 11.9 min, `check_numbers` 188/188 claims. First attempt failed on a transient Windows lock of `results/manifest.json` (WinError 5 in `os.replace`); `tools/manifest.py` now retries the replace. After the rerun, all 5041 non-latency manifest keys under `anomaly.*`, `sbrs.*`, `generation.*` are identical to the values before the run. Log: `logs/gate1_reproduce_full.log`.
+- c. `git status`: only re-written run outputs (provenance timestamps, latency), the manifest, and the T2 drafts are pending. `.env` last modified 2026-07-09, never opened, never in git history (`git log --all -- .env` is empty).
+- d. FIXES_SUMMARY has rows for T0.1 and T1.1 to T1.5.
+- e. H-R4 / H-R5 scan:
+  - All anomaly-track thresholds, alpha, the insider operating point, beta and the bands are now chosen by `evaluation/selection.py`, which raises on non-validation rows; `tests/test_selection.py` proves it and scans the scripts for unguarded tuning functions.
+  - LSTM early stopping uses the validation next-step loss (no labels). Scaler, forest and memory banks are fitted on FIT; calibrators on CALIB. Test is scored once.
+  - Known historical issue, not yet fixed: the PII cascade's calibrated tau (0.98) is reported on all 120 documents including the 20 calibration documents (context.md correction 3). Fixed in T3.4.
+  - Unclear historical issue: `SBRS_RECALIBRATION.md` says an F1-maximising t_alert "was tried and rejected" because it permits 66 percent of threats, without saying on which split that was observed. The shipped bands do not depend on it (they are percentile rules fixed on validation), so no number moves; the wording must not be repeated in the paper as a test-free choice.
+  - Disclosed peek: LOF neighbour grid widened after seeing seed-42 val and test AUC (D-008).
+  - H-R5: the 10 data seeds were fixed in `evaluation/config/seeds.json` before any multi-seed result was seen and all 10 are reported. Every result that went against the design is in `results/negative_results.md` (N-001 to N-017). Latency values from the multi-seed run are marked as not quotable (D-010).

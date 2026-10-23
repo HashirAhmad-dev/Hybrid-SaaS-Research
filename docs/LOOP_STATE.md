@@ -3,9 +3,9 @@
 After any restart or context compaction: re-read CLAUDE.md, this file and docs/FIXES_SUMMARY.md first.
 
 - Iteration: 5
-- Current task: PHASE1-GATE
+- Current task: T2.1
 - Last evidence path: tests/, logs/reproduce_*.log
-- Open gates: none yet (Q-001..Q-003 in OPEN_QUESTIONS.md are asked when their tasks are reached)
+- Open gates: Q-001 (CERT, default skip applied). Phase 1 gate PASSED 2026-10-23.
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)
@@ -31,7 +31,7 @@ Start PHASE1-GATE.
 | T2.3 | M | PENDING | |
 | T2.4 | M | PENDING | |
 | T2.5 | M | PENDING | |
-| T2.6 | S | PENDING | gate G-DATA (Q-001) |
+| T2.6 | S | SKIPPED | every CERT release with insiders > 2 GB; figshare link ~1 KB/s here (D-011); default of Q-001 applied, can be reopened |
 | T2.7 | M | PENDING | |
 | T3.1 | M | PENDING | |
 | T3.2 | M | PENDING | |

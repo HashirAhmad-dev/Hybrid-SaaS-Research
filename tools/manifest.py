@@ -94,7 +94,17 @@ def _write(m: Dict[str, Any], path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".json.tmp")
     tmp.write_text(json.dumps(m, indent=1, sort_keys=True), encoding="utf-8")
-    os.replace(tmp, path)
+    # Windows: a virus scanner or indexer can hold the target open for a moment
+    # right after it was written, and os.replace then fails with WinError 5.
+    import time
+    for attempt in range(50):
+        try:
+            os.replace(tmp, path)
+            return
+        except PermissionError:
+            if attempt == 49:
+                raise
+            time.sleep(0.2)
 
 
 def new_run_id(script: str) -> str:

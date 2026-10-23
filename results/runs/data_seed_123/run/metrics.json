@@ -395,11 +395,11 @@
   },
   "latency": {
     "n_calls": 500,
-    "mean_ms": 22.759381400072016,
-    "p50_ms": 22.25969999562949,
-    "p95_ms": 26.44699999436851,
-    "p99_ms": 30.551380992110353,
-    "max_ms": 70.98570000380278,
+    "mean_ms": 21.927175199612975,
+    "p50_ms": 22.049500003049616,
+    "p95_ms": 25.26630500142346,
+    "p99_ms": 27.72475899997514,
+    "max_ms": 43.76659999252297,
     "note": "anomaly scoring only (LSTM + memory bank + IF + fusion + SBRS band). Excludes the PII/OCR pipeline, so NOT comparable to the paper's 279 ms end-to-end figure.",
     "device": "cpu",
     "torch_threads": 4
@@ -432,8 +432,8 @@
       "data": 123,
       "train": 123
     },
-    "date_utc": "2026-10-23T11:25:07+00:00",
-    "git_hash": "327f615556af6e15ac78af169eec2cfbda12d65c",
+    "date_utc": "2026-10-23T11:42:08+00:00",
+    "git_hash": "1a425f760691990f5a7bdfa2c3a9ca853dd0e087",
     "git_dirty": true,
     "python": "3.14.4",
     "platform": "Windows-10-10.0.19045-SP0",
