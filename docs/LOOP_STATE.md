@@ -2,16 +2,16 @@
 
 After any restart or context compaction: re-read CLAUDE.md, this file and docs/FIXES_SUMMARY.md first.
 
-- Iteration: 12
+- Iteration: 13
 - Current task: T3.2
-- Last evidence path: results/pii_v2/
+- Last evidence path: results/latency/
 - Open gates: Q-001 (CERT), Q-004 (FUNSD), defaults applied. Phase 1 and Phase 2 gates PASSED 2026-10-23.
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)
-- Goal: T3.2 PaddleOCR in .venv-paddle (Python 3.12 via uv), same images as EasyOCR, compare accuracy, confidence behaviour, latency.
-- Smallest change: finish install (attempt 2 was killed by memory pressure), run evaluation/paddle_ocr_runner.py, rerun presidio + score.
-- Verify: same doc ids, record in manifest; if install fails a third time mark BLOCKED.
+- Goal: T3.2 PaddleOCR vs EasyOCR on identical images.
+- Smallest change: finish uv install, run paddle_ocr_runner.py, rerun presidio + score.
+- Verify: same doc ids; manifest keys pii2.*.ocr.paddleocr_cpu.*
 
 ## Next action
 Start T3.2.
@@ -38,7 +38,7 @@ Start T3.2.
 | T3.3 | M | PENDING | |
 | T3.4 | M | PENDING | |
 | T3.5 | M | DONE | |
-| T3.6 | M | PENDING | |
+| T3.6 | M | DONE | |
 | T3.7 | C | PENDING | gate G-SPEND (Q-002) |
 | T4.1 | M | PENDING | |
 | T4.2 | M | PENDING | gate G-DOCS (Q-003) |

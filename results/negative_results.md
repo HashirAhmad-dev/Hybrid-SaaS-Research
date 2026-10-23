@@ -90,3 +90,10 @@ For balance: the multiplicative form never flags a benign burst (0 percent), gat
 | N-038 | The T3.5 street-address recogniser raises ADDRESS recall from 0.05 to 0.47 but its precision is only 0.35; the Mastercard recogniser closes the gap fully (recall 0.80 to 1.00, precision 1.00). Overall Branch 1 F1 rises 0.728 to 0.769. | `pii2.v2.branch1.presidio_plus.by_type.*` |
 
 Reversal of an earlier finding: on v2, EasyOCR confidence DOES rank difficulty (AUC 0.884 easy vs hard, Spearman 0.552 with per-document F1), unlike on v1 (Spearman 0.187). The v1 statement "confidence does not rank difficulty" held for v1's narrow degradation range only.
+
+## T3.6: two-tier latency (keys `latency.*`)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-039 | The design's single "300 ms end to end" goal cannot hold for image payloads: Tier 2 (EasyOCR + Presidio on CPU) holds an upload for 3.4 s at p50 and 5.3 s at p95. Only the inline text-and-behaviour tier meets a sub-300 ms budget (p99 44.6 ms). | `latency.tier2.hold_ms.*`, `latency.tier1.warm_client_ms.*` |
+| N-040 | A cold proxy process needs about 9 s for its first Tier 1 decision (model loading); a deployment must pre-load. | `latency.tier1.cold_client_ms.*` |

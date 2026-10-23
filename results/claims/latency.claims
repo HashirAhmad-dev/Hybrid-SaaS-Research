@@ -1,0 +1,10 @@
+# T3.6 two-tier latency measured inside the running proxy (machine-dependent; regression check only for this run)
+Tier1 warm client p50 ms | latency.tier1.warm_client_ms.p50 | 33.7
+Tier1 warm client p95 ms | latency.tier1.warm_client_ms.p95 | 40.5
+Tier1 warm client p99 ms | latency.tier1.warm_client_ms.p99 | 44.6
+Tier1 warm n | latency.tier1.warm_client_ms.n | 1000.0
+Tier1 server PII text p50 ms | latency.tier1.warm_server_ms.pii_text.p50 | 13.7
+Tier1 server anomaly p50 ms | latency.tier1.warm_server_ms.anomaly.p50 | 17.9
+Tier1 cold client p50 ms | latency.tier1.cold_client_ms.p50 | 9003.6
+Tier2 hold p50 ms | latency.tier2.hold_ms.p50 | 3434.7
+Tier2 hold p95 ms | latency.tier2.hold_ms.p95 | 5256.3

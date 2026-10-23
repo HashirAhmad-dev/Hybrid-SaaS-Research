@@ -62872,6 +62872,234 @@
    "run_id": "generate_sessions-20261023T154228Z",
    "value": 640
   },
+  "latency.tier1.cold_client_ms.max": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 9172.929699998349
+  },
+  "latency.tier1.cold_client_ms.mean": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 9000.360079997336
+  },
+  "latency.tier1.cold_client_ms.n": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 5
+  },
+  "latency.tier1.cold_client_ms.p50": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 9003.611399995862
+  },
+  "latency.tier1.cold_client_ms.p95": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 9144.396859998233
+  },
+  "latency.tier1.cold_client_ms.p99": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 9167.223131998326
+  },
+  "latency.tier1.cold_server_ms.max": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 8900.818199996138
+  },
+  "latency.tier1.cold_server_ms.mean": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 8727.447039997787
+  },
+  "latency.tier1.cold_server_ms.n": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 5
+  },
+  "latency.tier1.cold_server_ms.p50": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 8738.227299996652
+  },
+  "latency.tier1.cold_server_ms.p95": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 8871.857679999084
+  },
+  "latency.tier1.cold_server_ms.p99": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 8895.026095996727
+  },
+  "latency.tier1.warm_actions.ALERT": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 4
+  },
+  "latency.tier1.warm_actions.PERMIT": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 996
+  },
+  "latency.tier1.warm_client_ms.max": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 55.64040000899695
+  },
+  "latency.tier1.warm_client_ms.mean": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 34.35911700021825
+  },
+  "latency.tier1.warm_client_ms.n": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 1000
+  },
+  "latency.tier1.warm_client_ms.p50": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 33.74815000279341
+  },
+  "latency.tier1.warm_client_ms.p95": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 40.480569997453124
+  },
+  "latency.tier1.warm_client_ms.p99": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 44.61102900517289
+  },
+  "latency.tier1.warm_server_ms.anomaly.max": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 31.952999997884035
+  },
+  "latency.tier1.warm_server_ms.anomaly.mean": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 18.414637199704885
+  },
+  "latency.tier1.warm_server_ms.anomaly.n": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 1000
+  },
+  "latency.tier1.warm_server_ms.anomaly.p50": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 17.90824999625329
+  },
+  "latency.tier1.warm_server_ms.anomaly.p95": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 21.558670009108027
+  },
+  "latency.tier1.warm_server_ms.anomaly.p99": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 26.462263000576055
+  },
+  "latency.tier1.warm_server_ms.pii_text.max": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 26.72819999861531
+  },
+  "latency.tier1.warm_server_ms.pii_text.mean": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 14.049603700143052
+  },
+  "latency.tier1.warm_server_ms.pii_text.n": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 1000
+  },
+  "latency.tier1.warm_server_ms.pii_text.p50": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 13.697000002139248
+  },
+  "latency.tier1.warm_server_ms.pii_text.p95": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 18.812585010891777
+  },
+  "latency.tier1.warm_server_ms.pii_text.p99": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 21.05346200245549
+  },
+  "latency.tier1.warm_server_ms.sbrs.max": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 0.13509999553207308
+  },
+  "latency.tier1.warm_server_ms.sbrs.mean": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 0.03309810013161041
+  },
+  "latency.tier1.warm_server_ms.sbrs.n": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 1000
+  },
+  "latency.tier1.warm_server_ms.sbrs.p50": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 0.030800001695752144
+  },
+  "latency.tier1.warm_server_ms.sbrs.p95": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 0.047415011067641885
+  },
+  "latency.tier1.warm_server_ms.sbrs.p99": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 0.09950400097295642
+  },
+  "latency.tier1.warm_server_ms.total.max": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 53.24179999297485
+  },
+  "latency.tier1.warm_server_ms.total.mean": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 32.49733899997955
+  },
+  "latency.tier1.warm_server_ms.total.n": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 1000
+  },
+  "latency.tier1.warm_server_ms.total.p50": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 31.927849995554425
+  },
+  "latency.tier1.warm_server_ms.total.p95": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 38.3588599950599
+  },
+  "latency.tier1.warm_server_ms.total.p99": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 42.61629499334958
+  },
+  "latency.tier2.hold_ms.max": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 5470.060000006924
+  },
+  "latency.tier2.hold_ms.mean": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 3664.974315003201
+  },
+  "latency.tier2.hold_ms.n": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 20
+  },
+  "latency.tier2.hold_ms.p50": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 3434.724449994974
+  },
+  "latency.tier2.hold_ms.p95": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 5256.253760001709
+  },
+  "latency.tier2.hold_ms.p99": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 5427.298752005881
+  },
+  "latency.tier2.outcomes.RELEASE": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 20
+  },
+  "latency.tier2.processing_ms.max": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 5469.313099994906
+  },
+  "latency.tier2.processing_ms.mean": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 3664.859845002502
+  },
+  "latency.tier2.processing_ms.n": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 20
+  },
+  "latency.tier2.processing_ms.p50": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 3434.631800002535
+  },
+  "latency.tier2.processing_ms.p95": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 5256.017295005586
+  },
+  "latency.tier2.processing_ms.p99": {
+   "run_id": "tier_latency-20261023T160300Z",
+   "value": 5426.653938997042
+  },
   "oppoints.ds1.enforcement_per_dataset_alert_or_block.benign_burst_flag_rate": {
    "run_id": "operating_points-20261023T155029Z",
    "value": 0.0
@@ -168996,6 +169224,40 @@
      777,
      1001
     ]
+   }
+  },
+  "tier_latency-20261023T160300Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\tier_latency.py",
+   "date_utc": "2026-10-23T16:03:00+00:00",
+   "device": "cpu",
+   "git_dirty": false,
+   "git_hash": "a66b1b2dcfda2bd8bcfa26fdec416e7ae395dfbe",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "latency"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/tier_latency.py",
+   "scripts": {
+    "latency": "evaluation/tier_latency.py"
+   },
+   "seeds": {
+    "payloads": 7,
+    "tier2_pick": 11
    }
   },
   "train_and_evaluate-20261023T111230Z": {

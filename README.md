@@ -33,16 +33,35 @@ py -3.14 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
 
 # regenerate data, train, evaluate, calibrate, write results\manifest.json, check all numbers
-pwsh -ExecutionPolicy Bypass -File .eproduce.ps1
+pwsh -ExecutionPolicy Bypass -File .
+eproduce.ps1
 ```
 
-`reproduce.sh` does the same from bash. Each stage logs to `logseproduce_*.log`.
+`reproduce.sh` does the same from bash. Each stage logs to `logs
+eproduce_*.log`.
 The last stage runs `tools/check_numbers.py` over every claims file in
 `results/claims/` and fails on any mismatch. Seeds are fixed in the scripts
 (data seed 42, training seed 42); the run is bit-for-bit repeatable on CPU.
 Runtime on the authors' laptop (i7-11370H, CPU torch): under 1 minute for the
 current stages. Later stages (multi-seed datasets, ablation, statistics, PII)
 are added to the same scripts as they land; see `docs/FIXES_SUMMARY.md`.
+
+---
+
+## Latency: two tiers instead of one 300 ms goal
+
+Measured inside the running FastAPI proxy (`python -m evaluation.tier_latency`,
+CPU, laptop described in `docs/ENVIRONMENT.md`):
+
+* **Tier 1, inline** (`POST /tier1/score`: Presidio on the text payload, LSTM +
+  Isolation Forest on the behaviour vector, SBRS band): p50 33.7 ms, p95 40.5 ms,
+  p99 44.6 ms over 1,000 warm requests. The first request after a cold start takes
+  about 9 s (loading spaCy, the LSTM and the forest).
+* **Tier 2, asynchronous** (`POST /tier2/submit`, `GET /tier2/{job}`: OCR then
+  Presidio on an image while the upload is held): hold time p50 3.4 s, p95 5.3 s
+  with EasyOCR on CPU.
+
+Numbers: `results/latency/tier_latency.json`, manifest keys `latency.tier1.*`, `latency.tier2.*`.
 
 ---
 
