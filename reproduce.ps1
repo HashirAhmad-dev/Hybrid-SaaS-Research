@@ -53,7 +53,7 @@ if ($WithPII) {
     Stage "pii_easyocr"    @("-m", "evaluation.pii_v2", "ocr-easyocr")
     if (Test-Path ".venv-paddle\Scripts\python.exe") {
         Write-Host "== pii_paddleocr"
-        & ".venv-paddle\Scripts\python.exe" "evaluation\paddle_ocr_runner.py" *> logseproduce_pii_paddleocr.log
+        & ".venv-paddle\Scripts\python.exe" "evaluation\paddle_ocr_runner.py" *> logs\reproduce_pii_paddleocr.log
     }
     if ($VlmModel) { Stage "pii_vlm" @("-m", "evaluation.pii_v2", "vlm", "--model", $VlmModel) }  # needs LM Studio running
     Stage "pii_presidio"   @("-m", "evaluation.pii_v2", "presidio")
