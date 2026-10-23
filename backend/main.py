@@ -181,3 +181,37 @@ def comparison() -> List[Dict[str, Any]]:
     df = ds.anomaly_comparison.copy()
     df["timestamp"] = df["timestamp"].astype(str)
     return df.to_dict("records")
+
+
+# ---------------------------------------------------------------------------
+# Two-tier enforcement (paper-v2 T3.6). Needs the evaluation extras (presidio,
+# easyocr); imported lazily so the dashboard deployment is unaffected.
+# ---------------------------------------------------------------------------
+@app.post("/tier1/score")
+def tier1(payload: Dict[str, Any] = Body(...),
+          beta: float = Query(DEFAULT_BETA, ge=0.0, le=5.0)) -> Dict[str, Any]:
+    """Inline decision: text PII + behaviour anomaly + SBRS, with per-stage timings.
+
+    payload: {"user_id": str, "text": str, "features": [6 floats],
+              "history": optional [[6 floats] x up to 23]}
+    """
+    from .tier1 import tier1_score
+    return tier1_score(payload.get("text", ""), payload.get("user_id"),
+                       payload["features"], payload.get("history"), beta=beta)
+
+
+@app.post("/tier2/submit")
+def tier2_submit_ep(payload: Dict[str, Any] = Body(...),
+                    beta: float = Query(DEFAULT_BETA, ge=0.0, le=5.0)) -> Dict[str, Any]:
+    """Hold an image upload and scan it asynchronously. payload: {"image_path", "a_hybrid"}."""
+    from .tier1 import tier2_submit
+    return tier2_submit(payload["image_path"], float(payload.get("a_hybrid", 0.0)), beta=beta)
+
+
+@app.get("/tier2/{job_id}")
+def tier2_status_ep(job_id: str) -> Dict[str, Any]:
+    from .tier1 import tier2_status
+    st = tier2_status(job_id)
+    if st is None:
+        raise HTTPException(404, f"Unknown job '{job_id}'")
+    return st

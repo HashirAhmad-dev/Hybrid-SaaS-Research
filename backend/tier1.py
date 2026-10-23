@@ -1,0 +1,123 @@
+"""
+tier1.py
+========
+Two-tier enforcement (paper-v2 task T3.6). The single "300 ms end to end" goal
+of the original design is replaced by two tiers with separate budgets:
+
+Tier 1, inline (the proxy waits for it):
+    text payload -> Presidio (+ the T3.5 recognisers) -> sensitivity S
+    6-d behaviour vector (+ up to 23 h of history) -> trained LSTM + Isolation
+    Forest -> A_hybrid
+    SBRS(S, A) -> PERMIT / ALERT / BLOCK
+    Every stage is timed and returned, so latency is measured inside the proxy.
+
+Tier 2, asynchronous (the proxy does not wait):
+    image payload -> OCR (EasyOCR) -> Presidio, or the local VLM -> S_image.
+    While Tier 2 runs the upload is HELD (quarantined). When Tier 2 finishes the
+    hold is released (PERMIT) or converted to ALERT/BLOCK by re-banding SBRS with
+    the image's S. Implemented with an in-process thread pool and a job table;
+    `tier2_status(job_id)` reports state and timings.
+
+This module is used by the /tier1/score and /tier2/* endpoints in backend/main.py
+and by evaluation/tier_latency.py. It needs the evaluation extras (presidio,
+easyocr); the dashboard deployment does not import it.
+"""
+from __future__ import annotations
+
+import threading
+import time
+import uuid
+from concurrent.futures import ThreadPoolExecutor
+from functools import lru_cache
+from typing import Any, Dict, List, Optional
+
+import numpy as np
+
+from . import anomaly_engine
+from .risk_orchestrator import DEFAULT_BETA, compute_sbrs
+
+ENTITY_TIER = {"NID": "HIGH", "CREDIT_CARD": "HIGH", "PASSWORD": "HIGH",
+               "PHONE": "MEDIUM", "EMAIL": "MEDIUM", "DOB": "MEDIUM", "ADDRESS": "MEDIUM",
+               "PERSON": "LOW"}
+
+
+@lru_cache(maxsize=1)
+def analyzer():
+    from evaluation.pii_v2 import build_analyzer_plus
+    return build_analyzer_plus()
+
+
+def sensitivity(entities: List[Dict[str, str]]) -> int:
+    h = sum(ENTITY_TIER.get(e["type"]) == "HIGH" for e in entities)
+    m = sum(ENTITY_TIER.get(e["type"]) == "MEDIUM" for e in entities)
+    l = sum(ENTITY_TIER.get(e["type"]) == "LOW" for e in entities)
+    return int(min(10 * h + 5 * m + l, 100))
+
+
+def tier1_score(text: str, user_id: Optional[str], features: List[float],
+                history: Optional[List[List[float]]] = None,
+                beta: float = DEFAULT_BETA) -> Dict[str, Any]:
+    from evaluation.pii_v2 import analyse
+    t0 = time.perf_counter()
+    ents = analyse(analyzer(), text or "", plus=True)
+    S = sensitivity(ents)
+    t1 = time.perf_counter()
+    art = anomaly_engine.load_engine()
+    sc = anomaly_engine.score_features(np.asarray(features, dtype=float), user_id,
+                                       float(art["alpha"]),
+                                       history=np.asarray(history, dtype=float) if history else None)
+    t2 = time.perf_counter()
+    sb = compute_sbrs(S, sc["a_hybrid"], beta=beta)
+    t3 = time.perf_counter()
+    return {"tier": 1, "entities": ents, "sensitivity": S, "a_lstm": sc["a_lstm"], "a_if": sc["a_if"],
+            "a_hybrid": sc["a_hybrid"], "sbrs": sb.sbrs_value, "action": sb.enforcement_action,
+            "timing_ms": {"pii_text": (t1 - t0) * 1e3, "anomaly": (t2 - t1) * 1e3,
+                          "sbrs": (t3 - t2) * 1e3, "total": (t3 - t0) * 1e3}}
+
+
+# ---------------------------------------------------------------------------
+# Tier 2: hold, scan asynchronously, then release or escalate
+# ---------------------------------------------------------------------------
+_POOL = ThreadPoolExecutor(max_workers=1)        # one OCR at a time on a laptop CPU
+_JOBS: Dict[str, Dict[str, Any]] = {}
+_LOCK = threading.Lock()
+
+
+@lru_cache(maxsize=1)
+def _ocr_reader():
+    import easyocr
+    return easyocr.Reader(["en"], gpu=False, verbose=False)
+
+
+def _run_tier2(job_id: str, image_path: str, a_hybrid: float, beta: float) -> None:
+    from pathlib import Path
+    from evaluation.pii_v2 import analyse
+    from evaluation.run_pipeline import ocr_document
+    j = _JOBS[job_id]
+    j["state"], j["started"] = "RUNNING", time.perf_counter()
+    txt, conf, _ = ocr_document(_ocr_reader(), Path(image_path))
+    ents = analyse(analyzer(), txt, plus=True)
+    S = sensitivity(ents)
+    sb = compute_sbrs(S, a_hybrid, beta=beta)
+    with _LOCK:
+        j.update(state="DONE", ocr_confidence=conf, entities=ents, sensitivity=S, sbrs=sb.sbrs_value,
+                 final_action=sb.enforcement_action,
+                 release="RELEASE" if sb.enforcement_action == "PERMIT" else sb.enforcement_action,
+                 finished=time.perf_counter())
+        j["hold_ms"] = (j["finished"] - j["submitted"]) * 1e3
+        j["processing_ms"] = (j["finished"] - j["started"]) * 1e3
+
+
+def tier2_submit(image_path: str, a_hybrid: float, beta: float = DEFAULT_BETA) -> Dict[str, Any]:
+    job_id = uuid.uuid4().hex[:12]
+    with _LOCK:
+        _JOBS[job_id] = {"job_id": job_id, "state": "HELD", "submitted": time.perf_counter(),
+                         "inline_action": "HOLD"}
+    _POOL.submit(_run_tier2, job_id, image_path, a_hybrid, beta)
+    return {"job_id": job_id, "inline_action": "HOLD"}
+
+
+def tier2_status(job_id: str) -> Optional[Dict[str, Any]]:
+    with _LOCK:
+        j = _JOBS.get(job_id)
+        return None if j is None else {k: v for k, v in j.items() if k not in ("submitted", "started", "finished")}
