@@ -59,7 +59,7 @@ BENIGN BURST trap:
   HYBRID flags 0.0%   actions={'PERMIT': 29}
   ordinary-negative FPR: EWMA 8.5%  hybrid 0.2%
 ------------------------------------------------------------------------
-Latency/call: mean=28.52 ms  p50=26.62  p95=39.48  p99=48.19  (n=500)
+Latency/call: mean=16.64 ms  p50=17.15  p95=18.53  p99=18.91  (n=500)
 ========================================================================
 
   -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_13\run\anomaly_detection_comparison_v2_real.csv

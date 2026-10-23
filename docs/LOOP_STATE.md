@@ -5,7 +5,7 @@ After any restart or context compaction: re-read CLAUDE.md, this file and docs/F
 - Iteration: 12
 - Current task: T3.2
 - Last evidence path: results/pii_v2/
-- Open gates: Q-001 (CERT, default skip applied). Phase 1 gate PASSED 2026-10-23.
+- Open gates: Q-001 (CERT), Q-004 (FUNSD), defaults applied. Phase 1 and Phase 2 gates PASSED 2026-10-23.
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)

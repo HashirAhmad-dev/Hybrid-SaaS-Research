@@ -62,11 +62,48 @@ See `results/negative_results.md` (N-001 to N-010 so far).
 
 ## 5. Claims the paper may make / must not make
 
-Filled in from T1.1 onward, each with its manifest key.
+All values are means over the 10 independently generated datasets unless marked. Every value is in a claims file under `results/claims/`, and `docs/CLAIM_EVIDENCE.md` lists the script and run for each.
+
+### May make (with evidence)
+
+| Claim | Evidence |
+|---|---|
+| A rate-only EWMA baseline is weak on this data (flag F1 0.106) and flags 66.8 percent of benign bursts; the hybrid flags 1.5 percent. | `results/claims/multiseed.claims` |
+| The hybrid's flag F1 (0.629, 95 percent cluster-bootstrap CI 0.564 to 0.702) is significantly higher than LSTM alone (+0.100), per-user z-score (+0.075), LOF (+0.179) and EWMA (+0.518). | `results/claims/stats.claims` |
+| The hybrid's F1 is statistically indistinguishable from Isolation Forest alone (difference 0.003, CI -0.013 to 0.020). Fusion adds average precision, not F1. | `results/claims/stats.claims`, `ablation.claims` |
+| Slow insider drift is the hard case: at the F1-optimal point the hybrid finds 13 percent of malicious-insider episodes. A dedicated CUSUM detector beside it raises this to 57 percent, median 8.9 hours to detection, at a false-positive rate of 0.8 percent instead of 0.25 percent. | `results/claims/drift.claims` |
+| At an equal benign alert budget, gated fusion (escalate when A is high regardless of S) catches more threats than the multiplicative SBRS (0.642 vs 0.589) and escalates all 35 low-sensitivity, high-anomaly threats, against 1 for the multiplicative form. | `results/claims/fusion.claims` |
+| Detection degrades smoothly as attacks get quieter; at intensity 0.25 all detectors sit at AUC 0.72 to 0.74 and none separates slow drift (AUC about 0.5). | `results/claims/sweep.claims` |
+| Text-only DLP sees nothing in images; Presidio on clean text reaches F1 0.769 on the harder v2 corpus with the two added recognisers (0.728 without). | `results/claims/pii_v2_branch1_ocr.claims` |
+| Adding a Mastercard-range recogniser with a Luhn check closes Presidio's card gap (recall 0.80 to 1.00, precision 1.00). | same |
+| Every threshold, weight and band is chosen on validation data; selection code rejects test rows (unit-tested). | `evaluation/selection.py`, `tests/test_selection.py` |
+| Results reproduce bit-for-bit with one command. | `reproduce.ps1`, gate records below |
+
+### Must not make
+
+- That the LSTM + Isolation Forest hybrid outperforms its components overall. It does not beat IF on F1 and is below the LSTM, the z-score and max fusion on AUC (N-018 to N-024).
+- That the multiplicative SBRS is the best fusion, or that low content sensitivity safely suppresses alerts (N-033, N-034).
+- That benign bursts are suppressed on every dataset (one dataset: 14.8 percent, N-016).
+- Any single-dataset number (seed 42) as the headline; use the 10-dataset mean with its interval.
+- The old draft figures: EWMA FPR 42.7 percent vs hybrid 11.2 percent, SBRS F1 0.93, PII coverage 0.91, 279 ms end to end.
+- "Real-time 300 ms end to end". Replace with the measured Tier 1 budget (T3.6).
+- That PaddleOCR, PaliGemma-3B or an on-box VLM was evaluated, unless T3.2 / T3.3 results exist in the manifest.
+- That federated learning, differential privacy or a usability study was done.
+- That "existing DLP ignores behaviour" (Microsoft Purview Adaptive Protection uses insider-risk levels in DLP).
+- That OCR confidence never ranks difficulty: on v2 it does (AUC 0.884); on v1 it did not.
+- That the data are realistic enterprise traffic or real handwriting. All data are synthetic; handwriting is font-rendered.
+- The value beta = 2.5 as a general constant: the validation knee ranges from 2.0 to 8.0 across datasets (N-017).
 
 ## 6. New or remaining limitations
 
-To be filled as tasks complete.
+- All behavioural data and all PII documents are synthetic (Faker, font-rendered handwriting). No real scans were evaluated (FUNSD not downloaded, Q-004). CERT external validation was not feasible (T2.6 SKIPPED, D-011).
+- Each test split holds about 6 malicious-insider episodes, so per-dataset episode recall moves in steps of 1/6; the 10-dataset mean and the cluster bootstrap carry this uncertainty.
+- The attack generator's "slow drift" spans about 12 hours, not days.
+- The CUSUM drift detector fires on 20 percent of benign-burst hours.
+- The street-address recogniser has low precision (0.35).
+- LSTM training uses CPU torch; GPU training was not used (D-003).
+- The LOF neighbour grid was widened after looking at seed-42 validation and test AUC (D-008, disclosed).
+- Network bandwidth on this laptop (50 to 300 KB/s to Hugging Face and figshare) limited which local VLMs could be downloaded (D-012).
 
 ## 7. Open questions and BLOCKED tasks
 
@@ -90,3 +127,10 @@ Not yet available (task T1.3).
   - Unclear historical issue: `SBRS_RECALIBRATION.md` says an F1-maximising t_alert "was tried and rejected" because it permits 66 percent of threats, without saying on which split that was observed. The shipped bands do not depend on it (they are percentile rules fixed on validation), so no number moves; the wording must not be repeated in the paper as a test-free choice.
   - Disclosed peek: LOF neighbour grid widened after seeing seed-42 val and test AUC (D-008).
   - H-R5: the 10 data seeds were fixed in `evaluation/config/seeds.json` before any multi-seed result was seen and all 10 are reported. Every result that went against the design is in `results/negative_results.md` (N-001 to N-017). Latency values from the multi-seed run are marked as not quotable (D-010).
+
+### Phase 2 gate (2026-10-23)
+- a. pytest: 95 passed.
+- b. `pwsh -NoProfile -File .\reproduce.ps1` (full): exit 0 in 20.1 min; `check_numbers` 360/360. All 34,681 non-latency manifest keys under `anomaly`, `sbrs`, `generation`, `ablation`, `stats`, `sweep`, `drift`, `fusion`, `oppoints` identical to the snapshot taken before the run (`logs/manifest_before_gate2.json`). Caveat: the difficulty-sweep stage reuses cells already recorded in the manifest and only rebuilds the summary and figure; its cells were reproduced independently by the check that the default cell equals the T2.1 ablation exactly.
+- c. git status: only run outputs (timestamps, latency) and Phase 3 work pending; `.env` untouched.
+- d. FIXES_SUMMARY rows exist for T2.1 to T2.5 and T2.7; T2.6 SKIPPED with reason (D-011).
+- e. H-R4 scan: T2.1 thresholds by `threshold_max_f1` / `threshold_at_fpr` on validation; LOF k by validation AUC (grid peek disclosed, D-008); calibrators and ECDFs on CALIB. T2.2 resamples test rows only with thresholds fixed from validation. T2.3 grid fixed before results. T2.4 (k, h) by `choose_drift_params` on validation; probe trained on train, threshold on validation. T2.5 beta and w on validation, logistic fitted on train, bands from benign validation percentiles. Recall at 1 and 5 percent FPR read off the test ROC curve is labelled as a curve summary, not a tuned threshold. H-R5: every dataset and every sweep cell reported; N-018 to N-035 added.

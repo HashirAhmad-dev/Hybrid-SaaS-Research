@@ -9,6 +9,8 @@
     "n_negligent": 72,
     "n_overscoped": 34,
     "n_benign_burst": 96,
+    "intensity": 1.0,
+    "benign_overlap": 0.0,
     "out_dir": "C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\results\\runs\\data_seed_1\\data"
   },
   "episode_plan": {
@@ -79,8 +81,8 @@
     "seeds": {
       "data": 1
     },
-    "date_utc": "2026-10-23T11:38:05+00:00",
-    "git_hash": "1a425f760691990f5a7bdfa2c3a9ca853dd0e087",
+    "date_utc": "2026-10-23T15:40:46+00:00",
+    "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
     "git_dirty": true,
     "python": "3.14.4",
     "platform": "Windows-10-10.0.19045-SP0",
