@@ -28,3 +28,6 @@ pii_scan_results_v2_*-*.csv
 results/**/large/
 logs/
 .venv-paddle/
+# per-run scratch outputs: keep metrics JSON, drop CSVs and model artefacts
+results/runs/**/*.csv
+results/runs/**/artifacts/

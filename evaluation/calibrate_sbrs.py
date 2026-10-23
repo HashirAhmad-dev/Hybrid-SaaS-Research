@@ -130,7 +130,13 @@ def derive_bands(S, A, y, beta):
 
 
 def main() -> None:
-    d = pd.read_csv(SCORED)
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--scored", type=Path, default=SCORED)
+    ap.add_argument("--out", type=Path, default=OUT_JSON)
+    ap.add_argument("--manifest-prefix", type=str, default="sbrs")
+    args = ap.parse_args()
+    d = pd.read_csv(args.scored)
     tr, va, te = (d[d.split == s] for s in ("train", "val", "test"))
 
     def cols(df):
@@ -194,7 +200,7 @@ def main() -> None:
             }
 
     result = {
-        "reused_data": str(SCORED),
+        "reused_data": str(args.scored),
         "val_sessions": int(len(va)), "val_threats": int(yv.sum()),
         "test_sessions": int(len(te)), "test_threats": int(yt.sum()),
         "beta": {"chosen": beta, "criterion":
@@ -211,8 +217,8 @@ def main() -> None:
     }
     from tools.manifest import provenance, record
     result["provenance"] = provenance("evaluation/calibrate_sbrs.py")
-    OUT_JSON.write_text(json.dumps(result, indent=1, default=float), encoding="utf-8")
-    record("sbrs", {k: v for k, v in result.items() if k != "provenance"},
+    args.out.write_text(json.dumps(result, indent=1, default=float), encoding="utf-8")
+    record(args.manifest_prefix, {k: v for k, v in result.items() if k != "provenance"},
            script="evaluation/calibrate_sbrs.py")
 
     # -- Console before/after --------------------------------------------
@@ -239,7 +245,7 @@ def main() -> None:
         print(f"  {cls:<22} n={pc['n']:<3} "
               f"{pc['alert_or_block_recall']*100:>3.0f}% | {pc['block_recall']*100:>3.0f}%")
     print("=" * 74)
-    print(f"\n  -> {OUT_JSON}")
+    print(f"\n  -> {args.out}")
     print("\nApply to backend/risk_orchestrator.py:")
     print(f"    DEFAULT_BETA = {beta}")
     print(f"    SBRS_BANDS = [({t_block:.2f}, 'HIGH-RISK', 'BLOCK'), "

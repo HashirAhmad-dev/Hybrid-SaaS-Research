@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# reproduce.sh - regenerate every paper-v2 result from scratch and check it.
+# Same stages as reproduce.ps1 (the Windows entry point). Usage: ./reproduce.sh [--quick]
+set -euo pipefail
+cd "$(dirname "$0")"
+export PYTHONUTF8=1
+if [ -x .venv/Scripts/python.exe ]; then PY=.venv/Scripts/python.exe
+elif [ -x .venv/bin/python ]; then PY=.venv/bin/python
+else PY=python; fi
+QUICK=0; [ "${1:-}" = "--quick" ] && QUICK=1
+mkdir -p logs
+
+stage() {
+  local name="$1"; shift
+  echo "== $name"
+  if ! "$PY" "$@" > "logs/reproduce_${name}.log" 2>&1; then
+    tail -30 "logs/reproduce_${name}.log"; echo "stage '$name' failed"; exit 1
+  fi
+  tail -3 "logs/reproduce_${name}.log"
+}
+
+t0=$(date +%s)
+stage baseline_manifest -m tools.ingest_baseline
+stage generate_s42      -m evaluation.generate_sessions --seed 42
+stage train_s42         -m evaluation.train_and_evaluate --seed 42
+stage calibrate_sbrs    -m evaluation.calibrate_sbrs
+# Later paper-v2 stages are appended here as their tasks land.
+
+stage check_numbers     tools/check_numbers.py results/claims --quiet
+echo "reproduce.sh finished in $(( ($(date +%s) - t0) / 60 )) min (quick=$QUICK)"

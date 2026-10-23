@@ -23,7 +23,8 @@ Rules
 
 Usage
 -----
-    python tools/check_numbers.py CLAIMS_FILE [CLAIMS_FILE ...] [--manifest PATH]
+    python tools/check_numbers.py CLAIMS_FILE_OR_DIR [...] [--manifest PATH]
+    (a directory means every *.claims file in it)
     python tools/check_numbers.py --pair "label|key|value" ...
 
 Exit status 0 when every claim matches, 1 otherwise.
@@ -112,7 +113,10 @@ def main(argv: Optional[List[str]] = None) -> int:
     args = ap.parse_args(argv)
 
     claims: List[Claim] = []
+    files: List[Path] = []
     for f in args.claims_files:
+        files += sorted(f.glob("*.claims")) if f.is_dir() else [f]
+    for f in files:
         claims += parse_claims(f.read_text(encoding="utf-8").splitlines(), str(f))
     claims += parse_claims(args.pair, "--pair")
     if not claims:

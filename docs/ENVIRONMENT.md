@@ -32,6 +32,11 @@ Recorded 2026-10-23 during task T0.1. Update this file when the environment chan
 
 ## Project virtual environment
 
+Note: the scientific stack of the system interpreter lives in the per-user site
+(`%APPDATA%\Python\Python314\site-packages`), so a shell started without
+`APPDATA`/`USERPROFILE` cannot import numpy. `reproduce.sh` was verified with those
+variables present.
+
 `.venv` (gitignored) was created with `python -m venv --system-site-packages .venv` from CPython 3.14.4.
 It inherits the scientific stack from the system interpreter and adds only what the project needs
 on top (pytest so far). Nothing was installed into the system interpreter. The exact package

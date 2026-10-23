@@ -25,6 +25,27 @@ not reproduce. Every number the paper may quote is recorded in
 
 ---
 
+## Reproduce every result (one command)
+
+```powershell
+# one-time: project venv with the exact versions used for the paper
+py -3.14 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
+
+# regenerate data, train, evaluate, calibrate, write results\manifest.json, check all numbers
+pwsh -ExecutionPolicy Bypass -File .eproduce.ps1
+```
+
+`reproduce.sh` does the same from bash. Each stage logs to `logseproduce_*.log`.
+The last stage runs `tools/check_numbers.py` over every claims file in
+`results/claims/` and fails on any mismatch. Seeds are fixed in the scripts
+(data seed 42, training seed 42); the run is bit-for-bit repeatable on CPU.
+Runtime on the authors' laptop (i7-11370H, CPU torch): under 1 minute for the
+current stages. Later stages (multi-seed datasets, ablation, statistics, PII)
+are added to the same scripts as they land; see `docs/FIXES_SUMMARY.md`.
+
+---
+
 ## Project layout
 
 ```

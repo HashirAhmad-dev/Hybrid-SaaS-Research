@@ -59,6 +59,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+from pathlib import Path
 from typing import Any, Dict, List
 
 import numpy as np
@@ -441,12 +442,18 @@ def main() -> None:
     ap.add_argument("--n-negligent", type=int, default=72)
     ap.add_argument("--n-overscoped", type=int, default=34)
     ap.add_argument("--n-benign-burst", type=int, default=96)
+    ap.add_argument("--out-dir", type=Path, default=DATA_DIR,
+                    help="where to write sessions_raw.csv, user_profiles.csv, "
+                         "generation_config.json (default evaluation/data)")
     args = ap.parse_args()
+    sessions_raw = args.out_dir / SESSIONS_RAW.name
+    user_profiles = args.out_dir / USER_PROFILES.name
+    gen_config = args.out_dir / GEN_CONFIG.name
 
     rng = np.random.default_rng(args.seed)
     Faker.seed(args.seed)
     fake = Faker()
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    args.out_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"[1/5] profiles: {args.n_users} users")
     profiles = build_profiles(args.n_users, rng, fake)
@@ -469,8 +476,8 @@ def main() -> None:
     df = derive_features(df, profiles, rng, fake)
 
     print("[5/5] writing artefacts ...")
-    df.to_csv(SESSIONS_RAW, index=False)
-    profiles.to_csv(USER_PROFILES, index=False)
+    df.to_csv(sessions_raw, index=False)
+    profiles.to_csv(user_profiles, index=False)
 
     active = df[df.active]
     counts = {
@@ -499,7 +506,7 @@ def main() -> None:
     config = {"args": vars(args), "episode_plan": plan, "realised": counts}
     from tools.manifest import provenance, record
     config["provenance"] = provenance("evaluation/generate_sessions.py", {"data": args.seed})
-    GEN_CONFIG.write_text(json.dumps(config, indent=2), encoding="utf-8")
+    gen_config.write_text(json.dumps(config, indent=2, default=str), encoding="utf-8")
     record(f"generation.s{args.seed}", counts, script="evaluation/generate_sessions.py",
            seeds={"data": args.seed})
 
@@ -513,7 +520,7 @@ def main() -> None:
         ps = counts["per_split"][s]
         print(f"  {s:<5} sessions={ps['sessions']:>6,}  pos={ps['positives']:>4}  "
               f"benign_burst={ps['benign_bursts']:>3}")
-    print(f"\n  -> {SESSIONS_RAW}\n  -> {USER_PROFILES}\n  -> {GEN_CONFIG}")
+    print(f"\n  -> {sessions_raw}\n  -> {user_profiles}\n  -> {gen_config}")
 
 
 if __name__ == "__main__":

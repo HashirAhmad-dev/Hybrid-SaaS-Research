@@ -1,0 +1,33 @@
+# What reproduce.ps1 / reproduce.sh must regenerate (prefix anomaly.s42, data seed 42, train seed 42).
+# Values are the frozen baseline (results/baseline_20261023/metrics.json) except the doc-bands row,
+# which T1.2 corrected to beta 0.5 (decision D-005). Latency is machine-dependent and not checked.
+Active sessions | anomaly.s42.dataset.active_sessions | 16297
+Scoreable sessions | anomaly.s42.dataset.scoreable_sessions | 15461
+Positives | anomaly.s42.dataset.positives_total | 641
+Test sessions | anomaly.s42.dataset.per_split.test.sessions | 2352
+alpha | anomaly.s42.tuning.alpha | 0.25
+tau hybrid | anomaly.s42.tuning.tau_hybrid | 0.75
+tau EWMA | anomaly.s42.tuning.tau_ewma | 2.5
+val F1 | anomaly.s42.tuning.val_f1 | 0.6897
+EWMA F1 | anomaly.s42.test_flag_level.ewma_tuned.f1 | 0.1162
+LSTM-only F1 | anomaly.s42.test_flag_level.lstm_only.f1 | 0.3504
+IF-only F1 | anomaly.s42.test_flag_level.if_only.f1 | 0.6338
+Hybrid F1 | anomaly.s42.test_flag_level.hybrid.f1 | 0.6286
+Hybrid FPR | anomaly.s42.test_flag_level.hybrid.fpr | 0
+AUC LSTM | anomaly.s42.test_auc_overall.lstm | 0.8591
+AUC IF | anomaly.s42.test_auc_overall.if | 0.7953
+AUC hybrid | anomaly.s42.test_auc_overall.hybrid | 0.8270
+Enforcement F1 | anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.f1 | 0.4754
+Enforcement fp | anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.fp | 90
+BLOCK-only F1 | anomaly.s42.test_enforcement_bands.hybrid_block_only.f1 | 0.3969
+Doc bands F1 (beta 0.5) | anomaly.s42.test_enforcement_bands.paper_doc_bands_alert_or_block.f1 | 0.1337
+Insider op F1 | anomaly.s42.test_insider_oriented_operating_point.f1 | 0.4511
+Insider op malicious recall | anomaly.s42.test_insider_oriented_operating_point.malicious_insider_recall | 0.2941
+Malicious window recall | anomaly.s42.per_class_recall.malicious_insider.hybrid_recall | 0.0196
+Malicious AUC LSTM | anomaly.s42.per_class_recall.malicious_insider.auc_lstm | 0.7443
+Benign burst EWMA flag rate | anomaly.s42.benign_burst.ewma_flag_rate | 0.5926
+Benign burst hybrid flag rate | anomaly.s42.benign_burst.hybrid_flag_rate | 0
+SBRS beta | sbrs.beta.chosen | 2.5
+SBRS t_alert | sbrs.bands.t_alert | 1.22382
+SBRS t_block | sbrs.bands.t_block | 1.84367
+SBRS new F1 (unrounded bands) | sbrs.test.new_calibrated.flagged_f1 | 0.4793

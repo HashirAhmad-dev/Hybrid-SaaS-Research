@@ -60,6 +60,7 @@ import argparse
 import json
 import pickle
 import time
+from pathlib import Path
 from typing import Dict, List, Tuple
 
 import numpy as np
@@ -71,7 +72,7 @@ from sklearn.preprocessing import StandardScaler
 
 from .common import (CSV_COLUMNS, DATA_DIR, EVAL_DIR, EWMA_LAMBDA, FEATURES, GEN_CONFIG,
                      HYBRID_FLAG_THRESHOLD, LEGACY_EWMA_TAU, PAPER_DOC_BANDS, PAPER_DOC_BETA,
-                     SBRS_BETA, SEQ_LEN, SESSIONS_RAW, THREAT_CLASSES, V2_CSV,
+                     SBRS_BANDS, SBRS_BETA, SEQ_LEN, SESSIONS_RAW, THREAT_CLASSES, V2_CSV,
                      RobustCalibrator, band, binary_metrics, ewma_stream, sbrs,
                      wilson_ci)
 
@@ -385,15 +386,31 @@ def main() -> None:
     ap.add_argument("--latency-samples", type=int, default=500)
     ap.add_argument("--manifest-prefix", type=str, default=None,
                     help="results/manifest.json key prefix (default anomaly.s<seed>)")
+    ap.add_argument("--data-dir", type=Path, default=DATA_DIR,
+                    help="folder holding sessions_raw.csv and generation_config.json")
+    ap.add_argument("--out-dir", type=Path, default=None,
+                    help="write metrics, scored CSVs and artefacts here instead of the "
+                         "canonical evaluation/data, evaluation/artifacts and project-root paths")
     args = ap.parse_args()
+
+    sessions_raw = args.data_dir / SESSIONS_RAW.name
+    gen_config = args.data_dir / GEN_CONFIG.name
+    if args.out_dir is None:
+        artifacts, scored_all, metrics_json, v2_csv = ARTIFACTS, SCORED_ALL, METRICS_JSON, V2_CSV
+    else:
+        artifacts = args.out_dir / "artifacts"
+        scored_all = args.out_dir / SCORED_ALL.name
+        metrics_json = args.out_dir / METRICS_JSON.name
+        v2_csv = args.out_dir / V2_CSV.name
+        args.out_dir.mkdir(parents=True, exist_ok=True)
 
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
     rng = np.random.default_rng(args.seed)
-    ARTIFACTS.mkdir(parents=True, exist_ok=True)
+    artifacts.mkdir(parents=True, exist_ok=True)
 
     # -- 1. Load -----------------------------------------------------------
-    df = pd.read_csv(SESSIONS_RAW, parse_dates=["timestamp"])
+    df = pd.read_csv(sessions_raw, parse_dates=["timestamp"])
     df["threat_class"] = df["threat_class"].where(df["threat_class"].notna(), None)
     total_hours = int(df.hour_index.max()) + 1
     train_end = int(np.floor(total_hours * 0.70))
@@ -678,14 +695,14 @@ def main() -> None:
     extra["threat_class"] = tc
     extra["is_benign_burst"] = bb
     extra["episode_id"] = eid
-    extra.to_csv(SCORED_ALL, index=False)
-    out[te].to_csv(V2_CSV, index=False)   # held-out predictions only
+    extra.to_csv(scored_all, index=False)
+    out[te].to_csv(v2_csv, index=False)   # held-out predictions only
 
-    with open(ARTIFACTS / "lstm.pt", "wb") as f:
+    with open(artifacts / "lstm.pt", "wb") as f:
         torch.save({"state_dict": model.state_dict(), "hidden": HIDDEN_DIM,
                     "n_features": len(FEATURES), "seq_len": SEQ_LEN}, f)
-    export_lstm_npz(model, ARTIFACTS / "lstm_weights.npz")
-    with open(ARTIFACTS / "engine.pkl", "wb") as f:
+    export_lstm_npz(model, artifacts / "lstm_weights.npz")
+    with open(artifacts / "engine.pkl", "wb") as f:
         pickle.dump({"scaler": scaler, "iforest": iforest, "cal_lstm": cal_lstm,
                      "cal_if": cal_if, "banks": banks, "user_stats": user_stats,
                      "alpha": alpha, "tau_hybrid": tau_h,
@@ -729,12 +746,19 @@ def main() -> None:
         "per_class_recall": per_class,
         "benign_burst": burst,
         "latency": latency,
+        "sbrs_enforcement_config": {
+            "beta": SBRS_BETA,
+            "bands": [[t, c, a] for t, c, a in SBRS_BANDS],
+            "source": "evaluation/calibrate_sbrs.py (validation-calibrated); "
+                      "see evaluation/SBRS_RECALIBRATION.md",
+        },
     }
     from tools.manifest import provenance, record
-    data_seed = json.loads(GEN_CONFIG.read_text(encoding="utf-8"))["args"]["seed"]         if GEN_CONFIG.exists() else None
+    data_seed = (json.loads(gen_config.read_text(encoding="utf-8"))["args"]["seed"]
+                 if gen_config.exists() else None)
     seeds = {"data": data_seed, "train": args.seed}
     metrics["provenance"] = provenance("evaluation/train_and_evaluate.py", seeds, device="cpu")
-    METRICS_JSON.write_text(json.dumps(metrics, indent=2, default=float), encoding="utf-8")
+    metrics_json.write_text(json.dumps(metrics, indent=2, default=float), encoding="utf-8")
     record(args.manifest_prefix or f"anomaly.s{args.seed}",
            {k: v for k, v in metrics.items() if k != "provenance"},
            script="evaluation/train_and_evaluate.py", seeds=seeds, device="cpu")
@@ -785,7 +809,7 @@ def main() -> None:
     print(f"Latency/call: mean={latency['mean_ms']:.2f} ms  p50={latency['p50_ms']:.2f}  "
           f"p95={latency['p95_ms']:.2f}  p99={latency['p99_ms']:.2f}  (n={latency['n_calls']})")
     print("=" * 72)
-    print(f"\n  -> {V2_CSV}\n  -> {SCORED_ALL}\n  -> {METRICS_JSON}\n  -> {ARTIFACTS}")
+    print(f"\n  -> {v2_csv}\n  -> {scored_all}\n  -> {metrics_json}\n  -> {artifacts}")
 
 
 if __name__ == "__main__":

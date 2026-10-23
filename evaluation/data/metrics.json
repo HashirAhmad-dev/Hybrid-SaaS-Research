@@ -388,18 +388,18 @@
     "mean_a_if": 0.3178075409934081,
     "mean_a_hybrid": 0.32189031967272114,
     "mean_sensitivity": 16.48148148148148,
-    "mean_sbrs": 0.2887074074074074,
+    "mean_sbrs": 0.2887080750881967,
     "fpr_on_ordinary_negatives_ewma": 0.0515926424405563,
     "fpr_on_ordinary_negatives_hybrid": 0.0,
     "mean_activity_rate_ratio": 7.573218219281681
   },
   "latency": {
     "n_calls": 500,
-    "mean_ms": 16.949219999893103,
-    "p50_ms": 17.333800002234057,
-    "p95_ms": 18.163049997383496,
-    "p99_ms": 18.624306987185264,
-    "max_ms": 26.881600002525374,
+    "mean_ms": 16.797440399881452,
+    "p50_ms": 16.813150003144983,
+    "p95_ms": 20.958110007632058,
+    "p99_ms": 23.215429998090247,
+    "max_ms": 32.24089999275748,
     "note": "anomaly scoring only (LSTM + memory bank + IF + fusion + SBRS band). Excludes the PII/OCR pipeline, so NOT comparable to the paper's 279 ms end-to-end figure.",
     "device": "cpu",
     "torch_threads": 4
@@ -424,5 +424,32 @@
       ]
     ],
     "source": "evaluation/calibrate_sbrs.py (validation-calibrated); see evaluation/SBRS_RECALIBRATION.md"
+  },
+  "provenance": {
+    "script": "evaluation/train_and_evaluate.py",
+    "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\train_and_evaluate.py --seed 42",
+    "seeds": {
+      "data": 42,
+      "train": 42
+    },
+    "date_utc": "2026-10-23T11:16:35+00:00",
+    "git_hash": "7cc820dd534613204ea3809b8caaa447e922c7fe",
+    "git_dirty": true,
+    "python": "3.14.4",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "libraries": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.18.0",
+      "torch": "2.13.0",
+      "presidio_analyzer": "2.2.363",
+      "spacy": "3.8.13",
+      "easyocr": "1.7.2",
+      "Faker": "40.28.1",
+      "pillow": "12.2.0",
+      "openai": "2.44.0"
+    },
+    "device": "cpu"
   }
 }
