@@ -1,0 +1,51 @@
+{
+ "seed": 1337,
+ "n_per_category_requested": 40,
+ "realised_counts": {
+  "text_extractable": 40,
+  "scanned": 40,
+  "handwritten": 40
+ },
+ "total_documents": 120,
+ "total_entities": 368,
+ "entities_by_type": {
+  "PERSON": 101,
+  "EMAIL": 63,
+  "PASSWORD": 28,
+  "PHONE": 44,
+  "CREDIT_CARD": 34,
+  "ADDRESS": 44,
+  "DOB": 32,
+  "NID": 22
+ },
+ "docs_with_zero_entities": 19,
+ "degradation": {
+  "scanned": {
+   "rotate": 1.5,
+   "blur": 0.7,
+   "noise": 10.0,
+   "jpeg_q": 40,
+   "contrast": 0.85
+  },
+  "handwritten": {
+   "rotate": 4.0,
+   "blur": 1.6,
+   "noise": 18.0,
+   "jpeg_q": 22,
+   "contrast": 0.55
+  }
+ },
+ "fonts_used": {
+  "n/a": 40,
+  "tahoma.ttf": 10,
+  "georgia.ttf": 10,
+  "calibri.ttf": 6,
+  "arial.ttf": 6,
+  "times.ttf": 8,
+  "segoepr.ttf": 16,
+  "segoesc.ttf": 13,
+  "comic.ttf": 11
+ },
+ "font_dir": "C:\\Windows\\Fonts",
+ "pii_source": "Faker (synthetic). No real personal data."
+}

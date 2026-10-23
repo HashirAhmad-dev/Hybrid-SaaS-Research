@@ -23,3 +23,8 @@ evaluation/data/*.csv
 evaluation/data/vlm_cache/
 # Per-model PII CSV variants; the canonical pii_scan_results_v2_real.csv is kept.
 pii_scan_results_v2_*-*.csv
+
+# paper-v2: large preserved baselines, logs, and per-run scratch stay out of git.
+results/**/large/
+logs/
+.venv-paddle/

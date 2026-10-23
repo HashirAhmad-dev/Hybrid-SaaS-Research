@@ -1,0 +1,113 @@
+SUBMISSION: 192
+TITLE: HybridSaaS-Sec: A Scalable Framework for Privacy-Preserving API Monitoring and Multimodal Data Leakage Prevention in Enterprise Cloud Environments
+
+----------------------- REVIEW 1 ---------------------
+
+SUBMISSION: 192
+TITLE: HybridSaaS-Sec: A Scalable Framework for Privacy-Preserving API Monitoring and Multimodal Data Leakage Prevention in Enterprise Cloud Environments
+
+----------- Overall evaluation -----------
+SCORE: -2 (reject)
+----- TEXT:
+This manuscript proposes HybridSaaS-Sec approach for privacy-preserving and multimodal data leakage prevention in enterprise cloud environments. The proposed approach combines an LSTM-based behavioral model, Isolation Forest anomaly detection, a multimodal PII detection pipeline using Presidio, OCR, and a VLM fallback, and a Semantic-Behavioral Risk Score (SBRS) for enforcement decisions.
+
+1: The manuscript is 9 pages long authors should condense the paper to comply with the conference requirements.
+
+2: Figure 1 appears highly schematic and AI-generated in style. The figure should be redesigned in a more professional and publication-quality format.
+
+3: The authors specify PaddleOCR and an on-box INT8 PaliGemma-3B model, but the actual experiments use EasyOCR and hosted Gemma/Qwen models. Therefore, the reported results do not directly validate the proposed architecture.
+
+4: The claimed real-time performance is not demonstrated. The design goal is 300 ms, but the reported OCR and VLM latencies are approximately 2.5–2.8 s and 3.1 seconds on Pgae 7, respectively. This is inconsistent with the real-time enforcement claim.
+
+5: The federated learning component is presented as part of the proposed approach, but it's not implemented and evaluated. It remains a design proposal and is left for future work, which weakens the completeness of the authors claims.
+
+6: The manuscript contains several inconsistencies between the proposed design, actual implementation, experimental setup, and claimed practical benefits. These issues should be thoroughly checked and resolved before the work can be considered technically complete.
+
+
+----------------------- REVIEW 2 ---------------------
+
+SUBMISSION: 192
+TITLE: HybridSaaS-Sec: A Scalable Framework for Privacy-Preserving API Monitoring and Multimodal Data Leakage Prevention in Enterprise Cloud Environments
+
+----------- Overall evaluation -----------
+SCORE: -1 (weak reject)
+----- TEXT:
+In this paper, the authors propose HybridSaaS-Sec for monitoring SaaS API traffic and preventing multimodal data leakage. The proposed framework combines LSTM, Isolation Forest, Presidio, OCR, and a Vision-Language Model. A federated-learning module is also proposed for privacy-preserving multi-tenant training.
+
+
+• The authors should revise the SBRS formulation and improve slow-insider detection. Equation (3) multiplies content sensitivity by behavioral anomaly to calculate SBRS. Consequently, when S is zero or very low, even highly abnormal behavior produces a negligible risk score. The authors should justify the multiplicative formulation and compare it with additive, maximum-based, and independently gated fusion strategies.
+• The proposed and evaluated components should be associated. The federated-learning and differential-privacy claims should either be experimentally validated or removed from the main contributions. The authors should also report clear dataset splits, repeated experiments, confidence intervals, confusion matrices, and consistently defined evaluation metrics.
+• The authors mentioned about federated learning as a major privacy-preserving contribution, but Fedlearning is neither employed nor evaluated. Equation (4) only reproduces the standard FedAvg rule and does not demonstrate an original or operational federated solution.
+
+
+----------------------- REVIEW 3 ---------------------
+
+SUBMISSION: 192
+TITLE: HybridSaaS-Sec: A Scalable Framework for Privacy-Preserving API Monitoring and Multimodal Data Leakage Prevention in Enterprise Cloud Environments
+
+----------- Overall evaluation -----------
+SCORE: 2 (accept)
+----- TEXT:
+The paper introduces interesting, highly relevant hybrid architecture for SaaS API monitoring that blends multimodal document analysis with anomaly detection. However, the current draft presents a significant disconnect between the architecture proposed and the implementation evaluated, leaving core claims about latency, privacy, and deployment readiness without empirical support. The paper has the following major concerns
+The architecture's viability hinges on an on-box, low-latency pipeline utilizing PaddleOCR and a quantized PaliGemma-3B VLM. Yet, due to hardware constraints, the evaluation substituted EasyOCR on a CPU and hosted VLM APIs (gemma-3-4b-it and Qwen2.5-VL-72B). Consequently, the 300 ms latency target and the privacy-preserving, on-device processing design are not empirically validated. Future iterations must evaluate the intended models on the target hardware to substantiate throughput and resource consumption claims.
+Unsubstantiated Contribution Claims The manuscript details a Federated Learning module (Section VII) and an analyst-usability study (Section VI-D) while explicitly stating neither was actually implemented or conducted. While these are excellent concepts for future work, they should not be framed as validated contributions of the current paper.
+
+Reliance on Synthetic Data The evaluation relies exclusively on a synthetic 50-user simulation and 120 Faker-generated documents. While synthetic data is fine for an initial proof of concept, it is insufficient to prove robustness in a chaotic, real-world enterprise SaaS environment.
+
+The Abstract incorrectly expands PII as "Pipeline of Perceptual Intelligence," while the Introduction correctly defines it as "personally identifiable information".
+Section I contains a typo: "Cloud Access Security Braker" (should be Broker).
+
+
+----------------------- REVIEW 4 ---------------------
+
+SUBMISSION: 192
+TITLE: HybridSaaS-Sec: A Scalable Framework for Privacy-Preserving API Monitoring and Multimodal Data Leakage Prevention in Enterprise Cloud Environments
+
+----------- Overall evaluation -----------
+SCORE: 0 (borderline paper)
+----- TEXT:
+(1) Overview of the contributions claimed by the authors
+The authors propose HybridSaaS-Sec, a framework designed to monitor enterprise SaaS API traffic for data leakage and anomalous behavior. The key contributions claimed are:
+Hybrid Anomaly Detection Engine: A system combining an LSTM (to learn per-user temporal baselines) and an Isolation Forest (to detect structural, multi-dimensional outliers) to reduce false positives in bursty but legitimate workloads.
+Multimodal PII Detection Pipeline: A three-branch, cost-ordered pipeline (Deterministic NLP
+→
+→ OCR
+→
+→ Vision-Language Model fallback) designed to detect PII in text, scanned, and handwritten documents.
+Semantic-Behavioral Risk Score (SBRS): A fused scoring mechanism that multiplies content sensitivity with behavioral anomaly scores to drive graduated, context-aware enforcement actions.
+Federated Learning Architecture: A proposed module for cross-tenant model training that preserves data sovereignty by avoiding the centralization of raw logs.
+(2) Justify your decision made on the paper by giving concrete reasons
+Decision: Borderline / Major Revision
+Strengths:
+Commendable Academic Honesty: The authors are exceptionally transparent about their system's failures and limitations (e.g., the broken cost rationale of the cascade, the inability to detect slow insider drift, and the platform-forced substitutions). This level of candor is rare and highly valuable to the research community.
+Relevant Problem Space: Addressing the blind spots of traditional DLP and CASB solutions in modern SaaS environments—particularly regarding visual PII and API-level telemetry—is highly relevant and timely.
+Solid Theoretical Design: The multiplicative SBRS formula and the hybrid LSTM/Isolation Forest pairing are well-motivated, logically sound, and effectively address the univariate limitations of baselines like EWMA.
+Weaknesses:
+Invalidated Core Premises: The empirical results explicitly invalidate two major design goals. First, the accuracy-maximizing OCR threshold (
+τ
+≈
+0.98
+τ≈0.98) routes nearly all documents to the expensive VLM, destroying the cost-efficiency rationale of the cascade. Second, the 300ms real-time latency budget is missed by orders of magnitude (taking seconds) due to hardware constraints.
+Gap Between Proposed and Evaluated System: The evaluated system uses EasyOCR and hosted API calls for VLMs instead of the proposed on-box PaddleOCR and quantized PaliGemma-3B. The paper currently presents the evaluation as a validation of the architecture, but it is actually a validation of a constrained proxy.
+Synthetic Evaluation: Both the behavioral simulation (50 synthetic users) and the PII corpus (120 synthetic documents with font-rendered handwriting) are entirely synthetic. This severely limits the ecological validity of the claims for real enterprise environments.
+Unimplemented Components: The Federated Learning module is purely theoretical and was neither built nor evaluated, yet it is presented alongside empirical contributions.
+(3) Describe the changes that must be made by the authors in the camera-ready paper
+To prepare this paper for publication, the authors must align their claims with their empirical reality and clarify the boundaries of their evaluation. The following changes are mandatory:
+Revise Abstract and Introduction Claims: Remove or heavily qualify claims regarding "cost-efficient" cascading and "real-time (300ms)" enforcement. The abstract must explicitly state that the current cascade design forces a strict trade-off between cost and accuracy, and that the latency goals were not met in the evaluated environment.
+Clarify Architecture vs. Evaluation: Clearly distinguish between the proposed target architecture and the evaluated proxy system. In Sections IV and VI, explicitly state that the latency and cost figures reflect platform-forced substitutions (hosted APIs, EasyOCR) and do not represent the performance of the intended on-box design.
+Restructure the Federated Learning Section: Move Section VII (Federated Learning) to a "Future Work" or "Architectural Vision" subsection. Clearly state that it was not implemented or evaluated in this study to prevent misleading the reader.
+Address the Slow Insider Drift Blind Spot: In the Discussion/Limitations section, expand on the "slow insider drift" failure. Since the authors note that a supervised probe can detect it, propose a concrete architectural fix (e.g., a dual-threshold scheme or a secondary dedicated detector) rather than leaving it purely as an open problem.
+Expand Threats to Validity (Synthetic Data): Add a dedicated subsection discussing the limitations of using entirely synthetic data and font-rendered handwriting. Temper the generalizability claims and explicitly state that real-world enterprise traffic and genuine handwritten samples may yield different results.
+Refine the Cost-Rationale Conclusion: In Section VI-F, explicitly conclude that the current cascade design cannot simultaneously achieve maximum accuracy and cost-efficiency. Propose specific future research directions to resolve this (e.g., training a lightweight router model to predict VLM necessity, or utilizing smaller, faster VLMs).
+
+
+----------------------- REVIEW 5 ---------------------
+
+SUBMISSION: 192
+TITLE: HybridSaaS-Sec: A Scalable Framework for Privacy-Preserving API Monitoring and Multimodal Data Leakage Prevention in Enterprise Cloud Environments
+
+----------- Overall evaluation -----------
+SCORE: 1 (weak accept)
+----- TEXT:
+This paper presents a privacy-aware SaaS security framework that combines API-level monitoring, LSTM-based behavioral modeling, Isolation Forest anomaly detection, multimodal PII detection, and a semantic-behavioral risk scoring mechanism for enterprise cloud environments. The work addresses an important and timely problem, namely the limitations of traditional SaaS DLP systems in detecting multimodal data leakage and distinguishing benign bursts from malicious exfiltration, and the proposed architecture is clearly described with a well-motivated design rationale. The strongest aspect of the paper is its honest and detailed empirical evaluation, which not only reports improvements such as reducing false positives compared to an EWMA baseline and extending PII detection to scanned and handwritten content, but also openly discusses important limitations, including poor detection of slow insider drift, latency challenges arising from platform constraints, and the trade-off betwe
+en accuracy and computational cost in the OCR-VLM cascade. While the individual technical components are largely based on existing methods and the federated learning module remains architectural rather than implemented, the overall integration is coherent, practically relevant, and supported by a more rigorous evaluation than many systems papers in this area. The camera-ready version should strengthen comparisons with state-of-the-art SaaS security and DLP solutions, further justify the use of synthetic datasets, provide more discussion of real-world deployment considerations, and better quantify the utility and privacy implications of the proposed federated component, which currently remains future work. Overall, despite limited algorithmic novelty, the paper offers a useful systems contribution with transparent evaluation and practical insights that make it worthy of acceptance.
