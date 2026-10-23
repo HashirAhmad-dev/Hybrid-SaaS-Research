@@ -1,0 +1,4 @@
+{
+  "_comment": "Data-generation seeds for paper-v2 task T1.4. Fixed before any multi-seed result was seen. 42, 7 and 2024 are the seeds of the original training-seed study; the other seven were chosen once, in order, and are never changed or filtered. For each seed the dataset is regenerated AND the models are retrained with the same seed.",
+  "data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]
+}

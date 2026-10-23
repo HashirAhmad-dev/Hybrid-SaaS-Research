@@ -1,0 +1,68 @@
+[1/8] 25,200 grid rows | hours 0..503 | FIT<264  CALIB[288,352)  VAL/TEST from 352
+[2/8] global scaler fitted on 8,557 FIT sessions; per-user frames for 50 users
+[3/8] training LSTM(hidden=128) on 12,050 windows (val 3,800) - unsupervised next-step prediction, labels never used
+    epoch  1/20  val_mse=0.62951  *
+    epoch  2/20  val_mse=0.61959  *
+    epoch  3/20  val_mse=0.61353  *
+    epoch  4/20  val_mse=0.61035  *
+    epoch  5/20  val_mse=0.60651  *
+    epoch  6/20  val_mse=0.60405  *
+    epoch  7/20  val_mse=0.60215  *
+    epoch  8/20  val_mse=0.60262
+    epoch  9/20  val_mse=0.59835  *
+    epoch 10/20  val_mse=0.59669  *
+    epoch 11/20  val_mse=0.59482  *
+    epoch 12/20  val_mse=0.59392  *
+    epoch 13/20  val_mse=0.59415
+    epoch 14/20  val_mse=0.59219  *
+    epoch 15/20  val_mse=0.59246
+    epoch 16/20  val_mse=0.59161  *
+    epoch 17/20  val_mse=0.59266
+    epoch 18/20  val_mse=0.59070  *
+    epoch 19/20  val_mse=0.59014  *
+    epoch 20/20  val_mse=0.59279
+[4/8] encoded 15,406 scoreable sessions (840 active sessions dropped: <24 h of history)
+[5/8] memory banks built (mean 154 encodings/user, top-10 cosine)
+[6/8] IsolationForest fitted on 8,557 FIT sessions (contains unlabelled contamination, as in deployment)
+[7/8] tuned on VAL -> tau_ewma=1.25 (F1=0.117) | alpha=0.80 tau_hybrid=0.77 (F1=0.641)
+      insider-oriented op (val FPR<=5%): alpha=0.90 tau=0.42 val_malicious_recall=0.510
+[8/8] TEST: 2,324 sessions, 95 positives
+
+========================================================================
+TEST  n=2,324  pos=95  neg=2229
+------------------------------------------------------------------------
+detector                        FPR   recall     prec       F1
+EWMA (tuned tau)             0.1288   0.2632   0.0801   0.1229
+EWMA (legacy tau=2.0)        0.0781   0.2211   0.1077   0.1448
+LSTM only                    0.0085   0.4526   0.6935   0.5478
+IsolationForest only         0.0031   0.4947   0.8704   0.6309
+HYBRID                       0.0036   0.4842   0.8519   0.6174
+------------------------------------------------------------------------
+Enforcement bands (SBRS -> action):
+  hybrid ALERT+BLOCK       F1=0.4863  FPR=0.0440  rec=0.6526
+  hybrid BLOCK only        F1=0.4966  FPR=0.0076  rec=0.3895
+  EWMA base_action BLOCK   F1=0.1229  FPR=0.1288  rec=0.2632
+------------------------------------------------------------------------
+Insider-oriented op (val-selected, alpha=0.90 tau=0.42):
+  TEST FPR=0.0408  F1=0.4754  malicious_recall=0.229  benign_burst_flag_rate=0.037
+------------------------------------------------------------------------
+Test AUC (vs all negatives): lstm=0.872  if=0.783  hybrid=0.868
+Per-class recall (hybrid, window level):
+  malicious_insider        0.021 [0.00,0.11] n=48   ep=0.167 (EWMA 0.167)  AUC L/I/H=0.75/0.57/0.74
+  compromised_account      0.941 [0.73,0.99] n=17   ep=1.000 (EWMA 0.824)  AUC L/I/H=1.00/1.00/1.00
+  negligent_insider        0.941 [0.73,0.99] n=17   ep=0.909 (EWMA 0.000)  AUC L/I/H=0.99/1.00/1.00
+  overscoped_thirdparty    1.000 [0.77,1.00] n=13   ep=1.000 (EWMA 0.231)  AUC L/I/H=1.00/1.00/1.00
+------------------------------------------------------------------------
+BENIGN BURST trap:
+  sessions=27  mean activity ratio=7.8x baseline
+  EWMA flags   85.2%   (legacy tau: 63.0%)
+  HYBRID flags 0.0%   actions={'PERMIT': 27}
+  ordinary-negative FPR: EWMA 12.0%  hybrid 0.4%
+------------------------------------------------------------------------
+Latency/call: mean=23.40 ms  p50=22.81  p95=28.51  p99=35.69  (n=500)
+========================================================================
+
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_2024\run\anomaly_detection_comparison_v2_real.csv
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_2024\run\scored_all_splits.csv
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_2024\run\metrics.json
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_2024\run\artifacts

@@ -1,0 +1,35 @@
+val: 2438 sessions (90 threats) | test: 2263 sessions (93 threats)  [scored once]
+
+[joint S x A on val] mean A by (threat class):
+  normal benign   n=2319  S mean= 46.5  A mean=0.066
+  benign burst    n=29    S mean= 13.2  A mean=0.265
+  THREAT          n=90    S mean= 64.2  A mean=0.526
+
+[beta] val AUC(SBRS vs threat): max=0.8981 at beta=20.0; knee (>=99% of max) = beta=8.0
+[bands] derived on val: t_alert=1.799  t_block=3.844 (val flagged-F1=0.482)
+        benign SBRS: p50=0.570 p90=1.355 p99=3.084
+        threat SBRS: p10=0.689 p50=3.497 p90=6.595
+
+==========================================================================
+TEST enforcement (n=2263, 93 threats) - before vs after
+--------------------------------------------------------------------------
+config                               enfF1  ALERT+BLK%   BLOCK% benignFlag%
+OLD  beta=0.5 bands 0.20/0.60        0.092       85.0%    41.0%       84.4%
+DOC  beta=0.5 bands 0.50/1.00        0.142       48.7%     2.2%       46.8%
+NEW  beta=8.0 bands 1.80/3.84        0.520        7.8%     2.4%        4.9%
+--------------------------------------------------------------------------
+benign-burst ALERT+BLOCK rate: old 26%  ->  new 0%
+threats let through (PERMIT): old 0%  ->  new 25%
+--------------------------------------------------------------------------
+NEW per-class test recall (ALERT+BLOCK | BLOCK):
+  malicious_insider      n=44   50% |  23%
+  compromised_account    n=20  100% | 100%
+  negligent_insider      n=17  100% |  76%
+  overscoped_thirdparty  n=12   92% |  33%
+==========================================================================
+
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_777\run\sbrs_calibration.json
+
+Apply to backend/risk_orchestrator.py:
+    DEFAULT_BETA = 8.0
+    SBRS_BANDS = [(3.84, 'HIGH-RISK', 'BLOCK'), (1.80, 'SENSITIVE', 'ALERT'), (0.00, 'SAFE', 'PERMIT')]

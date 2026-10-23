@@ -1,0 +1,68 @@
+[1/8] 25,200 grid rows | hours 0..503 | FIT<264  CALIB[288,352)  VAL/TEST from 352
+[2/8] global scaler fitted on 8,588 FIT sessions; per-user frames for 50 users
+[3/8] training LSTM(hidden=128) on 12,050 windows (val 3,800) - unsupervised next-step prediction, labels never used
+    epoch  1/20  val_mse=0.61376  *
+    epoch  2/20  val_mse=0.60727  *
+    epoch  3/20  val_mse=0.60431  *
+    epoch  4/20  val_mse=0.60231  *
+    epoch  5/20  val_mse=0.59994  *
+    epoch  6/20  val_mse=0.59676  *
+    epoch  7/20  val_mse=0.59748
+    epoch  8/20  val_mse=0.59639  *
+    epoch  9/20  val_mse=0.59734
+    epoch 10/20  val_mse=0.59561  *
+    epoch 11/20  val_mse=0.59646
+    epoch 12/20  val_mse=0.59678
+    epoch 13/20  val_mse=0.59609
+    epoch 14/20  val_mse=0.59422  *
+    epoch 15/20  val_mse=0.59552
+    epoch 16/20  val_mse=0.59545
+    epoch 17/20  val_mse=0.59454
+    epoch 18/20  val_mse=0.59689
+    epoch 19/20  val_mse=0.59435
+    epoch 20/20  val_mse=0.59499
+[4/8] encoded 15,461 scoreable sessions (836 active sessions dropped: <24 h of history)
+[5/8] memory banks built (mean 155 encodings/user, top-10 cosine)
+[6/8] IsolationForest fitted on 8,588 FIT sessions (contains unlabelled contamination, as in deployment)
+[7/8] tuned on VAL -> tau_ewma=2.50 (F1=0.116) | alpha=0.25 tau_hybrid=0.75 (F1=0.690)
+      insider-oriented op (val FPR<=5%): alpha=0.85 tau=0.39 val_malicious_recall=0.348
+[8/8] TEST: 2,352 sessions, 96 positives
+
+========================================================================
+TEST  n=2,352  pos=96  neg=2256
+------------------------------------------------------------------------
+detector                        FPR   recall     prec       F1
+EWMA (tuned tau)             0.0581   0.1458   0.0966   0.1162
+EWMA (legacy tau=2.0)        0.0754   0.1458   0.0761   0.1000
+LSTM only                    0.0075   0.2500   0.5854   0.3504
+IsolationForest only         0.0004   0.4688   0.9783   0.6338
+HYBRID                       0.0000   0.4583   1.0000   0.6286
+------------------------------------------------------------------------
+Enforcement bands (SBRS -> action):
+  hybrid ALERT+BLOCK       F1=0.4754  FPR=0.0399  rec=0.6042
+  hybrid BLOCK only        F1=0.3969  FPR=0.0040  rec=0.2708
+  EWMA base_action BLOCK   F1=0.1162  FPR=0.0581  rec=0.1458
+------------------------------------------------------------------------
+Insider-oriented op (val-selected, alpha=0.85 tau=0.39):
+  TEST FPR=0.0488  F1=0.4511  malicious_recall=0.294  benign_burst_flag_rate=0.370
+------------------------------------------------------------------------
+Test AUC (vs all negatives): lstm=0.859  if=0.795  hybrid=0.827
+Per-class recall (hybrid, window level):
+  malicious_insider        0.020 [0.00,0.10] n=51   ep=0.167 (EWMA 0.039)  AUC L/I/H=0.74/0.61/0.67
+  compromised_account      1.000 [0.77,1.00] n=13   ep=1.000 (EWMA 0.462)  AUC L/I/H=0.98/1.00/1.00
+  negligent_insider        0.889 [0.67,0.97] n=18   ep=1.000 (EWMA 0.167)  AUC L/I/H=0.99/1.00/1.00
+  overscoped_thirdparty    1.000 [0.78,1.00] n=14   ep=1.000 (EWMA 0.214)  AUC L/I/H=0.99/1.00/1.00
+------------------------------------------------------------------------
+BENIGN BURST trap:
+  sessions=27  mean activity ratio=7.6x baseline
+  EWMA flags   59.3%   (legacy tau: 66.7%)
+  HYBRID flags 0.0%   actions={'PERMIT': 27}
+  ordinary-negative FPR: EWMA 5.2%  hybrid 0.0%
+------------------------------------------------------------------------
+Latency/call: mean=17.25 ms  p50=17.29  p95=19.47  p99=21.29  (n=500)
+========================================================================
+
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_42\run\anomaly_detection_comparison_v2_real.csv
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_42\run\scored_all_splits.csv
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_42\run\metrics.json
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_42\run\artifacts

@@ -1,0 +1,68 @@
+[1/8] 25,200 grid rows | hours 0..503 | FIT<264  CALIB[288,352)  VAL/TEST from 352
+[2/8] global scaler fitted on 8,498 FIT sessions; per-user frames for 50 users
+[3/8] training LSTM(hidden=128) on 12,050 windows (val 3,800) - unsupervised next-step prediction, labels never used
+    epoch  1/20  val_mse=0.62368  *
+    epoch  2/20  val_mse=0.61473  *
+    epoch  3/20  val_mse=0.61231  *
+    epoch  4/20  val_mse=0.61167  *
+    epoch  5/20  val_mse=0.60817  *
+    epoch  6/20  val_mse=0.60771  *
+    epoch  7/20  val_mse=0.60503  *
+    epoch  8/20  val_mse=0.60429  *
+    epoch  9/20  val_mse=0.60413  *
+    epoch 10/20  val_mse=0.60288  *
+    epoch 11/20  val_mse=0.60221  *
+    epoch 12/20  val_mse=0.60278
+    epoch 13/20  val_mse=0.60308
+    epoch 14/20  val_mse=0.60296
+    epoch 15/20  val_mse=0.60154  *
+    epoch 16/20  val_mse=0.60300
+    epoch 17/20  val_mse=0.60240
+    epoch 18/20  val_mse=0.60271
+    epoch 19/20  val_mse=0.60490
+    epoch 20/20  val_mse=0.60481
+[4/8] encoded 15,292 scoreable sessions (864 active sessions dropped: <24 h of history)
+[5/8] memory banks built (mean 153 encodings/user, top-10 cosine)
+[6/8] IsolationForest fitted on 8,498 FIT sessions (contains unlabelled contamination, as in deployment)
+[7/8] tuned on VAL -> tau_ewma=1.50 (F1=0.112) | alpha=0.20 tau_hybrid=0.75 (F1=0.672)
+      insider-oriented op (val FPR<=5%): alpha=1.00 tau=0.31 val_malicious_recall=0.190
+[8/8] TEST: 2,299 sessions, 100 positives
+
+========================================================================
+TEST  n=2,299  pos=100  neg=2199
+------------------------------------------------------------------------
+detector                        FPR   recall     prec       F1
+EWMA (tuned tau)             0.1123   0.1900   0.0714   0.1038
+EWMA (legacy tau=2.0)        0.0814   0.1200   0.0628   0.0825
+LSTM only                    0.0073   0.4300   0.7288   0.5409
+IsolationForest only         0.0036   0.5400   0.8710   0.6667
+HYBRID                       0.0023   0.5300   0.9138   0.6709
+------------------------------------------------------------------------
+Enforcement bands (SBRS -> action):
+  hybrid ALERT+BLOCK       F1=0.4692  FPR=0.0450  rec=0.6100
+  hybrid BLOCK only        F1=0.4967  FPR=0.0068  rec=0.3800
+  EWMA base_action BLOCK   F1=0.1038  FPR=0.1123  rec=0.1900
+------------------------------------------------------------------------
+Insider-oriented op (val-selected, alpha=1.00 tau=0.31):
+  TEST FPR=0.0546  F1=0.5135  malicious_recall=0.467  benign_burst_flag_rate=0.344
+------------------------------------------------------------------------
+Test AUC (vs all negatives): lstm=0.883  if=0.781  hybrid=0.847
+Per-class recall (hybrid, window level):
+  malicious_insider        0.000 [0.00,0.08] n=45   ep=0.000 (EWMA 0.200)  AUC L/I/H=0.75/0.51/0.66
+  compromised_account      1.000 [0.82,1.00] n=18   ep=1.000 (EWMA 0.444)  AUC L/I/H=1.00/1.00/1.00
+  negligent_insider        0.889 [0.67,0.97] n=18   ep=1.000 (EWMA 0.000)  AUC L/I/H=0.99/1.00/1.00
+  overscoped_thirdparty    1.000 [0.83,1.00] n=19   ep=1.000 (EWMA 0.105)  AUC L/I/H=0.99/1.00/1.00
+------------------------------------------------------------------------
+BENIGN BURST trap:
+  sessions=32  mean activity ratio=8.7x baseline
+  EWMA flags   65.6%   (legacy tau: 59.4%)
+  HYBRID flags 0.0%   actions={'PERMIT': 32}
+  ordinary-negative FPR: EWMA 10.4%  hybrid 0.2%
+------------------------------------------------------------------------
+Latency/call: mean=22.74 ms  p50=22.52  p95=24.98  p99=26.79  (n=500)
+========================================================================
+
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_314\run\anomaly_detection_comparison_v2_real.csv
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_314\run\scored_all_splits.csv
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_314\run\metrics.json
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_314\run\artifacts

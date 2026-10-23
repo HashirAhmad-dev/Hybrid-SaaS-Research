@@ -31,8 +31,11 @@ Stage "baseline_manifest"  @("-m", "tools.ingest_baseline")
 Stage "generate_s42"       @("-m", "evaluation.generate_sessions", "--seed", "42")
 Stage "train_s42"          @("-m", "evaluation.train_and_evaluate", "--seed", "42")
 Stage "calibrate_sbrs"     @("-m", "evaluation.calibrate_sbrs")
-# Later paper-v2 stages (multi-seed datasets, ablation, statistics, PII) are
-# appended below as their tasks land.
+if (-not $Quick) {
+    # T1.4: 10 independently generated datasets (seeds in evaluation\config\seeds.json), ~13 min
+    Stage "multiseed"      @("-m", "evaluation.multiseed")
+}
+# Later paper-v2 stages (ablation, statistics, PII) are appended below as their tasks land.
 
 Stage "check_numbers"      @("tools\check_numbers.py", "results\claims", "--quiet")
 Write-Host ("reproduce.ps1 finished in {0:N1} min" -f ((Get-Date) - $t0).TotalMinutes)

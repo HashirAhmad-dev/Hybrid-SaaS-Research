@@ -1,0 +1,18 @@
+[1/5] profiles: 50 users
+[2/5] simulating 21 days x 24 h of normal behaviour ...
+[3/5] injecting attack episodes + benign-burst traps ...
+[4/5] deriving causal features ...
+[5/5] writing artefacts ...
+
+  grid rows        : 25,200
+  active sessions  : 16,223
+  positives        : 652 (4.02% of sessions)
+  benign bursts    : 183 (labelled NEGATIVE)
+  by threat class  : {'malicious_insider': 316, 'compromised_account': 123, 'negligent_insider': 115, 'overscoped_thirdparty': 98}
+  train sessions=11,392  pos= 454  benign_burst=125
+  val   sessions= 2,507  pos=  98  benign_burst= 29
+  test  sessions= 2,324  pos= 100  benign_burst= 29
+
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_13\data\sessions_raw.csv
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_13\data\user_profiles.csv
+  -> C:\Users\loons\Documents\GitHub\SDA-Research-Project\results\runs\data_seed_13\data\generation_config.json

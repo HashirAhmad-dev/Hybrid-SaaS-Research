@@ -1,0 +1,102 @@
+{
+  "args": {
+    "n_users": 50,
+    "days": 21,
+    "seed": 42,
+    "start": "2026-04-01 00:00:00",
+    "n_malicious": 38,
+    "n_compromised": 60,
+    "n_negligent": 72,
+    "n_overscoped": 34,
+    "n_benign_burst": 96,
+    "out_dir": "results\\runs\\repro_s42\\data"
+  },
+  "episode_plan": {
+    "malicious_insider": 38,
+    "compromised_account": 60,
+    "negligent_insider": 72,
+    "overscoped_thirdparty": 34,
+    "benign_burst": 96
+  },
+  "realised": {
+    "grid_rows": 25200,
+    "active_sessions": 16297,
+    "positive_sessions": 641,
+    "positive_rate": 0.03933239246487084,
+    "benign_burst_sessions": 185,
+    "by_threat_class": {
+      "malicious_insider": 310,
+      "compromised_account": 120,
+      "negligent_insider": 110,
+      "overscoped_thirdparty": 101
+    },
+    "episodes": {
+      "malicious_insider": 39,
+      "compromised_account": 60,
+      "negligent_insider": 72,
+      "overscoped_thirdparty": 34,
+      "benign_burst": 95
+    },
+    "per_split": {
+      "train": {
+        "sessions": 11429,
+        "positives": 450,
+        "benign_bursts": 128,
+        "by_class": {
+          "malicious_insider": 213,
+          "compromised_account": 92,
+          "overscoped_thirdparty": 73,
+          "negligent_insider": 72
+        }
+      },
+      "val": {
+        "sessions": 2516,
+        "positives": 95,
+        "benign_bursts": 30,
+        "by_class": {
+          "malicious_insider": 46,
+          "negligent_insider": 20,
+          "compromised_account": 15,
+          "overscoped_thirdparty": 14
+        }
+      },
+      "test": {
+        "sessions": 2352,
+        "positives": 96,
+        "benign_bursts": 27,
+        "by_class": {
+          "malicious_insider": 51,
+          "negligent_insider": 18,
+          "overscoped_thirdparty": 14,
+          "compromised_account": 13
+        }
+      }
+    }
+  },
+  "provenance": {
+    "script": "evaluation/generate_sessions.py",
+    "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\generate_sessions.py --out-dir results/runs/repro_s42/data",
+    "seeds": {
+      "data": 42
+    },
+    "date_utc": "2026-10-23T11:11:44+00:00",
+    "git_hash": "7cc820dd534613204ea3809b8caaa447e922c7fe",
+    "git_dirty": true,
+    "python": "3.14.4",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "libraries": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.18.0",
+      "torch": "2.13.0",
+      "presidio_analyzer": "2.2.363",
+      "spacy": "3.8.13",
+      "easyocr": "1.7.2",
+      "Faker": "40.28.1",
+      "pillow": "12.2.0",
+      "openai": "2.44.0"
+    },
+    "device": null
+  }
+}

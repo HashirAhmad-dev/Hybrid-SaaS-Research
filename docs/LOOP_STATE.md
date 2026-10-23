@@ -2,19 +2,19 @@
 
 After any restart or context compaction: re-read CLAUDE.md, this file and docs/FIXES_SUMMARY.md first.
 
-- Iteration: 3
-- Current task: T1.4
-- Last evidence path: logs/reproduce_*.log, results/runs/repro_s42/
+- Iteration: 4
+- Current task: T1.5
+- Last evidence path: results/multiseed_summary.csv, logs/t1.4_rerun_seed7.log
 - Open gates: none yet (Q-001..Q-003 in OPEN_QUESTIONS.md are asked when their tasks are reached)
 - Python for all project commands: `.venv/Scripts/python.exe` (PowerShell: `.venv\Scripts\python.exe`), with `PYTHONUTF8=1`
 
 ## Current plan (three lines)
-- Goal: T1.4 regenerate the dataset for 10 data seeds (42, 7, 2024 + 7 fixed in config), retrain, evaluate; report mean and spread.
-- Smallest change: evaluation/multiseed.py that loops generate+train into results/runs/data_seed_<s>/ and summarises from the manifest; seeds in evaluation/config/seeds.json.
-- Verify: run twice for one seed identical; summary mean/sd hand-checked; reproduce stage added; check_numbers passes.
+- Goal: T1.5 pytest for SBRS, metrics, matching, validation-only selection (H-R4), splits; wire selection.py into train/calibrate.
+- Smallest change: tests/ (already drafted, 74 pass); replace inline selectors in train_and_evaluate.py and calibrate_sbrs.py with evaluation/selection.py calls that pass split labels.
+- Verify: pytest; reproduce quick gives identical s42 numbers; selector guard tests fail on test rows.
 
 ## Next action
-Start T1.4.
+Start T1.5.
 
 ## Status table
 
@@ -24,7 +24,7 @@ Start T1.4.
 | T1.1 | M | DONE | |
 | T1.2 | M | DONE | |
 | T1.3 | M | DONE | |
-| T1.4 | M | PENDING | |
+| T1.4 | M | DONE | |
 | T1.5 | M | PENDING | |
 | T2.1 | M | PENDING | |
 | T2.2 | M | PENDING | |

@@ -1,0 +1,28 @@
+# T1.4: mean (sample sd) over 10 independently generated datasets, keys anomaly.multiseed.*
+Hybrid F1 mean | anomaly.multiseed.f1_hybrid.mean | 0.635
+Hybrid F1 sd | anomaly.multiseed.f1_hybrid.sd | 0.049
+IF-only F1 mean | anomaly.multiseed.f1_if_only.mean | 0.622
+IF-only F1 sd | anomaly.multiseed.f1_if_only.sd | 0.060
+LSTM-only F1 mean | anomaly.multiseed.f1_lstm_only.mean | 0.502
+EWMA F1 mean | anomaly.multiseed.f1_ewma_tuned.mean | 0.106
+AUC LSTM mean | anomaly.multiseed.auc_lstm.mean | 0.869
+AUC IF mean | anomaly.multiseed.auc_if.mean | 0.779
+AUC hybrid mean | anomaly.multiseed.auc_hybrid.mean | 0.821
+alpha mean | anomaly.multiseed.alpha.mean | 0.235
+alpha min | anomaly.multiseed.alpha.min | 0
+alpha max | anomaly.multiseed.alpha.max | 0.80
+Enforcement F1 shipped bands mean | anomaly.multiseed.enf_f1_shipped_bands.mean | 0.441
+Enforcement F1 shipped bands sd | anomaly.multiseed.enf_f1_shipped_bands.sd | 0.060
+Enforcement FPR shipped bands mean | anomaly.multiseed.enf_fpr_shipped_bands.mean | 0.0445
+Enforcement F1 recalibrated mean | anomaly.multiseed.enf_f1_recalibrated.mean | 0.438
+Recalibrated beta min | anomaly.multiseed.sbrs_beta_recalibrated.min | 2.0
+Recalibrated beta max | anomaly.multiseed.sbrs_beta_recalibrated.max | 8.0
+Malicious insider window recall mean | anomaly.multiseed.recall_malicious_insider.mean | 0.029
+Malicious insider episode recall mean | anomaly.multiseed.episode_recall_malicious_insider.mean | 0.133
+Malicious insider AUC LSTM mean | anomaly.multiseed.auc_lstm_malicious_insider.mean | 0.744
+Malicious insider AUC IF mean | anomaly.multiseed.auc_if_malicious_insider.mean | 0.551
+Benign burst flag rate EWMA mean | anomaly.multiseed.benign_burst_flag_rate_ewma.mean | 0.668
+Benign burst flag rate hybrid mean | anomaly.multiseed.benign_burst_flag_rate_hybrid.mean | 0.015
+Benign burst flag rate hybrid max | anomaly.multiseed.benign_burst_flag_rate_hybrid.max | 0.148
+Insider op malicious recall mean | anomaly.multiseed.insider_op_malicious_recall.mean | 0.323
+Insider op benign burst flag rate mean | anomaly.multiseed.insider_op_benign_burst_flag_rate.mean | 0.324

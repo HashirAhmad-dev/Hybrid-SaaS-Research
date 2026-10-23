@@ -24,6 +24,9 @@ stage baseline_manifest -m tools.ingest_baseline
 stage generate_s42      -m evaluation.generate_sessions --seed 42
 stage train_s42         -m evaluation.train_and_evaluate --seed 42
 stage calibrate_sbrs    -m evaluation.calibrate_sbrs
+if [ "$QUICK" = 0 ]; then
+  stage multiseed       -m evaluation.multiseed   # T1.4, 10 datasets, ~13 min
+fi
 # Later paper-v2 stages are appended here as their tasks land.
 
 stage check_numbers     tools/check_numbers.py results/claims --quiet

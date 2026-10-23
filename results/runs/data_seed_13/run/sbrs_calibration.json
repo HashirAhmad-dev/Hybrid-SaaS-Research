@@ -1,0 +1,185 @@
+{
+ "reused_data": "C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\results\\runs\\data_seed_13\\run\\scored_all_splits.csv",
+ "val_sessions": 2507,
+ "val_threats": 98,
+ "test_sessions": 2324,
+ "test_threats": 100,
+ "beta": {
+  "chosen": 3.0,
+  "criterion": "smallest beta reaching >=99% of max val AUC(SBRS vs threat)",
+  "val_auc_by_beta": {
+   "0.0": 0.6948581425098059,
+   "0.5": 0.7870062097067968,
+   "1.0": 0.8135308918087784,
+   "1.5": 0.8225870672054625,
+   "2.0": 0.8321854270973644,
+   "2.5": 0.8386641082335798,
+   "3.0": 0.842982523021662,
+   "3.5": 0.845341872739133,
+   "4.0": 0.8468879457137775,
+   "4.5": 0.8480358519497463,
+   "5.0": 0.8486712244050796,
+   "6.0": 0.8495480383934396,
+   "8.0": 0.8503634330444506,
+   "10.0": 0.8505688701383418,
+   "12.0": 0.8504036732999551,
+   "14.0": 0.8507806609567862,
+   "16.0": 0.8508823205496395,
+   "18.0": 0.8509924517752306,
+   "20.0": 0.8506408790166129
+  },
+  "val_auc_max": 0.8509924517752306
+ },
+ "bands": {
+  "t_alert": 1.3343439999999989,
+  "t_block": 2.2113680000000002,
+  "derivation": "t_alert=95.0th pctl of benign val SBRS; t_block=99.5th pctl of benign val SBRS"
+ },
+ "test": {
+  "new_calibrated": {
+   "flagged_f1": 0.44961240310077516,
+   "flagged": {
+    "tp": 58,
+    "fp": 100,
+    "fn": 42,
+    "tn": 2124,
+    "precision": 0.3670886075949367,
+    "recall": 0.58,
+    "f1": 0.44961240310077516,
+    "fpr": 0.044964028776978415
+   },
+   "block": {
+    "tp": 29,
+    "fp": 8,
+    "fn": 71,
+    "tn": 2216,
+    "precision": 0.7837837837837838,
+    "recall": 0.29,
+    "f1": 0.4233576642335766,
+    "fpr": 0.0035971223021582736
+   },
+   "auto_alert_or_block_rate": 0.06798623063683305,
+   "auto_block_rate": 0.015920826161790018,
+   "benign_alert_or_block_rate": 0.044964028776978415,
+   "benign_block_rate": 0.0035971223021582736,
+   "threat_permit_rate": 0.42,
+   "n_permit": 2166,
+   "n_alert": 121,
+   "n_block": 37,
+   "benign_burst_alert_or_block_rate": 0.0,
+   "benign_burst_block_rate": 0.0
+  },
+  "old_code_beta0.5_bands0.20_0.60": {
+   "flagged_f1": 0.0940950552088334,
+   "flagged": {
+    "tp": 98,
+    "fp": 1885,
+    "fn": 2,
+    "tn": 339,
+    "precision": 0.049420070600100854,
+    "recall": 0.98,
+    "f1": 0.0940950552088334,
+    "fpr": 0.8475719424460432
+   },
+   "block": {
+    "tp": 80,
+    "fp": 856,
+    "fn": 20,
+    "tn": 1368,
+    "precision": 0.08547008547008547,
+    "recall": 0.8,
+    "f1": 0.15444015444015444,
+    "fpr": 0.38489208633093525
+   },
+   "auto_alert_or_block_rate": 0.8532702237521514,
+   "auto_block_rate": 0.4027538726333907,
+   "benign_alert_or_block_rate": 0.8475719424460432,
+   "benign_block_rate": 0.38489208633093525,
+   "threat_permit_rate": 0.02,
+   "n_permit": 341,
+   "n_alert": 1047,
+   "n_block": 936,
+   "benign_burst_alert_or_block_rate": 0.4827586206896552,
+   "benign_burst_block_rate": 0.0
+  },
+  "doc_beta0.5_bands0.50_1.00": {
+   "flagged_f1": 0.13838550247116968,
+   "flagged": {
+    "tp": 84,
+    "fp": 1030,
+    "fn": 16,
+    "tn": 1194,
+    "precision": 0.07540394973070018,
+    "recall": 0.84,
+    "f1": 0.13838550247116968,
+    "fpr": 0.4631294964028777
+   },
+   "block": {
+    "tp": 24,
+    "fp": 55,
+    "fn": 76,
+    "tn": 2169,
+    "precision": 0.3037974683544304,
+    "recall": 0.24,
+    "f1": 0.2681564245810056,
+    "fpr": 0.02473021582733813
+   },
+   "auto_alert_or_block_rate": 0.4793459552495697,
+   "auto_block_rate": 0.03399311531841653,
+   "benign_alert_or_block_rate": 0.4631294964028777,
+   "benign_block_rate": 0.02473021582733813,
+   "threat_permit_rate": 0.16,
+   "n_permit": 1210,
+   "n_alert": 1035,
+   "n_block": 79,
+   "benign_burst_alert_or_block_rate": 0.0,
+   "benign_burst_block_rate": 0.0
+  }
+ },
+ "test_per_class_recall_new": {
+  "malicious_insider": {
+   "n": 50,
+   "alert_or_block_recall": 0.28,
+   "block_recall": 0.0
+  },
+  "compromised_account": {
+   "n": 18,
+   "alert_or_block_recall": 1.0,
+   "block_recall": 0.7222222222222222
+  },
+  "negligent_insider": {
+   "n": 19,
+   "alert_or_block_recall": 1.0,
+   "block_recall": 0.631578947368421
+  },
+  "overscoped_thirdparty": {
+   "n": 13,
+   "alert_or_block_recall": 0.5384615384615384,
+   "block_recall": 0.3076923076923077
+  }
+ },
+ "provenance": {
+  "script": "evaluation/calibrate_sbrs.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\calibrate_sbrs.py --scored C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\results\\runs\\data_seed_13\\run\\scored_all_splits.csv --out C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\results\\runs\\data_seed_13\\run\\sbrs_calibration.json --manifest-prefix sbrs.ds13",
+  "seeds": {},
+  "date_utc": "2026-10-23T11:22:46+00:00",
+  "git_hash": "327f615556af6e15ac78af169eec2cfbda12d65c",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": null
+ }
+}
