@@ -1,0 +1,104 @@
+--- a/Context/01-Research-Paper/Abstract.md
++++ b/Context/01-Research-Paper/Abstract.md
+@@ -2,7 +2,7 @@
+ 
+ Enterprise data now moves through the APIs of SaaS platforms such as Google Workspace, Microsoft 365, and Salesforce. Most of this traffic is invisible to perimeter firewalls and to legacy Data Loss Prevention (DLP) tools that depend on static signatures and periodic metadata scans.
+ 
+-This paper presents **HybridSaaS-Sec**, a real-time interception architecture built around three components:
++This paper presents **HybridSaaS-Sec**, an inline interception architecture with a two-tier latency budget, built around three components:
+ 1. A **Long Short-Term Memory (LSTM)** network that models each user's temporal behavior.
+ 2. An **Isolation Forest** that flags structural outliers without labeled data.
+ 3. A **multimodal PII pipeline** that escalates from deterministic NLP to OCR and, when OCR confidence is low, to a Vision-Language Model (VLM).
+@@ -11,4 +11,6 @@
+ 
+ We evaluate on a synthetic 50-user enterprise deployment (16,297 active hourly sessions over three weeks, 3.93% injected threats) under a chronological train/validation/test split; every hyper-parameter is chosen on validation and the held-out test split is scored exactly once. On that split the hybrid engine drives the false-positive rate to **0.00%** against **5.81%** for a tuned EWMA baseline, at an anomaly-flag F1 of **0.629**. It suppresses the benign-burst false positive that defeats rate-based detectors: EWMA flags **59.3%** of benign bulk-download bursts, the hybrid engine **0%**. On a 120-document corpus (368 entities, all PII synthesised with Faker) the multimodal pipeline raises entity recall on scanned and handwritten files from **0.00** — a text-only scanner cannot read an image at all — to **0.889** and **0.752**, lifting overall weighted recall from **0.276** to **0.823**. Anomaly scoring costs **16.9 ms** per call.
+ 
+-We also report where the architecture fails. The engine detects compromised accounts, negligent oversharing, and over-scoped third-party applications at 100%, 100%, and 71% recall, but catches only **33%** of slow malicious insiders: drift gradual enough to stay inside a user's own baseline is close to invisible to a per-user temporal model. Enforcement bands re-derived from the validation distribution reach F1 **0.475**, a 5.5x improvement over hand-picked thresholds, and the residual error is dominated by that one unseparable class. A federated learning module lets multiple tenants train shared models without exchanging raw logs.
++We also report where the architecture fails. The engine detects compromised accounts, negligent oversharing, and over-scoped third-party applications at 100%, 100%, and 71% recall, but catches only **33%** of slow malicious insiders: drift gradual enough to stay inside a user's own baseline is close to invisible to a per-user temporal model. Enforcement bands re-derived from the validation distribution reach F1 **0.475**, a 5.5x improvement over hand-picked thresholds, and the residual error is dominated by that one unseparable class. Federated multi-tenant training is future work and was not built.
++
++> **paper-v2 update (2026-10-23).** Numbers on this page from the seed-42 run are superseded by means over 10 independently generated datasets with cluster-bootstrap intervals. See `docs/FIXES_SUMMARY.md` and `docs/CLAIM_EVIDENCE.md`; every number is in `results/manifest.json`.
+--- a/Context/01-Research-Paper/Federated Learning.md
++++ b/Context/01-Research-Paper/Federated Learning.md
+@@ -1,6 +1,8 @@
+-# Federated Learning
++# Federated Learning (future work, not built)
+ 
+-Centralizing raw API logs from legally separate organizations violates data sovereignty requirements. HybridSaaS-Sec uses a federated learning module.
++> Nothing on this page was implemented or evaluated. It is an architectural vision only and is not a contribution of the paper.
++
++Centralizing raw API logs from legally separate organizations violates data sovereignty requirements. A future version could use a federated learning module.
+ 
+ - Each tenant trains a local LSTM on its own API telemetry and computes a weight update.
+ - **Differential privacy noise** is added to clipped gradients before leaving the tenant.
+--- a/Context/01-Research-Paper/Introduction.md
++++ b/Context/01-Research-Paper/Introduction.md
+@@ -14,9 +14,11 @@
+ 1. A hybrid anomaly detection engine that pairs an **LSTM** (user's temporal baseline) with an **Isolation Forest** (structural outliers against the whole organization).
+ 2. A three-branch **multimodal PII pipeline** (Presidio, then high-confidence OCR, then a VLM fallback) for visual/unstructured content.
+ 3. The **Semantic-Behavioral Risk Score (SBRS)**, a fusion metric that ties enforcement decisions to content sensitivity and behavioral history.
+-4. A **federated learning module** for multi-tenant model training without moving raw logs across boundaries.
++4. (Removed from the contributions: federated multi-tenant training was not built; see [[Federated Learning]] as future work.)
+ 5. A **fully executed evaluation** — trained models, timed calls, and a held-out test split scored once — including the negative results: the engine misses 67% of slow malicious insiders, and the OCR routing threshold does not transfer across OCR engines. See [[Evaluation]] and [[Implementation and Reproducibility]].
+ 
+ ## The motivating false positive
+ 
+ A finance team bulk-downloads report templates the day before a quarterly close. Activity rate spikes 7x. A univariate rate model (EWMA) flags it: in our simulation it flags **59.3%** of such benign bursts. The content is low-sensitivity and the burst is structurally ordinary for the organization, so the hybrid engine flags **0%** of them. Every design choice below is in service of telling those two situations apart.
++
++> **paper-v2 update (2026-10-23).** Numbers on this page from the seed-42 run are superseded by means over 10 independently generated datasets with cluster-bootstrap intervals. See `docs/FIXES_SUMMARY.md` and `docs/CLAIM_EVIDENCE.md`; every number is in `results/manifest.json`.
+--- a/Context/01-Research-Paper/Threat Model and Goals.md
++++ b/Context/01-Research-Paper/Threat Model and Goals.md
+@@ -18,7 +18,7 @@
+ | **G2** | Low false positive rate so analysts can manage the queue. | **Met.** Anomaly-flag FPR 0.00% (EWMA 5.81%); 4.0% of benign sessions escalate under the calibrated bands, 0.4% auto-block. |
+ | **G3** | Multimodal content coverage including images, scans, and handwriting. | **Met.** Entity recall 0.000 → 0.889 (scanned) and 0.000 → 0.752 (handwritten). |
+ | **G4** | Privacy by construction: personal traffic is not intercepted; multi-tenant learning never moves raw logs. | Design only; federated learning is not implemented. |
+-| **G5** | Fast enforcement (end-to-end budget < 300 ms). | **Partially.** Anomaly scoring is 16.9 ms and the text PII branch 11.3 ms, comfortably inside budget. The image branches (OCR 2.4 s, VLM 3.5 s as a hosted call) are **not** — they would have to run asynchronously or on-box, as the design intends. |
++| **G5** | Fast enforcement, in two tiers: Tier 1 inline (text PII, behaviour, risk fusion) within a few tens of ms; Tier 2 asynchronous for images, with the upload held. | **Tier 1 met:** measured inside the running proxy over 1,000 warm requests, p50 33.7 ms, p95 40.5 ms, p99 44.6 ms (`latency.tier1.*`). **Tier 2:** hold time p50 3.4 s, p95 5.3 s with EasyOCR on CPU (`latency.tier2.*`). The old single 300 ms end-to-end goal is withdrawn. |
+ 
+ ## Detection coverage per adversary class (measured)
+ 
+--- a/Context/03-Running-the-Demo/REST Endpoints.md
++++ b/Context/03-Running-the-Demo/REST Endpoints.md
+@@ -14,4 +14,6 @@
+ | `GET`  | `/audit/blocked`           | Audit trail of BLOCK enforcement actions |
+ | `GET`  | `/comparison`              | Tidy EWMA vs Hybrid per-event evaluation |
+ 
+-You can use query parameters `alpha` (LSTM weight, default 0.5) and `beta` (enterprise risk multiplier, default 0.5) on `/score` to replay the simulation under different SBRS configurations.
++You can use query parameters `alpha` (LSTM weight; default read from the trained engine, 0.25) and `beta` (enterprise risk multiplier, default 2.5) on `/score` to replay the simulation under different SBRS configurations.
++
++Two-tier endpoints (paper-v2): `POST /tier1/score` (inline decision with per-stage timings and the configured gated enforcement), `POST /tier2/submit` and `GET /tier2/{job_id}` (hold an image upload, scan it asynchronously, then release or escalate). The configuration and the manifest key behind every value are in `backend/config/final_config.json`.
+--- a/Context/01-Research-Paper/Semantic-Behavioral Risk Score (SBRS).md
++++ b/Context/01-Research-Paper/Semantic-Behavioral Risk Score (SBRS).md
+@@ -37,3 +37,7 @@
+ An F1-maximising ALERT threshold was tried and **rejected**: on this imbalanced, partly unseparable data it collapses to 1.75 and permits 66% of threats — useless as a review queue.
+ 
+ Result on the held-out test split: enforcement F1 **0.087 → 0.475**, benign escalation **85.9% → 4.0%**, benign auto-BLOCK **38.9% → 0.4%**. Derivation in `evaluation/SBRS_RECALIBRATION.md`; the constants live in `backend/risk_orchestrator.py` (`DEFAULT_BETA`, `SBRS_BANDS`) and `evaluation/common.py`, which must agree.
++
++## Fusion form comparison (paper-v2, T2.5)
++
++At the same benign budget (ALERT at the 95th, BLOCK at the 99.5th percentile of benign validation scores), across 10 generated datasets: threat recall gated 0.642, additive 0.630, logistic 0.627, multiplicative 0.589, max 0.320. The multiplicative form escalates 1 of 35 threats with low S and high A; gated fusion escalates all 35. The backend now runs gated fusion (escalate when A is at or above the hybrid's validation threshold, whatever S is) and keeps the multiplicative score for reference. The validation knee for beta ranges from 2.0 to 8.0 across datasets, so beta = 2.5 is a property of one dataset, not a constant. Keys: `fusion.summary.*`, `anomaly.multiseed.sbrs_beta_recalibrated.*`.
+--- a/Context/01-Research-Paper/Hybrid Anomaly Engine.md
++++ b/Context/01-Research-Paper/Hybrid Anomaly Engine.md
+@@ -47,3 +47,7 @@
+ ## Serving
+ 
+ Training uses PyTorch. **Inference does not:** the encoder is a single-layer LSTM, so its weights are exported to `evaluation/artifacts/lstm_weights.npz` and the forward pass is unrolled in numpy (`backend/lstm_infer.py`), verified against torch to 2.4e-7 (float32 noise). The serving path therefore has no deep-learning framework dependency at all.
++
++## paper-v2 results (10 datasets, cluster bootstrap)
++
++The hybrid's flag F1 (0.629, CI 0.564 to 0.702) is not different from Isolation Forest alone (difference 0.003, CI -0.013 to 0.020); its AUC is below the LSTM alone and a per-user z-score. A CUSUM drift detector beside the hybrid raises malicious-insider episode recall from 0.133 to 0.567 (median 8.9 h to detection) at a false-positive rate of 0.8 percent instead of 0.25 percent. Keys: `stats.*`, `ablation.summary.*`, `drift.summary.*`.
+--- a/Context/01-Research-Paper/Evaluation.md
++++ b/Context/01-Research-Paper/Evaluation.md
+@@ -96,3 +96,5 @@
+ ## 4. Analyst usability
+ 
+ **Not evaluated in this build.** The dashboard exists (`frontend/app.py`), but no analyst study was run, so no time-to-root-cause or false-escalation figures are claimed.
++
++> **paper-v2 update (2026-10-23).** Numbers on this page from the seed-42 run are superseded by means over 10 independently generated datasets with cluster-bootstrap intervals. See `docs/FIXES_SUMMARY.md` and `docs/CLAIM_EVIDENCE.md`; every number is in `results/manifest.json`.
+--- a/Context/01-Research-Paper/Multimodal PII Detection.md
++++ b/Context/01-Research-Paper/Multimodal PII Detection.md
+@@ -40,3 +40,5 @@
+ ## Evaluation corpus
+ 
+ 120 synthetic documents (40 text-extractable / 40 scanned / 40 handwritten), 368 gold entities, 19 deliberately PII-free. **All PII is generated with Faker — no real person's data is used anywhere.** Scanned documents are rendered then degraded (noise, ≤1.5° rotation, JPEG q40–55); handwritten use a handwriting font and harder degradation (blur, low contrast, ≤4° rotation, JPEG q22–37). Matching is entity-level: type exact, value normalised then compared with `SequenceMatcher >= 0.85`.
++
++> **paper-v2 update (2026-10-23).** Numbers on this page from the seed-42 run are superseded by means over 10 independently generated datasets with cluster-bootstrap intervals. See `docs/FIXES_SUMMARY.md` and `docs/CLAIM_EVIDENCE.md`; every number is in `results/manifest.json`.

@@ -41,7 +41,7 @@ Start T3.2.
 | T3.6 | M | DONE | |
 | T3.7 | C | PENDING | gate G-SPEND (Q-002) |
 | T4.1 | M | PENDING | |
-| T4.2 | M | PENDING | gate G-DOCS (Q-003) |
+| T4.2 | M | BLOCKED | waiting on gate G-DOCS (Q-003); diff ready at docs/proposed/T4.2_Context.diff; default (leave unchanged) applied |
 | T4.3 | M | PENDING | |
 | T4.4 | M | PENDING | |
 | T4.5 | M | PENDING | |
