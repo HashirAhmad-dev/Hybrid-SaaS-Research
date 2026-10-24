@@ -110,7 +110,9 @@ def score_all() -> None:
                                           "ocr_engines": list(ocr_engines), "vlms": list(vlms)}}
     rows_csv = []
 
-    for subset in ("v2", "v1"):
+    for subset in ("v2", "v1", "funsd"):
+        if not any(d["subset"] == subset for d in docs):
+            continue
         S = {}
         sub = [d for d in docs if d["subset"] == subset]
         ev = [d for d in sub if split[d["doc_id"]] == "eval"]
