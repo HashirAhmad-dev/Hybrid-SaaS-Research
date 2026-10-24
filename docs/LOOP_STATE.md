@@ -31,7 +31,7 @@ Start T3.3.
 | T2.3 | M | DONE | |
 | T2.4 | M | DONE | |
 | T2.5 | M | DONE | |
-| T2.6 | S | SKIPPED | every CERT release with insiders > 2 GB; figshare link ~1 KB/s here (D-011); default of Q-001 applied, can be reopened |
+| T2.6 | S | IN_PROGRESS | reopened by D-020: CERT r4.2 downloading to D:/datasets/cert |
 | T2.7 | M | DONE | |
 | T3.1 | M | IN_PROGRESS | corpus built and scored for Presidio/OCR; acceptance (strongest available model < 1.000) waits for a VLM |
 | T3.2 | M | DONE | |
