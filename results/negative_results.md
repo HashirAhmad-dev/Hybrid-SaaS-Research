@@ -105,3 +105,10 @@ Reversal of an earlier finding: on v2, EasyOCR confidence DOES rank difficulty (
 | N-041 | Substituting EasyOCR for the designed PaddleOCR cost a lot of accuracy: on v2 images OCR+Presidio+ F1 is 0.516 with EasyOCR and 0.701 with PaddleOCR (hard images 0.223 vs 0.554; v1 images 0.793 vs 0.955). The original evaluation understated what the designed OCR branch can do. | `pii2.v2.ocr.*.presidio_plus.all.f1` |
 | N-042 | PaddleOCR is about 5 times slower on this CPU (mean 19.8 s per image vs 3.7 s; oneDNN had to be disabled, D-017). GPU latency was not measured. | `pii2.v2.ocr.paddleocr_cpu.confidence.seconds_per_image_mean` |
 | N-043 | PaddleOCR's confidence is nearly saturated (mean 0.986 easy, 0.961 hard), so it separates easy from hard documents worse than EasyOCR's (AUC 0.762 vs 0.884). A fixed tau_ocr = 0.85 would send almost nothing to the VLM with PaddleOCR. | `pii2.v2.ocr.*.confidence.*` |
+
+## T3.1: FUNSD real scanned forms (keys `pii2.funsd.*`, derived partial gold, D-021)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-044 | On 199 real scanned forms the OCR branch finds only part of the derived PII: recall 0.542 with PaddleOCR+Presidio and 0.283 with EasyOCR+Presidio (PERSON 0.504 vs 0.213, PHONE 0.789 vs 0.654). F1 is 0.183 and 0.105. Precision (0.110 and 0.064) is a lower bound because the gold covers only linked form fields. | `pii2.funsd.ocr.*.presidio.all.*` |
+| N-045 | The custom recognisers (Presidio+) give no gain on real forms (PaddleOCR F1 0.179 vs 0.183) and find no FUNSD address (recall 0.0 over the 10 derived addresses). | `pii2.funsd.ocr.*.presidio_plus.*` |

@@ -125,6 +125,8 @@ def score_all() -> None:
 
         # Branch 1 (T3.5 before/after)
         for an in ("presidio", "presidio_plus"):
+            if not ev_text:                              # FUNSD has no text-extractable documents
+                break
             p = {k: v["entities"] for k, v in pres[an]["text"].items()}
             S[f"branch1.{an}"] = {"all": group_score(ev_text, p), "by_type": by_type(ev_text, p),
                                   "pii_free_docs_false_positives": int(sum(len(p.get(d["doc_id"], []))
@@ -167,6 +169,9 @@ def score_all() -> None:
             have = [d for d in ev_img if d["doc_id"] in vr and vr[d["doc_id"]]["status"] == "ok"]
             p = {k: v["entities"] for k, v in vr.items() if not k.startswith("_")}
             ok_all = [d for d in ev_img if d["doc_id"] in vr]
+            if len(ok_all) < len(ev_img):                # partial run: report nothing rather than a subset
+                S[f"vlm.{vm}.incomplete"] = {"n_images": len(ok_all), "n_expected": len(ev_img)}
+                continue
             S[f"vlm.{vm}"] = {"all": group_score(ok_all, p), "by_type": by_type(ok_all, p),
                               "by_difficulty": {lvl: group_score([d for d in ok_all if d.get("difficulty") == lvl], p)
                                                 for lvl in sorted({d.get("difficulty") for d in ok_all})},
@@ -183,6 +188,8 @@ def score_all() -> None:
         for eng, ocr in ocr_engines.items():
             pe = {k: v["entities"] for k, v in pres["presidio_plus"].get(eng, {}).items()}
             for vm, vr in vlms.items():
+                if f"vlm.{vm}" not in S:                 # incomplete VLM run on this subset
+                    continue
                 pv = {k: v["entities"] for k, v in vr.items() if not k.startswith("_")}
                 def arrays(ds):
                     ds = [d for d in ds if d["doc_id"] in ocr and d["doc_id"] in vr]
