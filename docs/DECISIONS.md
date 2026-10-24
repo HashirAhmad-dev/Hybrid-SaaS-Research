@@ -83,3 +83,10 @@ One entry per non-obvious decision. Format: date, task, options, choice, reason.
 - Found by the determinism check: two Presidio runs on identical text disagreed on one v2 document (a password recognised as PASSWORD in one run and as LOCATION/ADDRESS in the other). Both results had the same span and score; `_dedupe_overlaps` kept whichever came first, and Presidio's recogniser order varies between processes.
 - Fix: `evaluation/pii_v2.dedupe_deterministic` breaks ties by longer span, then entity-type name. Two consecutive runs now give identical entities on all 160 text and 640 OCR transcripts. The v1 helper in `run_pipeline.py` is unchanged so the old numbers stay reproducible as they were; the v1 subset inside the v2 scorer uses the new tie-break.
 - Effect: the deterministic result equals the first run (v2 Branch 1 F1 0.7275 / 0.7686), so the T3.5 numbers already recorded stand.
+
+## D-020 (2026-10-24, user instruction) Large models and datasets go to D:, not skipped
+- User instruction: low space on C: must not reduce project quality; large models or datasets go to D: or G: with the tools pointed there.
+- Done: `D:\ai-models\lmstudio\lmstudio-community\{gemma-3-4b-it-GGUF, Qwen2.5-VL-7B-Instruct-GGUF}` hold the new VLM downloads. LM Studio has no models-folder setting in its config files, so each repo folder is linked into `%USERPROFILE%\.lmstudio\models\lmstudio-community\` with an NTFS directory junction (`mklink /J`, no admin, removable without touching the data). Qwen2.5-VL-3B stays on C: (download already 64 percent done; 2 GB fits).
+- Datasets: CERT r4.2 (4.82 GB, CC BY 4.0) plus answers, README and checksums go to `D:\datasets\cert\` (outside the repo, so never committed). This reverses the size reason in D-011; T2.6 is reopened. The second reason in D-011 (slow figshare link) is retested with the append-only downloader `tools/fetch_resumable.py`.
+- The 7B VLM is added back to T3.3 (D-012 had skipped it for disk and time). Whether it fits 6 GB VRAM is measured, not assumed.
+- Not changed by this instruction: FUNSD still needs the user to accept its licence terms (Q-004); hosted paid calls still need G-SPEND (Q-002).
