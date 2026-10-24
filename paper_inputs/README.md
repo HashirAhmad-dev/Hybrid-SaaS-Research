@@ -24,8 +24,11 @@ Built by `python -m tools.build_paper_inputs`. Every number is in `numbers.json`
 | `figures/detection_vs_intensity.svg` | same, SVG | `evaluation/difficulty_sweep.py` |
 | `figures/architecture.pdf` | Figure 1, architecture (source figures/architecture.dot) | `tools/render_figures.py` |
 | `figures/architecture.svg` | same, SVG | `tools/render_figures.py` |
+| `figures/pareto_v2.pdf` | PII cascade cost vs F1 | `evaluation/pii_v2_plots.py` |
+| `figures/pareto_v2.svg` | PII cascade cost vs F1 | `evaluation/pii_v2_plots.py` |
 | `tables/sbrs_fusion.tex` | Fusion forms (from manifest `fusion.summary.*`) | `tools/build_paper_inputs.py` |
 | `tables/drift.tex` | Drift detectors (from `drift.summary.*`) | `tools/build_paper_inputs.py` |
 | `tables/paired_bootstrap.tex` | Paired hybrid-vs-alternative intervals (from `stats.*`) | `tools/build_paper_inputs.py` |
 | `tables/latency.tex` | Two-tier latency (from `latency.*`) | `tools/build_paper_inputs.py` |
+| `tables/pii_images.tex` | PII image-path F1 per corpus (from `pii2.*`) | `tools/build_paper_inputs.py` |
 | `numbers.json` | Every claimed number with key, script, run, git hash | `tools/claim_evidence.py` |

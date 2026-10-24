@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Entity F1 on image documents (eval split). v1: the original 80 images; v2: 240 new images at three difficulty levels; FUNSD: 199 real scanned forms with a derived partial gold list, so its precision and F1 are lower bounds. All models run locally on one laptop.}
+\label{tab:pii}
+\begin{tabular}{lcccc}
+\hline
+Method & v1 & v2 & v2 hard & FUNSD \\
+\hline
+EasyOCR + Presidio+ & 0.793 & 0.516 & 0.223 & 0.112 \\
+PaddleOCR + Presidio+ & 0.955 & 0.701 & 0.554 & 0.186 \\
+Qwen2.5-VL-3B (local) & 0.325 & 0.121 & 0.000 & 0.000 \\
+gemma-3-4B (local) & 0.971 & 0.845 & 0.682 & 0.407 \\
+EasyOCR $\rightarrow$ gemma, calib $\tau$ & 0.971 & 0.843 & n/a & 0.331 \\
+EasyOCR $\rightarrow$ gemma, $\tau=0.85$ & 0.894 & 0.798 & n/a & 0.377 \\
+\hline
+\end{tabular}
+\end{table}

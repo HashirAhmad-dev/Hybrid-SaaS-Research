@@ -138,6 +138,28 @@ def main() -> None:
                 f"{g(lt + 'tier2.hold_ms.p95'):.0f}", f"{g(lt + 'tier2.hold_ms.p99'):.0f}"]])
         readme.append("| `tables/latency.tex` | Two-tier latency (from `latency.*`) | `tools/build_paper_inputs.py` |")
 
+    # PII image paths, eval documents; FUNSD gold is partial (D-021) so its precision is a lower bound
+    def pf(k):
+        return f3(g(k)) if g(k) is not None else "n/a"
+    pii_rows = []
+    for name, base in [("EasyOCR + Presidio+", "ocr.easyocr_cpu.presidio_plus.all.f1"),
+                       ("PaddleOCR + Presidio+", "ocr.paddleocr_cpu.presidio_plus.all.f1"),
+                       ("Qwen2.5-VL-3B (local)", "vlm.qwen2-5-vl-3b-instruct.all.f1"),
+                       ("gemma-3-4B (local)", "vlm.gemma-3-4b-it.all.f1"),
+                       ("Qwen2.5-VL-7B (local)", "vlm.qwen2-5-vl-7b-instruct.all.f1"),
+                       ("EasyOCR $\\rightarrow$ gemma, calib $\\tau$", "cascade.easyocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1"),
+                       ("EasyOCR $\\rightarrow$ gemma, $\\tau=0.85$", "cascade.easyocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1")]:
+        hard = base.replace(".all.f1", ".by_difficulty.hard.f1") if ".all.f1" in base else None
+        row = [name, pf(f"pii2.v1.{base}"), pf(f"pii2.v2.{base}"), pf(f"pii2.v2.{hard}") if hard else "n/a",
+               pf(f"pii2.funsd.{base}")]
+        if any(c != "n/a" for c in row[1:]):
+            pii_rows.append(row)
+    table("pii_images", "Entity F1 on image documents (eval split). v1: the original 80 images; v2: 240 new images at "
+          "three difficulty levels; FUNSD: 199 real scanned forms with a derived partial gold list, so its precision "
+          "and F1 are lower bounds. All models run locally on one laptop.", "tab:pii",
+          ["Method", "v1", "v2", "v2 hard", "FUNSD"], pii_rows)
+    readme.append("| `tables/pii_images.tex` | PII image-path F1 per corpus (from `pii2.*`) | `tools/build_paper_inputs.py` |")
+
     from tools.claim_evidence import main as ce
     ce()
     readme.append("| `numbers.json` | Every claimed number with key, script, run, git hash | `tools/claim_evidence.py` |")
