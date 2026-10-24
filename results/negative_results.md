@@ -112,3 +112,10 @@ Reversal of an earlier finding: on v2, EasyOCR confidence DOES rank difficulty (
 |---|---|---|
 | N-044 | On 199 real scanned forms the OCR branch finds only part of the derived PII: recall 0.542 with PaddleOCR+Presidio and 0.283 with EasyOCR+Presidio (PERSON 0.504 vs 0.213, PHONE 0.789 vs 0.654). F1 is 0.183 and 0.105. Precision (0.110 and 0.064) is a lower bound because the gold covers only linked form fields. | `pii2.funsd.ocr.*.presidio.all.*` |
 | N-045 | The custom recognisers (Presidio+) give no gain on real forms (PaddleOCR F1 0.179 vs 0.183) and find no FUNSD address (recall 0.0 over the 10 derived addresses). | `pii2.funsd.ocr.*.presidio_plus.*` |
+
+## T3.3: local VLM through LM Studio (keys `pii2.*.vlm.qwen2-5-vl-3b-instruct.*`)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-046 | Qwen2.5-VL-3B (Q4_K_M, local, RTX 3060, peak about 4.3 GB VRAM) is far below the hosted models of the original study. Eval F1: v1 images 0.343 (gemma-3-4b hosted was 0.936, Qwen-72B hosted 1.000), v2 images 0.126, v2 hard 0.000, FUNSD 0.000. Precision is 1.000 on v1 and v2, so it rarely invents entities; it returns an empty list for most images. | `pii2.*.vlm.qwen2-5-vl-3b-instruct.all.*` |
+| N-047 | 53 of 519 Qwen-3B answers were not valid JSON; many are a run of the letter "G", a known degenerate output of this model under llama.cpp. They count as no prediction. LM Studio downsizes each image to about 800 to 1,300 prompt tokens, which may limit legibility of small print; this was not varied. | `pii2.*.vlm.qwen2-5-vl-3b-instruct.status_counts.*` |
