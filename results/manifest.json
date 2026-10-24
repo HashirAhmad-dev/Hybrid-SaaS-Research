@@ -173319,6 +173319,72 @@
     ]
    }
   },
+  "e2e_demo-20261024T104948Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\e2e_demo.py",
+   "date_utc": "2026-10-24T10:49:48+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "8e6a44921b16d63b799d8536fac0c99f3d796416",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "e2e.demo"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/e2e_demo.py",
+   "scripts": {
+    "e2e.demo": "evaluation/e2e_demo.py"
+   },
+   "seeds": {
+    "session_pick": 11
+   }
+  },
+  "e2e_demo-20261024T105054Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\e2e_demo.py",
+   "date_utc": "2026-10-24T10:50:54+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "8e6a44921b16d63b799d8536fac0c99f3d796416",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "e2e.demo"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/e2e_demo.py",
+   "scripts": {
+    "e2e.demo": "evaluation/e2e_demo.py"
+   },
+   "seeds": {
+    "session_pick": 11
+   }
+  },
   "funsd_subset-20261024T005749Z": {
    "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\funsd_subset.py",
    "date_utc": "2026-10-24T00:57:49+00:00",

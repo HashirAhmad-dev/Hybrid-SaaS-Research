@@ -38,7 +38,19 @@ from .data_loader import HybridSaaSDataset
 from .schemas import PIIEntity, PIIResult
 
 
-OCR_CONFIDENCE_THRESHOLD: float = 0.85  # tau_ocr from paper, Section III.B (routing label only)
+def _deployed_tau(default: float = 0.85) -> float:
+    """tau_ocr chosen on calib documents (backend/config/final_config.json, T4.1); the
+    paper's 0.85 only if the generated config is missing."""
+    import json
+    from pathlib import Path
+    p = Path(__file__).resolve().parent / "config" / "final_config.json"
+    try:
+        return float(json.loads(p.read_text(encoding="utf-8"))["pii"]["tau_ocr_deployed"]["value"])
+    except (OSError, KeyError, ValueError):
+        return default
+
+
+OCR_CONFIDENCE_THRESHOLD: float = _deployed_tau()  # routing label only
 REPLAY_NOTE = "replayed demo record, no engine ran"
 ENTITY_WEIGHTS = {"HIGH": 10, "MEDIUM": 5, "LOW": 1}
 

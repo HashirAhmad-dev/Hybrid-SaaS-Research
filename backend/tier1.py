@@ -96,20 +96,52 @@ def _ocr_reader():
     return easyocr.Reader(["en"], gpu=False, verbose=False)
 
 
+def _vlm_entities(path) -> Optional[list]:
+    """Branch 3 through a local LM Studio VLM (model id from HYBRIDSAAS_VLM_MODEL,
+    default gemma-3-4b-it, the best local model in T3.3). None if unreachable or unparseable."""
+    import base64
+    import os
+    import httpx
+    from evaluation.pii_v2 import LMSTUDIO, VLM_PROMPT_V2, _clean_vlm_entities, _extract_json_array
+    model = os.getenv("HYBRIDSAAS_VLM_MODEL", "gemma-3-4b-it")
+    mime = "image/png" if path.suffix.lower() == ".png" else "image/jpeg"
+    msg = [{"role": "user", "content": [
+        {"type": "text", "text": VLM_PROMPT_V2},
+        {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{base64.b64encode(path.read_bytes()).decode()}"}}]}]
+    try:
+        r = httpx.post(f"{LMSTUDIO}/chat/completions", timeout=300,
+                       json={"model": model, "messages": msg, "temperature": 0.0, "max_tokens": 1024, "seed": 0})
+        r.raise_for_status()
+        parsed = _extract_json_array(r.json()["choices"][0]["message"]["content"] or "")
+    except (httpx.HTTPError, KeyError, ValueError):
+        return None
+    return None if parsed is None else _clean_vlm_entities(parsed)
+
+
 def _run_tier2(job_id: str, image_path: str, a_hybrid: float, beta: float) -> None:
     from pathlib import Path
     from evaluation.pii_v2 import analyse
     from evaluation.run_pipeline import ocr_document
     j = _JOBS[job_id]
     j["state"], j["started"] = "RUNNING", time.perf_counter()
+    from backend.pii_pipeline import OCR_CONFIDENCE_THRESHOLD
     txt, conf, _ = ocr_document(_ocr_reader(), Path(image_path))
+    branch = "Branch2_OCR_Presidio"
     ents = analyse(analyzer(), txt, plus=True)
+    if conf < OCR_CONFIDENCE_THRESHOLD:
+        branch = "Branch3_VLM"
+        vlm = _vlm_entities(Path(image_path))
+        if vlm is None:
+            branch = "Branch3_VLM_unavailable"      # fail closed (D-023): quarantine, never release unscanned
+        else:
+            ents = vlm
     S = sensitivity(ents)
     sb = compute_sbrs(S, a_hybrid, beta=beta)
+    action = "QUARANTINE" if branch == "Branch3_VLM_unavailable" else sb.enforcement_action
     with _LOCK:
-        j.update(state="DONE", ocr_confidence=conf, entities=ents, sensitivity=S, sbrs=sb.sbrs_value,
-                 final_action=sb.enforcement_action,
-                 release="RELEASE" if sb.enforcement_action == "PERMIT" else sb.enforcement_action,
+        j.update(state="DONE", ocr_confidence=conf, tau_ocr=OCR_CONFIDENCE_THRESHOLD, branch=branch,
+                 entities=ents, sensitivity=S, sbrs=sb.sbrs_value, final_action=action,
+                 release="RELEASE" if action == "PERMIT" else action,
                  finished=time.perf_counter())
         j["hold_ms"] = (j["finished"] - j["submitted"]) * 1e3
         j["processing_ms"] = (j["finished"] - j["started"]) * 1e3

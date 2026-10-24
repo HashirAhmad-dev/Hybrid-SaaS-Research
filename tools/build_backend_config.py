@@ -49,6 +49,12 @@ def main() -> None:
     taus = sorted(k for k in e if k.startswith("pii2.v2.cascade.") and k.endswith(".calib_tau"))
     if taus:
         cfg["pii"]["tau_ocr"] = [v(k) for k in taus]
+    dep = "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.calib_tau"
+    if dep in e:
+        # the proxy's Tier 2 runs EasyOCR and the best local VLM is gemma-3-4b-it (T3.3)
+        cfg["pii"]["tau_ocr_deployed"] = {**v(dep), "reason": "Tier 2 uses EasyOCR; gemma-3-4b-it is the best local VLM "
+                                                       "(T3.3). Chosen on calib documents; routes almost every image "
+                                                       "to the VLM (N-049)"}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(cfg, indent=1), encoding="utf-8")
     print(f"  -> {OUT}")

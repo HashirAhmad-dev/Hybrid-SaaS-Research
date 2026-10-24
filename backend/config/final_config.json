@@ -64,6 +64,34 @@
   "text_recognisers": {
    "value": "presidio_plus",
    "source": "pii2.v2.branch1.presidio_plus.all.f1"
+  },
+  "tau_ocr": [
+   {
+    "value": 0.95,
+    "source": "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.calib_tau",
+    "run_id": "pii_v2_score-20261024T104625Z"
+   },
+   {
+    "value": 0.58,
+    "source": "pii2.v2.cascade.easyocr_cpu.qwen2-5-vl-3b-instruct.calib_tau",
+    "run_id": "pii_v2_score-20261024T104625Z"
+   },
+   {
+    "value": 1.0,
+    "source": "pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.calib_tau",
+    "run_id": "pii_v2_score-20261024T104625Z"
+   },
+   {
+    "value": 0.96,
+    "source": "pii2.v2.cascade.paddleocr_cpu.qwen2-5-vl-3b-instruct.calib_tau",
+    "run_id": "pii_v2_score-20261024T104625Z"
+   }
+  ],
+  "tau_ocr_deployed": {
+   "value": 0.95,
+   "source": "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.calib_tau",
+   "run_id": "pii_v2_score-20261024T104625Z",
+   "reason": "Tier 2 uses EasyOCR; gemma-3-4b-it is the best local VLM (T3.3). Chosen on calib documents; routes almost every image to the VLM (N-049)"
   }
  }
 }

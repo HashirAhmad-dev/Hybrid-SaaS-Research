@@ -1,0 +1,422 @@
+{
+ "config_used": {
+  "enforcement_form": "gated",
+  "tau_ocr_deployed": 0.95
+ },
+ "tier1": [
+  {
+   "case": "threat:compromised_account",
+   "event_id": "ANOM-01972",
+   "user_id": "USR004",
+   "response": {
+    "tier": 1,
+    "entities": [
+     {
+      "type": "PERSON",
+      "value": "Mrs Lydia Brooks"
+     },
+     {
+      "type": "NID",
+      "value": "85021-2132032-7"
+     },
+     {
+      "type": "DOB",
+      "value": "1996-09-12"
+     },
+     {
+      "type": "ADDRESS",
+      "value": "1 Nigel St"
+     },
+     {
+      "type": "PHONE",
+      "value": "+92 328 5902032"
+     }
+    ],
+    "sensitivity": 26,
+    "a_lstm": 0.9005676599107746,
+    "a_if": 0.8951530965531629,
+    "a_hybrid": 0.8965067373925658,
+    "sbrs": 0.8427,
+    "sbrs_action": "PERMIT",
+    "drift_alarm": false,
+    "action": "BLOCK",
+    "decision": {
+     "action": "BLOCK",
+     "reason": "A >= tau_A (behaviour alone)",
+     "risk": 0.8427293793051678,
+     "sources": {
+      "form": "fusion.summary.gated.threat_recall.mean",
+      "beta": "fusion.ds42.gated.params.beta",
+      "tau_A": "fusion.ds42.gated.params.tau_A",
+      "t_alert": "fusion.ds42.gated.t_alert",
+      "t_block": "fusion.ds42.gated.t_block",
+      "drift_k": "drift.ds42.cusum.k",
+      "drift_h": "drift.ds42.cusum.h"
+     }
+    },
+    "timing_ms": {
+     "pii_text": 8717.251599999145,
+     "anomaly": 20.304800003941637,
+     "sbrs": 2.0488000009208918,
+     "total": 8739.605200004007
+    }
+   }
+  },
+  {
+   "case": "threat:malicious_insider",
+   "event_id": "ANOM-06522",
+   "user_id": "USR013",
+   "response": {
+    "tier": 1,
+    "entities": [
+     {
+      "type": "PERSON",
+      "value": "Mrs Lydia Brooks"
+     },
+     {
+      "type": "NID",
+      "value": "85021-2132032-7"
+     },
+     {
+      "type": "DOB",
+      "value": "1996-09-12"
+     },
+     {
+      "type": "ADDRESS",
+      "value": "1 Nigel St"
+     },
+     {
+      "type": "PHONE",
+      "value": "+92 328 5902032"
+     }
+    ],
+    "sensitivity": 26,
+    "a_lstm": 1.0,
+    "a_if": 0.23838779195261617,
+    "a_hybrid": 0.4287908439644621,
+    "sbrs": 0.5387,
+    "sbrs_action": "PERMIT",
+    "drift_alarm": false,
+    "action": "PERMIT",
+    "decision": {
+     "action": "PERMIT",
+     "reason": "risk below t_alert",
+     "risk": 0.5387140485769004,
+     "sources": {
+      "form": "fusion.summary.gated.threat_recall.mean",
+      "beta": "fusion.ds42.gated.params.beta",
+      "tau_A": "fusion.ds42.gated.params.tau_A",
+      "t_alert": "fusion.ds42.gated.t_alert",
+      "t_block": "fusion.ds42.gated.t_block",
+      "drift_k": "drift.ds42.cusum.k",
+      "drift_h": "drift.ds42.cusum.h"
+     }
+    },
+    "timing_ms": {
+     "pii_text": 15.840500003832858,
+     "anomaly": 20.435300000826828,
+     "sbrs": 0.08549999620299786,
+     "total": 36.361300000862684
+    }
+   }
+  },
+  {
+   "case": "threat:negligent_insider",
+   "event_id": "ANOM-23153",
+   "user_id": "USR046",
+   "response": {
+    "tier": 1,
+    "entities": [
+     {
+      "type": "PERSON",
+      "value": "Mrs Lydia Brooks"
+     },
+     {
+      "type": "NID",
+      "value": "85021-2132032-7"
+     },
+     {
+      "type": "DOB",
+      "value": "1996-09-12"
+     },
+     {
+      "type": "ADDRESS",
+      "value": "1 Nigel St"
+     },
+     {
+      "type": "PHONE",
+      "value": "+92 328 5902032"
+     }
+    ],
+    "sensitivity": 26,
+    "a_lstm": 1.0,
+    "a_if": 0.9564399331221389,
+    "a_hybrid": 0.9673299498416041,
+    "sbrs": 0.8888,
+    "sbrs_action": "PERMIT",
+    "drift_alarm": false,
+    "action": "BLOCK",
+    "decision": {
+     "action": "BLOCK",
+     "reason": "A >= tau_A (behaviour alone)",
+     "risk": 0.8887644673970426,
+     "sources": {
+      "form": "fusion.summary.gated.threat_recall.mean",
+      "beta": "fusion.ds42.gated.params.beta",
+      "tau_A": "fusion.ds42.gated.params.tau_A",
+      "t_alert": "fusion.ds42.gated.t_alert",
+      "t_block": "fusion.ds42.gated.t_block",
+      "drift_k": "drift.ds42.cusum.k",
+      "drift_h": "drift.ds42.cusum.h"
+     }
+    },
+    "timing_ms": {
+     "pii_text": 14.806500003032852,
+     "anomaly": 20.902500000374857,
+     "sbrs": 0.0678999931551516,
+     "total": 35.77689999656286
+    }
+   }
+  },
+  {
+   "case": "threat:overscoped_thirdparty",
+   "event_id": "ANOM-11532",
+   "user_id": "USR023",
+   "response": {
+    "tier": 1,
+    "entities": [
+     {
+      "type": "PERSON",
+      "value": "Mrs Lydia Brooks"
+     },
+     {
+      "type": "NID",
+      "value": "85021-2132032-7"
+     },
+     {
+      "type": "DOB",
+      "value": "1996-09-12"
+     },
+     {
+      "type": "ADDRESS",
+      "value": "1 Nigel St"
+     },
+     {
+      "type": "PHONE",
+      "value": "+92 328 5902032"
+     }
+    ],
+    "sensitivity": 26,
+    "a_lstm": 0.9977307055357388,
+    "a_if": 0.9447505411718607,
+    "a_hybrid": 0.9579955822628303,
+    "sbrs": 0.8827,
+    "sbrs_action": "PERMIT",
+    "drift_alarm": false,
+    "action": "BLOCK",
+    "decision": {
+     "action": "BLOCK",
+     "reason": "A >= tau_A (behaviour alone)",
+     "risk": 0.8826971284708397,
+     "sources": {
+      "form": "fusion.summary.gated.threat_recall.mean",
+      "beta": "fusion.ds42.gated.params.beta",
+      "tau_A": "fusion.ds42.gated.params.tau_A",
+      "t_alert": "fusion.ds42.gated.t_alert",
+      "t_block": "fusion.ds42.gated.t_block",
+      "drift_k": "drift.ds42.cusum.k",
+      "drift_h": "drift.ds42.cusum.h"
+     }
+    },
+    "timing_ms": {
+     "pii_text": 14.453100004175212,
+     "anomaly": 20.303199999034405,
+     "sbrs": 0.2530999990995042,
+     "total": 35.00940000230912
+    }
+   }
+  },
+  {
+   "case": "benign_burst",
+   "event_id": "ANOM-09039",
+   "user_id": "USR018",
+   "response": {
+    "tier": 1,
+    "entities": [
+     {
+      "type": "PERSON",
+      "value": "Mrs Lydia Brooks"
+     },
+     {
+      "type": "NID",
+      "value": "85021-2132032-7"
+     },
+     {
+      "type": "DOB",
+      "value": "1996-09-12"
+     },
+     {
+      "type": "ADDRESS",
+      "value": "1 Nigel St"
+     },
+     {
+      "type": "PHONE",
+      "value": "+92 328 5902032"
+     }
+    ],
+    "sensitivity": 26,
+    "a_lstm": 0.5512239376464029,
+    "a_if": 0.5339123709868893,
+    "a_hybrid": 0.5382402626517677,
+    "sbrs": 0.6099,
+    "sbrs_action": "PERMIT",
+    "drift_alarm": false,
+    "action": "PERMIT",
+    "decision": {
+     "action": "PERMIT",
+     "reason": "risk below t_alert",
+     "risk": 0.6098561707236491,
+     "sources": {
+      "form": "fusion.summary.gated.threat_recall.mean",
+      "beta": "fusion.ds42.gated.params.beta",
+      "tau_A": "fusion.ds42.gated.params.tau_A",
+      "t_alert": "fusion.ds42.gated.t_alert",
+      "t_block": "fusion.ds42.gated.t_block",
+      "drift_k": "drift.ds42.cusum.k",
+      "drift_h": "drift.ds42.cusum.h"
+     }
+    },
+    "timing_ms": {
+     "pii_text": 19.064600004639942,
+     "anomaly": 23.106900000129826,
+     "sbrs": 0.12399999832268804,
+     "total": 42.29550000309246
+    }
+   }
+  },
+  {
+   "case": "benign",
+   "event_id": "ANOM-15104",
+   "user_id": "USR030",
+   "response": {
+    "tier": 1,
+    "entities": [
+     {
+      "type": "PERSON",
+      "value": "Mrs Lydia Brooks"
+     },
+     {
+      "type": "NID",
+      "value": "85021-2132032-7"
+     },
+     {
+      "type": "DOB",
+      "value": "1996-09-12"
+     },
+     {
+      "type": "ADDRESS",
+      "value": "1 Nigel St"
+     },
+     {
+      "type": "PHONE",
+      "value": "+92 328 5902032"
+     }
+    ],
+    "sensitivity": 26,
+    "a_lstm": 1.0,
+    "a_if": 0.2669518160442412,
+    "a_hybrid": 0.45021386203318087,
+    "sbrs": 0.5526,
+    "sbrs_action": "PERMIT",
+    "drift_alarm": false,
+    "action": "PERMIT",
+    "decision": {
+     "action": "PERMIT",
+     "reason": "risk below t_alert",
+     "risk": 0.5526390103215676,
+     "sources": {
+      "form": "fusion.summary.gated.threat_recall.mean",
+      "beta": "fusion.ds42.gated.params.beta",
+      "tau_A": "fusion.ds42.gated.params.tau_A",
+      "t_alert": "fusion.ds42.gated.t_alert",
+      "t_block": "fusion.ds42.gated.t_block",
+      "drift_k": "drift.ds42.cusum.k",
+      "drift_h": "drift.ds42.cusum.h"
+     }
+    },
+    "timing_ms": {
+     "pii_text": 17.418600000382867,
+     "anomaly": 16.63389999885112,
+     "sbrs": 0.07020000339252874,
+     "total": 34.122700002626516
+    }
+   }
+  }
+ ],
+ "tier2": {
+  "doc_id": "V2-0121",
+  "gold_entities": 5,
+  "status": {
+   "job_id": "c4c870f01265",
+   "state": "DONE",
+   "inline_action": "HOLD",
+   "ocr_confidence": 0.8676473352386539,
+   "tau_ocr": 0.95,
+   "branch": "Branch3_VLM",
+   "entities": [
+    {
+     "type": "PERSON",
+     "value": "Nathan Peters"
+    },
+    {
+     "type": "DOB",
+     "value": "1962-09-02"
+    },
+    {
+     "type": "NID",
+     "value": "37582-0525638-8"
+    },
+    {
+     "type": "PHONE",
+     "value": "+92 305 0114896"
+    },
+    {
+     "type": "CREDIT_CARD",
+     "value": "551083183715662"
+    }
+   ],
+   "sensitivity": 31,
+   "sbrs": 0.3875,
+   "final_action": "PERMIT",
+   "release": "RELEASE",
+   "hold_ms": 11060.221200001251,
+   "processing_ms": 11059.229899998172
+  }
+ },
+ "provenance": {
+  "script": "evaluation/e2e_demo.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\e2e_demo.py",
+  "seeds": {
+   "session_pick": 11
+  },
+  "date_utc": "2026-10-24T10:50:53+00:00",
+  "git_hash": "8e6a44921b16d63b799d8536fac0c99f3d796416",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": "cpu"
+ }
+}
