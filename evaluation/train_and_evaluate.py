@@ -339,6 +339,8 @@ def main() -> None:
     ap.add_argument("--latency-samples", type=int, default=500)
     ap.add_argument("--manifest-prefix", type=str, default=None,
                     help="results/manifest.json key prefix (default anomaly.s<seed>)")
+    ap.add_argument("--max-fit-windows", type=int, default=None,
+                    help="random subsample of LSTM training windows (CERT scale); default uses all")
     ap.add_argument("--data-dir", type=Path, default=DATA_DIR,
                     help="folder holding sessions_raw.csv and generation_config.json")
     ap.add_argument("--out-dir", type=Path, default=None,
@@ -385,6 +387,10 @@ def main() -> None:
 
     # -- 3. LSTM -----------------------------------------------------------
     Xf, Yf = collect_windows(grids, 0, fit_end, need_next=True)
+    if args.max_fit_windows and len(Xf) > args.max_fit_windows:
+        # separate generator, so the default path's random stream is untouched
+        keep = np.sort(np.random.default_rng([args.seed, 9001]).choice(len(Xf), args.max_fit_windows, replace=False))
+        Xf, Yf = Xf[keep], Yf[keep]
     Xv, Yv = collect_windows(grids, train_end, int(total_hours * 0.85), need_next=True)
     print(f"[3/8] training LSTM(hidden={HIDDEN_DIM}) on {len(Xf):,} windows "
           f"(val {len(Xv):,}) - unsupervised next-step prediction, labels never used")
