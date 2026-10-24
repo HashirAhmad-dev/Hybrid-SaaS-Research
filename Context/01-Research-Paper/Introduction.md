@@ -14,9 +14,11 @@ The core difficulty is that malicious and legitimate SaaS activity overlap. Tell
 1. A hybrid anomaly detection engine that pairs an **LSTM** (user's temporal baseline) with an **Isolation Forest** (structural outliers against the whole organization).
 2. A three-branch **multimodal PII pipeline** (Presidio, then high-confidence OCR, then a VLM fallback) for visual/unstructured content.
 3. The **Semantic-Behavioral Risk Score (SBRS)**, a fusion metric that ties enforcement decisions to content sensitivity and behavioral history.
-4. A **federated learning module** for multi-tenant model training without moving raw logs across boundaries.
+4. (Removed from the contributions: federated multi-tenant training was not built; see [[Federated Learning]] as future work.)
 5. A **fully executed evaluation** — trained models, timed calls, and a held-out test split scored once — including the negative results: the engine misses 67% of slow malicious insiders, and the OCR routing threshold does not transfer across OCR engines. See [[Evaluation]] and [[Implementation and Reproducibility]].
 
 ## The motivating false positive
 
 A finance team bulk-downloads report templates the day before a quarterly close. Activity rate spikes 7x. A univariate rate model (EWMA) flags it: in our simulation it flags **59.3%** of such benign bursts. The content is low-sensitivity and the burst is structurally ordinary for the organization, so the hybrid engine flags **0%** of them. Every design choice below is in service of telling those two situations apart.
+
+> **paper-v2 update (2026-10-23).** Numbers on this page from the seed-42 run are superseded by means over 10 independently generated datasets with cluster-bootstrap intervals. See `docs/FIXES_SUMMARY.md` and `docs/CLAIM_EVIDENCE.md`; every number is in `results/manifest.json`.

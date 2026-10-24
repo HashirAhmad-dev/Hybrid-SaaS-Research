@@ -37,3 +37,7 @@ Cut-points are placed in the sparse upper tail of the **benign** validation SBRS
 An F1-maximising ALERT threshold was tried and **rejected**: on this imbalanced, partly unseparable data it collapses to 1.75 and permits 66% of threats — useless as a review queue.
 
 Result on the held-out test split: enforcement F1 **0.087 → 0.475**, benign escalation **85.9% → 4.0%**, benign auto-BLOCK **38.9% → 0.4%**. Derivation in `evaluation/SBRS_RECALIBRATION.md`; the constants live in `backend/risk_orchestrator.py` (`DEFAULT_BETA`, `SBRS_BANDS`) and `evaluation/common.py`, which must agree.
+
+## Fusion form comparison (paper-v2, T2.5)
+
+At the same benign budget (ALERT at the 95th, BLOCK at the 99.5th percentile of benign validation scores), across 10 generated datasets: threat recall gated 0.642, additive 0.630, logistic 0.627, multiplicative 0.589, max 0.320. The multiplicative form escalates 1 of 35 threats with low S and high A; gated fusion escalates all 35. The backend now runs gated fusion (escalate when A is at or above the hybrid's validation threshold, whatever S is) and keeps the multiplicative score for reference. The validation knee for beta ranges from 2.0 to 8.0 across datasets, so beta = 2.5 is a property of one dataset, not a constant. Keys: `fusion.summary.*`, `anomaly.multiseed.sbrs_beta_recalibrated.*`.

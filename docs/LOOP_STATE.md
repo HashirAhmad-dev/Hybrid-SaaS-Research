@@ -41,7 +41,7 @@ Start T3.3.
 | T3.6 | M | DONE | |
 | T3.7 | C | PENDING | gate G-SPEND (Q-002) |
 | T4.1 | M | DONE | config generated from manifest incl. tau_ocr; real backend scored end to end (results/e2e/e2e_demo.json) |
-| T4.2 | M | BLOCKED | waiting on gate G-DOCS (Q-003); diff ready at docs/proposed/T4.2_Context.diff; default (leave unchanged) applied |
+| T4.2 | M | DONE | user approved G-DOCS on 2026-10-24; docs/proposed/T4.2_Context.diff applied to 9 Context files |
 | T4.3 | M | PENDING | |
 | T4.4 | M | PENDING | |
 | T4.5 | M | PENDING | |

@@ -18,7 +18,7 @@ Out of scope: Out-of-band exfiltration (photographing screen, removable media, e
 | **G2** | Low false positive rate so analysts can manage the queue. | **Met.** Anomaly-flag FPR 0.00% (EWMA 5.81%); 4.0% of benign sessions escalate under the calibrated bands, 0.4% auto-block. |
 | **G3** | Multimodal content coverage including images, scans, and handwriting. | **Met.** Entity recall 0.000 → 0.889 (scanned) and 0.000 → 0.752 (handwritten). |
 | **G4** | Privacy by construction: personal traffic is not intercepted; multi-tenant learning never moves raw logs. | Design only; federated learning is not implemented. |
-| **G5** | Fast enforcement (end-to-end budget < 300 ms). | **Partially.** Anomaly scoring is 16.9 ms and the text PII branch 11.3 ms, comfortably inside budget. The image branches (OCR 2.4 s, VLM 3.5 s as a hosted call) are **not** — they would have to run asynchronously or on-box, as the design intends. |
+| **G5** | Fast enforcement, in two tiers: Tier 1 inline (text PII, behaviour, risk fusion) within a few tens of ms; Tier 2 asynchronous for images, with the upload held. | **Tier 1 met:** measured inside the running proxy over 1,000 warm requests, p50 33.7 ms, p95 40.5 ms, p99 44.6 ms (`latency.tier1.*`). **Tier 2:** hold time p50 3.4 s, p95 5.3 s with EasyOCR on CPU (`latency.tier2.*`). The old single 300 ms end-to-end goal is withdrawn. |
 
 ## Detection coverage per adversary class (measured)
 

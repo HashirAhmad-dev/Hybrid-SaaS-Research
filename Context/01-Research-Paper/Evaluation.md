@@ -96,3 +96,5 @@ The three PII branches are alternatives, not a sum: a document takes exactly one
 ## 4. Analyst usability
 
 **Not evaluated in this build.** The dashboard exists (`frontend/app.py`), but no analyst study was run, so no time-to-root-cause or false-escalation figures are claimed.
+
+> **paper-v2 update (2026-10-23).** Numbers on this page from the seed-42 run are superseded by means over 10 independently generated datasets with cluster-bootstrap intervals. See `docs/FIXES_SUMMARY.md` and `docs/CLAIM_EVIDENCE.md`; every number is in `results/manifest.json`.

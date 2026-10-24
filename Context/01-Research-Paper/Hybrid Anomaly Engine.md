@@ -47,3 +47,7 @@ The slow malicious insider is the open problem. Its mean `A_hybrid` is 0.16 agai
 ## Serving
 
 Training uses PyTorch. **Inference does not:** the encoder is a single-layer LSTM, so its weights are exported to `evaluation/artifacts/lstm_weights.npz` and the forward pass is unrolled in numpy (`backend/lstm_infer.py`), verified against torch to 2.4e-7 (float32 noise). The serving path therefore has no deep-learning framework dependency at all.
+
+## paper-v2 results (10 datasets, cluster bootstrap)
+
+The hybrid's flag F1 (0.629, CI 0.564 to 0.702) is not different from Isolation Forest alone (difference 0.003, CI -0.013 to 0.020); its AUC is below the LSTM alone and a per-user z-score. A CUSUM drift detector beside the hybrid raises malicious-insider episode recall from 0.133 to 0.567 (median 8.9 h to detection) at a false-positive rate of 0.8 percent instead of 0.25 percent. Keys: `stats.*`, `ablation.summary.*`, `drift.summary.*`.

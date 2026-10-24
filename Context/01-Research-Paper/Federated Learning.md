@@ -1,6 +1,8 @@
-# Federated Learning
+# Federated Learning (future work, not built)
 
-Centralizing raw API logs from legally separate organizations violates data sovereignty requirements. HybridSaaS-Sec uses a federated learning module.
+> Nothing on this page was implemented or evaluated. It is an architectural vision only and is not a contribution of the paper.
+
+Centralizing raw API logs from legally separate organizations violates data sovereignty requirements. A future version could use a federated learning module.
 
 - Each tenant trains a local LSTM on its own API telemetry and computes a weight update.
 - **Differential privacy noise** is added to clipped gradients before leaving the tenant.

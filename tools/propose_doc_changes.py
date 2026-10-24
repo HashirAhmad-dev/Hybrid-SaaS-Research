@@ -52,7 +52,7 @@ EDITS = {
         ("You can use query parameters `alpha` (LSTM weight, default 0.5) and `beta` (enterprise risk multiplier, default 0.5) on `/score` to replay the simulation under different SBRS configurations.",
          "You can use query parameters `alpha` (LSTM weight; default read from the trained engine, 0.25) and `beta` (enterprise risk multiplier, default 2.5) on `/score` to replay the simulation under different SBRS configurations.\n\n"
          "Two-tier endpoints (paper-v2): `POST /tier1/score` (inline decision with per-stage timings and the configured gated enforcement), "
-         "`POST /tier2/submit` and `GET /tier2/{job_id}` (hold an image upload, scan it asynchronously, then release or escalate). "
+         "`POST /tier2/submit` and `GET /tier2/{job_id}` (hold an image upload and scan it asynchronously: OCR, then the local VLM when OCR confidence is below the calibrated tau_ocr; release, escalate, or quarantine if the VLM is unreachable). "
          "The configuration and the manifest key behind every value are in `backend/config/final_config.json`."),
     ],
     "01-Research-Paper/Semantic-Behavioral Risk Score (SBRS).md": [

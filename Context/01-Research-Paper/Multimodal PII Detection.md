@@ -40,3 +40,5 @@ We report τ = 0.85 as primary for faithfulness to the design, but a deployment 
 ## Evaluation corpus
 
 120 synthetic documents (40 text-extractable / 40 scanned / 40 handwritten), 368 gold entities, 19 deliberately PII-free. **All PII is generated with Faker — no real person's data is used anywhere.** Scanned documents are rendered then degraded (noise, ≤1.5° rotation, JPEG q40–55); handwritten use a handwriting font and harder degradation (blur, low contrast, ≤4° rotation, JPEG q22–37). Matching is entity-level: type exact, value normalised then compared with `SequenceMatcher >= 0.85`.
+
+> **paper-v2 update (2026-10-23).** Numbers on this page from the seed-42 run are superseded by means over 10 independently generated datasets with cluster-bootstrap intervals. See `docs/FIXES_SUMMARY.md` and `docs/CLAIM_EVIDENCE.md`; every number is in `results/manifest.json`.
