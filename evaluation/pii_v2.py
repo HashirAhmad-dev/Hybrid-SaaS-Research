@@ -93,7 +93,8 @@ def assign_split(docs: List[dict]) -> Dict[str, str]:
     for d in docs:
         strata.setdefault((d["subset"], d["category"], d.get("difficulty")), []).append(d["doc_id"])
     out = {}
-    for key in sorted(strata, key=str):
+    # FUNSD strata go last so that adding them leaves the v1/v2 split exactly as it was (D-021)
+    for key in sorted(strata, key=lambda k: (k[0] == "funsd", str(k))):
         ids = sorted(strata[key])
         r.shuffle(ids)
         k = int(round(len(ids) * CALIB_SHARE))

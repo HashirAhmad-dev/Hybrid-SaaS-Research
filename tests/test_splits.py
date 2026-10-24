@@ -64,3 +64,16 @@ def test_fit_calib_buffer():
     # must come after the last FIT hour (fit_end - 1), so no FIT hour is inside it
     assert b["calib_lo"] - (SEQ_LEN - 1) > b["fit_end"] - 1
     assert b["fit_end"] < b["calib_lo"] < b["train_end"] <= b["val_end"] < total
+
+
+def test_pii_split_unchanged_by_funsd():
+    """Adding the FUNSD subset must not move any v1/v2 document between calib and eval."""
+    from evaluation.pii_v2 import assign_split
+    base = [{"doc_id": f"{s}-{i:03d}", "subset": s, "category": c, "difficulty": d}
+            for s in ("v1", "v2") for c in ("scanned", "handwritten") for d in ("easy", "hard")
+            for i in range(10)]
+    funsd = [{"doc_id": f"FUNSD-{i:03d}", "subset": "funsd", "category": "scanned_real", "difficulty": "real"}
+             for i in range(20)]
+    before = assign_split(base)
+    after = assign_split(base + funsd)
+    assert all(after[k] == v for k, v in before.items())

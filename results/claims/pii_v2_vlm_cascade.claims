@@ -1,0 +1,114 @@
+# T3.3 local VLMs and T3.4 cascade, EVAL documents (written from the manifest)
+v1 gemma-3-4b-it all.f1 | pii2.v1.vlm.gemma-3-4b-it.all.f1 | 0.9711
+v1 gemma-3-4b-it all.precision | pii2.v1.vlm.gemma-3-4b-it.all.precision | 0.9737
+v1 gemma-3-4b-it all.recall | pii2.v1.vlm.gemma-3-4b-it.all.recall | 0.9686
+v1 gemma-3-4b-it seconds_per_image_mean | pii2.v1.vlm.gemma-3-4b-it.seconds_per_image_mean | 7.3766
+v1 qwen2-5-vl-3b-instruct all.f1 | pii2.v1.vlm.qwen2-5-vl-3b-instruct.all.f1 | 0.3246
+v1 qwen2-5-vl-3b-instruct all.precision | pii2.v1.vlm.qwen2-5-vl-3b-instruct.all.precision | 1.0000
+v1 qwen2-5-vl-3b-instruct all.recall | pii2.v1.vlm.qwen2-5-vl-3b-instruct.all.recall | 0.1937
+v1 qwen2-5-vl-3b-instruct seconds_per_image_mean | pii2.v1.vlm.qwen2-5-vl-3b-instruct.seconds_per_image_mean | 2.7170
+v1 cascade easyocr_cpu+gemma calib_tau | pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.calib_tau | 1.0000
+v1 cascade easyocr_cpu+gemma eval_at_calib_tau.f1 | pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1 | 0.9711
+v1 cascade easyocr_cpu+gemma eval_vlm_share | pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.eval_vlm_share | 1.0000
+v1 cascade easyocr_cpu+gemma eval_at_tau_085.f1 | pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1 | 0.8936
+v1 cascade easyocr_cpu+gemma ocr_only.f1 | pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.ocr_only.f1 | 0.7935
+v1 cascade easyocr_cpu+gemma vlm_only.f1 | pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.vlm_only.f1 | 0.9711
+v1 cascade easyocr_cpu+gemma eval_seconds_per_image | pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.eval_seconds_per_image | 10.0025
+v1 router easyocr_cpu+gemma share | pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.router.eval_vlm_share | 1.0000
+v1 cascade paddleocr_cpu+gemma calib_tau | pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.calib_tau | 0.9900
+v1 cascade paddleocr_cpu+gemma eval_at_calib_tau.f1 | pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1 | 0.9554
+v1 cascade paddleocr_cpu+gemma eval_vlm_share | pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.eval_vlm_share | 0.4667
+v1 cascade paddleocr_cpu+gemma eval_at_tau_085.f1 | pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1 | 0.9554
+v1 cascade paddleocr_cpu+gemma ocr_only.f1 | pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.ocr_only.f1 | 0.9554
+v1 cascade paddleocr_cpu+gemma vlm_only.f1 | pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.vlm_only.f1 | 0.9711
+v1 cascade paddleocr_cpu+gemma eval_seconds_per_image | pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.eval_seconds_per_image | 52.9737
+v1 router paddleocr_cpu+gemma share | pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.router.eval_vlm_share | 1.0000
+v2 gemma-3-4b-it all.f1 | pii2.v2.vlm.gemma-3-4b-it.all.f1 | 0.8452
+v2 gemma-3-4b-it all.precision | pii2.v2.vlm.gemma-3-4b-it.all.precision | 0.8952
+v2 gemma-3-4b-it all.recall | pii2.v2.vlm.gemma-3-4b-it.all.recall | 0.8005
+v2 gemma-3-4b-it seconds_per_image_mean | pii2.v2.vlm.gemma-3-4b-it.seconds_per_image_mean | 4.5497
+v2 gemma-3-4b-it F1 easy | pii2.v2.vlm.gemma-3-4b-it.by_difficulty.easy.f1 | 0.9650
+v2 gemma-3-4b-it F1 medium | pii2.v2.vlm.gemma-3-4b-it.by_difficulty.medium.f1 | 0.8690
+v2 gemma-3-4b-it F1 hard | pii2.v2.vlm.gemma-3-4b-it.by_difficulty.hard.f1 | 0.6817
+v2 gemma-3-4b-it recall ADDRESS | pii2.v2.vlm.gemma-3-4b-it.by_type.ADDRESS.recall | 0.6750
+v2 gemma-3-4b-it recall CREDIT_CARD | pii2.v2.vlm.gemma-3-4b-it.by_type.CREDIT_CARD.recall | 0.4430
+v2 gemma-3-4b-it recall NID | pii2.v2.vlm.gemma-3-4b-it.by_type.NID.recall | 0.8000
+v2 gemma-3-4b-it recall PASSWORD | pii2.v2.vlm.gemma-3-4b-it.by_type.PASSWORD.recall | 0.5870
+v2 gemma-3-4b-it recall PERSON | pii2.v2.vlm.gemma-3-4b-it.by_type.PERSON.recall | 0.9319
+v2 qwen2-5-vl-3b-instruct all.f1 | pii2.v2.vlm.qwen2-5-vl-3b-instruct.all.f1 | 0.1208
+v2 qwen2-5-vl-3b-instruct all.precision | pii2.v2.vlm.qwen2-5-vl-3b-instruct.all.precision | 1.0000
+v2 qwen2-5-vl-3b-instruct all.recall | pii2.v2.vlm.qwen2-5-vl-3b-instruct.all.recall | 0.0643
+v2 qwen2-5-vl-3b-instruct seconds_per_image_mean | pii2.v2.vlm.qwen2-5-vl-3b-instruct.seconds_per_image_mean | 6.1463
+v2 qwen2-5-vl-3b-instruct F1 easy | pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_difficulty.easy.f1 | 0.3007
+v2 qwen2-5-vl-3b-instruct F1 medium | pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_difficulty.medium.f1 | 0.0167
+v2 qwen2-5-vl-3b-instruct F1 hard | pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_difficulty.hard.f1 | 0.0000
+v2 qwen2-5-vl-3b-instruct recall ADDRESS | pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_type.ADDRESS.recall | 0.0250
+v2 qwen2-5-vl-3b-instruct recall CREDIT_CARD | pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_type.CREDIT_CARD.recall | 0.0000
+v2 qwen2-5-vl-3b-instruct recall NID | pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_type.NID.recall | 0.1846
+v2 qwen2-5-vl-3b-instruct recall PASSWORD | pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_type.PASSWORD.recall | 0.0000
+v2 qwen2-5-vl-3b-instruct recall PERSON | pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_type.PERSON.recall | 0.0733
+v2 cascade easyocr_cpu+gemma calib_tau | pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.calib_tau | 0.9500
+v2 cascade easyocr_cpu+gemma eval_at_calib_tau.f1 | pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1 | 0.8432
+v2 cascade easyocr_cpu+gemma eval_vlm_share | pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.eval_vlm_share | 0.9944
+v2 cascade easyocr_cpu+gemma eval_at_tau_085.f1 | pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1 | 0.7980
+v2 cascade easyocr_cpu+gemma ocr_only.f1 | pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.ocr_only.f1 | 0.5157
+v2 cascade easyocr_cpu+gemma vlm_only.f1 | pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.vlm_only.f1 | 0.8452
+v2 cascade easyocr_cpu+gemma eval_seconds_per_image | pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.eval_seconds_per_image | 8.2685
+v2 router easyocr_cpu+gemma share | pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.router.eval_vlm_share | 1.0000
+v2 cascade paddleocr_cpu+gemma calib_tau | pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.calib_tau | 1.0000
+v2 cascade paddleocr_cpu+gemma eval_at_calib_tau.f1 | pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1 | 0.8452
+v2 cascade paddleocr_cpu+gemma eval_vlm_share | pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.eval_vlm_share | 1.0000
+v2 cascade paddleocr_cpu+gemma eval_at_tau_085.f1 | pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1 | 0.7075
+v2 cascade paddleocr_cpu+gemma ocr_only.f1 | pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.ocr_only.f1 | 0.7011
+v2 cascade paddleocr_cpu+gemma vlm_only.f1 | pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.vlm_only.f1 | 0.8452
+v2 cascade paddleocr_cpu+gemma eval_seconds_per_image | pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.eval_seconds_per_image | 24.2985
+v2 router paddleocr_cpu+gemma share | pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.router.eval_vlm_share | 1.0000
+funsd gemma-3-4b-it all.f1 | pii2.funsd.vlm.gemma-3-4b-it.all.f1 | 0.4065
+funsd gemma-3-4b-it all.precision | pii2.funsd.vlm.gemma-3-4b-it.all.precision | 0.3497
+funsd gemma-3-4b-it all.recall | pii2.funsd.vlm.gemma-3-4b-it.all.recall | 0.4854
+funsd gemma-3-4b-it seconds_per_image_mean | pii2.funsd.vlm.gemma-3-4b-it.seconds_per_image_mean | 21.4733
+funsd qwen2-5-vl-3b-instruct all.f1 | pii2.funsd.vlm.qwen2-5-vl-3b-instruct.all.f1 | 0.0000
+funsd qwen2-5-vl-3b-instruct all.precision | pii2.funsd.vlm.qwen2-5-vl-3b-instruct.all.precision | 0.0000
+funsd qwen2-5-vl-3b-instruct all.recall | pii2.funsd.vlm.qwen2-5-vl-3b-instruct.all.recall | 0.0000
+funsd qwen2-5-vl-3b-instruct seconds_per_image_mean | pii2.funsd.vlm.qwen2-5-vl-3b-instruct.seconds_per_image_mean | 6.3792
+funsd cascade easyocr_cpu+gemma calib_tau | pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.calib_tau | 0.8000
+funsd cascade easyocr_cpu+gemma eval_at_calib_tau.f1 | pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1 | 0.3313
+funsd cascade easyocr_cpu+gemma eval_vlm_share | pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.eval_vlm_share | 0.8389
+funsd cascade easyocr_cpu+gemma eval_at_tau_085.f1 | pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1 | 0.3770
+funsd cascade easyocr_cpu+gemma ocr_only.f1 | pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.ocr_only.f1 | 0.1121
+funsd cascade easyocr_cpu+gemma vlm_only.f1 | pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.vlm_only.f1 | 0.4065
+funsd cascade easyocr_cpu+gemma eval_seconds_per_image | pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.eval_seconds_per_image | 25.2975
+funsd router easyocr_cpu+gemma share | pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.router.eval_vlm_share | 0.7315
+funsd cascade paddleocr_cpu+gemma calib_tau | pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.calib_tau | 0.9900
+funsd cascade paddleocr_cpu+gemma eval_at_calib_tau.f1 | pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1 | 0.3973
+funsd cascade paddleocr_cpu+gemma eval_vlm_share | pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.eval_vlm_share | 0.9732
+funsd cascade paddleocr_cpu+gemma eval_at_tau_085.f1 | pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1 | 0.1864
+funsd cascade paddleocr_cpu+gemma ocr_only.f1 | pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.ocr_only.f1 | 0.1861
+funsd cascade paddleocr_cpu+gemma vlm_only.f1 | pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.vlm_only.f1 | 0.4065
+funsd cascade paddleocr_cpu+gemma eval_seconds_per_image | pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.eval_seconds_per_image | 48.9452
+funsd router paddleocr_cpu+gemma share | pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.router.eval_vlm_share | 1.0000
+funsd easyocr_cpu presidio all.f1 | pii2.funsd.ocr.easyocr_cpu.presidio.all.f1 | 0.1155
+funsd easyocr_cpu presidio all.precision | pii2.funsd.ocr.easyocr_cpu.presidio.all.precision | 0.0703
+funsd easyocr_cpu presidio all.recall | pii2.funsd.ocr.easyocr_cpu.presidio.all.recall | 0.3236
+funsd easyocr_cpu presidio by_type.PERSON.recall | pii2.funsd.ocr.easyocr_cpu.presidio.by_type.PERSON.recall | 0.2459
+funsd easyocr_cpu presidio by_type.PHONE.recall | pii2.funsd.ocr.easyocr_cpu.presidio.by_type.PHONE.recall | 0.6500
+funsd easyocr_cpu presidio by_type.ADDRESS.recall | pii2.funsd.ocr.easyocr_cpu.presidio.by_type.ADDRESS.recall | 0.2000
+funsd easyocr_cpu presidio_plus all.f1 | pii2.funsd.ocr.easyocr_cpu.presidio_plus.all.f1 | 0.1121
+funsd easyocr_cpu presidio_plus all.precision | pii2.funsd.ocr.easyocr_cpu.presidio_plus.all.precision | 0.0679
+funsd easyocr_cpu presidio_plus all.recall | pii2.funsd.ocr.easyocr_cpu.presidio_plus.all.recall | 0.3204
+funsd easyocr_cpu presidio_plus by_type.PERSON.recall | pii2.funsd.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.recall | 0.2459
+funsd easyocr_cpu presidio_plus by_type.PHONE.recall | pii2.funsd.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.recall | 0.6500
+funsd easyocr_cpu presidio_plus by_type.ADDRESS.recall | pii2.funsd.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.recall | 0.0000
+funsd paddleocr_cpu presidio all.f1 | pii2.funsd.ocr.paddleocr_cpu.presidio.all.f1 | 0.1904
+funsd paddleocr_cpu presidio all.precision | pii2.funsd.ocr.paddleocr_cpu.presidio.all.precision | 0.1142
+funsd paddleocr_cpu presidio all.recall | pii2.funsd.ocr.paddleocr_cpu.presidio.all.recall | 0.5728
+funsd paddleocr_cpu presidio by_type.PERSON.recall | pii2.funsd.ocr.paddleocr_cpu.presidio.by_type.PERSON.recall | 0.5328
+funsd paddleocr_cpu presidio by_type.PHONE.recall | pii2.funsd.ocr.paddleocr_cpu.presidio.by_type.PHONE.recall | 0.7833
+funsd paddleocr_cpu presidio by_type.ADDRESS.recall | pii2.funsd.ocr.paddleocr_cpu.presidio.by_type.ADDRESS.recall | 0.0000
+funsd paddleocr_cpu presidio_plus all.f1 | pii2.funsd.ocr.paddleocr_cpu.presidio_plus.all.f1 | 0.1861
+funsd paddleocr_cpu presidio_plus all.precision | pii2.funsd.ocr.paddleocr_cpu.presidio_plus.all.precision | 0.1111
+funsd paddleocr_cpu presidio_plus all.recall | pii2.funsd.ocr.paddleocr_cpu.presidio_plus.all.recall | 0.5728
+funsd paddleocr_cpu presidio_plus by_type.PERSON.recall | pii2.funsd.ocr.paddleocr_cpu.presidio_plus.by_type.PERSON.recall | 0.5328
+funsd paddleocr_cpu presidio_plus by_type.PHONE.recall | pii2.funsd.ocr.paddleocr_cpu.presidio_plus.by_type.PHONE.recall | 0.7833
+funsd paddleocr_cpu presidio_plus by_type.ADDRESS.recall | pii2.funsd.ocr.paddleocr_cpu.presidio_plus.by_type.ADDRESS.recall | 0.0000
+funsd router easyocr+gemma F1 | pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.router.eval.f1 | 0.2412

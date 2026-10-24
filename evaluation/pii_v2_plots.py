@@ -17,6 +17,17 @@ import json
 from evaluation.pii_v2 import OUT
 
 
+NAMES = {"easyocr": "EasyOCR", "paddleocr": "PaddleOCR",
+         "gemma-3-4b-it": "gemma-3-4B", "qwen2-5-vl-3b-instruct": "Qwen2.5-VL-3B",
+         "qwen2-5-vl-7b-instruct": "Qwen2.5-VL-7B"}
+
+
+def pretty(pair: str) -> str:
+    """'easyocr_cpu_gemma-3-4b-it' -> 'EasyOCR + gemma-3-4B'"""
+    ocr, _, vlm = pair.partition("_cpu_")
+    return f"{NAMES.get(ocr, ocr)} + {NAMES.get(vlm, vlm)}"
+
+
 def main() -> None:
     import matplotlib
     matplotlib.use("Agg")
@@ -26,14 +37,14 @@ def main() -> None:
     files = sorted(OUT.glob("pareto_v2_*.csv"))
     if not files:
         raise SystemExit("no pareto_v2_*.csv; run `python -m evaluation.pii_v2 score` after a VLM stage")
-    fig, ax = plt.subplots(figsize=(3.4, 2.6))
+    fig, ax = plt.subplots(figsize=(3.4, 3.1))
     markers = "osD^v<>"
     for i, f in enumerate(files):
         pair = f.stem.removeprefix("pareto_v2_")
         rows = list(csv.DictReader(open(f, encoding="utf-8")))
         x = [float(r["seconds_per_image"]) for r in rows]
         y = [float(r["f1"]) for r in rows]
-        ax.plot(x, y, "-", lw=0.8, label=pair.replace("_", " ", 1))
+        ax.plot(x, y, "-", lw=0.8, label=pretty(pair))
         ocr, vlm = None, None
         for k, v in metrics.items():
             if k.startswith("cascade.") and k.replace("cascade.", "").replace(".", "_", 1) == pair:
@@ -42,13 +53,13 @@ def main() -> None:
                 r = v.get("router", {})
                 if "eval" in r:
                     ax.plot(r["eval_seconds_per_image"], r["eval"]["f1"], "*", ms=7, color=ax.lines[-1].get_color())
-    ax.set_xlabel("mean seconds per image (OCR always, VLM when routed)")
+    ax.set_xlabel("mean seconds per image\n(OCR always, VLM when routed)")
     ax.set_ylabel("entity F1 (v2 eval images)")
     ax.grid(color="0.9")
-    ax.legend(fontsize=6, loc="lower right")
+    ax.legend(fontsize=6, loc="upper center", bbox_to_anchor=(0.5, -0.32), ncol=2, frameon=False)
     ax.set_title("Cascade cost vs accuracy over tau", fontsize=8)
     fig.text(0.01, 0.005, "marker: tau chosen on calib; star: router", fontsize=6)
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0.03, 1, 1))
     for ext in ("pdf", "svg"):
         fig.savefig(OUT / f"pareto_v2.{ext}")
     print(f"  -> {OUT / 'pareto_v2.pdf'}")

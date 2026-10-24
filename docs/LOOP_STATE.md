@@ -33,10 +33,10 @@ Start T3.3.
 | T2.5 | M | DONE | |
 | T2.6 | S | IN_PROGRESS | reopened by D-020: CERT r4.2 downloading to D:/datasets/cert |
 | T2.7 | M | DONE | |
-| T3.1 | M | IN_PROGRESS | corpus built and scored for Presidio/OCR; acceptance (strongest available model < 1.000) waits for a VLM |
+| T3.1 | M | DONE | v2 + FUNSD subset; strongest local VLM (gemma-4B) v2 F1 0.845 < 1.000 |
 | T3.2 | M | DONE | |
-| T3.3 | M | PENDING | |
-| T3.4 | M | PENDING | |
+| T3.3 | M | DONE | Qwen2.5-VL-3B and gemma-3-4b-it local; Qwen2.5-VL-7B added when its download finishes |
+| T3.4 | M | DONE | Pareto CSVs, calib tau, router; figure results/pii_v2/pareto_v2.pdf |
 | T3.5 | M | DONE | |
 | T3.6 | M | DONE | |
 | T3.7 | C | PENDING | gate G-SPEND (Q-002) |

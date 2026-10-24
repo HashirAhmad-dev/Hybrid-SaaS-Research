@@ -1,14 +1,17 @@
 {
  "_meta": {
   "split_counts": {
-   "calib": 120,
-   "eval": 360
+   "calib": 170,
+   "eval": 509
   },
   "ocr_engines": [
    "easyocr_cpu",
    "paddleocr_cpu"
   ],
-  "vlms": []
+  "vlms": [
+   "gemma-3-4b-it",
+   "qwen2-5-vl-3b-instruct"
+  ]
  },
  "v2": {
   "n_eval_docs": 270,
@@ -727,6 +730,509 @@
    "seconds_per_image_mean": 19.748891070000695,
    "seconds_per_image_p95": 38.46527065499466,
    "n_images": 180
+  },
+  "vlm.gemma-3-4b-it": {
+   "all": {
+    "tp": 598,
+    "fp": 70,
+    "fn": 149,
+    "precision": 0.8952095808383234,
+    "recall": 0.8005354752342704,
+    "f1": 0.8452296819787986
+   },
+   "by_type": {
+    "CREDIT_CARD": {
+     "tp": 35,
+     "fp": 4,
+     "fn": 44,
+     "precision": 0.8974358974358975,
+     "recall": 0.4430379746835443,
+     "f1": 0.5932203389830508
+    },
+    "NID": {
+     "tp": 52,
+     "fp": 7,
+     "fn": 13,
+     "precision": 0.8813559322033898,
+     "recall": 0.8,
+     "f1": 0.8387096774193548
+    },
+    "PASSWORD": {
+     "tp": 27,
+     "fp": 5,
+     "fn": 19,
+     "precision": 0.84375,
+     "recall": 0.5869565217391305,
+     "f1": 0.6923076923076924
+    },
+    "EMAIL": {
+     "tp": 93,
+     "fp": 12,
+     "fn": 12,
+     "precision": 0.8857142857142857,
+     "recall": 0.8857142857142857,
+     "f1": 0.8857142857142857
+    },
+    "PHONE": {
+     "tp": 78,
+     "fp": 14,
+     "fn": 20,
+     "precision": 0.8478260869565217,
+     "recall": 0.7959183673469388,
+     "f1": 0.8210526315789473
+    },
+    "ADDRESS": {
+     "tp": 54,
+     "fp": 1,
+     "fn": 26,
+     "precision": 0.9818181818181818,
+     "recall": 0.675,
+     "f1": 0.8
+    },
+    "PERSON": {
+     "tp": 178,
+     "fp": 21,
+     "fn": 13,
+     "precision": 0.8944723618090452,
+     "recall": 0.9319371727748691,
+     "f1": 0.9128205128205128
+    },
+    "DOB": {
+     "tp": 81,
+     "fp": 6,
+     "fn": 2,
+     "precision": 0.9310344827586207,
+     "recall": 0.9759036144578314,
+     "f1": 0.9529411764705883
+    }
+   },
+   "by_difficulty": {
+    "easy": {
+     "tp": 248,
+     "fp": 6,
+     "fn": 12,
+     "precision": 0.9763779527559056,
+     "recall": 0.9538461538461539,
+     "f1": 0.9649805447470817
+    },
+    "hard": {
+     "tp": 151,
+     "fp": 43,
+     "fn": 98,
+     "precision": 0.7783505154639175,
+     "recall": 0.606425702811245,
+     "f1": 0.6817155756207675
+    },
+    "medium": {
+     "tp": 199,
+     "fp": 21,
+     "fn": 39,
+     "precision": 0.9045454545454545,
+     "recall": 0.8361344537815126,
+     "f1": 0.868995633187773
+    }
+   },
+   "by_category": {
+    "scanned": {
+     "tp": 288,
+     "fp": 42,
+     "fn": 78,
+     "precision": 0.8727272727272727,
+     "recall": 0.7868852459016393,
+     "f1": 0.8275862068965518
+    },
+    "handwritten": {
+     "tp": 310,
+     "fp": 28,
+     "fn": 71,
+     "precision": 0.9171597633136095,
+     "recall": 0.8136482939632546,
+     "f1": 0.8623087621696801
+    }
+   },
+   "n_images": 180,
+   "n_status_ok": 179,
+   "status_counts": {
+    "error:BadRequestError": 1,
+    "ok": 179
+   },
+   "seconds_per_image_mean": 4.549658364444703,
+   "tokens_per_second_mean": 20.635060663391627,
+   "gpu_peak_mib": 5976
+  },
+  "vlm.qwen2-5-vl-3b-instruct": {
+   "all": {
+    "tp": 48,
+    "fp": 0,
+    "fn": 699,
+    "precision": 1.0,
+    "recall": 0.0642570281124498,
+    "f1": 0.12075471698113208
+   },
+   "by_type": {
+    "CREDIT_CARD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 79,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "NID": {
+     "tp": 12,
+     "fp": 0,
+     "fn": 53,
+     "precision": 1.0,
+     "recall": 0.18461538461538463,
+     "f1": 0.3116883116883117
+    },
+    "PASSWORD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 46,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "EMAIL": {
+     "tp": 4,
+     "fp": 0,
+     "fn": 101,
+     "precision": 1.0,
+     "recall": 0.0380952380952381,
+     "f1": 0.07339449541284404
+    },
+    "PHONE": {
+     "tp": 8,
+     "fp": 0,
+     "fn": 90,
+     "precision": 1.0,
+     "recall": 0.08163265306122448,
+     "f1": 0.15094339622641506
+    },
+    "ADDRESS": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 78,
+     "precision": 1.0,
+     "recall": 0.025,
+     "f1": 0.04878048780487806
+    },
+    "PERSON": {
+     "tp": 14,
+     "fp": 0,
+     "fn": 177,
+     "precision": 1.0,
+     "recall": 0.07329842931937172,
+     "f1": 0.13658536585365852
+    },
+    "DOB": {
+     "tp": 8,
+     "fp": 0,
+     "fn": 75,
+     "precision": 1.0,
+     "recall": 0.0963855421686747,
+     "f1": 0.1758241758241758
+    }
+   },
+   "by_difficulty": {
+    "easy": {
+     "tp": 46,
+     "fp": 0,
+     "fn": 214,
+     "precision": 1.0,
+     "recall": 0.17692307692307693,
+     "f1": 0.3006535947712418
+    },
+    "hard": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 249,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "medium": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 236,
+     "precision": 1.0,
+     "recall": 0.008403361344537815,
+     "f1": 0.016666666666666666
+    }
+   },
+   "by_category": {
+    "scanned": {
+     "tp": 38,
+     "fp": 0,
+     "fn": 328,
+     "precision": 1.0,
+     "recall": 0.10382513661202186,
+     "f1": 0.18811881188118815
+    },
+    "handwritten": {
+     "tp": 10,
+     "fp": 0,
+     "fn": 371,
+     "precision": 1.0,
+     "recall": 0.026246719160104987,
+     "f1": 0.05115089514066496
+    }
+   },
+   "n_images": 180,
+   "n_status_ok": 154,
+   "status_counts": {
+    "malformed_json": 26,
+    "ok": 154
+   },
+   "seconds_per_image_mean": 6.146324460555479,
+   "tokens_per_second_mean": 9.351103996936592,
+   "gpu_peak_mib": 4117
+  },
+  "cascade.easyocr_cpu.gemma-3-4b-it": {
+   "calib_tau": 0.95,
+   "eval_at_calib_tau": {
+    "tp": 597,
+    "fp": 72,
+    "fn": 150,
+    "precision": 0.8923766816143498,
+    "recall": 0.7991967871485943,
+    "f1": 0.8432203389830509
+   },
+   "eval_vlm_share": 0.9944444444444445,
+   "eval_seconds_per_image": 8.268549715555976,
+   "ocr_only": {
+    "tp": 418,
+    "fp": 456,
+    "fn": 329,
+    "precision": 0.4782608695652174,
+    "recall": 0.5595716198125836,
+    "f1": 0.5157310302282542
+   },
+   "vlm_only": {
+    "tp": 598,
+    "fp": 70,
+    "fn": 149,
+    "precision": 0.8952095808383234,
+    "recall": 0.8005354752342704,
+    "f1": 0.8452296819787986
+   },
+   "eval_at_tau_085": {
+    "tp": 569,
+    "fp": 110,
+    "fn": 178,
+    "precision": 0.8379970544918999,
+    "recall": 0.7617135207496654,
+    "f1": 0.7980364656381487
+   },
+   "vlm_share_at_tau_085": 0.8611111111111112,
+   "router": {
+    "features": [
+     "ocr_confidence",
+     "log_transcript_chars",
+     "presidio_hits",
+     "hits_per_100_chars",
+     "log_image_pixels",
+     "ocr_boxes"
+    ],
+    "calib_cut": 0.0,
+    "eval": {
+     "tp": 598,
+     "fp": 70,
+     "fn": 149,
+     "precision": 0.8952095808383234,
+     "recall": 0.8005354752342704,
+     "f1": 0.8452296819787986
+    },
+    "eval_vlm_share": 1.0,
+    "eval_seconds_per_image": 8.291479543333763,
+    "threshold_at_same_share": {
+     "tp": 598,
+     "fp": 70,
+     "fn": 149,
+     "precision": 0.8952095808383234,
+     "recall": 0.8005354752342704,
+     "f1": 0.8452296819787986
+    },
+    "label_positive_rate_calib": 0.5833333333333334
+   }
+  },
+  "cascade.easyocr_cpu.qwen2-5-vl-3b-instruct": {
+   "calib_tau": 0.58,
+   "eval_at_calib_tau": {
+    "tp": 383,
+    "fp": 253,
+    "fn": 364,
+    "precision": 0.6022012578616353,
+    "recall": 0.5127175368139224,
+    "f1": 0.5538684020245843
+   },
+   "eval_vlm_share": 0.25,
+   "eval_seconds_per_image": 6.228134844444664,
+   "ocr_only": {
+    "tp": 418,
+    "fp": 456,
+    "fn": 329,
+    "precision": 0.4782608695652174,
+    "recall": 0.5595716198125836,
+    "f1": 0.5157310302282542
+   },
+   "vlm_only": {
+    "tp": 48,
+    "fp": 0,
+    "fn": 699,
+    "precision": 1.0,
+    "recall": 0.0642570281124498,
+    "f1": 0.12075471698113208
+   },
+   "eval_at_tau_085": {
+    "tp": 108,
+    "fp": 43,
+    "fn": 639,
+    "precision": 0.7152317880794702,
+    "recall": 0.14457831325301204,
+    "f1": 0.24053452115812918
+   },
+   "vlm_share_at_tau_085": 0.8611111111111112,
+   "router": {
+    "features": [
+     "ocr_confidence",
+     "log_transcript_chars",
+     "presidio_hits",
+     "hits_per_100_chars",
+     "log_image_pixels",
+     "ocr_boxes"
+    ],
+    "calib_cut": 0.08,
+    "eval": {
+     "tp": 378,
+     "fp": 355,
+     "fn": 369,
+     "precision": 0.5156889495225102,
+     "recall": 0.5060240963855421,
+     "f1": 0.5108108108108108
+    },
+    "eval_vlm_share": 0.18333333333333332,
+    "eval_seconds_per_image": 4.437214247777987,
+    "threshold_at_same_share": {
+     "tp": 402,
+     "fp": 289,
+     "fn": 345,
+     "precision": 0.5817655571635311,
+     "recall": 0.5381526104417671,
+     "f1": 0.5591098748261474
+    },
+    "label_positive_rate_calib": 0.03333333333333333
+   }
+  },
+  "cascade.paddleocr_cpu.gemma-3-4b-it": {
+   "calib_tau": 1.0,
+   "eval_at_calib_tau": {
+    "tp": 598,
+    "fp": 70,
+    "fn": 149,
+    "precision": 0.8952095808383234,
+    "recall": 0.8005354752342704,
+    "f1": 0.8452296819787986
+   },
+   "eval_vlm_share": 1.0,
+   "eval_seconds_per_image": 24.298549434445402,
+   "ocr_only": {
+    "tp": 611,
+    "fp": 385,
+    "fn": 136,
+    "precision": 0.6134538152610441,
+    "recall": 0.8179384203480589,
+    "f1": 0.7010900745840504
+   },
+   "vlm_only": {
+    "tp": 598,
+    "fp": 70,
+    "fn": 149,
+    "precision": 0.8952095808383234,
+    "recall": 0.8005354752342704,
+    "f1": 0.8452296819787986
+   },
+   "eval_at_tau_085": {
+    "tp": 612,
+    "fp": 371,
+    "fn": 135,
+    "precision": 0.6225839267548321,
+    "recall": 0.8192771084337349,
+    "f1": 0.707514450867052
+   },
+   "vlm_share_at_tau_085": 0.016666666666666666,
+   "router": {
+    "features": [
+     "ocr_confidence",
+     "log_transcript_chars",
+     "presidio_hits",
+     "hits_per_100_chars",
+     "log_image_pixels",
+     "ocr_boxes"
+    ],
+    "calib_cut": 0.0,
+    "eval": {
+     "tp": 598,
+     "fp": 70,
+     "fn": 149,
+     "precision": 0.8952095808383234,
+     "recall": 0.8005354752342704,
+     "f1": 0.8452296819787986
+    },
+    "eval_vlm_share": 1.0,
+    "eval_seconds_per_image": 24.298549434445402,
+    "threshold_at_same_share": {
+     "tp": 598,
+     "fp": 70,
+     "fn": 149,
+     "precision": 0.8952095808383234,
+     "recall": 0.8005354752342704,
+     "f1": 0.8452296819787986
+    },
+    "label_positive_rate_calib": 0.3333333333333333
+   }
+  },
+  "cascade.paddleocr_cpu.qwen2-5-vl-3b-instruct": {
+   "calib_tau": 0.96,
+   "eval_at_calib_tau": {
+    "tp": 590,
+    "fp": 339,
+    "fn": 157,
+    "precision": 0.635091496232508,
+    "recall": 0.7898259705488622,
+    "f1": 0.7040572792362769
+   },
+   "eval_vlm_share": 0.06666666666666667,
+   "eval_seconds_per_image": 20.38649702500073,
+   "ocr_only": {
+    "tp": 611,
+    "fp": 385,
+    "fn": 136,
+    "precision": 0.6134538152610441,
+    "recall": 0.8179384203480589,
+    "f1": 0.7010900745840504
+   },
+   "vlm_only": {
+    "tp": 48,
+    "fp": 0,
+    "fn": 699,
+    "precision": 1.0,
+    "recall": 0.0642570281124498,
+    "f1": 0.12075471698113208
+   },
+   "eval_at_tau_085": {
+    "tp": 609,
+    "fp": 366,
+    "fn": 138,
+    "precision": 0.6246153846153846,
+    "recall": 0.8152610441767069,
+    "f1": 0.7073170731707317
+   },
+   "vlm_share_at_tau_085": 0.016666666666666666,
+   "router": {
+    "skipped": "calib label has a single class"
+   }
   }
  },
  "v1": {
@@ -1346,6 +1852,1395 @@
    "seconds_per_image_mean": 49.38925304999963,
    "seconds_per_image_p95": 35.21353655000417,
    "n_images": 60
+  },
+  "vlm.gemma-3-4b-it": {
+   "all": {
+    "tp": 185,
+    "fp": 5,
+    "fn": 6,
+    "precision": 0.9736842105263158,
+    "recall": 0.9685863874345549,
+    "f1": 0.9711286089238845
+   },
+   "by_type": {
+    "CREDIT_CARD": {
+     "tp": 11,
+     "fp": 0,
+     "fn": 6,
+     "precision": 1.0,
+     "recall": 0.6470588235294118,
+     "f1": 0.7857142857142858
+    },
+    "NID": {
+     "tp": 14,
+     "fp": 3,
+     "fn": 0,
+     "precision": 0.8235294117647058,
+     "recall": 1.0,
+     "f1": 0.9032258064516129
+    },
+    "PASSWORD": {
+     "tp": 11,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "EMAIL": {
+     "tp": 33,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.9705882352941176,
+     "recall": 1.0,
+     "f1": 0.9850746268656716
+    },
+    "PHONE": {
+     "tp": 24,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "ADDRESS": {
+     "tp": 23,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "PERSON": {
+     "tp": 53,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.9814814814814815,
+     "recall": 1.0,
+     "f1": 0.9906542056074767
+    },
+    "DOB": {
+     "tp": 16,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "by_difficulty": {
+    "v1": {
+     "tp": 185,
+     "fp": 5,
+     "fn": 6,
+     "precision": 0.9736842105263158,
+     "recall": 0.9685863874345549,
+     "f1": 0.9711286089238845
+    }
+   },
+   "by_category": {
+    "scanned": {
+     "tp": 106,
+     "fp": 2,
+     "fn": 4,
+     "precision": 0.9814814814814815,
+     "recall": 0.9636363636363636,
+     "f1": 0.9724770642201834
+    },
+    "handwritten": {
+     "tp": 79,
+     "fp": 3,
+     "fn": 2,
+     "precision": 0.9634146341463414,
+     "recall": 0.9753086419753086,
+     "f1": 0.9693251533742332
+    }
+   },
+   "n_images": 60,
+   "n_status_ok": 60,
+   "status_counts": {
+    "ok": 60
+   },
+   "seconds_per_image_mean": 7.376612451666491,
+   "tokens_per_second_mean": 10.68072308746857,
+   "gpu_peak_mib": 5976
+  },
+  "vlm.qwen2-5-vl-3b-instruct": {
+   "all": {
+    "tp": 37,
+    "fp": 0,
+    "fn": 154,
+    "precision": 1.0,
+    "recall": 0.193717277486911,
+    "f1": 0.32456140350877194
+   },
+   "by_type": {
+    "CREDIT_CARD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 17,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "NID": {
+     "tp": 10,
+     "fp": 0,
+     "fn": 4,
+     "precision": 1.0,
+     "recall": 0.7142857142857143,
+     "f1": 0.8333333333333333
+    },
+    "PASSWORD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 11,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "EMAIL": {
+     "tp": 5,
+     "fp": 0,
+     "fn": 28,
+     "precision": 1.0,
+     "recall": 0.15151515151515152,
+     "f1": 0.2631578947368421
+    },
+    "PHONE": {
+     "tp": 5,
+     "fp": 0,
+     "fn": 19,
+     "precision": 1.0,
+     "recall": 0.20833333333333334,
+     "f1": 0.3448275862068966
+    },
+    "ADDRESS": {
+     "tp": 3,
+     "fp": 0,
+     "fn": 20,
+     "precision": 1.0,
+     "recall": 0.13043478260869565,
+     "f1": 0.23076923076923078
+    },
+    "PERSON": {
+     "tp": 8,
+     "fp": 0,
+     "fn": 45,
+     "precision": 1.0,
+     "recall": 0.1509433962264151,
+     "f1": 0.26229508196721313
+    },
+    "DOB": {
+     "tp": 6,
+     "fp": 0,
+     "fn": 10,
+     "precision": 1.0,
+     "recall": 0.375,
+     "f1": 0.5454545454545454
+    }
+   },
+   "by_difficulty": {
+    "v1": {
+     "tp": 37,
+     "fp": 0,
+     "fn": 154,
+     "precision": 1.0,
+     "recall": 0.193717277486911,
+     "f1": 0.32456140350877194
+    }
+   },
+   "by_category": {
+    "scanned": {
+     "tp": 27,
+     "fp": 0,
+     "fn": 83,
+     "precision": 1.0,
+     "recall": 0.24545454545454545,
+     "f1": 0.39416058394160586
+    },
+    "handwritten": {
+     "tp": 10,
+     "fp": 0,
+     "fn": 71,
+     "precision": 1.0,
+     "recall": 0.12345679012345678,
+     "f1": 0.21978021978021975
+    }
+   },
+   "n_images": 60,
+   "n_status_ok": 60,
+   "status_counts": {
+    "ok": 60
+   },
+   "seconds_per_image_mean": 2.717000008333222,
+   "tokens_per_second_mean": 3.654257167001199,
+   "gpu_peak_mib": 4117
+  },
+  "cascade.easyocr_cpu.gemma-3-4b-it": {
+   "calib_tau": 1.0,
+   "eval_at_calib_tau": {
+    "tp": 185,
+    "fp": 5,
+    "fn": 6,
+    "precision": 0.9736842105263158,
+    "recall": 0.9685863874345549,
+    "f1": 0.9711286089238845
+   },
+   "eval_vlm_share": 1.0,
+   "eval_seconds_per_image": 10.002477366665213,
+   "ocr_only": {
+    "tp": 146,
+    "fp": 31,
+    "fn": 45,
+    "precision": 0.8248587570621468,
+    "recall": 0.7643979057591623,
+    "f1": 0.7934782608695652
+   },
+   "vlm_only": {
+    "tp": 185,
+    "fp": 5,
+    "fn": 6,
+    "precision": 0.9736842105263158,
+    "recall": 0.9685863874345549,
+    "f1": 0.9711286089238845
+   },
+   "eval_at_tau_085": {
+    "tp": 168,
+    "fp": 17,
+    "fn": 23,
+    "precision": 0.9081081081081082,
+    "recall": 0.8795811518324608,
+    "f1": 0.8936170212765958
+   },
+   "vlm_share_at_tau_085": 0.5166666666666667,
+   "router": {
+    "features": [
+     "ocr_confidence",
+     "log_transcript_chars",
+     "presidio_hits",
+     "hits_per_100_chars",
+     "log_image_pixels",
+     "ocr_boxes"
+    ],
+    "calib_cut": 0.0,
+    "eval": {
+     "tp": 185,
+     "fp": 5,
+     "fn": 6,
+     "precision": 0.9736842105263158,
+     "recall": 0.9685863874345549,
+     "f1": 0.9711286089238845
+    },
+    "eval_vlm_share": 1.0,
+    "eval_seconds_per_image": 10.002477366665213,
+    "threshold_at_same_share": {
+     "tp": 185,
+     "fp": 5,
+     "fn": 6,
+     "precision": 0.9736842105263158,
+     "recall": 0.9685863874345549,
+     "f1": 0.9711286089238845
+    },
+    "label_positive_rate_calib": 0.55
+   }
+  },
+  "cascade.easyocr_cpu.qwen2-5-vl-3b-instruct": {
+   "calib_tau": 0.66,
+   "eval_at_calib_tau": {
+    "tp": 145,
+    "fp": 30,
+    "fn": 46,
+    "precision": 0.8285714285714286,
+    "recall": 0.7591623036649214,
+    "f1": 0.7923497267759563
+   },
+   "eval_vlm_share": 0.03333333333333333,
+   "eval_seconds_per_image": 2.675513828332017,
+   "ocr_only": {
+    "tp": 146,
+    "fp": 31,
+    "fn": 45,
+    "precision": 0.8248587570621468,
+    "recall": 0.7643979057591623,
+    "f1": 0.7934782608695652
+   },
+   "vlm_only": {
+    "tp": 37,
+    "fp": 0,
+    "fn": 154,
+    "precision": 1.0,
+    "recall": 0.193717277486911,
+    "f1": 0.32456140350877194
+   },
+   "eval_at_tau_085": {
+    "tp": 90,
+    "fp": 16,
+    "fn": 101,
+    "precision": 0.8490566037735849,
+    "recall": 0.4712041884816754,
+    "f1": 0.6060606060606061
+   },
+   "vlm_share_at_tau_085": 0.5166666666666667,
+   "router": {
+    "features": [
+     "ocr_confidence",
+     "log_transcript_chars",
+     "presidio_hits",
+     "hits_per_100_chars",
+     "log_image_pixels",
+     "ocr_boxes"
+    ],
+    "calib_cut": 0.4,
+    "eval": {
+     "tp": 116,
+     "fp": 13,
+     "fn": 75,
+     "precision": 0.8992248062015504,
+     "recall": 0.6073298429319371,
+     "f1": 0.7250000000000001
+    },
+    "eval_vlm_share": 0.25,
+    "eval_seconds_per_image": 3.7016871449988686,
+    "threshold_at_same_share": {
+     "tp": 125,
+     "fp": 22,
+     "fn": 66,
+     "precision": 0.8503401360544217,
+     "recall": 0.6544502617801047,
+     "f1": 0.7396449704142011
+    },
+    "label_positive_rate_calib": 0.05
+   }
+  },
+  "cascade.paddleocr_cpu.gemma-3-4b-it": {
+   "calib_tau": 0.99,
+   "eval_at_calib_tau": {
+    "tp": 182,
+    "fp": 8,
+    "fn": 9,
+    "precision": 0.9578947368421052,
+    "recall": 0.9528795811518325,
+    "f1": 0.9553805774278215
+   },
+   "eval_vlm_share": 0.4666666666666667,
+   "eval_seconds_per_image": 52.97366429666617,
+   "ocr_only": {
+    "tp": 182,
+    "fp": 8,
+    "fn": 9,
+    "precision": 0.9578947368421052,
+    "recall": 0.9528795811518325,
+    "f1": 0.9553805774278215
+   },
+   "vlm_only": {
+    "tp": 185,
+    "fp": 5,
+    "fn": 6,
+    "precision": 0.9736842105263158,
+    "recall": 0.9685863874345549,
+    "f1": 0.9711286089238845
+   },
+   "eval_at_tau_085": {
+    "tp": 182,
+    "fp": 8,
+    "fn": 9,
+    "precision": 0.9578947368421052,
+    "recall": 0.9528795811518325,
+    "f1": 0.9553805774278215
+   },
+   "vlm_share_at_tau_085": 0.0,
+   "router": {
+    "features": [
+     "ocr_confidence",
+     "log_transcript_chars",
+     "presidio_hits",
+     "hits_per_100_chars",
+     "log_image_pixels",
+     "ocr_boxes"
+    ],
+    "calib_cut": 0.0,
+    "eval": {
+     "tp": 185,
+     "fp": 5,
+     "fn": 6,
+     "precision": 0.9736842105263158,
+     "recall": 0.9685863874345549,
+     "f1": 0.9711286089238845
+    },
+    "eval_vlm_share": 1.0,
+    "eval_seconds_per_image": 56.76586550166612,
+    "threshold_at_same_share": {
+     "tp": 185,
+     "fp": 5,
+     "fn": 6,
+     "precision": 0.9736842105263158,
+     "recall": 0.9685863874345549,
+     "f1": 0.9711286089238845
+    },
+    "label_positive_rate_calib": 0.25
+   }
+  },
+  "cascade.paddleocr_cpu.qwen2-5-vl-3b-instruct": {
+   "calib_tau": 0.0,
+   "eval_at_calib_tau": {
+    "tp": 182,
+    "fp": 8,
+    "fn": 9,
+    "precision": 0.9578947368421052,
+    "recall": 0.9528795811518325,
+    "f1": 0.9553805774278215
+   },
+   "eval_vlm_share": 0.0,
+   "eval_seconds_per_image": 49.38925304999963,
+   "ocr_only": {
+    "tp": 182,
+    "fp": 8,
+    "fn": 9,
+    "precision": 0.9578947368421052,
+    "recall": 0.9528795811518325,
+    "f1": 0.9553805774278215
+   },
+   "vlm_only": {
+    "tp": 37,
+    "fp": 0,
+    "fn": 154,
+    "precision": 1.0,
+    "recall": 0.193717277486911,
+    "f1": 0.32456140350877194
+   },
+   "eval_at_tau_085": {
+    "tp": 182,
+    "fp": 8,
+    "fn": 9,
+    "precision": 0.9578947368421052,
+    "recall": 0.9528795811518325,
+    "f1": 0.9553805774278215
+   },
+   "vlm_share_at_tau_085": 0.0,
+   "router": {
+    "features": [
+     "ocr_confidence",
+     "log_transcript_chars",
+     "presidio_hits",
+     "hits_per_100_chars",
+     "log_image_pixels",
+     "ocr_boxes"
+    ],
+    "calib_cut": 0.58,
+    "eval": {
+     "tp": 155,
+     "fp": 5,
+     "fn": 36,
+     "precision": 0.96875,
+     "recall": 0.8115183246073299,
+     "f1": 0.8831908831908831
+    },
+    "eval_vlm_share": 0.15,
+    "eval_seconds_per_image": 50.041153956666555,
+    "threshold_at_same_share": {
+     "tp": 161,
+     "fp": 7,
+     "fn": 30,
+     "precision": 0.9583333333333334,
+     "recall": 0.8429319371727748,
+     "f1": 0.8969359331476323
+    },
+    "label_positive_rate_calib": 0.05
+   }
+  }
+ },
+ "funsd": {
+  "n_eval_docs": 149,
+  "n_calib_docs": 50,
+  "n_eval_entities": 309,
+  "ocr.easyocr_cpu.presidio": {
+   "all": {
+    "tp": 100,
+    "fp": 1323,
+    "fn": 209,
+    "precision": 0.07027406886858749,
+    "recall": 0.32362459546925565,
+    "f1": 0.11547344110854503
+   },
+   "by_type": {
+    "CREDIT_CARD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "NID": {
+     "tp": 0,
+     "fp": 2,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PASSWORD": {
+     "tp": 0,
+     "fp": 71,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "EMAIL": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PHONE": {
+     "tp": 39,
+     "fp": 66,
+     "fn": 21,
+     "precision": 0.37142857142857144,
+     "recall": 0.65,
+     "f1": 0.4727272727272728
+    },
+    "ADDRESS": {
+     "tp": 1,
+     "fp": 379,
+     "fn": 4,
+     "precision": 0.002631578947368421,
+     "recall": 0.2,
+     "f1": 0.005194805194805194
+    },
+    "PERSON": {
+     "tp": 60,
+     "fp": 475,
+     "fn": 184,
+     "precision": 0.11214953271028037,
+     "recall": 0.2459016393442623,
+     "f1": 0.1540436456996149
+    },
+    "DOB": {
+     "tp": 0,
+     "fp": 330,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "by_difficulty": {
+    "real": {
+     "tp": 100,
+     "fp": 1323,
+     "fn": 209,
+     "precision": 0.07027406886858749,
+     "recall": 0.32362459546925565,
+     "f1": 0.11547344110854503
+    }
+   },
+   "by_category": {
+    "scanned": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "handwritten": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  "ocr.easyocr_cpu.presidio_plus": {
+   "all": {
+    "tp": 99,
+    "fp": 1359,
+    "fn": 210,
+    "precision": 0.06790123456790123,
+    "recall": 0.32038834951456313,
+    "f1": 0.11205432937181664
+   },
+   "by_type": {
+    "CREDIT_CARD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "NID": {
+     "tp": 0,
+     "fp": 2,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PASSWORD": {
+     "tp": 0,
+     "fp": 71,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "EMAIL": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PHONE": {
+     "tp": 39,
+     "fp": 66,
+     "fn": 21,
+     "precision": 0.37142857142857144,
+     "recall": 0.65,
+     "f1": 0.4727272727272728
+    },
+    "ADDRESS": {
+     "tp": 0,
+     "fp": 416,
+     "fn": 5,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PERSON": {
+     "tp": 60,
+     "fp": 475,
+     "fn": 184,
+     "precision": 0.11214953271028037,
+     "recall": 0.2459016393442623,
+     "f1": 0.1540436456996149
+    },
+    "DOB": {
+     "tp": 0,
+     "fp": 329,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "by_difficulty": {
+    "real": {
+     "tp": 99,
+     "fp": 1359,
+     "fn": 210,
+     "precision": 0.06790123456790123,
+     "recall": 0.32038834951456313,
+     "f1": 0.11205432937181664
+    }
+   },
+   "by_category": {
+    "scanned": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "handwritten": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  "ocr.easyocr_cpu.confidence": {
+   "mean_by_difficulty": {
+    "real": 0.6318495468516538
+   },
+   "mean_by_category": {
+    "scanned": NaN,
+    "handwritten": NaN
+   },
+   "spearman_conf_vs_doc_f1": 0.05167934644996879,
+   "auc_conf_easy_vs_hard": NaN,
+   "seconds_per_image_mean": 5.173259483221449,
+   "seconds_per_image_p95": 7.187554959999398,
+   "n_images": 149
+  },
+  "ocr.paddleocr_cpu.presidio": {
+   "all": {
+    "tp": 177,
+    "fp": 1373,
+    "fn": 132,
+    "precision": 0.11419354838709678,
+    "recall": 0.5728155339805825,
+    "f1": 0.19042495965572886
+   },
+   "by_type": {
+    "CREDIT_CARD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "NID": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PASSWORD": {
+     "tp": 0,
+     "fp": 26,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "EMAIL": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PHONE": {
+     "tp": 47,
+     "fp": 90,
+     "fn": 13,
+     "precision": 0.34306569343065696,
+     "recall": 0.7833333333333333,
+     "f1": 0.47715736040609136
+    },
+    "ADDRESS": {
+     "tp": 0,
+     "fp": 392,
+     "fn": 5,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PERSON": {
+     "tp": 130,
+     "fp": 385,
+     "fn": 114,
+     "precision": 0.2524271844660194,
+     "recall": 0.5327868852459017,
+     "f1": 0.34255599472990783
+    },
+    "DOB": {
+     "tp": 0,
+     "fp": 480,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "by_difficulty": {
+    "real": {
+     "tp": 177,
+     "fp": 1373,
+     "fn": 132,
+     "precision": 0.11419354838709678,
+     "recall": 0.5728155339805825,
+     "f1": 0.19042495965572886
+    }
+   },
+   "by_category": {
+    "scanned": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "handwritten": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  "ocr.paddleocr_cpu.presidio_plus": {
+   "all": {
+    "tp": 177,
+    "fp": 1416,
+    "fn": 132,
+    "precision": 0.1111111111111111,
+    "recall": 0.5728155339805825,
+    "f1": 0.18611987381703468
+   },
+   "by_type": {
+    "CREDIT_CARD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "NID": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PASSWORD": {
+     "tp": 0,
+     "fp": 26,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "EMAIL": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PHONE": {
+     "tp": 47,
+     "fp": 90,
+     "fn": 13,
+     "precision": 0.34306569343065696,
+     "recall": 0.7833333333333333,
+     "f1": 0.47715736040609136
+    },
+    "ADDRESS": {
+     "tp": 0,
+     "fp": 435,
+     "fn": 5,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PERSON": {
+     "tp": 130,
+     "fp": 385,
+     "fn": 114,
+     "precision": 0.2524271844660194,
+     "recall": 0.5327868852459017,
+     "f1": 0.34255599472990783
+    },
+    "DOB": {
+     "tp": 0,
+     "fp": 480,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "by_difficulty": {
+    "real": {
+     "tp": 177,
+     "fp": 1416,
+     "fn": 132,
+     "precision": 0.1111111111111111,
+     "recall": 0.5728155339805825,
+     "f1": 0.18611987381703468
+    }
+   },
+   "by_category": {
+    "scanned": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "handwritten": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  "ocr.paddleocr_cpu.confidence": {
+   "mean_by_difficulty": {
+    "real": 0.9726846000733526
+   },
+   "mean_by_category": {
+    "scanned": NaN,
+    "handwritten": NaN
+   },
+   "spearman_conf_vs_doc_f1": 0.1232896066490062,
+   "auc_conf_easy_vs_hard": NaN,
+   "seconds_per_image_mean": 27.649371955033597,
+   "seconds_per_image_p95": 41.00848866000087,
+   "n_images": 149
+  },
+  "vlm.gemma-3-4b-it": {
+   "all": {
+    "tp": 150,
+    "fp": 279,
+    "fn": 159,
+    "precision": 0.34965034965034963,
+    "recall": 0.4854368932038835,
+    "f1": 0.4065040650406504
+   },
+   "by_type": {
+    "CREDIT_CARD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "NID": {
+     "tp": 0,
+     "fp": 2,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PASSWORD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "EMAIL": {
+     "tp": 0,
+     "fp": 24,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PHONE": {
+     "tp": 25,
+     "fp": 22,
+     "fn": 35,
+     "precision": 0.5319148936170213,
+     "recall": 0.4166666666666667,
+     "f1": 0.4672897196261682
+    },
+    "ADDRESS": {
+     "tp": 2,
+     "fp": 19,
+     "fn": 3,
+     "precision": 0.09523809523809523,
+     "recall": 0.4,
+     "f1": 0.15384615384615385
+    },
+    "PERSON": {
+     "tp": 123,
+     "fp": 191,
+     "fn": 121,
+     "precision": 0.39171974522292996,
+     "recall": 0.5040983606557377,
+     "f1": 0.44086021505376344
+    },
+    "DOB": {
+     "tp": 0,
+     "fp": 21,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "by_difficulty": {
+    "real": {
+     "tp": 150,
+     "fp": 279,
+     "fn": 159,
+     "precision": 0.34965034965034963,
+     "recall": 0.4854368932038835,
+     "f1": 0.4065040650406504
+    }
+   },
+   "by_category": {
+    "scanned": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "handwritten": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "n_images": 149,
+   "n_status_ok": 143,
+   "status_counts": {
+    "error:BadRequestError": 6,
+    "ok": 143
+   },
+   "seconds_per_image_mean": 21.473298314093704,
+   "tokens_per_second_mean": 13.033336214433637,
+   "gpu_peak_mib": 5976
+  },
+  "vlm.qwen2-5-vl-3b-instruct": {
+   "all": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 309,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "by_type": {
+    "CREDIT_CARD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "NID": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PASSWORD": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "EMAIL": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PHONE": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 60,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "ADDRESS": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 5,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "PERSON": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 244,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "DOB": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "by_difficulty": {
+    "real": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 309,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "by_category": {
+    "scanned": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "handwritten": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "n_images": 149,
+   "n_status_ok": 137,
+   "status_counts": {
+    "malformed_json": 12,
+    "ok": 137
+   },
+   "seconds_per_image_mean": 6.379244416107292,
+   "tokens_per_second_mean": 3.0496167898815187,
+   "gpu_peak_mib": 4117
+  },
+  "cascade.easyocr_cpu.gemma-3-4b-it": {
+   "calib_tau": 0.8,
+   "eval_at_calib_tau": {
+    "tp": 133,
+    "fp": 361,
+    "fn": 176,
+    "precision": 0.2692307692307692,
+    "recall": 0.43042071197411,
+    "f1": 0.33125778331257777
+   },
+   "eval_vlm_share": 0.8389261744966443,
+   "eval_seconds_per_image": 25.297537309395725,
+   "ocr_only": {
+    "tp": 99,
+    "fp": 1359,
+    "fn": 210,
+    "precision": 0.06790123456790123,
+    "recall": 0.32038834951456313,
+    "f1": 0.11205432937181664
+   },
+   "vlm_only": {
+    "tp": 150,
+    "fp": 279,
+    "fn": 159,
+    "precision": 0.34965034965034963,
+    "recall": 0.4854368932038835,
+    "f1": 0.4065040650406504
+   },
+   "eval_at_tau_085": {
+    "tp": 144,
+    "fp": 311,
+    "fn": 165,
+    "precision": 0.31648351648351647,
+    "recall": 0.46601941747572817,
+    "f1": 0.37696335078534027
+   },
+   "vlm_share_at_tau_085": 0.9463087248322147,
+   "router": {
+    "features": [
+     "ocr_confidence",
+     "log_transcript_chars",
+     "presidio_hits",
+     "hits_per_100_chars",
+     "log_image_pixels",
+     "ocr_boxes"
+    ],
+    "calib_cut": 0.38,
+    "eval": {
+     "tp": 103,
+     "fp": 442,
+     "fn": 206,
+     "precision": 0.1889908256880734,
+     "recall": 0.3333333333333333,
+     "f1": 0.24121779859484777
+    },
+    "eval_vlm_share": 0.7315436241610739,
+    "eval_seconds_per_image": 24.200234582550223,
+    "threshold_at_same_share": {
+     "tp": 112,
+     "fp": 430,
+     "fn": 197,
+     "precision": 0.2066420664206642,
+     "recall": 0.36245954692556637,
+     "f1": 0.26321974148061106
+    },
+    "label_positive_rate_calib": 0.28
+   }
+  },
+  "cascade.easyocr_cpu.qwen2-5-vl-3b-instruct": {
+   "calib_tau": 0.66,
+   "eval_at_calib_tau": {
+    "tp": 43,
+    "fp": 493,
+    "fn": 266,
+    "precision": 0.08022388059701492,
+    "recall": 0.13915857605177995,
+    "f1": 0.1017751479289941
+   },
+   "eval_vlm_share": 0.5167785234899329,
+   "eval_seconds_per_image": 9.503269181207976,
+   "ocr_only": {
+    "tp": 99,
+    "fp": 1359,
+    "fn": 210,
+    "precision": 0.06790123456790123,
+    "recall": 0.32038834951456313,
+    "f1": 0.11205432937181664
+   },
+   "vlm_only": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 309,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "eval_at_tau_085": {
+    "tp": 3,
+    "fp": 43,
+    "fn": 306,
+    "precision": 0.06521739130434782,
+    "recall": 0.009708737864077669,
+    "f1": 0.016901408450704227
+   },
+   "vlm_share_at_tau_085": 0.9463087248322147,
+   "router": {
+    "skipped": "calib label has a single class"
+   }
+  },
+  "cascade.paddleocr_cpu.gemma-3-4b-it": {
+   "calib_tau": 0.99,
+   "eval_at_calib_tau": {
+    "tp": 148,
+    "fp": 288,
+    "fn": 161,
+    "precision": 0.3394495412844037,
+    "recall": 0.47896440129449835,
+    "f1": 0.3973154362416107
+   },
+   "eval_vlm_share": 0.9731543624161074,
+   "eval_seconds_per_image": 48.94517962483203,
+   "ocr_only": {
+    "tp": 177,
+    "fp": 1416,
+    "fn": 132,
+    "precision": 0.1111111111111111,
+    "recall": 0.5728155339805825,
+    "f1": 0.18611987381703468
+   },
+   "vlm_only": {
+    "tp": 150,
+    "fp": 279,
+    "fn": 159,
+    "precision": 0.34965034965034963,
+    "recall": 0.4854368932038835,
+    "f1": 0.4065040650406504
+   },
+   "eval_at_tau_085": {
+    "tp": 177,
+    "fp": 1413,
+    "fn": 132,
+    "precision": 0.11132075471698114,
+    "recall": 0.5728155339805825,
+    "f1": 0.18641390205371247
+   },
+   "vlm_share_at_tau_085": 0.006711409395973154,
+   "router": {
+    "features": [
+     "ocr_confidence",
+     "log_transcript_chars",
+     "presidio_hits",
+     "hits_per_100_chars",
+     "log_image_pixels",
+     "ocr_boxes"
+    ],
+    "calib_cut": 0.0,
+    "eval": {
+     "tp": 150,
+     "fp": 279,
+     "fn": 159,
+     "precision": 0.34965034965034963,
+     "recall": 0.4854368932038835,
+     "f1": 0.4065040650406504
+    },
+    "eval_vlm_share": 1.0,
+    "eval_seconds_per_image": 49.122670269127305,
+    "threshold_at_same_share": {
+     "tp": 150,
+     "fp": 279,
+     "fn": 159,
+     "precision": 0.34965034965034963,
+     "recall": 0.4854368932038835,
+     "f1": 0.4065040650406504
+    },
+    "label_positive_rate_calib": 0.1
+   }
+  },
+  "cascade.paddleocr_cpu.qwen2-5-vl-3b-instruct": {
+   "calib_tau": 0.97,
+   "eval_at_calib_tau": {
+    "tp": 127,
+    "fp": 970,
+    "fn": 182,
+    "precision": 0.11577028258887875,
+    "recall": 0.4110032362459547,
+    "f1": 0.1806543385490754
+   },
+   "eval_vlm_share": 0.2483221476510067,
+   "eval_seconds_per_image": 30.458231888590582,
+   "ocr_only": {
+    "tp": 177,
+    "fp": 1416,
+    "fn": 132,
+    "precision": 0.1111111111111111,
+    "recall": 0.5728155339805825,
+    "f1": 0.18611987381703468
+   },
+   "vlm_only": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 309,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "eval_at_tau_085": {
+    "tp": 177,
+    "fp": 1413,
+    "fn": 132,
+    "precision": 0.11132075471698114,
+    "recall": 0.5728155339805825,
+    "f1": 0.18641390205371247
+   },
+   "vlm_share_at_tau_085": 0.006711409395973154,
+   "router": {
+    "skipped": "calib label has a single class"
+   }
   }
  }
 }

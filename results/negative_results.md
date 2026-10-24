@@ -110,12 +110,20 @@ Reversal of an earlier finding: on v2, EasyOCR confidence DOES rank difficulty (
 
 | ID | Result | Evidence key |
 |---|---|---|
-| N-044 | On 199 real scanned forms the OCR branch finds only part of the derived PII: recall 0.542 with PaddleOCR+Presidio and 0.283 with EasyOCR+Presidio (PERSON 0.504 vs 0.213, PHONE 0.789 vs 0.654). F1 is 0.183 and 0.105. Precision (0.110 and 0.064) is a lower bound because the gold covers only linked form fields. | `pii2.funsd.ocr.*.presidio.all.*` |
-| N-045 | The custom recognisers (Presidio+) give no gain on real forms (PaddleOCR F1 0.179 vs 0.183) and find no FUNSD address (recall 0.0 over the 10 derived addresses). | `pii2.funsd.ocr.*.presidio_plus.*` |
+| N-044 | On real scanned forms (FUNSD eval split) the OCR branch finds only part of the derived PII: recall 0.573 with PaddleOCR+Presidio and 0.324 with EasyOCR+Presidio (PERSON 0.533 vs 0.246, PHONE 0.783 vs 0.650). F1 is 0.190 and 0.116. Precision (0.114 and 0.070) is a lower bound because the gold covers only linked form fields. | `pii2.funsd.ocr.*.presidio.all.*` |
+| N-045 | The custom recognisers (Presidio+) give no gain on real forms (PaddleOCR F1 0.186 vs 0.190) and find no FUNSD address. | `pii2.funsd.ocr.*.presidio_plus.*` |
 
-## T3.3: local VLM through LM Studio (keys `pii2.*.vlm.qwen2-5-vl-3b-instruct.*`)
+## T3.3: local VLMs through LM Studio (keys `pii2.*.vlm.*`)
 
 | ID | Result | Evidence key |
 |---|---|---|
-| N-046 | Qwen2.5-VL-3B (Q4_K_M, local, RTX 3060, peak about 4.3 GB VRAM) is far below the hosted models of the original study. Eval F1: v1 images 0.343 (gemma-3-4b hosted was 0.936, Qwen-72B hosted 1.000), v2 images 0.126, v2 hard 0.000, FUNSD 0.000. Precision is 1.000 on v1 and v2, so it rarely invents entities; it returns an empty list for most images. | `pii2.*.vlm.qwen2-5-vl-3b-instruct.all.*` |
+| N-046 | Qwen2.5-VL-3B (Q4_K_M, local, RTX 3060, peak about 4.3 GB VRAM) is far below every other image path. Eval F1: v1 images 0.325, v2 images 0.121, v2 hard 0.000, FUNSD 0.000. Precision is 1.000 on v1 and v2, so it rarely invents entities; it returns an empty list for most images. The model closest in size to the paper's PaliGemma-3B design is therefore not usable as the Branch 3 fallback. | `pii2.*.vlm.qwen2-5-vl-3b-instruct.all.*` |
 | N-047 | 53 of 519 Qwen-3B answers were not valid JSON; many are a run of the letter "G", a known degenerate output of this model under llama.cpp. They count as no prediction. LM Studio downsizes each image to about 800 to 1,300 prompt tokens, which may limit legibility of small print; this was not varied. | `pii2.*.vlm.qwen2-5-vl-3b-instruct.status_counts.*` |
+| N-048 | gemma-3-4b-it run locally (Q4_K_M) reaches F1 0.971 on v1 images (the hosted run in the original study had 0.936 on all 80 v1 images; ours is the 60-image eval split) but drops to 0.845 on the harder v2 images (hard level 0.682) and 0.407 on FUNSD. Long numerics remain its weakness: v2 credit-card recall 0.443 and password recall 0.587. 8 of 519 requests were rejected by the server (HTTP 400; probably the image did not fit the 4096-token context we set, not verified) and count as no prediction. | `pii2.*.vlm.gemma-3-4b-it.*` |
+
+## T3.4: cascade cost versus accuracy (keys `pii2.*.cascade.*`)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-049 | The cost rationale of the cascade does not hold with a 4B VLM. With gemma, the calib-chosen tau sends almost every image to the VLM (eval share 0.99 with EasyOCR on v2, 1.00 with PaddleOCR), so the cascade is never cheaper than "VLM always", and its F1 equals the VLM's alone (v2 0.843 vs 0.845). The design's tau = 0.85 is worse than both on v2 (0.798 EasyOCR, 0.708 PaddleOCR). | `pii2.v2.cascade.*.gemma-3-4b-it.*` |
+| N-050 | The learned "needs VLM" router (logistic regression, cut chosen on calib) also learns to route everything (eval VLM share 1.00 on v2 and v1) and so saves no cost. It routes 0.73 of FUNSD images with EasyOCR, at F1 0.241 against 0.407 for "VLM always". | `pii2.*.cascade.*.router.*` |
