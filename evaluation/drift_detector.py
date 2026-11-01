@@ -51,7 +51,7 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 
 from evaluation import selection
-from evaluation.common import FEATURES, THREAT_CLASSES, binary_metrics, time_boundaries
+from evaluation.common import FEATURES, THREAT_CLASSES, binary_metrics, observed_classes, time_boundaries
 from evaluation.multiseed import RUNS, seeds_from_config
 from evaluation.train_and_evaluate import build_personal_grids
 from tools.manifest import PROJECT_ROOT, load, provenance, record
@@ -159,7 +159,7 @@ def episode_stats(act: pd.DataFrame, alarm: np.ndarray, mask: np.ndarray, cls: s
             "ttd_hours_mean": float(np.mean(ttd)) if ttd else np.nan}
 
 
-def supervised_probe(act: pd.DataFrame, zs: Dict[str, np.ndarray]) -> dict:
+def supervised_probe(act: pd.DataFrame, zs: Dict[str, np.ndarray], target: str = "malicious_insider") -> dict:
     feats = []
     for u, g in act.groupby("user_id", sort=False):
         z = zs[u]
@@ -176,7 +176,7 @@ def supervised_probe(act: pd.DataFrame, zs: Dict[str, np.ndarray]) -> dict:
     clf = LogisticRegression(max_iter=2000, class_weight="balanced").fit(X[tr], y[tr])
     p = clf.predict_proba(X)[:, 1]
     t, _ = selection.threshold_max_f1(p[va], y[va], split[va])
-    mal_te = te & (tc == "malicious_insider")
+    mal_te = te & (tc == target)
     neg_te = te & ~y
     m = binary_metrics(y[te], p[te] >= t)
     return {"test_auc_all": selection.auc_rank(p[te], y[te]),
@@ -190,8 +190,12 @@ def supervised_probe(act: pd.DataFrame, zs: Dict[str, np.ndarray]) -> dict:
 
 
 def evaluate_seed(s: int) -> dict:
-    base = RUNS / f"data_seed_{s}"
+    return evaluate_base(RUNS / f"data_seed_{s}")
+
+
+def evaluate_base(base: Path, target: str = "malicious_insider") -> dict:
     act, zs, b = personal_active_z(base)
+    classes = observed_classes(act.threat_class)
     y = act.is_true_threat.to_numpy(dtype=bool)
     split = act.split.to_numpy()
     bb = act.is_benign_burst.to_numpy(dtype=bool)
@@ -206,29 +210,49 @@ def evaluate_seed(s: int) -> dict:
         alarms = {(k, h): alarms_for(act, zs, k, h, kind) for k in K_GRID for h in H_GRID}
         params, table = selection.choose_drift_params(
             {p: a[va] for p, a in alarms.items()}, y[va], act.threat_class.to_numpy()[va],
-            act.episode_id.to_numpy()[va], split[va], FALSE_ALARM_BUDGET)
+            act.episode_id.to_numpy()[va], split[va], FALSE_ALARM_BUDGET, target=target)
         a = alarms[params]
         r = {"k": params[0], "h": params[1],
              "val_fa_rate": table[params]["fa_rate"],
              "val_malicious_episode_recall": table[params]["episode_recall"],
              "test_false_alarm_rate_ordinary_negatives": float(a[te & ~y & ~bb].mean()),
              "test_false_alarm_rate_benign_bursts": float(a[te & bb].mean()) if (te & bb).any() else np.nan,
-             "per_class": {c: episode_stats(act, a, te, c) for c in THREAT_CLASSES}}
+             "per_class": {c: episode_stats(act, a, te, c) for c in classes}}
         comb = hyb | a
         for name, flag in (("hybrid_only", hyb), ("hybrid_or_drift", comb)):
             m = binary_metrics(y[te], flag[te])
             r[name] = {**{k: m[k] for k in ("precision", "recall", "f1", "fpr")},
-                       "malicious_episode_recall": episode_stats(act, flag, te, "malicious_insider")["episode_recall"],
+                       "malicious_episode_recall": episode_stats(act, flag, te, target)["episode_recall"],
                        "benign_burst_flag_rate": float(flag[te & bb].mean()) if (te & bb).any() else np.nan}
         res[kind] = r
-    res["supervised_probe"] = supervised_probe(act, zs)
+    res["supervised_probe"] = supervised_probe(act, zs, target)
     return res
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--seeds", type=int, nargs="*", default=None)
+    ap.add_argument("--base", type=Path, default=None,
+                    help="one run folder holding data/ and run/ (CERT: results/runs/cert_r4.2)")
+    ap.add_argument("--target-class", type=str, default="malicious_insider",
+                    help="class whose episode recall picks (k, h) on validation, used with --base")
+    ap.add_argument("--manifest-key", type=str, default=None, help="manifest key used with --base")
     args = ap.parse_args()
+    if args.base is not None:
+        res = evaluate_base(args.base, args.target_class)
+        d = args.base / "drift"
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "drift_metrics.json").write_text(json.dumps(
+            {"provenance": provenance("evaluation/drift_detector.py", {"base": str(args.base)}, "cpu"),
+             "target_class": args.target_class, **res}, indent=1, default=float), encoding="utf-8")
+        record(args.manifest_key or f"drift.{args.base.name}", res, script="evaluation/drift_detector.py", seeds={})
+        for kind in ("cusum", "ph"):
+            c = res[kind]
+            print(f"{kind} k={c['k']} h={c['h']}: {args.target_class} ep recall "
+                  f"{c['per_class'][args.target_class]['episode_recall']:.2f}, FA "
+                  f"{c['test_false_alarm_rate_ordinary_negatives']:.4f}; hybrid|drift F1 "
+                  f"{c['hybrid_or_drift']['f1']:.3f} vs hybrid {c['hybrid_only']['f1']:.3f}", flush=True)
+        return
     seeds = args.seeds or seeds_from_config()
     for s in seeds:
         res = evaluate_seed(s)

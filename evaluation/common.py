@@ -77,6 +77,13 @@ THREAT_CLASSES = (
     "overscoped_thirdparty",
 )
 
+
+def observed_classes(threat_class) -> list:
+    """THREAT_CLASSES for our generator's data; the labels actually present
+    otherwise (CERT r4.2 uses cert_scenario_<n>, T2.6)."""
+    seen = sorted({c for c in threat_class if isinstance(c, str)})
+    return list(THREAT_CLASSES) if set(seen) <= set(THREAT_CLASSES) else seen
+
 # LSTM sequence length: the paper's "24-hour window", one step per hour.
 SEQ_LEN = 24
 

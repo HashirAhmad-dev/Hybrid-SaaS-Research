@@ -53,7 +53,7 @@ import torch
 from sklearn.metrics import average_precision_score, roc_curve
 from sklearn.neighbors import LocalOutlierFactor
 
-from evaluation.common import (EWMA_LAMBDA, FEATURES, SEQ_LEN, THREAT_CLASSES,
+from evaluation.common import (EWMA_LAMBDA, FEATURES, SEQ_LEN, observed_classes,
                                RobustCalibrator, binary_metrics, ewma_stream,
                                time_boundaries)
 from evaluation.multiseed import RUNS, seeds_from_config
@@ -222,7 +222,7 @@ def evaluate(rows: pd.DataFrame) -> Dict[str, dict]:
             "per_class": {},
         }
         neg_te = te & ~y
-        for c in THREAT_CLASSES:
+        for c in observed_classes(tc):
             sel = te & (tc == c)
             if not sel.any():
                 continue
@@ -241,7 +241,23 @@ def evaluate(rows: pd.DataFrame) -> Dict[str, dict]:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--seeds", type=int, nargs="*", default=None)
+    ap.add_argument("--base", type=Path, default=None,
+                    help="one run folder holding data/ and run/ (CERT: results/runs/cert_r4.2)")
+    ap.add_argument("--manifest-key", type=str, default=None, help="manifest key used with --base")
     args = ap.parse_args()
+    if args.base is not None:
+        rows = compute_scores(args.base)
+        res = evaluate(rows)
+        outd = args.base / "ablation"
+        outd.mkdir(parents=True, exist_ok=True)
+        rows.to_csv(outd / "row_scores.csv", index=False)
+        (outd / "ablation_metrics.json").write_text(json.dumps(
+            {"provenance": provenance("evaluation/ablation.py", {"base": str(args.base)}, "cpu"),
+             "detectors": res}, indent=1, default=float), encoding="utf-8")
+        record(args.manifest_key or f"ablation.{args.base.name}", res, script="evaluation/ablation.py",
+               seeds={}, device="cpu")
+        print("  ".join(f"{d}:AUC={res[d]['auc']:.3f}/F1={res[d]['valf1_f1']:.3f}" for d in DETECTORS))
+        return
     seeds = args.seeds or seeds_from_config()
     for s in seeds:
         base = RUNS / f"data_seed_{s}"

@@ -41,3 +41,22 @@ def test_choose_drift_params_respects_budget_and_split():
     assert p == "quiet"
     with pytest.raises(sel.TestSplitLeak):
         sel.choose_drift_params(alarms, y, tc, eid, np.array(["val"] * 5 + ["test"]), 0.1)
+
+
+def test_observed_classes_keeps_generator_order_and_reads_cert_labels():
+    from evaluation.common import THREAT_CLASSES, observed_classes
+    assert observed_classes(["negligent_insider", None, float("nan")]) == list(THREAT_CLASSES)
+    assert observed_classes([None, "cert_scenario_2", "cert_scenario_1"]) == ["cert_scenario_1", "cert_scenario_2"]
+
+
+def test_batched_validation_loss_equals_full_pass(monkeypatch):
+    import numpy as np
+    import evaluation.train_and_evaluate as te
+    rng = np.random.default_rng(0)
+    X = rng.random((40, te.SEQ_LEN, len(te.FEATURES)), dtype=np.float32)
+    Y = rng.random((40, len(te.FEATURES)), dtype=np.float32)
+    _, full = te.train_lstm(X, Y, X, Y, 2, 7)
+    monkeypatch.setattr(te, "VAL_FULL_PASS_MAX", 10)
+    monkeypatch.setattr(te, "VAL_BATCH", 7)
+    _, batched = te.train_lstm(X, Y, X, Y, 2, 7)
+    assert np.allclose(full, batched, rtol=1e-5)

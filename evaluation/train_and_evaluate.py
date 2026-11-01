@@ -73,7 +73,7 @@ from sklearn.preprocessing import StandardScaler
 from . import selection
 from .common import (CSV_COLUMNS, DATA_DIR, EVAL_DIR, EWMA_LAMBDA, FEATURES, GEN_CONFIG,
                      HYBRID_FLAG_THRESHOLD, LEGACY_EWMA_TAU, PAPER_DOC_BANDS, PAPER_DOC_BETA,
-                     SBRS_BANDS, SBRS_BETA, SEQ_LEN, SESSIONS_RAW, THREAT_CLASSES, V2_CSV,
+                     SBRS_BANDS, SBRS_BETA, SEQ_LEN, SESSIONS_RAW, V2_CSV, observed_classes,
                      RobustCalibrator, band, binary_metrics, ewma_stream, sbrs,
                      wilson_ci)
 
@@ -232,6 +232,10 @@ def collect_windows(grids: Dict[str, np.ndarray], hour_lo: int, hour_hi: int,
 # ---------------------------------------------------------------------------
 # Training
 # ---------------------------------------------------------------------------
+VAL_FULL_PASS_MAX = 50_000                 # our datasets stay below this, so their path is unchanged
+VAL_BATCH = 4096
+
+
 def train_lstm(Xf: np.ndarray, Yf: np.ndarray, Xv: np.ndarray, Yv: np.ndarray,
                epochs: int, seed: int) -> Tuple[BehaviouralLSTM, List[float]]:
     """Unsupervised: predict the next hour's feature vector. Labels never used."""
@@ -258,7 +262,11 @@ def train_lstm(Xf: np.ndarray, Yf: np.ndarray, Xv: np.ndarray, Yv: np.ndarray,
 
         model.eval()
         with torch.no_grad():
-            vl = float(lossf(model(Xv_t), Yv_t))
+            if len(Xv_t) <= VAL_FULL_PASS_MAX:
+                vl = float(lossf(model(Xv_t), Yv_t))
+            else:                          # same mean over the same windows, in batches (CERT scale)
+                vl = sum(float(((model(Xv_t[i:i + VAL_BATCH]) - Yv_t[i:i + VAL_BATCH]) ** 2).sum())
+                         for i in range(0, len(Xv_t), VAL_BATCH)) / Yv_t.numel()
         history.append(vl)
         # Early stopping on unsupervised val reconstruction loss (no labels used).
         if vl < best - 1e-5:
@@ -341,6 +349,8 @@ def main() -> None:
                     help="results/manifest.json key prefix (default anomaly.s<seed>)")
     ap.add_argument("--max-fit-windows", type=int, default=None,
                     help="random subsample of LSTM training windows (CERT scale); default uses all")
+    ap.add_argument("--insider-class", type=str, default="malicious_insider",
+                    help="threat class the insider-oriented operating point targets (CERT: a scenario)")
     ap.add_argument("--data-dir", type=Path, default=DATA_DIR,
                     help="folder holding sessions_raw.csv and generation_config.json")
     ap.add_argument("--out-dir", type=Path, default=None,
@@ -483,7 +493,7 @@ def main() -> None:
 
     tc_all = S.threat_class.to_numpy()
     insider_op = selection.tune_alpha_tau_constrained(a_lstm[v], a_if[v], y[v], tc_all[v],
-                                                      split[v], "malicious_insider",
+                                                      split[v], args.insider_class,
                                                       fpr_budget=0.05)
     print(f"      insider-oriented op (val FPR<=5%): alpha={insider_op['alpha']:.2f} "
           f"tau={insider_op['tau']:.2f} val_malicious_recall={insider_op['recall']:.3f}")
@@ -528,12 +538,12 @@ def main() -> None:
     eid = S.episode_id.to_numpy()
     neg_te = te & ~y                       # all test negatives (incl. benign bursts)
     m_insider_op["malicious_insider_recall"] = float(
-        ins_flag[te & (tc == "malicious_insider")].mean())
+        ins_flag[te & (tc == args.insider_class)].mean())
     m_insider_op["benign_burst_flag_rate"] = float(
         ins_flag[te & S.is_benign_burst.to_numpy(dtype=bool)].mean())
     m_insider_op.update({"alpha": insider_op["alpha"], "tau": insider_op["tau"]})
     per_class = {}
-    for cls in THREAT_CLASSES:
+    for cls in observed_classes(tc):
         sel = te & (tc == cls)
         n_w = int(sel.sum())
         if n_w == 0:
@@ -570,7 +580,7 @@ def main() -> None:
     auc_prederr = {
         "overall": roc_auc(pred_err[te & y & ok], pred_err[neg_te & ok]),
         **{cls: roc_auc(pred_err[te & (tc == cls) & ok], pred_err[neg_te & ok])
-           for cls in THREAT_CLASSES if (te & (tc == cls) & ok).any()},
+           for cls in observed_classes(tc) if (te & (tc == cls) & ok).any()},
     }
 
     # Benign-burst trap, isolated
