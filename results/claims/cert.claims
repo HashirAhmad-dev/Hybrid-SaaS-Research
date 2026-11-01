@@ -1,0 +1,27 @@
+# T2.6 CERT r4.2 numbers quoted in results/negative_results.md, docs and paper_inputs
+Users | cert.mapping.users | 200
+Active user-hours | cert.mapping.active_sessions | 590482
+Positive hours | cert.mapping.positive_sessions | 4358
+Test positive hours | cert.mapping.positives_by_split.test | 330
+Insiders with test positives | cert.mapping.insiders_with_test_positives | 7
+Alpha chosen on validation | cert.ablation._params.alpha | 0.00
+Hybrid AUC | cert.ablation.hybrid_weighted.auc | 0.733
+Hybrid F1 | cert.ablation.hybrid_weighted.valf1_f1 | 0.057
+Hybrid precision | cert.ablation.hybrid_weighted.valf1_precision | 0.031
+Hybrid recall | cert.ablation.hybrid_weighted.valf1_recall | 0.388
+Hybrid FPR | cert.ablation.hybrid_weighted.valf1_fpr | 6.3%
+Hybrid scenario 2 episode recall | cert.ablation.hybrid_weighted.per_class.cert_scenario_2.episode_recall | 1.00
+LSTM AUC | cert.ablation.lstm.auc | 0.707
+Isolation Forest AUC | cert.ablation.iforest.auc | 0.733
+Rank-average AUC | cert.ablation.hybrid_rankavg.auc | 0.751
+Rank-average F1 | cert.ablation.hybrid_rankavg.valf1_f1 | 0.065
+PH scenario 2 episode recall | cert.drift.ph.per_class.cert_scenario_2.episode_recall | 0.83
+PH false alarm rate | cert.drift.ph.test_false_alarm_rate_ordinary_negatives | 0.66%
+PH median hours to detect | cert.drift.ph.per_class.cert_scenario_2.ttd_hours_median | 147
+PH hour-level recall | cert.drift.ph.per_class.cert_scenario_2.window_recall | 0.031
+Hybrid or PH F1 | cert.drift.ph.hybrid_or_drift.f1 | 0.054
+CUSUM scenario 2 episode recall | cert.drift.cusum.per_class.cert_scenario_2.episode_recall | 0.33
+CUSUM validation episode recall | cert.drift.cusum.val_malicious_episode_recall | 0.82
+Hybrid or CUSUM F1 | cert.drift.cusum.hybrid_or_drift.f1 | 0.052
+Supervised probe AUC | cert.drift.supervised_probe.test_auc_all | 0.754
+Supervised probe F1 | cert.drift.supervised_probe.test_f1 | 0.104

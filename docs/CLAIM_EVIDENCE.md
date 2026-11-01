@@ -44,6 +44,37 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 | derived t_alert | `baseline.sbrs.bands.t_alert` | 1.22382 | `results/baseline_20261023/sbrs_calibration.json` | {"data": 42, "train": [42, 7, 2024]} | baseline_20261023 (25211343) |
 | derived t_block | `baseline.sbrs.bands.t_block` | 1.84367 | `results/baseline_20261023/sbrs_calibration.json` | {"data": 42, "train": [42, 7, 2024]} | baseline_20261023 (25211343) |
 
+## cert
+
+| Claim | Manifest key | Value | Script | Seeds | Run |
+|---|---|---|---|---|---|
+| Users | `cert.mapping.users` | 200 | `evaluation/cert_map.py` | {"user_sample": 42} | cert_map-20261025T015317Z (8c113e07) |
+| Active user-hours | `cert.mapping.active_sessions` | 590482 | `evaluation/cert_map.py` | {"user_sample": 42} | cert_map-20261025T015317Z (8c113e07) |
+| Positive hours | `cert.mapping.positive_sessions` | 4358 | `evaluation/cert_map.py` | {"user_sample": 42} | cert_map-20261025T015317Z (8c113e07) |
+| Test positive hours | `cert.mapping.positives_by_split.test` | 330 | `evaluation/cert_map.py` | {"user_sample": 42} | cert_map-20261025T015317Z (8c113e07) |
+| Insiders with test positives | `cert.mapping.insiders_with_test_positives` | 7 | `evaluation/cert_map.py` | {"user_sample": 42} | cert_map-20261025T015317Z (8c113e07) |
+| Alpha chosen on validation | `cert.ablation._params.alpha` | 0.00 | `evaluation/ablation.py` | {} | ablation-20261101T202251Z (1c6ceda8) |
+| Hybrid AUC | `cert.ablation.hybrid_weighted.auc` | 0.733 | `evaluation/ablation.py` | {} | ablation-20261101T202251Z (1c6ceda8) |
+| Hybrid F1 | `cert.ablation.hybrid_weighted.valf1_f1` | 0.057 | `evaluation/ablation.py` | {} | ablation-20261101T202251Z (1c6ceda8) |
+| Hybrid precision | `cert.ablation.hybrid_weighted.valf1_precision` | 0.031 | `evaluation/ablation.py` | {} | ablation-20261101T202251Z (1c6ceda8) |
+| Hybrid recall | `cert.ablation.hybrid_weighted.valf1_recall` | 0.388 | `evaluation/ablation.py` | {} | ablation-20261101T202251Z (1c6ceda8) |
+| Hybrid FPR | `cert.ablation.hybrid_weighted.valf1_fpr` | 6.3% | `evaluation/ablation.py` | {} | ablation-20261101T202251Z (1c6ceda8) |
+| Hybrid scenario 2 episode recall | `cert.ablation.hybrid_weighted.per_class.cert_scenario_2.episode_recall` | 1.00 | `evaluation/ablation.py` | {} | ablation-20261101T202251Z (1c6ceda8) |
+| LSTM AUC | `cert.ablation.lstm.auc` | 0.707 | `evaluation/ablation.py` | {} | ablation-20261101T202251Z (1c6ceda8) |
+| Isolation Forest AUC | `cert.ablation.iforest.auc` | 0.733 | `evaluation/ablation.py` | {} | ablation-20261101T202251Z (1c6ceda8) |
+| Rank-average AUC | `cert.ablation.hybrid_rankavg.auc` | 0.751 | `evaluation/ablation.py` | {} | ablation-20261101T202251Z (1c6ceda8) |
+| Rank-average F1 | `cert.ablation.hybrid_rankavg.valf1_f1` | 0.065 | `evaluation/ablation.py` | {} | ablation-20261101T202251Z (1c6ceda8) |
+| PH scenario 2 episode recall | `cert.drift.ph.per_class.cert_scenario_2.episode_recall` | 0.83 | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
+| PH false alarm rate | `cert.drift.ph.test_false_alarm_rate_ordinary_negatives` | 0.66% | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
+| PH median hours to detect | `cert.drift.ph.per_class.cert_scenario_2.ttd_hours_median` | 147 | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
+| PH hour-level recall | `cert.drift.ph.per_class.cert_scenario_2.window_recall` | 0.031 | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
+| Hybrid or PH F1 | `cert.drift.ph.hybrid_or_drift.f1` | 0.054 | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
+| CUSUM scenario 2 episode recall | `cert.drift.cusum.per_class.cert_scenario_2.episode_recall` | 0.33 | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
+| CUSUM validation episode recall | `cert.drift.cusum.val_malicious_episode_recall` | 0.82 | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
+| Hybrid or CUSUM F1 | `cert.drift.cusum.hybrid_or_drift.f1` | 0.052 | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
+| Supervised probe AUC | `cert.drift.supervised_probe.test_auc_all` | 0.754 | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
+| Supervised probe F1 | `cert.drift.supervised_probe.test_f1` | 0.104 | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
+
 ## context_md_baseline
 
 | Claim | Manifest key | Value | Script | Seeds | Run |

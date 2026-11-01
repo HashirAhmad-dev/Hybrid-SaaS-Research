@@ -1,0 +1,55 @@
+{
+ "args": {
+  "seed": 42,
+  "source": "CERT r4.2",
+  "n_normal_users": 130
+ },
+ "realised": {
+  "users": 200,
+  "insiders": 70,
+  "hours": 12000,
+  "grid_rows": 2400000,
+  "active_sessions": 590482,
+  "positive_sessions": 4358,
+  "positives_by_split": {
+   "train": 3107,
+   "val": 921,
+   "test": 330
+  },
+  "insiders_with_test_positives": 7,
+  "by_scenario": {
+   "cert_scenario_2": 4128,
+   "cert_scenario_1": 168,
+   "cert_scenario_3": 62
+  },
+  "t_min": "2010-01-02 07:00:00",
+  "t_max": "2011-05-17 06:00:00",
+  "mapping": "docs/CERT_MAPPING.md"
+ },
+ "provenance": {
+  "script": "evaluation/cert_map.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\cert_map.py --cert-dir D:/datasets/cert/extract/r4.2 --answers D:/datasets/cert/answers",
+  "seeds": {
+   "user_sample": 42
+  },
+  "date_utc": "2026-10-25T01:53:17+00:00",
+  "git_hash": "8c113e073fbe4b36e724118d77b4e7f0ed2ff6a1",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": null
+ }
+}

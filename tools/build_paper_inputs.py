@@ -160,6 +160,22 @@ def main() -> None:
           ["Method", "v1", "v2", "v2 hard", "FUNSD"], pii_rows)
     readme.append("| `tables/pii_images.tex` | PII image-path F1 per corpus (from `pii2.*`) | `tools/build_paper_inputs.py` |")
 
+    # CERT r4.2: a second synthetic benchmark, never pooled with our datasets (D-024)
+    cert_rows = [[name, pf(f"cert.ablation.{d}.auc"), f"{g(f'cert.ablation.{d}.average_precision'):.4f}",
+                  pf(f"cert.ablation.{d}.valf1_f1"), pf(f"cert.ablation.{d}.valf1_precision"),
+                  pf(f"cert.ablation.{d}.valf1_recall"), pf(f"cert.ablation.{d}.valf1_fpr")]
+                 for name, d in [("EWMA", "ewma"), ("z-score", "zscore"), ("LOF", "lof"), ("LSTM memory bank", "lstm"),
+                                 ("LSTM next-step", "lstm_nextstep"), ("Isolation Forest", "iforest"),
+                                 ("Hybrid weighted", "hybrid_weighted"), ("Hybrid max", "hybrid_max"),
+                                 ("Hybrid rank average", "hybrid_rankavg")]
+                 if g(f"cert.ablation.{d}.auc") is not None]
+    if cert_rows:
+        table("cert", "Detectors on CERT r4.2, a second synthetic benchmark mapped onto our six features. Test split: "
+              "65,249 active user-hours, 330 positive hours, 7 insiders. Each F1 threshold was chosen on validation. "
+              "Not pooled with our datasets.", "tab:cert",
+              ["Detector", "AUC", "AP", "F1", "Precision", "Recall", "FPR"], cert_rows)
+        readme.append("| `tables/cert.tex` | CERT r4.2 detector results (from `cert.*`) | `tools/build_paper_inputs.py` |")
+
     from tools.claim_evidence import main as ce
     ce()
     readme.append("| `numbers.json` | Every claimed number with key, script, run, git hash | `tools/claim_evidence.py` |")

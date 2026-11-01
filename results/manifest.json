@@ -48212,6 +48212,2538 @@
    "run_id": "baseline_20261023",
    "value": 95
   },
+  "cert.ablation._params.alpha": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.0
+  },
+  "cert.ablation._params.lof_k": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 500
+  },
+  "cert.ablation.ewma.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6022643602027141
+  },
+  "cert.ablation.ewma.auc_raw_unclipped": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.ewma.average_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.006366105535934101
+  },
+  "cert.ablation.ewma.benign_burst_flag_rate": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.ewma.fpr_realised_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.009288497974398867
+  },
+  "cert.ablation.ewma.fpr_realised_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.04878386912922257
+  },
+  "cert.ablation.ewma.per_class.cert_scenario_2.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.5991286102206377
+  },
+  "cert.ablation.ewma.per_class.cert_scenario_2.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.ewma.per_class.cert_scenario_2.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.ewma.per_class.cert_scenario_2.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.3271604938271605
+  },
+  "cert.ablation.ewma.per_class.cert_scenario_2.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 324
+  },
+  "cert.ablation.ewma.per_class.cert_scenario_3.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7715948592348414
+  },
+  "cert.ablation.ewma.per_class.cert_scenario_3.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.ewma.per_class.cert_scenario_3.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1
+  },
+  "cert.ablation.ewma.per_class.cert_scenario_3.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6666666666666666
+  },
+  "cert.ablation.ewma.per_class.cert_scenario_3.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.ewma.recall_at_fpr01_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.00909090909090909
+  },
+  "cert.ablation.ewma.recall_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.00909090909090909
+  },
+  "cert.ablation.ewma.recall_at_fpr05_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.05757575757575758
+  },
+  "cert.ablation.ewma.recall_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.05454545454545454
+  },
+  "cert.ablation.ewma.threshold_fpr01": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 2.650827710097417
+  },
+  "cert.ablation.ewma.threshold_fpr05": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.3295433010510223
+  },
+  "cert.ablation.ewma.val_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.03156634374659845
+  },
+  "cert.ablation.ewma.val_threshold_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.36768949501981424
+  },
+  "cert.ablation.ewma.valf1_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.013241844227759722
+  },
+  "cert.ablation.ewma.valf1_fn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 220
+  },
+  "cert.ablation.ewma.valf1_fp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 16174
+  },
+  "cert.ablation.ewma.valf1_fpr": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.24914123754216794
+  },
+  "cert.ablation.ewma.valf1_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.006755097027757308
+  },
+  "cert.ablation.ewma.valf1_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.3333333333333333
+  },
+  "cert.ablation.ewma.valf1_tn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 48745
+  },
+  "cert.ablation.ewma.valf1_tp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 110
+  },
+  "cert.ablation.hybrid_max.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7462687302171891
+  },
+  "cert.ablation.hybrid_max.auc_raw_unclipped": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.hybrid_max.average_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.014873002001382958
+  },
+  "cert.ablation.hybrid_max.benign_burst_flag_rate": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.hybrid_max.fpr_realised_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.007825135938631217
+  },
+  "cert.ablation.hybrid_max.fpr_realised_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.04148246276128714
+  },
+  "cert.ablation.hybrid_max.per_class.cert_scenario_2.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7467853815552487
+  },
+  "cert.ablation.hybrid_max.per_class.cert_scenario_2.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.hybrid_max.per_class.cert_scenario_2.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.hybrid_max.per_class.cert_scenario_2.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.39197530864197533
+  },
+  "cert.ablation.hybrid_max.per_class.cert_scenario_2.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 324
+  },
+  "cert.ablation.hybrid_max.per_class.cert_scenario_3.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7183695579619731
+  },
+  "cert.ablation.hybrid_max.per_class.cert_scenario_3.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.hybrid_max.per_class.cert_scenario_3.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1
+  },
+  "cert.ablation.hybrid_max.per_class.cert_scenario_3.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.5
+  },
+  "cert.ablation.hybrid_max.per_class.cert_scenario_3.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.hybrid_max.recall_at_fpr01_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.01818181818181818
+  },
+  "cert.ablation.hybrid_max.recall_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.0030303030303030303
+  },
+  "cert.ablation.hybrid_max.recall_at_fpr05_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.18181818181818182
+  },
+  "cert.ablation.hybrid_max.recall_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.1303030303030303
+  },
+  "cert.ablation.hybrid_max.threshold_fpr01": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.9762829467331633
+  },
+  "cert.ablation.hybrid_max.threshold_fpr05": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7343315618616943
+  },
+  "cert.ablation.hybrid_max.val_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.07166759620747351
+  },
+  "cert.ablation.hybrid_max.val_threshold_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6207160283855202
+  },
+  "cert.ablation.hybrid_max.valf1_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.05016399768473857
+  },
+  "cert.ablation.hybrid_max.valf1_fn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 200
+  },
+  "cert.ablation.hybrid_max.valf1_fp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 4723
+  },
+  "cert.ablation.hybrid_max.valf1_fpr": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.07275219889400637
+  },
+  "cert.ablation.hybrid_max.valf1_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.026787554090253452
+  },
+  "cert.ablation.hybrid_max.valf1_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.3939393939393939
+  },
+  "cert.ablation.hybrid_max.valf1_tn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 60196
+  },
+  "cert.ablation.hybrid_max.valf1_tp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 130
+  },
+  "cert.ablation.hybrid_rankavg.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.751149661092821
+  },
+  "cert.ablation.hybrid_rankavg.auc_raw_unclipped": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.hybrid_rankavg.average_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.021570647866976184
+  },
+  "cert.ablation.hybrid_rankavg.benign_burst_flag_rate": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.hybrid_rankavg.fpr_realised_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.007332213989741062
+  },
+  "cert.ablation.hybrid_rankavg.fpr_realised_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.0384325082025293
+  },
+  "cert.ablation.hybrid_rankavg.per_class.cert_scenario_2.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7514504304414295
+  },
+  "cert.ablation.hybrid_rankavg.per_class.cert_scenario_2.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.8333333333333334
+  },
+  "cert.ablation.hybrid_rankavg.per_class.cert_scenario_2.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.hybrid_rankavg.per_class.cert_scenario_2.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.19135802469135801
+  },
+  "cert.ablation.hybrid_rankavg.per_class.cert_scenario_2.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 324
+  },
+  "cert.ablation.hybrid_rankavg.per_class.cert_scenario_3.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7349081162679647
+  },
+  "cert.ablation.hybrid_rankavg.per_class.cert_scenario_3.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.hybrid_rankavg.per_class.cert_scenario_3.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1
+  },
+  "cert.ablation.hybrid_rankavg.per_class.cert_scenario_3.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.16666666666666666
+  },
+  "cert.ablation.hybrid_rankavg.per_class.cert_scenario_3.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.hybrid_rankavg.recall_at_fpr01_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.08787878787878788
+  },
+  "cert.ablation.hybrid_rankavg.recall_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.05757575757575758
+  },
+  "cert.ablation.hybrid_rankavg.recall_at_fpr05_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.30303030303030304
+  },
+  "cert.ablation.hybrid_rankavg.recall_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.2636363636363636
+  },
+  "cert.ablation.hybrid_rankavg.threshold_fpr01": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.9594496516257465
+  },
+  "cert.ablation.hybrid_rankavg.threshold_fpr05": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.897716904445919
+  },
+  "cert.ablation.hybrid_rankavg.val_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.07655213984327909
+  },
+  "cert.ablation.hybrid_rankavg.val_threshold_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.920827803583278
+  },
+  "cert.ablation.hybrid_rankavg.valf1_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.06478149100257069
+  },
+  "cert.ablation.hybrid_rankavg.valf1_fn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 267
+  },
+  "cert.ablation.hybrid_rankavg.valf1_fp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1552
+  },
+  "cert.ablation.hybrid_rankavg.valf1_fpr": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.023906714521172538
+  },
+  "cert.ablation.hybrid_rankavg.valf1_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.03900928792569659
+  },
+  "cert.ablation.hybrid_rankavg.valf1_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.19090909090909092
+  },
+  "cert.ablation.hybrid_rankavg.valf1_tn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 63367
+  },
+  "cert.ablation.hybrid_rankavg.valf1_tp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 63
+  },
+  "cert.ablation.hybrid_weighted.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7333843292830646
+  },
+  "cert.ablation.hybrid_weighted.auc_raw_unclipped": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.hybrid_weighted.average_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.015713299274199233
+  },
+  "cert.ablation.hybrid_weighted.benign_burst_flag_rate": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.hybrid_weighted.fpr_realised_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.010428379981207351
+  },
+  "cert.ablation.hybrid_weighted.fpr_realised_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.0469508156317873
+  },
+  "cert.ablation.hybrid_weighted.per_class.cert_scenario_2.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.733555362152152
+  },
+  "cert.ablation.hybrid_weighted.per_class.cert_scenario_2.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.hybrid_weighted.per_class.cert_scenario_2.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.hybrid_weighted.per_class.cert_scenario_2.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.3888888888888889
+  },
+  "cert.ablation.hybrid_weighted.per_class.cert_scenario_2.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 324
+  },
+  "cert.ablation.hybrid_weighted.per_class.cert_scenario_3.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7241485543523468
+  },
+  "cert.ablation.hybrid_weighted.per_class.cert_scenario_3.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.hybrid_weighted.per_class.cert_scenario_3.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1
+  },
+  "cert.ablation.hybrid_weighted.per_class.cert_scenario_3.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.3333333333333333
+  },
+  "cert.ablation.hybrid_weighted.per_class.cert_scenario_3.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.hybrid_weighted.recall_at_fpr01_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.01818181818181818
+  },
+  "cert.ablation.hybrid_weighted.recall_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.01818181818181818
+  },
+  "cert.ablation.hybrid_weighted.recall_at_fpr05_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.23939393939393938
+  },
+  "cert.ablation.hybrid_weighted.recall_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.20606060606060606
+  },
+  "cert.ablation.hybrid_weighted.threshold_fpr01": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.9030728715079648
+  },
+  "cert.ablation.hybrid_weighted.threshold_fpr05": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6726584859143203
+  },
+  "cert.ablation.hybrid_weighted.val_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.08053007135575943
+  },
+  "cert.ablation.hybrid_weighted.val_threshold_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6207160283855202
+  },
+  "cert.ablation.hybrid_weighted.valf1_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.05668733392382639
+  },
+  "cert.ablation.hybrid_weighted.valf1_fn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 202
+  },
+  "cert.ablation.hybrid_weighted.valf1_fp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 4058
+  },
+  "cert.ablation.hybrid_weighted.valf1_fpr": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.06250866464363283
+  },
+  "cert.ablation.hybrid_weighted.valf1_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.030578117534639272
+  },
+  "cert.ablation.hybrid_weighted.valf1_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.3878787878787879
+  },
+  "cert.ablation.hybrid_weighted.valf1_tn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 60861
+  },
+  "cert.ablation.hybrid_weighted.valf1_tp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 128
+  },
+  "cert.ablation.iforest.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7333843292830646
+  },
+  "cert.ablation.iforest.auc_raw_unclipped": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7301861013748134
+  },
+  "cert.ablation.iforest.average_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.015713299274199233
+  },
+  "cert.ablation.iforest.benign_burst_flag_rate": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.iforest.fpr_realised_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.010428379981207351
+  },
+  "cert.ablation.iforest.fpr_realised_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.0469508156317873
+  },
+  "cert.ablation.iforest.per_class.cert_scenario_2.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.733555362152152
+  },
+  "cert.ablation.iforest.per_class.cert_scenario_2.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.iforest.per_class.cert_scenario_2.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.iforest.per_class.cert_scenario_2.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.3888888888888889
+  },
+  "cert.ablation.iforest.per_class.cert_scenario_2.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 324
+  },
+  "cert.ablation.iforest.per_class.cert_scenario_3.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7241485543523468
+  },
+  "cert.ablation.iforest.per_class.cert_scenario_3.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.iforest.per_class.cert_scenario_3.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1
+  },
+  "cert.ablation.iforest.per_class.cert_scenario_3.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.3333333333333333
+  },
+  "cert.ablation.iforest.per_class.cert_scenario_3.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.iforest.recall_at_fpr01_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.01818181818181818
+  },
+  "cert.ablation.iforest.recall_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.01818181818181818
+  },
+  "cert.ablation.iforest.recall_at_fpr05_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.23939393939393938
+  },
+  "cert.ablation.iforest.recall_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.20606060606060606
+  },
+  "cert.ablation.iforest.threshold_fpr01": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.9030728715079648
+  },
+  "cert.ablation.iforest.threshold_fpr05": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6726584859143203
+  },
+  "cert.ablation.iforest.val_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.08053007135575943
+  },
+  "cert.ablation.iforest.val_threshold_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6207160283855202
+  },
+  "cert.ablation.iforest.valf1_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.05668733392382639
+  },
+  "cert.ablation.iforest.valf1_fn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 202
+  },
+  "cert.ablation.iforest.valf1_fp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 4058
+  },
+  "cert.ablation.iforest.valf1_fpr": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.06250866464363283
+  },
+  "cert.ablation.iforest.valf1_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.030578117534639272
+  },
+  "cert.ablation.iforest.valf1_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.3878787878787879
+  },
+  "cert.ablation.iforest.valf1_tn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 60861
+  },
+  "cert.ablation.iforest.valf1_tp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 128
+  },
+  "cert.ablation.lof.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.5695016447069005
+  },
+  "cert.ablation.lof.auc_raw_unclipped": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.5824984001041857
+  },
+  "cert.ablation.lof.average_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.006071210285266327
+  },
+  "cert.ablation.lof.benign_burst_flag_rate": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.lof.fpr_realised_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.008348865509327008
+  },
+  "cert.ablation.lof.fpr_realised_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.04976971302700288
+  },
+  "cert.ablation.lof.per_class.cert_scenario_2.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.5680873164070174
+  },
+  "cert.ablation.lof.per_class.cert_scenario_2.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.8333333333333334
+  },
+  "cert.ablation.lof.per_class.cert_scenario_2.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.lof.per_class.cert_scenario_2.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.1697530864197531
+  },
+  "cert.ablation.lof.per_class.cert_scenario_2.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 324
+  },
+  "cert.ablation.lof.per_class.cert_scenario_3.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6458753729005889
+  },
+  "cert.ablation.lof.per_class.cert_scenario_3.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.lof.per_class.cert_scenario_3.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1
+  },
+  "cert.ablation.lof.per_class.cert_scenario_3.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.5
+  },
+  "cert.ablation.lof.per_class.cert_scenario_3.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.lof.recall_at_fpr01_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.006060606060606061
+  },
+  "cert.ablation.lof.recall_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.0030303030303030303
+  },
+  "cert.ablation.lof.recall_at_fpr05_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.030303030303030304
+  },
+  "cert.ablation.lof.recall_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.030303030303030304
+  },
+  "cert.ablation.lof.threshold_fpr01": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.615997054702503
+  },
+  "cert.ablation.lof.threshold_fpr05": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 2.2119237216691074e-07
+  },
+  "cert.ablation.lof.val_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.03718516917090044
+  },
+  "cert.ablation.lof.val_threshold_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6.272933260340333e-09
+  },
+  "cert.ablation.lof.valf1_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.014952307295694767
+  },
+  "cert.ablation.lof.valf1_fn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 272
+  },
+  "cert.ablation.lof.valf1_fp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 7370
+  },
+  "cert.ablation.lof.valf1_fpr": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.11352608635376392
+  },
+  "cert.ablation.lof.valf1_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.007808292945611201
+  },
+  "cert.ablation.lof.valf1_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.17575757575757575
+  },
+  "cert.ablation.lof.valf1_tn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 57549
+  },
+  "cert.ablation.lof.valf1_tp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 58
+  },
+  "cert.ablation.lstm.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7069706912156735
+  },
+  "cert.ablation.lstm.auc_raw_unclipped": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7194713038672435
+  },
+  "cert.ablation.lstm.average_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.011495894650787476
+  },
+  "cert.ablation.lstm.benign_burst_flag_rate": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.lstm.fpr_realised_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.005268103328763536
+  },
+  "cert.ablation.lstm.fpr_realised_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.033149001062862955
+  },
+  "cert.ablation.lstm.per_class.cert_scenario_2.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7083304094618194
+  },
+  "cert.ablation.lstm.per_class.cert_scenario_2.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.8333333333333334
+  },
+  "cert.ablation.lstm.per_class.cert_scenario_2.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.lstm.per_class.cert_scenario_2.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.25308641975308643
+  },
+  "cert.ablation.lstm.per_class.cert_scenario_2.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 324
+  },
+  "cert.ablation.lstm.per_class.cert_scenario_3.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6335459059237922
+  },
+  "cert.ablation.lstm.per_class.cert_scenario_3.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.lstm.per_class.cert_scenario_3.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1
+  },
+  "cert.ablation.lstm.per_class.cert_scenario_3.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.3333333333333333
+  },
+  "cert.ablation.lstm.per_class.cert_scenario_3.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.lstm.recall_at_fpr01_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.021212121212121213
+  },
+  "cert.ablation.lstm.recall_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.006060606060606061
+  },
+  "cert.ablation.lstm.recall_at_fpr05_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.14545454545454545
+  },
+  "cert.ablation.lstm.recall_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.10909090909090909
+  },
+  "cert.ablation.lstm.threshold_fpr01": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.8141777389366428
+  },
+  "cert.ablation.lstm.threshold_fpr05": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.46201138669932273
+  },
+  "cert.ablation.lstm.val_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.048093438680865686
+  },
+  "cert.ablation.lstm.val_threshold_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.3044438417156468
+  },
+  "cert.ablation.lstm.valf1_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.03010752688172043
+  },
+  "cert.ablation.lstm.valf1_fn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 246
+  },
+  "cert.ablation.lstm.valf1_fp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 5166
+  },
+  "cert.ablation.lstm.valf1_fpr": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.07957608712395446
+  },
+  "cert.ablation.lstm.valf1_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.016
+  },
+  "cert.ablation.lstm.valf1_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.2545454545454545
+  },
+  "cert.ablation.lstm.valf1_tn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 59753
+  },
+  "cert.ablation.lstm.valf1_tp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 84
+  },
+  "cert.ablation.lstm_nextstep.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6840358404669316
+  },
+  "cert.ablation.lstm_nextstep.auc_raw_unclipped": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6996246371352273
+  },
+  "cert.ablation.lstm_nextstep.average_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.013104310888521858
+  },
+  "cert.ablation.lstm_nextstep.benign_burst_flag_rate": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.lstm_nextstep.fpr_realised_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.008210231211201652
+  },
+  "cert.ablation.lstm_nextstep.fpr_realised_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.04416272585837736
+  },
+  "cert.ablation.lstm_nextstep.per_class.cert_scenario_2.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6862839903629195
+  },
+  "cert.ablation.lstm_nextstep.per_class.cert_scenario_2.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.8333333333333334
+  },
+  "cert.ablation.lstm_nextstep.per_class.cert_scenario_2.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.lstm_nextstep.per_class.cert_scenario_2.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.12962962962962962
+  },
+  "cert.ablation.lstm_nextstep.per_class.cert_scenario_2.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 324
+  },
+  "cert.ablation.lstm_nextstep.per_class.cert_scenario_3.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.562635746083581
+  },
+  "cert.ablation.lstm_nextstep.per_class.cert_scenario_3.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.lstm_nextstep.per_class.cert_scenario_3.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1
+  },
+  "cert.ablation.lstm_nextstep.per_class.cert_scenario_3.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.16666666666666666
+  },
+  "cert.ablation.lstm_nextstep.per_class.cert_scenario_3.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.lstm_nextstep.recall_at_fpr01_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.048484848484848485
+  },
+  "cert.ablation.lstm_nextstep.recall_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.04242424242424243
+  },
+  "cert.ablation.lstm_nextstep.recall_at_fpr05_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.20909090909090908
+  },
+  "cert.ablation.lstm_nextstep.recall_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.20303030303030303
+  },
+  "cert.ablation.lstm_nextstep.threshold_fpr01": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7400824573990653
+  },
+  "cert.ablation.lstm_nextstep.threshold_fpr05": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.35150746568786934
+  },
+  "cert.ablation.lstm_nextstep.val_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.07385952208544534
+  },
+  "cert.ablation.lstm_nextstep.val_threshold_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.512842294285975
+  },
+  "cert.ablation.lstm_nextstep.valf1_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.04956772334293948
+  },
+  "cert.ablation.lstm_nextstep.valf1_fn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 287
+  },
+  "cert.ablation.lstm_nextstep.valf1_fp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1362
+  },
+  "cert.ablation.lstm_nextstep.valf1_fpr": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.02097999044963724
+  },
+  "cert.ablation.lstm_nextstep.valf1_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.030604982206405694
+  },
+  "cert.ablation.lstm_nextstep.valf1_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.1303030303030303
+  },
+  "cert.ablation.lstm_nextstep.valf1_tn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 63557
+  },
+  "cert.ablation.lstm_nextstep.valf1_tp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 43
+  },
+  "cert.ablation.zscore.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6161857176798874
+  },
+  "cert.ablation.zscore.auc_raw_unclipped": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6477932640535269
+  },
+  "cert.ablation.zscore.average_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.008716328723504377
+  },
+  "cert.ablation.zscore.benign_burst_flag_rate": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": NaN
+  },
+  "cert.ablation.zscore.fpr_realised_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.0073168101788382445
+  },
+  "cert.ablation.zscore.fpr_realised_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.037554490981068715
+  },
+  "cert.ablation.zscore.per_class.cert_scenario_2.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6144641261408567
+  },
+  "cert.ablation.zscore.per_class.cert_scenario_2.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.zscore.per_class.cert_scenario_2.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.zscore.per_class.cert_scenario_2.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.19444444444444445
+  },
+  "cert.ablation.zscore.per_class.cert_scenario_2.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 324
+  },
+  "cert.ablation.zscore.per_class.cert_scenario_3.auc": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.7091516607875455
+  },
+  "cert.ablation.zscore.per_class.cert_scenario_3.episode_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1.0
+  },
+  "cert.ablation.zscore.per_class.cert_scenario_3.episodes": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 1
+  },
+  "cert.ablation.zscore.per_class.cert_scenario_3.recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.16666666666666666
+  },
+  "cert.ablation.zscore.per_class.cert_scenario_3.windows": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 6
+  },
+  "cert.ablation.zscore.recall_at_fpr01_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.00909090909090909
+  },
+  "cert.ablation.zscore.recall_at_fpr01_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.0030303030303030303
+  },
+  "cert.ablation.zscore.recall_at_fpr05_testcurve": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.17575757575757575
+  },
+  "cert.ablation.zscore.recall_at_fpr05_valthreshold": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.10303030303030303
+  },
+  "cert.ablation.zscore.threshold_fpr01": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.871545802458394
+  },
+  "cert.ablation.zscore.threshold_fpr05": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.6300569290111832
+  },
+  "cert.ablation.zscore.val_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.0519159456118665
+  },
+  "cert.ablation.zscore.val_threshold_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.5555394739556302
+  },
+  "cert.ablation.zscore.valf1_f1": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.03402445507708665
+  },
+  "cert.ablation.zscore.valf1_fn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 266
+  },
+  "cert.ablation.zscore.valf1_fp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 3368
+  },
+  "cert.ablation.zscore.valf1_fpr": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.05188003512068886
+  },
+  "cert.ablation.zscore.valf1_precision": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.018648018648018648
+  },
+  "cert.ablation.zscore.valf1_recall": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 0.19393939393939394
+  },
+  "cert.ablation.zscore.valf1_tn": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 61551
+  },
+  "cert.ablation.zscore.valf1_tp": {
+   "run_id": "ablation-20261101T202251Z",
+   "value": 64
+  },
+  "cert.anomaly.benign_burst.ewma_flag_rate": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": NaN
+  },
+  "cert.anomaly.benign_burst.ewma_legacy_tau_flag_rate": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": NaN
+  },
+  "cert.anomaly.benign_burst.fpr_on_ordinary_negatives_ewma": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3050108596866865
+  },
+  "cert.anomaly.benign_burst.fpr_on_ordinary_negatives_hybrid": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.06264729894175819
+  },
+  "cert.anomaly.benign_burst.hybrid_flag_rate": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": NaN
+  },
+  "cert.anomaly.benign_burst.mean_a_hybrid": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": NaN
+  },
+  "cert.anomaly.benign_burst.mean_a_if": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": NaN
+  },
+  "cert.anomaly.benign_burst.mean_a_lstm": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": NaN
+  },
+  "cert.anomaly.benign_burst.mean_activity_rate_ratio": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": NaN
+  },
+  "cert.anomaly.benign_burst.mean_sbrs": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": NaN
+  },
+  "cert.anomaly.benign_burst.mean_sensitivity": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": NaN
+  },
+  "cert.anomaly.benign_burst.n_test_benign_burst_sessions": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0
+  },
+  "cert.anomaly.dataset.active_sessions": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 590482
+  },
+  "cert.anomaly.dataset.dropped_no_history": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 55
+  },
+  "cert.anomaly.dataset.grid_rows": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 2400000
+  },
+  "cert.anomaly.dataset.per_split.test.benign_bursts": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0
+  },
+  "cert.anomaly.dataset.per_split.test.negatives": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 64919
+  },
+  "cert.anomaly.dataset.per_split.test.positives": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 330
+  },
+  "cert.anomaly.dataset.per_split.test.sessions": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 65249
+  },
+  "cert.anomaly.dataset.per_split.train.benign_bursts": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0
+  },
+  "cert.anomaly.dataset.per_split.train.negatives": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 452035
+  },
+  "cert.anomaly.dataset.per_split.train.positives": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 3107
+  },
+  "cert.anomaly.dataset.per_split.train.sessions": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 455142
+  },
+  "cert.anomaly.dataset.per_split.val.benign_bursts": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0
+  },
+  "cert.anomaly.dataset.per_split.val.negatives": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 69115
+  },
+  "cert.anomaly.dataset.per_split.val.positives": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 921
+  },
+  "cert.anomaly.dataset.per_split.val.sessions": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 70036
+  },
+  "cert.anomaly.dataset.positive_rate": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.007380411257244082
+  },
+  "cert.anomaly.dataset.positives_total": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 4358
+  },
+  "cert.anomaly.dataset.scoreable_sessions": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 590427
+  },
+  "cert.anomaly.dataset.users": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 200
+  },
+  "cert.anomaly.diagnostic_auc_next_step_prediction_error.cert_scenario_2": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.7022725042545896
+  },
+  "cert.anomaly.diagnostic_auc_next_step_prediction_error.cert_scenario_3": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.5566398126896595
+  },
+  "cert.anomaly.diagnostic_auc_next_step_prediction_error.overall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.6996246371352273
+  },
+  "cert.anomaly.latency.max_ms": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 46.15350000676699
+  },
+  "cert.anomaly.latency.mean_ms": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 20.165793400199618
+  },
+  "cert.anomaly.latency.n_calls": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 500
+  },
+  "cert.anomaly.latency.p50_ms": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 20.010950014693663
+  },
+  "cert.anomaly.latency.p95_ms": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 23.03334999014623
+  },
+  "cert.anomaly.latency.p99_ms": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 27.465386008261696
+  },
+  "cert.anomaly.latency.torch_threads": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 4
+  },
+  "cert.anomaly.lstm_val_mse_history.0": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.1399412653543331
+  },
+  "cert.anomaly.lstm_val_mse_history.1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.13507556989457872
+  },
+  "cert.anomaly.lstm_val_mse_history.10": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12680974493181263
+  },
+  "cert.anomaly.lstm_val_mse_history.11": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12729529076549742
+  },
+  "cert.anomaly.lstm_val_mse_history.12": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12601374688965303
+  },
+  "cert.anomaly.lstm_val_mse_history.13": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12657068446477254
+  },
+  "cert.anomaly.lstm_val_mse_history.14": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12919556243684557
+  },
+  "cert.anomaly.lstm_val_mse_history.15": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.126509828042984
+  },
+  "cert.anomaly.lstm_val_mse_history.16": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12637741877693268
+  },
+  "cert.anomaly.lstm_val_mse_history.17": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.1265754672297725
+  },
+  "cert.anomaly.lstm_val_mse_history.18": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12641644472722655
+  },
+  "cert.anomaly.lstm_val_mse_history.19": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12628778087872047
+  },
+  "cert.anomaly.lstm_val_mse_history.2": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.1311153102459731
+  },
+  "cert.anomaly.lstm_val_mse_history.3": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.13049933166658437
+  },
+  "cert.anomaly.lstm_val_mse_history.4": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12975152693015557
+  },
+  "cert.anomaly.lstm_val_mse_history.5": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12812339838522452
+  },
+  "cert.anomaly.lstm_val_mse_history.6": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12782635965391442
+  },
+  "cert.anomaly.lstm_val_mse_history.7": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12795452409497013
+  },
+  "cert.anomaly.lstm_val_mse_history.8": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12850900736958892
+  },
+  "cert.anomaly.lstm_val_mse_history.9": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.12705281201468574
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.auc_hybrid": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.733555362152152
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.auc_if": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.733555362152152
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.auc_lstm": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.7083304094618194
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.episodes": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 6
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.ewma_episode_recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 1.0
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.ewma_recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3888888888888889
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.ewma_recall_ci.0": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.33740362236083216
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.ewma_recall_ci.1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.4429781229698397
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.hybrid_episode_recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 1.0
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.hybrid_recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3888888888888889
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.hybrid_recall_ci.0": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.33740362236083216
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.hybrid_recall_ci.1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.4429781229698397
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.mean_a_hybrid": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.4111476113645174
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.mean_a_if": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.4111476113645174
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.mean_a_lstm": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.1940667746787712
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_2.windows": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 324
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.auc_hybrid": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.7241485543523468
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.auc_if": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.7241485543523468
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.auc_lstm": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.6335459059237922
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.episodes": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 1
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.ewma_episode_recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 1.0
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.ewma_recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.6666666666666666
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.ewma_recall_ci.0": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.29998832134152864
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.ewma_recall_ci.1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.9032306674407831
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.hybrid_episode_recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 1.0
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.hybrid_recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3333333333333333
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.hybrid_recall_ci.0": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.09676933255921683
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.hybrid_recall_ci.1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.7000116786584712
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.mean_a_hybrid": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3726056710795149
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.mean_a_if": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3726056710795149
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.mean_a_lstm": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.20838608281229254
+  },
+  "cert.anomaly.per_class_recall.cert_scenario_3.windows": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 6
+  },
+  "cert.anomaly.sbrs_enforcement_config.bands.0.0": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 1.84
+  },
+  "cert.anomaly.sbrs_enforcement_config.bands.1.0": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 1.22
+  },
+  "cert.anomaly.sbrs_enforcement_config.bands.2.0": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.0
+  },
+  "cert.anomaly.sbrs_enforcement_config.beta": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 2.5
+  },
+  "cert.anomaly.test_auc_overall.hybrid": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.7333843292830646
+  },
+  "cert.anomaly.test_auc_overall.if": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.7333843292830646
+  },
+  "cert.anomaly.test_auc_overall.lstm": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.7069706912156735
+  },
+  "cert.anomaly.test_enforcement_bands.ewma_base_action_block.f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.01283253541286215
+  },
+  "cert.anomaly.test_enforcement_bands.ewma_base_action_block.fn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 200
+  },
+  "cert.anomaly.test_enforcement_bands.ewma_base_action_block.fp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 19801
+  },
+  "cert.anomaly.test_enforcement_bands.ewma_base_action_block.fpr": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3050108596866865
+  },
+  "cert.anomaly.test_enforcement_bands.ewma_base_action_block.precision": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.006522502634087602
+  },
+  "cert.anomaly.test_enforcement_bands.ewma_base_action_block.recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3939393939393939
+  },
+  "cert.anomaly.test_enforcement_bands.ewma_base_action_block.tn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 45118
+  },
+  "cert.anomaly.test_enforcement_bands.ewma_base_action_block.tp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 130
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_alert_or_block.f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.0488997555012225
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_alert_or_block.fn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 200
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_alert_or_block.fp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 4857
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_alert_or_block.fpr": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.0748163095549839
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_alert_or_block.precision": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.026067776218167235
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_alert_or_block.recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3939393939393939
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_alert_or_block.tn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 60062
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_alert_or_block.tp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 130
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_block_only.f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.0
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_block_only.fn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 330
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_block_only.fp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_block_only.fpr": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.0
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_block_only.precision": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.0
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_block_only.recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.0
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_block_only.tn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 64919
+  },
+  "cert.anomaly.test_enforcement_bands.hybrid_block_only.tp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0
+  },
+  "cert.anomaly.test_enforcement_bands.paper_doc_bands_alert_or_block.f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.010064197380258925
+  },
+  "cert.anomaly.test_enforcement_bands.paper_doc_bands_alert_or_block.fn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0
+  },
+  "cert.anomaly.test_enforcement_bands.paper_doc_bands_alert_or_block.fp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 64919
+  },
+  "cert.anomaly.test_enforcement_bands.paper_doc_bands_alert_or_block.fpr": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 1.0
+  },
+  "cert.anomaly.test_enforcement_bands.paper_doc_bands_alert_or_block.precision": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.005057548774693865
+  },
+  "cert.anomaly.test_enforcement_bands.paper_doc_bands_alert_or_block.recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 1.0
+  },
+  "cert.anomaly.test_enforcement_bands.paper_doc_bands_alert_or_block.tn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0
+  },
+  "cert.anomaly.test_enforcement_bands.paper_doc_bands_alert_or_block.tp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 330
+  },
+  "cert.anomaly.test_flag_level.ewma_legacy_tau.f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.007787151200519143
+  },
+  "cert.anomaly.test_flag_level.ewma_legacy_tau.fn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 324
+  },
+  "cert.anomaly.test_flag_level.ewma_legacy_tau.fp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 1205
+  },
+  "cert.anomaly.test_flag_level.ewma_legacy_tau.fpr": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.018561592137894916
+  },
+  "cert.anomaly.test_flag_level.ewma_legacy_tau.precision": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.00495458298926507
+  },
+  "cert.anomaly.test_flag_level.ewma_legacy_tau.recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.01818181818181818
+  },
+  "cert.anomaly.test_flag_level.ewma_legacy_tau.tn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 63714
+  },
+  "cert.anomaly.test_flag_level.ewma_legacy_tau.tp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 6
+  },
+  "cert.anomaly.test_flag_level.ewma_tuned.f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.01283253541286215
+  },
+  "cert.anomaly.test_flag_level.ewma_tuned.fn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 200
+  },
+  "cert.anomaly.test_flag_level.ewma_tuned.fp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 19801
+  },
+  "cert.anomaly.test_flag_level.ewma_tuned.fpr": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3050108596866865
+  },
+  "cert.anomaly.test_flag_level.ewma_tuned.precision": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.006522502634087602
+  },
+  "cert.anomaly.test_flag_level.ewma_tuned.recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3939393939393939
+  },
+  "cert.anomaly.test_flag_level.ewma_tuned.tn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 45118
+  },
+  "cert.anomaly.test_flag_level.ewma_tuned.tp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 130
+  },
+  "cert.anomaly.test_flag_level.hybrid.f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.05657458563535912
+  },
+  "cert.anomaly.test_flag_level.hybrid.fn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 202
+  },
+  "cert.anomaly.test_flag_level.hybrid.fp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 4067
+  },
+  "cert.anomaly.test_flag_level.hybrid.fpr": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.06264729894175819
+  },
+  "cert.anomaly.test_flag_level.hybrid.precision": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.030512514898688916
+  },
+  "cert.anomaly.test_flag_level.hybrid.recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3878787878787879
+  },
+  "cert.anomaly.test_flag_level.hybrid.tn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 60852
+  },
+  "cert.anomaly.test_flag_level.hybrid.tp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 128
+  },
+  "cert.anomaly.test_flag_level.if_only.f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.05657458563535912
+  },
+  "cert.anomaly.test_flag_level.if_only.fn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 202
+  },
+  "cert.anomaly.test_flag_level.if_only.fp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 4067
+  },
+  "cert.anomaly.test_flag_level.if_only.fpr": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.06264729894175819
+  },
+  "cert.anomaly.test_flag_level.if_only.precision": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.030512514898688916
+  },
+  "cert.anomaly.test_flag_level.if_only.recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3878787878787879
+  },
+  "cert.anomaly.test_flag_level.if_only.tn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 60852
+  },
+  "cert.anomaly.test_flag_level.if_only.tp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 128
+  },
+  "cert.anomaly.test_flag_level.lstm_only.f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.016129032258064516
+  },
+  "cert.anomaly.test_flag_level.lstm_only.fn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 320
+  },
+  "cert.anomaly.test_flag_level.lstm_only.fp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 900
+  },
+  "cert.anomaly.test_flag_level.lstm_only.fpr": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.013863429812535622
+  },
+  "cert.anomaly.test_flag_level.lstm_only.precision": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.01098901098901099
+  },
+  "cert.anomaly.test_flag_level.lstm_only.recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.030303030303030304
+  },
+  "cert.anomaly.test_flag_level.lstm_only.tn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 64019
+  },
+  "cert.anomaly.test_flag_level.lstm_only.tp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 10
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.benign_burst_flag_rate": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": NaN
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.049718263175339734
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.fn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 255
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.fp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 2612
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.fpr": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.040234754078158935
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.malicious_insider_recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.22839506172839505
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.precision": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.02791216970599181
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.recall": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.22727272727272727
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.56
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.tn": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 62307
+  },
+  "cert.anomaly.test_insider_oriented_operating_point.tp": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 75
+  },
+  "cert.anomaly.tuning.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.0
+  },
+  "cert.anomaly.tuning.alpha_grid.0.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.0
+  },
+  "cert.anomaly.tuning.alpha_grid.0.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.08044806517311609
+  },
+  "cert.anomaly.tuning.alpha_grid.0.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.62
+  },
+  "cert.anomaly.tuning.alpha_grid.1.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.05
+  },
+  "cert.anomaly.tuning.alpha_grid.1.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.0800408719346049
+  },
+  "cert.anomaly.tuning.alpha_grid.1.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.6
+  },
+  "cert.anomaly.tuning.alpha_grid.10.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.5
+  },
+  "cert.anomaly.tuning.alpha_grid.10.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.07081038552321006
+  },
+  "cert.anomaly.tuning.alpha_grid.10.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.46
+  },
+  "cert.anomaly.tuning.alpha_grid.11.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.55
+  },
+  "cert.anomaly.tuning.alpha_grid.11.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.06877283473028153
+  },
+  "cert.anomaly.tuning.alpha_grid.11.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.46
+  },
+  "cert.anomaly.tuning.alpha_grid.12.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.6
+  },
+  "cert.anomaly.tuning.alpha_grid.12.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.06729377713458756
+  },
+  "cert.anomaly.tuning.alpha_grid.12.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.42
+  },
+  "cert.anomaly.tuning.alpha_grid.13.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.65
+  },
+  "cert.anomaly.tuning.alpha_grid.13.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.06286098052384151
+  },
+  "cert.anomaly.tuning.alpha_grid.13.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.36
+  },
+  "cert.anomaly.tuning.alpha_grid.14.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.7
+  },
+  "cert.anomaly.tuning.alpha_grid.14.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.06103411513859274
+  },
+  "cert.anomaly.tuning.alpha_grid.14.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.35
+  },
+  "cert.anomaly.tuning.alpha_grid.15.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.75
+  },
+  "cert.anomaly.tuning.alpha_grid.15.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.057811585722644825
+  },
+  "cert.anomaly.tuning.alpha_grid.15.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.32
+  },
+  "cert.anomaly.tuning.alpha_grid.16.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.8
+  },
+  "cert.anomaly.tuning.alpha_grid.16.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.05550479671082687
+  },
+  "cert.anomaly.tuning.alpha_grid.16.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.31
+  },
+  "cert.anomaly.tuning.alpha_grid.17.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.85
+  },
+  "cert.anomaly.tuning.alpha_grid.17.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.05257084241569432
+  },
+  "cert.anomaly.tuning.alpha_grid.17.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.33
+  },
+  "cert.anomaly.tuning.alpha_grid.18.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.9
+  },
+  "cert.anomaly.tuning.alpha_grid.18.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.0510837727006444
+  },
+  "cert.anomaly.tuning.alpha_grid.18.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.31
+  },
+  "cert.anomaly.tuning.alpha_grid.19.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.95
+  },
+  "cert.anomaly.tuning.alpha_grid.19.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.049281314168377825
+  },
+  "cert.anomaly.tuning.alpha_grid.19.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.33
+  },
+  "cert.anomaly.tuning.alpha_grid.2.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.1
+  },
+  "cert.anomaly.tuning.alpha_grid.2.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.07812752219531881
+  },
+  "cert.anomaly.tuning.alpha_grid.2.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.57
+  },
+  "cert.anomaly.tuning.alpha_grid.20.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 1.0
+  },
+  "cert.anomaly.tuning.alpha_grid.20.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.047624633431085035
+  },
+  "cert.anomaly.tuning.alpha_grid.20.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.31
+  },
+  "cert.anomaly.tuning.alpha_grid.3.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.15
+  },
+  "cert.anomaly.tuning.alpha_grid.3.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.07670182166826463
+  },
+  "cert.anomaly.tuning.alpha_grid.3.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.55
+  },
+  "cert.anomaly.tuning.alpha_grid.4.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.2
+  },
+  "cert.anomaly.tuning.alpha_grid.4.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.07471264367816093
+  },
+  "cert.anomaly.tuning.alpha_grid.4.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.52
+  },
+  "cert.anomaly.tuning.alpha_grid.5.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.25
+  },
+  "cert.anomaly.tuning.alpha_grid.5.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.07458233890214797
+  },
+  "cert.anomaly.tuning.alpha_grid.5.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.5
+  },
+  "cert.anomaly.tuning.alpha_grid.6.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.3
+  },
+  "cert.anomaly.tuning.alpha_grid.6.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.07526647813791605
+  },
+  "cert.anomaly.tuning.alpha_grid.6.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.55
+  },
+  "cert.anomaly.tuning.alpha_grid.7.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.35
+  },
+  "cert.anomaly.tuning.alpha_grid.7.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.07594417077175698
+  },
+  "cert.anomaly.tuning.alpha_grid.7.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.52
+  },
+  "cert.anomaly.tuning.alpha_grid.8.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.4
+  },
+  "cert.anomaly.tuning.alpha_grid.8.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.07513251901359759
+  },
+  "cert.anomaly.tuning.alpha_grid.8.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.52
+  },
+  "cert.anomaly.tuning.alpha_grid.9.alpha": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.45
+  },
+  "cert.anomaly.tuning.alpha_grid.9.best_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.07382224380767363
+  },
+  "cert.anomaly.tuning.alpha_grid.9.best_tau": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.51
+  },
+  "cert.anomaly.tuning.ewma_val_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.03027724280019707
+  },
+  "cert.anomaly.tuning.legacy_tau_ewma": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 2.0
+  },
+  "cert.anomaly.tuning.tau_ewma": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.25
+  },
+  "cert.anomaly.tuning.tau_hybrid": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.62
+  },
+  "cert.anomaly.tuning.val_f1": {
+   "run_id": "train_and_evaluate-20261101T174636Z",
+   "value": 0.08044806517311609
+  },
+  "cert.drift.cusum.h": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 40.0
+  },
+  "cert.drift.cusum.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.cusum.hybrid_only.f1": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.05657458563535912
+  },
+  "cert.drift.cusum.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.06264729894175819
+  },
+  "cert.drift.cusum.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 1.0
+  },
+  "cert.drift.cusum.hybrid_only.precision": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.030512514898688916
+  },
+  "cert.drift.cusum.hybrid_only.recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.3878787878787879
+  },
+  "cert.drift.cusum.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.cusum.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.05233033524121014
+  },
+  "cert.drift.cusum.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.06830049754309216
+  },
+  "cert.drift.cusum.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 1.0
+  },
+  "cert.drift.cusum.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.028057869355545814
+  },
+  "cert.drift.cusum.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.3878787878787879
+  },
+  "cert.drift.cusum.k": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 1.0
+  },
+  "cert.drift.cusum.per_class.cert_scenario_1.detected": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0
+  },
+  "cert.drift.cusum.per_class.cert_scenario_1.episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.cusum.per_class.cert_scenario_1.episodes": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0
+  },
+  "cert.drift.cusum.per_class.cert_scenario_1.ttd_hours_mean": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.cusum.per_class.cert_scenario_1.ttd_hours_median": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.cusum.per_class.cert_scenario_1.window_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.cusum.per_class.cert_scenario_2.detected": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 2
+  },
+  "cert.drift.cusum.per_class.cert_scenario_2.episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.3333333333333333
+  },
+  "cert.drift.cusum.per_class.cert_scenario_2.episodes": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 6
+  },
+  "cert.drift.cusum.per_class.cert_scenario_2.ttd_hours_mean": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 328.0
+  },
+  "cert.drift.cusum.per_class.cert_scenario_2.ttd_hours_median": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 328.0
+  },
+  "cert.drift.cusum.per_class.cert_scenario_2.window_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.006172839506172839
+  },
+  "cert.drift.cusum.per_class.cert_scenario_3.detected": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0
+  },
+  "cert.drift.cusum.per_class.cert_scenario_3.episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.0
+  },
+  "cert.drift.cusum.per_class.cert_scenario_3.episodes": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 1
+  },
+  "cert.drift.cusum.per_class.cert_scenario_3.ttd_hours_mean": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.cusum.per_class.cert_scenario_3.ttd_hours_median": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.cusum.per_class.cert_scenario_3.window_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.0
+  },
+  "cert.drift.cusum.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.cusum.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.00676227298633682
+  },
+  "cert.drift.cusum.val_fa_rate": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.008840338566157853
+  },
+  "cert.drift.cusum.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.8181818181818182
+  },
+  "cert.drift.ph.h": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 4.0
+  },
+  "cert.drift.ph.hybrid_only.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.ph.hybrid_only.f1": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.05657458563535912
+  },
+  "cert.drift.ph.hybrid_only.fpr": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.06264729894175819
+  },
+  "cert.drift.ph.hybrid_only.malicious_episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 1.0
+  },
+  "cert.drift.ph.hybrid_only.precision": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.030512514898688916
+  },
+  "cert.drift.ph.hybrid_only.recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.3878787878787879
+  },
+  "cert.drift.ph.hybrid_or_drift.benign_burst_flag_rate": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.ph.hybrid_or_drift.f1": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.05413406639881582
+  },
+  "cert.drift.ph.hybrid_or_drift.fpr": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.06578967636593293
+  },
+  "cert.drift.ph.hybrid_or_drift.malicious_episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 1.0
+  },
+  "cert.drift.ph.hybrid_or_drift.precision": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.02909752216412821
+  },
+  "cert.drift.ph.hybrid_or_drift.recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.3878787878787879
+  },
+  "cert.drift.ph.k": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 1.0
+  },
+  "cert.drift.ph.per_class.cert_scenario_1.detected": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0
+  },
+  "cert.drift.ph.per_class.cert_scenario_1.episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.ph.per_class.cert_scenario_1.episodes": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0
+  },
+  "cert.drift.ph.per_class.cert_scenario_1.ttd_hours_mean": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.ph.per_class.cert_scenario_1.ttd_hours_median": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.ph.per_class.cert_scenario_1.window_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.ph.per_class.cert_scenario_2.detected": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 5
+  },
+  "cert.drift.ph.per_class.cert_scenario_2.episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.8333333333333334
+  },
+  "cert.drift.ph.per_class.cert_scenario_2.episodes": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 6
+  },
+  "cert.drift.ph.per_class.cert_scenario_2.ttd_hours_mean": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 196.2
+  },
+  "cert.drift.ph.per_class.cert_scenario_2.ttd_hours_median": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 147.0
+  },
+  "cert.drift.ph.per_class.cert_scenario_2.window_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.030864197530864196
+  },
+  "cert.drift.ph.per_class.cert_scenario_3.detected": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 1
+  },
+  "cert.drift.ph.per_class.cert_scenario_3.episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 1.0
+  },
+  "cert.drift.ph.per_class.cert_scenario_3.episodes": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 1
+  },
+  "cert.drift.ph.per_class.cert_scenario_3.ttd_hours_mean": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 7.0
+  },
+  "cert.drift.ph.per_class.cert_scenario_3.ttd_hours_median": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 7.0
+  },
+  "cert.drift.ph.per_class.cert_scenario_3.window_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.16666666666666666
+  },
+  "cert.drift.ph.test_false_alarm_rate_benign_bursts": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": NaN
+  },
+  "cert.drift.ph.test_false_alarm_rate_ordinary_negatives": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.006623638688211464
+  },
+  "cert.drift.ph.val_fa_rate": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.008478622585545829
+  },
+  "cert.drift.ph.val_malicious_episode_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.7272727272727273
+  },
+  "cert.drift.supervised_probe.test_auc_all": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.75383846630323
+  },
+  "cert.drift.supervised_probe.test_auc_malicious": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.753582954941571
+  },
+  "cert.drift.supervised_probe.test_f1": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.10387323943661972
+  },
+  "cert.drift.supervised_probe.test_fpr": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.011506646744404566
+  },
+  "cert.drift.supervised_probe.test_malicious_window_recall": {
+   "run_id": "drift_detector-20261101T203055Z",
+   "value": 0.17592592592592593
+  },
+  "cert.mapping.active_sessions": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 590482
+  },
+  "cert.mapping.by_scenario.cert_scenario_1": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 168
+  },
+  "cert.mapping.by_scenario.cert_scenario_2": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 4128
+  },
+  "cert.mapping.by_scenario.cert_scenario_3": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 62
+  },
+  "cert.mapping.grid_rows": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 2400000
+  },
+  "cert.mapping.hours": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 12000
+  },
+  "cert.mapping.insiders": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 70
+  },
+  "cert.mapping.insiders_with_test_positives": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 7
+  },
+  "cert.mapping.positive_sessions": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 4358
+  },
+  "cert.mapping.positives_by_split.test": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 330
+  },
+  "cert.mapping.positives_by_split.train": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 3107
+  },
+  "cert.mapping.positives_by_split.val": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 921
+  },
+  "cert.mapping.users": {
+   "run_id": "cert_map-20261025T015317Z",
+   "value": 200
+  },
   "drift.ds1.cusum.h": {
    "run_id": "drift_detector-20261023T154956Z",
    "value": 4.0
@@ -169923,6 +172455,37 @@
     "data_and_train": 1001
    }
   },
+  "ablation-20261101T202251Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\ablation.py --base results/runs/cert_r4.2 --manifest-key cert.ablation",
+   "date_utc": "2026-11-01T20:22:51+00:00",
+   "device": "cpu",
+   "git_dirty": true,
+   "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "cert.ablation"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/ablation.py",
+   "scripts": {
+    "cert.ablation": "evaluation/ablation.py"
+   },
+   "seeds": {}
+  },
   "ablation_report-20261023T115427Z": {
    "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\ablation_report.py",
    "date_utc": "2026-10-23T11:54:27+00:00",
@@ -171403,6 +173966,39 @@
     "sbrs.ds1001": "evaluation/calibrate_sbrs.py"
    },
    "seeds": {}
+  },
+  "cert_map-20261025T015317Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\cert_map.py --cert-dir D:/datasets/cert/extract/r4.2 --answers D:/datasets/cert/answers",
+   "date_utc": "2026-10-25T01:53:17+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "8c113e073fbe4b36e724118d77b4e7f0ed2ff6a1",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "cert.mapping"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/cert_map.py",
+   "scripts": {
+    "cert.mapping": "evaluation/cert_map.py"
+   },
+   "seeds": {
+    "user_sample": 42
+   }
   },
   "difficulty_sweep-20261023T121604Z": {
    "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\difficulty_sweep.py",
@@ -173318,6 +175914,37 @@
      1001
     ]
    }
+  },
+  "drift_detector-20261101T203055Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py --base results/runs/cert_r4.2 --target-class cert_scenario_2 --manifest-key cert.drift",
+   "date_utc": "2026-11-01T20:30:55+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "cert.drift"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/drift_detector.py",
+   "scripts": {
+    "cert.drift": "evaluation/drift_detector.py"
+   },
+   "seeds": {}
   },
   "e2e_demo-20261024T104948Z": {
    "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\e2e_demo.py",
@@ -178716,6 +181343,40 @@
    "seeds": {
     "data": 1001,
     "train": 1001
+   }
+  },
+  "train_and_evaluate-20261101T174636Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\train_and_evaluate.py --data-dir results/runs/cert_r4.2/data --out-dir results/runs/cert_r4.2/run --manifest-prefix cert.anomaly --max-fit-windows 100000 --insider-class cert_scenario_2 --seed 42",
+   "date_utc": "2026-11-01T17:46:36+00:00",
+   "device": "cpu",
+   "git_dirty": true,
+   "git_hash": "8c113e073fbe4b36e724118d77b4e7f0ed2ff6a1",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "cert.anomaly"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/train_and_evaluate.py",
+   "scripts": {
+    "cert.anomaly": "evaluation/train_and_evaluate.py"
+   },
+   "seeds": {
+    "data": 42,
+    "train": 42
    }
   }
  },

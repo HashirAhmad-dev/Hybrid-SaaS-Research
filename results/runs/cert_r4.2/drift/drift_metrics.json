@@ -1,0 +1,137 @@
+{
+ "provenance": {
+  "script": "evaluation/drift_detector.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\drift_detector.py --base results/runs/cert_r4.2 --target-class cert_scenario_2 --manifest-key cert.drift",
+  "seeds": {
+   "base": "results\\runs\\cert_r4.2"
+  },
+  "date_utc": "2026-11-01T20:30:55+00:00",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": "cpu"
+ },
+ "target_class": "cert_scenario_2",
+ "cusum": {
+  "k": 1.0,
+  "h": 40.0,
+  "val_fa_rate": 0.008840338566157853,
+  "val_malicious_episode_recall": 0.8181818181818182,
+  "test_false_alarm_rate_ordinary_negatives": 0.00676227298633682,
+  "test_false_alarm_rate_benign_bursts": NaN,
+  "per_class": {
+   "cert_scenario_1": {
+    "episodes": 0,
+    "detected": 0,
+    "episode_recall": NaN,
+    "window_recall": NaN,
+    "ttd_hours_median": NaN,
+    "ttd_hours_mean": NaN
+   },
+   "cert_scenario_2": {
+    "episodes": 6,
+    "detected": 2,
+    "episode_recall": 0.3333333333333333,
+    "window_recall": 0.006172839506172839,
+    "ttd_hours_median": 328.0,
+    "ttd_hours_mean": 328.0
+   },
+   "cert_scenario_3": {
+    "episodes": 1,
+    "detected": 0,
+    "episode_recall": 0.0,
+    "window_recall": 0.0,
+    "ttd_hours_median": NaN,
+    "ttd_hours_mean": NaN
+   }
+  },
+  "hybrid_only": {
+   "precision": 0.030512514898688916,
+   "recall": 0.3878787878787879,
+   "f1": 0.05657458563535912,
+   "fpr": 0.06264729894175819,
+   "malicious_episode_recall": 1.0,
+   "benign_burst_flag_rate": NaN
+  },
+  "hybrid_or_drift": {
+   "precision": 0.028057869355545814,
+   "recall": 0.3878787878787879,
+   "f1": 0.05233033524121014,
+   "fpr": 0.06830049754309216,
+   "malicious_episode_recall": 1.0,
+   "benign_burst_flag_rate": NaN
+  }
+ },
+ "ph": {
+  "k": 1.0,
+  "h": 4.0,
+  "val_fa_rate": 0.008478622585545829,
+  "val_malicious_episode_recall": 0.7272727272727273,
+  "test_false_alarm_rate_ordinary_negatives": 0.006623638688211464,
+  "test_false_alarm_rate_benign_bursts": NaN,
+  "per_class": {
+   "cert_scenario_1": {
+    "episodes": 0,
+    "detected": 0,
+    "episode_recall": NaN,
+    "window_recall": NaN,
+    "ttd_hours_median": NaN,
+    "ttd_hours_mean": NaN
+   },
+   "cert_scenario_2": {
+    "episodes": 6,
+    "detected": 5,
+    "episode_recall": 0.8333333333333334,
+    "window_recall": 0.030864197530864196,
+    "ttd_hours_median": 147.0,
+    "ttd_hours_mean": 196.2
+   },
+   "cert_scenario_3": {
+    "episodes": 1,
+    "detected": 1,
+    "episode_recall": 1.0,
+    "window_recall": 0.16666666666666666,
+    "ttd_hours_median": 7.0,
+    "ttd_hours_mean": 7.0
+   }
+  },
+  "hybrid_only": {
+   "precision": 0.030512514898688916,
+   "recall": 0.3878787878787879,
+   "f1": 0.05657458563535912,
+   "fpr": 0.06264729894175819,
+   "malicious_episode_recall": 1.0,
+   "benign_burst_flag_rate": NaN
+  },
+  "hybrid_or_drift": {
+   "precision": 0.02909752216412821,
+   "recall": 0.3878787878787879,
+   "f1": 0.05413406639881582,
+   "fpr": 0.06578967636593293,
+   "malicious_episode_recall": 1.0,
+   "benign_burst_flag_rate": NaN
+  }
+ },
+ "supervised_probe": {
+  "test_auc_all": 0.75383846630323,
+  "test_auc_malicious": 0.753582954941571,
+  "test_malicious_window_recall": 0.17592592592592593,
+  "test_f1": 0.10387323943661972,
+  "test_fpr": 0.011506646744404566,
+  "note": "supervised upper bound: trained with labels on TRAIN; not deployable as an unsupervised detector"
+ }
+}

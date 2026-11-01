@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Detectors on CERT r4.2, a second synthetic benchmark mapped onto our six features. Test split: 65,249 active user-hours, 330 positive hours, 7 insiders. Each F1 threshold was chosen on validation. Not pooled with our datasets.}
+\label{tab:cert}
+\begin{tabular}{lcccccc}
+\hline
+Detector & AUC & AP & F1 & Precision & Recall & FPR \\
+\hline
+EWMA & 0.602 & 0.0064 & 0.013 & 0.007 & 0.333 & 0.249 \\
+z-score & 0.616 & 0.0087 & 0.034 & 0.019 & 0.194 & 0.052 \\
+LOF & 0.570 & 0.0061 & 0.015 & 0.008 & 0.176 & 0.114 \\
+LSTM memory bank & 0.707 & 0.0115 & 0.030 & 0.016 & 0.255 & 0.080 \\
+LSTM next-step & 0.684 & 0.0131 & 0.050 & 0.031 & 0.130 & 0.021 \\
+Isolation Forest & 0.733 & 0.0157 & 0.057 & 0.031 & 0.388 & 0.063 \\
+Hybrid weighted & 0.733 & 0.0157 & 0.057 & 0.031 & 0.388 & 0.063 \\
+Hybrid max & 0.746 & 0.0149 & 0.050 & 0.027 & 0.394 & 0.073 \\
+Hybrid rank average & 0.751 & 0.0216 & 0.065 & 0.039 & 0.191 & 0.024 \\
+\hline
+\end{tabular}
+\end{table}

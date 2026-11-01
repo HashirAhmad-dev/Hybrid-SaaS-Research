@@ -1543,6 +1543,214 @@
   "script": "results/baseline_20261023/sbrs_calibration.json",
   "value": 0.08658823529411765
  },
+ "cert.ablation._params.alpha": {
+  "as_written": "0.00",
+  "claim": "Alpha chosen on validation",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "ablation-20261101T202251Z",
+  "script": "evaluation/ablation.py",
+  "value": 0.0
+ },
+ "cert.ablation.hybrid_rankavg.auc": {
+  "as_written": "0.751",
+  "claim": "Rank-average AUC",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "ablation-20261101T202251Z",
+  "script": "evaluation/ablation.py",
+  "value": 0.751149661092821
+ },
+ "cert.ablation.hybrid_rankavg.valf1_f1": {
+  "as_written": "0.065",
+  "claim": "Rank-average F1",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "ablation-20261101T202251Z",
+  "script": "evaluation/ablation.py",
+  "value": 0.06478149100257069
+ },
+ "cert.ablation.hybrid_weighted.auc": {
+  "as_written": "0.733",
+  "claim": "Hybrid AUC",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "ablation-20261101T202251Z",
+  "script": "evaluation/ablation.py",
+  "value": 0.7333843292830646
+ },
+ "cert.ablation.hybrid_weighted.per_class.cert_scenario_2.episode_recall": {
+  "as_written": "1.00",
+  "claim": "Hybrid scenario 2 episode recall",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "ablation-20261101T202251Z",
+  "script": "evaluation/ablation.py",
+  "value": 1.0
+ },
+ "cert.ablation.hybrid_weighted.valf1_f1": {
+  "as_written": "0.057",
+  "claim": "Hybrid F1",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "ablation-20261101T202251Z",
+  "script": "evaluation/ablation.py",
+  "value": 0.05668733392382639
+ },
+ "cert.ablation.hybrid_weighted.valf1_fpr": {
+  "as_written": "6.3%",
+  "claim": "Hybrid FPR",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "ablation-20261101T202251Z",
+  "script": "evaluation/ablation.py",
+  "value": 0.06250866464363283
+ },
+ "cert.ablation.hybrid_weighted.valf1_precision": {
+  "as_written": "0.031",
+  "claim": "Hybrid precision",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "ablation-20261101T202251Z",
+  "script": "evaluation/ablation.py",
+  "value": 0.030578117534639272
+ },
+ "cert.ablation.hybrid_weighted.valf1_recall": {
+  "as_written": "0.388",
+  "claim": "Hybrid recall",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "ablation-20261101T202251Z",
+  "script": "evaluation/ablation.py",
+  "value": 0.3878787878787879
+ },
+ "cert.ablation.iforest.auc": {
+  "as_written": "0.733",
+  "claim": "Isolation Forest AUC",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "ablation-20261101T202251Z",
+  "script": "evaluation/ablation.py",
+  "value": 0.7333843292830646
+ },
+ "cert.ablation.lstm.auc": {
+  "as_written": "0.707",
+  "claim": "LSTM AUC",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "ablation-20261101T202251Z",
+  "script": "evaluation/ablation.py",
+  "value": 0.7069706912156735
+ },
+ "cert.drift.cusum.hybrid_or_drift.f1": {
+  "as_written": "0.052",
+  "claim": "Hybrid or CUSUM F1",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "drift_detector-20261101T203055Z",
+  "script": "evaluation/drift_detector.py",
+  "value": 0.05233033524121014
+ },
+ "cert.drift.cusum.per_class.cert_scenario_2.episode_recall": {
+  "as_written": "0.33",
+  "claim": "CUSUM scenario 2 episode recall",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "drift_detector-20261101T203055Z",
+  "script": "evaluation/drift_detector.py",
+  "value": 0.3333333333333333
+ },
+ "cert.drift.cusum.val_malicious_episode_recall": {
+  "as_written": "0.82",
+  "claim": "CUSUM validation episode recall",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "drift_detector-20261101T203055Z",
+  "script": "evaluation/drift_detector.py",
+  "value": 0.8181818181818182
+ },
+ "cert.drift.ph.hybrid_or_drift.f1": {
+  "as_written": "0.054",
+  "claim": "Hybrid or PH F1",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "drift_detector-20261101T203055Z",
+  "script": "evaluation/drift_detector.py",
+  "value": 0.05413406639881582
+ },
+ "cert.drift.ph.per_class.cert_scenario_2.episode_recall": {
+  "as_written": "0.83",
+  "claim": "PH scenario 2 episode recall",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "drift_detector-20261101T203055Z",
+  "script": "evaluation/drift_detector.py",
+  "value": 0.8333333333333334
+ },
+ "cert.drift.ph.per_class.cert_scenario_2.ttd_hours_median": {
+  "as_written": "147",
+  "claim": "PH median hours to detect",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "drift_detector-20261101T203055Z",
+  "script": "evaluation/drift_detector.py",
+  "value": 147.0
+ },
+ "cert.drift.ph.per_class.cert_scenario_2.window_recall": {
+  "as_written": "0.031",
+  "claim": "PH hour-level recall",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "drift_detector-20261101T203055Z",
+  "script": "evaluation/drift_detector.py",
+  "value": 0.030864197530864196
+ },
+ "cert.drift.ph.test_false_alarm_rate_ordinary_negatives": {
+  "as_written": "0.66%",
+  "claim": "PH false alarm rate",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "drift_detector-20261101T203055Z",
+  "script": "evaluation/drift_detector.py",
+  "value": 0.006623638688211464
+ },
+ "cert.drift.supervised_probe.test_auc_all": {
+  "as_written": "0.754",
+  "claim": "Supervised probe AUC",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "drift_detector-20261101T203055Z",
+  "script": "evaluation/drift_detector.py",
+  "value": 0.75383846630323
+ },
+ "cert.drift.supervised_probe.test_f1": {
+  "as_written": "0.104",
+  "claim": "Supervised probe F1",
+  "git_hash": "1c6ceda8da8611894f4579f80ed8e10470f26121",
+  "run_id": "drift_detector-20261101T203055Z",
+  "script": "evaluation/drift_detector.py",
+  "value": 0.10387323943661972
+ },
+ "cert.mapping.active_sessions": {
+  "as_written": "590482",
+  "claim": "Active user-hours",
+  "git_hash": "8c113e073fbe4b36e724118d77b4e7f0ed2ff6a1",
+  "run_id": "cert_map-20261025T015317Z",
+  "script": "evaluation/cert_map.py",
+  "value": 590482.0
+ },
+ "cert.mapping.insiders_with_test_positives": {
+  "as_written": "7",
+  "claim": "Insiders with test positives",
+  "git_hash": "8c113e073fbe4b36e724118d77b4e7f0ed2ff6a1",
+  "run_id": "cert_map-20261025T015317Z",
+  "script": "evaluation/cert_map.py",
+  "value": 7.0
+ },
+ "cert.mapping.positive_sessions": {
+  "as_written": "4358",
+  "claim": "Positive hours",
+  "git_hash": "8c113e073fbe4b36e724118d77b4e7f0ed2ff6a1",
+  "run_id": "cert_map-20261025T015317Z",
+  "script": "evaluation/cert_map.py",
+  "value": 4358.0
+ },
+ "cert.mapping.positives_by_split.test": {
+  "as_written": "330",
+  "claim": "Test positive hours",
+  "git_hash": "8c113e073fbe4b36e724118d77b4e7f0ed2ff6a1",
+  "run_id": "cert_map-20261025T015317Z",
+  "script": "evaluation/cert_map.py",
+  "value": 330.0
+ },
+ "cert.mapping.users": {
+  "as_written": "200",
+  "claim": "Users",
+  "git_hash": "8c113e073fbe4b36e724118d77b4e7f0ed2ff6a1",
+  "run_id": "cert_map-20261025T015317Z",
+  "script": "evaluation/cert_map.py",
+  "value": 200.0
+ },
  "drift.summary.cusum.hybrid_only.f1.mean": {
   "as_written": "0.6348",
   "claim": "Hybrid only F1",

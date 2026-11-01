@@ -18,7 +18,7 @@ Each point names the evidence. Numbers are means over the 10 generated datasets 
 
 ## External validity
 
-- **No real enterprise traffic and no external benchmark.** The CERT insider-threat dataset could not be obtained (every usable release is over 4 GB and the link to figshare ran at about 1 KB/s, D-011). The results are a statement about this simulator.
+- **No real enterprise traffic.** The behavioural results come from our simulator and from CERT r4.2, which is also synthetic. CERT is a community benchmark, not field data, and we mapped it onto our six features ourselves (`docs/CERT_MAPPING.md`), so its results depend on that mapping. Its test split has only 7 insiders and no scenario 1 positives. Performance on CERT is far lower than on our data (hybrid F1 0.057 against about 0.63), which suggests our simulator's numbers do not generalise.
 - **One model family per component.** One LSTM architecture, one forest, two OCR engines and small quantised local VLMs (Qwen2.5-VL-3B and gemma-3-4B at Q4_K_M in LM Studio, context 4096). Results for a VLM depend on its quantisation, image resizing by the serving software and the prompt; none of these was varied. Hosted large models were not rerun on the new corpus (no spending, G-SPEND).
 - **Commercial context.** Microsoft Purview already applies DLP and insider-risk policies to text found in images (OCR, pay per image) and feeds behaviour-based risk levels into DLP (Adaptive Protection). Our contribution is not the combination itself but an open, auditable design with measured trade-offs and negative results (`docs/REFERENCES_VERIFIED.md`, section E).
 

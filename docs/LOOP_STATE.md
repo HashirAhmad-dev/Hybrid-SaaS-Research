@@ -31,7 +31,7 @@ Start T3.3.
 | T2.3 | M | DONE | |
 | T2.4 | M | DONE | |
 | T2.5 | M | DONE | |
-| T2.6 | S | IN_PROGRESS | reopened by D-020: CERT r4.2 downloading to D:/datasets/cert |
+| T2.6 | S | DONE | CERT r4.2: hybrid test F1 0.057, AUC 0.733 (N-051 to N-056); separate table `paper_inputs/tables/cert.tex` |
 | T2.7 | M | DONE | |
 | T3.1 | M | DONE | v2 + FUNSD subset; strongest local VLM (gemma-4B) v2 F1 0.845 < 1.000 |
 | T3.2 | M | DONE | |
