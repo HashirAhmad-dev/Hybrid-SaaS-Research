@@ -4,7 +4,29 @@ Human-readable report of the paper-v2 work. Updated at the end of every task.
 
 ## 1. Status
 
-Every Must task is DONE. T3.7 (hosted large VLMs) was not run because it needs paid calls (G-SPEND, default no), and the optional T4.6 (federated simulation) was not started, so federated learning stays future work. Every evaluation script writes its numbers, with run id, seeds, date, git hash and library versions, into `results/manifest.json`, and `tools/check_numbers.py` checks every quoted number against it (558 claims). Work is on branch `paper-v2`; the starting commit 2521134 is tagged `baseline-pre-v2`, and its outputs are kept in `results/baseline_20261023/`. The main findings: the LSTM plus Isolation Forest hybrid does not beat Isolation Forest alone on F1, slow insider drift needs a separate CUSUM detector, gated fusion beats the multiplicative SBRS at an equal alert budget, the engine scores far lower on CERT r4.2, the PII cascade saves no VLM calls at equal accuracy, and the best local VLM (gemma-3-4b-it) stays well below the hosted 72B model's ceiling on harder and real documents. Section 4 lists what went against the design.
+Every Must task is DONE. T3.7 (hosted large VLMs) was not run because it needs paid calls (G-SPEND, default no), and the optional T4.6 (federated simulation) was not started, so federated learning stays future work. Every evaluation script writes its numbers, with run id, seeds, date, git hash and library versions, into `results/manifest.json`, and `tools/check_numbers.py` checks every quoted number against it (624 claims). Work is on branch `paper-v2`; the starting commit 2521134 is tagged `baseline-pre-v2`, and its outputs are kept in `results/baseline_20261023/`. The main findings: the LSTM plus Isolation Forest hybrid does not beat Isolation Forest alone on F1; unsupervised anomaly scores cannot separate unusual from malicious behaviour, while a supervised layer trained on labelled incidents, using the same six features, can (on our 10 datasets and on CERT r4.2); about 10 to 20 labelled incidents are enough for a simple logistic layer; gated fusion beats the multiplicative SBRS at an equal alert budget; the PII cascade saves no VLM calls at equal accuracy; and the best local VLM (gemma-3-4b-it) stays well below the hosted 72B model's ceiling on harder and real documents. The paper's primary claim has changed as a result; it is stated below. Section 4 lists what went against the design.
+
+### Primary claim (replaces "the hybrid LSTM plus Isolation Forest engine detects threats")
+
+> Unsupervised anomaly detection, including our LSTM plus Isolation Forest hybrid, cannot tell unusual behaviour from malicious behaviour, and it misses almost all slow insider drift. The same six behavioural features, given to a supervised layer trained on analyst-confirmed incidents, separate them well, and about 10 to 20 confirmed incidents are enough. We therefore propose a two-stage design: unsupervised detection from the first day, then a supervised layer trained on confirmed alerts, with slow drift given its own alert budget.
+
+Evidence, in the order the paper should present it:
+
+| Step | Finding | Numbers | Evidence |
+|---|---|---|---|
+| 1 | The unsupervised hybrid is no better than its parts | hybrid F1 0.629 [0.564, 0.702]; hybrid minus Isolation Forest 0.003 [-0.013, 0.020]; slow-insider episode recall 0.117 | `results/claims/stats.claims`, `results/claims/supervised.claims` |
+| 2 | The features carry the signal; anomaly scoring does not find it | supervised gradient boosting on the same features: AUC 0.951 ± 0.021, F1 0.785 ± 0.043, slow-insider episode recall 0.900, wins in 10 of 10 datasets; 25 of 27 episodes of users never attacked in TRAIN | `results/claims/supervised.claims` |
+| 3 | The same holds on a second benchmark | CERT r4.2: supervised boosting AUC 0.987 against Isolation Forest 0.732; 18 richer features help neither | `results/claims/cert_rich.claims` |
+| 4 | Few labels are needed | 10 incidents: logistic AUC 0.819 against 0.783 for Isolation Forest, slow-insider episode recall 0.657 against 0.283 at a 5 percent label-free budget; 20 incidents: F1 0.525 against 0.470 | `results/claims/label_curve.claims` |
+| 5 | Slow drift needs its own budget | at a 1 percent shared budget a fully trained model catches no slow-insider episode; at 5 percent it catches all | `results/claims/label_curve.claims` |
+| 6 | The decision layer matters too | gated fusion recall 0.642 against 0.589 for the multiplicative SBRS at an equal benign budget; escalates 35 of 35 low-sensitivity, high-anomaly threats against 1 | `results/claims/fusion.claims` |
+| 7 | It runs inline | Tier 1 p99 44.6 ms in the running proxy; images handled asynchronously in Tier 2 | `results/claims/latency.claims` |
+
+Supporting contributions: the measured on-device PII track (PaddleOCR against EasyOCR, three local VLMs, the cascade's failed cost rationale), the CUSUM drift detector as the label-free option for slow drift, and one-command reproducibility with every threshold chosen on validation.
+
+Limits the paper must state with this claim: all behavioural data are synthetic (our generator and CERT); the supervised layer learns from attacks produced by the same simulator it is tested on (N-067); a new deployment has no labels on its first day, and 1 to 5 labels make the layer worse than Isolation Forest (N-068); gradient boosting is unstable below about 50 labels (N-069); CERT has 7 test insiders.
+
+Suggested title: "From Anomalous to Malicious: Label-Efficient Behavioural Risk Scoring for SaaS Data-Loss Prevention, with a Reproducible Evaluation". This is a suggestion for the writing assistant; the title is the authors' decision.
 
 ## 2. Task table
 
@@ -36,6 +58,9 @@ Every Must task is DONE. T3.7 (hosted large VLMs) was not run because it needs p
 | T4.5 | DONE | FIXES_SUMMARY incomplete | this file | n/a | n/a | all sections filled; claims lists include PII, CERT and local VLM results |
 | T3.7 | NOT RUN | Hosted large VLMs on the new corpus | none | n/a | n/a | needs paid hosted calls; G-SPEND default is no (Q-002) |
 | T4.6 | NOT RUN | Optional federated simulation | none | n/a | n/a | optional task; federated learning and DP stay future work |
+| X1 (D-027) | DONE | Unclear whether CERT detection was limited by features or by the detector | `evaluation/cert_rich.py`, `evaluation/cert_rich_importance.py`, `results/runs/cert_r4.2/rich/*.json`, `results/claims/cert_rich.claims` | `python -m evaluation.cert_rich agg`, `python -m evaluation.cert_rich evaluate`, `python -m evaluation.cert_rich_importance` (about 5 min) | N-055 read as "features limit detection" | 18 richer features lower Isolation Forest AUC 0.732 to 0.692 and leave z-score unchanged; supervised boosting on the 6 base features AUC 0.987; N-055 corrected (N-061 to N-064) |
+| X2 (D-028) | DONE | Never tested whether a supervised model on the same features beats the unsupervised engine | `evaluation/supervised_multiseed.py`, `results/supervised/supervised_multiseed.json`, `paper_inputs/tables/supervised.tex`, `results/claims/supervised.claims` | `python -m evaluation.supervised_multiseed` (about 3 min) | hybrid AUC 0.821, F1 0.629, slow-insider episode recall 0.117 | boosting AUC 0.951, F1 0.785, slow-insider episode recall 0.900, 10 of 10 datasets (N-065 to N-067) |
+| X3 (D-029) | DONE | Unknown how many labelled incidents the supervised layer needs | `evaluation/label_curve.py`, `results/supervised/label_curve*.json`, `paper_inputs/tables/label_curve.tex`, `results/claims/label_curve.claims` | `python -m evaluation.label_curve` and `--budget-pctl 95` (about 4 min each) | n/a | logistic beats Isolation Forest from about 10 incidents, boosting from about 50; 1 percent shared budget misses all slow drift (N-068 to N-070) |
 
 ## 3. Corrections to context.md
 
@@ -68,7 +93,11 @@ Handled in T1.2.
 
 ## 4. Results that went against the design
 
-The full list, with evidence keys, is `results/negative_results.md` (N-001 to N-060). The most important:
+The full list, with evidence keys, is `results/negative_results.md` (N-001 to N-070). The most important:
+
+- Unsupervised anomaly scoring is the weak point, not the features: supervised models on the same features beat every unsupervised detector on all 10 datasets and on CERT, and richer features make Isolation Forest worse (N-061, N-062, N-065, N-066).
+- The supervised layer needs about 10 labelled incidents to beat Isolation Forest; 1 to 5 make it worse, and gradient boosting is unstable below about 50 (N-068, N-069).
+- A shared 1 percent alert budget is consumed by loud attacks, so slow drift is missed entirely even by a fully trained model (N-070).
 
 - The hybrid does not beat Isolation Forest alone on F1 (difference 0.003, CI -0.013 to 0.020), and its AUC is significantly below the LSTM alone, a per-user z-score and max fusion (N-018 to N-024).
 - Slow insider drift is nearly invisible to the hybrid (episode recall 0.133). CUSUM raises it to 0.567 but fires on 20 percent of benign-burst hours (N-014, N-029, N-030).
@@ -159,7 +188,7 @@ pwsh -NoProfile -File .\reproduce.ps1 -Quick     # skips the multi-seed, bootstr
 pwsh -NoProfile -File .\reproduce.ps1 -WithPII -VlmModel gemma-3-4b-it   # adds the PII track; OCR is slow on CPU (EasyOCR about 20 min, PaddleOCR about 90 min); needs LM Studio for the VLM stage
 ```
 
-VLM answers are cached in `evaluation/data/pii_v2/vlm_cache/`, so the VLM stage only queries images it has not seen. CERT r4.2 is not in the script because it needs a 4.8 GB download; its four commands are in the T2.6 row. `python -m tools.build_paper_inputs` rebuilds `paper_inputs/` from the manifest, and `python -m tools.render_figures` rebuilds Figure 1.
+The supervised and label-curve experiments (X2, X3) run on the 10 datasets the full script produces: `python -m evaluation.supervised_multiseed`, then `python -m evaluation.label_curve` and `python -m evaluation.label_curve --budget-pctl 95` (about 10 minutes together). VLM answers are cached in `evaluation/data/pii_v2/vlm_cache/`, so the VLM stage only queries images it has not seen. CERT r4.2 is not in the script because it needs a 4.8 GB download; its four commands are in the T2.6 row. `python -m tools.build_paper_inputs` rebuilds `paper_inputs/` from the manifest, and `python -m tools.render_figures` rebuilds Figure 1.
 
 ## Gate records
 
