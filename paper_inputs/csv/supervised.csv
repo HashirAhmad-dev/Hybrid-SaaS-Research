@@ -1,0 +1,6 @@
+Detector,AUC,F1,Malicious AUC,Malicious episode recall
+Isolation Forest (refit),0.783 $\pm$ 0.030,0.635 $\pm$ 0.041,0.560,0.033
+Per-user z-score (refit),0.836 $\pm$ 0.023,0.532 $\pm$ 0.057,0.674,0.067
+Logistic probe (labels),0.933 $\pm$ 0.016,0.571 $\pm$ 0.034,0.875,0.733
+Gradient boosting probe (labels),0.951 $\pm$ 0.021,0.785 $\pm$ 0.043,0.901,0.900
+Weighted hybrid (T2.1),0.821 $\pm$ 0.048,0.629 $\pm$ 0.054,0.640,0.117

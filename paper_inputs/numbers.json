@@ -4319,6 +4319,206 @@
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.04649899148194913
  },
+ "supervised.summary.boosting_beats_hybrid.auc_datasets": {
+  "as_written": "10",
+  "claim": "Boosting beats hybrid AUC datasets",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 10.0
+ },
+ "supervised.summary.boosting_beats_hybrid.f1_datasets": {
+  "as_written": "10",
+  "claim": "Boosting beats hybrid F1 datasets",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 10.0
+ },
+ "supervised.summary.boosting_beats_hybrid.malicious_auc_datasets": {
+  "as_written": "10",
+  "claim": "Boosting beats hybrid malicious datasets",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 10.0
+ },
+ "supervised.summary.hybrid_weighted_t21.auc.mean": {
+  "as_written": "0.821",
+  "claim": "Hybrid AUC mean",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.8214577979917552
+ },
+ "supervised.summary.hybrid_weighted_t21.auc.sd": {
+  "as_written": "0.048",
+  "claim": "Hybrid AUC sd",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.04780978137549161
+ },
+ "supervised.summary.hybrid_weighted_t21.f1.mean": {
+  "as_written": "0.629",
+  "claim": "Hybrid F1 mean",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.6287004010162531
+ },
+ "supervised.summary.hybrid_weighted_t21.f1.sd": {
+  "as_written": "0.054",
+  "claim": "Hybrid F1 sd",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.05449853838054147
+ },
+ "supervised.summary.hybrid_weighted_t21.malicious_insider_episode_recall.mean": {
+  "as_written": "0.117",
+  "claim": "Hybrid malicious episode recall",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.11666666666666665
+ },
+ "supervised.summary.iforest.per_class.malicious_insider.episode_recall.mean": {
+  "as_written": "0.033",
+  "claim": "IF malicious episode recall",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.03333333333333333
+ },
+ "supervised.summary.overlap.test_episodes": {
+  "as_written": "310",
+  "claim": "Test episodes",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 310.0
+ },
+ "supervised.summary.overlap.test_episodes_user_attacked_in_train": {
+  "as_written": "283",
+  "claim": "Test episodes user attacked in train",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 283.0
+ },
+ "supervised.summary.probe_boosting.auc.mean": {
+  "as_written": "0.951",
+  "claim": "Boosting AUC mean",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.9511519183693699
+ },
+ "supervised.summary.probe_boosting.auc.sd": {
+  "as_written": "0.021",
+  "claim": "Boosting AUC sd",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.02055343765765658
+ },
+ "supervised.summary.probe_boosting.benign_burst_flag_rate.mean": {
+  "as_written": "0.0",
+  "claim": "Boosting burst flag rate",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.0
+ },
+ "supervised.summary.probe_boosting.f1.mean": {
+  "as_written": "0.785",
+  "claim": "Boosting F1 mean",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.7847874447875647
+ },
+ "supervised.summary.probe_boosting.f1.sd": {
+  "as_written": "0.043",
+  "claim": "Boosting F1 sd",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.04307207711248284
+ },
+ "supervised.summary.probe_boosting.fpr.mean": {
+  "as_written": "0.3%",
+  "claim": "Boosting FPR",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.0027552828392110305
+ },
+ "supervised.summary.probe_boosting.per_class.malicious_insider.auc.mean": {
+  "as_written": "0.901",
+  "claim": "Boosting malicious AUC",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.9008183791674075
+ },
+ "supervised.summary.probe_boosting.per_class.malicious_insider.episode_recall.mean": {
+  "as_written": "0.900",
+  "claim": "Boosting malicious episode recall",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.9
+ },
+ "supervised.summary.probe_boosting.precision.mean": {
+  "as_written": "0.919",
+  "claim": "Boosting precision",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.9190887865296172
+ },
+ "supervised.summary.probe_boosting.recall.mean": {
+  "as_written": "0.688",
+  "claim": "Boosting recall",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.687812307322107
+ },
+ "supervised.summary.probe_boosting.unseen_user.detected": {
+  "as_written": "25",
+  "claim": "Unseen-user detected",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 25.0
+ },
+ "supervised.summary.probe_boosting.unseen_user.episode_recall": {
+  "as_written": "0.926",
+  "claim": "Unseen-user recall",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.9259259259259259
+ },
+ "supervised.summary.probe_boosting.unseen_user.episodes": {
+  "as_written": "27",
+  "claim": "Unseen-user episodes",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 27.0
+ },
+ "supervised.summary.probe_logistic.per_class.malicious_insider.episode_recall.mean": {
+  "as_written": "0.733",
+  "claim": "Logistic malicious episode recall",
+  "git_hash": "2adedac8e91aa9d3e5fbb98f9ef2b7fba5384328",
+  "run_id": "supervised_multiseed-20261102T190938Z",
+  "script": "evaluation/supervised_multiseed.py",
+  "value": 0.7333333333333334
+ },
  "sweep.summary.o0p0.i0p25.hybrid_weighted.auc.mean": {
   "as_written": "0.739",
   "claim": "Sweep hybrid AUC I=0.25 O=0",

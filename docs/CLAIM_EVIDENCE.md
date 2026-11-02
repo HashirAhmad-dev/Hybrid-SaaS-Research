@@ -658,6 +658,36 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 | Hybrid minus EWMA F1 CI lo | `stats.ewma.paired_vs_hybrid.f1.ci_lo` | 0.454 | `evaluation/bootstrap_stats.py` | {"bootstrap": 20261023, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_stats-20261102T182623Z (37360dda) |
 | Hybrid minus max-fusion AUC CI hi | `stats.hybrid_max.paired_vs_hybrid.auc.ci_hi` | -0.016 | `evaluation/bootstrap_stats.py` | {"bootstrap": 20261023, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_stats-20261102T182623Z (37360dda) |
 
+## supervised
+
+| Claim | Manifest key | Value | Script | Seeds | Run |
+|---|---|---|---|---|---|
+| Boosting AUC mean | `supervised.summary.probe_boosting.auc.mean` | 0.951 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting AUC sd | `supervised.summary.probe_boosting.auc.sd` | 0.021 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting F1 mean | `supervised.summary.probe_boosting.f1.mean` | 0.785 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting F1 sd | `supervised.summary.probe_boosting.f1.sd` | 0.043 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting precision | `supervised.summary.probe_boosting.precision.mean` | 0.919 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting recall | `supervised.summary.probe_boosting.recall.mean` | 0.688 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting FPR | `supervised.summary.probe_boosting.fpr.mean` | 0.3% | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting burst flag rate | `supervised.summary.probe_boosting.benign_burst_flag_rate.mean` | 0.0 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Hybrid AUC mean | `supervised.summary.hybrid_weighted_t21.auc.mean` | 0.821 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Hybrid AUC sd | `supervised.summary.hybrid_weighted_t21.auc.sd` | 0.048 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Hybrid F1 mean | `supervised.summary.hybrid_weighted_t21.f1.mean` | 0.629 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Hybrid F1 sd | `supervised.summary.hybrid_weighted_t21.f1.sd` | 0.054 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Hybrid malicious episode recall | `supervised.summary.hybrid_weighted_t21.malicious_insider_episode_recall.mean` | 0.117 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting malicious AUC | `supervised.summary.probe_boosting.per_class.malicious_insider.auc.mean` | 0.901 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting malicious episode recall | `supervised.summary.probe_boosting.per_class.malicious_insider.episode_recall.mean` | 0.900 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Logistic malicious episode recall | `supervised.summary.probe_logistic.per_class.malicious_insider.episode_recall.mean` | 0.733 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| IF malicious episode recall | `supervised.summary.iforest.per_class.malicious_insider.episode_recall.mean` | 0.033 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting beats hybrid AUC datasets | `supervised.summary.boosting_beats_hybrid.auc_datasets` | 10 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting beats hybrid F1 datasets | `supervised.summary.boosting_beats_hybrid.f1_datasets` | 10 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Boosting beats hybrid malicious datasets | `supervised.summary.boosting_beats_hybrid.malicious_auc_datasets` | 10 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Test episodes | `supervised.summary.overlap.test_episodes` | 310 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Test episodes user attacked in train | `supervised.summary.overlap.test_episodes_user_attacked_in_train` | 283 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Unseen-user episodes | `supervised.summary.probe_boosting.unseen_user.episodes` | 27 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Unseen-user detected | `supervised.summary.probe_boosting.unseen_user.detected` | 25 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+| Unseen-user recall | `supervised.summary.probe_boosting.unseen_user.episode_recall` | 0.926 | `evaluation/supervised_multiseed.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_multiseed-20261102T190938Z (2adedac8) |
+
 ## sweep
 
 | Claim | Manifest key | Value | Script | Seeds | Run |

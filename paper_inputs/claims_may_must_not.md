@@ -24,6 +24,7 @@ All values are means over the 10 independently generated datasets unless marked.
 | A cost-ordered cascade gives no cost saving at equal accuracy on these corpora, because OCR confidence is too weak a signal (v2 cascade F1 0.843 against VLM-only 0.845, with almost every image routed to the VLM). | `results/claims/pii_v2_vlm_cascade.claims` |
 | On CERT r4.2, a community benchmark mapped onto our features, the engine is much weaker (hybrid F1 0.057, AUC 0.733), which bounds how far our simulator results generalise. | `results/claims/cert.claims` |
 | On CERT the six features carry the signal, but unsupervised anomaly scores do not find it: a gradient-boosting model trained on labelled TRAIN incidents reaches test AUC 0.987 (F1 0.339) on the same features, against 0.732 for Isolation Forest. Adding 18 richer features does not help either kind of detector. The gap is between "unusual" and "malicious", not a lack of features. | `results/claims/cert_rich.claims` |
+| The same holds on our 10 generated datasets: a gradient-boosting model trained on labelled TRAIN incidents reaches AUC 0.951 ± 0.021 and F1 0.785 ± 0.043, against 0.821 and 0.629 for the hybrid, and wins in 10 of 10 datasets. It finds 0.900 of slow malicious-insider episodes, where the hybrid finds 0.117. On users never attacked in TRAIN it finds 25 of 27 episodes. Labelled incidents, not a different unsupervised model, are what closes the slow-drift gap. | `results/claims/supervised.claims` |
 
 ### Must not make
 
@@ -39,6 +40,7 @@ All values are means over the 10 independently generated datasets unless marked.
 - That the system performs well on CERT, or that CERT is real enterprise data (it is synthetic, and the feature mapping is ours; N-051, N-055, N-056).
 - That episode recall alone shows skill on CERT (N-053).
 - That richer features or a bigger unsupervised model would fix CERT detection (N-061, N-062), or that the supervised probe is deployable without labelled incidents (N-064).
+- That the supervised scores (AUC 0.951, 0.987 on CERT) are what a deployment would see: the probes learn from the same simulator's attacks, and a new deployment has no labels (N-067).
 - That federated learning, differential privacy or a usability study was done.
 - That "existing DLP ignores behaviour" (Microsoft Purview Adaptive Protection uses insider-risk levels in DLP).
 - That OCR confidence never ranks difficulty: on v2 it does (AUC 0.884); on v1 it did not.

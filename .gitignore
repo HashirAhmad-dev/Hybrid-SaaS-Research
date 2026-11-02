@@ -40,3 +40,4 @@ evaluation/pii_testset_v2/
 results/runs/**/*.log
 evaluation/data/pii_v2/
 evaluation/pii_testset_funsd
+results/runs/**/*.parquet

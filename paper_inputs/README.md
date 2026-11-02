@@ -32,5 +32,6 @@ Built by `python -m tools.build_paper_inputs`. Every number is in `numbers.json`
 | `tables/latency.tex` | Two-tier latency (from `latency.*`) | `tools/build_paper_inputs.py` |
 | `tables/pii_images.tex` | PII image-path F1 per corpus (from `pii2.*`) | `tools/build_paper_inputs.py` |
 | `tables/cert.tex` | CERT r4.2 detector results (from `cert.*`) | `tools/build_paper_inputs.py` |
+| `tables/supervised.tex` | Supervised probes vs unsupervised detectors (from `supervised.summary.*`) | `tools/build_paper_inputs.py` |
 | `claims_may_must_not.md` | Claims the paper may and must not make, with evidence files | `tools/build_paper_inputs.py` |
 | `numbers.json` | Every claimed number with key, script, run, git hash | `tools/claim_evidence.py` |

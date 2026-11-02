@@ -176,6 +176,24 @@ def main() -> None:
               ["Detector", "AUC", "AP", "F1", "Precision", "Recall", "FPR"], cert_rows)
         readme.append("| `tables/cert.tex` | CERT r4.2 detector results (from `cert.*`) | `tools/build_paper_inputs.py` |")
 
+    # supervised probes vs unsupervised detectors on our 10 datasets (D-028)
+    ms = lambda k: f"{f3(g(k + '.mean'))} $\\pm$ {f3(g(k + '.sd'))}" if g(k + ".mean") is not None else "n/a"
+    sup_rows = [[name, ms(f"supervised.summary.{d}.auc"), ms(f"supervised.summary.{d}.f1"),
+                 f3(g(f"supervised.summary.{d}.per_class.malicious_insider.auc.mean")),
+                 f3(g(f"supervised.summary.{d}.per_class.malicious_insider.episode_recall.mean"))]
+                for name, d in [("Isolation Forest (refit)", "iforest"), ("Per-user z-score (refit)", "zscore"),
+                                ("Logistic probe (labels)", "probe_logistic"),
+                                ("Gradient boosting probe (labels)", "probe_boosting")]]
+    if g("supervised.summary.probe_boosting.auc.mean") is not None:
+        sup_rows.append(["Weighted hybrid (T2.1)", ms("supervised.summary.hybrid_weighted_t21.auc"),
+                         ms("supervised.summary.hybrid_weighted_t21.f1"),
+                         f3(g("supervised.summary.hybrid_weighted_t21.malicious_insider_auc.mean")),
+                         f3(g("supervised.summary.hybrid_weighted_t21.malicious_insider_episode_recall.mean"))])
+        table("supervised", "Unsupervised detectors and supervised probes trained on labelled TRAIN incidents, "
+              "same six features, 10 generated datasets (mean $\\pm$ sd). Thresholds chosen on validation.",
+              "tab:supervised", ["Detector", "AUC", "F1", "Malicious AUC", "Malicious episode recall"], sup_rows)
+        readme.append("| `tables/supervised.tex` | Supervised probes vs unsupervised detectors (from `supervised.summary.*`) | `tools/build_paper_inputs.py` |")
+
     # the may / must-not claim lists live in docs/FIXES_SUMMARY.md section 5; copy them, never edit the copy
     fs = (PROJECT_ROOT / "docs" / "FIXES_SUMMARY.md").read_text(encoding="utf-8")
     sec = fs[fs.index("## 5. Claims the paper may make"):fs.index("## 6.")].rstrip()

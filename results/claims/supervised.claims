@@ -1,0 +1,26 @@
+# Supervised probes on the 10 generated datasets (D-028)
+Boosting AUC mean | supervised.summary.probe_boosting.auc.mean | 0.951
+Boosting AUC sd | supervised.summary.probe_boosting.auc.sd | 0.021
+Boosting F1 mean | supervised.summary.probe_boosting.f1.mean | 0.785
+Boosting F1 sd | supervised.summary.probe_boosting.f1.sd | 0.043
+Boosting precision | supervised.summary.probe_boosting.precision.mean | 0.919
+Boosting recall | supervised.summary.probe_boosting.recall.mean | 0.688
+Boosting FPR | supervised.summary.probe_boosting.fpr.mean | 0.3%
+Boosting burst flag rate | supervised.summary.probe_boosting.benign_burst_flag_rate.mean | 0.0
+Hybrid AUC mean | supervised.summary.hybrid_weighted_t21.auc.mean | 0.821
+Hybrid AUC sd | supervised.summary.hybrid_weighted_t21.auc.sd | 0.048
+Hybrid F1 mean | supervised.summary.hybrid_weighted_t21.f1.mean | 0.629
+Hybrid F1 sd | supervised.summary.hybrid_weighted_t21.f1.sd | 0.054
+Hybrid malicious episode recall | supervised.summary.hybrid_weighted_t21.malicious_insider_episode_recall.mean | 0.117
+Boosting malicious AUC | supervised.summary.probe_boosting.per_class.malicious_insider.auc.mean | 0.901
+Boosting malicious episode recall | supervised.summary.probe_boosting.per_class.malicious_insider.episode_recall.mean | 0.900
+Logistic malicious episode recall | supervised.summary.probe_logistic.per_class.malicious_insider.episode_recall.mean | 0.733
+IF malicious episode recall | supervised.summary.iforest.per_class.malicious_insider.episode_recall.mean | 0.033
+Boosting beats hybrid AUC datasets | supervised.summary.boosting_beats_hybrid.auc_datasets | 10
+Boosting beats hybrid F1 datasets | supervised.summary.boosting_beats_hybrid.f1_datasets | 10
+Boosting beats hybrid malicious datasets | supervised.summary.boosting_beats_hybrid.malicious_auc_datasets | 10
+Test episodes | supervised.summary.overlap.test_episodes | 310
+Test episodes user attacked in train | supervised.summary.overlap.test_episodes_user_attacked_in_train | 283
+Unseen-user episodes | supervised.summary.probe_boosting.unseen_user.episodes | 27
+Unseen-user detected | supervised.summary.probe_boosting.unseen_user.detected | 25
+Unseen-user recall | supervised.summary.probe_boosting.unseen_user.episode_recall | 0.926

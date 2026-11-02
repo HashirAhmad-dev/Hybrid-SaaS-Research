@@ -134,3 +134,11 @@ One entry per non-obvious decision. Format: date, task, options, choice, reason.
 - Every threshold is chosen on validation (`selection.threshold_max_f1`). Reported on test: AUC, average precision, F1, precision, recall, FPR, scenario 2 episode recall. Paired user-level bootstrap (2,000 resamples, seed 20261102, insiders and non-insiders resampled separately) for the AUC difference RICH minus BASE.
 - The LSTM is not retrained on RICH (CPU cost on CERT is several hours). The BASE Isolation Forest is a refit and is compared with the T2.6 value as a check.
 - All results are reported whatever their direction (H-R5).
+
+## D-028 (2026-11-03) Supervised probes on the 10 generated datasets, fixed before any result
+- Question: does the CERT finding (N-062: a supervised model on the same features beats every unsupervised detector) hold on our own generator, and does it fix slow malicious-insider drift?
+- Data: the 10 datasets of T1.4 (`evaluation/config/seeds.json`), `results/runs/data_seed_<s>/data/sessions_raw.csv`, active hours with at least 23 earlier hours (the ablation's rows). Only the six engine features exist here, so there is no RICH set.
+- Detectors, settings copied from D-027 (`evaluation/cert_rich.py` helpers): logistic regression and histogram gradient boosting (seed 42, class_weight balanced) trained with labels on TRAIN on per-user z features plus their mean over the previous 8 active hours. Isolation Forest and per-user z-score refits as the same-pipeline unsupervised reference. The weighted hybrid's per-dataset values are read from the T2.1 manifest keys (`ablation.ds<s>.hybrid_weighted.*`).
+- Thresholds on validation (max F1, 4,001 validation quantiles). Test: AUC, AP, F1, precision, recall, FPR, benign-burst flag rate, per-class AUC and episode recall. Summary: mean and sd over the 10 datasets, and the number of datasets where boosting beats the hybrid.
+- Recorded alongside: how many test attack episodes share a user with a TRAIN attack episode, because a supervised model can learn a user's own attack pattern.
+- All 10 datasets are reported whatever the outcome (H-R5).
