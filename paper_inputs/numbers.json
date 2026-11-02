@@ -2543,6 +2543,102 @@
   "script": "evaluation/tier_latency.py",
   "value": 5256.253760001709
  },
+ "latency_extra.concurrency.c1.client_ms.p50": {
+  "as_written": "60",
+  "claim": "1 client p50",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 59.72295001265593
+ },
+ "latency_extra.concurrency.c1.client_ms.p99": {
+  "as_written": "76",
+  "claim": "1 client p99",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 76.26657504413741
+ },
+ "latency_extra.concurrency.c16.client_ms.p50": {
+  "as_written": "197",
+  "claim": "16 clients p50",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 196.8556499632541
+ },
+ "latency_extra.concurrency.c16.client_ms.p99": {
+  "as_written": "845",
+  "claim": "16 clients p99",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 844.6681260288459
+ },
+ "latency_extra.concurrency.c8.throughput_rps": {
+  "as_written": "9.0",
+  "claim": "8 clients throughput",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 8.993645714993287
+ },
+ "latency_extra.payload.kb1.client_ms.p50": {
+  "as_written": "73",
+  "claim": "1 KB p50",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 73.0461000057403
+ },
+ "latency_extra.payload.kb16.client_ms.p50": {
+  "as_written": "859",
+  "claim": "16 KB p50",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 858.6118999810424
+ },
+ "latency_extra.payload.kb4.client_ms.p50": {
+  "as_written": "211",
+  "claim": "4 KB p50",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 211.22509997803718
+ },
+ "latency_extra.payload.kb64.client_ms.p50": {
+  "as_written": "4944",
+  "claim": "64 KB p50",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 4944.491950009251
+ },
+ "latency_extra.tier2_vlm.branches.Branch3_VLM": {
+  "as_written": "20",
+  "claim": "Tier 2 images to VLM",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 20.0
+ },
+ "latency_extra.tier2_vlm.hold_ms.p50": {
+  "as_written": "9910",
+  "claim": "Tier 2 VLM hold p50",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 9910.090249992209
+ },
+ "latency_extra.tier2_vlm.hold_ms.p95": {
+  "as_written": "11337",
+  "claim": "Tier 2 VLM hold p95",
+  "git_hash": "b8053ecee534ee80fafefc702ef6345f7059ffb0",
+  "run_id": "tier_latency_extra-20261102T211326Z",
+  "script": "evaluation/tier_latency_extra.py",
+  "value": 11337.181840022095
+ },
  "oppoints.summary.enforcement_per_dataset_alert_or_block.f1.mean": {
   "as_written": "0.4382",
   "claim": "enforcement_per_dataset_alert_or_block f1",

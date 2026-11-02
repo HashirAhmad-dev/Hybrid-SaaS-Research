@@ -1,0 +1,13 @@
+# F7 latency (varies run to run)
+1 KB p50 | latency_extra.payload.kb1.client_ms.p50 | 73
+4 KB p50 | latency_extra.payload.kb4.client_ms.p50 | 211
+16 KB p50 | latency_extra.payload.kb16.client_ms.p50 | 859
+64 KB p50 | latency_extra.payload.kb64.client_ms.p50 | 4944
+16 clients p50 | latency_extra.concurrency.c16.client_ms.p50 | 197
+16 clients p99 | latency_extra.concurrency.c16.client_ms.p99 | 845
+1 client p50 | latency_extra.concurrency.c1.client_ms.p50 | 60
+1 client p99 | latency_extra.concurrency.c1.client_ms.p99 | 76
+8 clients throughput | latency_extra.concurrency.c8.throughput_rps | 9.0
+Tier 2 VLM hold p50 | latency_extra.tier2_vlm.hold_ms.p50 | 9910
+Tier 2 VLM hold p95 | latency_extra.tier2_vlm.hold_ms.p95 | 11337
+Tier 2 images to VLM | latency_extra.tier2_vlm.branches.Branch3_VLM | 20

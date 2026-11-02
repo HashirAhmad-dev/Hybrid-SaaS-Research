@@ -117,18 +117,22 @@ def main() -> None:
         with httpx.Client(timeout=120) as cl:                  # warm the models
             for p in P[-20:]:
                 cl.post(f"{URL}/tier1/score", json=p)
-        res["concurrency"] = concurrency(P)
-        res["payload"] = payload_sizes(P)
-        res["tier2_vlm"] = tier2_vlm()
+        for name, fn in (("concurrency", lambda: concurrency(P)), ("payload", lambda: payload_sizes(P)),
+                         ("tier2_vlm", tier2_vlm)):
+            res[name] = fn()
+            save(res)                                   # keep finished stages if a later one fails
         print(f"  tier2: {res['tier2_vlm']}", flush=True)
     finally:
         srv.kill(); srv.wait()
+    record("latency_extra", res, script="evaluation/tier_latency_extra.py", seeds={"payloads": 7, "tier2_pick": 11})
+    print(f"  -> {OUT / 'tier_latency_extra.json'}")
+
+
+def save(res: dict) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "tier_latency_extra.json").write_text(json.dumps(
         {"provenance": provenance("evaluation/tier_latency_extra.py", {"payloads": 7, "tier2_pick": 11}, "cpu+gpu"),
          **res}, indent=1), encoding="utf-8")
-    record("latency_extra", res, script="evaluation/tier_latency_extra.py", seeds={"payloads": 7, "tier2_pick": 11})
-    print(f"  -> {OUT / 'tier_latency_extra.json'}")
 
 
 if __name__ == "__main__":

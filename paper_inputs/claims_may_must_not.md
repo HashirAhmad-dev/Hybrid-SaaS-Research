@@ -48,5 +48,6 @@ All values are means over the 10 independently generated datasets unless marked.
 - That federated learning, differential privacy or a usability study was done.
 - That "existing DLP ignores behaviour" (Microsoft Purview Adaptive Protection uses insider-risk levels in DLP).
 - That OCR confidence never ranks difficulty: on v2 it does (AUC 0.884); on v1 it did not.
+- That Tier 1 meets its budget for every payload or under load: 64 KB of text takes about 5 s, and 16 concurrent clients push p99 to 845 ms (N-077, N-078).
 - That the data are realistic enterprise traffic or real handwriting. All data are synthetic; handwriting is font-rendered.
 - The value beta = 2.5 as a general constant: the validation knee ranges from 2.0 to 8.0 across datasets (N-017).

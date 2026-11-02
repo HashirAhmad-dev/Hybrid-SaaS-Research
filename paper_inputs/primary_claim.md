@@ -15,7 +15,7 @@ Evidence, in the order the paper should present it:
 | 5 | The supervised layer covers only what it has seen | trained without slow-drift examples, boosting finds 0.000 of slow-insider episodes (held-out AUC 0.510, logistic 0.314); trained on the simulator and applied to CERT, AUC 0.246 (boosting) and 0.365 (logistic) against 0.732 for Isolation Forest fitted on CERT | `results/claims/transfer.claims` |
 | 6 | Slow drift needs its own budget | at a 1 percent shared budget a fully trained model catches no slow-insider episode; at 5 percent it catches all | `results/claims/label_curve.claims` |
 | 7 | The decision layer matters too | gated fusion recall 0.642 against 0.589 for the multiplicative SBRS at an equal benign budget; escalates 35 of 35 low-sensitivity, high-anomaly threats against 1 | `results/claims/fusion.claims` |
-| 8 | It runs inline | Tier 1 p99 44.6 ms in the running proxy; images handled asynchronously in Tier 2 | `results/claims/latency.claims` |
+| 8 | It runs inline for small payloads | Tier 1 p99 44.6 ms in the running proxy (single client); about 9 requests per second at saturation; text above a few KB takes 0.2 to 5 s; images held 9.9 s at p50 in Tier 2 with the local VLM | `results/claims/latency.claims`, `results/claims/latency_extra.claims` |
 
 Supporting contributions: the measured on-device PII track (PaddleOCR against EasyOCR, three local VLMs, the cascade's failed cost rationale), the CUSUM drift detector as the label-free option for slow drift, and one-command reproducibility with every threshold chosen on validation.
 

@@ -203,3 +203,14 @@ k labelled TRAIN episodes out of 143, 5 random draws, 10 datasets. Unchosen atta
 |---|---|---|
 | N-075 | Benign look-alikes hurt flag-level detection, not ranking. At intensity 1.0, adding look-alike episodes (overlap 0.5) moves hybrid AUC only from 0.821 to 0.817, because look-alikes are about 2 percent of test negatives, but hybrid F1 falls from 0.629 to 0.535, precision from 0.918 to 0.597 and FPR rises from 0.002 to 0.014. Isolation Forest behaves the same (F1 0.626 to 0.540, precision 0.937 to 0.622). The overlap condition must be reported with F1, precision and FPR; AUC alone hides it. | `sweep.summary10.o0p0.i1p0.*`, `sweep.summary10.o0p5.i1p0.*` |
 | N-076 | On 10 seeds, at intensity 0.25 no detector separates slow drift: malicious-insider AUC is 0.481 for the hybrid, 0.477 for Isolation Forest and 0.501 for the LSTM. Overall AUC is 0.729, 0.726 and 0.697. The 3-seed result (N-026) holds. | `sweep.summary10.o0p0.i0p25.*` |
+
+## Latency under load, payload size and the VLM Tier 2 (keys `latency_extra.*`, task F7)
+
+Measured on the laptop with no other job running, LM Studio serving gemma-3-4b-it on the GPU. Latency varies from run to run.
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-077 | Tier 1 time grows with the text size, almost all of it in Presidio: client p50 73 ms at 1 KB, 211 ms at 4 KB, 859 ms at 16 KB and 4,944 ms at 64 KB. The inline budget holds only for small text payloads; large text needs the asynchronous path or a size limit. | `latency_extra.payload.*` |
+| N-078 | Tier 1 throughput saturates at about 9 requests per second on this laptop. With 16 concurrent clients the client p50 is 197 ms and p99 845 ms (1 client: p50 60 ms, p99 76 ms). This test opens a new connection per request, so its single-client p50 is above the 33.7 ms of T3.6. | `latency_extra.concurrency.*` |
+| N-079 | With the local VLM live, Tier 2 holds an image for 9.9 s at p50 and 11.3 s at p95, against 3.4 s for the OCR-only measurement of T3.6. All 20 images were routed to the VLM, because the deployed tau_ocr (0.95) sends almost every image there (N-049). | `latency_extra.tier2_vlm.*` |
+| N-080 | Before F7, Tier 2 decided with the multiplicative SBRS bands while Tier 1 used the gated fusion. Tier 2 now calls the same configured decision (`backend/final_config.decide`); a test checks both tiers. Earlier Tier 2 outputs (T3.6, T4.1 demo) used the old rule; with the low anomaly scores used there both rules give the same action. | `tests/test_backend_fusion.py` |

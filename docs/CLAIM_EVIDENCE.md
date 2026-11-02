@@ -267,6 +267,23 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 | Tier2 hold p50 ms | `latency.tier2.hold_ms.p50` | 3434.7 | `evaluation/tier_latency.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency-20261023T160300Z (a66b1b2d) |
 | Tier2 hold p95 ms | `latency.tier2.hold_ms.p95` | 5256.3 | `evaluation/tier_latency.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency-20261023T160300Z (a66b1b2d) |
 
+## latency_extra
+
+| Claim | Manifest key | Value | Script | Seeds | Run |
+|---|---|---|---|---|---|
+| 1 KB p50 | `latency_extra.payload.kb1.client_ms.p50` | 73 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+| 4 KB p50 | `latency_extra.payload.kb4.client_ms.p50` | 211 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+| 16 KB p50 | `latency_extra.payload.kb16.client_ms.p50` | 859 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+| 64 KB p50 | `latency_extra.payload.kb64.client_ms.p50` | 4944 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+| 16 clients p50 | `latency_extra.concurrency.c16.client_ms.p50` | 197 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+| 16 clients p99 | `latency_extra.concurrency.c16.client_ms.p99` | 845 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+| 1 client p50 | `latency_extra.concurrency.c1.client_ms.p50` | 60 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+| 1 client p99 | `latency_extra.concurrency.c1.client_ms.p99` | 76 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+| 8 clients throughput | `latency_extra.concurrency.c8.throughput_rps` | 9.0 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+| Tier 2 VLM hold p50 | `latency_extra.tier2_vlm.hold_ms.p50` | 9910 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+| Tier 2 VLM hold p95 | `latency_extra.tier2_vlm.hold_ms.p95` | 11337 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+| Tier 2 images to VLM | `latency_extra.tier2_vlm.branches.Branch3_VLM` | 20 | `evaluation/tier_latency_extra.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency_extra-20261102T211326Z (b8053ece) |
+
 ## multiseed
 
 | Claim | Manifest key | Value | Script | Seeds | Run |
