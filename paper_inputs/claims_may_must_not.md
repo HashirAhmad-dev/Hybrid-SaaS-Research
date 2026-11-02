@@ -8,7 +8,7 @@ All values are means over the 10 independently generated datasets unless marked.
 
 | Claim | Evidence |
 |---|---|
-| A rate-only EWMA baseline is weak on this data (flag F1 0.106) and flags 66.8 percent of benign bursts; the hybrid flags 1.5 percent. | `results/claims/multiseed.claims` |
+| A rate-only EWMA baseline is weak on this data (flag F1 0.111) and flags 61.3 percent of benign bursts; the hybrid flags 1.5 percent. | `results/claims/ablation.claims` |
 | The hybrid's flag F1 (0.629, 95 percent cluster-bootstrap CI 0.564 to 0.702) is significantly higher than LSTM alone (+0.100), per-user z-score (+0.075), LOF (+0.179) and EWMA (+0.518). | `results/claims/stats.claims` |
 | The hybrid's F1 is statistically indistinguishable from Isolation Forest alone (difference 0.003, CI -0.013 to 0.020). Fusion adds average precision, not F1. | `results/claims/stats.claims`, `ablation.claims` |
 | Slow insider drift is the hard case: at the F1-optimal point the hybrid finds 13 percent of malicious-insider episodes. A dedicated CUSUM detector beside it raises this to 57 percent, median 8.9 hours to detection, at a false-positive rate of 0.8 percent instead of 0.25 percent. | `results/claims/drift.claims` |

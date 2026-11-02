@@ -33,6 +33,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from dataclasses import dataclass
 from decimal import Decimal, InvalidOperation
@@ -103,6 +104,57 @@ def check(claims: List[Claim], entries: dict) -> List[dict]:
     return rows
 
 
+NUM_RE = re.compile(r"(?<![\w.])(\d+\.\d+)(\s*(?:%|percent))?")
+
+
+def _matches(token: str, pct: bool, value: float) -> bool:
+    """True when `token` is a correct rounding of `value` (as a fraction or a percentage)."""
+    want, tol = parse_number(token)
+    for v in ((value * 100,) if pct else (value, value * 100)):
+        if abs(v - want) <= tol + 1e-12:
+            return True
+    return False
+
+
+def check_definitions(spec_path: Path, entries: dict, root: Path = PROJECT_ROOT) -> List[dict]:
+    """One definition per repeated quantity (F3).
+
+    For every definition: the canonical and variant keys must exist and have different
+    values. In every prose file, a line that talks about the quantity (`subject`) may
+    quote a variant's value only if the line also names that variant (`qualifier`);
+    otherwise a reader would take it for the canonical quantity.
+    """
+    spec = json.loads(spec_path.read_text(encoding="utf-8"))
+    files = sorted({p for pat in spec["prose"] for p in root.glob(pat)})
+    rows = []
+    for d in spec["definitions"]:
+        keys = [d["canonical"]["key"]] + [v["key"] for v in d["variants"]]
+        missing = [k for k in keys if k not in entries]
+        if missing:
+            rows.append({"ok": False, "where": d["id"], "why": f"keys not in manifest: {missing}"})
+            continue
+        canon = float(entries[d["canonical"]["key"]]["value"])
+        subj = re.compile(d["subject"], re.I)
+        for v in d["variants"]:
+            val = float(entries[v["key"]]["value"])
+            if abs(val - canon) < 5e-4:
+                rows.append({"ok": False, "where": d["id"],
+                             "why": f"variant {v['key']} equals the canonical value to 3 decimals"})
+            qual = re.compile(v["qualifier"], re.I)
+            for f in files:
+                for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+                    if not subj.search(line) or qual.search(line):
+                        continue
+                    for m in NUM_RE.finditer(line):
+                        tok, pct = m.group(1), bool(m.group(2))
+                        if _matches(tok, pct, val) and not _matches(tok, pct, canon):
+                            rows.append({"ok": False, "where": f"{f.relative_to(root)}:{n}",
+                                         "why": f"{d['id']}: {tok} is '{v['name']}' ({v['key']}) "
+                                                f"but the line does not say so (qualifier /{v['qualifier']}/)"})
+        rows.append({"ok": True, "where": d["id"], "why": ""})
+    return rows
+
+
 def main(argv: Optional[List[str]] = None) -> int:
     ap = argparse.ArgumentParser(description="Check quoted numbers against results/manifest.json")
     ap.add_argument("claims_files", nargs="*", type=Path)
@@ -110,7 +162,14 @@ def main(argv: Optional[List[str]] = None) -> int:
                     help='inline claim "label|key|value[|tol]"')
     ap.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
     ap.add_argument("--quiet", action="store_true", help="print failures only")
+    ap.add_argument("--definitions", type=Path, default=None,
+                    help="definitions.json: one definition per repeated quantity, checked in the prose files "
+                         "(default: results/claims/definitions.json when a claims folder is given)")
     args = ap.parse_args(argv)
+    if args.definitions is None:
+        dflt = PROJECT_ROOT / "results" / "claims" / "definitions.json"
+        if any(f.is_dir() and f.resolve() == dflt.parent.resolve() for f in args.claims_files):
+            args.definitions = dflt
 
     claims: List[Claim] = []
     files: List[Path] = []
@@ -135,7 +194,15 @@ def main(argv: Optional[List[str]] = None) -> int:
         extra = f"= {r['manifest']:.6g}" if r["ok"] else r["why"]
         print(f"{status} {r['label']}: {r['written']} [{r['key']}] {extra}")
     print(f"\n{len(rows) - len(bad)}/{len(rows)} claims match the manifest.")
-    return 1 if bad else 0
+    dbad = []
+    if args.definitions:
+        drows = check_definitions(args.definitions, entries)
+        dbad = [r for r in drows if not r["ok"]]
+        for r in dbad:
+            print(f"FAIL definition {r['where']}: {r['why']}")
+        n_def = sum(1 for r in drows if r["ok"])
+        print(f"{n_def} definitions checked; {len(dbad)} prose uses of a variant without its label.")
+    return 1 if (bad or dbad) else 0
 
 
 if __name__ == "__main__":

@@ -1,0 +1,121 @@
+{
+ "_comment": "One definition per repeated quantity (F3). The canonical key is the definition the paper uses without qualification. A variant is a different quantity that happens to share a name; prose may quote it only on a line that also matches its qualifier. Checked by tools/check_numbers.py --definitions. Definitions are explained in docs/DEFINITIONS.md.",
+ "prose": [
+  "docs/FIXES_SUMMARY.md",
+  "results/negative_results.md",
+  "paper_inputs/*.md",
+  "README.md"
+ ],
+ "definitions": [
+  {
+   "id": "hybrid_flag_f1",
+   "subject": "hybrid[^|.;]{0,60}\\bF1\\b|\\bF1\\b[^|.;]{0,40}hybrid",
+   "canonical": {
+    "key": "ablation.summary.hybrid_weighted.valf1_f1.mean",
+    "name": "hybrid flag F1, comparison rule (T2.1): threshold maximising F1 over all validation scores"
+   },
+   "variants": [
+    {
+     "key": "anomaly.multiseed.f1_hybrid.mean",
+     "name": "hybrid flag F1 at the deployed threshold (T1.4): alpha and tau tuned jointly on the 0.05 x 0.01 validation grid",
+     "qualifier": "deployed"
+    }
+   ]
+  },
+  {
+   "id": "iforest_flag_f1",
+   "subject": "(\\bIF\\b|Isolation Forest)[^|]{0,40}\\bF1\\b|\\bF1\\b[^|]{0,30}(\\bIF\\b|Isolation Forest)",
+   "canonical": {
+    "key": "ablation.summary.iforest.valf1_f1.mean",
+    "name": "Isolation Forest flag F1, comparison rule (T2.1)"
+   },
+   "variants": [
+    {
+     "key": "anomaly.multiseed.f1_if_only.mean",
+     "name": "Isolation Forest flag F1 at the deployed hybrid threshold (T1.4)",
+     "qualifier": "deployed"
+    }
+   ]
+  },
+  {
+   "id": "hybrid_malicious_episode_recall",
+   "subject": "(hybrid|slow|malicious)[^|]{0,80}episode recall|episode recall[^|]{0,80}hybrid",
+   "canonical": {
+    "key": "supervised.summary.hybrid_weighted_t21.malicious_insider_episode_recall.mean",
+    "name": "hybrid malicious-insider episode recall, comparison rule (T2.1 threshold, rows with 23 h history)"
+   },
+   "variants": [
+    {
+     "key": "anomaly.multiseed.episode_recall_malicious_insider.mean",
+     "name": "the same at the deployed threshold (T1.4, T2.4 hybrid-only baseline)",
+     "qualifier": "deployed"
+    }
+   ]
+  },
+  {
+   "id": "ewma_burst_flag_rate",
+   "subject": "EWMA[^|]{0,100}burst|burst[^|]{0,100}EWMA",
+   "canonical": {
+    "key": "ablation.summary.ewma.benign_burst_flag_rate.mean",
+    "name": "EWMA benign-burst flag rate, comparison rule (T2.1)"
+   },
+   "variants": [
+    {
+     "key": "anomaly.multiseed.benign_burst_flag_rate_ewma.mean",
+     "name": "EWMA benign-burst flag rate at the deployed EWMA threshold (T1.4, tau on a 0.25 grid)",
+     "qualifier": "deployed"
+    }
+   ]
+  },
+  {
+   "id": "ewma_flag_f1",
+   "subject": "EWMA[^|]{0,60}\\bF1\\b|rate-only[^|]{0,60}\\bF1\\b",
+   "canonical": {
+    "key": "ablation.summary.ewma.valf1_f1.mean",
+    "name": "EWMA flag F1, comparison rule (T2.1)"
+   },
+   "variants": [
+    {
+     "key": "anomaly.multiseed.f1_ewma_tuned.mean",
+     "name": "EWMA flag F1 at the deployed EWMA threshold (T1.4)",
+     "qualifier": "deployed"
+    }
+   ]
+  },
+  {
+   "id": "supervised_boosting_f1",
+   "subject": "boosting[^|]{0,80}\\bF1\\b",
+   "canonical": {
+    "key": "supervised.summary.probe_boosting.f1.mean",
+    "name": "supervised boosting F1 with all TRAIN labels, threshold maximising F1 on labelled validation hours (D-028)"
+   },
+   "variants": [
+    {
+     "key": "labelcurve_b5.summary.kall_boosting.f1.mean",
+     "name": "the same model at a label-free 5 percent validation alert budget (D-029)",
+     "qualifier": "budget|label-free"
+    }
+   ]
+  },
+  {
+   "id": "supervised_boosting_malicious_episode_recall",
+   "subject": "boosting[^|]{0,120}(episode|slow)",
+   "canonical": {
+    "key": "supervised.summary.probe_boosting.per_class.malicious_insider.episode_recall.mean",
+    "name": "supervised boosting malicious-insider episode recall, labelled-validation F1 threshold (D-028)"
+   },
+   "variants": [
+    {
+     "key": "labelcurve_b5.summary.kall_boosting.malicious_episode_recall.mean",
+     "name": "the same at a label-free 5 percent alert budget (D-029)",
+     "qualifier": "budget|label-free|5 percent"
+    },
+    {
+     "key": "labelcurve.summary.kall_boosting.malicious_episode_recall.mean",
+     "name": "the same at a label-free 1 percent alert budget (D-029)",
+     "qualifier": "budget|label-free|1 percent"
+    }
+   ]
+  }
+ ]
+}

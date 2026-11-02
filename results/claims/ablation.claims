@@ -19,3 +19,7 @@ Malicious AUC LSTM | ablation.summary.lstm.per_class.malicious_insider.auc.mean 
 Malicious AUC hybrid | ablation.summary.hybrid_weighted.per_class.malicious_insider.auc.mean | 0.640
 Malicious recall LSTM (val F1 thr) | ablation.summary.lstm.per_class.malicious_insider.recall.mean | 0.170
 Malicious recall hybrid (val F1 thr) | ablation.summary.hybrid_weighted.per_class.malicious_insider.recall.mean | 0.027
+# F3: comparison-rule values quoted in the EWMA claim (FIXES_SUMMARY section 5)
+EWMA flag F1 (comparison rule) | ablation.summary.ewma.valf1_f1.mean | 0.111
+EWMA burst flag rate (comparison rule) | ablation.summary.ewma.benign_burst_flag_rate.mean | 61.3%
+Hybrid burst flag rate (comparison rule) | ablation.summary.hybrid_weighted.benign_burst_flag_rate.mean | 1.5%

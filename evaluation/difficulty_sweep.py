@@ -78,8 +78,11 @@ def run_cell(i: float, o: float, s: int) -> None:
           f"IF {res['iforest']['auc']:.3f} LSTM {res['lstm']['auc']:.3f}", flush=True)
 
 
-def summarise_and_plot() -> None:
+def summarise_and_plot(seeds=SWEEP_SEEDS) -> None:
+    """seeds = SWEEP_SEEDS writes the original T2.3 outputs; any other set writes *_<n>seeds files
+    and manifest key sweep.summary<n> (F6), so the 3-seed record stays as it was."""
     e = load()["entries"]
+    tag = "" if tuple(seeds) == SWEEP_SEEDS else f"_{len(seeds)}seeds"
     OUT.mkdir(parents=True, exist_ok=True)
     rows = []
     for o in OVERLAPS:
@@ -87,21 +90,21 @@ def summarise_and_plot() -> None:
             for d in DETECTORS:
                 for metric in ("auc", "valf1_f1", "valf1_recall", "valf1_fpr",
                                "recall_at_fpr05_valthreshold", "fpr_realised_at_fpr05_valthreshold",
-                               "per_class.malicious_insider.auc"):
+                               "per_class.malicious_insider.auc", "valf1_precision"):
                     v = [e.get(f"{key_prefix(i, o, s)}.{d}.{metric}", {}).get("value", np.nan)
-                         for s in SWEEP_SEEDS]
+                         for s in seeds]
                     v = np.array(v, dtype=float)
                     rows.append({"overlap": o, "intensity": i, "detector": d, "metric": metric,
                                  "mean": float(np.nanmean(v)), "sd": float(np.nanstd(v, ddof=1)),
                                  "n": int(np.isfinite(v).sum())})
-    with open(OUT / "sweep_summary.csv", "w", newline="", encoding="utf-8") as f:
+    with open(OUT / f"sweep_summary{tag}.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader()
         w.writerows(rows)
-    record("sweep.summary", {f"o{str(r['overlap']).replace('.', 'p')}.i{str(r['intensity']).replace('.', 'p')}"
+    record(f"sweep.summary{tag.replace('_', '').replace('seeds', '')}", {f"o{str(r['overlap']).replace('.', 'p')}.i{str(r['intensity']).replace('.', 'p')}"
                              f".{r['detector']}.{r['metric']}": {"mean": r["mean"], "sd": r["sd"], "n": r["n"]}
                              for r in rows},
-           script="evaluation/difficulty_sweep.py", seeds={"datasets": list(SWEEP_SEEDS)})
+           script="evaluation/difficulty_sweep.py", seeds={"datasets": list(seeds)})
 
     import matplotlib
     matplotlib.use("Agg")
@@ -124,25 +127,30 @@ def summarise_and_plot() -> None:
             ax.grid(color="0.9")
             if r_i == len(OVERLAPS) - 1:
                 ax.set_xlabel("attack intensity (1.0 = original dataset)")
-    axes[0, 1].legend(fontsize=6, loc="lower right")
-    fig.text(0.99, 0.003, f"mean ± s.d. over data seeds {', '.join(map(str, SWEEP_SEEDS))}",
+    # legend below the panels, off the data (F8)
+    h, lab = axes[0, 0].get_legend_handles_labels()
+    fig.legend(h, lab, loc="lower center", ncol=4, fontsize=7, frameon=False, bbox_to_anchor=(0.5, 0.0))
+    fig.text(0.99, 0.003, f"mean ± s.d. over data seeds {', '.join(map(str, seeds))}",
              ha="right", fontsize=6)
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0.09, 1, 1))
     for ext in ("pdf", "svg"):
-        fig.savefig(OUT / f"detection_vs_intensity.{ext}")
+        fig.savefig(OUT / f"detection_vs_intensity{tag}.{ext}")
     print(f"  -> {OUT}")
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--plot-only", action="store_true")
+    ap.add_argument("--seeds", type=int, nargs="*", default=None,
+                    help="data seeds (default: the 3 of T2.3; F6 uses all 10 of evaluation/config/seeds.json)")
     args = ap.parse_args()
+    seeds = tuple(args.seeds) if args.seeds else SWEEP_SEEDS
     if not args.plot_only:
         for o in OVERLAPS:
             for i in INTENSITIES:
-                for s in SWEEP_SEEDS:
+                for s in seeds:
                     run_cell(i, o, s)
-    summarise_and_plot()
+    summarise_and_plot(seeds)
 
 
 if __name__ == "__main__":
