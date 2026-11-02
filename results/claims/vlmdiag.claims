@@ -1,0 +1,14 @@
+# F5 Qwen2.5-VL-3B diagnosis
+3B FUNSD answers | vlmdiag.qwen2-5-vl-3b-instruct.funsd.n | 199
+3B FUNSD valid | vlmdiag.qwen2-5-vl-3b-instruct.funsd.status_ok | 183
+3B FUNSD valid empty | vlmdiag.qwen2-5-vl-3b-instruct.funsd.ok_empty_list | 183
+3B FUNSD degenerate | vlmdiag.qwen2-5-vl-3b-instruct.funsd.degenerate_repeated_char | 16
+3B FUNSD completion tokens median | vlmdiag.qwen2-5-vl-3b-instruct.funsd.completion_tokens_median | 2
+3B FUNSD prompt tokens median | vlmdiag.qwen2-5-vl-3b-instruct.funsd.prompt_tokens_median | 1222
+3B FUNSD prompt tokens max | vlmdiag.qwen2-5-vl-3b-instruct.funsd.prompt_tokens_max | 1366
+FUNSD forms with gold | vlmdiag.qwen2-5-vl-3b-instruct.funsd.docs_with_gold_entities | 109
+3B v2 valid | vlmdiag.qwen2-5-vl-3b-instruct.v2.status_ok | 203
+3B v2 valid empty | vlmdiag.qwen2-5-vl-3b-instruct.v2.ok_empty_list | 177
+7B FUNSD nonempty | vlmdiag.qwen2-5-vl-7b-instruct.funsd.ok_nonempty | 37
+gemma FUNSD prompt tokens | vlmdiag.gemma-3-4b-it.funsd.prompt_tokens_median | 511
+gemma FUNSD nonempty | vlmdiag.gemma-3-4b-it.funsd.ok_nonempty | 182

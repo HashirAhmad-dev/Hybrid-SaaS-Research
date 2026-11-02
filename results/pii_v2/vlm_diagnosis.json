@@ -1,0 +1,547 @@
+{
+ "provenance": {
+  "script": "evaluation/vlm_diagnose.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\vlm_diagnose.py",
+  "seeds": {},
+  "date_utc": "2026-11-02T19:58:20+00:00",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": null
+ },
+ "summary": {
+  "qwen2-5-vl-3b-instruct": {
+   "v1": {
+    "n": 80,
+    "status_ok": 80,
+    "ok_empty_list": 67,
+    "ok_nonempty": 13,
+    "degenerate_repeated_char": 0,
+    "says_no_pii_or_cannot": 0,
+    "prompt_tokens_median": 890.0,
+    "prompt_tokens_max": 1210.0,
+    "completion_tokens_median": 2.0,
+    "docs_with_gold_entities": 68,
+    "seconds_median": 1.961160099999688
+   },
+   "v2": {
+    "n": 240,
+    "status_ok": 203,
+    "status_malformed_json": 37,
+    "ok_empty_list": 177,
+    "ok_nonempty": 26,
+    "degenerate_repeated_char": 37,
+    "says_no_pii_or_cannot": 0,
+    "prompt_tokens_median": 1086.0,
+    "prompt_tokens_max": 1590.0,
+    "completion_tokens_median": 2.0,
+    "docs_with_gold_entities": 217,
+    "seconds_median": 2.1208774000006088
+   },
+   "funsd": {
+    "n": 199,
+    "status_ok": 183,
+    "status_malformed_json": 16,
+    "ok_empty_list": 183,
+    "ok_nonempty": 0,
+    "degenerate_repeated_char": 16,
+    "says_no_pii_or_cannot": 0,
+    "prompt_tokens_median": 1222.0,
+    "prompt_tokens_max": 1366.0,
+    "completion_tokens_median": 2.0,
+    "docs_with_gold_entities": 109,
+    "seconds_median": 3.5057043000051635
+   }
+  },
+  "gemma-3-4b-it": {
+   "v1": {
+    "n": 80,
+    "status_ok": 80,
+    "ok_empty_list": 11,
+    "ok_nonempty": 69,
+    "degenerate_repeated_char": 0,
+    "says_no_pii_or_cannot": 0,
+    "prompt_tokens_median": 511.0,
+    "prompt_tokens_max": 511.0,
+    "completion_tokens_median": 73.0,
+    "docs_with_gold_entities": 68,
+    "seconds_median": 6.988679499998398
+   },
+   "v2": {
+    "n": 240,
+    "status_ok": 238,
+    "status_error:BadRequestError": 2,
+    "ok_empty_list": 5,
+    "ok_nonempty": 233,
+    "degenerate_repeated_char": 0,
+    "says_no_pii_or_cannot": 0,
+    "prompt_tokens_median": 511.0,
+    "prompt_tokens_max": 511.0,
+    "completion_tokens_median": 97.0,
+    "docs_with_gold_entities": 217,
+    "seconds_median": 4.331413750001957
+   },
+   "funsd": {
+    "n": 199,
+    "status_ok": 193,
+    "status_error:BadRequestError": 6,
+    "ok_empty_list": 11,
+    "ok_nonempty": 182,
+    "degenerate_repeated_char": 0,
+    "says_no_pii_or_cannot": 0,
+    "prompt_tokens_median": 511.0,
+    "prompt_tokens_max": 511.0,
+    "completion_tokens_median": 59.0,
+    "docs_with_gold_entities": 109,
+    "seconds_median": 8.455765500002599
+   }
+  },
+  "qwen2-5-vl-7b-instruct": {
+   "v1": {
+    "n": 80,
+    "status_ok": 80,
+    "ok_empty_list": 12,
+    "ok_nonempty": 68,
+    "degenerate_repeated_char": 0,
+    "says_no_pii_or_cannot": 0,
+    "prompt_tokens_median": 890.0,
+    "prompt_tokens_max": 1210.0,
+    "completion_tokens_median": 44.0,
+    "docs_with_gold_entities": 68,
+    "seconds_median": 26.946420849999413
+   },
+   "v2": {
+    "n": 240,
+    "status_ok": 240,
+    "ok_empty_list": 31,
+    "ok_nonempty": 209,
+    "degenerate_repeated_char": 0,
+    "says_no_pii_or_cannot": 0,
+    "prompt_tokens_median": 1086.0,
+    "prompt_tokens_max": 1590.0,
+    "completion_tokens_median": 60.0,
+    "docs_with_gold_entities": 217,
+    "seconds_median": 35.56044020000263
+   },
+   "funsd": {
+    "n": 199,
+    "status_ok": 199,
+    "ok_empty_list": 162,
+    "ok_nonempty": 37,
+    "degenerate_repeated_char": 0,
+    "says_no_pii_or_cannot": 0,
+    "prompt_tokens_median": 1222.0,
+    "prompt_tokens_max": 1366.0,
+    "completion_tokens_median": 6.0,
+    "docs_with_gold_entities": 109,
+    "seconds_median": 42.06828060001135
+   }
+  }
+ },
+ "samples": {
+  "qwen2-5-vl-3b-instruct": {
+   "v1": [
+    {
+     "doc_id": "DOC-0041",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 913,
+      "completion_tokens": 2
+     },
+     "raw": "[]"
+    },
+    {
+     "doc_id": "DOC-0042",
+     "status": "ok",
+     "n_entities": 6,
+     "usage": {
+      "prompt_tokens": 1010,
+      "completion_tokens": 131
+     },
+     "raw": "[\n  {\"type\": \"PERSON\", \"value\": \"James Thompson\"},\n  {\"type\": \"NID\", \"value\": \"31070-2042300-7\"},\n  {\"type\": \"DOB\", \"value\": \"2001-12-12\"},\n  {\"type\": \"EMAIL\", \"value\": \"matthew99@example.net\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 334 3222013\"},\n  {\"type\": \"ADDRESS\", \"value\": \"89713 Erik Circles\"}\n]"
+    },
+    {
+     "doc_id": "DOC-0043",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 850,
+      "completion_tokens": 2
+     },
+     "raw": "[]"
+    },
+    {
+     "doc_id": "DOC-0044",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 874,
+      "completion_tokens": 2
+     },
+     "raw": "[]"
+    }
+   ],
+   "v2": [
+    {
+     "doc_id": "V2-0121",
+     "status": "ok",
+     "n_entities": 3,
+     "usage": {
+      "prompt_tokens": 998,
+      "completion_tokens": 64
+     },
+     "raw": "[\n  {\"type\": \"PERSON\", \"value\": \"Nathan Peters\"},\n  {\"type\": \"DOB\", \"value\": \"1962-09-02\"},\n  {\"type\": \"PHONE\", \"value\": \"+923050114896\"}\n]"
+    },
+    {
+     "doc_id": "V2-0122",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 998,
+      "completion_tokens": 2
+     },
+     "raw": "[]"
+    },
+    {
+     "doc_id": "V2-0123",
+     "status": "ok",
+     "n_entities": 3,
+     "usage": {
+      "prompt_tokens": 1130,
+      "completion_tokens": 73
+     },
+     "raw": "[\n  {\"type\": \"PERSON\", \"value\": \"Ms Sally O'Connor\"},\n  {\"type\": \"NID\", \"value\": \"72056-0840689-8\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 342 2426367\"}\n]"
+    },
+    {
+     "doc_id": "V2-0124",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 998,
+      "completion_tokens": 2
+     },
+     "raw": "[]"
+    }
+   ],
+   "funsd": [
+    {
+     "doc_id": "FUNSD-0000971160",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 1222,
+      "completion_tokens": 2
+     },
+     "raw": "[]"
+    },
+    {
+     "doc_id": "FUNSD-0000989556",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 1222,
+      "completion_tokens": 2
+     },
+     "raw": "[]"
+    },
+    {
+     "doc_id": "FUNSD-0000990274",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 1222,
+      "completion_tokens": 2
+     },
+     "raw": "[]"
+    },
+    {
+     "doc_id": "FUNSD-0000999294",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 1222,
+      "completion_tokens": 2
+     },
+     "raw": "[]"
+    }
+   ]
+  },
+  "gemma-3-4b-it": {
+   "v1": [
+    {
+     "doc_id": "DOC-0041",
+     "status": "ok",
+     "n_entities": 5,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 119
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"Guy Lewis\"},\n  {\"type\": \"EMAIL\", \"value\": \"icarter@example.net\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 33 2648517\"},\n  {\"type\": \"ADDRESS\", \"value\": \"8282 Flores Brooks\"},\n  {\"type\": \"CREDIT_CARD\", \"value\": \"344611316591584\"}\n]\n```"
+    },
+    {
+     "doc_id": "DOC-0042",
+     "status": "ok",
+     "n_entities": 6,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 145
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"James Thompson\"},\n  {\"type\": \"NID\", \"value\": \"31070-2042300-7\"},\n  {\"type\": \"DOB\", \"value\": \"2001-12-12\"},\n  {\"type\": \"EMAIL\", \"value\": \"matthew99@example.net\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 334 3222013\"},\n  {\"type\": \"ADDRESS\", \"value\": \"89713 Erik Circl"
+    },
+    {
+     "doc_id": "DOC-0043",
+     "status": "ok",
+     "n_entities": 3,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 71
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"Emily Gross\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 336 2534962\"},\n  {\"type\": \"EMAIL\", \"value\": \"zboyd@example.org\"}\n]\n```"
+    },
+    {
+     "doc_id": "DOC-0044",
+     "status": "ok",
+     "n_entities": 4,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 105
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"Paul Olson\"},\n  {\"type\": \"CREDIT_CARD\", \"value\": \"6552101631109431\"},\n  {\"type\": \"ADDRESS\", \"value\": \"3103 Micheal Court Suite 070\"},\n  {\"type\": \"DOB\", \"value\": \"1986-12-25\"}\n]\n```"
+    }
+   ],
+   "v2": [
+    {
+     "doc_id": "V2-0121",
+     "status": "ok",
+     "n_entities": 5,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 135
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"Nathan Peters\"},\n  {\"type\": \"DOB\", \"value\": \"1962-09-02\"},\n  {\"type\": \"NID\", \"value\": \"37582-0525638-8\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 305 0114896\"},\n  {\"type\": \"CREDIT_CARD\", \"value\": \"551083183715662\"}\n]\n```"
+    },
+    {
+     "doc_id": "V2-0122",
+     "status": "ok",
+     "n_entities": 4,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 100
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"Jerry Cain\"},\n  {\"type\": \"CREDIT_CARD\", \"value\": \"4204599366813126\"},\n  {\"type\": \"ADDRESS\", \"value\": \"Flat 85, Katie Hill\"},\n  {\"type\": \"DOB\", \"value\": \"1981-04-27\"}\n]\n```"
+    },
+    {
+     "doc_id": "V2-0123",
+     "status": "ok",
+     "n_entities": 6,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 148
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"Ms Sally O'Connor\"},\n  {\"type\": \"NID\", \"value\": \"72056-0840689-8\"},\n  {\"type\": \"DOB\", \"value\": \"1996-11-07\"},\n  {\"type\": \"EMAIL\", \"value\": \"petersmichelle@example.net\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 342 2426367\"},\n  {\"type\": \"ADDRESS\", \"value\": \"Studio 0"
+    },
+    {
+     "doc_id": "V2-0124",
+     "status": "ok",
+     "n_entities": 5,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 137
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"Dr Glen Wilson\"},\n  {\"type\": \"DOB\", \"value\": \"1985-09-29\"},\n  {\"type\": \"NID\", \"value\": \"17088-4247534-1\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 322 8731356\"},\n  {\"type\": \"CREDIT_CARD\", \"value\": \"5124965946127218\"}\n]\n```"
+    }
+   ],
+   "funsd": [
+    {
+     "doc_id": "FUNSD-0000971160",
+     "status": "ok",
+     "n_entities": 4,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 77
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"M. Hamann\"},\n  {\"type\": \"PERSON\", \"value\": \"P. Harper\"},\n  {\"type\": \"PERSON\", \"value\": \"P. Martinez\"},\n  {\"type\": \"PERSON\", \"value\": \"J. S. Wigram\"}\n]\n```"
+    },
+    {
+     "doc_id": "FUNSD-0000989556",
+     "status": "ok",
+     "n_entities": 1,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 72
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"M. HAWTERON\"},\n  {\"type\": \"DATE\", \"value\": \"May 1, 1985\"},\n  {\"type\": \"DATE\", \"value\": \"May 1, 1985\"}\n]\n```"
+    },
+    {
+     "doc_id": "FUNSD-0000990274",
+     "status": "ok",
+     "n_entities": 1,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 95
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"P. R. Harper\"},\n  {\"type\": \"DATE\", \"value\": \"March 27, 1984\"},\n  {\"type\": \"DATE\", \"value\": \"April 13, 1984\"},\n  {\"type\": \"DATE\", \"value\": \"APR 2, 1984\"}\n]\n```"
+    },
+    {
+     "doc_id": "FUNSD-0000999294",
+     "status": "ok",
+     "n_entities": 2,
+     "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 63
+     },
+     "raw": "```json\n[\n  {\"type\": \"PERSON\", \"value\": \"KOOL Lights KS\"},\n  {\"type\": \"PERSON\", \"value\": \"Bright\"},\n  {\"type\": \"DATE\", \"value\": \"September 13, 1982\"}\n]\n```"
+    }
+   ]
+  },
+  "qwen2-5-vl-7b-instruct": {
+   "v1": [
+    {
+     "doc_id": "DOC-0041",
+     "status": "ok",
+     "n_entities": 4,
+     "usage": {
+      "prompt_tokens": 913,
+      "completion_tokens": 103
+     },
+     "raw": "[\n  {\"type\": \"PERSON\", \"value\": \"Guy Lewis\"},\n  {\"type\": \"EMAIL\", \"value\": \"icarter@example.net\"},\n  {\"type\": \"PHONE\", \"value\": \"+923332648517\"},\n  {\"type\": \"ADDRESS\", \"value\": \"8282 Flores Brooks\"},\n  {\"type\": \"CARD_NO\", \"value\": \"344611316591584\"}\n]"
+    },
+    {
+     "doc_id": "DOC-0042",
+     "status": "ok",
+     "n_entities": 5,
+     "usage": {
+      "prompt_tokens": 1010,
+      "completion_tokens": 111
+     },
+     "raw": "[\n  {\"type\": \"PERSON\", \"value\": \"James Thompson\"},\n  {\"type\": \"NID\", \"value\": \"31070-2042300-7\"},\n  {\"type\": \"DOB\", \"value\": \"2001-12-12\"},\n  {\"type\": \"EMAIL\", \"value\": \"matthew99@example.net\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 334 3222013\"}\n]"
+    },
+    {
+     "doc_id": "DOC-0043",
+     "status": "ok",
+     "n_entities": 2,
+     "usage": {
+      "prompt_tokens": 850,
+      "completion_tokens": 41
+     },
+     "raw": "[\n  {\"type\": \"PERSON\", \"value\": \"Emily Gross\"},\n  {\"type\": \"PHONE\", \"value\": \"+923362534962\"}\n]"
+    },
+    {
+     "doc_id": "DOC-0044",
+     "status": "ok",
+     "n_entities": 4,
+     "usage": {
+      "prompt_tokens": 874,
+      "completion_tokens": 92
+     },
+     "raw": "[\n  {\"type\": \"PERSON\", \"value\": \"Paul Olson\"},\n  {\"type\": \"NID\", \"value\": \"6552101631109431\"},\n  {\"type\": \"PHONE\", \"value\": \"3103 Micheal Court Suite 070\"},\n  {\"type\": \"DOB\", \"value\": \"1986-12-25\"}\n]"
+    }
+   ],
+   "v2": [
+    {
+     "doc_id": "V2-0121",
+     "status": "ok",
+     "n_entities": 4,
+     "usage": {
+      "prompt_tokens": 998,
+      "completion_tokens": 123
+     },
+     "raw": "[\n  {\"type\": \"PERSON\", \"value\": \"Nathan Peters\"},\n  {\"type\": \"DOB\", \"value\": \"1962-09-02\"},\n  {\"type\": \"NID\", \"value\": \"37582-0525638-8\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 305 0114896\"},\n  {\"type\": \"CARD_NO\", \"value\": \"5510831837315662\"}\n]"
+    },
+    {
+     "doc_id": "V2-0122",
+     "status": "ok",
+     "n_entities": 2,
+     "usage": {
+      "prompt_tokens": 998,
+      "completion_tokens": 67
+     },
+     "raw": "[\n  {\"type\": \"PERSON\", \"value\": \"Jerry Cain\"},\n  {\"type\": \"CARD\", \"value\": \"4204599366813126\"},\n  {\"type\": \"DOB\", \"value\": \"1981-04-27\"}\n]"
+    },
+    {
+     "doc_id": "V2-0123",
+     "status": "ok",
+     "n_entities": 3,
+     "usage": {
+      "prompt_tokens": 1130,
+      "completion_tokens": 73
+     },
+     "raw": "[\n  {\"type\": \"PERSON\", \"value\": \"Ms Sally O'Connor\"},\n  {\"type\": \"NID\", \"value\": \"72056-0840689-8\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 342 2426367\"}\n]"
+    },
+    {
+     "doc_id": "V2-0124",
+     "status": "ok",
+     "n_entities": 3,
+     "usage": {
+      "prompt_tokens": 998,
+      "completion_tokens": 100
+     },
+     "raw": "[\n  {\"type\": \"PERSON\", \"value\": \"Dr Glen Wilson\"},\n  {\"type\": \"NID\", \"value\": \"17088-4247534-1\"},\n  {\"type\": \"PHONE\", \"value\": \"+92 322 8731356\"},\n  {\"type\": \"CARD\", \"value\": \"5124965946127218\"}\n]"
+    }
+   ],
+   "funsd": [
+    {
+     "doc_id": "FUNSD-0000971160",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 1222,
+      "completion_tokens": 6
+     },
+     "raw": "```json\n[]\n```"
+    },
+    {
+     "doc_id": "FUNSD-0000989556",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 1222,
+      "completion_tokens": 6
+     },
+     "raw": "```json\n[]\n```"
+    },
+    {
+     "doc_id": "FUNSD-0000990274",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 1222,
+      "completion_tokens": 6
+     },
+     "raw": "```json\n[]\n```"
+    },
+    {
+     "doc_id": "FUNSD-0000999294",
+     "status": "ok",
+     "n_entities": 0,
+     "usage": {
+      "prompt_tokens": 1222,
+      "completion_tokens": 6
+     },
+     "raw": "```json\n[]\n```"
+    }
+   ]
+  }
+ },
+ "quantisation": {
+  "Qwen2.5-VL-3B": "Q4_K_M weights, F16 vision projector (lmstudio-community GGUF)",
+  "gemma-3-4b-it": "Q4_K_M weights, F16 vision projector (lmstudio-community GGUF)",
+  "Qwen2.5-VL-7B": "Q4_K_M weights, F16 vision projector (lmstudio-community GGUF)"
+ },
+ "context_tokens": 4096
+}
