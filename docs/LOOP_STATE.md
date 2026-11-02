@@ -35,7 +35,7 @@ Start T3.3.
 | T2.7 | M | DONE | |
 | T3.1 | M | DONE | v2 + FUNSD subset; strongest local VLM (gemma-4B) v2 F1 0.845 < 1.000 |
 | T3.2 | M | DONE | |
-| T3.3 | M | DONE | Qwen2.5-VL-3B and gemma-3-4b-it local; Qwen2.5-VL-7B added when its download finishes |
+| T3.3 | M | DONE | Qwen2.5-VL-3B, gemma-3-4b-it and Qwen2.5-VL-7B local; 7B below gemma on every set (N-057 to N-060) |
 | T3.4 | M | DONE | Pareto CSVs, calib tau, router; figure results/pii_v2/pareto_v2.pdf |
 | T3.5 | M | DONE | |
 | T3.6 | M | DONE | |

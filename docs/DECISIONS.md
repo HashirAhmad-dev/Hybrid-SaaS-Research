@@ -116,3 +116,8 @@ One entry per non-obvious decision. Format: date, task, options, choice, reason.
 - LSTM training uses a random 100,000-window subsample of FIT windows (`--max-fit-windows 100000`, seed 42), because the full FIT set does not fit the CPU time budget. Memory banks and Isolation Forest are fitted as usual.
 - CERT is reported in its own table, labelled as a second synthetic benchmark, and never pooled with our datasets. SBRS enforcement is not evaluated on CERT (no PII payloads; S is constant).
 - Validation loss on CERT is computed in batches of 4,096 because a single pass over its 360,000 validation windows needed 19 GB. The mean is the same, and a test checks this. Datasets with at most 50,000 validation windows keep the original single pass, so our earlier runs are unaffected.
+
+## D-025 (2026-11-02, T3.3) One Qwen2.5-VL-7B timing re-measured after laptop sleep
+- Problem: the laptop slept from 03:49 to 19:45 while image V2-0351 was being processed. Its cached time was 57,332 s, which is the sleep, not inference. It raised the v2 mean from about 36 s to 354 s per image and distorted the cascade cost axis.
+- Choice: the original cache file was kept unchanged in `evaluation/data/pii_v2/vlm_cache_suspended/`, and only that image was sent again with the same model, prompt, temperature 0 and seed 0. The new answer is byte-identical to the old one (same raw text, same entities), and the new time is 37.3 s. Scoring was then rerun.
+- Only timing changed. No accuracy number moved, and no other image was re-run.

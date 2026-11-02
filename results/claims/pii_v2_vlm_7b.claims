@@ -1,0 +1,27 @@
+# T3.3 addendum: Qwen2.5-VL-7B numbers quoted in results/negative_results.md, docs and paper_inputs
+v1 7B F1 | pii2.v1.vlm.qwen2-5-vl-7b-instruct.all.f1 | 0.789
+v2 7B F1 | pii2.v2.vlm.qwen2-5-vl-7b-instruct.all.f1 | 0.727
+FUNSD 7B F1 | pii2.funsd.vlm.qwen2-5-vl-7b-instruct.all.f1 | 0.132
+v1 7B precision | pii2.v1.vlm.qwen2-5-vl-7b-instruct.all.precision | 0.929
+v2 7B precision | pii2.v2.vlm.qwen2-5-vl-7b-instruct.all.precision | 0.944
+v1 7B recall | pii2.v1.vlm.qwen2-5-vl-7b-instruct.all.recall | 0.686
+v2 7B recall | pii2.v2.vlm.qwen2-5-vl-7b-instruct.all.recall | 0.590
+v1 7B address recall | pii2.v1.vlm.qwen2-5-vl-7b-instruct.by_type.ADDRESS.recall | 0.17
+v2 7B address recall | pii2.v2.vlm.qwen2-5-vl-7b-instruct.by_type.ADDRESS.recall | 0.07
+v1 7B card recall | pii2.v1.vlm.qwen2-5-vl-7b-instruct.by_type.CREDIT_CARD.recall | 0.12
+v2 7B card recall | pii2.v2.vlm.qwen2-5-vl-7b-instruct.by_type.CREDIT_CARD.recall | 0.03
+v1 7B password recall | pii2.v1.vlm.qwen2-5-vl-7b-instruct.by_type.PASSWORD.recall | 0.09
+v2 7B password recall | pii2.v2.vlm.qwen2-5-vl-7b-instruct.by_type.PASSWORD.recall | 0.04
+7B GPU peak | pii2.v2.vlm.qwen2-5-vl-7b-instruct.gpu_peak_mib | 5980
+v1 7B s/image | pii2.v1.vlm.qwen2-5-vl-7b-instruct.seconds_per_image_mean | 27.3
+v2 7B s/image | pii2.v2.vlm.qwen2-5-vl-7b-instruct.seconds_per_image_mean | 36.0
+FUNSD 7B s/image | pii2.funsd.vlm.qwen2-5-vl-7b-instruct.seconds_per_image_mean | 41.7
+v2 cascade EasyOCR+7B F1 | pii2.v2.cascade.easyocr_cpu.qwen2-5-vl-7b-instruct.eval_at_calib_tau.f1 | 0.719
+v2 cascade EasyOCR+gemma F1 | pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1 | 0.843
+FUNSD cascade EasyOCR+7B F1 | pii2.funsd.cascade.easyocr_cpu.qwen2-5-vl-7b-instruct.eval_at_calib_tau.f1 | 0.122
+FUNSD cascade EasyOCR+gemma F1 | pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1 | 0.331
+v2 cascade PaddleOCR+7B F1 | pii2.v2.cascade.paddleocr_cpu.qwen2-5-vl-7b-instruct.eval_at_calib_tau.f1 | 0.720
+v2 cascade PaddleOCR+gemma F1 | pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1 | 0.845
+FUNSD cascade PaddleOCR+7B F1 | pii2.funsd.cascade.paddleocr_cpu.qwen2-5-vl-7b-instruct.eval_at_calib_tau.f1 | 0.138
+FUNSD cascade PaddleOCR+gemma F1 | pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1 | 0.397
+v1 cascade PaddleOCR+7B F1 | pii2.v1.cascade.paddleocr_cpu.qwen2-5-vl-7b-instruct.eval_at_calib_tau.f1 | 0.955
