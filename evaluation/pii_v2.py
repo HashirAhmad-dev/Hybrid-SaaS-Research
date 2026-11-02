@@ -266,7 +266,9 @@ def stage_vlm(model: str, limit: int = 0, timeout: float = 300.0) -> None:
     from PIL import Image
     client = openai.OpenAI(base_url=LMSTUDIO, api_key="lm-studio", timeout=timeout, max_retries=0)
     ids = [m.id for m in client.models.list().data]
-    if model not in ids:
+    # newer LM Studio lists some models under a namespace (local/gemma-3-4b-it) and still
+    # serves the bare id; the bare id stays the cache key, so cached answers are reused
+    if model not in ids and not any(i.endswith("/" + model) for i in ids):
         raise SystemExit(f"model {model!r} not served by LM Studio; available: {ids}")
     slug = "".join(c if c.isalnum() else "-" for c in model)
     cache_dir = DATA / "vlm_cache"
