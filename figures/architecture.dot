@@ -16,13 +16,13 @@ digraph hybridsaas {
     ifor  [label="Isolation Forest\n-> a_IF"];
     fuse  [label="A = alpha a_LSTM + (1-alpha) a_IF\n(alpha on validation)"];
     drift [label="CUSUM drift detector\n(per-user, slow insider)"];
-    sbrs  [label="Risk fusion S, A\n-> PERMIT / ALERT / BLOCK\n(bands on validation)"];
+    sbrs  [label="Gated risk fusion of S, A\n(escalate if A >= tau_A)\n-> PERMIT / ALERT / BLOCK\n(tau_A, bands on validation)"];
   }
   subgraph cluster_t2 {
-    label="Tier 2: asynchronous, upload held (p50 3.4 s)"; fontsize=9; style="rounded,dashed"; color="gray40";
+    label="Tier 2: asynchronous, upload held until scanned"; fontsize=9; style="rounded,dashed"; color="gray40";
     ocr  [label="OCR (EasyOCR)\n-> Presidio"];
-    vlm  [label="Local VLM\n(LM Studio)"];
-    route[label="Router / OCR-confidence\nthreshold (chosen on calib)"];
+    vlm  [label="Local VLM gemma-3-4b-it\n(LM Studio; if down,\nquarantine)"];
+    route[label="OCR confidence < tau_ocr?\n(tau_ocr on calib docs)"];
   }
   fl [label="Federated training\n(future work, not built)", style="rounded,dashed", fontcolor="gray40", color="gray50"];
 
