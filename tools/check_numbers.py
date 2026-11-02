@@ -135,6 +135,8 @@ def check_definitions(spec_path: Path, entries: dict, root: Path = PROJECT_ROOT)
             continue
         canon = float(entries[d["canonical"]["key"]]["value"])
         subj = re.compile(d["subject"], re.I)
+        # lines about a different quantity that shares the words (e.g. held-out transfer tests)
+        excl = re.compile(d["exclude"], re.I) if d.get("exclude") else None
         for v in d["variants"]:
             val = float(entries[v["key"]]["value"])
             if abs(val - canon) < 5e-4:
@@ -143,7 +145,7 @@ def check_definitions(spec_path: Path, entries: dict, root: Path = PROJECT_ROOT)
             qual = re.compile(v["qualifier"], re.I)
             for f in files:
                 for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
-                    if not subj.search(line) or qual.search(line):
+                    if not subj.search(line) or qual.search(line) or (excl and excl.search(line)):
                         continue
                     for m in NUM_RE.finditer(line):
                         tok, pct = m.group(1), bool(m.group(2))

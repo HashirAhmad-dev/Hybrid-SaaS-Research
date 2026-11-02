@@ -95,7 +95,8 @@
      "name": "the same model at a label-free 5 percent validation alert budget (D-029)",
      "qualifier": "budget|label-free"
     }
-   ]
+   ],
+   "exclude": "held-out|held out|without slow-drift|without malicious|simulator to CERT|applied to CERT|applied unchanged"
   },
   {
    "id": "supervised_boosting_malicious_episode_recall",
@@ -115,7 +116,8 @@
      "name": "the same at a label-free 1 percent alert budget (D-029)",
      "qualifier": "budget|label-free|1 percent"
     }
-   ]
+   ],
+   "exclude": "held-out|held out|without slow-drift|without malicious|simulator to CERT|applied to CERT|applied unchanged"
   }
  ]
 }
