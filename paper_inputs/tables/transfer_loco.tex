@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Leave one attack class out: the probe is trained and its threshold chosen without any hour of the held-out class, then scored on that class in test. In-distribution values train on all four classes (D-028). Isolation Forest needs no labels. Mean over 10 datasets.}
+\label{tab:loco}
+\begin{tabular}{lcccccc}
+\hline
+Held-out class & Probe & AUC trained & AUC held out & Ep. rec. trained & Ep. rec. held out & IF AUC \\
+\hline
+malicious insider & logistic & 0.875 & 0.314 & 0.733 & 0.000 & 0.560 \\
+malicious insider & boosting & 0.901 & 0.510 & 0.900 & 0.000 & 0.560 \\
+compromised account & logistic & 0.996 & 0.925 & 0.989 & 0.822 & 1.000 \\
+compromised account & boosting & 1.000 & 0.882 & 1.000 & 0.544 & 1.000 \\
+negligent insider & logistic & 0.975 & 0.313 & 0.864 & 0.045 & 0.999 \\
+negligent insider & boosting & 1.000 & 0.998 & 0.991 & 0.873 & 0.999 \\
+overscoped thirdparty & logistic & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 \\
+overscoped thirdparty & boosting & 1.000 & 0.991 & 1.000 & 0.740 & 1.000 \\
+\hline
+\end{tabular}
+\end{table}

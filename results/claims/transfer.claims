@@ -1,0 +1,19 @@
+# F1 transfer tests (D-031)
+LOCO boosting malicious AUC in-dist | transfer.loco.probe_boosting.malicious_insider.in_distribution.auc.mean | 0.901
+LOCO boosting malicious AUC held | transfer.loco.probe_boosting.malicious_insider.held_out.auc.mean | 0.510
+LOCO logistic malicious AUC in-dist | transfer.loco.probe_logistic.malicious_insider.in_distribution.auc.mean | 0.875
+LOCO logistic malicious AUC held | transfer.loco.probe_logistic.malicious_insider.held_out.auc.mean | 0.314
+LOCO boosting malicious episode recall held | transfer.loco.probe_boosting.malicious_insider.held_out.episode_recall.mean | 0.000
+LOCO logistic malicious episode recall held | transfer.loco.probe_logistic.malicious_insider.held_out.episode_recall.mean | 0.000
+LOCO IF malicious AUC | transfer.loco.iforest_reference.malicious_insider.auc.mean | 0.560
+LOCO logistic negligent AUC held | transfer.loco.probe_logistic.negligent_insider.held_out.auc.mean | 0.313
+LOCO logistic negligent episode recall held | transfer.loco.probe_logistic.negligent_insider.held_out.episode_recall.mean | 0.045
+LOCO boosting negligent AUC held | transfer.loco.probe_boosting.negligent_insider.held_out.auc.mean | 0.998
+LOCO boosting negligent episode recall held | transfer.loco.probe_boosting.negligent_insider.held_out.episode_recall.mean | 0.873
+LOCO boosting compromised episode recall held | transfer.loco.probe_boosting.compromised_account.held_out.episode_recall.mean | 0.544
+Sim to CERT boosting AUC | transfer.sim_to_cert.probe_boosting.auc | 0.246
+Sim to CERT logistic AUC | transfer.sim_to_cert.probe_logistic.auc | 0.365
+Sim to CERT boosting recall | transfer.sim_to_cert.probe_boosting.recall | 0.000
+Sim to CERT logistic recall | transfer.sim_to_cert.probe_logistic.recall | 0.000
+CERT IF AUC (same rule) | transfer.sim_to_cert.iforest_on_cert.auc | 0.732
+CERT IF scenario 2 episodes (same rule) | transfer.sim_to_cert.iforest_on_cert.scenario2_episode_recall | 1.00

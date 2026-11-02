@@ -1,0 +1,75 @@
+{
+ "results": {
+  "probe_logistic": {
+   "auc": 0.36470268077655743,
+   "average_precision": 0.003600089376661399,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "fpr": 0.007609482585991774,
+   "scenario2_episode_recall": 0.0
+  },
+  "probe_boosting": {
+   "auc": 0.2457420832580647,
+   "average_precision": 0.003057452519588508,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "fpr": 0.008410480752938277,
+   "scenario2_episode_recall": 0.0
+  },
+  "iforest_on_cert": {
+   "auc": 0.7323939575984432,
+   "average_precision": 0.016927873467817857,
+   "precision": 0.01726844583987441,
+   "recall": 0.03333333333333333,
+   "f1": 0.022750775594622547,
+   "fpr": 0.009642785625163665,
+   "scenario2_episode_recall": 1.0
+  },
+  "_meta": {
+   "train_hours_simulator": 105681,
+   "train_positive_hours_simulator": 4251,
+   "minutes": 0.40024520556132,
+   "decision": "docs/DECISIONS.md D-031"
+  }
+ },
+ "provenance": {
+  "script": "evaluation/supervised_transfer.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\supervised_transfer.py cert",
+  "seeds": {
+   "data_seeds": [
+    42,
+    7,
+    2024,
+    1,
+    13,
+    99,
+    123,
+    314,
+    777,
+    1001
+   ],
+   "models": 42
+  },
+  "date_utc": "2026-11-02T19:54:49+00:00",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": null
+ }
+}

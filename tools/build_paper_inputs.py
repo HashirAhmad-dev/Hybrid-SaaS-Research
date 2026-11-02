@@ -214,6 +214,31 @@ def main() -> None:
                 readme.append(f"| `tables/{name}.tex` | Label curve, {mname}, {budget} percent budget "
                               f"(from `{pre}.summary.*`) | `tools/build_paper_inputs.py` |")
 
+    # transfer tests for the supervised probes (D-031, F1)
+    if g("transfer.loco.probe_boosting.malicious_insider.held_out.auc.mean") is not None:
+        tl = lambda m, c, w, k: f3(g(f"transfer.loco.{m}.{c}.{w}.{k}.mean"))
+        rows = [[c.replace("_", " "), mn, tl(m, c, "in_distribution", "auc"), tl(m, c, "held_out", "auc"),
+                 tl(m, c, "in_distribution", "episode_recall"), tl(m, c, "held_out", "episode_recall"),
+                 f3(g(f"transfer.loco.iforest_reference.{c}.auc.mean"))]
+                for c in ("malicious_insider", "compromised_account", "negligent_insider", "overscoped_thirdparty")
+                for m, mn in (("probe_logistic", "logistic"), ("probe_boosting", "boosting"))]
+        table("transfer_loco", "Leave one attack class out: the probe is trained and its threshold chosen without "
+              "any hour of the held-out class, then scored on that class in test. In-distribution values train on all "
+              "four classes (D-028). Isolation Forest needs no labels. Mean over 10 datasets.", "tab:loco",
+              ["Held-out class", "Probe", "AUC trained", "AUC held out", "Ep. rec. trained", "Ep. rec. held out",
+               "IF AUC"], rows)
+        st = lambda m, k: f3(g(f"transfer.sim_to_cert.{m}.{k}"))
+        rows = [[n, st(m, "auc"), st(m, "precision"), st(m, "recall"), st(m, "f1"), st(m, "fpr"),
+                 st(m, "scenario2_episode_recall")]
+                for n, m in (("Logistic, trained on simulator", "probe_logistic"),
+                             ("Boosting, trained on simulator", "probe_boosting"),
+                             ("Isolation Forest, fitted on CERT", "iforest_on_cert"))]
+        table("transfer_sim_to_cert", "Probes trained on the 10 simulator datasets, applied unchanged to CERT r4.2 test "
+              "hours. Threshold: 99th percentile of CERT validation scores (no CERT labels).", "tab:simcert",
+              ["Model", "AUC", "Precision", "Recall", "F1", "FPR", "Scenario 2 ep. rec."], rows)
+        readme.append("| `tables/transfer_loco.tex`, `tables/transfer_sim_to_cert.tex` | Supervised transfer tests "
+                      "(from `transfer.*`) | `tools/build_paper_inputs.py` |")
+
     # the may / must-not claim lists live in docs/FIXES_SUMMARY.md section 5; copy them, never edit the copy
     fs = (PROJECT_ROOT / "docs" / "FIXES_SUMMARY.md").read_text(encoding="utf-8")
     sec = fs[fs.index("## 5. Claims the paper may make"):fs.index("## 6.")].rstrip()

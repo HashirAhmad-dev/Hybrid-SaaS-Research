@@ -1,0 +1,4 @@
+Model,AUC,Precision,Recall,F1,FPR,Scenario 2 ep. rec.
+"Logistic, trained on simulator",0.365,0.000,0.000,0.000,0.008,0.000
+"Boosting, trained on simulator",0.246,0.000,0.000,0.000,0.008,0.000
+"Isolation Forest, fitted on CERT",0.732,0.017,0.033,0.023,0.010,1.000

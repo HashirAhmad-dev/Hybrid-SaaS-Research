@@ -25,6 +25,7 @@ All values are means over the 10 independently generated datasets unless marked.
 | On CERT r4.2, a community benchmark mapped onto our features, the engine is much weaker (hybrid F1 0.057, AUC 0.733), which bounds how far our simulator results generalise. | `results/claims/cert.claims` |
 | On CERT the six features carry the signal, but unsupervised anomaly scores do not find it: a gradient-boosting model trained on labelled TRAIN incidents reaches test AUC 0.987 (F1 0.339) on the same features, against 0.732 for Isolation Forest. Adding 18 richer features does not help either kind of detector. The gap is between "unusual" and "malicious", not a lack of features. | `results/claims/cert_rich.claims` |
 | The same holds on our 10 generated datasets: a gradient-boosting model trained on labelled TRAIN incidents reaches AUC 0.951 ± 0.021 and F1 0.785 ± 0.043, against 0.821 and 0.629 for the hybrid, and wins in 10 of 10 datasets. It finds 0.900 of slow malicious-insider episodes, where the hybrid finds 0.117. On users never attacked in TRAIN it finds 25 of 27 episodes. Labelled incidents, not a different unsupervised model, are what closes the slow-drift gap. | `results/claims/supervised.claims` |
+| A supervised layer trained on one attack type does not catch another, and a layer trained on the simulator does not work on CERT (held-out slow drift: 0.000 of episodes; simulator to CERT AUC 0.246); unsupervised detectors and CUSUM must stay on. | `results/claims/transfer.claims` |
 | About 10 to 20 labelled incidents are enough for a simple supervised layer. With 10 confirmed incidents, logistic regression ranks attacks better than Isolation Forest (AUC 0.819 against 0.783) and, at a 5 percent label-free alert budget, finds 0.657 of slow-insider episodes against 0.283; with 20 it reaches F1 0.525 against 0.470. Gradient boosting needs about 50 incidents and is unstable below that. | `results/claims/label_curve.claims` |
 
 ### Must not make
@@ -42,6 +43,7 @@ All values are means over the 10 independently generated datasets unless marked.
 - That episode recall alone shows skill on CERT (N-053).
 - That richer features or a bigger unsupervised model would fix CERT detection (N-061, N-062), or that the supervised probe is deployable without labelled incidents (N-064).
 - That the supervised scores (AUC 0.951, 0.987 on CERT) are what a deployment would see: the probes learn from the same simulator's attacks, and a new deployment has no labels (N-067).
+- That the supervised layer detects new attack types or transfers between environments (N-071, N-072), or that it can replace the unsupervised detectors (N-073).
 - That a few labelled incidents suffice: 1 to 5 make the supervised layer worse than Isolation Forest (N-068). Also not that slow drift is caught at any alert budget: at 1 percent, below the attack share, it is missed entirely (N-070).
 - That federated learning, differential privacy or a usability study was done.
 - That "existing DLP ignores behaviour" (Microsoft Purview Adaptive Protection uses insider-risk levels in DLP).

@@ -1,0 +1,898 @@
+{
+ "summary": {
+  "probe_logistic": {
+   "malicious_insider": {
+    "held_out": {
+     "auc": {
+      "mean": 0.3141630277583402,
+      "sd": 0.11930394210054289
+     },
+     "recall": {
+      "mean": 0.0,
+      "sd": 0.0
+     },
+     "episode_recall": {
+      "mean": 0.0,
+      "sd": 0.0
+     },
+     "test_fpr": {
+      "mean": 0.0004010093673014861,
+      "sd": 0.0003878667562843288
+     }
+    },
+    "in_distribution": {
+     "auc": {
+      "mean": 0.8754949260593223,
+      "sd": 0.028914275702026978
+     },
+     "recall": {
+      "mean": 0.24277901489415882,
+      "sd": 0.13740741496498987
+     },
+     "episode_recall": {
+      "mean": 0.7333333333333334,
+      "sd": 0.2383067843280802
+     }
+    }
+   },
+   "compromised_account": {
+    "held_out": {
+     "auc": {
+      "mean": 0.9248825517134771,
+      "sd": 0.13687522611884084
+     },
+     "recall": {
+      "mean": 0.7507290095525391,
+      "sd": 0.28850286849667317
+     },
+     "episode_recall": {
+      "mean": 0.8222222222222222,
+      "sd": 0.2576670686063124
+     },
+     "test_fpr": {
+      "mean": 0.02532146902803799,
+      "sd": 0.006341567278123607
+     }
+    },
+    "in_distribution": {
+     "auc": {
+      "mean": 0.9958787389429391,
+      "sd": 0.0021352470702922775
+     },
+     "recall": {
+      "mean": 0.9767973856209151,
+      "sd": 0.056612400609516986
+     },
+     "episode_recall": {
+      "mean": 0.9888888888888889,
+      "sd": 0.03513641844631534
+     }
+    }
+   },
+   "negligent_insider": {
+    "held_out": {
+     "auc": {
+      "mean": 0.31347858817309093,
+      "sd": 0.12958648172401016
+     },
+     "recall": {
+      "mean": 0.029166666666666664,
+      "sd": 0.04046624700631881
+     },
+     "episode_recall": {
+      "mean": 0.045454545454545456,
+      "sd": 0.0642824346533225
+     },
+     "test_fpr": {
+      "mean": 0.010549270601708323,
+      "sd": 0.005345039923754
+     }
+    },
+    "in_distribution": {
+     "auc": {
+      "mean": 0.9751711210860258,
+      "sd": 0.026687369191437448
+     },
+     "recall": {
+      "mean": 0.7978700427539437,
+      "sd": 0.12174299561882684
+     },
+     "episode_recall": {
+      "mean": 0.8636363636363636,
+      "sd": 0.14373989364401724
+     }
+    }
+   },
+   "overscoped_thirdparty": {
+    "held_out": {
+     "auc": {
+      "mean": 0.9996051689102362,
+      "sd": 0.0005109369123952082
+     },
+     "recall": {
+      "mean": 1.0,
+      "sd": 0.0
+     },
+     "episode_recall": {
+      "mean": 1.0,
+      "sd": 0.0
+     },
+     "test_fpr": {
+      "mean": 0.02454187021336592,
+      "sd": 0.007029503702149345
+     }
+    },
+    "in_distribution": {
+     "auc": {
+      "mean": 0.9996264861980423,
+      "sd": 0.000497503286963925
+     },
+     "recall": {
+      "mean": 1.0,
+      "sd": 0.0
+     },
+     "episode_recall": {
+      "mean": 1.0,
+      "sd": 0.0
+     }
+    }
+   }
+  },
+  "probe_boosting": {
+   "malicious_insider": {
+    "held_out": {
+     "auc": {
+      "mean": 0.5102099385447824,
+      "sd": 0.08865462818109499
+     },
+     "recall": {
+      "mean": 0.0,
+      "sd": 0.0
+     },
+     "episode_recall": {
+      "mean": 0.0,
+      "sd": 0.0
+     },
+     "test_fpr": {
+      "mean": 0.00026623149717290123,
+      "sd": 0.00042838050856979816
+     }
+    },
+    "in_distribution": {
+     "auc": {
+      "mean": 0.9008183791674075,
+      "sd": 0.041882061907711994
+     },
+     "recall": {
+      "mean": 0.3713264537923487,
+      "sd": 0.1144863390258195
+     },
+     "episode_recall": {
+      "mean": 0.9,
+      "sd": 0.08606629658238703
+     }
+    }
+   },
+   "compromised_account": {
+    "held_out": {
+     "auc": {
+      "mean": 0.881583054493519,
+      "sd": 0.09151043204586393
+     },
+     "recall": {
+      "mean": 0.4116043652769659,
+      "sd": 0.18287631161283238
+     },
+     "episode_recall": {
+      "mean": 0.5444444444444445,
+      "sd": 0.2309994982150026
+     },
+     "test_fpr": {
+      "mean": 0.0022381290585892855,
+      "sd": 0.001497475762160563
+     }
+    },
+    "in_distribution": {
+     "auc": {
+      "mean": 0.999794557727219,
+      "sd": 0.00030154414069070507
+     },
+     "recall": {
+      "mean": 0.9891176470588234,
+      "sd": 0.023036086562641066
+     },
+     "episode_recall": {
+      "mean": 1.0,
+      "sd": 0.0
+     }
+    }
+   },
+   "negligent_insider": {
+    "held_out": {
+     "auc": {
+      "mean": 0.997724952241694,
+      "sd": 0.0028785363043569647
+     },
+     "recall": {
+      "mean": 0.8270848690353334,
+      "sd": 0.2184622730679081
+     },
+     "episode_recall": {
+      "mean": 0.8727272727272727,
+      "sd": 0.19260907372206912
+     },
+     "test_fpr": {
+      "mean": 0.0021903414647515716,
+      "sd": 0.0015552765871583208
+     }
+    },
+    "in_distribution": {
+     "auc": {
+      "mean": 0.9998874665560242,
+      "sd": 0.00019243526316387656
+     },
+     "recall": {
+      "mean": 0.99375,
+      "sd": 0.01976423537605237
+     },
+     "episode_recall": {
+      "mean": 0.990909090909091,
+      "sd": 0.02874797872880346
+     }
+    }
+   },
+   "overscoped_thirdparty": {
+    "held_out": {
+     "auc": {
+      "mean": 0.9913721600814608,
+      "sd": 0.010969569360053544
+     },
+     "recall": {
+      "mean": 0.5975303643724696,
+      "sd": 0.3913339232515301
+     },
+     "episode_recall": {
+      "mean": 0.74,
+      "sd": 0.3893013685508382
+     },
+     "test_fpr": {
+      "mean": 0.0020213252354014228,
+      "sd": 0.0016234439270837592
+     }
+    },
+    "in_distribution": {
+     "auc": {
+      "mean": 0.9999486483213473,
+      "sd": 0.00010951795115845438
+     },
+     "recall": {
+      "mean": 1.0,
+      "sd": 0.0
+     },
+     "episode_recall": {
+      "mean": 1.0,
+      "sd": 0.0
+     }
+    }
+   }
+  },
+  "iforest_reference": {
+   "malicious_insider": {
+    "auc": {
+     "mean": 0.5596764077581982
+    },
+    "episode_recall": {
+     "mean": 0.03333333333333333
+    }
+   },
+   "compromised_account": {
+    "auc": {
+     "mean": 0.9999083091864908
+    },
+    "episode_recall": {
+     "mean": 1.0
+    }
+   },
+   "negligent_insider": {
+    "auc": {
+     "mean": 0.9993537025190534
+    },
+    "episode_recall": {
+     "mean": 0.9181818181818182
+    }
+   },
+   "overscoped_thirdparty": {
+    "auc": {
+     "mean": 0.9997208525571846
+    },
+    "episode_recall": {
+     "mean": 1.0
+    }
+   }
+  },
+  "_meta": {
+   "minutes": 1.3499781330426535,
+   "decision": "docs/DECISIONS.md D-031"
+  }
+ },
+ "per_dataset": {
+  "42": {
+   "probe_logistic": {
+    "malicious_insider": {
+     "auc": 0.4212731191767487,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0004432624113475177
+    },
+    "compromised_account": {
+     "auc": 0.7678668848881615,
+     "recall": 0.46153846153846156,
+     "episode_recall": 0.5555555555555556,
+     "test_fpr": 0.028368794326241134
+    },
+    "negligent_insider": {
+     "auc": 0.5765366430260047,
+     "recall": 0.1111111111111111,
+     "episode_recall": 0.18181818181818182,
+     "test_fpr": 0.016400709219858155
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9995250759878419,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.028812056737588652
+    }
+   },
+   "probe_boosting": {
+    "malicious_insider": {
+     "auc": 0.37549541093032957,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0013297872340425532
+    },
+    "compromised_account": {
+     "auc": 0.6813966175668303,
+     "recall": 0.46153846153846156,
+     "episode_recall": 0.5555555555555556,
+     "test_fpr": 0.0017730496453900709
+    },
+    "negligent_insider": {
+     "auc": 0.9998768715524035,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.002216312056737589
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9994617527862208,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.0017730496453900709
+    }
+   }
+  },
+  "7": {
+   "probe_logistic": {
+    "malicious_insider": {
+     "auc": 0.3843507630723042,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0008756567425569177
+    },
+    "compromised_account": {
+     "auc": 0.9933778458844134,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.026707530647985988
+    },
+    "negligent_insider": {
+     "auc": 0.30322351138353765,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.010507880910683012
+    },
+    "overscoped_thirdparty": {
+     "auc": 1.0,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.02933450087565674
+    }
+   },
+   "probe_boosting": {
+    "malicious_insider": {
+     "auc": 0.5718090651321824,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.00043782837127845885
+    },
+    "compromised_account": {
+     "auc": 0.9738397548161121,
+     "recall": 0.3125,
+     "episode_recall": 0.3333333333333333,
+     "test_fpr": 0.0008756567425569177
+    },
+    "negligent_insider": {
+     "auc": 0.9924474605954466,
+     "recall": 0.625,
+     "episode_recall": 0.7272727272727273,
+     "test_fpr": 0.0008756567425569177
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9646526561587857,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0
+    }
+   }
+  },
+  "2024": {
+   "probe_logistic": {
+    "malicious_insider": {
+     "auc": 0.3670648272768057,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0
+    },
+    "compromised_account": {
+     "auc": 0.9906315150555511,
+     "recall": 0.8235294117647058,
+     "episode_recall": 0.8888888888888888,
+     "test_fpr": 0.012113055181695828
+    },
+    "negligent_insider": {
+     "auc": 0.2301744385506558,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.004486316733961417
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9985160644649205,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.01031852848811126
+    }
+   },
+   "probe_boosting": {
+    "malicious_insider": {
+     "auc": 0.6312341109615672,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0
+    },
+    "compromised_account": {
+     "auc": 0.85951231098092,
+     "recall": 0.35294117647058826,
+     "episode_recall": 0.5555555555555556,
+     "test_fpr": 0.00493494840735756
+    },
+    "negligent_insider": {
+     "auc": 0.9960150951363048,
+     "recall": 0.5882352941176471,
+     "episode_recall": 0.5454545454545454,
+     "test_fpr": 0.001794526693584567
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9881285157193637,
+     "recall": 0.6153846153846154,
+     "episode_recall": 1.0,
+     "test_fpr": 0.0026917900403768506
+    }
+   }
+  },
+  "1": {
+   "probe_logistic": {
+    "malicious_insider": {
+     "auc": 0.48303395081951866,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0008798944126704796
+    },
+    "compromised_account": {
+     "auc": 0.9935628777178318,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.03563572371315442
+    },
+    "negligent_insider": {
+     "auc": 0.3493809314310854,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0030796304443466782
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9999266754656108,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.01891772987241531
+    }
+   },
+   "probe_boosting": {
+    "malicious_insider": {
+     "auc": 0.5576190431616291,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0004399472063352398
+    },
+    "compromised_account": {
+     "auc": 0.8369532498205479,
+     "recall": 0.2631578947368421,
+     "episode_recall": 0.3333333333333333,
+     "test_fpr": 0.0017597888253409592
+    },
+    "negligent_insider": {
+     "auc": 0.9998114511972849,
+     "recall": 0.9285714285714286,
+     "episode_recall": 1.0,
+     "test_fpr": 0.0017597888253409592
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9996089358165909,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.0035195776506819184
+    }
+   }
+  },
+  "13": {
+   "probe_logistic": {
+    "malicious_insider": {
+     "auc": 0.34510791366906474,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0008992805755395684
+    },
+    "compromised_account": {
+     "auc": 0.9726468824940048,
+     "recall": 0.7222222222222222,
+     "episode_recall": 0.7777777777777778,
+     "test_fpr": 0.02877697841726619
+    },
+    "negligent_insider": {
+     "auc": 0.326533510034078,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.01618705035971223
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9989623685666851,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.03012589928057554
+    }
+   },
+   "probe_boosting": {
+    "malicious_insider": {
+     "auc": 0.5158992805755396,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0
+    },
+    "compromised_account": {
+     "auc": 0.8961705635491607,
+     "recall": 0.05555555555555555,
+     "episode_recall": 0.1111111111111111,
+     "test_fpr": 0.0040467625899280575
+    },
+    "negligent_insider": {
+     "auc": 0.9932080651268459,
+     "recall": 0.3684210526315789,
+     "episode_recall": 0.5454545454545454,
+     "test_fpr": 0.005845323741007194
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9918372993912562,
+     "recall": 0.9230769230769231,
+     "episode_recall": 1.0,
+     "test_fpr": 0.00539568345323741
+    }
+   }
+  },
+  "99": {
+   "probe_logistic": {
+    "malicious_insider": {
+     "auc": 0.37552308802308804,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0
+    },
+    "compromised_account": {
+     "auc": 0.9950019677292404,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.022510822510822513
+    },
+    "negligent_insider": {
+     "auc": 0.25223665223665226,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.009523809523809525
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9994805194805195,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.022510822510822513
+    }
+   },
+   "probe_boosting": {
+    "malicious_insider": {
+     "auc": 0.41364989177489175,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0
+    },
+    "compromised_account": {
+     "auc": 0.9829988193624557,
+     "recall": 0.6363636363636364,
+     "episode_recall": 0.6666666666666666,
+     "test_fpr": 0.0012987012987012987
+    },
+    "negligent_insider": {
+     "auc": 1.0,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.003463203463203463
+    },
+    "overscoped_thirdparty": {
+     "auc": 1.0,
+     "recall": 0.55,
+     "episode_recall": 0.8,
+     "test_fpr": 0.0
+    }
+   }
+  },
+  "123": {
+   "probe_logistic": {
+    "malicious_insider": {
+     "auc": 0.24831393613846614,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0
+    },
+    "compromised_account": {
+     "auc": 0.9957343725314656,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.02730528200537153
+    },
+    "negligent_insider": {
+     "auc": 0.15588630259623992,
+     "recall": 0.0625,
+     "episode_recall": 0.09090909090909091,
+     "test_fpr": 0.017905102954341987
+    },
+    "overscoped_thirdparty": {
+     "auc": 1.0,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.03088630259623993
+    }
+   },
+   "probe_boosting": {
+    "malicious_insider": {
+     "auc": 0.5133641698995325,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0
+    },
+    "compromised_account": {
+     "auc": 0.9387540154826478,
+     "recall": 0.4117647058823529,
+     "episode_recall": 0.5555555555555556,
+     "test_fpr": 0.0040286481647269475
+    },
+    "negligent_insider": {
+     "auc": 0.9975100716204118,
+     "recall": 0.9375,
+     "episode_recall": 0.9090909090909091,
+     "test_fpr": 0.0004476275738585497
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.988779468815279,
+     "recall": 0.06666666666666667,
+     "episode_recall": 0.2,
+     "test_fpr": 0.0017905102954341987
+    }
+   }
+  },
+  "314": {
+   "probe_logistic": {
+    "malicious_insider": {
+     "auc": 0.2528927290182406,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.00045475216007276033
+    },
+    "compromised_account": {
+     "auc": 0.9816835935526249,
+     "recall": 0.8333333333333334,
+     "episode_recall": 1.0,
+     "test_fpr": 0.02910413824465666
+    },
+    "negligent_insider": {
+     "auc": 0.48420999444191803,
+     "recall": 0.05555555555555555,
+     "episode_recall": 0.09090909090909091,
+     "test_fpr": 0.01182355616189177
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9996409851367847,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.03274215552523874
+    }
+   },
+   "probe_boosting": {
+    "malicious_insider": {
+     "auc": 0.6299075337274519,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.00045475216007276033
+    },
+    "compromised_account": {
+     "auc": 0.9489161740184933,
+     "recall": 0.6666666666666666,
+     "episode_recall": 0.8888888888888888,
+     "test_fpr": 0.0009095043201455207
+    },
+    "negligent_insider": {
+     "auc": 0.9996715678843919,
+     "recall": 0.9444444444444444,
+     "episode_recall": 1.0,
+     "test_fpr": 0.001364256480218281
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9972236183911347,
+     "recall": 0.7368421052631579,
+     "episode_recall": 1.0,
+     "test_fpr": 0.0009095043201455207
+    }
+   }
+  },
+  "777": {
+   "probe_logistic": {
+    "malicious_insider": {
+     "auc": 0.10721617092584834,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0
+    },
+    "compromised_account": {
+     "auc": 0.9693087557603687,
+     "recall": 0.5,
+     "episode_recall": 0.7777777777777778,
+     "test_fpr": 0.02165898617511521
+    },
+    "negligent_insider": {
+     "auc": 0.25264299268094337,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.004147465437788019
+    },
+    "overscoped_thirdparty": {
+     "auc": 1.0,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.020737327188940093
+    }
+   },
+   "probe_boosting": {
+    "malicious_insider": {
+     "auc": 0.4537599497276917,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0
+    },
+    "compromised_account": {
+     "auc": 0.8924193548387097,
+     "recall": 0.4,
+     "episode_recall": 0.6666666666666666,
+     "test_fpr": 0.0013824884792626728
+    },
+    "negligent_insider": {
+     "auc": 0.9995662781241529,
+     "recall": 0.9411764705882353,
+     "episode_recall": 1.0,
+     "test_fpr": 0.0027649769585253456
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9846390168970814,
+     "recall": 0.16666666666666666,
+     "episode_recall": 0.4,
+     "test_fpr": 0.002304147465437788
+    }
+   }
+  },
+  "1001": {
+   "probe_logistic": {
+    "malicious_insider": {
+     "auc": 0.1568537794633171,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0004572473708276177
+    },
+    "compromised_account": {
+     "auc": 0.5890108215211096,
+     "recall": 0.16666666666666666,
+     "episode_recall": 0.2222222222222222,
+     "test_fpr": 0.021033379058070414
+    },
+    "negligent_insider": {
+     "auc": 0.20396090534979425,
+     "recall": 0.0625,
+     "episode_recall": 0.09090909090909091,
+     "test_fpr": 0.011431184270690443
+    },
+    "overscoped_thirdparty": {
+     "auc": 1.0,
+     "recall": 1.0,
+     "episode_recall": 1.0,
+     "test_fpr": 0.021033379058070414
+    }
+   },
+   "probe_boosting": {
+    "malicious_insider": {
+     "auc": 0.439360929557008,
+     "recall": 0.0,
+     "episode_recall": 0.0,
+     "test_fpr": 0.0
+    },
+    "compromised_account": {
+     "auc": 0.8048696844993142,
+     "recall": 0.5555555555555556,
+     "episode_recall": 0.7777777777777778,
+     "test_fpr": 0.0013717421124828531
+    },
+    "negligent_insider": {
+     "auc": 0.9991426611796982,
+     "recall": 0.9375,
+     "episode_recall": 1.0,
+     "test_fpr": 0.0013717421124828531
+    },
+    "overscoped_thirdparty": {
+     "auc": 0.9993903368388966,
+     "recall": 0.9166666666666666,
+     "episode_recall": 1.0,
+     "test_fpr": 0.001828989483310471
+    }
+   }
+  }
+ },
+ "provenance": {
+  "script": "evaluation/supervised_transfer.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\supervised_transfer.py loco",
+  "seeds": {
+   "data_seeds": [
+    42,
+    7,
+    2024,
+    1,
+    13,
+    99,
+    123,
+    314,
+    777,
+    1001
+   ],
+   "models": 42
+  },
+  "date_utc": "2026-11-02T19:54:15+00:00",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": null
+ }
+}
