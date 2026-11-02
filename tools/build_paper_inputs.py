@@ -218,6 +218,11 @@ def main() -> None:
         "<!-- Copied from docs/FIXES_SUMMARY.md section 5 by tools/build_paper_inputs.py. Edit the source. -->\n\n"
         + sec + "\n", encoding="utf-8")
     readme.append("| `claims_may_must_not.md` | Claims the paper may and must not make, with evidence files | `tools/build_paper_inputs.py` |")
+    pc = fs[fs.index("### Primary claim"):fs.index("## 2. Task table")].rstrip()
+    (P / "primary_claim.md").write_text(
+        "<!-- Copied from docs/FIXES_SUMMARY.md section 1 by tools/build_paper_inputs.py. Edit the source. -->\n\n"
+        + pc + "\n", encoding="utf-8")
+    readme.append("| `primary_claim.md` | The paper's primary claim, its evidence chain and the limits to state with it | `tools/build_paper_inputs.py` |")
 
     from tools.claim_evidence import main as ce
     ce()

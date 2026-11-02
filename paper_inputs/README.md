@@ -35,4 +35,5 @@ Built by `python -m tools.build_paper_inputs`. Every number is in `numbers.json`
 | `tables/supervised.tex` | Supervised probes vs unsupervised detectors (from `supervised.summary.*`) | `tools/build_paper_inputs.py` |
 | `tables/label_curve.tex` | Label learning curve, 5 percent alert budget (from `labelcurve_b5.summary.*`) | `tools/build_paper_inputs.py` |
 | `claims_may_must_not.md` | Claims the paper may and must not make, with evidence files | `tools/build_paper_inputs.py` |
+| `primary_claim.md` | The paper's primary claim, its evidence chain and the limits to state with it | `tools/build_paper_inputs.py` |
 | `numbers.json` | Every claimed number with key, script, run, git hash | `tools/claim_evidence.py` |
