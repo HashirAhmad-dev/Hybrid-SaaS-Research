@@ -279,6 +279,7 @@ def stage_vlm(model: str, limit: int = 0, timeout: float = 300.0) -> None:
     sampler = GPUSampler()
     sampler.start()
     results = {}
+    n_new = 0
     for i, d in enumerate(docs, 1):
         p = doc_path(d)
         raw = p.read_bytes()
@@ -293,6 +294,7 @@ def stage_vlm(model: str, limit: int = 0, timeout: float = 300.0) -> None:
         msg = [{"role": "user", "content": [
             {"type": "text", "text": VLM_PROMPT_V2},
             {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{base64.b64encode(raw).decode()}"}}]}]
+        n_new += 1
         t0 = time.perf_counter()
         status, ents, usage, text = "error", [], {}, ""
         try:
@@ -318,10 +320,16 @@ def stage_vlm(model: str, limit: int = 0, timeout: float = 300.0) -> None:
         if i % 10 == 0:
             print(f"  {model}: {i}/{len(docs)}  last {el:.1f}s  gpu peak {sampler.peak} MiB", flush=True)
     sampler.stop_flag = True
+    peak = sampler.peak if sampler.ok else None
+    out = DATA / f"vlm_{slug}.json"
+    if n_new == 0 and out.exists():
+        # every answer came from the cache, so no inference ran: keep the peak measured
+        # by the run that produced the answers (D-026)
+        peak = json.loads(out.read_text(encoding="utf-8"))["_meta"].get("gpu_peak_mib_during_run", peak)
     meta = {"model": model, "prompt_hash": PROMPT_HASH, "endpoint": LMSTUDIO,
-            "gpu_peak_mib_during_run": sampler.peak if sampler.ok else None,
+            "gpu_peak_mib_during_run": peak,
             "n": len(results)}
-    save(DATA / f"vlm_{slug}.json", {"_meta": meta, **results})
+    save(out, {"_meta": meta, **results})
     print(json.dumps(meta))
 
 

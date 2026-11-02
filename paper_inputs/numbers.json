@@ -2,584 +2,584 @@
  "ablation.summary.ewma.auc.mean": {
   "as_written": "0.612",
   "claim": "EWMA AUC",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6115533665429466
  },
  "ablation.summary.hybrid_max.auc.mean": {
   "as_written": "0.855",
   "claim": "Hybrid max AUC",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.8550983314591962
  },
  "ablation.summary.hybrid_max.valf1_f1.mean": {
   "as_written": "0.605",
   "claim": "Hybrid max F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6051521586491468
  },
  "ablation.summary.hybrid_rankavg.valf1_f1.mean": {
   "as_written": "0.603",
   "claim": "Hybrid rankavg F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6030514830877263
  },
  "ablation.summary.hybrid_weighted.auc.mean": {
   "as_written": "0.821",
   "claim": "Hybrid weighted AUC",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.8214577979917552
  },
  "ablation.summary.hybrid_weighted.average_precision.mean": {
   "as_written": "0.578",
   "claim": "Hybrid weighted AP",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.5784142500694237
  },
  "ablation.summary.hybrid_weighted.per_class.malicious_insider.auc.mean": {
   "as_written": "0.640",
   "claim": "Malicious AUC hybrid",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6397571914596336
  },
  "ablation.summary.hybrid_weighted.per_class.malicious_insider.recall.mean": {
   "as_written": "0.027",
   "claim": "Malicious recall hybrid (val F1 thr)",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.026670648917207117
  },
  "ablation.summary.hybrid_weighted.valf1_f1.mean": {
   "as_written": "0.629",
   "claim": "Hybrid weighted F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6287004010162531
  },
  "ablation.summary.iforest.auc.mean": {
   "as_written": "0.779",
   "claim": "IF AUC",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.7787880609532483
  },
  "ablation.summary.iforest.valf1_f1.mean": {
   "as_written": "0.626",
   "claim": "IF F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6256573116751332
  },
  "ablation.summary.lof.auc.mean": {
   "as_written": "0.779",
   "claim": "LOF AUC",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.7794863374187208
  },
  "ablation.summary.lof.average_precision.mean": {
   "as_written": "0.246",
   "claim": "LOF AP",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.2461037774364317
  },
  "ablation.summary.lstm.auc.mean": {
   "as_written": "0.869",
   "claim": "LSTM AUC",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.8692572461644742
  },
  "ablation.summary.lstm.per_class.malicious_insider.auc.mean": {
   "as_written": "0.744",
   "claim": "Malicious AUC LSTM",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.7442727943601728
  },
  "ablation.summary.lstm.per_class.malicious_insider.recall.mean": {
   "as_written": "0.170",
   "claim": "Malicious recall LSTM (val F1 thr)",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.1698429706505426
  },
  "ablation.summary.lstm.valf1_f1.mean": {
   "as_written": "0.528",
   "claim": "LSTM F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.5282646740828846
  },
  "ablation.summary.lstm_nextstep.auc.mean": {
   "as_written": "0.825",
   "claim": "LSTM next-step AUC",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.8250574747166362
  },
  "ablation.summary.zscore.auc.mean": {
   "as_written": "0.849",
   "claim": "z-score AUC",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.8488987667038461
  },
  "ablation.summary.zscore.valf1_f1.mean": {
   "as_written": "0.554",
   "claim": "z-score F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "ablation_report-20261023T154932Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "ablation_report-20261102T181916Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.5535652526593359
  },
  "anomaly.multiseed.alpha.max": {
   "as_written": "0.80",
   "claim": "alpha max",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.8
  },
  "anomaly.multiseed.alpha.mean": {
   "as_written": "0.235",
   "claim": "alpha mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.23500000000000001
  },
  "anomaly.multiseed.alpha.min": {
   "as_written": "0",
   "claim": "alpha min",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.0
  },
  "anomaly.multiseed.auc_hybrid.mean": {
   "as_written": "0.821",
   "claim": "AUC hybrid mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.8214577979917552
  },
  "anomaly.multiseed.auc_if.mean": {
   "as_written": "0.779",
   "claim": "AUC IF mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.7787880609532483
  },
  "anomaly.multiseed.auc_if_malicious_insider.mean": {
   "as_written": "0.551",
   "claim": "Malicious insider AUC IF mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.5512621617843427
  },
  "anomaly.multiseed.auc_lstm.mean": {
   "as_written": "0.869",
   "claim": "AUC LSTM mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.8692572461644742
  },
  "anomaly.multiseed.auc_lstm_malicious_insider.mean": {
   "as_written": "0.744",
   "claim": "Malicious insider AUC LSTM mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.7442727943601728
  },
  "anomaly.multiseed.benign_burst_flag_rate_ewma.mean": {
   "as_written": "0.668",
   "claim": "Benign burst flag rate EWMA mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.6678479590333039
  },
  "anomaly.multiseed.benign_burst_flag_rate_hybrid.max": {
   "as_written": "0.148",
   "claim": "Benign burst flag rate hybrid max",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.14814814814814814
  },
  "anomaly.multiseed.benign_burst_flag_rate_hybrid.mean": {
   "as_written": "0.015",
   "claim": "Benign burst flag rate hybrid mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.014814814814814814
  },
  "anomaly.multiseed.enf_f1_recalibrated.mean": {
   "as_written": "0.438",
   "claim": "Enforcement F1 recalibrated mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.43816844878152306
  },
  "anomaly.multiseed.enf_f1_shipped_bands.mean": {
   "as_written": "0.4414",
   "claim": "cross-check T1.4 shipped bands F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.4413845302094498
  },
  "anomaly.multiseed.enf_f1_shipped_bands.sd": {
   "as_written": "0.060",
   "claim": "Enforcement F1 shipped bands sd",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.059760250791131765
  },
  "anomaly.multiseed.enf_fpr_shipped_bands.mean": {
   "as_written": "0.0445",
   "claim": "Enforcement FPR shipped bands mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.044497007158524386
  },
  "anomaly.multiseed.episode_recall_malicious_insider.mean": {
   "as_written": "0.133",
   "claim": "Malicious insider episode recall mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.13333333333333333
  },
  "anomaly.multiseed.f1_ewma_tuned.mean": {
   "as_written": "0.106",
   "claim": "EWMA F1 mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.1061245289745117
  },
  "anomaly.multiseed.f1_hybrid.mean": {
   "as_written": "0.635",
   "claim": "Hybrid F1 mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.6347775650793376
  },
  "anomaly.multiseed.f1_hybrid.sd": {
   "as_written": "0.049",
   "claim": "Hybrid F1 sd",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.04912004412025508
  },
  "anomaly.multiseed.f1_if_only.mean": {
   "as_written": "0.622",
   "claim": "IF-only F1 mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.6218928270355304
  },
  "anomaly.multiseed.f1_if_only.sd": {
   "as_written": "0.060",
   "claim": "IF-only F1 sd",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.06041453058726878
  },
  "anomaly.multiseed.f1_lstm_only.mean": {
   "as_written": "0.502",
   "claim": "LSTM-only F1 mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.5020650156974483
  },
  "anomaly.multiseed.insider_op_benign_burst_flag_rate.mean": {
   "as_written": "0.324",
   "claim": "Insider op benign burst flag rate mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.3242011125847333
  },
  "anomaly.multiseed.insider_op_malicious_recall.mean": {
   "as_written": "0.323",
   "claim": "Insider op malicious recall mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.3231057310093605
  },
  "anomaly.multiseed.recall_malicious_insider.mean": {
   "as_written": "0.029",
   "claim": "Malicious insider window recall mean",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 0.02875398225054045
  },
  "anomaly.multiseed.sbrs_beta_recalibrated.max": {
   "as_written": "8.0",
   "claim": "Recalibrated beta max",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 8.0
  },
  "anomaly.multiseed.sbrs_beta_recalibrated.min": {
   "as_written": "2.0",
   "claim": "Recalibrated beta min",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "multiseed-20261023T154653Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "multiseed-20261102T181654Z",
   "script": "evaluation/multiseed.py",
   "value": 2.0
  },
  "anomaly.s42.benign_burst.ewma_flag_rate": {
   "as_written": "0.5926",
   "claim": "Benign burst EWMA flag rate",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.5925925925925926
  },
  "anomaly.s42.benign_burst.hybrid_flag_rate": {
   "as_written": "0",
   "claim": "Benign burst hybrid flag rate",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.0
  },
  "anomaly.s42.dataset.active_sessions": {
   "as_written": "16297",
   "claim": "Active sessions",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 16297.0
  },
  "anomaly.s42.dataset.per_split.test.sessions": {
   "as_written": "2352",
   "claim": "Test sessions",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 2352.0
  },
  "anomaly.s42.dataset.positives_total": {
   "as_written": "641",
   "claim": "Positives",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 641.0
  },
  "anomaly.s42.dataset.scoreable_sessions": {
   "as_written": "15461",
   "claim": "Scoreable sessions",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 15461.0
  },
  "anomaly.s42.per_class_recall.malicious_insider.auc_lstm": {
   "as_written": "0.7443",
   "claim": "Malicious AUC LSTM",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.744307120011125
  },
  "anomaly.s42.per_class_recall.malicious_insider.hybrid_recall": {
   "as_written": "0.0196",
   "claim": "Malicious window recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.0196078431372549
  },
  "anomaly.s42.test_auc_overall.hybrid": {
   "as_written": "0.8270",
   "claim": "AUC hybrid",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.827042239213948
  },
  "anomaly.s42.test_auc_overall.if": {
   "as_written": "0.7953",
   "claim": "AUC IF",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.7953351248522459
  },
  "anomaly.s42.test_auc_overall.lstm": {
   "as_written": "0.8591",
   "claim": "AUC LSTM",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.8591441341607565
  },
  "anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.f1": {
   "as_written": "0.4754",
   "claim": "Enforcement F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.47540983606557374
  },
  "anomaly.s42.test_enforcement_bands.hybrid_alert_or_block.fp": {
   "as_written": "90",
   "claim": "Enforcement fp",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 90.0
  },
  "anomaly.s42.test_enforcement_bands.hybrid_block_only.f1": {
   "as_written": "0.3969",
   "claim": "BLOCK-only F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.39694656488549623
  },
  "anomaly.s42.test_enforcement_bands.paper_doc_bands_alert_or_block.f1": {
   "as_written": "0.1337",
   "claim": "Doc bands F1 (beta 0.5)",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.13365155131264916
  },
  "anomaly.s42.test_flag_level.ewma_tuned.f1": {
   "as_written": "0.1162",
   "claim": "EWMA F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.11618257261410789
  },
  "anomaly.s42.test_flag_level.hybrid.f1": {
   "as_written": "0.6286",
   "claim": "Hybrid F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.6285714285714286
  },
  "anomaly.s42.test_flag_level.hybrid.fpr": {
   "as_written": "0",
   "claim": "Hybrid FPR",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.0
  },
  "anomaly.s42.test_flag_level.if_only.f1": {
   "as_written": "0.6338",
   "claim": "IF-only F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.6338028169014085
  },
  "anomaly.s42.test_flag_level.lstm_only.f1": {
   "as_written": "0.3504",
   "claim": "LSTM-only F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.35036496350364965
  },
  "anomaly.s42.test_insider_oriented_operating_point.f1": {
   "as_written": "0.4511",
   "claim": "Insider op F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.4511278195488722
  },
  "anomaly.s42.test_insider_oriented_operating_point.malicious_insider_recall": {
   "as_written": "0.2941",
   "claim": "Insider op malicious recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.29411764705882354
  },
  "anomaly.s42.tuning.alpha": {
   "as_written": "0.25",
   "claim": "alpha",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.25
  },
  "anomaly.s42.tuning.tau_ewma": {
   "as_written": "2.5",
   "claim": "tau EWMA",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 2.5
  },
  "anomaly.s42.tuning.tau_hybrid": {
   "as_written": "0.75",
   "claim": "tau hybrid",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.75
  },
  "anomaly.s42.tuning.val_f1": {
   "as_written": "0.6897",
   "claim": "val F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "train_and_evaluate-20261023T153816Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "train_and_evaluate-20261102T180939Z",
   "script": "evaluation/train_and_evaluate.py",
   "value": 0.6896551724137931
  },
@@ -1754,368 +1754,368 @@
  "drift.summary.cusum.hybrid_only.f1.mean": {
   "as_written": "0.6348",
   "claim": "Hybrid only F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.6347775650793376
  },
  "drift.summary.cusum.hybrid_only.fpr.mean": {
   "as_written": "0.0025",
   "claim": "Hybrid only FPR",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.002545006383264642
  },
  "drift.summary.cusum.hybrid_only.malicious_episode_recall.mean": {
   "as_written": "0.1333",
   "claim": "Hybrid only malicious episode recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.13333333333333333
  },
  "drift.summary.cusum.hybrid_or_drift.f1.mean": {
   "as_written": "0.6188",
   "claim": "Hybrid OR CUSUM F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.6187845803927005
  },
  "drift.summary.cusum.hybrid_or_drift.fpr.mean": {
   "as_written": "0.0080",
   "claim": "Hybrid OR CUSUM FPR",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.008049682386389126
  },
  "drift.summary.cusum.hybrid_or_drift.malicious_episode_recall.mean": {
   "as_written": "0.5667",
   "claim": "Hybrid OR CUSUM malicious episode recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.5666666666666667
  },
  "drift.summary.cusum.hybrid_or_drift.recall.mean": {
   "as_written": "0.5319",
   "claim": "Hybrid OR CUSUM recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.5319382761962099
  },
  "drift.summary.cusum.per_class.malicious_insider.episode_recall.mean": {
   "as_written": "0.4833",
   "claim": "CUSUM malicious episode recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.4833333333333333
  },
  "drift.summary.cusum.per_class.malicious_insider.ttd_hours_median.mean": {
   "as_written": "8.9000",
   "claim": "CUSUM malicious ttd median hours",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 8.9
  },
  "drift.summary.cusum.test_false_alarm_rate_benign_bursts.mean": {
   "as_written": "0.2027",
   "claim": "CUSUM false alarm benign bursts",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.2027165610570783
  },
  "drift.summary.cusum.test_false_alarm_rate_ordinary_negatives.mean": {
   "as_written": "0.0032",
   "claim": "CUSUM false alarm ordinary negatives",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.003178666442934991
  },
  "drift.summary.ph.hybrid_or_drift.f1.mean": {
   "as_written": "0.5862",
   "claim": "Hybrid OR PH F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.5862217659988236
  },
  "drift.summary.ph.per_class.malicious_insider.episode_recall.mean": {
   "as_written": "0.4333",
   "claim": "PH malicious episode recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.4333333333333333
  },
  "drift.summary.supervised_probe.test_auc_malicious.mean": {
   "as_written": "0.8699",
   "claim": "Supervised probe malicious AUC",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.8699475418868676
  },
  "drift.summary.supervised_probe.test_malicious_window_recall.mean": {
   "as_written": "0.2140",
   "claim": "Supervised probe malicious window recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "drift_detector-20261023T155021Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.2140133432483245
  },
  "fusion.summary.additive.benign_alert_or_block_rate.mean": {
   "as_written": "0.0474",
   "claim": "additive benign alert-or-block",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.04739916936953432
  },
  "fusion.summary.additive.benign_burst_alert_or_block_rate.mean": {
   "as_written": "0.0556",
   "claim": "additive burst flag rate",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.05555555555555556
  },
  "fusion.summary.additive.f1.mean": {
   "as_written": "0.4605",
   "claim": "additive F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.4604514037014401
  },
  "fusion.summary.additive.low_S_high_A_escalated.sum": {
   "as_written": "33.0000",
   "claim": "additive low-S high-A escalated (sum)",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 33.0
  },
  "fusion.summary.additive.per_class_recall.malicious_insider.mean": {
   "as_written": "0.2554",
   "claim": "additive malicious recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.2554331329565998
  },
  "fusion.summary.additive.threat_recall.mean": {
   "as_written": "0.6303",
   "claim": "additive threat recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.6302753620063062
  },
  "fusion.summary.gated.benign_alert_or_block_rate.mean": {
   "as_written": "0.0471",
   "claim": "gated benign alert-or-block",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.047056701546706194
  },
  "fusion.summary.gated.benign_burst_alert_or_block_rate.mean": {
   "as_written": "0.0148",
   "claim": "gated burst flag rate",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.014814814814814814
  },
  "fusion.summary.gated.f1.mean": {
   "as_written": "0.4684",
   "claim": "gated F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.468446731241691
  },
  "fusion.summary.gated.low_S_high_A_escalated.sum": {
   "as_written": "35.0000",
   "claim": "gated low-S high-A escalated (sum)",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 35.0
  },
  "fusion.summary.gated.per_class_recall.malicious_insider.mean": {
   "as_written": "0.2795",
   "claim": "gated malicious recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.2795388328122997
  },
  "fusion.summary.gated.threat_recall.mean": {
   "as_written": "0.6420",
   "claim": "gated threat recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.6420482648299365
  },
  "fusion.summary.logistic.benign_alert_or_block_rate.mean": {
   "as_written": "0.0491",
   "claim": "logistic benign alert-or-block",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.049084855577074926
  },
  "fusion.summary.logistic.benign_burst_alert_or_block_rate.mean": {
   "as_written": "0.0949",
   "claim": "logistic burst flag rate",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.09490102171136654
  },
  "fusion.summary.logistic.f1.mean": {
   "as_written": "0.4524",
   "claim": "logistic F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.4523584135530217
  },
  "fusion.summary.logistic.low_S_high_A_escalated.sum": {
   "as_written": "35.0000",
   "claim": "logistic low-S high-A escalated (sum)",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 35.0
  },
  "fusion.summary.logistic.per_class_recall.malicious_insider.mean": {
   "as_written": "0.2450",
   "claim": "logistic malicious recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.24502181749553462
  },
  "fusion.summary.logistic.threat_recall.mean": {
   "as_written": "0.6274",
   "claim": "logistic threat recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.627439331332002
  },
  "fusion.summary.max.benign_alert_or_block_rate.mean": {
   "as_written": "0.0553",
   "claim": "max benign alert-or-block",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.05525076590225322
  },
  "fusion.summary.max.benign_burst_alert_or_block_rate.mean": {
   "as_written": "0.0000",
   "claim": "max burst flag rate",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.0
  },
  "fusion.summary.max.f1.mean": {
   "as_written": "0.2437",
   "claim": "max F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.24367132703177274
  },
  "fusion.summary.max.low_S_high_A_escalated.sum": {
   "as_written": "9.0000",
   "claim": "max low-S high-A escalated (sum)",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 9.0
  },
  "fusion.summary.max.per_class_recall.malicious_insider.mean": {
   "as_written": "0.1361",
   "claim": "max malicious recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.1361480805732996
  },
  "fusion.summary.max.threat_recall.mean": {
   "as_written": "0.3198",
   "claim": "max threat recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.31978209246810885
  },
  "fusion.summary.multiplicative.benign_alert_or_block_rate.mean": {
   "as_written": "0.0470",
   "claim": "multiplicative benign alert-or-block",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.0469521229388676
  },
  "fusion.summary.multiplicative.benign_burst_alert_or_block_rate.mean": {
   "as_written": "0.0000",
   "claim": "multiplicative burst flag rate",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.0
  },
  "fusion.summary.multiplicative.f1.mean": {
   "as_written": "0.4382",
   "claim": "multiplicative F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.43816844878152317
  },
  "fusion.summary.multiplicative.low_S_high_A_escalated.sum": {
   "as_written": "1.0000",
   "claim": "multiplicative low-S high-A escalated (sum)",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 1.0
  },
  "fusion.summary.multiplicative.low_S_high_A_threats.sum": {
   "as_written": "35.0000",
   "claim": "low-S high-A threats (sum)",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 35.0
  },
  "fusion.summary.multiplicative.per_class_recall.malicious_insider.mean": {
   "as_written": "0.2860",
   "claim": "multiplicative malicious recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.2859782267516936
  },
  "fusion.summary.multiplicative.threat_recall.mean": {
   "as_written": "0.5887",
   "claim": "multiplicative threat recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "sbrs_fusion-20261023T155027Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "sbrs_fusion-20261102T182008Z",
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.5887206495780595
  },
@@ -2194,2048 +2194,2048 @@
  "oppoints.summary.enforcement_per_dataset_alert_or_block.f1.mean": {
   "as_written": "0.4382",
   "claim": "enforcement_per_dataset_alert_or_block f1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.43816844878152306
  },
  "oppoints.summary.enforcement_per_dataset_alert_or_block.fpr.mean": {
   "as_written": "0.0470",
   "claim": "enforcement_per_dataset_alert_or_block fpr",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.0469521229388676
  },
  "oppoints.summary.enforcement_per_dataset_alert_or_block.recall.mean": {
   "as_written": "0.5887",
   "claim": "enforcement_per_dataset_alert_or_block recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.5887206495780595
  },
  "oppoints.summary.enforcement_shipped_alert_or_block.f1.mean": {
   "as_written": "0.4414",
   "claim": "cross-check: shipped bands F1 equals T1.4 key",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.4413845302094498
  },
  "oppoints.summary.enforcement_shipped_alert_or_block.fpr.mean": {
   "as_written": "0.0445",
   "claim": "enforcement_shipped_alert_or_block fpr",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.044497007158524386
  },
  "oppoints.summary.enforcement_shipped_alert_or_block.recall.mean": {
   "as_written": "0.5744",
   "claim": "enforcement_shipped_alert_or_block recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.5744475707491151
  },
  "oppoints.summary.enforcement_shipped_block_only.f1.mean": {
   "as_written": "0.4681",
   "claim": "enforcement_shipped_block_only f1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.4680981998079564
  },
  "oppoints.summary.enforcement_shipped_block_only.fpr.mean": {
   "as_written": "0.0055",
   "claim": "enforcement_shipped_block_only fpr",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.005507353811635182
  },
  "oppoints.summary.enforcement_shipped_block_only.recall.mean": {
   "as_written": "0.3453",
   "claim": "enforcement_shipped_block_only recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.3453182997297898
  },
  "oppoints.summary.f1_optimal_flag.f1.mean": {
   "as_written": "0.6348",
   "claim": "f1_optimal_flag f1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.6347775650793376
  },
  "oppoints.summary.f1_optimal_flag.fpr.mean": {
   "as_written": "0.0025",
   "claim": "f1_optimal_flag fpr",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.002545006383264642
  },
  "oppoints.summary.f1_optimal_flag.recall.mean": {
   "as_written": "0.4944",
   "claim": "f1_optimal_flag recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.4943850703127162
  },
  "oppoints.summary.hybrid_or_cusum_drift.f1.mean": {
   "as_written": "0.6188",
   "claim": "hybrid_or_cusum_drift f1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.6187845803927005
  },
  "oppoints.summary.hybrid_or_cusum_drift.fpr.mean": {
   "as_written": "0.0080",
   "claim": "hybrid_or_cusum_drift fpr",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.008049682386389126
  },
  "oppoints.summary.hybrid_or_cusum_drift.recall.mean": {
   "as_written": "0.5319",
   "claim": "hybrid_or_cusum_drift recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.5319382761962099
  },
  "oppoints.summary.insider_oriented_flag.f1.mean": {
   "as_written": "0.4710",
   "claim": "insider_oriented_flag f1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.4709931663027662
  },
  "oppoints.summary.insider_oriented_flag.fpr.mean": {
   "as_written": "0.0496",
   "claim": "insider_oriented_flag fpr",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.049633980723617036
  },
  "oppoints.summary.insider_oriented_flag.recall.mean": {
   "as_written": "0.6631",
   "claim": "insider_oriented_flag recall",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "operating_points-20261023T155029Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "operating_points-20261102T182010Z",
   "script": "evaluation/operating_points.py",
   "value": 0.6631482759335319
  },
  "pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.calib_tau": {
   "as_written": "0.8000",
   "claim": "funsd cascade easyocr_cpu+gemma calib_tau",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8
  },
  "pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1": {
   "as_written": "0.3313",
   "claim": "funsd cascade easyocr_cpu+gemma eval_at_calib_tau.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.33125778331257777
  },
  "pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1": {
   "as_written": "0.3770",
   "claim": "funsd cascade easyocr_cpu+gemma eval_at_tau_085.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.37696335078534027
  },
  "pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.eval_seconds_per_image": {
   "as_written": "25.2975",
   "claim": "funsd cascade easyocr_cpu+gemma eval_seconds_per_image",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 25.297537309395725
  },
  "pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.eval_vlm_share": {
   "as_written": "0.8389",
   "claim": "funsd cascade easyocr_cpu+gemma eval_vlm_share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8389261744966443
  },
  "pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.ocr_only.f1": {
   "as_written": "0.1121",
   "claim": "funsd cascade easyocr_cpu+gemma ocr_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.11205432937181664
  },
  "pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.router.eval.f1": {
   "as_written": "0.2412",
   "claim": "funsd router easyocr+gemma F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.24121779859484777
  },
  "pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.router.eval_vlm_share": {
   "as_written": "0.7315",
   "claim": "funsd router easyocr_cpu+gemma share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7315436241610739
  },
  "pii2.funsd.cascade.easyocr_cpu.gemma-3-4b-it.vlm_only.f1": {
   "as_written": "0.4065",
   "claim": "funsd cascade easyocr_cpu+gemma vlm_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.4065040650406504
  },
  "pii2.funsd.cascade.easyocr_cpu.qwen2-5-vl-7b-instruct.eval_at_calib_tau.f1": {
   "as_written": "0.122",
   "claim": "FUNSD cascade EasyOCR+7B F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.12177121771217712
  },
  "pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.calib_tau": {
   "as_written": "0.9900",
   "claim": "funsd cascade paddleocr_cpu+gemma calib_tau",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.99
  },
  "pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1": {
   "as_written": "0.3973",
   "claim": "funsd cascade paddleocr_cpu+gemma eval_at_calib_tau.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.3973154362416107
  },
  "pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1": {
   "as_written": "0.1864",
   "claim": "funsd cascade paddleocr_cpu+gemma eval_at_tau_085.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.18641390205371247
  },
  "pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.eval_seconds_per_image": {
   "as_written": "48.9452",
   "claim": "funsd cascade paddleocr_cpu+gemma eval_seconds_per_image",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 48.94517962483203
  },
  "pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.eval_vlm_share": {
   "as_written": "0.9732",
   "claim": "funsd cascade paddleocr_cpu+gemma eval_vlm_share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9731543624161074
  },
  "pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.ocr_only.f1": {
   "as_written": "0.1861",
   "claim": "funsd cascade paddleocr_cpu+gemma ocr_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.18611987381703468
  },
  "pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.router.eval_vlm_share": {
   "as_written": "1.0000",
   "claim": "funsd router paddleocr_cpu+gemma share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.funsd.cascade.paddleocr_cpu.gemma-3-4b-it.vlm_only.f1": {
   "as_written": "0.4065",
   "claim": "funsd cascade paddleocr_cpu+gemma vlm_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.4065040650406504
  },
  "pii2.funsd.cascade.paddleocr_cpu.qwen2-5-vl-7b-instruct.eval_at_calib_tau.f1": {
   "as_written": "0.138",
   "claim": "FUNSD cascade PaddleOCR+7B F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.1377672209026128
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio.all.f1": {
   "as_written": "0.1155",
   "claim": "funsd easyocr_cpu presidio all.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.11547344110854503
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio.all.precision": {
   "as_written": "0.0703",
   "claim": "funsd easyocr_cpu presidio all.precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.07027406886858749
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio.all.recall": {
   "as_written": "0.3236",
   "claim": "funsd easyocr_cpu presidio all.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.32362459546925565
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio.by_type.ADDRESS.recall": {
   "as_written": "0.2000",
   "claim": "funsd easyocr_cpu presidio by_type.ADDRESS.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.2
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio.by_type.PERSON.recall": {
   "as_written": "0.2459",
   "claim": "funsd easyocr_cpu presidio by_type.PERSON.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.2459016393442623
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio.by_type.PHONE.recall": {
   "as_written": "0.6500",
   "claim": "funsd easyocr_cpu presidio by_type.PHONE.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.65
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio_plus.all.f1": {
   "as_written": "0.1121",
   "claim": "funsd easyocr_cpu presidio_plus all.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.11205432937181664
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio_plus.all.precision": {
   "as_written": "0.0679",
   "claim": "funsd easyocr_cpu presidio_plus all.precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.06790123456790123
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio_plus.all.recall": {
   "as_written": "0.3204",
   "claim": "funsd easyocr_cpu presidio_plus all.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.32038834951456313
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio_plus.by_type.ADDRESS.recall": {
   "as_written": "0.0000",
   "claim": "funsd easyocr_cpu presidio_plus by_type.ADDRESS.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio_plus.by_type.PERSON.recall": {
   "as_written": "0.2459",
   "claim": "funsd easyocr_cpu presidio_plus by_type.PERSON.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.2459016393442623
  },
  "pii2.funsd.ocr.easyocr_cpu.presidio_plus.by_type.PHONE.recall": {
   "as_written": "0.6500",
   "claim": "funsd easyocr_cpu presidio_plus by_type.PHONE.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.65
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio.all.f1": {
   "as_written": "0.1904",
   "claim": "funsd paddleocr_cpu presidio all.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.19042495965572886
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio.all.precision": {
   "as_written": "0.1142",
   "claim": "funsd paddleocr_cpu presidio all.precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.11419354838709678
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio.all.recall": {
   "as_written": "0.5728",
   "claim": "funsd paddleocr_cpu presidio all.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.5728155339805825
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio.by_type.ADDRESS.recall": {
   "as_written": "0.0000",
   "claim": "funsd paddleocr_cpu presidio by_type.ADDRESS.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio.by_type.PERSON.recall": {
   "as_written": "0.5328",
   "claim": "funsd paddleocr_cpu presidio by_type.PERSON.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.5327868852459017
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio.by_type.PHONE.recall": {
   "as_written": "0.7833",
   "claim": "funsd paddleocr_cpu presidio by_type.PHONE.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7833333333333333
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio_plus.all.f1": {
   "as_written": "0.1861",
   "claim": "funsd paddleocr_cpu presidio_plus all.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.18611987381703468
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio_plus.all.precision": {
   "as_written": "0.1111",
   "claim": "funsd paddleocr_cpu presidio_plus all.precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.1111111111111111
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio_plus.all.recall": {
   "as_written": "0.5728",
   "claim": "funsd paddleocr_cpu presidio_plus all.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.5728155339805825
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio_plus.by_type.ADDRESS.recall": {
   "as_written": "0.0000",
   "claim": "funsd paddleocr_cpu presidio_plus by_type.ADDRESS.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio_plus.by_type.PERSON.recall": {
   "as_written": "0.5328",
   "claim": "funsd paddleocr_cpu presidio_plus by_type.PERSON.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.5327868852459017
  },
  "pii2.funsd.ocr.paddleocr_cpu.presidio_plus.by_type.PHONE.recall": {
   "as_written": "0.7833",
   "claim": "funsd paddleocr_cpu presidio_plus by_type.PHONE.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7833333333333333
  },
  "pii2.funsd.vlm.gemma-3-4b-it.all.f1": {
   "as_written": "0.4065",
   "claim": "funsd gemma-3-4b-it all.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.4065040650406504
  },
  "pii2.funsd.vlm.gemma-3-4b-it.all.precision": {
   "as_written": "0.3497",
   "claim": "funsd gemma-3-4b-it all.precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.34965034965034963
  },
  "pii2.funsd.vlm.gemma-3-4b-it.all.recall": {
   "as_written": "0.4854",
   "claim": "funsd gemma-3-4b-it all.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.4854368932038835
  },
  "pii2.funsd.vlm.gemma-3-4b-it.seconds_per_image_mean": {
   "as_written": "21.4733",
   "claim": "funsd gemma-3-4b-it seconds_per_image_mean",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 21.473298314093704
  },
  "pii2.funsd.vlm.qwen2-5-vl-3b-instruct.all.f1": {
   "as_written": "0.0000",
   "claim": "funsd qwen2-5-vl-3b-instruct all.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0
  },
  "pii2.funsd.vlm.qwen2-5-vl-3b-instruct.all.precision": {
   "as_written": "0.0000",
   "claim": "funsd qwen2-5-vl-3b-instruct all.precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0
  },
  "pii2.funsd.vlm.qwen2-5-vl-3b-instruct.all.recall": {
   "as_written": "0.0000",
   "claim": "funsd qwen2-5-vl-3b-instruct all.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0
  },
  "pii2.funsd.vlm.qwen2-5-vl-3b-instruct.seconds_per_image_mean": {
   "as_written": "6.3792",
   "claim": "funsd qwen2-5-vl-3b-instruct seconds_per_image_mean",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 6.379244416107292
  },
  "pii2.funsd.vlm.qwen2-5-vl-7b-instruct.all.f1": {
   "as_written": "0.132",
   "claim": "FUNSD 7B F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.1323529411764706
  },
  "pii2.funsd.vlm.qwen2-5-vl-7b-instruct.seconds_per_image_mean": {
   "as_written": "41.7",
   "claim": "FUNSD 7B s/image",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 41.74772991543583
  },
  "pii2.v1.branch1.presidio.all.f1": {
   "as_written": "0.8556",
   "claim": "v1 B1 presidio F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8555555555555556
  },
  "pii2.v1.branch1.presidio.all.precision": {
   "as_written": "0.8750",
   "claim": "v1 B1 presidio precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.875
  },
  "pii2.v1.branch1.presidio.all.recall": {
   "as_written": "0.8370",
   "claim": "v1 B1 presidio recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8369565217391305
  },
  "pii2.v1.branch1.presidio.by_type.ADDRESS.precision": {
   "as_written": "0.5000",
   "claim": "v1 B1 presidio ADDRESS precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.5
  },
  "pii2.v1.branch1.presidio.by_type.ADDRESS.recall": {
   "as_written": "0.1000",
   "claim": "v1 B1 presidio ADDRESS recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.1
  },
  "pii2.v1.branch1.presidio.by_type.CREDIT_CARD.recall": {
   "as_written": "0.8889",
   "claim": "v1 B1 presidio CREDIT_CARD recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8888888888888888
  },
  "pii2.v1.branch1.presidio.by_type.DOB.precision": {
   "as_written": "0.8750",
   "claim": "v1 B1 presidio DOB precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.875
  },
  "pii2.v1.branch1.presidio.pii_free_docs_false_positives": {
   "as_written": "0.0000",
   "claim": "v1 B1 presidio FPs on PII-free docs",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0
  },
  "pii2.v1.branch1.presidio_plus.all.f1": {
   "as_written": "0.8757",
   "claim": "v1 B1 presidio_plus F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8756756756756756
  },
  "pii2.v1.branch1.presidio_plus.all.precision": {
   "as_written": "0.8710",
   "claim": "v1 B1 presidio_plus precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8709677419354839
  },
  "pii2.v1.branch1.presidio_plus.all.recall": {
   "as_written": "0.8804",
   "claim": "v1 B1 presidio_plus recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8804347826086957
  },
  "pii2.v1.branch1.presidio_plus.by_type.ADDRESS.precision": {
   "as_written": "0.4444",
   "claim": "v1 B1 presidio_plus ADDRESS precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.4444444444444444
  },
  "pii2.v1.branch1.presidio_plus.by_type.ADDRESS.recall": {
   "as_written": "0.4000",
   "claim": "v1 B1 presidio_plus ADDRESS recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.4
  },
  "pii2.v1.branch1.presidio_plus.by_type.CREDIT_CARD.recall": {
   "as_written": "1.0000",
   "claim": "v1 B1 presidio_plus CREDIT_CARD recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v1.branch1.presidio_plus.by_type.DOB.precision": {
   "as_written": "0.8750",
   "claim": "v1 B1 presidio_plus DOB precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.875
  },
  "pii2.v1.branch1.presidio_plus.pii_free_docs_false_positives": {
   "as_written": "0.0000",
   "claim": "v1 B1 presidio_plus FPs on PII-free docs",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0
  },
  "pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.calib_tau": {
   "as_written": "1.0000",
   "claim": "v1 cascade easyocr_cpu+gemma calib_tau",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1": {
   "as_written": "0.9711",
   "claim": "v1 cascade easyocr_cpu+gemma eval_at_calib_tau.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9711286089238845
  },
  "pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1": {
   "as_written": "0.8936",
   "claim": "v1 cascade easyocr_cpu+gemma eval_at_tau_085.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8936170212765958
  },
  "pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.eval_seconds_per_image": {
   "as_written": "10.0025",
   "claim": "v1 cascade easyocr_cpu+gemma eval_seconds_per_image",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 10.002477366665213
  },
  "pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.eval_vlm_share": {
   "as_written": "1.0000",
   "claim": "v1 cascade easyocr_cpu+gemma eval_vlm_share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.ocr_only.f1": {
   "as_written": "0.7935",
   "claim": "v1 cascade easyocr_cpu+gemma ocr_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7934782608695652
  },
  "pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.router.eval_vlm_share": {
   "as_written": "1.0000",
   "claim": "v1 router easyocr_cpu+gemma share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v1.cascade.easyocr_cpu.gemma-3-4b-it.vlm_only.f1": {
   "as_written": "0.9711",
   "claim": "v1 cascade easyocr_cpu+gemma vlm_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9711286089238845
  },
  "pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.calib_tau": {
   "as_written": "0.9900",
   "claim": "v1 cascade paddleocr_cpu+gemma calib_tau",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.99
  },
  "pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1": {
   "as_written": "0.9554",
   "claim": "v1 cascade paddleocr_cpu+gemma eval_at_calib_tau.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9553805774278215
  },
  "pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1": {
   "as_written": "0.9554",
   "claim": "v1 cascade paddleocr_cpu+gemma eval_at_tau_085.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9553805774278215
  },
  "pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.eval_seconds_per_image": {
   "as_written": "52.9737",
   "claim": "v1 cascade paddleocr_cpu+gemma eval_seconds_per_image",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 52.97366429666617
  },
  "pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.eval_vlm_share": {
   "as_written": "0.4667",
   "claim": "v1 cascade paddleocr_cpu+gemma eval_vlm_share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.4666666666666667
  },
  "pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.ocr_only.f1": {
   "as_written": "0.9554",
   "claim": "v1 cascade paddleocr_cpu+gemma ocr_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9553805774278215
  },
  "pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.router.eval_vlm_share": {
   "as_written": "1.0000",
   "claim": "v1 router paddleocr_cpu+gemma share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v1.cascade.paddleocr_cpu.gemma-3-4b-it.vlm_only.f1": {
   "as_written": "0.9711",
   "claim": "v1 cascade paddleocr_cpu+gemma vlm_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9711286089238845
  },
  "pii2.v1.cascade.paddleocr_cpu.qwen2-5-vl-7b-instruct.eval_at_calib_tau.f1": {
   "as_written": "0.955",
   "claim": "v1 cascade PaddleOCR+7B F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9553805774278215
  },
  "pii2.v1.ocr.easyocr_cpu.confidence.seconds_per_image_mean": {
   "as_written": "2.6259",
   "claim": "v1 easyocr_cpu s per image mean",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 2.6258649149987225
  },
  "pii2.v1.ocr.easyocr_cpu.confidence.spearman_conf_vs_doc_f1": {
   "as_written": "0.1865",
   "claim": "v1 easyocr_cpu spearman",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.1865325897408227
  },
  "pii2.v1.ocr.easyocr_cpu.presidio.all.f1": {
   "as_written": "0.7155",
   "claim": "v1 easyocr_cpu OCR+Presidio F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7154929577464788
  },
  "pii2.v1.ocr.easyocr_cpu.presidio_plus.all.f1": {
   "as_written": "0.7935",
   "claim": "v1 easyocr_cpu OCR+Presidio+ F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7934782608695652
  },
  "pii2.v1.ocr.paddleocr_cpu.confidence.seconds_per_image_mean": {
   "as_written": "49.3893",
   "claim": "v1 paddleocr_cpu s per image mean",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 49.38925304999963
  },
  "pii2.v1.ocr.paddleocr_cpu.confidence.spearman_conf_vs_doc_f1": {
   "as_written": "0.1553",
   "claim": "v1 paddleocr_cpu spearman",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.15526231412308242
  },
  "pii2.v1.ocr.paddleocr_cpu.presidio.all.f1": {
   "as_written": "0.8804",
   "claim": "v1 paddleocr_cpu OCR+Presidio F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8804347826086956
  },
  "pii2.v1.ocr.paddleocr_cpu.presidio_plus.all.f1": {
   "as_written": "0.9554",
   "claim": "v1 paddleocr_cpu OCR+Presidio+ F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9553805774278215
  },
  "pii2.v1.vlm.gemma-3-4b-it.all.f1": {
   "as_written": "0.9711",
   "claim": "v1 gemma-3-4b-it all.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9711286089238845
  },
  "pii2.v1.vlm.gemma-3-4b-it.all.precision": {
   "as_written": "0.9737",
   "claim": "v1 gemma-3-4b-it all.precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9736842105263158
  },
  "pii2.v1.vlm.gemma-3-4b-it.all.recall": {
   "as_written": "0.9686",
   "claim": "v1 gemma-3-4b-it all.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9685863874345549
  },
  "pii2.v1.vlm.gemma-3-4b-it.seconds_per_image_mean": {
   "as_written": "7.3766",
   "claim": "v1 gemma-3-4b-it seconds_per_image_mean",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 7.376612451666491
  },
  "pii2.v1.vlm.qwen2-5-vl-3b-instruct.all.f1": {
   "as_written": "0.3246",
   "claim": "v1 qwen2-5-vl-3b-instruct all.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.32456140350877194
  },
  "pii2.v1.vlm.qwen2-5-vl-3b-instruct.all.precision": {
   "as_written": "1.0000",
   "claim": "v1 qwen2-5-vl-3b-instruct all.precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v1.vlm.qwen2-5-vl-3b-instruct.all.recall": {
   "as_written": "0.1937",
   "claim": "v1 qwen2-5-vl-3b-instruct all.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.193717277486911
  },
  "pii2.v1.vlm.qwen2-5-vl-3b-instruct.seconds_per_image_mean": {
   "as_written": "2.7170",
   "claim": "v1 qwen2-5-vl-3b-instruct seconds_per_image_mean",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 2.717000008333222
  },
  "pii2.v1.vlm.qwen2-5-vl-7b-instruct.all.f1": {
   "as_written": "0.789",
   "claim": "v1 7B F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.789156626506024
  },
  "pii2.v1.vlm.qwen2-5-vl-7b-instruct.all.precision": {
   "as_written": "0.929",
   "claim": "v1 7B precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9290780141843972
  },
  "pii2.v1.vlm.qwen2-5-vl-7b-instruct.all.recall": {
   "as_written": "0.686",
   "claim": "v1 7B recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.6858638743455497
  },
  "pii2.v1.vlm.qwen2-5-vl-7b-instruct.by_type.ADDRESS.recall": {
   "as_written": "0.17",
   "claim": "v1 7B address recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.17391304347826086
  },
  "pii2.v1.vlm.qwen2-5-vl-7b-instruct.by_type.CREDIT_CARD.recall": {
   "as_written": "0.12",
   "claim": "v1 7B card recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.11764705882352941
  },
  "pii2.v1.vlm.qwen2-5-vl-7b-instruct.by_type.PASSWORD.recall": {
   "as_written": "0.09",
   "claim": "v1 7B password recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.09090909090909091
  },
  "pii2.v1.vlm.qwen2-5-vl-7b-instruct.seconds_per_image_mean": {
   "as_written": "27.3",
   "claim": "v1 7B s/image",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 27.268707714999135
  },
  "pii2.v2.branch1.presidio.all.f1": {
   "as_written": "0.7275",
   "claim": "v2 B1 presidio F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7275064267352186
  },
  "pii2.v2.branch1.presidio.all.precision": {
   "as_written": "0.6360",
   "claim": "v2 B1 presidio precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.6359550561797753
  },
  "pii2.v2.branch1.presidio.all.recall": {
   "as_written": "0.8498",
   "claim": "v2 B1 presidio recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8498498498498499
  },
  "pii2.v2.branch1.presidio.by_type.ADDRESS.precision": {
   "as_written": "0.0833",
   "claim": "v2 B1 presidio ADDRESS precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.08333333333333333
  },
  "pii2.v2.branch1.presidio.by_type.ADDRESS.recall": {
   "as_written": "0.0526",
   "claim": "v2 B1 presidio ADDRESS recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.05263157894736842
  },
  "pii2.v2.branch1.presidio.by_type.CREDIT_CARD.recall": {
   "as_written": "0.8000",
   "claim": "v2 B1 presidio CREDIT_CARD recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8
  },
  "pii2.v2.branch1.presidio.by_type.DOB.precision": {
   "as_written": "0.4086",
   "claim": "v2 B1 presidio DOB precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.40860215053763443
  },
  "pii2.v2.branch1.presidio.pii_free_docs_false_positives": {
   "as_written": "49.0000",
   "claim": "v2 B1 presidio FPs on PII-free docs",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 49.0
  },
  "pii2.v2.branch1.presidio_plus.all.f1": {
   "as_written": "0.7686",
   "claim": "v2 B1 presidio_plus F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7686472819216181
  },
  "pii2.v2.branch1.presidio_plus.all.precision": {
   "as_written": "0.6638",
   "claim": "v2 B1 presidio_plus precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.6637554585152838
  },
  "pii2.v2.branch1.presidio_plus.all.recall": {
   "as_written": "0.9129",
   "claim": "v2 B1 presidio_plus recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9129129129129129
  },
  "pii2.v2.branch1.presidio_plus.by_type.ADDRESS.precision": {
   "as_written": "0.3529",
   "claim": "v2 B1 presidio_plus ADDRESS precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.35294117647058826
  },
  "pii2.v2.branch1.presidio_plus.by_type.ADDRESS.recall": {
   "as_written": "0.4737",
   "claim": "v2 B1 presidio_plus ADDRESS recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.47368421052631576
  },
  "pii2.v2.branch1.presidio_plus.by_type.CREDIT_CARD.recall": {
   "as_written": "1.0000",
   "claim": "v2 B1 presidio_plus CREDIT_CARD recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v2.branch1.presidio_plus.by_type.DOB.precision": {
   "as_written": "0.4222",
   "claim": "v2 B1 presidio_plus DOB precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.4222222222222222
  },
  "pii2.v2.branch1.presidio_plus.pii_free_docs_false_positives": {
   "as_written": "50.0000",
   "claim": "v2 B1 presidio_plus FPs on PII-free docs",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 50.0
  },
  "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.calib_tau": {
   "as_written": "0.9500",
   "claim": "v2 cascade easyocr_cpu+gemma calib_tau",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.95
  },
  "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1": {
   "as_written": "0.8432",
   "claim": "v2 cascade easyocr_cpu+gemma eval_at_calib_tau.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8432203389830509
  },
  "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1": {
   "as_written": "0.7980",
   "claim": "v2 cascade easyocr_cpu+gemma eval_at_tau_085.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7980364656381487
  },
  "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.eval_seconds_per_image": {
   "as_written": "8.2685",
   "claim": "v2 cascade easyocr_cpu+gemma eval_seconds_per_image",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 8.268549715555976
  },
  "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.eval_vlm_share": {
   "as_written": "0.9944",
   "claim": "v2 cascade easyocr_cpu+gemma eval_vlm_share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9944444444444445
  },
  "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.ocr_only.f1": {
   "as_written": "0.5157",
   "claim": "v2 cascade easyocr_cpu+gemma ocr_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.5157310302282542
  },
  "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.router.eval_vlm_share": {
   "as_written": "1.0000",
   "claim": "v2 router easyocr_cpu+gemma share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.vlm_only.f1": {
   "as_written": "0.8452",
   "claim": "v2 cascade easyocr_cpu+gemma vlm_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8452296819787986
  },
  "pii2.v2.cascade.easyocr_cpu.qwen2-5-vl-7b-instruct.eval_at_calib_tau.f1": {
   "as_written": "0.719",
   "claim": "v2 cascade EasyOCR+7B F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7189751801441153
  },
  "pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.calib_tau": {
   "as_written": "1.0000",
   "claim": "v2 cascade paddleocr_cpu+gemma calib_tau",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_calib_tau.f1": {
   "as_written": "0.8452",
   "claim": "v2 cascade paddleocr_cpu+gemma eval_at_calib_tau.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8452296819787986
  },
  "pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.eval_at_tau_085.f1": {
   "as_written": "0.7075",
   "claim": "v2 cascade paddleocr_cpu+gemma eval_at_tau_085.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.707514450867052
  },
  "pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.eval_seconds_per_image": {
   "as_written": "24.2985",
   "claim": "v2 cascade paddleocr_cpu+gemma eval_seconds_per_image",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 24.298549434445402
  },
  "pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.eval_vlm_share": {
   "as_written": "1.0000",
   "claim": "v2 cascade paddleocr_cpu+gemma eval_vlm_share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.ocr_only.f1": {
   "as_written": "0.7011",
   "claim": "v2 cascade paddleocr_cpu+gemma ocr_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7010900745840504
  },
  "pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.router.eval_vlm_share": {
   "as_written": "1.0000",
   "claim": "v2 router paddleocr_cpu+gemma share",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.vlm_only.f1": {
   "as_written": "0.8452",
   "claim": "v2 cascade paddleocr_cpu+gemma vlm_only.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8452296819787986
  },
  "pii2.v2.cascade.paddleocr_cpu.qwen2-5-vl-7b-instruct.eval_at_calib_tau.f1": {
   "as_written": "0.720",
   "claim": "v2 cascade PaddleOCR+7B F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7198538367844092
  },
  "pii2.v2.ocr.easyocr_cpu.confidence.auc_conf_easy_vs_hard": {
   "as_written": "0.8836",
   "claim": "v2 easyocr_cpu conf AUC easy vs hard",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8836111111111111
  },
  "pii2.v2.ocr.easyocr_cpu.confidence.mean_by_difficulty.easy": {
   "as_written": "0.7788",
   "claim": "v2 easyocr_cpu mean conf easy",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7787538456002925
  },
  "pii2.v2.ocr.easyocr_cpu.confidence.mean_by_difficulty.hard": {
   "as_written": "0.4383",
   "claim": "v2 easyocr_cpu mean conf hard",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.4383488843690952
  },
  "pii2.v2.ocr.easyocr_cpu.confidence.mean_by_difficulty.medium": {
   "as_written": "0.7830",
   "claim": "v2 EasyOCR mean conf medium",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7830379366917597
  },
  "pii2.v2.ocr.easyocr_cpu.confidence.seconds_per_image_mean": {
   "as_written": "3.7418",
   "claim": "v2 easyocr_cpu s per image mean",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 3.7418211788890603
  },
  "pii2.v2.ocr.easyocr_cpu.confidence.spearman_conf_vs_doc_f1": {
   "as_written": "0.5518",
   "claim": "v2 easyocr_cpu spearman",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.5518249180574136
  },
  "pii2.v2.ocr.easyocr_cpu.presidio.all.f1": {
   "as_written": "0.4856",
   "claim": "v2 easyocr_cpu OCR+Presidio F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.48557089084065247
  },
  "pii2.v2.ocr.easyocr_cpu.presidio_plus.all.f1": {
   "as_written": "0.5157",
   "claim": "v2 easyocr_cpu OCR+Presidio+ F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.5157310302282542
  },
  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.easy.f1": {
   "as_written": "0.7539",
   "claim": "v2 OCR+presidio_plus F1 easy",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7539062500000001
  },
  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.hard.f1": {
   "as_written": "0.2234",
   "claim": "v2 easyocr_cpu F1 hard",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.22336769759450173
  },
  "pii2.v2.ocr.easyocr_cpu.presidio_plus.by_difficulty.medium.f1": {
   "as_written": "0.6072",
   "claim": "v2 OCR+presidio_plus F1 medium",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.6072106261859583
  },
  "pii2.v2.ocr.paddleocr_cpu.confidence.auc_conf_easy_vs_hard": {
   "as_written": "0.7619",
   "claim": "v2 paddleocr_cpu conf AUC easy vs hard",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7619444444444444
  },
  "pii2.v2.ocr.paddleocr_cpu.confidence.mean_by_difficulty.easy": {
   "as_written": "0.9863",
   "claim": "v2 paddleocr_cpu mean conf easy",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9863136447771841
  },
  "pii2.v2.ocr.paddleocr_cpu.confidence.mean_by_difficulty.hard": {
   "as_written": "0.9609",
   "claim": "v2 paddleocr_cpu mean conf hard",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.96090565670299
  },
  "pii2.v2.ocr.paddleocr_cpu.confidence.seconds_per_image_mean": {
   "as_written": "19.7489",
   "claim": "v2 paddleocr_cpu s per image mean",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 19.748891070000695
  },
  "pii2.v2.ocr.paddleocr_cpu.confidence.spearman_conf_vs_doc_f1": {
   "as_written": "0.3495",
   "claim": "v2 paddleocr_cpu spearman",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.34953426242116786
  },
  "pii2.v2.ocr.paddleocr_cpu.presidio.all.f1": {
   "as_written": "0.6562",
   "claim": "v2 paddleocr_cpu OCR+Presidio F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.6561771561771562
  },
  "pii2.v2.ocr.paddleocr_cpu.presidio_plus.all.f1": {
   "as_written": "0.7011",
   "claim": "v2 paddleocr_cpu OCR+Presidio+ F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7010900745840504
  },
  "pii2.v2.ocr.paddleocr_cpu.presidio_plus.by_difficulty.hard.f1": {
   "as_written": "0.5538",
   "claim": "v2 paddleocr_cpu F1 hard",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.5537974683544303
  },
  "pii2.v2.vlm.gemma-3-4b-it.all.f1": {
   "as_written": "0.8452",
   "claim": "v2 gemma-3-4b-it all.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8452296819787986
  },
  "pii2.v2.vlm.gemma-3-4b-it.all.precision": {
   "as_written": "0.8952",
   "claim": "v2 gemma-3-4b-it all.precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8952095808383234
  },
  "pii2.v2.vlm.gemma-3-4b-it.all.recall": {
   "as_written": "0.8005",
   "claim": "v2 gemma-3-4b-it all.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8005354752342704
  },
  "pii2.v2.vlm.gemma-3-4b-it.by_difficulty.easy.f1": {
   "as_written": "0.9650",
   "claim": "v2 gemma-3-4b-it F1 easy",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9649805447470817
  },
  "pii2.v2.vlm.gemma-3-4b-it.by_difficulty.hard.f1": {
   "as_written": "0.6817",
   "claim": "v2 gemma-3-4b-it F1 hard",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.6817155756207675
  },
  "pii2.v2.vlm.gemma-3-4b-it.by_difficulty.medium.f1": {
   "as_written": "0.8690",
   "claim": "v2 gemma-3-4b-it F1 medium",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.868995633187773
  },
  "pii2.v2.vlm.gemma-3-4b-it.by_type.ADDRESS.recall": {
   "as_written": "0.6750",
   "claim": "v2 gemma-3-4b-it recall ADDRESS",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.675
  },
  "pii2.v2.vlm.gemma-3-4b-it.by_type.CREDIT_CARD.recall": {
   "as_written": "0.4430",
   "claim": "v2 gemma-3-4b-it recall CREDIT_CARD",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.4430379746835443
  },
  "pii2.v2.vlm.gemma-3-4b-it.by_type.NID.recall": {
   "as_written": "0.8000",
   "claim": "v2 gemma-3-4b-it recall NID",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.8
  },
  "pii2.v2.vlm.gemma-3-4b-it.by_type.PASSWORD.recall": {
   "as_written": "0.5870",
   "claim": "v2 gemma-3-4b-it recall PASSWORD",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.5869565217391305
  },
  "pii2.v2.vlm.gemma-3-4b-it.by_type.PERSON.recall": {
   "as_written": "0.9319",
   "claim": "v2 gemma-3-4b-it recall PERSON",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9319371727748691
  },
  "pii2.v2.vlm.gemma-3-4b-it.seconds_per_image_mean": {
   "as_written": "4.5497",
   "claim": "v2 gemma-3-4b-it seconds_per_image_mean",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 4.549658364444703
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.all.f1": {
   "as_written": "0.1208",
   "claim": "v2 qwen2-5-vl-3b-instruct all.f1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.12075471698113208
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.all.precision": {
   "as_written": "1.0000",
   "claim": "v2 qwen2-5-vl-3b-instruct all.precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 1.0
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.all.recall": {
   "as_written": "0.0643",
   "claim": "v2 qwen2-5-vl-3b-instruct all.recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0642570281124498
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_difficulty.easy.f1": {
   "as_written": "0.3007",
   "claim": "v2 qwen2-5-vl-3b-instruct F1 easy",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.3006535947712418
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_difficulty.hard.f1": {
   "as_written": "0.0000",
   "claim": "v2 qwen2-5-vl-3b-instruct F1 hard",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_difficulty.medium.f1": {
   "as_written": "0.0167",
   "claim": "v2 qwen2-5-vl-3b-instruct F1 medium",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.016666666666666666
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_type.ADDRESS.recall": {
   "as_written": "0.0250",
   "claim": "v2 qwen2-5-vl-3b-instruct recall ADDRESS",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.025
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_type.CREDIT_CARD.recall": {
   "as_written": "0.0000",
   "claim": "v2 qwen2-5-vl-3b-instruct recall CREDIT_CARD",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_type.NID.recall": {
   "as_written": "0.1846",
   "claim": "v2 qwen2-5-vl-3b-instruct recall NID",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.18461538461538463
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_type.PASSWORD.recall": {
   "as_written": "0.0000",
   "claim": "v2 qwen2-5-vl-3b-instruct recall PASSWORD",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.0
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.by_type.PERSON.recall": {
   "as_written": "0.0733",
   "claim": "v2 qwen2-5-vl-3b-instruct recall PERSON",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.07329842931937172
  },
  "pii2.v2.vlm.qwen2-5-vl-3b-instruct.seconds_per_image_mean": {
   "as_written": "6.1463",
   "claim": "v2 qwen2-5-vl-3b-instruct seconds_per_image_mean",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 6.146324460555479
  },
  "pii2.v2.vlm.qwen2-5-vl-7b-instruct.all.f1": {
   "as_written": "0.727",
   "claim": "v2 7B F1",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.7265238879736409
  },
  "pii2.v2.vlm.qwen2-5-vl-7b-instruct.all.precision": {
   "as_written": "0.944",
   "claim": "v2 7B precision",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.9443254817987152
  },
  "pii2.v2.vlm.qwen2-5-vl-7b-instruct.all.recall": {
   "as_written": "0.590",
   "claim": "v2 7B recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.5903614457831325
  },
  "pii2.v2.vlm.qwen2-5-vl-7b-instruct.by_type.ADDRESS.recall": {
   "as_written": "0.07",
   "claim": "v2 7B address recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.075
  },
  "pii2.v2.vlm.qwen2-5-vl-7b-instruct.by_type.CREDIT_CARD.recall": {
   "as_written": "0.03",
   "claim": "v2 7B card recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.02531645569620253
  },
  "pii2.v2.vlm.qwen2-5-vl-7b-instruct.by_type.PASSWORD.recall": {
   "as_written": "0.04",
   "claim": "v2 7B password recall",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 0.043478260869565216
  },
  "pii2.v2.vlm.qwen2-5-vl-7b-instruct.gpu_peak_mib": {
   "as_written": "5980",
   "claim": "7B GPU peak",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 5980.0
  },
  "pii2.v2.vlm.qwen2-5-vl-7b-instruct.seconds_per_image_mean": {
   "as_written": "36.0",
   "claim": "v2 7B s/image",
-  "git_hash": "a595c3cea2b9021f6b3d12e5df777f3fcdcce03f",
-  "run_id": "pii_v2_score-20261102T180205Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "pii_v2_score-20261102T182731Z",
   "script": "evaluation/pii_v2_score.py",
   "value": 35.98528815944414
  },
  "sbrs.bands.t_alert": {
   "as_written": "1.22382",
   "claim": "SBRS t_alert",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "calibrate_sbrs-20261023T153819Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "calibrate_sbrs-20261102T180942Z",
   "script": "evaluation/calibrate_sbrs.py",
   "value": 1.22382
  },
  "sbrs.bands.t_block": {
   "as_written": "1.84367",
   "claim": "SBRS t_block",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "calibrate_sbrs-20261023T153819Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "calibrate_sbrs-20261102T180942Z",
   "script": "evaluation/calibrate_sbrs.py",
   "value": 1.8436665000000028
  },
  "sbrs.beta.chosen": {
   "as_written": "2.5",
   "claim": "SBRS beta",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "calibrate_sbrs-20261023T153819Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "calibrate_sbrs-20261102T180942Z",
   "script": "evaluation/calibrate_sbrs.py",
   "value": 2.5
  },
  "sbrs.test.new_calibrated.flagged_f1": {
   "as_written": "0.4793",
   "claim": "SBRS new F1 (unrounded bands)",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "calibrate_sbrs-20261023T153819Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "calibrate_sbrs-20261102T180942Z",
   "script": "evaluation/calibrate_sbrs.py",
   "value": 0.4793388429752066
  },
  "stats.ewma.paired_vs_hybrid.f1.ci_lo": {
   "as_written": "0.454",
   "claim": "Hybrid minus EWMA F1 CI lo",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.453774300975128
  },
  "stats.ewma.paired_vs_hybrid.f1.hybrid_minus_this": {
   "as_written": "0.518",
   "claim": "Hybrid minus EWMA F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.5178398084309979
  },
  "stats.hybrid_max.paired_vs_hybrid.auc.ci_hi": {
   "as_written": "-0.016",
   "claim": "Hybrid minus max-fusion AUC CI hi",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": -0.015695052515523986
  },
  "stats.hybrid_weighted.auc.ci_hi": {
   "as_written": "0.865",
   "claim": "Hybrid AUC CI hi",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.8646909148125664
  },
  "stats.hybrid_weighted.auc.ci_lo": {
   "as_written": "0.794",
   "claim": "Hybrid AUC CI lo",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.7944717933449391
  },
  "stats.hybrid_weighted.f1.ci_hi": {
   "as_written": "0.702",
   "claim": "Hybrid F1 CI hi",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.7023119613299357
  },
  "stats.hybrid_weighted.f1.ci_lo": {
   "as_written": "0.564",
   "claim": "Hybrid F1 CI lo",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.564473967087561
  },
  "stats.hybrid_weighted.f1.point": {
   "as_written": "0.629",
   "claim": "Hybrid F1 point",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.6287004010162531
  },
  "stats.hybrid_weighted.fpr.point": {
   "as_written": "0.0023",
   "claim": "Hybrid FPR point",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.002273737396782303
  },
  "stats.hybrid_weighted.recall_malicious_insider.ci_hi": {
   "as_written": "0.048",
   "claim": "Hybrid malicious recall CI hi",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.04782471343210779
  },
  "stats.hybrid_weighted.recall_malicious_insider.point": {
   "as_written": "0.027",
   "claim": "Hybrid malicious recall point",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.026670648917207117
  },
  "stats.iforest.f1.ci_hi": {
   "as_written": "0.701",
   "claim": "IF F1 CI hi",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.7006660882172578
  },
  "stats.iforest.f1.ci_lo": {
   "as_written": "0.561",
   "claim": "IF F1 CI lo",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.56072143126682
  },
  "stats.iforest.paired_vs_hybrid.auc.ci_lo": {
   "as_written": "0.024",
   "claim": "Hybrid minus IF AUC CI lo",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.02400264043323151
  },
  "stats.iforest.paired_vs_hybrid.auc.hybrid_minus_this": {
   "as_written": "0.043",
   "claim": "Hybrid minus IF AUC",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.04266973703850696
  },
  "stats.iforest.paired_vs_hybrid.f1.ci_hi": {
   "as_written": "0.020",
   "claim": "Hybrid minus IF F1 CI hi",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.019803158892005502
  },
  "stats.iforest.paired_vs_hybrid.f1.ci_lo": {
   "as_written": "-0.013",
   "claim": "Hybrid minus IF F1 CI lo",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": -0.012777868228053987
  },
  "stats.iforest.paired_vs_hybrid.f1.hybrid_minus_this": {
   "as_written": "0.003",
   "claim": "Hybrid minus IF F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.0030430893411199644
  },
  "stats.lstm.auc.ci_hi": {
   "as_written": "0.902",
   "claim": "LSTM AUC CI hi",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.9019935724825103
  },
  "stats.lstm.auc.ci_lo": {
   "as_written": "0.845",
   "claim": "LSTM AUC CI lo",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.84522404861059
  },
  "stats.lstm.paired_vs_hybrid.auc.ci_hi": {
   "as_written": "-0.024",
   "claim": "Hybrid minus LSTM AUC CI hi",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": -0.02361776743014127
  },
  "stats.lstm.paired_vs_hybrid.auc.hybrid_minus_this": {
   "as_written": "-0.048",
   "claim": "Hybrid minus LSTM AUC",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": -0.04779944817271897
  },
  "stats.lstm.paired_vs_hybrid.f1.ci_lo": {
   "as_written": "0.062",
   "claim": "Hybrid minus LSTM F1 CI lo",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.06229732979931947
  },
  "stats.lstm.paired_vs_hybrid.f1.hybrid_minus_this": {
   "as_written": "0.100",
   "claim": "Hybrid minus LSTM F1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.10043572693336855
  },
  "stats.zscore.paired_vs_hybrid.auc.ci_hi": {
   "as_written": "-0.002",
   "claim": "Hybrid minus z-score AUC CI hi",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": -0.0024025633224766673
  },
  "stats.zscore.paired_vs_hybrid.f1.ci_lo": {
   "as_written": "0.046",
   "claim": "Hybrid minus z-score F1 CI lo",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "bootstrap_stats-20261023T155718Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "bootstrap_stats-20261102T182623Z",
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.04649899148194913
  },
  "sweep.summary.o0p0.i0p25.hybrid_weighted.auc.mean": {
   "as_written": "0.739",
   "claim": "Sweep hybrid AUC I=0.25 O=0",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.739287165818075
  },
  "sweep.summary.o0p0.i0p25.hybrid_weighted.per_class.malicious_insider.auc.mean": {
   "as_written": "0.507",
   "claim": "Sweep hybrid malicious AUC I=0.25",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.5071685616254248
  },
  "sweep.summary.o0p0.i0p25.hybrid_weighted.recall_at_fpr05_valthreshold.mean": {
   "as_written": "0.451",
   "claim": "Sweep hybrid recall@5%valFPR I=0.25",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.4506320224719101
  },
  "sweep.summary.o0p0.i0p25.iforest.auc.mean": {
   "as_written": "0.728",
   "claim": "Sweep IF AUC I=0.25 O=0",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.7280622999243572
  },
  "sweep.summary.o0p0.i0p25.lstm.auc.mean": {
   "as_written": "0.715",
   "claim": "Sweep LSTM AUC I=0.25 O=0",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.7151486167548317
  },
  "sweep.summary.o0p0.i0p25.lstm.per_class.malicious_insider.auc.mean": {
   "as_written": "0.500",
   "claim": "Sweep LSTM malicious AUC I=0.25",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.49980407541401634
  },
  "sweep.summary.o0p0.i1p0.ewma.recall_at_fpr05_valthreshold.mean": {
   "as_written": "0.167",
   "claim": "Sweep EWMA recall@5%valFPR I=1",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.16723914186214603
  },
  "sweep.summary.o0p0.i1p5.hybrid_weighted.auc.mean": {
   "as_written": "0.865",
   "claim": "Sweep hybrid AUC I=1.5 O=0",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.8650196086455887
  },
  "sweep.summary.o0p0.i1p5.iforest.auc.mean": {
   "as_written": "0.820",
   "claim": "Sweep IF AUC I=1.5 O=0",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.8203157519488796
  },
  "sweep.summary.o0p0.i1p5.iforest.per_class.malicious_insider.auc.mean": {
   "as_written": "0.641",
   "claim": "Sweep IF malicious AUC I=1.5",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.6414711583334607
  },
  "sweep.summary.o0p0.i1p5.lstm.auc.mean": {
   "as_written": "0.895",
   "claim": "Sweep LSTM AUC I=1.5 O=0",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.8949599639724649
  },
  "sweep.summary.o0p0.i1p5.lstm.per_class.malicious_insider.auc.mean": {
   "as_written": "0.803",
   "claim": "Sweep LSTM malicious AUC I=1.5",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.8025740568760784
  },
  "sweep.summary.o0p5.i1p0.hybrid_weighted.auc.mean": {
   "as_written": "0.834",
   "claim": "Sweep hybrid AUC I=1 O=0.5",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.8337648071163818
  },
  "sweep.summary.o0p5.i1p0.iforest.auc.mean": {
   "as_written": "0.769",
   "claim": "Sweep IF AUC I=1 O=0.5",
-  "git_hash": "f70e3e808dc8f19cca23c9886502a5f6e277766b",
-  "run_id": "difficulty_sweep-20261023T155724Z",
+  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.7687825995468405
  }

@@ -121,3 +121,7 @@ One entry per non-obvious decision. Format: date, task, options, choice, reason.
 - Problem: the laptop slept from 03:49 to 19:45 while image V2-0351 was being processed. Its cached time was 57,332 s, which is the sleep, not inference. It raised the v2 mean from about 36 s to 354 s per image and distorted the cascade cost axis.
 - Choice: the original cache file was kept unchanged in `evaluation/data/pii_v2/vlm_cache_suspended/`, and only that image was sent again with the same model, prompt, temperature 0 and seed 0. The new answer is byte-identical to the old one (same raw text, same entities), and the new time is 37.3 s. Scoring was then rerun.
 - Only timing changed. No accuracy number moved, and no other image was re-run.
+
+## D-026 (2026-11-02, Phase 3 gate) Cache-only VLM reruns keep the measured GPU peak
+- Problem: checking the LM Studio namespaced ids, `pii_v2 vlm --model gemma-3-4b-it` answered all 519 images from the cache, but still overwrote the recorded GPU peak of the real run (5,976 MiB) with the idle reading of that run (4,284 MiB). The gate comparison found this as the only changed non-latency value.
+- Choice: `stage_vlm` now keeps the earlier peak when no image was sent to the model. The gemma file was restored to the value recorded in the manifest before the gate (`pii2.v2.vlm.gemma-3-4b-it.gpu_peak_mib` = 5976, run `pii_v2_score-20261102T180205Z`). The overwritten file is kept in `evaluation/data/pii_v2/vlm_cache_suspended/`. No accuracy value was affected.

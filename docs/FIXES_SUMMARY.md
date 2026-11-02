@@ -4,10 +4,7 @@ Human-readable report of the paper-v2 work. Updated at the end of every task.
 
 ## 1. Status
 
-Phase 0 is complete. T1.1 is complete: every evaluation script now writes its numbers, with run id, seeds, date, git hash and library versions, into `results/manifest.json`, and `tools/check_numbers.py` checks quoted numbers against it. Work happens on branch `paper-v2`; the starting commit 2521134 is tagged
-`baseline-pre-v2` and its outputs are preserved in `results/baseline_20261023/`. The environment is
-recorded in `docs/ENVIRONMENT.md`. The headline numbers in context.md were checked against the metrics
-files; five corrections are listed in section 3. No code has changed yet.
+Every Must task is DONE. T3.7 (hosted large VLMs) was not run because it needs paid calls (G-SPEND, default no), and the optional T4.6 (federated simulation) was not started, so federated learning stays future work. Every evaluation script writes its numbers, with run id, seeds, date, git hash and library versions, into `results/manifest.json`, and `tools/check_numbers.py` checks every quoted number against it (558 claims). Work is on branch `paper-v2`; the starting commit 2521134 is tagged `baseline-pre-v2`, and its outputs are kept in `results/baseline_20261023/`. The main findings: the LSTM plus Isolation Forest hybrid does not beat Isolation Forest alone on F1, slow insider drift needs a separate CUSUM detector, gated fusion beats the multiplicative SBRS at an equal alert budget, the engine scores far lower on CERT r4.2, the PII cascade saves no VLM calls at equal accuracy, and the best local VLM (gemma-3-4b-it) stays well below the hosted 72B model's ceiling on harder and real documents. Section 4 lists what went against the design.
 
 ## 2. Task table
 
@@ -33,6 +30,12 @@ files; five corrections are listed in section 3. No code has changed yet.
 | T3.3 | DONE | Intended small on-box VLM never evaluated | `evaluation/pii_v2.py` (`vlm` stage, LM Studio, cache, GPU sampler), `results/claims/pii_v2_vlm_cascade.claims` | load model in LM Studio (`--parallel 1 -c 4096`), then `python -m evaluation.pii_v2 vlm --model <id>` | hosted gemma-4B 0.936 / Qwen-72B 1.000 on v1 | local Qwen2.5-VL-3B: F1 v1 0.325, v2 0.121, FUNSD 0.000 (mostly empty answers, 53 malformed); local gemma-3-4b-it: v1 0.971, v2 0.845, FUNSD 0.407, 4.5 s/image on v2, 7.4 on v1, 21.5 on FUNSD; peak whole-card GPU memory 5,976 MiB of 6,144. Local Qwen2.5-VL-7B: v1 0.789, v2 0.727, FUNSD 0.132, precise but omits addresses and card numbers, 27 to 42 s/image, peak 5,980 MiB (N-057 to N-060). gemma-3-4b-it stays the best local VLM |
 | T3.4 | DONE | Cascade cost rationale broken; tau_ocr 0.85 does not transfer | `evaluation/pii_v2_score.py` (Pareto over tau, calib-chosen tau, logistic router), `evaluation/pii_v2_plots.py`, `results/pii_v2/pareto_*.csv`, `results/pii_v2/pareto_v2.pdf` | `python -m evaluation.pii_v2 score; python -m evaluation.pii_v2_plots` | single tau 0.85, calibrated on reused docs | with gemma the calib tau routes 0.99 to 1.00 of v2 images to the VLM; cascade F1 0.843 vs VLM-only 0.845; tau 0.85 gives 0.798 (EasyOCR) / 0.708 (PaddleOCR); router routes everything (share 1.00). Cascade saves no cost at equal accuracy |
 | T4.1 | DONE | Backend used hand-set constants (beta 2.5, bands, tau_ocr 0.85) and never ran the VLM branch | `tools/build_backend_config.py` -> `backend/config/final_config.json` (every value cites its manifest key), `backend/final_config.py`, `backend/pii_pipeline.py` (tau_ocr from config), `backend/tier1.py` (Tier 2 routes to the local VLM below tau_ocr; quarantines if the VLM is down, D-023), `evaluation/e2e_demo.py` | `python -m tools.build_backend_config; python -m evaluation.e2e_demo` (LM Studio serving gemma-3-4b-it) | constants in code | gated fusion, beta 2.5, tau_A 0.751, bands 1.224 / 1.844, CUSUM k 1 h 8, tau_ocr 0.95. End to end on 6 test sessions: compromised, negligent, over-scoped third party BLOCK; malicious insider, benign burst, benign PERMIT. One v2 scan: OCR confidence 0.868 < 0.95, routed to gemma, 5 of 5 entities, held 11.1 s, released |
+| T4.2 | DONE | Context/ design documents, README and DEPLOYMENT described the design, not what was built | 9 files under `Context/`, diff in `docs/proposed/T4.2_Context.diff` | applied after user approval at G-DOCS (2026-10-24) | design text (PaddleOCR, PaliGemma, FedAvg as built, 300 ms) | text matches the implementation; unbuilt parts labelled future work |
+| T4.3 | DONE | Figure 1 was criticised as schematic and AI-looking; plots had no single regeneration path | `figures/architecture.dot` (Graphviz source, shows gated fusion, CUSUM, tau_ocr routing and fail-closed local VLM), `tools/render_figures.py`; plot scripts listed in `paper_inputs/README.md` | `python -m tools.render_figures` | raster schematic | vector PDF and SVG for every figure, each from a script; result plots use 8 pt text (Pareto plot at single-column width 3.4 in; ablation and sweep plots at full width 7.0 in) |
+| T4.4 | DONE | No paper-facing inputs with traceable numbers | `tools/build_paper_inputs.py`, `tools/claim_evidence.py`, `paper_inputs/` (8 LaTeX tables, CSVs, 4 figures, `numbers.json`, `threats_to_validity.md`, `claims_may_must_not.md`), `docs/CLAIM_EVIDENCE.md` | `python -m tools.build_paper_inputs` | n/a | 530 numbers traced to manifest key, script, run and git hash |
+| T4.5 | DONE | FIXES_SUMMARY incomplete | this file | n/a | n/a | all sections filled; claims lists include PII, CERT and local VLM results |
+| T3.7 | NOT RUN | Hosted large VLMs on the new corpus | none | n/a | n/a | needs paid hosted calls; G-SPEND default is no (Q-002) |
+| T4.6 | NOT RUN | Optional federated simulation | none | n/a | n/a | optional task; federated learning and DP stay future work |
 
 ## 3. Corrections to context.md
 
@@ -65,7 +68,17 @@ Handled in T1.2.
 
 ## 4. Results that went against the design
 
-See `results/negative_results.md` (N-001 to N-010 so far).
+The full list, with evidence keys, is `results/negative_results.md` (N-001 to N-060). The most important:
+
+- The hybrid does not beat Isolation Forest alone on F1 (difference 0.003, CI -0.013 to 0.020), and its AUC is significantly below the LSTM alone, a per-user z-score and max fusion (N-018 to N-024).
+- Slow insider drift is nearly invisible to the hybrid (episode recall 0.133). CUSUM raises it to 0.567 but fires on 20 percent of benign-burst hours (N-014, N-029, N-030).
+- The multiplicative SBRS escalates 1 of 35 low-sensitivity, high-anomaly threats; the calibrated beta ranges from 2.0 to 8.0 across datasets (N-017, N-033, N-034).
+- At attack intensity 0.25 no detector separates slow drift (AUC about 0.5) (N-026).
+- On CERT r4.2 the hybrid reaches F1 0.057 and AUC 0.733, and validation chose alpha 0.00, which drops the LSTM (N-051 to N-056).
+- Substituting EasyOCR for PaddleOCR cost accuracy (v2 F1 0.516 against 0.701), and PaddleOCR is about 5 times slower on CPU (N-041, N-042).
+- The cascade saves no VLM calls at equal accuracy: the calib-chosen tau and the learned router both send almost every image to the VLM (N-049, N-050).
+- Local VLMs: Qwen2.5-VL-3B is far below every other path; Qwen2.5-VL-7B is below gemma-3-4b-it on every set and barely fits 6 GB; gemma reaches only 0.407 on real FUNSD forms (N-046 to N-048, N-057 to N-060).
+- An image upload is held for seconds in Tier 2, so the original "300 ms end to end" goal cannot hold for images (N-039).
 
 ## 5. Claims the paper may make / must not make
 
@@ -85,6 +98,11 @@ All values are means over the 10 independently generated datasets unless marked.
 | Adding a Mastercard-range recogniser with a Luhn check closes Presidio's card gap (recall 0.80 to 1.00, precision 1.00). | same |
 | Every threshold, weight and band is chosen on validation data; selection code rejects test rows (unit-tested). | `evaluation/selection.py`, `tests/test_selection.py` |
 | Results reproduce bit-for-bit with one command. | `reproduce.ps1`, gate records below |
+| Tier 1 inline decisions (text PII, anomaly scoring and fusion) take 44.6 ms at p99 inside the running proxy; images go to an asynchronous Tier 2 that holds the upload. | `results/claims/latency.claims` |
+| PaddleOCR, the designed OCR engine, was run and beats the EasyOCR substitute on accuracy (v2 images F1 0.701 against 0.516), at about 5 times the CPU time. | `results/claims/pii_v2_ocr_engines.claims` |
+| Small VLMs were run on-box on a 6 GB laptop GPU. The best, gemma-3-4b-it, reaches F1 0.845 on the harder v2 images and 0.407 on real FUNSD forms; Qwen2.5-VL-3B and 7B score lower. | `results/claims/pii_v2_vlm_cascade.claims`, `results/claims/pii_v2_vlm_7b.claims` |
+| A cost-ordered cascade gives no cost saving at equal accuracy on these corpora, because OCR confidence is too weak a signal (v2 cascade F1 0.843 against VLM-only 0.845, with almost every image routed to the VLM). | `results/claims/pii_v2_vlm_cascade.claims` |
+| On CERT r4.2, a community benchmark mapped onto our features, the engine is much weaker (hybrid F1 0.057, AUC 0.733), which bounds how far our simulator results generalise. | `results/claims/cert.claims` |
 
 ### Must not make
 
@@ -94,7 +112,11 @@ All values are means over the 10 independently generated datasets unless marked.
 - Any single-dataset number (seed 42) as the headline; use the 10-dataset mean with its interval.
 - The old draft figures: EWMA FPR 42.7 percent vs hybrid 11.2 percent, SBRS F1 0.93, PII coverage 0.91, 279 ms end to end.
 - "Real-time 300 ms end to end". Replace with the measured Tier 1 budget (T3.6).
-- That PaddleOCR, PaliGemma-3B or an on-box VLM was evaluated, unless T3.2 / T3.3 results exist in the manifest.
+- That PaliGemma-3B was evaluated (it was not), or that any local VLM matches the hosted Qwen2.5-VL-72B (the 72B ran only on the old v1 corpus).
+- That a bigger local model is better: Qwen2.5-VL-7B is below gemma-3-4b-it on every corpus (N-057).
+- That the cascade saves cost by sending only hard images to the VLM (N-049, N-050).
+- That the system performs well on CERT, or that CERT is real enterprise data (it is synthetic, and the feature mapping is ours; N-051, N-055, N-056).
+- That episode recall alone shows skill on CERT (N-053).
 - That federated learning, differential privacy or a usability study was done.
 - That "existing DLP ignores behaviour" (Microsoft Purview Adaptive Protection uses insider-risk levels in DLP).
 - That OCR confidence never ranks difficulty: on v2 it does (AUC 0.884); on v1 it did not.
@@ -110,7 +132,12 @@ All values are means over the 10 independently generated datasets unless marked.
 - The street-address recogniser has low precision (0.35).
 - LSTM training uses CPU torch; GPU training was not used (D-003).
 - The LOF neighbour grid was widened after looking at seed-42 validation and test AUC (D-008, disclosed).
-- Network bandwidth on this laptop (50 to 300 KB/s to Hugging Face and figshare) limited which local VLMs could be downloaded (D-012).
+- Network bandwidth on this laptop (50 to 300 KB/s to Hugging Face and figshare) limited which local VLMs could be downloaded (D-012). Three were run: Qwen2.5-VL-3B, gemma-3-4b-it and Qwen2.5-VL-7B, all at Q4_K_M with context 4096; quantisation and prompt were not varied.
+- Hosted large VLMs were not rerun on the new corpora (G-SPEND), so the v1 ceiling result (Qwen2.5-VL-72B, 240 of 240) has no v2 or FUNSD counterpart.
+- FUNSD gold is derived and partial (D-021), so FUNSD precision is a lower bound.
+- PaddleOCR and the VLMs were timed on this laptop only (PaddleOCR on CPU; D-017). Timings are not portable.
+- The deployed tau_ocr (0.95) and the deployed fusion parameters come from one calibration split or dataset (seed 42); the 10-dataset spread is in the claims files.
+- Federated learning, differential privacy and a usability study were not built or run.
 
 ## 7. Open questions and BLOCKED tasks
 
@@ -118,7 +145,15 @@ See `docs/OPEN_QUESTIONS.md`. No task is BLOCKED.
 
 ## 8. How to reproduce everything
 
-Not yet available (task T1.3).
+From the repo root in PowerShell:
+
+```powershell
+pwsh -NoProfile -File .\reproduce.ps1            # tests, anomaly track, ablation, drift, fusion, statistics, sweep, claims check; about 20 min
+pwsh -NoProfile -File .\reproduce.ps1 -Quick     # skips the multi-seed, bootstrap and sweep stages
+pwsh -NoProfile -File .\reproduce.ps1 -WithPII -VlmModel gemma-3-4b-it   # adds the PII track; OCR is slow on CPU (EasyOCR about 20 min, PaddleOCR about 90 min); needs LM Studio for the VLM stage
+```
+
+VLM answers are cached in `evaluation/data/pii_v2/vlm_cache/`, so the VLM stage only queries images it has not seen. CERT r4.2 is not in the script because it needs a 4.8 GB download; its four commands are in the T2.6 row. `python -m tools.build_paper_inputs` rebuilds `paper_inputs/` from the manifest, and `python -m tools.render_figures` rebuilds Figure 1.
 
 ## Gate records
 
@@ -141,3 +176,17 @@ Not yet available (task T1.3).
 - c. git status: only run outputs (timestamps, latency) and Phase 3 work pending; `.env` untouched.
 - d. FIXES_SUMMARY rows exist for T2.1 to T2.5 and T2.7; T2.6 SKIPPED with reason (D-011).
 - e. H-R4 scan: T2.1 thresholds by `threshold_max_f1` / `threshold_at_fpr` on validation; LOF k by validation AUC (grid peek disclosed, D-008); calibrators and ECDFs on CALIB. T2.2 resamples test rows only with thresholds fixed from validation. T2.3 grid fixed before results. T2.4 (k, h) by `choose_drift_params` on validation; probe trained on train, threshold on validation. T2.5 beta and w on validation, logistic fitted on train, bands from benign validation percentiles. Recall at 1 and 5 percent FPR read off the test ROC curve is labelled as a curve summary, not a tuned threshold. H-R5: every dataset and every sweep cell reported; N-018 to N-035 added.
+
+### Phase 3 gate (2026-11-02)
+- a. pytest: 103 passed.
+- b. `pwsh -NoProfile -File .\reproduce.ps1` (full, from a clean shell): exit 0 in 17.8 min, `check_numbers` 558/558. All 42,070 non-latency manifest keys are identical to the snapshot taken before the run (`logs/manifest_before_gate3.json`). The PII track was rescored from the cached OCR and VLM outputs (`python -m evaluation.pii_v2 score`), also with no changed value, after one fix: a cache-only VLM rerun had overwritten gemma's measured GPU peak, now restored and prevented in code (D-026). OCR was not rerun (about 2 hours on CPU). CERT is not in the script (4.8 GB download); its results are committed with their commands. Log: `logs/gate3_reproduce_full.log`.
+- c. git status: only re-written run outputs (provenance timestamps, latency, train logs), the manifest and this gate's documents are pending. `.env` last modified 2026-07-09, never opened, never in git history, and gitignored.
+- d. FIXES_SUMMARY has a row for every task, including T3.7 and T4.6 (not run).
+- e. H-R4 / H-R5 scan of Phase 3 and 4 work:
+  - H-R4: tau_ocr and the router cut are chosen on calib documents only, and every reported PII number is on eval documents (D-022). The deployed tau_ocr comes from the calib split. CERT thresholds, alpha, LOF k and drift (k, h) are chosen on its validation split, and the target scenario was fixed before any CERT output existed (D-024). The FUNSD gold was derived from the FUNSD annotations, not from model output (D-021).
+  - H-R5: all three local VLMs are reported, including the two that did worse than gemma. One 7B image was re-sent only to replace a timing that included 16 hours of laptop sleep; its answer was byte-identical and the original record is kept (D-025). The CERT sample, the user sample seed and the 100,000-window LSTM subsample were fixed before results (D-024), and every CERT number, all poor, is reported (N-051 to N-056). Negative results now run to N-060.
+
+### FINAL gate (2026-11-02)
+- Every Must task is DONE; T3.7 is not run (G-SPEND, default no) and the optional T4.6 is not run.
+- The Phase 3 gate checks above were run after the last result-changing commit; `python -m tools.build_paper_inputs` rebuilt `paper_inputs/` from the final manifest (530 numbers), and `check_numbers` passes 558/558.
+- `paper_inputs/` holds 8 LaTeX tables, the CSVs, 4 figures (vector PDF and SVG, each from a script), `numbers.json`, `threats_to_validity.md` and `claims_may_must_not.md`; `docs/CLAIM_EVIDENCE.md` traces every number.

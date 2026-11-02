@@ -176,6 +176,14 @@ def main() -> None:
               ["Detector", "AUC", "AP", "F1", "Precision", "Recall", "FPR"], cert_rows)
         readme.append("| `tables/cert.tex` | CERT r4.2 detector results (from `cert.*`) | `tools/build_paper_inputs.py` |")
 
+    # the may / must-not claim lists live in docs/FIXES_SUMMARY.md section 5; copy them, never edit the copy
+    fs = (PROJECT_ROOT / "docs" / "FIXES_SUMMARY.md").read_text(encoding="utf-8")
+    sec = fs[fs.index("## 5. Claims the paper may make"):fs.index("## 6.")].rstrip()
+    (P / "claims_may_must_not.md").write_text(
+        "<!-- Copied from docs/FIXES_SUMMARY.md section 5 by tools/build_paper_inputs.py. Edit the source. -->\n\n"
+        + sec + "\n", encoding="utf-8")
+    readme.append("| `claims_may_must_not.md` | Claims the paper may and must not make, with evidence files | `tools/build_paper_inputs.py` |")
+
     from tools.claim_evidence import main as ce
     ce()
     readme.append("| `numbers.json` | Every claimed number with key, script, run, git hash | `tools/claim_evidence.py` |")
