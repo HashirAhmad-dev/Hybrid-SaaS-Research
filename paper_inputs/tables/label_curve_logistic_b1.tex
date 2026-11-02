@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Label learning curve, logistic regression: trained on k labelled TRAIN incidents (an incident is one attack episode; all its hours are positive) out of 143; every other TRAIN hour is treated as benign. Alert threshold: the 99th percentile of validation scores, a 1 percent label-free budget. Test metrics, mean over 5 draws and 10 datasets.}
+\label{tab:lc-logistic-b1}
+\begin{tabular}{lcccccc}
+\hline
+k & AUC & Precision & Recall & F1 & FPR & Malicious ep. recall \\
+\hline
+0 (Isolation Forest, no labels) & 0.783 & 0.991 & 0.250 & 0.399 & 0.000 & 0.000 \\
+1 & 0.572 & 0.575 & 0.149 & 0.233 & 0.005 & 0.127 \\
+3 & 0.695 & 0.717 & 0.185 & 0.288 & 0.004 & 0.140 \\
+5 & 0.769 & 0.783 & 0.200 & 0.315 & 0.003 & 0.130 \\
+10 & 0.819 & 0.851 & 0.217 & 0.341 & 0.002 & 0.110 \\
+20 & 0.885 & 0.895 & 0.217 & 0.347 & 0.001 & 0.073 \\
+50 & 0.922 & 0.896 & 0.234 & 0.369 & 0.001 & 0.073 \\
+all & 0.933 & 0.919 & 0.238 & 0.376 & 0.001 & 0.050 \\
+\hline
+\end{tabular}
+\end{table}

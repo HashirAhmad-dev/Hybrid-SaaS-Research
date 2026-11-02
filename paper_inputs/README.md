@@ -33,7 +33,10 @@ Built by `python -m tools.build_paper_inputs`. Every number is in `numbers.json`
 | `tables/pii_images.tex` | PII image-path F1 per corpus (from `pii2.*`) | `tools/build_paper_inputs.py` |
 | `tables/cert.tex` | CERT r4.2 detector results (from `cert.*`) | `tools/build_paper_inputs.py` |
 | `tables/supervised.tex` | Supervised probes vs unsupervised detectors (from `supervised.summary.*`) | `tools/build_paper_inputs.py` |
-| `tables/label_curve.tex` | Label learning curve, 5 percent alert budget (from `labelcurve_b5.summary.*`) | `tools/build_paper_inputs.py` |
+| `tables/label_curve_logistic_b5.tex` | Label curve, logistic regression, 5 percent budget (from `labelcurve_b5.summary.*`) | `tools/build_paper_inputs.py` |
+| `tables/label_curve_boosting_b5.tex` | Label curve, gradient boosting, 5 percent budget (from `labelcurve_b5.summary.*`) | `tools/build_paper_inputs.py` |
+| `tables/label_curve_logistic_b1.tex` | Label curve, logistic regression, 1 percent budget (from `labelcurve.summary.*`) | `tools/build_paper_inputs.py` |
+| `tables/label_curve_boosting_b1.tex` | Label curve, gradient boosting, 1 percent budget (from `labelcurve.summary.*`) | `tools/build_paper_inputs.py` |
 | `claims_may_must_not.md` | Claims the paper may and must not make, with evidence files | `tools/build_paper_inputs.py` |
 | `primary_claim.md` | The paper's primary claim, its evidence chain and the limits to state with it | `tools/build_paper_inputs.py` |
 | `numbers.json` | Every claimed number with key, script, run, git hash | `tools/claim_evidence.py` |

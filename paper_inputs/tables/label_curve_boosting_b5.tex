@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Label learning curve, gradient boosting: trained on k labelled TRAIN incidents (an incident is one attack episode; all its hours are positive) out of 143; every other TRAIN hour is treated as benign. Alert threshold: the 95th percentile of validation scores, a 5 percent label-free budget. Test metrics, mean over 5 draws and 10 datasets.}
+\label{tab:lc-boosting-b5}
+\begin{tabular}{lcccccc}
+\hline
+k & AUC & Precision & Recall & F1 & FPR & Malicious ep. recall \\
+\hline
+0 (Isolation Forest, no labels) & 0.783 & 0.427 & 0.527 & 0.470 & 0.031 & 0.283 \\
+1 & 0.530 & 0.117 & 0.503 & 0.149 & 0.429 & 0.583 \\
+3 & 0.571 & 0.133 & 0.556 & 0.164 & 0.458 & 0.610 \\
+5 & 0.578 & 0.149 & 0.545 & 0.183 & 0.426 & 0.633 \\
+10 & 0.620 & 0.211 & 0.482 & 0.251 & 0.259 & 0.520 \\
+20 & 0.738 & 0.377 & 0.524 & 0.423 & 0.076 & 0.517 \\
+50 & 0.882 & 0.533 & 0.673 & 0.593 & 0.026 & 0.777 \\
+all & 0.951 & 0.625 & 0.790 & 0.697 & 0.021 & 1.000 \\
+\hline
+\end{tabular}
+\end{table}
