@@ -65876,6 +65876,2046 @@
    "run_id": "generate_sessions-20261102T181323Z",
    "value": 640
   },
+  "labelcurve.summary._meta.budget_percentile_val": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 99.0
+  },
+  "labelcurve.summary._meta.minutes": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 4.358932193120321
+  },
+  "labelcurve.summary._meta.train_episodes_per_dataset": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 143
+  },
+  "labelcurve.summary.k0_iforest.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.7831569445258133
+  },
+  "labelcurve.summary.k0_iforest.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.030257670473390817
+  },
+  "labelcurve.summary.k0_iforest.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.3989832356834408
+  },
+  "labelcurve.summary.k0_iforest.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.04434497987807947
+  },
+  "labelcurve.summary.k0_iforest.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 8.992805755395684e-05
+  },
+  "labelcurve.summary.k0_iforest.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.00028437748742521395
+  },
+  "labelcurve.summary.k0_iforest.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.5596764077581982
+  },
+  "labelcurve.summary.k0_iforest.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06503413770744221
+  },
+  "labelcurve.summary.k0_iforest.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k0_iforest.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k0_iforest.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.9913043478260869
+  },
+  "labelcurve.summary.k0_iforest.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.027498066610159834
+  },
+  "labelcurve.summary.k0_iforest.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.2504774436036143
+  },
+  "labelcurve.summary.k0_iforest.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.03392562221072079
+  },
+  "labelcurve.summary.k10_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.6196407561169446
+  },
+  "labelcurve.summary.k10_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.02968843581251976
+  },
+  "labelcurve.summary.k10_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.9
+  },
+  "labelcurve.summary.k10_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.1414213562373095
+  },
+  "labelcurve.summary.k10_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k10_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k10_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.23423687328070103
+  },
+  "labelcurve.summary.k10_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0370004891479105
+  },
+  "labelcurve.summary.k10_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.005202578663089646
+  },
+  "labelcurve.summary.k10_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0016688940010374837
+  },
+  "labelcurve.summary.k10_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.536335619273325
+  },
+  "labelcurve.summary.k10_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.023165753826544032
+  },
+  "labelcurve.summary.k10_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.11000000000000001
+  },
+  "labelcurve.summary.k10_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.08020036636719373
+  },
+  "labelcurve.summary.k10_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.5752034009732169
+  },
+  "labelcurve.summary.k10_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.09656453590998898
+  },
+  "labelcurve.summary.k10_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.15073205081793611
+  },
+  "labelcurve.summary.k10_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.025395228266180646
+  },
+  "labelcurve.summary.k10_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.8185796657612293
+  },
+  "labelcurve.summary.k10_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0422434333170091
+  },
+  "labelcurve.summary.k10_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.9
+  },
+  "labelcurve.summary.k10_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.1414213562373095
+  },
+  "labelcurve.summary.k10_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.3406261994137772
+  },
+  "labelcurve.summary.k10_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.05744262976721008
+  },
+  "labelcurve.summary.k10_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0017430030131919444
+  },
+  "labelcurve.summary.k10_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0007942708181923453
+  },
+  "labelcurve.summary.k10_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.7101879565443393
+  },
+  "labelcurve.summary.k10_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.08325937579164928
+  },
+  "labelcurve.summary.k10_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.11000000000000001
+  },
+  "labelcurve.summary.k10_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.05454638981614923
+  },
+  "labelcurve.summary.k10_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.8510535100023491
+  },
+  "labelcurve.summary.k10_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06257709967044017
+  },
+  "labelcurve.summary.k10_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.21656571343848968
+  },
+  "labelcurve.summary.k10_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.04345598083381382
+  },
+  "labelcurve.summary.k1_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.5295951125910565
+  },
+  "labelcurve.summary.k1_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.03935850403112461
+  },
+  "labelcurve.summary.k1_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.2
+  },
+  "labelcurve.summary.k1_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.18856180831641267
+  },
+  "labelcurve.summary.k1_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 1.6
+  },
+  "labelcurve.summary.k1_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.6992058987801011
+  },
+  "labelcurve.summary.k1_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.19191554924193727
+  },
+  "labelcurve.summary.k1_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.035178981870155404
+  },
+  "labelcurve.summary.k1_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.02679965849270599
+  },
+  "labelcurve.summary.k1_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06164650595797801
+  },
+  "labelcurve.summary.k1_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.4906978884345802
+  },
+  "labelcurve.summary.k1_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.03943519283180965
+  },
+  "labelcurve.summary.k1_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.07666666666666667
+  },
+  "labelcurve.summary.k1_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06858355272004873
+  },
+  "labelcurve.summary.k1_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.46418589038644786
+  },
+  "labelcurve.summary.k1_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.11714243461318923
+  },
+  "labelcurve.summary.k1_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.14212433579819572
+  },
+  "labelcurve.summary.k1_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06493918284014677
+  },
+  "labelcurve.summary.k1_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.5718061741437406
+  },
+  "labelcurve.summary.k1_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.04320914846377182
+  },
+  "labelcurve.summary.k1_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.2
+  },
+  "labelcurve.summary.k1_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.18856180831641267
+  },
+  "labelcurve.summary.k1_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.23338011715378873
+  },
+  "labelcurve.summary.k1_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.014484814448131789
+  },
+  "labelcurve.summary.k1_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.005413468145001134
+  },
+  "labelcurve.summary.k1_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.001039940021555822
+  },
+  "labelcurve.summary.k1_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.514381919264968
+  },
+  "labelcurve.summary.k1_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.14211613021157765
+  },
+  "labelcurve.summary.k1_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.12666666666666665
+  },
+  "labelcurve.summary.k1_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.1359011986792947
+  },
+  "labelcurve.summary.k1_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.5748321595710578
+  },
+  "labelcurve.summary.k1_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.061488583265052174
+  },
+  "labelcurve.summary.k1_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.14859015036031156
+  },
+  "labelcurve.summary.k1_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.011106294186795464
+  },
+  "labelcurve.summary.k20_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.7382107587108058
+  },
+  "labelcurve.summary.k20_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.027764969888257128
+  },
+  "labelcurve.summary.k20_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.9800000000000001
+  },
+  "labelcurve.summary.k20_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06324555320336758
+  },
+  "labelcurve.summary.k20_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k20_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k20_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.3188074686775416
+  },
+  "labelcurve.summary.k20_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.03208603719398061
+  },
+  "labelcurve.summary.k20_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.002375079266241657
+  },
+  "labelcurve.summary.k20_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0009319805397745376
+  },
+  "labelcurve.summary.k20_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.5857404505925243
+  },
+  "labelcurve.summary.k20_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.05237560787016726
+  },
+  "labelcurve.summary.k20_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.13333333333333336
+  },
+  "labelcurve.summary.k20_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.07200822998230956
+  },
+  "labelcurve.summary.k20_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.7791496491852767
+  },
+  "labelcurve.summary.k20_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0753074446699636
+  },
+  "labelcurve.summary.k20_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.2037035190823549
+  },
+  "labelcurve.summary.k20_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.02231637170085091
+  },
+  "labelcurve.summary.k20_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.8853989255007034
+  },
+  "labelcurve.summary.k20_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.02744061296560152
+  },
+  "labelcurve.summary.k20_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.9800000000000001
+  },
+  "labelcurve.summary.k20_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06324555320336758
+  },
+  "labelcurve.summary.k20_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.3465344188917762
+  },
+  "labelcurve.summary.k20_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.056736506661499035
+  },
+  "labelcurve.summary.k20_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0011548267108176346
+  },
+  "labelcurve.summary.k20_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0006216991182685358
+  },
+  "labelcurve.summary.k20_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.8103599357533066
+  },
+  "labelcurve.summary.k20_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0529180501150933
+  },
+  "labelcurve.summary.k20_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.07333333333333333
+  },
+  "labelcurve.summary.k20_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06813204318558173
+  },
+  "labelcurve.summary.k20_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.8954505224314134
+  },
+  "labelcurve.summary.k20_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.05402172193854481
+  },
+  "labelcurve.summary.k20_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.21749515251944337
+  },
+  "labelcurve.summary.k20_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.04310009222525306
+  },
+  "labelcurve.summary.k3_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.5709864057603543
+  },
+  "labelcurve.summary.k3_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.025433181794012705
+  },
+  "labelcurve.summary.k3_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.54
+  },
+  "labelcurve.summary.k3_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.2836272984824353
+  },
+  "labelcurve.summary.k3_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k3_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k3_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.19030860069424763
+  },
+  "labelcurve.summary.k3_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.05051828828728485
+  },
+  "labelcurve.summary.k3_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06644913195105552
+  },
+  "labelcurve.summary.k3_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.09484303720145017
+  },
+  "labelcurve.summary.k3_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.5183469358283789
+  },
+  "labelcurve.summary.k3_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.03305568068163113
+  },
+  "labelcurve.summary.k3_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.13
+  },
+  "labelcurve.summary.k3_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.09355793082231505
+  },
+  "labelcurve.summary.k3_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.4479180926840497
+  },
+  "labelcurve.summary.k3_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.17685838537468931
+  },
+  "labelcurve.summary.k3_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.17794108945479997
+  },
+  "labelcurve.summary.k3_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.1007746085756873
+  },
+  "labelcurve.summary.k3_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.6952005823588175
+  },
+  "labelcurve.summary.k3_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.07108253898273226
+  },
+  "labelcurve.summary.k3_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.54
+  },
+  "labelcurve.summary.k3_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.2836272984824353
+  },
+  "labelcurve.summary.k3_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.2881779907410048
+  },
+  "labelcurve.summary.k3_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.042411762260209394
+  },
+  "labelcurve.summary.k3_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0037022887265524885
+  },
+  "labelcurve.summary.k3_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0016785160571500517
+  },
+  "labelcurve.summary.k3_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.6298616556459218
+  },
+  "labelcurve.summary.k3_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.07664353202293855
+  },
+  "labelcurve.summary.k3_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.13999999999999999
+  },
+  "labelcurve.summary.k3_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.08432740427115679
+  },
+  "labelcurve.summary.k3_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.7172724871567524
+  },
+  "labelcurve.summary.k3_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.1099709190730281
+  },
+  "labelcurve.summary.k3_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.18479359028631775
+  },
+  "labelcurve.summary.k3_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.032649348825369184
+  },
+  "labelcurve.summary.k50_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.8815689511110485
+  },
+  "labelcurve.summary.k50_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.023343357188450656
+  },
+  "labelcurve.summary.k50_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 1.0
+  },
+  "labelcurve.summary.k50_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k50_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k50_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k50_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.39777495213670283
+  },
+  "labelcurve.summary.k50_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06638048195715703
+  },
+  "labelcurve.summary.k50_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0005552469894152274
+  },
+  "labelcurve.summary.k50_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0004881504380580832
+  },
+  "labelcurve.summary.k50_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.7701283311950827
+  },
+  "labelcurve.summary.k50_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.05892951449911515
+  },
+  "labelcurve.summary.k50_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.27666666666666667
+  },
+  "labelcurve.summary.k50_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.1305732848482008
+  },
+  "labelcurve.summary.k50_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.9577538086755153
+  },
+  "labelcurve.summary.k50_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.026804249180308923
+  },
+  "labelcurve.summary.k50_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.25740840168299134
+  },
+  "labelcurve.summary.k50_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.05586379555746672
+  },
+  "labelcurve.summary.k50_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.9215562176691977
+  },
+  "labelcurve.summary.k50_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.02130120781654106
+  },
+  "labelcurve.summary.k50_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 1.0
+  },
+  "labelcurve.summary.k50_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k50_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.36861336450292714
+  },
+  "labelcurve.summary.k50_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06451670397459294
+  },
+  "labelcurve.summary.k50_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0011279759152040072
+  },
+  "labelcurve.summary.k50_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0005899257055424497
+  },
+  "labelcurve.summary.k50_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.8596511126676706
+  },
+  "labelcurve.summary.k50_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.03429881034944928
+  },
+  "labelcurve.summary.k50_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.07333333333333333
+  },
+  "labelcurve.summary.k50_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.10863916943626949
+  },
+  "labelcurve.summary.k50_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.8964259605761085
+  },
+  "labelcurve.summary.k50_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0633940369480905
+  },
+  "labelcurve.summary.k50_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.23381722792249854
+  },
+  "labelcurve.summary.k50_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.04906754240507319
+  },
+  "labelcurve.summary.k5_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.5781149198490761
+  },
+  "labelcurve.summary.k5_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.04720315292359476
+  },
+  "labelcurve.summary.k5_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.7799999999999999
+  },
+  "labelcurve.summary.k5_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.17511900715418263
+  },
+  "labelcurve.summary.k5_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k5_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.k5_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.19125161682163544
+  },
+  "labelcurve.summary.k5_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.04199811107253658
+  },
+  "labelcurve.summary.k5_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.025827180762863906
+  },
+  "labelcurve.summary.k5_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06252749562658301
+  },
+  "labelcurve.summary.k5_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.5284340229982228
+  },
+  "labelcurve.summary.k5_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.04450467917312959
+  },
+  "labelcurve.summary.k5_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.09666666666666666
+  },
+  "labelcurve.summary.k5_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06564024661218634
+  },
+  "labelcurve.summary.k5_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.4630102028706681
+  },
+  "labelcurve.summary.k5_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.08413090041508073
+  },
+  "labelcurve.summary.k5_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.142159982725636
+  },
+  "labelcurve.summary.k5_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.06135834265140385
+  },
+  "labelcurve.summary.k5_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.7687707011580243
+  },
+  "labelcurve.summary.k5_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.05565616808654777
+  },
+  "labelcurve.summary.k5_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.7799999999999999
+  },
+  "labelcurve.summary.k5_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.17511900715418263
+  },
+  "labelcurve.summary.k5_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.314888218384091
+  },
+  "labelcurve.summary.k5_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.04281724174537322
+  },
+  "labelcurve.summary.k5_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0026695199339094003
+  },
+  "labelcurve.summary.k5_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0012382497776932567
+  },
+  "labelcurve.summary.k5_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.6708517220409712
+  },
+  "labelcurve.summary.k5_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.1286078497753131
+  },
+  "labelcurve.summary.k5_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.13
+  },
+  "labelcurve.summary.k5_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.08812168915065935
+  },
+  "labelcurve.summary.k5_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.7825160154009899
+  },
+  "labelcurve.summary.k5_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.051158204666121795
+  },
+  "labelcurve.summary.k5_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.19980038232441283
+  },
+  "labelcurve.summary.k5_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.032105287166864886
+  },
+  "labelcurve.summary.kall_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.9511519183693699
+  },
+  "labelcurve.summary.kall_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.02055343765765658
+  },
+  "labelcurve.summary.kall_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 1.0
+  },
+  "labelcurve.summary.kall_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.kall_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.kall_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.kall_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.4561512152666921
+  },
+  "labelcurve.summary.kall_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.09093941789700054
+  },
+  "labelcurve.summary.kall_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 8.810907826259766e-05
+  },
+  "labelcurve.summary.kall_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.00018575466235725446
+  },
+  "labelcurve.summary.kall_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.9008183791674075
+  },
+  "labelcurve.summary.kall_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.041882061907711994
+  },
+  "labelcurve.summary.kall_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.kall_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.kall_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.9915110356536502
+  },
+  "labelcurve.summary.kall_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.018529378091392087
+  },
+  "labelcurve.summary.kall_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.3002855183586257
+  },
+  "labelcurve.summary.kall_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0805688046613775
+  },
+  "labelcurve.summary.kall_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.9333015223811947
+  },
+  "labelcurve.summary.kall_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.016296783919642736
+  },
+  "labelcurve.summary.kall_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 1.0
+  },
+  "labelcurve.summary.kall_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0
+  },
+  "labelcurve.summary.kall_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.37595026987273683
+  },
+  "labelcurve.summary.kall_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.061101077227704144
+  },
+  "labelcurve.summary.kall_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0008493414509844017
+  },
+  "labelcurve.summary.kall_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.0003291795365796042
+  },
+  "labelcurve.summary.kall_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.8754949260593223
+  },
+  "labelcurve.summary.kall_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.028914275702026978
+  },
+  "labelcurve.summary.kall_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.05
+  },
+  "labelcurve.summary.kall_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.08050764858994132
+  },
+  "labelcurve.summary.kall_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.918652199962192
+  },
+  "labelcurve.summary.kall_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.04076506336645068
+  },
+  "labelcurve.summary.kall_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.2375141549128855
+  },
+  "labelcurve.summary.kall_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T191753Z",
+   "value": 0.04624502238338023
+  },
+  "labelcurve_b5.summary._meta.budget_percentile_val": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 95.0
+  },
+  "labelcurve_b5.summary._meta.minutes": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 4.347836490472158
+  },
+  "labelcurve_b5.summary._meta.train_episodes_per_dataset": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 143
+  },
+  "labelcurve_b5.summary.k0_iforest.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.7831569445258133
+  },
+  "labelcurve_b5.summary.k0_iforest.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.030257670473390817
+  },
+  "labelcurve_b5.summary.k0_iforest.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.46996000835928003
+  },
+  "labelcurve_b5.summary.k0_iforest.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03234711479550666
+  },
+  "labelcurve_b5.summary.k0_iforest.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03064778126472687
+  },
+  "labelcurve_b5.summary.k0_iforest.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.005298430080423893
+  },
+  "labelcurve_b5.summary.k0_iforest.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5596764077581982
+  },
+  "labelcurve_b5.summary.k0_iforest.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.06503413770744221
+  },
+  "labelcurve_b5.summary.k0_iforest.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.2833333333333333
+  },
+  "labelcurve_b5.summary.k0_iforest.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.13721210039142742
+  },
+  "labelcurve_b5.summary.k0_iforest.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.42665321775110787
+  },
+  "labelcurve_b5.summary.k0_iforest.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.04711804931102438
+  },
+  "labelcurve_b5.summary.k0_iforest.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5268130940866673
+  },
+  "labelcurve_b5.summary.k0_iforest.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.026599369086461867
+  },
+  "labelcurve_b5.summary.k10_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.6196407561169446
+  },
+  "labelcurve_b5.summary.k10_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.02968843581251976
+  },
+  "labelcurve_b5.summary.k10_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.9
+  },
+  "labelcurve_b5.summary.k10_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.1414213562373095
+  },
+  "labelcurve_b5.summary.k10_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k10_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k10_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.251353437026114
+  },
+  "labelcurve_b5.summary.k10_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.038465553134959835
+  },
+  "labelcurve_b5.summary.k10_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.25884017478570065
+  },
+  "labelcurve_b5.summary.k10_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.13504314312019863
+  },
+  "labelcurve_b5.summary.k10_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.536335619273325
+  },
+  "labelcurve_b5.summary.k10_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.023165753826544032
+  },
+  "labelcurve_b5.summary.k10_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5199999999999999
+  },
+  "labelcurve_b5.summary.k10_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.16495416497685006
+  },
+  "labelcurve_b5.summary.k10_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.21137668717976577
+  },
+  "labelcurve_b5.summary.k10_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.032108137346273886
+  },
+  "labelcurve_b5.summary.k10_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.48199887241214157
+  },
+  "labelcurve_b5.summary.k10_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.11948913149454989
+  },
+  "labelcurve_b5.summary.k10_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.8185796657612293
+  },
+  "labelcurve_b5.summary.k10_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0422434333170091
+  },
+  "labelcurve_b5.summary.k10_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.9
+  },
+  "labelcurve_b5.summary.k10_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.1414213562373095
+  },
+  "labelcurve_b5.summary.k10_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.45399376999916496
+  },
+  "labelcurve_b5.summary.k10_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03376114472209745
+  },
+  "labelcurve_b5.summary.k10_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.033564610529367864
+  },
+  "labelcurve_b5.summary.k10_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.007223734421917917
+  },
+  "labelcurve_b5.summary.k10_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.7101879565443393
+  },
+  "labelcurve_b5.summary.k10_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.08325937579164928
+  },
+  "labelcurve_b5.summary.k10_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.6566666666666667
+  },
+  "labelcurve_b5.summary.k10_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.1370320319406298
+  },
+  "labelcurve_b5.summary.k10_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.4086741482080858
+  },
+  "labelcurve_b5.summary.k10_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.042201710814022776
+  },
+  "labelcurve_b5.summary.k10_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5205295110754743
+  },
+  "labelcurve_b5.summary.k10_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03443719152554187
+  },
+  "labelcurve_b5.summary.k1_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5295951125910565
+  },
+  "labelcurve_b5.summary.k1_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03935850403112461
+  },
+  "labelcurve_b5.summary.k1_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.2
+  },
+  "labelcurve_b5.summary.k1_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.18856180831641267
+  },
+  "labelcurve_b5.summary.k1_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 1.6
+  },
+  "labelcurve_b5.summary.k1_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.6992058987801011
+  },
+  "labelcurve_b5.summary.k1_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.1493413628433276
+  },
+  "labelcurve_b5.summary.k1_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03984395132278181
+  },
+  "labelcurve_b5.summary.k1_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.4288824819881073
+  },
+  "labelcurve_b5.summary.k1_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.24837459194709285
+  },
+  "labelcurve_b5.summary.k1_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.4906978884345802
+  },
+  "labelcurve_b5.summary.k1_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03943519283180965
+  },
+  "labelcurve_b5.summary.k1_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5833333333333333
+  },
+  "labelcurve_b5.summary.k1_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.22946529364514873
+  },
+  "labelcurve_b5.summary.k1_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.11745710583261923
+  },
+  "labelcurve_b5.summary.k1_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.041981065135069016
+  },
+  "labelcurve_b5.summary.k1_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5026173117456423
+  },
+  "labelcurve_b5.summary.k1_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.1762151575501517
+  },
+  "labelcurve_b5.summary.k1_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5718061741437406
+  },
+  "labelcurve_b5.summary.k1_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.04320914846377182
+  },
+  "labelcurve_b5.summary.k1_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.2
+  },
+  "labelcurve_b5.summary.k1_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.18856180831641267
+  },
+  "labelcurve_b5.summary.k1_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.2630457385614515
+  },
+  "labelcurve_b5.summary.k1_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03782601506940457
+  },
+  "labelcurve_b5.summary.k1_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.042646309102624
+  },
+  "labelcurve_b5.summary.k1_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.004595574868972243
+  },
+  "labelcurve_b5.summary.k1_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.514381919264968
+  },
+  "labelcurve_b5.summary.k1_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.14211613021157765
+  },
+  "labelcurve_b5.summary.k1_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.36333333333333334
+  },
+  "labelcurve_b5.summary.k1_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.22024116971971017
+  },
+  "labelcurve_b5.summary.k1_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.23851047776668297
+  },
+  "labelcurve_b5.summary.k1_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.038729232557146234
+  },
+  "labelcurve_b5.summary.k1_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.2986148471604964
+  },
+  "labelcurve_b5.summary.k1_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03941071043898993
+  },
+  "labelcurve_b5.summary.k20_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.7382107587108058
+  },
+  "labelcurve_b5.summary.k20_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.027764969888257128
+  },
+  "labelcurve_b5.summary.k20_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.9800000000000001
+  },
+  "labelcurve_b5.summary.k20_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.06324555320336758
+  },
+  "labelcurve_b5.summary.k20_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k20_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k20_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.4227526468878128
+  },
+  "labelcurve_b5.summary.k20_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.054005205122856
+  },
+  "labelcurve_b5.summary.k20_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.07566639689085734
+  },
+  "labelcurve_b5.summary.k20_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.08004389319074605
+  },
+  "labelcurve_b5.summary.k20_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5857404505925243
+  },
+  "labelcurve_b5.summary.k20_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.05237560787016726
+  },
+  "labelcurve_b5.summary.k20_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5166666666666666
+  },
+  "labelcurve_b5.summary.k20_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.12397729780234107
+  },
+  "labelcurve_b5.summary.k20_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.37745590122933226
+  },
+  "labelcurve_b5.summary.k20_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.05715583266477178
+  },
+  "labelcurve_b5.summary.k20_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5240987410791647
+  },
+  "labelcurve_b5.summary.k20_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.05393641630161428
+  },
+  "labelcurve_b5.summary.k20_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.8853989255007034
+  },
+  "labelcurve_b5.summary.k20_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.02744061296560152
+  },
+  "labelcurve_b5.summary.k20_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.9800000000000001
+  },
+  "labelcurve_b5.summary.k20_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.06324555320336758
+  },
+  "labelcurve_b5.summary.k20_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5250954469099505
+  },
+  "labelcurve_b5.summary.k20_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.027159847776399928
+  },
+  "labelcurve_b5.summary.k20_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.02788857860515636
+  },
+  "labelcurve_b5.summary.k20_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.004026525651448831
+  },
+  "labelcurve_b5.summary.k20_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.8103599357533066
+  },
+  "labelcurve_b5.summary.k20_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0529180501150933
+  },
+  "labelcurve_b5.summary.k20_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.79
+  },
+  "labelcurve_b5.summary.k20_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0956459520740326
+  },
+  "labelcurve_b5.summary.k20_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.47791141859957254
+  },
+  "labelcurve_b5.summary.k20_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.032567011108621924
+  },
+  "labelcurve_b5.summary.k20_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5879393881506739
+  },
+  "labelcurve_b5.summary.k20_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.044056811683298044
+  },
+  "labelcurve_b5.summary.k3_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5709864057603543
+  },
+  "labelcurve_b5.summary.k3_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.025433181794012705
+  },
+  "labelcurve_b5.summary.k3_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.54
+  },
+  "labelcurve_b5.summary.k3_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.2836272984824353
+  },
+  "labelcurve_b5.summary.k3_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k3_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k3_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.16415125964646526
+  },
+  "labelcurve_b5.summary.k3_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.032184886472593814
+  },
+  "labelcurve_b5.summary.k3_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.45826448421137034
+  },
+  "labelcurve_b5.summary.k3_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.20656593022903358
+  },
+  "labelcurve_b5.summary.k3_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5183469358283789
+  },
+  "labelcurve_b5.summary.k3_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03305568068163113
+  },
+  "labelcurve_b5.summary.k3_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.61
+  },
+  "labelcurve_b5.summary.k3_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.16633299933166198
+  },
+  "labelcurve_b5.summary.k3_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.13287921685650805
+  },
+  "labelcurve_b5.summary.k3_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.033262813737151904
+  },
+  "labelcurve_b5.summary.k3_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5559910088821586
+  },
+  "labelcurve_b5.summary.k3_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.15181369085018137
+  },
+  "labelcurve_b5.summary.k3_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.6952005823588175
+  },
+  "labelcurve_b5.summary.k3_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.07108253898273226
+  },
+  "labelcurve_b5.summary.k3_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.54
+  },
+  "labelcurve_b5.summary.k3_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.2836272984824353
+  },
+  "labelcurve_b5.summary.k3_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.33938404721520543
+  },
+  "labelcurve_b5.summary.k3_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.05927510033770704
+  },
+  "labelcurve_b5.summary.k3_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.039595427455409844
+  },
+  "labelcurve_b5.summary.k3_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.007288361400544872
+  },
+  "labelcurve_b5.summary.k3_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.6298616556459218
+  },
+  "labelcurve_b5.summary.k3_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.07664353202293855
+  },
+  "labelcurve_b5.summary.k3_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.45999999999999996
+  },
+  "labelcurve_b5.summary.k3_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.13770607453181927
+  },
+  "labelcurve_b5.summary.k3_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.30752332307924746
+  },
+  "labelcurve_b5.summary.k3_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.05793479540603134
+  },
+  "labelcurve_b5.summary.k3_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.386703939621755
+  },
+  "labelcurve_b5.summary.k3_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.06212671325752443
+  },
+  "labelcurve_b5.summary.k50_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.8815689511110485
+  },
+  "labelcurve_b5.summary.k50_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.023343357188450656
+  },
+  "labelcurve_b5.summary.k50_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 1.0
+  },
+  "labelcurve_b5.summary.k50_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k50_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k50_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k50_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5930847750439027
+  },
+  "labelcurve_b5.summary.k50_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.04124264656807248
+  },
+  "labelcurve_b5.summary.k50_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.02564797032605482
+  },
+  "labelcurve_b5.summary.k50_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0034316118996869562
+  },
+  "labelcurve_b5.summary.k50_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.7701283311950827
+  },
+  "labelcurve_b5.summary.k50_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.05892951449911515
+  },
+  "labelcurve_b5.summary.k50_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.7766666666666666
+  },
+  "labelcurve_b5.summary.k50_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.1563866686244604
+  },
+  "labelcurve_b5.summary.k50_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5331540857580941
+  },
+  "labelcurve_b5.summary.k50_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.04428993881157104
+  },
+  "labelcurve_b5.summary.k50_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.6727963168171984
+  },
+  "labelcurve_b5.summary.k50_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03743127330121818
+  },
+  "labelcurve_b5.summary.k50_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.9215562176691977
+  },
+  "labelcurve_b5.summary.k50_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.02130120781654106
+  },
+  "labelcurve_b5.summary.k50_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 1.0
+  },
+  "labelcurve_b5.summary.k50_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k50_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5736437110201451
+  },
+  "labelcurve_b5.summary.k50_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0405909922806512
+  },
+  "labelcurve_b5.summary.k50_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.02578993090246485
+  },
+  "labelcurve_b5.summary.k50_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.004145748924799049
+  },
+  "labelcurve_b5.summary.k50_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.8596511126676706
+  },
+  "labelcurve_b5.summary.k50_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03429881034944928
+  },
+  "labelcurve_b5.summary.k50_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.8866666666666667
+  },
+  "labelcurve_b5.summary.k50_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.07888106377466157
+  },
+  "labelcurve_b5.summary.k50_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5189515862890329
+  },
+  "labelcurve_b5.summary.k50_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.04380054688322429
+  },
+  "labelcurve_b5.summary.k50_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.6450552580751624
+  },
+  "labelcurve_b5.summary.k50_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.05449879644657188
+  },
+  "labelcurve_b5.summary.k5_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5781149198490761
+  },
+  "labelcurve_b5.summary.k5_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.04720315292359476
+  },
+  "labelcurve_b5.summary.k5_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.7799999999999999
+  },
+  "labelcurve_b5.summary.k5_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.17511900715418263
+  },
+  "labelcurve_b5.summary.k5_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k5_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.k5_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.18251583071014893
+  },
+  "labelcurve_b5.summary.k5_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.07017453222044316
+  },
+  "labelcurve_b5.summary.k5_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.4260943179641294
+  },
+  "labelcurve_b5.summary.k5_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.23392768280249296
+  },
+  "labelcurve_b5.summary.k5_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5284340229982228
+  },
+  "labelcurve_b5.summary.k5_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.04450467917312959
+  },
+  "labelcurve_b5.summary.k5_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.6333333333333334
+  },
+  "labelcurve_b5.summary.k5_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.13240416986458872
+  },
+  "labelcurve_b5.summary.k5_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.14918773144381525
+  },
+  "labelcurve_b5.summary.k5_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.06727958285338886
+  },
+  "labelcurve_b5.summary.k5_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5447253933006688
+  },
+  "labelcurve_b5.summary.k5_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.11950084852301554
+  },
+  "labelcurve_b5.summary.k5_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.7687707011580243
+  },
+  "labelcurve_b5.summary.k5_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.05565616808654777
+  },
+  "labelcurve_b5.summary.k5_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.7799999999999999
+  },
+  "labelcurve_b5.summary.k5_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.17511900715418263
+  },
+  "labelcurve_b5.summary.k5_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.40139992482655157
+  },
+  "labelcurve_b5.summary.k5_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.04992895197411899
+  },
+  "labelcurve_b5.summary.k5_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0377415069978237
+  },
+  "labelcurve_b5.summary.k5_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.007474248826978968
+  },
+  "labelcurve_b5.summary.k5_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.6708517220409712
+  },
+  "labelcurve_b5.summary.k5_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.1286078497753131
+  },
+  "labelcurve_b5.summary.k5_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5633333333333334
+  },
+  "labelcurve_b5.summary.k5_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.17458946555127972
+  },
+  "labelcurve_b5.summary.k5_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.36033506157663503
+  },
+  "labelcurve_b5.summary.k5_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.05459764354361886
+  },
+  "labelcurve_b5.summary.k5_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.4633804409919369
+  },
+  "labelcurve_b5.summary.k5_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.04946242006573829
+  },
+  "labelcurve_b5.summary.kall_boosting.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.9511519183693699
+  },
+  "labelcurve_b5.summary.kall_boosting.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.02055343765765658
+  },
+  "labelcurve_b5.summary.kall_boosting.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 1.0
+  },
+  "labelcurve_b5.summary.kall_boosting.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.kall_boosting.draws_without_early_stopping.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.kall_boosting.draws_without_early_stopping.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.kall_boosting.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.696880883611011
+  },
+  "labelcurve_b5.summary.kall_boosting.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.052180500749977377
+  },
+  "labelcurve_b5.summary.kall_boosting.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.020619459534284675
+  },
+  "labelcurve_b5.summary.kall_boosting.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0051034827516715136
+  },
+  "labelcurve_b5.summary.kall_boosting.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.9008183791674075
+  },
+  "labelcurve_b5.summary.kall_boosting.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.041882061907711994
+  },
+  "labelcurve_b5.summary.kall_boosting.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 1.0
+  },
+  "labelcurve_b5.summary.kall_boosting.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.kall_boosting.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.6246477131959798
+  },
+  "labelcurve_b5.summary.kall_boosting.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.06279447461762434
+  },
+  "labelcurve_b5.summary.kall_boosting.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.7900741585706205
+  },
+  "labelcurve_b5.summary.kall_boosting.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03936723715189378
+  },
+  "labelcurve_b5.summary.kall_logistic.auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.9333015223811947
+  },
+  "labelcurve_b5.summary.kall_logistic.auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.016296783919642736
+  },
+  "labelcurve_b5.summary.kall_logistic.draws_with_malicious_episode.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 1.0
+  },
+  "labelcurve_b5.summary.kall_logistic.draws_with_malicious_episode.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0
+  },
+  "labelcurve_b5.summary.kall_logistic.f1.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5860429549980772
+  },
+  "labelcurve_b5.summary.kall_logistic.f1.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.03628255702055317
+  },
+  "labelcurve_b5.summary.kall_logistic.fpr.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.02525284077107266
+  },
+  "labelcurve_b5.summary.kall_logistic.fpr.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.0048460733263538894
+  },
+  "labelcurve_b5.summary.kall_logistic.malicious_auc.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.8754949260593223
+  },
+  "labelcurve_b5.summary.kall_logistic.malicious_auc.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.028914275702026978
+  },
+  "labelcurve_b5.summary.kall_logistic.malicious_episode_recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.8833333333333332
+  },
+  "labelcurve_b5.summary.kall_logistic.malicious_episode_recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.11249142628509215
+  },
+  "labelcurve_b5.summary.kall_logistic.precision.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.5303564024362636
+  },
+  "labelcurve_b5.summary.kall_logistic.precision.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.047587219077271106
+  },
+  "labelcurve_b5.summary.kall_logistic.recall.mean": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.6590217094241664
+  },
+  "labelcurve_b5.summary.kall_logistic.recall.sd": {
+   "run_id": "label_curve-20261102T192239Z",
+   "value": 0.04717892633337818
+  },
   "latency.tier1.cold_client_ms.max": {
    "run_id": "tier_latency-20261023T160300Z",
    "value": 9172.929699998349
@@ -188105,6 +190145,98 @@
    },
    "seeds": {
     "data": 1001
+   }
+  },
+  "label_curve-20261102T191753Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\label_curve.py",
+   "date_utc": "2026-11-02T19:17:53+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "labelcurve.summary"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/label_curve.py",
+   "scripts": {
+    "labelcurve.summary": "evaluation/label_curve.py"
+   },
+   "seeds": {
+    "data_seeds": [
+     42,
+     7,
+     2024,
+     1,
+     13,
+     99,
+     123,
+     314,
+     777,
+     1001
+    ],
+    "draw_seed_rule": "1000*dataset+10*k+draw",
+    "models": 42
+   }
+  },
+  "label_curve-20261102T192239Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\label_curve.py --budget-pctl 95",
+   "date_utc": "2026-11-02T19:22:39+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "labelcurve_b5.summary"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/label_curve.py",
+   "scripts": {
+    "labelcurve_b5.summary": "evaluation/label_curve.py"
+   },
+   "seeds": {
+    "data_seeds": [
+     42,
+     7,
+     2024,
+     1,
+     13,
+     99,
+     123,
+     314,
+     777,
+     1001
+    ],
+    "draw_seed_rule": "1000*dataset+10*k+draw",
+    "models": 42
    }
   },
   "multiseed-20261023T112806Z": {

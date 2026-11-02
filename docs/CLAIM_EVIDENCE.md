@@ -228,6 +228,28 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 | logistic malicious recall | `fusion.summary.logistic.per_class_recall.malicious_insider.mean` | 0.2450 | `evaluation/sbrs_fusion.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | sbrs_fusion-20261102T182008Z (37360dda) |
 | low-S high-A threats (sum) | `fusion.summary.multiplicative.low_S_high_A_threats.sum` | 35.0000 | `evaluation/sbrs_fusion.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | sbrs_fusion-20261102T182008Z (37360dda) |
 
+## label_curve
+
+| Claim | Manifest key | Value | Script | Seeds | Run |
+|---|---|---|---|---|---|
+| IF AUC | `labelcurve_b5.summary.k0_iforest.auc.mean` | 0.783 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| IF F1 at 5% | `labelcurve_b5.summary.k0_iforest.f1.mean` | 0.470 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| IF malicious episode recall at 5% | `labelcurve_b5.summary.k0_iforest.malicious_episode_recall.mean` | 0.283 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| k1 boosting AUC | `labelcurve_b5.summary.k1_boosting.auc.mean` | 0.530 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| k5 logistic AUC | `labelcurve_b5.summary.k5_logistic.auc.mean` | 0.769 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| k10 logistic AUC | `labelcurve_b5.summary.k10_logistic.auc.mean` | 0.819 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| k10 logistic F1 | `labelcurve_b5.summary.k10_logistic.f1.mean` | 0.454 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| k10 logistic malicious episode recall | `labelcurve_b5.summary.k10_logistic.malicious_episode_recall.mean` | 0.657 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| k20 logistic F1 | `labelcurve_b5.summary.k20_logistic.f1.mean` | 0.525 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| k20 logistic malicious episode recall | `labelcurve_b5.summary.k20_logistic.malicious_episode_recall.mean` | 0.790 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| k50 boosting AUC | `labelcurve_b5.summary.k50_boosting.auc.mean` | 0.882 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| all boosting F1 at 5% | `labelcurve_b5.summary.kall_boosting.f1.mean` | 0.697 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| all boosting malicious episode recall at 5% | `labelcurve_b5.summary.kall_boosting.malicious_episode_recall.mean` | 1.000 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| all boosting malicious episode recall at 1% | `labelcurve.summary.kall_boosting.malicious_episode_recall.mean` | 0.000 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T191753Z (f02f2373) |
+| k1 boosting FPR at 5% | `labelcurve_b5.summary.k1_boosting.fpr.mean` | 0.43 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| k3 boosting FPR at 5% | `labelcurve_b5.summary.k3_boosting.fpr.mean` | 0.46 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+| k1 logistic FPR at 5% | `labelcurve_b5.summary.k1_logistic.fpr.mean` | 0.04 | `evaluation/label_curve.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "draw_seed_rule": "1000*dataset+10*k+draw", "models": 42} | label_curve-20261102T192239Z (f02f2373) |
+
 ## latency
 
 | Claim | Manifest key | Value | Script | Seeds | Run |

@@ -194,6 +194,23 @@ def main() -> None:
               "tab:supervised", ["Detector", "AUC", "F1", "Malicious AUC", "Malicious episode recall"], sup_rows)
         readme.append("| `tables/supervised.tex` | Supervised probes vs unsupervised detectors (from `supervised.summary.*`) | `tools/build_paper_inputs.py` |")
 
+    # label learning curve at a 5 percent label-free alert budget (D-029)
+    if g("labelcurve_b5.summary.k0_iforest.auc.mean") is not None:
+        lc = lambda c, k: f3(g(f"labelcurve_b5.summary.{c}.{k}.mean"))
+        lc_rows = [["0 (Isolation Forest)", lc("k0_iforest", "auc"), lc("k0_iforest", "f1"),
+                    lc("k0_iforest", "malicious_episode_recall"), "", "", ""]]
+        for k in ("1", "3", "5", "10", "20", "50", "all"):
+            lc_rows.append([k, lc(f"k{k}_logistic", "auc"), lc(f"k{k}_logistic", "f1"),
+                            lc(f"k{k}_logistic", "malicious_episode_recall"),
+                            lc(f"k{k}_boosting", "auc"), lc(f"k{k}_boosting", "f1"),
+                            lc(f"k{k}_boosting", "malicious_episode_recall")])
+        table("label_curve", "Supervised layer trained on k labelled TRAIN incidents (of 143); other TRAIN hours "
+              "treated as benign. Alert threshold: 95th percentile of validation scores (no labels). Mean over 5 draws "
+              "and 10 datasets. Columns: logistic AUC, F1, malicious episode recall; boosting AUC, F1, malicious "
+              "episode recall.", "tab:labelcurve",
+              ["k", "LR AUC", "LR F1", "LR mal. ep. rec.", "GB AUC", "GB F1", "GB mal. ep. rec."], lc_rows)
+        readme.append("| `tables/label_curve.tex` | Label learning curve, 5 percent alert budget (from `labelcurve_b5.summary.*`) | `tools/build_paper_inputs.py` |")
+
     # the may / must-not claim lists live in docs/FIXES_SUMMARY.md section 5; copy them, never edit the copy
     fs = (PROJECT_ROOT / "docs" / "FIXES_SUMMARY.md").read_text(encoding="utf-8")
     sec = fs[fs.index("## 5. Claims the paper may make"):fs.index("## 6.")].rstrip()

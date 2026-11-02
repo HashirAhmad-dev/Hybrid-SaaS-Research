@@ -1,0 +1,18 @@
+# Label learning curve (D-029)
+IF AUC | labelcurve_b5.summary.k0_iforest.auc.mean | 0.783
+IF F1 at 5% | labelcurve_b5.summary.k0_iforest.f1.mean | 0.470
+IF malicious episode recall at 5% | labelcurve_b5.summary.k0_iforest.malicious_episode_recall.mean | 0.283
+k1 boosting AUC | labelcurve_b5.summary.k1_boosting.auc.mean | 0.530
+k5 logistic AUC | labelcurve_b5.summary.k5_logistic.auc.mean | 0.769
+k10 logistic AUC | labelcurve_b5.summary.k10_logistic.auc.mean | 0.819
+k10 logistic F1 | labelcurve_b5.summary.k10_logistic.f1.mean | 0.454
+k10 logistic malicious episode recall | labelcurve_b5.summary.k10_logistic.malicious_episode_recall.mean | 0.657
+k20 logistic F1 | labelcurve_b5.summary.k20_logistic.f1.mean | 0.525
+k20 logistic malicious episode recall | labelcurve_b5.summary.k20_logistic.malicious_episode_recall.mean | 0.790
+k50 boosting AUC | labelcurve_b5.summary.k50_boosting.auc.mean | 0.882
+all boosting F1 at 5% | labelcurve_b5.summary.kall_boosting.f1.mean | 0.697
+all boosting malicious episode recall at 5% | labelcurve_b5.summary.kall_boosting.malicious_episode_recall.mean | 1.000
+all boosting malicious episode recall at 1% | labelcurve.summary.kall_boosting.malicious_episode_recall.mean | 0.000
+k1 boosting FPR at 5% | labelcurve_b5.summary.k1_boosting.fpr.mean | 0.43
+k3 boosting FPR at 5% | labelcurve_b5.summary.k3_boosting.fpr.mean | 0.46
+k1 logistic FPR at 5% | labelcurve_b5.summary.k1_logistic.fpr.mean | 0.04

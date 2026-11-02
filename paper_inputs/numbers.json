@@ -2311,6 +2311,142 @@
   "script": "evaluation/sbrs_fusion.py",
   "value": 0.5887206495780595
  },
+ "labelcurve.summary.kall_boosting.malicious_episode_recall.mean": {
+  "as_written": "0.000",
+  "claim": "all boosting malicious episode recall at 1%",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T191753Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.0
+ },
+ "labelcurve_b5.summary.k0_iforest.auc.mean": {
+  "as_written": "0.783",
+  "claim": "IF AUC",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.7831569445258133
+ },
+ "labelcurve_b5.summary.k0_iforest.f1.mean": {
+  "as_written": "0.470",
+  "claim": "IF F1 at 5%",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.46996000835928003
+ },
+ "labelcurve_b5.summary.k0_iforest.malicious_episode_recall.mean": {
+  "as_written": "0.283",
+  "claim": "IF malicious episode recall at 5%",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.2833333333333333
+ },
+ "labelcurve_b5.summary.k10_logistic.auc.mean": {
+  "as_written": "0.819",
+  "claim": "k10 logistic AUC",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.8185796657612293
+ },
+ "labelcurve_b5.summary.k10_logistic.f1.mean": {
+  "as_written": "0.454",
+  "claim": "k10 logistic F1",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.45399376999916496
+ },
+ "labelcurve_b5.summary.k10_logistic.malicious_episode_recall.mean": {
+  "as_written": "0.657",
+  "claim": "k10 logistic malicious episode recall",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.6566666666666667
+ },
+ "labelcurve_b5.summary.k1_boosting.auc.mean": {
+  "as_written": "0.530",
+  "claim": "k1 boosting AUC",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.5295951125910565
+ },
+ "labelcurve_b5.summary.k1_boosting.fpr.mean": {
+  "as_written": "0.43",
+  "claim": "k1 boosting FPR at 5%",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.4288824819881073
+ },
+ "labelcurve_b5.summary.k1_logistic.fpr.mean": {
+  "as_written": "0.04",
+  "claim": "k1 logistic FPR at 5%",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.042646309102624
+ },
+ "labelcurve_b5.summary.k20_logistic.f1.mean": {
+  "as_written": "0.525",
+  "claim": "k20 logistic F1",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.5250954469099505
+ },
+ "labelcurve_b5.summary.k20_logistic.malicious_episode_recall.mean": {
+  "as_written": "0.790",
+  "claim": "k20 logistic malicious episode recall",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.79
+ },
+ "labelcurve_b5.summary.k3_boosting.fpr.mean": {
+  "as_written": "0.46",
+  "claim": "k3 boosting FPR at 5%",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.45826448421137034
+ },
+ "labelcurve_b5.summary.k50_boosting.auc.mean": {
+  "as_written": "0.882",
+  "claim": "k50 boosting AUC",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.8815689511110485
+ },
+ "labelcurve_b5.summary.k5_logistic.auc.mean": {
+  "as_written": "0.769",
+  "claim": "k5 logistic AUC",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.7687707011580243
+ },
+ "labelcurve_b5.summary.kall_boosting.f1.mean": {
+  "as_written": "0.697",
+  "claim": "all boosting F1 at 5%",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 0.696880883611011
+ },
+ "labelcurve_b5.summary.kall_boosting.malicious_episode_recall.mean": {
+  "as_written": "1.000",
+  "claim": "all boosting malicious episode recall at 5%",
+  "git_hash": "f02f2373b8a1227d883ae0c90e6c0a1dc23fafa5",
+  "run_id": "label_curve-20261102T192239Z",
+  "script": "evaluation/label_curve.py",
+  "value": 1.0
+ },
  "latency.tier1.cold_client_ms.p50": {
   "as_written": "9003.6",
   "claim": "Tier1 cold client p50 ms",

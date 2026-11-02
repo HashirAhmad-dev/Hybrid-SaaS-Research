@@ -142,3 +142,14 @@ One entry per non-obvious decision. Format: date, task, options, choice, reason.
 - Thresholds on validation (max F1, 4,001 validation quantiles). Test: AUC, AP, F1, precision, recall, FPR, benign-burst flag rate, per-class AUC and episode recall. Summary: mean and sd over the 10 datasets, and the number of datasets where boosting beats the hybrid.
 - Recorded alongside: how many test attack episodes share a user with a TRAIN attack episode, because a supervised model can learn a user's own attack pattern.
 - All 10 datasets are reported whatever the outcome (H-R5).
+
+## D-029 (2026-11-03) Label learning curve, fixed before any result
+- Question: how many labelled incidents does the supervised layer of D-028 need before it beats the unsupervised detectors?
+- Data and features: the 10 datasets and probe inputs of D-028. Each TRAIN split holds 143 attack episodes.
+- Labels: k labelled TRAIN episodes, k in {1, 3, 5, 10, 20, 50, all}, drawn uniformly at random without replacement from all TRAIN episodes, 5 independent draws per k and dataset (draw seed = 1000 x dataset seed + 10 x k + draw; for k = all one draw). The hours of the k chosen episodes are positives. Every other TRAIN hour, including hours of attack episodes not chosen, is treated as benign, as in a deployment where only confirmed incidents carry labels.
+- Models: logistic regression and gradient boosting as in D-027 and D-028.
+- Operating point without labels: the alert threshold is the 99th percentile of the model's scores on all VALIDATION hours (a 1 percent alert budget), so no validation label is used. The unsupervised Isolation Forest refit (k = 0) gets the same rule as the baseline.
+- Reported on test: AUC; precision, recall, F1 and FPR at the 1 percent budget; malicious-insider AUC and episode recall; whether the k draws contained a malicious-insider episode. Mean over draws, then mean and sd over the 10 datasets.
+- All draws and datasets are reported (H-R5).
+- Amendment (before any result was produced): with k = 1 a chosen episode can have a single positive hour, and gradient boosting's automatic early stopping (a stratified 10 percent hold-out) then fails. For draws with fewer than 2 positive hours early stopping is switched off; the number of such draws is recorded per k (`draws_without_early_stopping`).
+- Amendment 2 (added after the 1 percent results were seen, and labelled as such): the 1 percent budget is below the share of attack hours in test (about 4 percent), so it caps recall near 0.25 for every model. The same curve is also reported at a 5 percent budget (`--budget-pctl 95`, keys `labelcurve_b5.*`). Both are reported; neither replaces the other.
