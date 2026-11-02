@@ -1,0 +1,39 @@
+{
+ "results": {
+  "val_auc": 0.9640520060391252,
+  "val_auc_drop_when_shuffled": {
+   "activity_rate": 0.004565465211916498,
+   "file_type_category": 0.3482077495508399,
+   "geo_index": 0.012560693860010685,
+   "endpoint_operation": 0.022074003240755258,
+   "permission_scope_delta": 0.05329947577496574,
+   "collaboration_density": 0.004305915733294152
+  }
+ },
+ "provenance": {
+  "script": "evaluation/cert_rich_importance.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\cert_rich_importance.py",
+  "seeds": {
+   "model_and_shuffle": 42
+  },
+  "date_utc": "2026-11-02T19:05:28+00:00",
+  "git_hash": "4c596ae3aa2d471946f99f914d8fdd86ba3c72d3",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": null
+ }
+}

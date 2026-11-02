@@ -1,0 +1,25 @@
+# CERT richer-features experiment (D-027), numbers quoted in results/negative_results.md, docs and paper_inputs
+BASE IF AUC | cert.rich.base.iforest.auc | 0.732
+RICH IF AUC | cert.rich.rich.iforest.auc | 0.692
+IF AUC diff | cert.rich.auc_diff_rich_minus_base.iforest.point | -0.040
+IF AUC diff low | cert.rich.auc_diff_rich_minus_base.iforest.ci_low | -0.051
+IF AUC diff high | cert.rich.auc_diff_rich_minus_base.iforest.ci_high | -0.026
+BASE IF F1 | cert.rich.base.iforest.f1 | 0.058
+RICH IF F1 | cert.rich.rich.iforest.f1 | 0.035
+BASE z AUC | cert.rich.base.zscore.auc | 0.678
+RICH z AUC | cert.rich.rich.zscore.auc | 0.674
+z diff low | cert.rich.auc_diff_rich_minus_base.zscore.ci_low | -0.028
+z diff high | cert.rich.auc_diff_rich_minus_base.zscore.ci_high | 0.029
+BASE boosting AUC | cert.rich.base.probe_boosting.auc | 0.987
+BASE boosting F1 | cert.rich.base.probe_boosting.f1 | 0.339
+BASE boosting precision | cert.rich.base.probe_boosting.precision | 0.236
+BASE boosting recall | cert.rich.base.probe_boosting.recall | 0.600
+BASE boosting FPR | cert.rich.base.probe_boosting.fpr | 1.0%
+RICH boosting AUC | cert.rich.rich.probe_boosting.auc | 0.980
+boosting diff | cert.rich.auc_diff_rich_minus_base.probe_boosting.point | -0.007
+boosting diff low | cert.rich.auc_diff_rich_minus_base.probe_boosting.ci_low | -0.016
+boosting diff high | cert.rich.auc_diff_rich_minus_base.probe_boosting.ci_high | 0.000
+BASE logistic AUC | cert.rich.base.probe_logistic.auc | 0.776
+RICH logistic AUC | cert.rich.rich.probe_logistic.auc | 0.854
+file copies importance | cert.rich_importance.val_auc_drop_when_shuffled.file_type_category | 0.348
+after-hours importance | cert.rich_importance.val_auc_drop_when_shuffled.permission_scope_delta | 0.053

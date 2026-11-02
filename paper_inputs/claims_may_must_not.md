@@ -23,6 +23,7 @@ All values are means over the 10 independently generated datasets unless marked.
 | Small VLMs were run on-box on a 6 GB laptop GPU. The best, gemma-3-4b-it, reaches F1 0.845 on the harder v2 images and 0.407 on real FUNSD forms; Qwen2.5-VL-3B and 7B score lower. | `results/claims/pii_v2_vlm_cascade.claims`, `results/claims/pii_v2_vlm_7b.claims` |
 | A cost-ordered cascade gives no cost saving at equal accuracy on these corpora, because OCR confidence is too weak a signal (v2 cascade F1 0.843 against VLM-only 0.845, with almost every image routed to the VLM). | `results/claims/pii_v2_vlm_cascade.claims` |
 | On CERT r4.2, a community benchmark mapped onto our features, the engine is much weaker (hybrid F1 0.057, AUC 0.733), which bounds how far our simulator results generalise. | `results/claims/cert.claims` |
+| On CERT the six features carry the signal, but unsupervised anomaly scores do not find it: a gradient-boosting model trained on labelled TRAIN incidents reaches test AUC 0.987 (F1 0.339) on the same features, against 0.732 for Isolation Forest. Adding 18 richer features does not help either kind of detector. The gap is between "unusual" and "malicious", not a lack of features. | `results/claims/cert_rich.claims` |
 
 ### Must not make
 
@@ -37,6 +38,7 @@ All values are means over the 10 independently generated datasets unless marked.
 - That the cascade saves cost by sending only hard images to the VLM (N-049, N-050).
 - That the system performs well on CERT, or that CERT is real enterprise data (it is synthetic, and the feature mapping is ours; N-051, N-055, N-056).
 - That episode recall alone shows skill on CERT (N-053).
+- That richer features or a bigger unsupervised model would fix CERT detection (N-061, N-062), or that the supervised probe is deployable without labelled incidents (N-064).
 - That federated learning, differential privacy or a usability study was done.
 - That "existing DLP ignores behaviour" (Microsoft Purview Adaptive Protection uses insider-risk levels in DLP).
 - That OCR confidence never ranks difficulty: on v2 it does (AUC 0.884); on v1 it did not.

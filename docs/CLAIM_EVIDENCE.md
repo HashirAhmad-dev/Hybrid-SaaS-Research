@@ -75,6 +75,35 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 | Supervised probe AUC | `cert.drift.supervised_probe.test_auc_all` | 0.754 | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
 | Supervised probe F1 | `cert.drift.supervised_probe.test_f1` | 0.104 | `evaluation/drift_detector.py` | {} | drift_detector-20261101T203055Z (1c6ceda8) |
 
+## cert_rich
+
+| Claim | Manifest key | Value | Script | Seeds | Run |
+|---|---|---|---|---|---|
+| BASE IF AUC | `cert.rich.base.iforest.auc` | 0.732 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| RICH IF AUC | `cert.rich.rich.iforest.auc` | 0.692 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| IF AUC diff | `cert.rich.auc_diff_rich_minus_base.iforest.point` | -0.040 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| IF AUC diff low | `cert.rich.auc_diff_rich_minus_base.iforest.ci_low` | -0.051 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| IF AUC diff high | `cert.rich.auc_diff_rich_minus_base.iforest.ci_high` | -0.026 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| BASE IF F1 | `cert.rich.base.iforest.f1` | 0.058 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| RICH IF F1 | `cert.rich.rich.iforest.f1` | 0.035 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| BASE z AUC | `cert.rich.base.zscore.auc` | 0.678 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| RICH z AUC | `cert.rich.rich.zscore.auc` | 0.674 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| z diff low | `cert.rich.auc_diff_rich_minus_base.zscore.ci_low` | -0.028 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| z diff high | `cert.rich.auc_diff_rich_minus_base.zscore.ci_high` | 0.029 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| BASE boosting AUC | `cert.rich.base.probe_boosting.auc` | 0.987 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| BASE boosting F1 | `cert.rich.base.probe_boosting.f1` | 0.339 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| BASE boosting precision | `cert.rich.base.probe_boosting.precision` | 0.236 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| BASE boosting recall | `cert.rich.base.probe_boosting.recall` | 0.600 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| BASE boosting FPR | `cert.rich.base.probe_boosting.fpr` | 1.0% | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| RICH boosting AUC | `cert.rich.rich.probe_boosting.auc` | 0.980 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| boosting diff | `cert.rich.auc_diff_rich_minus_base.probe_boosting.point` | -0.007 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| boosting diff low | `cert.rich.auc_diff_rich_minus_base.probe_boosting.ci_low` | -0.016 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| boosting diff high | `cert.rich.auc_diff_rich_minus_base.probe_boosting.ci_high` | 0.000 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| BASE logistic AUC | `cert.rich.base.probe_logistic.auc` | 0.776 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| RICH logistic AUC | `cert.rich.rich.probe_logistic.auc` | 0.854 | `evaluation/cert_rich.py` | {"bootstrap": 20261102, "iforest_and_boosting": 42, "user_sample": 42} | cert_rich-20261102T190426Z (4c596ae3) |
+| file copies importance | `cert.rich_importance.val_auc_drop_when_shuffled.file_type_category` | 0.348 | `evaluation/cert_rich_importance.py` | {"model_and_shuffle": 42} | cert_rich_importance-20261102T190528Z (4c596ae3) |
+| after-hours importance | `cert.rich_importance.val_auc_drop_when_shuffled.permission_scope_delta` | 0.053 | `evaluation/cert_rich_importance.py` | {"model_and_shuffle": 42} | cert_rich_importance-20261102T190528Z (4c596ae3) |
+
 ## context_md_baseline
 
 | Claim | Manifest key | Value | Script | Seeds | Run |

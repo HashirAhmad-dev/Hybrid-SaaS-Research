@@ -50744,6 +50744,454 @@
    "run_id": "cert_map-20261025T015317Z",
    "value": 200
   },
+  "cert.rich._meta.minutes": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 1.9916288216908773
+  },
+  "cert.rich._meta.scoreable_hours": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 590427
+  },
+  "cert.rich._meta.test_insiders": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 7
+  },
+  "cert.rich._meta.test_positive_hours": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 330
+  },
+  "cert.rich._meta.test_users": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 133
+  },
+  "cert.rich.auc_diff_rich_minus_base.iforest.ci_high": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": -0.026186516045501564
+  },
+  "cert.rich.auc_diff_rich_minus_base.iforest.ci_low": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": -0.050740787354897496
+  },
+  "cert.rich.auc_diff_rich_minus_base.iforest.point": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": -0.039992470803943525
+  },
+  "cert.rich.auc_diff_rich_minus_base.probe_boosting.ci_high": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": -6.770786895594414e-05
+  },
+  "cert.rich.auc_diff_rich_minus_base.probe_boosting.ci_low": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": -0.015728044026075506
+  },
+  "cert.rich.auc_diff_rich_minus_base.probe_boosting.point": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": -0.006739867443205427
+  },
+  "cert.rich.auc_diff_rich_minus_base.probe_logistic.ci_high": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.10790421328676103
+  },
+  "cert.rich.auc_diff_rich_minus_base.probe_logistic.ci_low": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.043449242370487653
+  },
+  "cert.rich.auc_diff_rich_minus_base.probe_logistic.point": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.07828342731991889
+  },
+  "cert.rich.auc_diff_rich_minus_base.zscore.ci_high": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.029051056482124225
+  },
+  "cert.rich.auc_diff_rich_minus_base.zscore.ci_low": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": -0.02816531159504691
+  },
+  "cert.rich.auc_diff_rich_minus_base.zscore.point": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": -0.004042566797692437
+  },
+  "cert.rich.base.iforest.auc": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.7323939575984432
+  },
+  "cert.rich.base.iforest.average_precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.016927873467817857
+  },
+  "cert.rich.base.iforest.f1": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.05783796190039017
+  },
+  "cert.rich.base.iforest.fp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 3901
+  },
+  "cert.rich.base.iforest.fpr": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.06009026633189051
+  },
+  "cert.rich.base.iforest.precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.031288800595977155
+  },
+  "cert.rich.base.iforest.recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.38181818181818183
+  },
+  "cert.rich.base.iforest.scenario2_episode_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 1.0
+  },
+  "cert.rich.base.iforest.scenario2_hour_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.38271604938271603
+  },
+  "cert.rich.base.iforest.tp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 126
+  },
+  "cert.rich.base.iforest.val_threshold": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.5813955395482405
+  },
+  "cert.rich.base.probe_boosting.auc": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.9870141206267764
+  },
+  "cert.rich.base.probe_boosting.average_precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.32476888933769194
+  },
+  "cert.rich.base.probe_boosting.f1": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.33875106928999144
+  },
+  "cert.rich.base.probe_boosting.fp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 641
+  },
+  "cert.rich.base.probe_boosting.fpr": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.009873842788705926
+  },
+  "cert.rich.base.probe_boosting.precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.2359952324195471
+  },
+  "cert.rich.base.probe_boosting.recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.6
+  },
+  "cert.rich.base.probe_boosting.scenario2_episode_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 1.0
+  },
+  "cert.rich.base.probe_boosting.scenario2_hour_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.6018518518518519
+  },
+  "cert.rich.base.probe_boosting.tp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 198
+  },
+  "cert.rich.base.probe_boosting.val_threshold": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.26835895033675095
+  },
+  "cert.rich.base.probe_logistic.auc": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.775858727449171
+  },
+  "cert.rich.base.probe_logistic.average_precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.04390922370076219
+  },
+  "cert.rich.base.probe_logistic.f1": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.13036565977742448
+  },
+  "cert.rich.base.probe_logistic.fp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 846
+  },
+  "cert.rich.base.probe_logistic.fpr": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.013031624023783484
+  },
+  "cert.rich.base.probe_logistic.precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.08836206896551724
+  },
+  "cert.rich.base.probe_logistic.recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.24848484848484848
+  },
+  "cert.rich.base.probe_logistic.scenario2_episode_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 1.0
+  },
+  "cert.rich.base.probe_logistic.scenario2_hour_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.24691358024691357
+  },
+  "cert.rich.base.probe_logistic.tp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 82
+  },
+  "cert.rich.base.probe_logistic.val_threshold": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.7324740903804215
+  },
+  "cert.rich.base.zscore.auc": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.678177654485053
+  },
+  "cert.rich.base.zscore.average_precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.014021684768706274
+  },
+  "cert.rich.base.zscore.f1": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.06001936108422072
+  },
+  "cert.rich.base.zscore.fp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 1674
+  },
+  "cert.rich.base.zscore.fpr": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.025785979451316256
+  },
+  "cert.rich.base.zscore.precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.03571428571428571
+  },
+  "cert.rich.base.zscore.recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.18787878787878787
+  },
+  "cert.rich.base.zscore.scenario2_episode_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 1.0
+  },
+  "cert.rich.base.zscore.scenario2_hour_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.1882716049382716
+  },
+  "cert.rich.base.zscore.tp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 62
+  },
+  "cert.rich.base.zscore.val_threshold": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 3.595907985728342
+  },
+  "cert.rich.rich.iforest.auc": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.6924014867944996
+  },
+  "cert.rich.rich.iforest.average_precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.012632948518775614
+  },
+  "cert.rich.rich.iforest.f1": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.03513174404015056
+  },
+  "cert.rich.rich.iforest.fp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 5934
+  },
+  "cert.rich.rich.iforest.fpr": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.09140621389731819
+  },
+  "cert.rich.rich.iforest.precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.018524644392987098
+  },
+  "cert.rich.rich.iforest.recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.3393939393939394
+  },
+  "cert.rich.rich.iforest.scenario2_episode_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 1.0
+  },
+  "cert.rich.rich.iforest.scenario2_hour_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.33641975308641975
+  },
+  "cert.rich.rich.iforest.tp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 112
+  },
+  "cert.rich.rich.iforest.val_threshold": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.5107233296333407
+  },
+  "cert.rich.rich.probe_boosting.auc": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.980274253183571
+  },
+  "cert.rich.rich.probe_boosting.average_precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.2960697798324383
+  },
+  "cert.rich.rich.probe_boosting.f1": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.3300760043431053
+  },
+  "cert.rich.rich.probe_boosting.fp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 439
+  },
+  "cert.rich.rich.probe_boosting.fpr": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.00676227298633682
+  },
+  "cert.rich.rich.probe_boosting.precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.2571912013536379
+  },
+  "cert.rich.rich.probe_boosting.recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.46060606060606063
+  },
+  "cert.rich.rich.probe_boosting.scenario2_episode_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 1.0
+  },
+  "cert.rich.rich.probe_boosting.scenario2_hour_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.46296296296296297
+  },
+  "cert.rich.rich.probe_boosting.tp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 152
+  },
+  "cert.rich.rich.probe_boosting.val_threshold": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.14023257993526092
+  },
+  "cert.rich.rich.probe_logistic.auc": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.8541421547690898
+  },
+  "cert.rich.rich.probe_logistic.average_precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.13659291993676007
+  },
+  "cert.rich.rich.probe_logistic.f1": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.22942206654991243
+  },
+  "cert.rich.rich.probe_logistic.fp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 681
+  },
+  "cert.rich.rich.probe_logistic.fpr": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.01048999522481862
+  },
+  "cert.rich.rich.probe_logistic.precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.16133004926108374
+  },
+  "cert.rich.rich.probe_logistic.recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.396969696969697
+  },
+  "cert.rich.rich.probe_logistic.scenario2_episode_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 1.0
+  },
+  "cert.rich.rich.probe_logistic.scenario2_hour_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.39197530864197533
+  },
+  "cert.rich.rich.probe_logistic.tp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 131
+  },
+  "cert.rich.rich.probe_logistic.val_threshold": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.819122027758512
+  },
+  "cert.rich.rich.zscore.auc": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.6741350876873605
+  },
+  "cert.rich.rich.zscore.average_precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.012111396104923507
+  },
+  "cert.rich.rich.zscore.f1": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.04052098408104197
+  },
+  "cert.rich.rich.zscore.fp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 347
+  },
+  "cert.rich.rich.zscore.fpr": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.005345122383277623
+  },
+  "cert.rich.rich.zscore.precision": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.038781163434903045
+  },
+  "cert.rich.rich.zscore.recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.04242424242424243
+  },
+  "cert.rich.rich.zscore.scenario2_episode_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.8333333333333334
+  },
+  "cert.rich.rich.zscore.scenario2_hour_recall": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 0.033950617283950615
+  },
+  "cert.rich.rich.zscore.tp": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 14
+  },
+  "cert.rich.rich.zscore.val_threshold": {
+   "run_id": "cert_rich-20261102T190426Z",
+   "value": 6.801992257549649
+  },
+  "cert.rich_importance.val_auc": {
+   "run_id": "cert_rich_importance-20261102T190528Z",
+   "value": 0.9640520060391252
+  },
+  "cert.rich_importance.val_auc_drop_when_shuffled.activity_rate": {
+   "run_id": "cert_rich_importance-20261102T190528Z",
+   "value": 0.004565465211916498
+  },
+  "cert.rich_importance.val_auc_drop_when_shuffled.collaboration_density": {
+   "run_id": "cert_rich_importance-20261102T190528Z",
+   "value": 0.004305915733294152
+  },
+  "cert.rich_importance.val_auc_drop_when_shuffled.endpoint_operation": {
+   "run_id": "cert_rich_importance-20261102T190528Z",
+   "value": 0.022074003240755258
+  },
+  "cert.rich_importance.val_auc_drop_when_shuffled.file_type_category": {
+   "run_id": "cert_rich_importance-20261102T190528Z",
+   "value": 0.3482077495508399
+  },
+  "cert.rich_importance.val_auc_drop_when_shuffled.geo_index": {
+   "run_id": "cert_rich_importance-20261102T190528Z",
+   "value": 0.012560693860010685
+  },
+  "cert.rich_importance.val_auc_drop_when_shuffled.permission_scope_delta": {
+   "run_id": "cert_rich_importance-20261102T190528Z",
+   "value": 0.05329947577496574
+  },
   "drift.ds1.cusum.h": {
    "run_id": "drift_detector-20261102T181936Z",
    "value": 4.0
@@ -176798,6 +177246,74 @@
    },
    "seeds": {
     "user_sample": 42
+   }
+  },
+  "cert_rich-20261102T190426Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\cert_rich.py evaluate",
+   "date_utc": "2026-11-02T19:04:26+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "4c596ae3aa2d471946f99f914d8fdd86ba3c72d3",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "cert.rich"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/cert_rich.py",
+   "scripts": {
+    "cert.rich": "evaluation/cert_rich.py"
+   },
+   "seeds": {
+    "bootstrap": 20261102,
+    "iforest_and_boosting": 42,
+    "user_sample": 42
+   }
+  },
+  "cert_rich_importance-20261102T190528Z": {
+   "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\cert_rich_importance.py",
+   "date_utc": "2026-11-02T19:05:28+00:00",
+   "device": null,
+   "git_dirty": true,
+   "git_hash": "4c596ae3aa2d471946f99f914d8fdd86ba3c72d3",
+   "libraries": {
+    "Faker": "40.28.1",
+    "easyocr": "1.7.2",
+    "numpy": "2.4.6",
+    "openai": "2.44.0",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "presidio_analyzer": "2.2.363",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "spacy": "3.8.13",
+    "torch": "2.13.0"
+   },
+   "note": "",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "prefixes": [
+    "cert.rich_importance"
+   ],
+   "python": "3.14.4",
+   "script": "evaluation/cert_rich_importance.py",
+   "scripts": {
+    "cert.rich_importance": "evaluation/cert_rich_importance.py"
+   },
+   "seeds": {
+    "model_and_shuffle": 42
    }
   },
   "difficulty_sweep-20261023T121604Z": {
