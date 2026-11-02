@@ -1,0 +1,104 @@
+{
+  "args": {
+    "n_users": 50,
+    "days": 21,
+    "seed": 13,
+    "start": "2026-04-01 00:00:00",
+    "n_malicious": 38,
+    "n_compromised": 60,
+    "n_negligent": 72,
+    "n_overscoped": 34,
+    "n_benign_burst": 96,
+    "intensity": 0.5,
+    "benign_overlap": 0.5,
+    "out_dir": "C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\results\\runs\\sweep\\i0.5_o0.5\\ds13\\data"
+  },
+  "episode_plan": {
+    "malicious_insider": 38,
+    "compromised_account": 60,
+    "negligent_insider": 72,
+    "overscoped_thirdparty": 34,
+    "benign_burst": 96
+  },
+  "realised": {
+    "grid_rows": 25200,
+    "active_sessions": 16223,
+    "positive_sessions": 652,
+    "positive_rate": 0.04018985391111385,
+    "benign_burst_sessions": 183,
+    "by_threat_class": {
+      "malicious_insider": 316,
+      "compromised_account": 123,
+      "negligent_insider": 115,
+      "overscoped_thirdparty": 98
+    },
+    "episodes": {
+      "malicious_insider": 39,
+      "compromised_account": 60,
+      "negligent_insider": 72,
+      "overscoped_thirdparty": 34,
+      "benign_burst": 95
+    },
+    "per_split": {
+      "train": {
+        "sessions": 11392,
+        "positives": 454,
+        "benign_bursts": 125,
+        "by_class": {
+          "malicious_insider": 218,
+          "compromised_account": 86,
+          "negligent_insider": 78,
+          "overscoped_thirdparty": 72
+        }
+      },
+      "val": {
+        "sessions": 2507,
+        "positives": 98,
+        "benign_bursts": 29,
+        "by_class": {
+          "malicious_insider": 48,
+          "compromised_account": 19,
+          "negligent_insider": 18,
+          "overscoped_thirdparty": 13
+        }
+      },
+      "test": {
+        "sessions": 2324,
+        "positives": 100,
+        "benign_bursts": 29,
+        "by_class": {
+          "malicious_insider": 50,
+          "negligent_insider": 19,
+          "compromised_account": 18,
+          "overscoped_thirdparty": 13
+        }
+      }
+    }
+  },
+  "provenance": {
+    "script": "evaluation/generate_sessions.py",
+    "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\generate_sessions.py --seed 13 --intensity 0.5 --benign-overlap 0.5 --out-dir C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\results\\runs\\sweep\\i0.5_o0.5\\ds13\\data",
+    "seeds": {
+      "data": 13
+    },
+    "date_utc": "2026-11-02T20:24:53+00:00",
+    "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+    "git_dirty": true,
+    "python": "3.14.4",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "libraries": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.18.0",
+      "torch": "2.13.0",
+      "presidio_analyzer": "2.2.363",
+      "spacy": "3.8.13",
+      "easyocr": "1.7.2",
+      "Faker": "40.28.1",
+      "pillow": "12.2.0",
+      "openai": "2.44.0"
+    },
+    "device": null
+  }
+}
