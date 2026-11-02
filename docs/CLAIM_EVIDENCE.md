@@ -759,6 +759,29 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 | Sweep EWMA recall@5%valFPR I=1 | `sweep.summary.o0p0.i1p0.ewma.recall_at_fpr05_valthreshold.mean` | 0.167 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024]} | difficulty_sweep-20261102T182629Z (37360dda) |
 | Sweep hybrid recall@5%valFPR I=0.25 | `sweep.summary.o0p0.i0p25.hybrid_weighted.recall_at_fpr05_valthreshold.mean` | 0.451 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024]} | difficulty_sweep-20261102T182629Z (37360dda) |
 
+## sweep10
+
+| Claim | Manifest key | Value | Script | Seeds | Run |
+|---|---|---|---|---|---|
+| Hybrid AUC o0 i1 | `sweep.summary10.o0p0.i1p0.hybrid_weighted.auc.mean` | 0.821 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| Hybrid AUC o0.5 i1 | `sweep.summary10.o0p5.i1p0.hybrid_weighted.auc.mean` | 0.817 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| Hybrid F1 o0 i1 | `sweep.summary10.o0p0.i1p0.hybrid_weighted.valf1_f1.mean` | 0.629 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| Hybrid F1 o0.5 i1 | `sweep.summary10.o0p5.i1p0.hybrid_weighted.valf1_f1.mean` | 0.535 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| Hybrid precision o0 i1 | `sweep.summary10.o0p0.i1p0.hybrid_weighted.valf1_precision.mean` | 0.918 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| Hybrid precision o0.5 i1 | `sweep.summary10.o0p5.i1p0.hybrid_weighted.valf1_precision.mean` | 0.597 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| Hybrid FPR o0 i1 | `sweep.summary10.o0p0.i1p0.hybrid_weighted.valf1_fpr.mean` | 0.002 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| Hybrid FPR o0.5 i1 | `sweep.summary10.o0p5.i1p0.hybrid_weighted.valf1_fpr.mean` | 0.014 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| IF F1 o0 i1 | `sweep.summary10.o0p0.i1p0.iforest.valf1_f1.mean` | 0.626 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| IF F1 o0.5 i1 | `sweep.summary10.o0p5.i1p0.iforest.valf1_f1.mean` | 0.540 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| IF precision o0 i1 | `sweep.summary10.o0p0.i1p0.iforest.valf1_precision.mean` | 0.937 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| IF precision o0.5 i1 | `sweep.summary10.o0p5.i1p0.iforest.valf1_precision.mean` | 0.622 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| Hybrid malicious AUC i0.25 | `sweep.summary10.o0p0.i0p25.hybrid_weighted.per_class.malicious_insider.auc.mean` | 0.481 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| IF malicious AUC i0.25 | `sweep.summary10.o0p0.i0p25.iforest.per_class.malicious_insider.auc.mean` | 0.477 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| LSTM malicious AUC i0.25 | `sweep.summary10.o0p0.i0p25.lstm.per_class.malicious_insider.auc.mean` | 0.501 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| Hybrid AUC i0.25 | `sweep.summary10.o0p0.i0p25.hybrid_weighted.auc.mean` | 0.729 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| IF AUC i0.25 | `sweep.summary10.o0p0.i0p25.iforest.auc.mean` | 0.726 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+| LSTM AUC i0.25 | `sweep.summary10.o0p0.i0p25.lstm.auc.mean` | 0.697 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | difficulty_sweep-20261102T204913Z (720f5ddb) |
+
 ## transfer
 
 | Claim | Manifest key | Value | Script | Seeds | Run |

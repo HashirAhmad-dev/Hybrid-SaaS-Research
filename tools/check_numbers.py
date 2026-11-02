@@ -137,6 +137,9 @@ def check_definitions(spec_path: Path, entries: dict, root: Path = PROJECT_ROOT)
         subj = re.compile(d["subject"], re.I)
         # lines about a different quantity that shares the words (e.g. held-out transfer tests)
         excl = re.compile(d["exclude"], re.I) if d.get("exclude") else None
+        # a number belongs to the quantity only if its label (`near`) ends within 40 characters before it,
+        # so "F1 0.626 ..., precision 0.622" does not read 0.622 as an F1
+        near = re.compile(d["near"], re.I) if d.get("near") else None
         for v in d["variants"]:
             val = float(entries[v["key"]]["value"])
             if abs(val - canon) < 5e-4:
@@ -149,6 +152,11 @@ def check_definitions(spec_path: Path, entries: dict, root: Path = PROJECT_ROOT)
                         continue
                     for m in NUM_RE.finditer(line):
                         tok, pct = m.group(1), bool(m.group(2))
+                        if near:
+                            before = line[max(0, m.start() - 40):m.start()]
+                            hits = list(near.finditer(before))
+                            if not hits or re.search(r"\d+\.\d+", before[hits[-1].end():]):
+                                continue
                         if _matches(tok, pct, val) and not _matches(tok, pct, canon):
                             rows.append({"ok": False, "where": f"{f.relative_to(root)}:{n}",
                                          "why": f"{d['id']}: {tok} is '{v['name']}' ({v['key']}) "

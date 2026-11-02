@@ -196,3 +196,10 @@ k labelled TRAIN episodes out of 143, 5 random draws, 10 datasets. Unchosen atta
 | ID | Result | Evidence key |
 |---|---|---|
 | N-074 | Qwen2.5-VL-3B's F1 of 0.000 on FUNSD is the model answering "no PII", not a parsing or input fault. Of 199 FUNSD answers, 183 are valid JSON and every one of them is the empty list `[]` (median 2 completion tokens); the other 16 are degenerate runs of one repeated character. The image was not cut off: the median prompt is 1,222 tokens (maximum 1,366) in a 4,096-token context, so the whole image was encoded. 109 of the 199 forms have derived gold entities. The same model returns an empty list for 177 of 203 valid v2 answers. Qwen2.5-VL-7B, with the same image encoding (same prompt-token counts), returns a non-empty list for 37 FUNSD forms. gemma-3-4b-it encodes every image in a fixed 511-token prompt and answers 182 FUNSD forms with entities. All three run as Q4_K_M weights with an F16 vision projector; quantisation was not varied, so a higher-precision 3B might behave differently. | `vlmdiag.qwen2-5-vl-3b-instruct.funsd.*`, `results/pii_v2/vlm_diagnosis.json` |
+
+## Difficulty sweep on 10 seeds (keys `sweep.summary10.*`, D-030, task F6)
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-075 | Benign look-alikes hurt flag-level detection, not ranking. At intensity 1.0, adding look-alike episodes (overlap 0.5) moves hybrid AUC only from 0.821 to 0.817, because look-alikes are about 2 percent of test negatives, but hybrid F1 falls from 0.629 to 0.535, precision from 0.918 to 0.597 and FPR rises from 0.002 to 0.014. Isolation Forest behaves the same (F1 0.626 to 0.540, precision 0.937 to 0.622). The overlap condition must be reported with F1, precision and FPR; AUC alone hides it. | `sweep.summary10.o0p0.i1p0.*`, `sweep.summary10.o0p5.i1p0.*` |
+| N-076 | On 10 seeds, at intensity 0.25 no detector separates slow drift: malicious-insider AUC is 0.481 for the hybrid, 0.477 for Isolation Forest and 0.501 for the LSTM. Overall AUC is 0.729, 0.726 and 0.697. The 3-seed result (N-026) holds. | `sweep.summary10.o0p0.i0p25.*` |

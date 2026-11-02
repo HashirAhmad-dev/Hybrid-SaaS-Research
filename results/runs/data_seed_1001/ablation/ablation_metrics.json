@@ -1,12 +1,14 @@
 {
  "provenance": {
-  "script": "evaluation/ablation.py",
-  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\ablation.py",
+  "script": "evaluation/difficulty_sweep.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\difficulty_sweep.py --seeds 42 7 2024 1 13 99 123 314 777 1001",
   "seeds": {
-   "data_and_train": 1001
+   "data_and_train": 1001,
+   "intensity": 1.0,
+   "overlap": 0.0
   },
-  "date_utc": "2026-11-02T18:19:11+00:00",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
+  "date_utc": "2026-11-02T20:11:10+00:00",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
   "git_dirty": true,
   "python": "3.14.4",
   "platform": "Windows-10-10.0.19045-SP0",

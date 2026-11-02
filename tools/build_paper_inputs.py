@@ -73,8 +73,9 @@ def main() -> None:
         (R / "latency" / "tier_latency.json", "csv/tier_latency.json", "Two-tier latency", "evaluation/tier_latency.py"),
         (R / "ablation" / "ablation_auc_f1.pdf", "figures/ablation_auc_f1.pdf", "Ablation figure", "evaluation/ablation_report.py"),
         (R / "ablation" / "ablation_auc_f1.svg", "figures/ablation_auc_f1.svg", "same, SVG", "evaluation/ablation_report.py"),
-        (R / "sweep" / "detection_vs_intensity.pdf", "figures/detection_vs_intensity.pdf", "Detection vs attack intensity", "evaluation/difficulty_sweep.py"),
-        (R / "sweep" / "detection_vs_intensity.svg", "figures/detection_vs_intensity.svg", "same, SVG", "evaluation/difficulty_sweep.py"),
+        (R / "sweep" / "detection_vs_intensity_10seeds.pdf", "figures/detection_vs_intensity.pdf", "Detection vs attack intensity, 10 seeds (F6)", "evaluation/difficulty_sweep.py --seeds ..."),
+        (R / "sweep" / "detection_vs_intensity_10seeds.svg", "figures/detection_vs_intensity.svg", "same, SVG", "evaluation/difficulty_sweep.py --seeds ..."),
+        (R / "sweep" / "sweep_summary_10seeds.csv", "csv/sweep_summary_10seeds.csv", "Difficulty sweep, 10 seeds", "evaluation/difficulty_sweep.py --seeds ..."),
         (PROJECT_ROOT / "figures" / "architecture.pdf", "figures/architecture.pdf", "Figure 1, architecture (source figures/architecture.dot)", "tools/render_figures.py"),
         (PROJECT_ROOT / "figures" / "architecture.svg", "figures/architecture.svg", "same, SVG", "tools/render_figures.py"),
     ]

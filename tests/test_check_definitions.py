@@ -47,3 +47,12 @@ def test_identical_values_are_rejected(tmp_path):
     (tmp_path / "doc.md").write_text("nothing\n", encoding="utf-8")
     bad = [r for r in check_definitions(tmp_path / "spec.json", entries, root=tmp_path) if not r["ok"]]
     assert any("equals the canonical" in r["why"] for r in bad)
+
+
+def test_near_rule_reads_only_the_labelled_number(tmp_path):
+    spec = {**SPEC, "definitions": [{**SPEC["definitions"][0], "near": r"\bF1\b"}]}
+    (tmp_path / "spec.json").write_text(json.dumps(spec), encoding="utf-8")
+    (tmp_path / "doc.md").write_text("The hybrid has F1 0.635 and precision 0.700.\n"
+                                     "The hybrid has F1 0.629 and precision 0.635.\n", encoding="utf-8")
+    bad = [r for r in check_definitions(tmp_path / "spec.json", ENTRIES, root=tmp_path) if not r["ok"]]
+    assert [r["where"] for r in bad] == ["doc.md:1"]

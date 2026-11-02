@@ -4959,6 +4959,150 @@
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.7687825995468405
  },
+ "sweep.summary10.o0p0.i0p25.hybrid_weighted.auc.mean": {
+  "as_written": "0.729",
+  "claim": "Hybrid AUC i0.25",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.7290331284498726
+ },
+ "sweep.summary10.o0p0.i0p25.hybrid_weighted.per_class.malicious_insider.auc.mean": {
+  "as_written": "0.481",
+  "claim": "Hybrid malicious AUC i0.25",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.4811700420490034
+ },
+ "sweep.summary10.o0p0.i0p25.iforest.auc.mean": {
+  "as_written": "0.726",
+  "claim": "IF AUC i0.25",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.7262142485969413
+ },
+ "sweep.summary10.o0p0.i0p25.iforest.per_class.malicious_insider.auc.mean": {
+  "as_written": "0.477",
+  "claim": "IF malicious AUC i0.25",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.4772500962724336
+ },
+ "sweep.summary10.o0p0.i0p25.lstm.auc.mean": {
+  "as_written": "0.697",
+  "claim": "LSTM AUC i0.25",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.697422526581158
+ },
+ "sweep.summary10.o0p0.i0p25.lstm.per_class.malicious_insider.auc.mean": {
+  "as_written": "0.501",
+  "claim": "LSTM malicious AUC i0.25",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.5007732805361338
+ },
+ "sweep.summary10.o0p0.i1p0.hybrid_weighted.auc.mean": {
+  "as_written": "0.821",
+  "claim": "Hybrid AUC o0 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.8214577979917552
+ },
+ "sweep.summary10.o0p0.i1p0.hybrid_weighted.valf1_f1.mean": {
+  "as_written": "0.629",
+  "claim": "Hybrid F1 o0 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.6287004010162531
+ },
+ "sweep.summary10.o0p0.i1p0.hybrid_weighted.valf1_fpr.mean": {
+  "as_written": "0.002",
+  "claim": "Hybrid FPR o0 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.002273737396782303
+ },
+ "sweep.summary10.o0p0.i1p0.hybrid_weighted.valf1_precision.mean": {
+  "as_written": "0.918",
+  "claim": "Hybrid precision o0 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.9180356017166572
+ },
+ "sweep.summary10.o0p0.i1p0.iforest.valf1_f1.mean": {
+  "as_written": "0.626",
+  "claim": "IF F1 o0 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.6256573116751332
+ },
+ "sweep.summary10.o0p0.i1p0.iforest.valf1_precision.mean": {
+  "as_written": "0.937",
+  "claim": "IF precision o0 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.9369931342688522
+ },
+ "sweep.summary10.o0p5.i1p0.hybrid_weighted.auc.mean": {
+  "as_written": "0.817",
+  "claim": "Hybrid AUC o0.5 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.8165357525714004
+ },
+ "sweep.summary10.o0p5.i1p0.hybrid_weighted.valf1_f1.mean": {
+  "as_written": "0.535",
+  "claim": "Hybrid F1 o0.5 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.5353583463638107
+ },
+ "sweep.summary10.o0p5.i1p0.hybrid_weighted.valf1_fpr.mean": {
+  "as_written": "0.014",
+  "claim": "Hybrid FPR o0.5 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.014219671465023264
+ },
+ "sweep.summary10.o0p5.i1p0.hybrid_weighted.valf1_precision.mean": {
+  "as_written": "0.597",
+  "claim": "Hybrid precision o0.5 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.5972135111240162
+ },
+ "sweep.summary10.o0p5.i1p0.iforest.valf1_f1.mean": {
+  "as_written": "0.540",
+  "claim": "IF F1 o0.5 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.5403544350522517
+ },
+ "sweep.summary10.o0p5.i1p0.iforest.valf1_precision.mean": {
+  "as_written": "0.622",
+  "claim": "IF precision o0.5 i1",
+  "git_hash": "720f5ddb17b73806d8cad7688281c58c0cab8f5d",
+  "run_id": "difficulty_sweep-20261102T204913Z",
+  "script": "evaluation/difficulty_sweep.py",
+  "value": 0.6216822903337141
+ },
  "transfer.loco.iforest_reference.malicious_insider.auc.mean": {
   "as_written": "0.560",
   "claim": "LOCO IF malicious AUC",

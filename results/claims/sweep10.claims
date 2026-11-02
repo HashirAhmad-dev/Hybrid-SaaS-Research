@@ -1,0 +1,19 @@
+# F6: difficulty sweep on 10 seeds
+Hybrid AUC o0 i1 | sweep.summary10.o0p0.i1p0.hybrid_weighted.auc.mean | 0.821
+Hybrid AUC o0.5 i1 | sweep.summary10.o0p5.i1p0.hybrid_weighted.auc.mean | 0.817
+Hybrid F1 o0 i1 | sweep.summary10.o0p0.i1p0.hybrid_weighted.valf1_f1.mean | 0.629
+Hybrid F1 o0.5 i1 | sweep.summary10.o0p5.i1p0.hybrid_weighted.valf1_f1.mean | 0.535
+Hybrid precision o0 i1 | sweep.summary10.o0p0.i1p0.hybrid_weighted.valf1_precision.mean | 0.918
+Hybrid precision o0.5 i1 | sweep.summary10.o0p5.i1p0.hybrid_weighted.valf1_precision.mean | 0.597
+Hybrid FPR o0 i1 | sweep.summary10.o0p0.i1p0.hybrid_weighted.valf1_fpr.mean | 0.002
+Hybrid FPR o0.5 i1 | sweep.summary10.o0p5.i1p0.hybrid_weighted.valf1_fpr.mean | 0.014
+IF F1 o0 i1 | sweep.summary10.o0p0.i1p0.iforest.valf1_f1.mean | 0.626
+IF F1 o0.5 i1 | sweep.summary10.o0p5.i1p0.iforest.valf1_f1.mean | 0.540
+IF precision o0 i1 | sweep.summary10.o0p0.i1p0.iforest.valf1_precision.mean | 0.937
+IF precision o0.5 i1 | sweep.summary10.o0p5.i1p0.iforest.valf1_precision.mean | 0.622
+Hybrid malicious AUC i0.25 | sweep.summary10.o0p0.i0p25.hybrid_weighted.per_class.malicious_insider.auc.mean | 0.481
+IF malicious AUC i0.25 | sweep.summary10.o0p0.i0p25.iforest.per_class.malicious_insider.auc.mean | 0.477
+LSTM malicious AUC i0.25 | sweep.summary10.o0p0.i0p25.lstm.per_class.malicious_insider.auc.mean | 0.501
+Hybrid AUC i0.25 | sweep.summary10.o0p0.i0p25.hybrid_weighted.auc.mean | 0.729
+IF AUC i0.25 | sweep.summary10.o0p0.i0p25.iforest.auc.mean | 0.726
+LSTM AUC i0.25 | sweep.summary10.o0p0.i0p25.lstm.auc.mean | 0.697

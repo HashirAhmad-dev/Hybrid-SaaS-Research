@@ -20,7 +20,8 @@
      "name": "hybrid flag F1 at the deployed threshold (T1.4): alpha and tau tuned jointly on the 0.05 x 0.01 validation grid",
      "qualifier": "deployed"
     }
-   ]
+   ],
+   "near": "\\bF1\\b"
   },
   {
    "id": "iforest_flag_f1",
@@ -35,7 +36,8 @@
      "name": "Isolation Forest flag F1 at the deployed hybrid threshold (T1.4)",
      "qualifier": "deployed"
     }
-   ]
+   ],
+   "near": "\\bF1\\b"
   },
   {
    "id": "hybrid_malicious_episode_recall",
@@ -80,7 +82,8 @@
      "name": "EWMA flag F1 at the deployed EWMA threshold (T1.4)",
      "qualifier": "deployed"
     }
-   ]
+   ],
+   "near": "\\bF1\\b"
   },
   {
    "id": "supervised_boosting_f1",
@@ -96,7 +99,8 @@
      "qualifier": "budget|label-free"
     }
    ],
-   "exclude": "held-out|held out|without slow-drift|without malicious|simulator to CERT|applied to CERT|applied unchanged"
+   "exclude": "held-out|held out|without slow-drift|without malicious|simulator to CERT|applied to CERT|applied unchanged",
+   "near": "\\bF1\\b"
   },
   {
    "id": "supervised_boosting_malicious_episode_recall",

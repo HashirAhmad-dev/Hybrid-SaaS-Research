@@ -20,8 +20,9 @@ Built by `python -m tools.build_paper_inputs`. Every number is in `numbers.json`
 | `csv/tier_latency.json` | Two-tier latency | `evaluation/tier_latency.py` |
 | `figures/ablation_auc_f1.pdf` | Ablation figure | `evaluation/ablation_report.py` |
 | `figures/ablation_auc_f1.svg` | same, SVG | `evaluation/ablation_report.py` |
-| `figures/detection_vs_intensity.pdf` | Detection vs attack intensity | `evaluation/difficulty_sweep.py` |
-| `figures/detection_vs_intensity.svg` | same, SVG | `evaluation/difficulty_sweep.py` |
+| `figures/detection_vs_intensity.pdf` | Detection vs attack intensity, 10 seeds (F6) | `evaluation/difficulty_sweep.py --seeds ...` |
+| `figures/detection_vs_intensity.svg` | same, SVG | `evaluation/difficulty_sweep.py --seeds ...` |
+| `csv/sweep_summary_10seeds.csv` | Difficulty sweep, 10 seeds | `evaluation/difficulty_sweep.py --seeds ...` |
 | `figures/architecture.pdf` | Figure 1, architecture (source figures/architecture.dot) | `tools/render_figures.py` |
 | `figures/architecture.svg` | same, SVG | `tools/render_figures.py` |
 | `figures/pareto_v2.pdf` | PII cascade cost vs F1 | `evaluation/pii_v2_plots.py` |
