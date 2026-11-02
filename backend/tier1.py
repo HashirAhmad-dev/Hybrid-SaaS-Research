@@ -137,10 +137,15 @@ def _run_tier2(job_id: str, image_path: str, a_hybrid: float, beta: float) -> No
             ents = vlm
     S = sensitivity(ents)
     sb = compute_sbrs(S, a_hybrid, beta=beta)
-    action = "QUARANTINE" if branch == "Branch3_VLM_unavailable" else sb.enforcement_action
+    # F7: Tier 2 decides with the same configured gated fusion as Tier 1 (before F7 it used
+    # the multiplicative bands of compute_sbrs; that action is kept as `sbrs_action`)
+    from .final_config import decide
+    final = decide(S, a_hybrid)
+    action = "QUARANTINE" if branch == "Branch3_VLM_unavailable" else final["action"]
     with _LOCK:
         j.update(state="DONE", ocr_confidence=conf, tau_ocr=OCR_CONFIDENCE_THRESHOLD, branch=branch,
-                 entities=ents, sensitivity=S, sbrs=sb.sbrs_value, final_action=action,
+                 entities=ents, sensitivity=S, sbrs=sb.sbrs_value, sbrs_action=sb.enforcement_action,
+                 decision=final, final_action=action,
                  release="RELEASE" if action == "PERMIT" else action,
                  finished=time.perf_counter())
         j["hold_ms"] = (j["finished"] - j["submitted"]) * 1e3
