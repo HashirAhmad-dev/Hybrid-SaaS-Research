@@ -1,40 +1,52 @@
-// HybridSaaS-Sec architecture as evaluated (paper-v2). Editable source for Figure 1.
-// Render: tools/render_figures.py (Graphviz dot -> PDF and SVG). Dashed = not built / future work.
+// HybridSaaS-Sec architecture as evaluated and deployed (paper-v2). Editable source for Figure 1.
+// Render: tools/render_figures.py (Graphviz dot -> PDF and SVG). Dashed = asynchronous path; dotted grey = not built.
+// Layout (F8): top to bottom, one column per tier, every edge points down except the single decision return,
+// edge labels sit on their own nodes' sides, so no edge crosses another and no label overlaps a box.
 digraph hybridsaas {
-  graph [rankdir=LR, fontname="Helvetica", fontsize=10, nodesep=0.25, ranksep=0.35, splines=ortho, pad=0.1];
-  node  [shape=box, style="rounded", fontname="Helvetica", fontsize=9, margin="0.08,0.04", penwidth=0.8];
+  graph [rankdir=TB, fontname="Helvetica", fontsize=10, nodesep=0.35, ranksep=0.32, splines=ortho, pad=0.1,
+         newrank=true];
+  node  [shape=box, style="rounded", fontname="Helvetica", fontsize=9, margin="0.10,0.05", penwidth=0.8];
   edge  [fontname="Helvetica", fontsize=8, arrowsize=0.6, penwidth=0.8];
 
   client [label="SaaS client\n(API call + payload)"];
-  proxy  [label="Inline proxy\n(FastAPI)", style="rounded,bold"];
+  proxy  [label="Inline proxy (FastAPI)\ntext and behaviour: Tier 1   |   image: Tier 2", style="rounded,bold"];
 
   subgraph cluster_t1 {
-    label="Tier 1: inline, measured p99 45 ms"; fontsize=9; style="rounded"; color="gray40";
+    label="Tier 1: inline, measured p99 45 ms"; labeljust=l; fontsize=9; style="rounded"; color="gray40";
     pii   [label="Text PII\nPresidio + 2 recognisers\n-> S (0-100)"];
-    beh   [label="Behaviour vector x_t\n(6 features, 24 h window)"];
+    beh   [label="Behaviour vector\n6 features, 24 h window"];
     lstm  [label="LSTM encoder\nmemory bank -> a_LSTM"];
     ifor  [label="Isolation Forest\n-> a_IF"];
-    fuse  [label="A = alpha a_LSTM + (1-alpha) a_IF\n(alpha on validation)"];
-    drift [label="CUSUM drift detector\n(per-user, slow insider)"];
-    sbrs  [label="Gated risk fusion of S, A\n(escalate if A >= tau_A)\n-> PERMIT / ALERT / BLOCK\n(tau_A, bands on validation)"];
+    drift [label="Per-user CUSUM\nslow-drift alarm"];
+    fuse  [label="A = alpha a_LSTM + (1 - alpha) a_IF\n(alpha on validation)"];
+    sbrs  [label="Gated risk fusion of S and A\nA >= tau_A: BLOCK; else bands\nPERMIT / ALERT / BLOCK", style="rounded,bold"];
   }
   subgraph cluster_t2 {
-    label="Tier 2: asynchronous, upload held until scanned"; fontsize=9; style="rounded,dashed"; color="gray40";
-    ocr  [label="OCR (EasyOCR)\n-> Presidio"];
-    vlm  [label="Local VLM gemma-3-4b-it\n(LM Studio; if down,\nquarantine)"];
-    route[label="OCR confidence < tau_ocr?\n(tau_ocr on calib docs)"];
+    label="Tier 2: asynchronous, upload held"; labeljust=r; fontsize=9; style="rounded,dashed"; color="gray40";
+    ocr   [label="OCR (EasyOCR)\n-> Presidio"];
+    route [label="OCR confidence\n< tau_ocr ?"];
+    vlm   [label="Local VLM gemma-3-4b-it\n(VLM down: quarantine)"];
+    s_img [label="S of the image"];
   }
   fl [label="Federated training\n(future work, not built)", style="rounded,dashed", fontcolor="gray40", color="gray50"];
 
+  { rank=same; pii; beh; ocr; }
+  { rank=same; lstm; ifor; drift; route; }
+
   client -> proxy;
-  proxy -> pii   [xlabel="text"];
+  proxy -> pii;
   proxy -> beh;
+  proxy -> ocr [style=dashed];
   beh -> lstm; beh -> ifor; beh -> drift;
   lstm -> fuse; ifor -> fuse;
-  pii -> sbrs; fuse -> sbrs; drift -> sbrs [style=dashed, xlabel="alarm"];
-  proxy -> route [xlabel="image", style=dashed];
-  route -> ocr [style=dashed]; route -> vlm [style=dashed];
-  ocr -> sbrs [style=dashed, xlabel="S_image"]; vlm -> sbrs [style=dashed];
-  sbrs -> proxy [xlabel="decision"];
-  fl -> lstm [style=dotted, color="gray50", arrowhead=none];
+  fuse -> sbrs;
+  pii -> sbrs;
+  drift -> sbrs:ne [style=dashed, taillabel="alarm", labeldistance=2.2];
+  ocr -> route [style=dashed];
+  route -> vlm [style=dashed, taillabel="yes", labeldistance=1.6];
+  route -> s_img [style=dashed, taillabel="no", labeldistance=1.6];
+  vlm -> s_img [style=dashed];
+  s_img -> sbrs:e [style=dashed, constraint=false];
+  sbrs -> proxy [constraint=false, headlabel="decision", labeldistance=3.5, labelangle=20];
+  { rank=same; sbrs; s_img; }
 }

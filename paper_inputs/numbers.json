@@ -2,160 +2,184 @@
  "ablation.summary.ewma.auc.mean": {
   "as_written": "0.612",
   "claim": "EWMA AUC",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6115533665429466
+ },
+ "ablation.summary.ewma.benign_burst_flag_rate.mean": {
+  "as_written": "61.3%",
+  "claim": "EWMA burst flag rate (comparison rule)",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
+  "script": "evaluation/ablation_report.py",
+  "value": 0.6127757515473032
+ },
+ "ablation.summary.ewma.valf1_f1.mean": {
+  "as_written": "0.111",
+  "claim": "EWMA flag F1 (comparison rule)",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
+  "script": "evaluation/ablation_report.py",
+  "value": 0.1108605925852552
  },
  "ablation.summary.hybrid_max.auc.mean": {
   "as_written": "0.855",
   "claim": "Hybrid max AUC",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.8550983314591962
  },
  "ablation.summary.hybrid_max.valf1_f1.mean": {
   "as_written": "0.605",
   "claim": "Hybrid max F1",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6051521586491468
  },
  "ablation.summary.hybrid_rankavg.valf1_f1.mean": {
   "as_written": "0.603",
   "claim": "Hybrid rankavg F1",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6030514830877263
  },
  "ablation.summary.hybrid_weighted.auc.mean": {
   "as_written": "0.821",
   "claim": "Hybrid weighted AUC",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.8214577979917552
  },
  "ablation.summary.hybrid_weighted.average_precision.mean": {
   "as_written": "0.578",
   "claim": "Hybrid weighted AP",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.5784142500694237
+ },
+ "ablation.summary.hybrid_weighted.benign_burst_flag_rate.mean": {
+  "as_written": "1.5%",
+  "claim": "Hybrid burst flag rate (comparison rule)",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
+  "script": "evaluation/ablation_report.py",
+  "value": 0.014814814814814814
  },
  "ablation.summary.hybrid_weighted.per_class.malicious_insider.auc.mean": {
   "as_written": "0.640",
   "claim": "Malicious AUC hybrid",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6397571914596336
  },
  "ablation.summary.hybrid_weighted.per_class.malicious_insider.recall.mean": {
   "as_written": "0.027",
   "claim": "Malicious recall hybrid (val F1 thr)",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.026670648917207117
  },
  "ablation.summary.hybrid_weighted.valf1_f1.mean": {
   "as_written": "0.629",
   "claim": "Hybrid weighted F1",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6287004010162531
  },
  "ablation.summary.iforest.auc.mean": {
   "as_written": "0.779",
   "claim": "IF AUC",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.7787880609532483
  },
  "ablation.summary.iforest.valf1_f1.mean": {
   "as_written": "0.626",
   "claim": "IF F1",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.6256573116751332
  },
  "ablation.summary.lof.auc.mean": {
   "as_written": "0.779",
   "claim": "LOF AUC",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.7794863374187208
  },
  "ablation.summary.lof.average_precision.mean": {
   "as_written": "0.246",
   "claim": "LOF AP",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.2461037774364317
  },
  "ablation.summary.lstm.auc.mean": {
   "as_written": "0.869",
   "claim": "LSTM AUC",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.8692572461644742
  },
  "ablation.summary.lstm.per_class.malicious_insider.auc.mean": {
   "as_written": "0.744",
   "claim": "Malicious AUC LSTM",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.7442727943601728
  },
  "ablation.summary.lstm.per_class.malicious_insider.recall.mean": {
   "as_written": "0.170",
   "claim": "Malicious recall LSTM (val F1 thr)",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.1698429706505426
  },
  "ablation.summary.lstm.valf1_f1.mean": {
   "as_written": "0.528",
   "claim": "LSTM F1",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.5282646740828846
  },
  "ablation.summary.lstm_nextstep.auc.mean": {
   "as_written": "0.825",
   "claim": "LSTM next-step AUC",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.8250574747166362
  },
  "ablation.summary.zscore.auc.mean": {
   "as_written": "0.849",
   "claim": "z-score AUC",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.8488987667038461
  },
  "ablation.summary.zscore.valf1_f1.mean": {
   "as_written": "0.554",
   "claim": "z-score F1",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "ablation_report-20261102T181916Z",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "ablation_report-20261102T200257Z",
   "script": "evaluation/ablation_report.py",
   "value": 0.5535652526593359
  },
@@ -2016,8 +2040,8 @@
   "value": 8.9
  },
  "drift.summary.cusum.test_false_alarm_rate_benign_bursts.mean": {
-  "as_written": "0.2027",
-  "claim": "CUSUM false alarm benign bursts",
+  "as_written": "20.3%",
+  "claim": "CUSUM burst hour alarm rate",
   "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
   "run_id": "drift_detector-20261102T182002Z",
   "script": "evaluation/drift_detector.py",
@@ -4455,6 +4479,174 @@
   "script": "evaluation/bootstrap_stats.py",
   "value": 0.04649899148194913
  },
+ "stats_extra.ap.hybrid_weighted.point": {
+  "as_written": "0.578",
+  "claim": "Hybrid AP",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.5784142500694237
+ },
+ "stats_extra.ap.iforest.point": {
+  "as_written": "0.552",
+  "claim": "IF AP",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.552056197726999
+ },
+ "stats_extra.ap_paired_hybrid_minus.hybrid_rankavg.ci_hi": {
+  "as_written": "0.014",
+  "claim": "AP hybrid minus rank average high",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.013675465530357363
+ },
+ "stats_extra.ap_paired_hybrid_minus.hybrid_rankavg.ci_lo": {
+  "as_written": "-0.012",
+  "claim": "AP hybrid minus rank average low",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": -0.012481295067504186
+ },
+ "stats_extra.ap_paired_hybrid_minus.hybrid_rankavg.point": {
+  "as_written": "0.000",
+  "claim": "AP hybrid minus rank average",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 1.5749376544360594e-05
+ },
+ "stats_extra.ap_paired_hybrid_minus.iforest.ci_hi": {
+  "as_written": "0.037",
+  "claim": "AP hybrid minus IF high",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.03728321491221559
+ },
+ "stats_extra.ap_paired_hybrid_minus.iforest.ci_lo": {
+  "as_written": "0.013",
+  "claim": "AP hybrid minus IF low",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.013027223071579228
+ },
+ "stats_extra.ap_paired_hybrid_minus.iforest.point": {
+  "as_written": "0.026",
+  "claim": "AP hybrid minus IF",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.02635805234242472
+ },
+ "stats_extra.fusion.gated.threat_recall.point": {
+  "as_written": "0.642",
+  "claim": "Gated recall",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.6420482648299365
+ },
+ "stats_extra.fusion.multiplicative.threat_recall.point": {
+  "as_written": "0.589",
+  "claim": "Multiplicative recall",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.5887206495780595
+ },
+ "stats_extra.fusion_paired_minus_multiplicative.additive.threat_recall.ci_lo": {
+  "as_written": "0.020",
+  "claim": "Additive minus multiplicative recall low",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.019758236372951727
+ },
+ "stats_extra.fusion_paired_minus_multiplicative.gated.benign_alert_rate.ci_hi": {
+  "as_written": "0.001",
+  "claim": "Gated minus multiplicative benign rate high",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.0007241549469638064
+ },
+ "stats_extra.fusion_paired_minus_multiplicative.gated.benign_alert_rate.ci_lo": {
+  "as_written": "-0.000",
+  "claim": "Gated minus multiplicative benign rate low",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": -0.0004739499208926311
+ },
+ "stats_extra.fusion_paired_minus_multiplicative.gated.f1.ci_hi": {
+  "as_written": "0.043",
+  "claim": "Gated minus multiplicative F1 high",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.04318342482351225
+ },
+ "stats_extra.fusion_paired_minus_multiplicative.gated.f1.ci_lo": {
+  "as_written": "0.018",
+  "claim": "Gated minus multiplicative F1 low",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.018109185684282048
+ },
+ "stats_extra.fusion_paired_minus_multiplicative.gated.f1.point": {
+  "as_written": "0.030",
+  "claim": "Gated minus multiplicative F1",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.030278282460167838
+ },
+ "stats_extra.fusion_paired_minus_multiplicative.gated.threat_recall.ci_hi": {
+  "as_written": "0.079",
+  "claim": "Gated minus multiplicative recall high",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.07935969761160833
+ },
+ "stats_extra.fusion_paired_minus_multiplicative.gated.threat_recall.ci_lo": {
+  "as_written": "0.033",
+  "claim": "Gated minus multiplicative recall low",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.03331226699524021
+ },
+ "stats_extra.fusion_paired_minus_multiplicative.gated.threat_recall.point": {
+  "as_written": "0.053",
+  "claim": "Gated minus multiplicative recall",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": 0.053327615251877014
+ },
+ "stats_extra.fusion_paired_minus_multiplicative.logistic.f1.ci_lo": {
+  "as_written": "-0.002",
+  "claim": "Logistic minus multiplicative F1 low",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": -0.002402548888089383
+ },
+ "stats_extra.fusion_paired_minus_multiplicative.max.threat_recall.point": {
+  "as_written": "-0.269",
+  "claim": "Max minus multiplicative recall",
+  "git_hash": "53571d3ff7f61ce3c1a35cce3099b8cd04c7edab",
+  "run_id": "bootstrap_extra-20261102T200253Z",
+  "script": "evaluation/bootstrap_extra.py",
+  "value": -0.2689385571099506
+ },
  "supervised.summary.boosting_beats_hybrid.auc_datasets": {
   "as_written": "10",
   "claim": "Boosting beats hybrid AUC datasets",
@@ -4766,5 +4958,253 @@
   "run_id": "difficulty_sweep-20261102T182629Z",
   "script": "evaluation/difficulty_sweep.py",
   "value": 0.7687825995468405
+ },
+ "transfer.loco.iforest_reference.malicious_insider.auc.mean": {
+  "as_written": "0.560",
+  "claim": "LOCO IF malicious AUC",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.5596764077581982
+ },
+ "transfer.loco.probe_boosting.compromised_account.held_out.episode_recall.mean": {
+  "as_written": "0.544",
+  "claim": "LOCO boosting compromised episode recall held",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.5444444444444445
+ },
+ "transfer.loco.probe_boosting.malicious_insider.held_out.auc.mean": {
+  "as_written": "0.510",
+  "claim": "LOCO boosting malicious AUC held",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.5102099385447824
+ },
+ "transfer.loco.probe_boosting.malicious_insider.held_out.episode_recall.mean": {
+  "as_written": "0.000",
+  "claim": "LOCO boosting malicious episode recall held",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.0
+ },
+ "transfer.loco.probe_boosting.malicious_insider.in_distribution.auc.mean": {
+  "as_written": "0.901",
+  "claim": "LOCO boosting malicious AUC in-dist",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.9008183791674075
+ },
+ "transfer.loco.probe_boosting.negligent_insider.held_out.auc.mean": {
+  "as_written": "0.998",
+  "claim": "LOCO boosting negligent AUC held",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.997724952241694
+ },
+ "transfer.loco.probe_boosting.negligent_insider.held_out.episode_recall.mean": {
+  "as_written": "0.873",
+  "claim": "LOCO boosting negligent episode recall held",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.8727272727272727
+ },
+ "transfer.loco.probe_logistic.malicious_insider.held_out.auc.mean": {
+  "as_written": "0.314",
+  "claim": "LOCO logistic malicious AUC held",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.3141630277583402
+ },
+ "transfer.loco.probe_logistic.malicious_insider.held_out.episode_recall.mean": {
+  "as_written": "0.000",
+  "claim": "LOCO logistic malicious episode recall held",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.0
+ },
+ "transfer.loco.probe_logistic.malicious_insider.in_distribution.auc.mean": {
+  "as_written": "0.875",
+  "claim": "LOCO logistic malicious AUC in-dist",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.8754949260593223
+ },
+ "transfer.loco.probe_logistic.negligent_insider.held_out.auc.mean": {
+  "as_written": "0.313",
+  "claim": "LOCO logistic negligent AUC held",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.31347858817309093
+ },
+ "transfer.loco.probe_logistic.negligent_insider.held_out.episode_recall.mean": {
+  "as_written": "0.045",
+  "claim": "LOCO logistic negligent episode recall held",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195415Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.045454545454545456
+ },
+ "transfer.sim_to_cert.iforest_on_cert.auc": {
+  "as_written": "0.732",
+  "claim": "CERT IF AUC (same rule)",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195449Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.7323939575984432
+ },
+ "transfer.sim_to_cert.iforest_on_cert.scenario2_episode_recall": {
+  "as_written": "1.00",
+  "claim": "CERT IF scenario 2 episodes (same rule)",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195449Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 1.0
+ },
+ "transfer.sim_to_cert.probe_boosting.auc": {
+  "as_written": "0.246",
+  "claim": "Sim to CERT boosting AUC",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195449Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.2457420832580647
+ },
+ "transfer.sim_to_cert.probe_boosting.recall": {
+  "as_written": "0.000",
+  "claim": "Sim to CERT boosting recall",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195449Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.0
+ },
+ "transfer.sim_to_cert.probe_logistic.auc": {
+  "as_written": "0.365",
+  "claim": "Sim to CERT logistic AUC",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195449Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.36470268077655743
+ },
+ "transfer.sim_to_cert.probe_logistic.recall": {
+  "as_written": "0.000",
+  "claim": "Sim to CERT logistic recall",
+  "git_hash": "2253d403ddb45fcf05c97689c8ccdbb407d25a31",
+  "run_id": "supervised_transfer-20261102T195449Z",
+  "script": "evaluation/supervised_transfer.py",
+  "value": 0.0
+ },
+ "vlmdiag.gemma-3-4b-it.funsd.ok_nonempty": {
+  "as_written": "182",
+  "claim": "gemma FUNSD nonempty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 182.0
+ },
+ "vlmdiag.gemma-3-4b-it.funsd.prompt_tokens_median": {
+  "as_written": "511",
+  "claim": "gemma FUNSD prompt tokens",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 511.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.funsd.completion_tokens_median": {
+  "as_written": "2",
+  "claim": "3B FUNSD completion tokens median",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 2.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.funsd.degenerate_repeated_char": {
+  "as_written": "16",
+  "claim": "3B FUNSD degenerate",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 16.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.funsd.docs_with_gold_entities": {
+  "as_written": "109",
+  "claim": "FUNSD forms with gold",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 109.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.funsd.n": {
+  "as_written": "199",
+  "claim": "3B FUNSD answers",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 199.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.funsd.ok_empty_list": {
+  "as_written": "183",
+  "claim": "3B FUNSD valid empty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 183.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.funsd.prompt_tokens_max": {
+  "as_written": "1366",
+  "claim": "3B FUNSD prompt tokens max",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 1366.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.funsd.prompt_tokens_median": {
+  "as_written": "1222",
+  "claim": "3B FUNSD prompt tokens median",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 1222.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.funsd.status_ok": {
+  "as_written": "183",
+  "claim": "3B FUNSD valid",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 183.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.v2.ok_empty_list": {
+  "as_written": "177",
+  "claim": "3B v2 valid empty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 177.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.v2.status_ok": {
+  "as_written": "203",
+  "claim": "3B v2 valid",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 203.0
+ },
+ "vlmdiag.qwen2-5-vl-7b-instruct.funsd.ok_nonempty": {
+  "as_written": "37",
+  "claim": "7B FUNSD nonempty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 37.0
  }
 }

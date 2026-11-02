@@ -120,9 +120,9 @@ def main() -> None:
         ax.grid(axis="x", color="0.9")
     axes[0].set_yticks(yy, [LABELS[d] for d in order])
     axes[0].invert_yaxis()
-    fig.text(0.99, 0.01, f"grey: one dataset each (n={len(seeds)}); black: mean ± s.d.",
+    fig.text(0.99, 0.005, f"grey: one dataset each (n={len(seeds)}); black: mean ± s.d.",
              ha="right", fontsize=6)
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0.05, 1, 1))          # F8: keep the note clear of the tick labels
     for ext in ("pdf", "svg"):
         fig.savefig(OUT / f"ablation_auc_f1.{ext}")
     print(f"  -> {OUT / 'ablation_table.csv'}\n  -> {OUT / 'ablation_table.tex'}\n"

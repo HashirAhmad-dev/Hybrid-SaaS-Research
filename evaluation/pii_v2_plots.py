@@ -37,7 +37,7 @@ def main() -> None:
     files = sorted(OUT.glob("pareto_v2_*.csv"))
     if not files:
         raise SystemExit("no pareto_v2_*.csv; run `python -m evaluation.pii_v2 score` after a VLM stage")
-    fig, ax = plt.subplots(figsize=(3.4, 3.1))
+    fig, ax = plt.subplots(figsize=(3.4, 3.5))
     markers = "osD^v<>"
     for i, f in enumerate(files):
         pair = f.stem.removeprefix("pareto_v2_")
@@ -53,10 +53,16 @@ def main() -> None:
                 r = v.get("router", {})
                 if "eval" in r:
                     ax.plot(r["eval_seconds_per_image"], r["eval"]["f1"], "*", ms=7, color=ax.lines[-1].get_color())
+    # F8: VLM-only reference points (every image to the VLM, no OCR), from the same eval images
+    for slug, mk in (("gemma-3-4b-it", "X"), ("qwen2-5-vl-7b-instruct", "P"), ("qwen2-5-vl-3b-instruct", "h")):
+        v = metrics.get(f"vlm.{slug}")
+        if v and v.get("seconds_per_image_mean") is not None:
+            ax.plot(v["seconds_per_image_mean"], v["all"]["f1"], mk, ms=6, color="k", ls="none",
+                    mfc="k" if slug == "gemma-3-4b-it" else "none", label=f"{NAMES[slug]} only (no OCR)")
     ax.set_xlabel("mean seconds per image\n(OCR always, VLM when routed)")
     ax.set_ylabel("entity F1 (v2 eval images)")
     ax.grid(color="0.9")
-    ax.legend(fontsize=6, loc="upper center", bbox_to_anchor=(0.5, -0.32), ncol=2, frameon=False)
+    ax.legend(fontsize=6, loc="upper center", bbox_to_anchor=(0.5, -0.30), ncol=2, frameon=False)
     ax.set_title("Cascade cost vs accuracy over tau", fontsize=8)
     fig.text(0.01, 0.005, "marker: tau chosen on calib; star: router", fontsize=6)
     fig.tight_layout(rect=(0, 0.03, 1, 1))

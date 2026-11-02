@@ -9,26 +9,29 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 
 | Claim | Manifest key | Value | Script | Seeds | Run |
 |---|---|---|---|---|---|
-| Hybrid weighted AUC | `ablation.summary.hybrid_weighted.auc.mean` | 0.821 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| Hybrid weighted F1 | `ablation.summary.hybrid_weighted.valf1_f1.mean` | 0.629 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| Hybrid weighted AP | `ablation.summary.hybrid_weighted.average_precision.mean` | 0.578 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| IF AUC | `ablation.summary.iforest.auc.mean` | 0.779 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| IF F1 | `ablation.summary.iforest.valf1_f1.mean` | 0.626 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| LSTM AUC | `ablation.summary.lstm.auc.mean` | 0.869 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| LSTM F1 | `ablation.summary.lstm.valf1_f1.mean` | 0.528 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| z-score AUC | `ablation.summary.zscore.auc.mean` | 0.849 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| z-score F1 | `ablation.summary.zscore.valf1_f1.mean` | 0.554 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| Hybrid max AUC | `ablation.summary.hybrid_max.auc.mean` | 0.855 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| Hybrid max F1 | `ablation.summary.hybrid_max.valf1_f1.mean` | 0.605 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| Hybrid rankavg F1 | `ablation.summary.hybrid_rankavg.valf1_f1.mean` | 0.603 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| LOF AUC | `ablation.summary.lof.auc.mean` | 0.779 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| LOF AP | `ablation.summary.lof.average_precision.mean` | 0.246 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| EWMA AUC | `ablation.summary.ewma.auc.mean` | 0.612 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| LSTM next-step AUC | `ablation.summary.lstm_nextstep.auc.mean` | 0.825 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| Malicious AUC LSTM | `ablation.summary.lstm.per_class.malicious_insider.auc.mean` | 0.744 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| Malicious AUC hybrid | `ablation.summary.hybrid_weighted.per_class.malicious_insider.auc.mean` | 0.640 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| Malicious recall LSTM (val F1 thr) | `ablation.summary.lstm.per_class.malicious_insider.recall.mean` | 0.170 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
-| Malicious recall hybrid (val F1 thr) | `ablation.summary.hybrid_weighted.per_class.malicious_insider.recall.mean` | 0.027 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T181916Z (37360dda) |
+| Hybrid weighted AUC | `ablation.summary.hybrid_weighted.auc.mean` | 0.821 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| Hybrid weighted F1 | `ablation.summary.hybrid_weighted.valf1_f1.mean` | 0.629 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| Hybrid weighted AP | `ablation.summary.hybrid_weighted.average_precision.mean` | 0.578 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| IF AUC | `ablation.summary.iforest.auc.mean` | 0.779 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| IF F1 | `ablation.summary.iforest.valf1_f1.mean` | 0.626 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| LSTM AUC | `ablation.summary.lstm.auc.mean` | 0.869 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| LSTM F1 | `ablation.summary.lstm.valf1_f1.mean` | 0.528 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| z-score AUC | `ablation.summary.zscore.auc.mean` | 0.849 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| z-score F1 | `ablation.summary.zscore.valf1_f1.mean` | 0.554 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| Hybrid max AUC | `ablation.summary.hybrid_max.auc.mean` | 0.855 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| Hybrid max F1 | `ablation.summary.hybrid_max.valf1_f1.mean` | 0.605 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| Hybrid rankavg F1 | `ablation.summary.hybrid_rankavg.valf1_f1.mean` | 0.603 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| LOF AUC | `ablation.summary.lof.auc.mean` | 0.779 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| LOF AP | `ablation.summary.lof.average_precision.mean` | 0.246 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| EWMA AUC | `ablation.summary.ewma.auc.mean` | 0.612 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| LSTM next-step AUC | `ablation.summary.lstm_nextstep.auc.mean` | 0.825 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| Malicious AUC LSTM | `ablation.summary.lstm.per_class.malicious_insider.auc.mean` | 0.744 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| Malicious AUC hybrid | `ablation.summary.hybrid_weighted.per_class.malicious_insider.auc.mean` | 0.640 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| Malicious recall LSTM (val F1 thr) | `ablation.summary.lstm.per_class.malicious_insider.recall.mean` | 0.170 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| Malicious recall hybrid (val F1 thr) | `ablation.summary.hybrid_weighted.per_class.malicious_insider.recall.mean` | 0.027 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| EWMA flag F1 (comparison rule) | `ablation.summary.ewma.valf1_f1.mean` | 0.111 | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| EWMA burst flag rate (comparison rule) | `ablation.summary.ewma.benign_burst_flag_rate.mean` | 61.3% | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
+| Hybrid burst flag rate (comparison rule) | `ablation.summary.hybrid_weighted.benign_burst_flag_rate.mean` | 1.5% | `evaluation/ablation_report.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | ablation_report-20261102T200257Z (53571d3f) |
 
 ## backend_docstrings
 
@@ -680,6 +683,33 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 | Hybrid minus EWMA F1 CI lo | `stats.ewma.paired_vs_hybrid.f1.ci_lo` | 0.454 | `evaluation/bootstrap_stats.py` | {"bootstrap": 20261023, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_stats-20261102T182623Z (37360dda) |
 | Hybrid minus max-fusion AUC CI hi | `stats.hybrid_max.paired_vs_hybrid.auc.ci_hi` | -0.016 | `evaluation/bootstrap_stats.py` | {"bootstrap": 20261023, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_stats-20261102T182623Z (37360dda) |
 
+## stats_extra
+
+| Claim | Manifest key | Value | Script | Seeds | Run |
+|---|---|---|---|---|---|
+| Hybrid AP | `stats_extra.ap.hybrid_weighted.point` | 0.578 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| IF AP | `stats_extra.ap.iforest.point` | 0.552 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| AP hybrid minus IF | `stats_extra.ap_paired_hybrid_minus.iforest.point` | 0.026 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| AP hybrid minus IF low | `stats_extra.ap_paired_hybrid_minus.iforest.ci_lo` | 0.013 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| AP hybrid minus IF high | `stats_extra.ap_paired_hybrid_minus.iforest.ci_hi` | 0.037 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| AP hybrid minus rank average | `stats_extra.ap_paired_hybrid_minus.hybrid_rankavg.point` | 0.000 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| AP hybrid minus rank average low | `stats_extra.ap_paired_hybrid_minus.hybrid_rankavg.ci_lo` | -0.012 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| AP hybrid minus rank average high | `stats_extra.ap_paired_hybrid_minus.hybrid_rankavg.ci_hi` | 0.014 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Gated recall | `stats_extra.fusion.gated.threat_recall.point` | 0.642 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Multiplicative recall | `stats_extra.fusion.multiplicative.threat_recall.point` | 0.589 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Gated minus multiplicative recall | `stats_extra.fusion_paired_minus_multiplicative.gated.threat_recall.point` | 0.053 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Gated minus multiplicative recall low | `stats_extra.fusion_paired_minus_multiplicative.gated.threat_recall.ci_lo` | 0.033 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Gated minus multiplicative recall high | `stats_extra.fusion_paired_minus_multiplicative.gated.threat_recall.ci_hi` | 0.079 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Gated minus multiplicative benign rate low | `stats_extra.fusion_paired_minus_multiplicative.gated.benign_alert_rate.ci_lo` | -0.000 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Gated minus multiplicative benign rate high | `stats_extra.fusion_paired_minus_multiplicative.gated.benign_alert_rate.ci_hi` | 0.001 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Gated minus multiplicative F1 | `stats_extra.fusion_paired_minus_multiplicative.gated.f1.point` | 0.030 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Gated minus multiplicative F1 low | `stats_extra.fusion_paired_minus_multiplicative.gated.f1.ci_lo` | 0.018 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Gated minus multiplicative F1 high | `stats_extra.fusion_paired_minus_multiplicative.gated.f1.ci_hi` | 0.043 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Additive minus multiplicative recall low | `stats_extra.fusion_paired_minus_multiplicative.additive.threat_recall.ci_lo` | 0.020 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Logistic minus multiplicative F1 low | `stats_extra.fusion_paired_minus_multiplicative.logistic.f1.ci_lo` | -0.002 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| Max minus multiplicative recall | `stats_extra.fusion_paired_minus_multiplicative.max.threat_recall.point` | -0.269 | `evaluation/bootstrap_extra.py` | {"bootstrap": 20261103, "datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | bootstrap_extra-20261102T200253Z (53571d3f) |
+| CUSUM burst hour alarm rate | `drift.summary.cusum.test_false_alarm_rate_benign_bursts.mean` | 20.3% | `evaluation/drift_detector.py` | {"datasets": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001]} | drift_detector-20261102T182002Z (37360dda) |
+
 ## supervised
 
 | Claim | Manifest key | Value | Script | Seeds | Run |
@@ -728,4 +758,45 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 | Sweep IF AUC I=1 O=0.5 | `sweep.summary.o0p5.i1p0.iforest.auc.mean` | 0.769 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024]} | difficulty_sweep-20261102T182629Z (37360dda) |
 | Sweep EWMA recall@5%valFPR I=1 | `sweep.summary.o0p0.i1p0.ewma.recall_at_fpr05_valthreshold.mean` | 0.167 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024]} | difficulty_sweep-20261102T182629Z (37360dda) |
 | Sweep hybrid recall@5%valFPR I=0.25 | `sweep.summary.o0p0.i0p25.hybrid_weighted.recall_at_fpr05_valthreshold.mean` | 0.451 | `evaluation/difficulty_sweep.py` | {"datasets": [42, 7, 2024]} | difficulty_sweep-20261102T182629Z (37360dda) |
+
+## transfer
+
+| Claim | Manifest key | Value | Script | Seeds | Run |
+|---|---|---|---|---|---|
+| LOCO boosting malicious AUC in-dist | `transfer.loco.probe_boosting.malicious_insider.in_distribution.auc.mean` | 0.901 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| LOCO boosting malicious AUC held | `transfer.loco.probe_boosting.malicious_insider.held_out.auc.mean` | 0.510 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| LOCO logistic malicious AUC in-dist | `transfer.loco.probe_logistic.malicious_insider.in_distribution.auc.mean` | 0.875 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| LOCO logistic malicious AUC held | `transfer.loco.probe_logistic.malicious_insider.held_out.auc.mean` | 0.314 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| LOCO boosting malicious episode recall held | `transfer.loco.probe_boosting.malicious_insider.held_out.episode_recall.mean` | 0.000 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| LOCO logistic malicious episode recall held | `transfer.loco.probe_logistic.malicious_insider.held_out.episode_recall.mean` | 0.000 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| LOCO IF malicious AUC | `transfer.loco.iforest_reference.malicious_insider.auc.mean` | 0.560 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| LOCO logistic negligent AUC held | `transfer.loco.probe_logistic.negligent_insider.held_out.auc.mean` | 0.313 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| LOCO logistic negligent episode recall held | `transfer.loco.probe_logistic.negligent_insider.held_out.episode_recall.mean` | 0.045 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| LOCO boosting negligent AUC held | `transfer.loco.probe_boosting.negligent_insider.held_out.auc.mean` | 0.998 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| LOCO boosting negligent episode recall held | `transfer.loco.probe_boosting.negligent_insider.held_out.episode_recall.mean` | 0.873 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| LOCO boosting compromised episode recall held | `transfer.loco.probe_boosting.compromised_account.held_out.episode_recall.mean` | 0.544 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195415Z (2253d403) |
+| Sim to CERT boosting AUC | `transfer.sim_to_cert.probe_boosting.auc` | 0.246 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195449Z (2253d403) |
+| Sim to CERT logistic AUC | `transfer.sim_to_cert.probe_logistic.auc` | 0.365 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195449Z (2253d403) |
+| Sim to CERT boosting recall | `transfer.sim_to_cert.probe_boosting.recall` | 0.000 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195449Z (2253d403) |
+| Sim to CERT logistic recall | `transfer.sim_to_cert.probe_logistic.recall` | 0.000 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195449Z (2253d403) |
+| CERT IF AUC (same rule) | `transfer.sim_to_cert.iforest_on_cert.auc` | 0.732 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195449Z (2253d403) |
+| CERT IF scenario 2 episodes (same rule) | `transfer.sim_to_cert.iforest_on_cert.scenario2_episode_recall` | 1.00 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195449Z (2253d403) |
+
+## vlmdiag
+
+| Claim | Manifest key | Value | Script | Seeds | Run |
+|---|---|---|---|---|---|
+| 3B FUNSD answers | `vlmdiag.qwen2-5-vl-3b-instruct.funsd.n` | 199 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B FUNSD valid | `vlmdiag.qwen2-5-vl-3b-instruct.funsd.status_ok` | 183 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B FUNSD valid empty | `vlmdiag.qwen2-5-vl-3b-instruct.funsd.ok_empty_list` | 183 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B FUNSD degenerate | `vlmdiag.qwen2-5-vl-3b-instruct.funsd.degenerate_repeated_char` | 16 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B FUNSD completion tokens median | `vlmdiag.qwen2-5-vl-3b-instruct.funsd.completion_tokens_median` | 2 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B FUNSD prompt tokens median | `vlmdiag.qwen2-5-vl-3b-instruct.funsd.prompt_tokens_median` | 1222 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B FUNSD prompt tokens max | `vlmdiag.qwen2-5-vl-3b-instruct.funsd.prompt_tokens_max` | 1366 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| FUNSD forms with gold | `vlmdiag.qwen2-5-vl-3b-instruct.funsd.docs_with_gold_entities` | 109 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B v2 valid | `vlmdiag.qwen2-5-vl-3b-instruct.v2.status_ok` | 203 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B v2 valid empty | `vlmdiag.qwen2-5-vl-3b-instruct.v2.ok_empty_list` | 177 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 7B FUNSD nonempty | `vlmdiag.qwen2-5-vl-7b-instruct.funsd.ok_nonempty` | 37 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| gemma FUNSD prompt tokens | `vlmdiag.gemma-3-4b-it.funsd.prompt_tokens_median` | 511 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| gemma FUNSD nonempty | `vlmdiag.gemma-3-4b-it.funsd.ok_nonempty` | 182 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
 

@@ -1,0 +1,23 @@
+# F4: paired cluster bootstrap for AP and the fusion forms (10,000 resamples)
+Hybrid AP | stats_extra.ap.hybrid_weighted.point | 0.578
+IF AP | stats_extra.ap.iforest.point | 0.552
+AP hybrid minus IF | stats_extra.ap_paired_hybrid_minus.iforest.point | 0.026
+AP hybrid minus IF low | stats_extra.ap_paired_hybrid_minus.iforest.ci_lo | 0.013
+AP hybrid minus IF high | stats_extra.ap_paired_hybrid_minus.iforest.ci_hi | 0.037
+AP hybrid minus rank average | stats_extra.ap_paired_hybrid_minus.hybrid_rankavg.point | 0.000
+AP hybrid minus rank average low | stats_extra.ap_paired_hybrid_minus.hybrid_rankavg.ci_lo | -0.012
+AP hybrid minus rank average high | stats_extra.ap_paired_hybrid_minus.hybrid_rankavg.ci_hi | 0.014
+Gated recall | stats_extra.fusion.gated.threat_recall.point | 0.642
+Multiplicative recall | stats_extra.fusion.multiplicative.threat_recall.point | 0.589
+Gated minus multiplicative recall | stats_extra.fusion_paired_minus_multiplicative.gated.threat_recall.point | 0.053
+Gated minus multiplicative recall low | stats_extra.fusion_paired_minus_multiplicative.gated.threat_recall.ci_lo | 0.033
+Gated minus multiplicative recall high | stats_extra.fusion_paired_minus_multiplicative.gated.threat_recall.ci_hi | 0.079
+Gated minus multiplicative benign rate low | stats_extra.fusion_paired_minus_multiplicative.gated.benign_alert_rate.ci_lo | -0.000
+Gated minus multiplicative benign rate high | stats_extra.fusion_paired_minus_multiplicative.gated.benign_alert_rate.ci_hi | 0.001
+Gated minus multiplicative F1 | stats_extra.fusion_paired_minus_multiplicative.gated.f1.point | 0.030
+Gated minus multiplicative F1 low | stats_extra.fusion_paired_minus_multiplicative.gated.f1.ci_lo | 0.018
+Gated minus multiplicative F1 high | stats_extra.fusion_paired_minus_multiplicative.gated.f1.ci_hi | 0.043
+Additive minus multiplicative recall low | stats_extra.fusion_paired_minus_multiplicative.additive.threat_recall.ci_lo | 0.020
+Logistic minus multiplicative F1 low | stats_extra.fusion_paired_minus_multiplicative.logistic.f1.ci_lo | -0.002
+Max minus multiplicative recall | stats_extra.fusion_paired_minus_multiplicative.max.threat_recall.point | -0.269
+CUSUM burst hour alarm rate | drift.summary.cusum.test_false_alarm_rate_benign_bursts.mean | 20.3%
