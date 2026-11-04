@@ -75,7 +75,7 @@ The supervised probe (labels used for training, not deployable) reaches maliciou
 
 | ID | Result | Evidence key |
 |---|---|---|
-| N-033 | Reviewer 2 was right: the multiplicative SBRS escalates only 1 of 35 threats that have low content sensitivity (S < 30) and a high anomaly score (A at or above the hybrid's threshold), across 10 datasets. Gated fusion escalates 35 of 35, additive 33 of 35. | `fusion.summary.*.low_S_high_A_escalated.sum` |
+| N-033 | Reviewer 2 was right: the multiplicative SBRS escalates only 1 of 35 threats that have low content sensitivity (S < 30) and a high anomaly score (A at or above the hybrid's threshold), across 10 datasets. Additive fusion escalates 33 of 35. Gated fusion escalates 35 of 35, but only by construction: these threats are defined by A at or above tau_A, which is the gate (F13). | `fusion.summary.*.low_S_high_A_escalated.sum` |
 | N-034 | At the same benign budget (about 4.7 percent of benign sessions ALERT or BLOCK), the multiplicative form catches fewer threats (recall 0.589) than gated (0.642), additive (0.630) or logistic (0.627) fusion. The shipped design is not the best of the forms tested. | `fusion.summary.*.threat_recall.mean` |
 | N-035 | Max fusion is the worst form (recall 0.320): S/100 alone puts many benign sensitive-file sessions above the budget. | `fusion.summary.max.*` |
 
