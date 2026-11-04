@@ -1,0 +1,21 @@
+# F12 latency decomposition and cutoff (varies run to run)
+persistent corpus p50 | latency_cutoff.decompose.persistent_corpus.client_ms.p50 | 43.3
+new connection corpus p50 | latency_cutoff.decompose.new_connection_corpus.client_ms.p50 | 39.3
+persistent 1 KB p50 | latency_cutoff.decompose.persistent_1kb.client_ms.p50 | 67.7
+new connection 1 KB p50 | latency_cutoff.decompose.new_connection_1kb.client_ms.p50 | 65.1
+PII corpus p50 | latency_cutoff.decompose.persistent_corpus.server_pii_ms.p50 | 16.9
+PII 1 KB p50 | latency_cutoff.decompose.persistent_1kb.server_pii_ms.p50 | 42.6
+corpus median bytes | latency_cutoff.corpus_text_bytes.median | 233
+0.25 KB server p95 | latency_cutoff.calibrate.kb0p25.server_total_ms.p95 | 50.6
+1 KB server p95 | latency_cutoff.calibrate.kb1.server_total_ms.p95 | 67.8
+2 KB server p95 | latency_cutoff.calibrate.kb2.server_total_ms.p95 | 110.7
+8 KB server p95 | latency_cutoff.calibrate.kb8.server_total_ms.p95 | 387.1
+cutoff bytes | latency_cutoff.chosen_bytes | 1024
+16 KB cutoff on p50 | latency_cutoff.check.kb16.client_ms.p50 | 23.8
+64 KB cutoff on p50 | latency_cutoff.check.kb64.client_ms.p50 | 24.3
+16 KB cutoff on p95 | latency_cutoff.check.kb16.client_ms.p95 | 31.8
+64 KB cutoff on p95 | latency_cutoff.check.kb64.client_ms.p95 | 53.1
+16 KB routed | latency_cutoff.check.kb16.routed_in_burst | 48
+16 KB Tier 2 hold p50 | latency_cutoff.check.kb16.tier2_hold_ms_sequential.p50 | 721
+64 KB Tier 2 hold p50 | latency_cutoff.check.kb64.tier2_hold_ms_sequential.p50 | 4280
+corpus cutoff on p50 | latency_cutoff.check.corpus.client_ms.p50 | 38.4

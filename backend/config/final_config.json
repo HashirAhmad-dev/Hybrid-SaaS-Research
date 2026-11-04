@@ -4,12 +4,12 @@
   "alpha": {
    "value": 0.25,
    "source": "anomaly.s42.tuning.alpha",
-   "run_id": "train_and_evaluate-20261023T153816Z"
+   "run_id": "train_and_evaluate-20261102T180939Z"
   },
   "tau_flag": {
    "value": 0.75,
    "source": "anomaly.s42.tuning.tau_hybrid",
-   "run_id": "train_and_evaluate-20261023T153816Z"
+   "run_id": "train_and_evaluate-20261102T180939Z"
   }
  },
  "enforcement": {
@@ -21,22 +21,22 @@
   "beta": {
    "value": 2.5,
    "source": "fusion.ds42.gated.params.beta",
-   "run_id": "sbrs_fusion-20261023T155024Z"
+   "run_id": "sbrs_fusion-20261102T182005Z"
   },
   "tau_A": {
    "value": 0.7507250765381084,
    "source": "fusion.ds42.gated.params.tau_A",
-   "run_id": "sbrs_fusion-20261023T155024Z"
+   "run_id": "sbrs_fusion-20261102T182005Z"
   },
   "t_alert": {
    "value": 1.223797299025728,
    "source": "fusion.ds42.gated.t_alert",
-   "run_id": "sbrs_fusion-20261023T155024Z"
+   "run_id": "sbrs_fusion-20261102T182005Z"
   },
   "t_block": {
    "value": 1.8437410840230226,
    "source": "fusion.ds42.gated.t_block",
-   "run_id": "sbrs_fusion-20261023T155024Z"
+   "run_id": "sbrs_fusion-20261102T182005Z"
   }
  },
  "drift": {
@@ -48,12 +48,12 @@
   "k": {
    "value": 1.0,
    "source": "drift.ds42.cusum.k",
-   "run_id": "drift_detector-20261023T154943Z"
+   "run_id": "drift_detector-20261104T050619Z"
   },
   "h": {
    "value": 8.0,
    "source": "drift.ds42.cusum.h",
-   "run_id": "drift_detector-20261023T154943Z"
+   "run_id": "drift_detector-20261104T050619Z"
   },
   "action_on_alarm": {
    "value": "ALERT",
@@ -69,39 +69,47 @@
    {
     "value": 0.95,
     "source": "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.calib_tau",
-    "run_id": "pii_v2_score-20261102T180205Z"
+    "run_id": "pii_v2_score-20261102T182731Z"
    },
    {
     "value": 0.58,
     "source": "pii2.v2.cascade.easyocr_cpu.qwen2-5-vl-3b-instruct.calib_tau",
-    "run_id": "pii_v2_score-20261102T180205Z"
+    "run_id": "pii_v2_score-20261102T182731Z"
    },
    {
     "value": 0.87,
     "source": "pii2.v2.cascade.easyocr_cpu.qwen2-5-vl-7b-instruct.calib_tau",
-    "run_id": "pii_v2_score-20261102T180205Z"
+    "run_id": "pii_v2_score-20261102T182731Z"
    },
    {
     "value": 1.0,
     "source": "pii2.v2.cascade.paddleocr_cpu.gemma-3-4b-it.calib_tau",
-    "run_id": "pii_v2_score-20261102T180205Z"
+    "run_id": "pii_v2_score-20261102T182731Z"
    },
    {
     "value": 0.96,
     "source": "pii2.v2.cascade.paddleocr_cpu.qwen2-5-vl-3b-instruct.calib_tau",
-    "run_id": "pii_v2_score-20261102T180205Z"
+    "run_id": "pii_v2_score-20261102T182731Z"
    },
    {
     "value": 0.97,
     "source": "pii2.v2.cascade.paddleocr_cpu.qwen2-5-vl-7b-instruct.calib_tau",
-    "run_id": "pii_v2_score-20261102T180205Z"
+    "run_id": "pii_v2_score-20261102T182731Z"
    }
   ],
   "tau_ocr_deployed": {
    "value": 0.95,
    "source": "pii2.v2.cascade.easyocr_cpu.gemma-3-4b-it.calib_tau",
-   "run_id": "pii_v2_score-20261102T180205Z",
+   "run_id": "pii_v2_score-20261102T182731Z",
    "reason": "Tier 2 uses EasyOCR; gemma-3-4b-it is the best local VLM (T3.3). Chosen on calib documents; routes almost every image to the VLM (N-049)"
+  }
+ },
+ "tier1": {
+  "max_text_bytes": {
+   "value": 1024,
+   "source": "latency_cutoff.chosen_bytes",
+   "run_id": "latency_cutoff-20261104T052145Z",
+   "reason": "text above this size is scanned in Tier 2 (D-035)"
   }
  }
 }

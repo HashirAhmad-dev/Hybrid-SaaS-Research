@@ -267,6 +267,31 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 | Tier2 hold p50 ms | `latency.tier2.hold_ms.p50` | 3434.7 | `evaluation/tier_latency.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency-20261023T160300Z (a66b1b2d) |
 | Tier2 hold p95 ms | `latency.tier2.hold_ms.p95` | 5256.3 | `evaluation/tier_latency.py` | {"payloads": 7, "tier2_pick": 11} | tier_latency-20261023T160300Z (a66b1b2d) |
 
+## latency_cutoff
+
+| Claim | Manifest key | Value | Script | Seeds | Run |
+|---|---|---|---|---|---|
+| persistent corpus p50 | `latency_cutoff.decompose.persistent_corpus.client_ms.p50` | 43.3 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| new connection corpus p50 | `latency_cutoff.decompose.new_connection_corpus.client_ms.p50` | 39.3 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| persistent 1 KB p50 | `latency_cutoff.decompose.persistent_1kb.client_ms.p50` | 67.7 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| new connection 1 KB p50 | `latency_cutoff.decompose.new_connection_1kb.client_ms.p50` | 65.1 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| PII corpus p50 | `latency_cutoff.decompose.persistent_corpus.server_pii_ms.p50` | 16.9 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| PII 1 KB p50 | `latency_cutoff.decompose.persistent_1kb.server_pii_ms.p50` | 42.6 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| corpus median bytes | `latency_cutoff.corpus_text_bytes.median` | 233 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| 0.25 KB server p95 | `latency_cutoff.calibrate.kb0p25.server_total_ms.p95` | 50.6 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| 1 KB server p95 | `latency_cutoff.calibrate.kb1.server_total_ms.p95` | 67.8 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| 2 KB server p95 | `latency_cutoff.calibrate.kb2.server_total_ms.p95` | 110.7 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| 8 KB server p95 | `latency_cutoff.calibrate.kb8.server_total_ms.p95` | 387.1 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| cutoff bytes | `latency_cutoff.chosen_bytes` | 1024 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| 16 KB cutoff on p50 | `latency_cutoff.check.kb16.client_ms.p50` | 23.8 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| 64 KB cutoff on p50 | `latency_cutoff.check.kb64.client_ms.p50` | 24.3 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| 16 KB cutoff on p95 | `latency_cutoff.check.kb16.client_ms.p95` | 31.8 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| 64 KB cutoff on p95 | `latency_cutoff.check.kb64.client_ms.p95` | 53.1 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| 16 KB routed | `latency_cutoff.check.kb16.routed_in_burst` | 48 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| 16 KB Tier 2 hold p50 | `latency_cutoff.check.kb16.tier2_hold_ms_sequential.p50` | 721 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| 64 KB Tier 2 hold p50 | `latency_cutoff.check.kb64.tier2_hold_ms_sequential.p50` | 4280 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+| corpus cutoff on p50 | `latency_cutoff.check.corpus.client_ms.p50` | 38.4 | `evaluation/latency_cutoff.py` | {"payloads": 7} | latency_cutoff-20261104T052145Z (c34e7dd7) |
+
 ## latency_extra
 
 | Claim | Manifest key | Value | Script | Seeds | Run |

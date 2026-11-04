@@ -2543,6 +2543,166 @@
   "script": "evaluation/tier_latency.py",
   "value": 5256.253760001709
  },
+ "latency_cutoff.calibrate.kb0p25.server_total_ms.p95": {
+  "as_written": "50.6",
+  "claim": "0.25 KB server p95",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 50.639469999873654
+ },
+ "latency_cutoff.calibrate.kb1.server_total_ms.p95": {
+  "as_written": "67.8",
+  "claim": "1 KB server p95",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 67.84016999984033
+ },
+ "latency_cutoff.calibrate.kb2.server_total_ms.p95": {
+  "as_written": "110.7",
+  "claim": "2 KB server p95",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 110.70172999995975
+ },
+ "latency_cutoff.calibrate.kb8.server_total_ms.p95": {
+  "as_written": "387.1",
+  "claim": "8 KB server p95",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 387.0969050000099
+ },
+ "latency_cutoff.check.corpus.client_ms.p50": {
+  "as_written": "38.4",
+  "claim": "corpus cutoff on p50",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 38.44924999998511
+ },
+ "latency_cutoff.check.kb16.client_ms.p50": {
+  "as_written": "23.8",
+  "claim": "16 KB cutoff on p50",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 23.775850000106402
+ },
+ "latency_cutoff.check.kb16.client_ms.p95": {
+  "as_written": "31.8",
+  "claim": "16 KB cutoff on p95",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 31.779529999982966
+ },
+ "latency_cutoff.check.kb16.routed_in_burst": {
+  "as_written": "48",
+  "claim": "16 KB routed",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 48.0
+ },
+ "latency_cutoff.check.kb16.tier2_hold_ms_sequential.p50": {
+  "as_written": "721",
+  "claim": "16 KB Tier 2 hold p50",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 720.804199999975
+ },
+ "latency_cutoff.check.kb64.client_ms.p50": {
+  "as_written": "24.3",
+  "claim": "64 KB cutoff on p50",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 24.32869999995546
+ },
+ "latency_cutoff.check.kb64.client_ms.p95": {
+  "as_written": "53.1",
+  "claim": "64 KB cutoff on p95",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 53.06279500001665
+ },
+ "latency_cutoff.check.kb64.tier2_hold_ms_sequential.p50": {
+  "as_written": "4280",
+  "claim": "64 KB Tier 2 hold p50",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 4280.067749999944
+ },
+ "latency_cutoff.chosen_bytes": {
+  "as_written": "1024",
+  "claim": "cutoff bytes",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 1024.0
+ },
+ "latency_cutoff.corpus_text_bytes.median": {
+  "as_written": "233",
+  "claim": "corpus median bytes",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 233.0
+ },
+ "latency_cutoff.decompose.new_connection_1kb.client_ms.p50": {
+  "as_written": "65.1",
+  "claim": "new connection 1 KB p50",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 65.11545000000751
+ },
+ "latency_cutoff.decompose.new_connection_corpus.client_ms.p50": {
+  "as_written": "39.3",
+  "claim": "new connection corpus p50",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 39.31105000003754
+ },
+ "latency_cutoff.decompose.persistent_1kb.client_ms.p50": {
+  "as_written": "67.7",
+  "claim": "persistent 1 KB p50",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 67.66074999995908
+ },
+ "latency_cutoff.decompose.persistent_1kb.server_pii_ms.p50": {
+  "as_written": "42.6",
+  "claim": "PII 1 KB p50",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 42.620650000117166
+ },
+ "latency_cutoff.decompose.persistent_corpus.client_ms.p50": {
+  "as_written": "43.3",
+  "claim": "persistent corpus p50",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 43.26409999998759
+ },
+ "latency_cutoff.decompose.persistent_corpus.server_pii_ms.p50": {
+  "as_written": "16.9",
+  "claim": "PII corpus p50",
+  "git_hash": "c34e7dd7255f92c8b3f01c26d41d5b5bf78e7016",
+  "run_id": "latency_cutoff-20261104T052145Z",
+  "script": "evaluation/latency_cutoff.py",
+  "value": 16.878300000030322
+ },
  "latency_extra.concurrency.c1.client_ms.p50": {
   "as_written": "60",
   "claim": "1 client p50",
