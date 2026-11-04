@@ -1,0 +1,17 @@
+# F11 simulator to CERT with per-user standardisation (D-033)
+z logistic AUC | transfer_std.z.logistic.auc | 0.365
+z boosting AUC | transfer_std.z.boosting.auc | 0.246
+robust z logistic AUC | transfer_std.robust_z.logistic.auc | 0.533
+robust z boosting AUC | transfer_std.robust_z.boosting.auc | 0.261
+rank logistic AUC | transfer_std.rank.logistic.auc | 0.430
+rank boosting AUC | transfer_std.rank.boosting.auc | 0.281
+z boosting negated | transfer_std.z.boosting.auc_of_negated_score | 0.754
+rank boosting negated | transfer_std.rank.boosting.auc_of_negated_score | 0.719
+CERT-trained logistic AUC | transfer_std.cert_trained_logistic_auc | 0.776
+features flipped | transfer_std.n_features_sign_flipped | 2
+endpoint sim coef | transfer_std.coefficients_current_hour.endpoint_operation.simulator | -0.731
+endpoint cert coef | transfer_std.coefficients_current_hour.endpoint_operation.cert | 0.329
+geo sim coef | transfer_std.coefficients_current_hour.geo_index.simulator | 0.174
+geo cert coef | transfer_std.coefficients_current_hour.geo_index.cert | -0.054
+file type sim coef | transfer_std.coefficients_current_hour.file_type_category.simulator | 0.544
+file type cert coef | transfer_std.coefficients_current_hour.file_type_category.cert | 0.022

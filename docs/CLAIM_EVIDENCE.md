@@ -822,6 +822,27 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 | CERT IF AUC (same rule) | `transfer.sim_to_cert.iforest_on_cert.auc` | 0.732 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195449Z (2253d403) |
 | CERT IF scenario 2 episodes (same rule) | `transfer.sim_to_cert.iforest_on_cert.scenario2_episode_recall` | 1.00 | `evaluation/supervised_transfer.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | supervised_transfer-20261102T195449Z (2253d403) |
 
+## transfer_std
+
+| Claim | Manifest key | Value | Script | Seeds | Run |
+|---|---|---|---|---|---|
+| z logistic AUC | `transfer_std.z.logistic.auc` | 0.365 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| z boosting AUC | `transfer_std.z.boosting.auc` | 0.246 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| robust z logistic AUC | `transfer_std.robust_z.logistic.auc` | 0.533 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| robust z boosting AUC | `transfer_std.robust_z.boosting.auc` | 0.261 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| rank logistic AUC | `transfer_std.rank.logistic.auc` | 0.430 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| rank boosting AUC | `transfer_std.rank.boosting.auc` | 0.281 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| z boosting negated | `transfer_std.z.boosting.auc_of_negated_score` | 0.754 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| rank boosting negated | `transfer_std.rank.boosting.auc_of_negated_score` | 0.719 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| CERT-trained logistic AUC | `transfer_std.cert_trained_logistic_auc` | 0.776 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| features flipped | `transfer_std.n_features_sign_flipped` | 2 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| endpoint sim coef | `transfer_std.coefficients_current_hour.endpoint_operation.simulator` | -0.731 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| endpoint cert coef | `transfer_std.coefficients_current_hour.endpoint_operation.cert` | 0.329 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| geo sim coef | `transfer_std.coefficients_current_hour.geo_index.simulator` | 0.174 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| geo cert coef | `transfer_std.coefficients_current_hour.geo_index.cert` | -0.054 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| file type sim coef | `transfer_std.coefficients_current_hour.file_type_category.simulator` | 0.544 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+| file type cert coef | `transfer_std.coefficients_current_hour.file_type_category.cert` | 0.022 | `evaluation/transfer_standardise.py` | {"data_seeds": [42, 7, 2024, 1, 13, 99, 123, 314, 777, 1001], "models": 42} | transfer_standardise-20261104T045959Z (c894b273) |
+
 ## vlmdiag
 
 | Claim | Manifest key | Value | Script | Seeds | Run |

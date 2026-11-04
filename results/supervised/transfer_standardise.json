@@ -1,0 +1,116 @@
+{
+ "results": {
+  "z": {
+   "logistic": {
+    "auc": 0.36470268077655743,
+    "auc_of_negated_score": 0.6352973192234426,
+    "sign_flipped": 1.0
+   },
+   "boosting": {
+    "auc": 0.2457420832580647,
+    "auc_of_negated_score": 0.7542579167419353,
+    "sign_flipped": 1.0
+   }
+  },
+  "cert_trained_logistic_auc": 0.775858727449171,
+  "robust_z": {
+   "logistic": {
+    "auc": 0.5333163891413403,
+    "auc_of_negated_score": 0.4666836108586597,
+    "sign_flipped": 0.0
+   },
+   "boosting": {
+    "auc": 0.26081156144696865,
+    "auc_of_negated_score": 0.7391884385530314,
+    "sign_flipped": 1.0
+   }
+  },
+  "rank": {
+   "logistic": {
+    "auc": 0.43026508091435156,
+    "auc_of_negated_score": 0.5697349190856484,
+    "sign_flipped": 1.0
+   },
+   "boosting": {
+    "auc": 0.28130803560800943,
+    "auc_of_negated_score": 0.7186919643919906,
+    "sign_flipped": 1.0
+   }
+  },
+  "coefficients_current_hour": {
+   "activity_rate": {
+    "simulator": 0.1213639480042163,
+    "cert": 0.22903416468182247,
+    "same_sign": 1.0
+   },
+   "file_type_category": {
+    "simulator": 0.5438932905141931,
+    "cert": 0.022403286634584067,
+    "same_sign": 1.0
+   },
+   "geo_index": {
+    "simulator": 0.17370208815854313,
+    "cert": -0.05403314742195559,
+    "same_sign": 0.0
+   },
+   "endpoint_operation": {
+    "simulator": -0.7307077000161086,
+    "cert": 0.32899706928497,
+    "same_sign": 0.0
+   },
+   "permission_scope_delta": {
+    "simulator": 2.1007977672989107,
+    "cert": 0.38346796036076997,
+    "same_sign": 1.0
+   },
+   "collaboration_density": {
+    "simulator": -0.7692458005939214,
+    "cert": -0.15266952690581717,
+    "same_sign": 1.0
+   }
+  },
+  "n_features_sign_flipped": 2.0,
+  "_meta": {
+   "minutes": 0.5879096070925395,
+   "decision": "docs/DECISIONS.md D-033"
+  }
+ },
+ "provenance": {
+  "script": "evaluation/transfer_standardise.py",
+  "command": "python.exe C:\\Users\\loons\\Documents\\GitHub\\SDA-Research-Project\\evaluation\\transfer_standardise.py",
+  "seeds": {
+   "data_seeds": [
+    42,
+    7,
+    2024,
+    1,
+    13,
+    99,
+    123,
+    314,
+    777,
+    1001
+   ],
+   "models": 42
+  },
+  "date_utc": "2026-11-04T04:59:59+00:00",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "git_dirty": true,
+  "python": "3.14.4",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.3",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "torch": "2.13.0",
+   "presidio_analyzer": "2.2.363",
+   "spacy": "3.8.13",
+   "easyocr": "1.7.2",
+   "Faker": "40.28.1",
+   "pillow": "12.2.0",
+   "openai": "2.44.0"
+  },
+  "device": null
+ }
+}

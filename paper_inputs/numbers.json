@@ -5343,6 +5343,134 @@
   "script": "evaluation/supervised_transfer.py",
   "value": 0.0
  },
+ "transfer_std.cert_trained_logistic_auc": {
+  "as_written": "0.776",
+  "claim": "CERT-trained logistic AUC",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.775858727449171
+ },
+ "transfer_std.coefficients_current_hour.endpoint_operation.cert": {
+  "as_written": "0.329",
+  "claim": "endpoint cert coef",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.32899706928497
+ },
+ "transfer_std.coefficients_current_hour.endpoint_operation.simulator": {
+  "as_written": "-0.731",
+  "claim": "endpoint sim coef",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": -0.7307077000161086
+ },
+ "transfer_std.coefficients_current_hour.file_type_category.cert": {
+  "as_written": "0.022",
+  "claim": "file type cert coef",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.022403286634584067
+ },
+ "transfer_std.coefficients_current_hour.file_type_category.simulator": {
+  "as_written": "0.544",
+  "claim": "file type sim coef",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.5438932905141931
+ },
+ "transfer_std.coefficients_current_hour.geo_index.cert": {
+  "as_written": "-0.054",
+  "claim": "geo cert coef",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": -0.05403314742195559
+ },
+ "transfer_std.coefficients_current_hour.geo_index.simulator": {
+  "as_written": "0.174",
+  "claim": "geo sim coef",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.17370208815854313
+ },
+ "transfer_std.n_features_sign_flipped": {
+  "as_written": "2",
+  "claim": "features flipped",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 2.0
+ },
+ "transfer_std.rank.boosting.auc": {
+  "as_written": "0.281",
+  "claim": "rank boosting AUC",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.28130803560800943
+ },
+ "transfer_std.rank.boosting.auc_of_negated_score": {
+  "as_written": "0.719",
+  "claim": "rank boosting negated",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.7186919643919906
+ },
+ "transfer_std.rank.logistic.auc": {
+  "as_written": "0.430",
+  "claim": "rank logistic AUC",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.43026508091435156
+ },
+ "transfer_std.robust_z.boosting.auc": {
+  "as_written": "0.261",
+  "claim": "robust z boosting AUC",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.26081156144696865
+ },
+ "transfer_std.robust_z.logistic.auc": {
+  "as_written": "0.533",
+  "claim": "robust z logistic AUC",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.5333163891413403
+ },
+ "transfer_std.z.boosting.auc": {
+  "as_written": "0.246",
+  "claim": "z boosting AUC",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.2457420832580647
+ },
+ "transfer_std.z.boosting.auc_of_negated_score": {
+  "as_written": "0.754",
+  "claim": "z boosting negated",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.7542579167419353
+ },
+ "transfer_std.z.logistic.auc": {
+  "as_written": "0.365",
+  "claim": "z logistic AUC",
+  "git_hash": "c894b2734b064437d2bf18e28b1b0816371fb990",
+  "run_id": "transfer_standardise-20261104T045959Z",
+  "script": "evaluation/transfer_standardise.py",
+  "value": 0.36470268077655743
+ },
  "vlmdiag.gemma-3-4b-it.funsd.ok_empty_list": {
   "as_written": "11",
   "claim": "gemma FUNSD empty",
