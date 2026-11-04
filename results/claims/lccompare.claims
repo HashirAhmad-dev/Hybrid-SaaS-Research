@@ -1,0 +1,40 @@
+# F10 label curve against Isolation Forest (D-032)
+IF F1 labelled-val | lccompare.summary.k0_iforest.valf1_f1.mean | 0.635
+IF F1 budget | lccompare.summary.k0_iforest.budget_f1.mean | 0.470
+IF slow ep budget | lccompare.summary.k0_iforest.budget_malicious_episode_recall.mean | 0.283
+IF slow ep labelled-val | lccompare.summary.k0_iforest.valf1_malicious_episode_recall.mean | 0.033
+LR10 F1 labelled-val | lccompare.summary.k10_logistic.valf1_f1.mean | 0.483
+LR20 F1 labelled-val | lccompare.summary.k20_logistic.valf1_f1.mean | 0.539
+LRall F1 labelled-val | lccompare.summary.kall_logistic.valf1_f1.mean | 0.571
+GBall F1 labelled-val | lccompare.summary.kall_boosting.valf1_f1.mean | 0.785
+LR10 F1 budget | lccompare.summary.k10_logistic.budget_f1.mean | 0.454
+LR20 F1 budget | lccompare.summary.k20_logistic.budget_f1.mean | 0.525
+LR10 slow ep budget | lccompare.summary.k10_logistic.budget_malicious_episode_recall.mean | 0.657
+LR10 slow ep labelled-val | lccompare.summary.k10_logistic.valf1_malicious_episode_recall.mean | 0.500
+LR10 minus IF F1 labelled-val | lccompare.paired_minus_iforest.k10_logistic.valf1_f1.point | -0.152
+LR10 minus IF F1 labelled-val low | lccompare.paired_minus_iforest.k10_logistic.valf1_f1.ci_lo | -0.201
+LR10 minus IF F1 labelled-val high | lccompare.paired_minus_iforest.k10_logistic.valf1_f1.ci_hi | -0.112
+LR20 minus IF F1 labelled-val | lccompare.paired_minus_iforest.k20_logistic.valf1_f1.point | -0.096
+LR20 minus IF F1 labelled-val low | lccompare.paired_minus_iforest.k20_logistic.valf1_f1.ci_lo | -0.147
+LR20 minus IF F1 labelled-val high | lccompare.paired_minus_iforest.k20_logistic.valf1_f1.ci_hi | -0.056
+LR10 minus IF F1 budget | lccompare.paired_minus_iforest.k10_logistic.budget_f1.point | -0.016
+LR10 minus IF F1 budget low | lccompare.paired_minus_iforest.k10_logistic.budget_f1.ci_lo | -0.047
+LR10 minus IF F1 budget high | lccompare.paired_minus_iforest.k10_logistic.budget_f1.ci_hi | 0.014
+LR20 minus IF F1 budget | lccompare.paired_minus_iforest.k20_logistic.budget_f1.point | 0.055
+LR20 minus IF F1 budget low | lccompare.paired_minus_iforest.k20_logistic.budget_f1.ci_lo | 0.024
+LR20 minus IF F1 budget high | lccompare.paired_minus_iforest.k20_logistic.budget_f1.ci_hi | 0.085
+LR10 minus IF AUC | lccompare.paired_minus_iforest.k10_logistic.auc.point | 0.035
+LR10 minus IF AUC low | lccompare.paired_minus_iforest.k10_logistic.auc.ci_lo | 0.002
+LR10 minus IF AUC high | lccompare.paired_minus_iforest.k10_logistic.auc.ci_hi | 0.061
+LR10 minus IF slow budget | lccompare.paired_minus_iforest.k10_logistic.budget_malicious_episode_recall.point | 0.373
+LR10 minus IF slow budget low | lccompare.paired_minus_iforest.k10_logistic.budget_malicious_episode_recall.ci_lo | 0.252
+LR10 minus IF slow budget high | lccompare.paired_minus_iforest.k10_logistic.budget_malicious_episode_recall.ci_hi | 0.487
+LR10 minus IF slow labelled-val | lccompare.paired_minus_iforest.k10_logistic.valf1_malicious_episode_recall.point | 0.467
+LR10 minus IF slow labelled-val low | lccompare.paired_minus_iforest.k10_logistic.valf1_malicious_episode_recall.ci_lo | 0.385
+LR10 minus IF slow labelled-val high | lccompare.paired_minus_iforest.k10_logistic.valf1_malicious_episode_recall.ci_hi | 0.547
+GB10 minus IF AUC | lccompare.paired_minus_iforest.k10_boosting.auc.point | -0.164
+GB10 minus IF AUC low | lccompare.paired_minus_iforest.k10_boosting.auc.ci_lo | -0.202
+GB10 minus IF AUC high | lccompare.paired_minus_iforest.k10_boosting.auc.ci_hi | -0.134
+GB20 minus IF AUC | lccompare.paired_minus_iforest.k20_boosting.auc.point | -0.045
+GB20 minus IF AUC low | lccompare.paired_minus_iforest.k20_boosting.auc.ci_lo | -0.073
+GB20 minus IF AUC high | lccompare.paired_minus_iforest.k20_boosting.auc.ci_hi | -0.021

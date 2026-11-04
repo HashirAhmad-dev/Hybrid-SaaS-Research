@@ -240,3 +240,14 @@ Mean over 4 held-out classes and 10 datasets; 95 percent two-stage cluster-boots
 | N-087 | The layer does not cover an unseen slow-drift class: with malicious insiders held out, every layered system finds 0.57 of their episodes, all of it from CUSUM; both probes alone find 0.00. | `layered.unseen_episode_recall_by_held_out_class.*.malicious_insider` |
 | N-088 | A logistic-regression layer costs more than it gives: it raises seen-class episode recall by 0.088 but lowers precision from 0.750 to 0.582 (difference -0.167, CI -0.190 to -0.147) and FPR rises to 0.022; F1 does not improve (difference -0.020, CI -0.057 to 0.006). | `layered.paired.layered_lr_minus_hybrid_or_cusum.*` |
 | N-089 | Every layered system inherits CUSUM's benign-burst alarms: 0.214 of burst hours (CI 0.173 to 0.249), against 0.015 for the hybrid alone. The supervised layers add no burst alarms. | `layered.*.burst_alarm_rate.*` |
+
+## Label curve against Isolation Forest under two threshold rules (keys `lccompare.*`, D-032, task F10)
+
+Same draws as D-029. "Budget": alert on the top 5 percent of validation scores, no labels. "Labelled validation": the threshold that maximises F1 on validation, which needs validation labels. Paired intervals: two-stage cluster bootstrap, 2,000 resamples, model minus Isolation Forest.
+
+| ID | Result | Evidence key |
+|---|---|---|
+| N-090 | Under the labelled-validation rule Isolation Forest is hard to beat on F1: its F1 is 0.635, and logistic regression stays below it at every k (0.483 at 10 incidents, difference -0.152, CI -0.201 to -0.112; 0.539 at 20, difference -0.096, CI -0.147 to -0.056; 0.571 with all 143). Only boosting with all 143 incidents exceeds it (0.785). | `lccompare.summary.*.valf1_f1.*`, `lccompare.paired_minus_iforest.k10_logistic.valf1_f1.*` |
+| N-091 | Under the 5 percent budget, 10 incidents do not raise F1 (logistic 0.454 against 0.470, difference -0.016, CI -0.047 to 0.014); 20 incidents do (0.525, difference 0.055, CI 0.024 to 0.085). AUC rises already at 10 (difference 0.035, CI 0.002 to 0.061). | `lccompare.paired_minus_iforest.k10_logistic.*`, `lccompare.paired_minus_iforest.k20_logistic.*` |
+| N-092 | What labels buy at small k is slow-drift coverage, not overall F1. With 10 incidents, logistic regression finds 0.373 more slow-insider episodes than Isolation Forest under the budget rule (CI 0.252 to 0.487; 0.657 against 0.283) and 0.467 more under the labelled-validation rule (CI 0.385 to 0.547; 0.500 against 0.033). | `lccompare.paired_minus_iforest.k10_logistic.*_malicious_episode_recall.*` |
+| N-093 | Gradient boosting is worse than Isolation Forest at 10 and 20 incidents on AUC (difference -0.164 at 10, CI -0.202 to -0.134; -0.045 at 20, CI -0.073 to -0.021) and on F1 under both rules, though it also finds more slow-insider episodes. | `lccompare.paired_minus_iforest.k10_boosting.*`, `lccompare.paired_minus_iforest.k20_boosting.*` |

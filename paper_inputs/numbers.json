@@ -2927,6 +2927,318 @@
   "script": "evaluation/layered_eval.py",
   "value": 0.0
  },
+ "lccompare.paired_minus_iforest.k10_boosting.auc.ci_hi": {
+  "as_written": "-0.134",
+  "claim": "GB10 minus IF AUC high",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.13356313866214736
+ },
+ "lccompare.paired_minus_iforest.k10_boosting.auc.ci_lo": {
+  "as_written": "-0.202",
+  "claim": "GB10 minus IF AUC low",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.2023390566534179
+ },
+ "lccompare.paired_minus_iforest.k10_boosting.auc.point": {
+  "as_written": "-0.164",
+  "claim": "GB10 minus IF AUC",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.16351618840886872
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.auc.ci_hi": {
+  "as_written": "0.061",
+  "claim": "LR10 minus IF AUC high",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.06127399347524725
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.auc.ci_lo": {
+  "as_written": "0.002",
+  "claim": "LR10 minus IF AUC low",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.0023488635651763685
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.auc.point": {
+  "as_written": "0.035",
+  "claim": "LR10 minus IF AUC",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.03542272123541601
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.budget_f1.ci_hi": {
+  "as_written": "0.014",
+  "claim": "LR10 minus IF F1 budget high",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.014010291693889572
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.budget_f1.ci_lo": {
+  "as_written": "-0.047",
+  "claim": "LR10 minus IF F1 budget low",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.04688190145029994
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.budget_f1.point": {
+  "as_written": "-0.016",
+  "claim": "LR10 minus IF F1 budget",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.015966238360115015
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.budget_malicious_episode_recall.ci_hi": {
+  "as_written": "0.487",
+  "claim": "LR10 minus IF slow budget high",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.4866833333333332
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.budget_malicious_episode_recall.ci_lo": {
+  "as_written": "0.252",
+  "claim": "LR10 minus IF slow budget low",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.2516666666666667
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.budget_malicious_episode_recall.point": {
+  "as_written": "0.373",
+  "claim": "LR10 minus IF slow budget",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.3733333333333334
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.valf1_f1.ci_hi": {
+  "as_written": "-0.112",
+  "claim": "LR10 minus IF F1 labelled-val high",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.1123850702878782
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.valf1_f1.ci_lo": {
+  "as_written": "-0.201",
+  "claim": "LR10 minus IF F1 labelled-val low",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.20076943392468427
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.valf1_f1.point": {
+  "as_written": "-0.152",
+  "claim": "LR10 minus IF F1 labelled-val",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.15198411992408556
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.valf1_malicious_episode_recall.ci_hi": {
+  "as_written": "0.547",
+  "claim": "LR10 minus IF slow labelled-val high",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.5470166666666665
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.valf1_malicious_episode_recall.ci_lo": {
+  "as_written": "0.385",
+  "claim": "LR10 minus IF slow labelled-val low",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.385
+ },
+ "lccompare.paired_minus_iforest.k10_logistic.valf1_malicious_episode_recall.point": {
+  "as_written": "0.467",
+  "claim": "LR10 minus IF slow labelled-val",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.4666666666666667
+ },
+ "lccompare.paired_minus_iforest.k20_boosting.auc.ci_hi": {
+  "as_written": "-0.021",
+  "claim": "GB20 minus IF AUC high",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.021033603719865932
+ },
+ "lccompare.paired_minus_iforest.k20_boosting.auc.ci_lo": {
+  "as_written": "-0.073",
+  "claim": "GB20 minus IF AUC low",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.07320468792930479
+ },
+ "lccompare.paired_minus_iforest.k20_boosting.auc.point": {
+  "as_written": "-0.045",
+  "claim": "GB20 minus IF AUC",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.04494618581500753
+ },
+ "lccompare.paired_minus_iforest.k20_logistic.budget_f1.ci_hi": {
+  "as_written": "0.085",
+  "claim": "LR20 minus IF F1 budget high",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.08467022223069365
+ },
+ "lccompare.paired_minus_iforest.k20_logistic.budget_f1.ci_lo": {
+  "as_written": "0.024",
+  "claim": "LR20 minus IF F1 budget low",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.024382391239221122
+ },
+ "lccompare.paired_minus_iforest.k20_logistic.budget_f1.point": {
+  "as_written": "0.055",
+  "claim": "LR20 minus IF F1 budget",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.0551354385506706
+ },
+ "lccompare.paired_minus_iforest.k20_logistic.valf1_f1.ci_hi": {
+  "as_written": "-0.056",
+  "claim": "LR20 minus IF F1 labelled-val high",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.056065884854421565
+ },
+ "lccompare.paired_minus_iforest.k20_logistic.valf1_f1.ci_lo": {
+  "as_written": "-0.147",
+  "claim": "LR20 minus IF F1 labelled-val low",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.1471895694258341
+ },
+ "lccompare.paired_minus_iforest.k20_logistic.valf1_f1.point": {
+  "as_written": "-0.096",
+  "claim": "LR20 minus IF F1 labelled-val",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": -0.0958406185521059
+ },
+ "lccompare.summary.k0_iforest.budget_f1.mean": {
+  "as_written": "0.470",
+  "claim": "IF F1 budget",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.46996000835928
+ },
+ "lccompare.summary.k0_iforest.budget_malicious_episode_recall.mean": {
+  "as_written": "0.283",
+  "claim": "IF slow ep budget",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.2833333333333333
+ },
+ "lccompare.summary.k0_iforest.valf1_f1.mean": {
+  "as_written": "0.635",
+  "claim": "IF F1 labelled-val",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.6347598275541928
+ },
+ "lccompare.summary.k0_iforest.valf1_malicious_episode_recall.mean": {
+  "as_written": "0.033",
+  "claim": "IF slow ep labelled-val",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.03333333333333333
+ },
+ "lccompare.summary.k10_logistic.budget_f1.mean": {
+  "as_written": "0.454",
+  "claim": "LR10 F1 budget",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.45399376999916496
+ },
+ "lccompare.summary.k10_logistic.budget_malicious_episode_recall.mean": {
+  "as_written": "0.657",
+  "claim": "LR10 slow ep budget",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.6566666666666667
+ },
+ "lccompare.summary.k10_logistic.valf1_f1.mean": {
+  "as_written": "0.483",
+  "claim": "LR10 F1 labelled-val",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.48277570763010724
+ },
+ "lccompare.summary.k10_logistic.valf1_malicious_episode_recall.mean": {
+  "as_written": "0.500",
+  "claim": "LR10 slow ep labelled-val",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.5
+ },
+ "lccompare.summary.k20_logistic.budget_f1.mean": {
+  "as_written": "0.525",
+  "claim": "LR20 F1 budget",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.5250954469099506
+ },
+ "lccompare.summary.k20_logistic.valf1_f1.mean": {
+  "as_written": "0.539",
+  "claim": "LR20 F1 labelled-val",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.5389192090020869
+ },
+ "lccompare.summary.kall_boosting.valf1_f1.mean": {
+  "as_written": "0.785",
+  "claim": "GBall F1 labelled-val",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.7847874447875647
+ },
+ "lccompare.summary.kall_logistic.valf1_f1.mean": {
+  "as_written": "0.571",
+  "claim": "LRall F1 labelled-val",
+  "git_hash": "f9651819e90c429e364c1d371a8596952abf5744",
+  "run_id": "label_curve_compare-20261104T051019Z",
+  "script": "evaluation/label_curve_compare.py",
+  "value": 0.5709793859565683
+ },
  "oppoints.summary.enforcement_per_dataset_alert_or_block.f1.mean": {
   "as_written": "0.4382",
   "claim": "enforcement_per_dataset_alert_or_block f1",
