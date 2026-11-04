@@ -12,3 +12,20 @@ FUNSD forms with gold | vlmdiag.qwen2-5-vl-3b-instruct.funsd.docs_with_gold_enti
 7B FUNSD nonempty | vlmdiag.qwen2-5-vl-7b-instruct.funsd.ok_nonempty | 37
 gemma FUNSD prompt tokens | vlmdiag.gemma-3-4b-it.funsd.prompt_tokens_median | 511
 gemma FUNSD nonempty | vlmdiag.gemma-3-4b-it.funsd.ok_nonempty | 182
+3B v1 valid | vlmdiag.qwen2-5-vl-3b-instruct.v1.status_ok | 80
+3B v1 empty | vlmdiag.qwen2-5-vl-3b-instruct.v1.ok_empty_list | 67
+3B v1 nonempty | vlmdiag.qwen2-5-vl-3b-instruct.v1.ok_nonempty | 13
+3B v2 nonempty | vlmdiag.qwen2-5-vl-3b-instruct.v2.ok_nonempty | 26
+3B v2 malformed | vlmdiag.qwen2-5-vl-3b-instruct.v2.status_malformed_json | 37
+3B FUNSD malformed | vlmdiag.qwen2-5-vl-3b-instruct.funsd.status_malformed_json | 16
+gemma v1 empty | vlmdiag.gemma-3-4b-it.v1.ok_empty_list | 11
+gemma v2 valid | vlmdiag.gemma-3-4b-it.v2.status_ok | 238
+gemma v2 empty | vlmdiag.gemma-3-4b-it.v2.ok_empty_list | 5
+gemma v2 errors | vlmdiag.gemma-3-4b-it.v2.status_error:BadRequestError | 2
+gemma FUNSD valid | vlmdiag.gemma-3-4b-it.funsd.status_ok | 193
+gemma FUNSD empty | vlmdiag.gemma-3-4b-it.funsd.ok_empty_list | 11
+gemma FUNSD errors | vlmdiag.gemma-3-4b-it.funsd.status_error:BadRequestError | 6
+7B v1 empty | vlmdiag.qwen2-5-vl-7b-instruct.v1.ok_empty_list | 12
+7B v2 valid | vlmdiag.qwen2-5-vl-7b-instruct.v2.status_ok | 240
+7B v2 empty | vlmdiag.qwen2-5-vl-7b-instruct.v2.ok_empty_list | 31
+7B FUNSD empty | vlmdiag.qwen2-5-vl-7b-instruct.funsd.ok_empty_list | 162

@@ -839,4 +839,21 @@ Every row passed `tools/check_numbers.py` when this file was generated.
 | 7B FUNSD nonempty | `vlmdiag.qwen2-5-vl-7b-instruct.funsd.ok_nonempty` | 37 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
 | gemma FUNSD prompt tokens | `vlmdiag.gemma-3-4b-it.funsd.prompt_tokens_median` | 511 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
 | gemma FUNSD nonempty | `vlmdiag.gemma-3-4b-it.funsd.ok_nonempty` | 182 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B v1 valid | `vlmdiag.qwen2-5-vl-3b-instruct.v1.status_ok` | 80 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B v1 empty | `vlmdiag.qwen2-5-vl-3b-instruct.v1.ok_empty_list` | 67 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B v1 nonempty | `vlmdiag.qwen2-5-vl-3b-instruct.v1.ok_nonempty` | 13 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B v2 nonempty | `vlmdiag.qwen2-5-vl-3b-instruct.v2.ok_nonempty` | 26 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B v2 malformed | `vlmdiag.qwen2-5-vl-3b-instruct.v2.status_malformed_json` | 37 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 3B FUNSD malformed | `vlmdiag.qwen2-5-vl-3b-instruct.funsd.status_malformed_json` | 16 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| gemma v1 empty | `vlmdiag.gemma-3-4b-it.v1.ok_empty_list` | 11 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| gemma v2 valid | `vlmdiag.gemma-3-4b-it.v2.status_ok` | 238 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| gemma v2 empty | `vlmdiag.gemma-3-4b-it.v2.ok_empty_list` | 5 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| gemma v2 errors | `vlmdiag.gemma-3-4b-it.v2.status_error:BadRequestError` | 2 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| gemma FUNSD valid | `vlmdiag.gemma-3-4b-it.funsd.status_ok` | 193 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| gemma FUNSD empty | `vlmdiag.gemma-3-4b-it.funsd.ok_empty_list` | 11 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| gemma FUNSD errors | `vlmdiag.gemma-3-4b-it.funsd.status_error:BadRequestError` | 6 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 7B v1 empty | `vlmdiag.qwen2-5-vl-7b-instruct.v1.ok_empty_list` | 12 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 7B v2 valid | `vlmdiag.qwen2-5-vl-7b-instruct.v2.status_ok` | 240 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 7B v2 empty | `vlmdiag.qwen2-5-vl-7b-instruct.v2.ok_empty_list` | 31 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
+| 7B FUNSD empty | `vlmdiag.qwen2-5-vl-7b-instruct.funsd.ok_empty_list` | 162 | `evaluation/vlm_diagnose.py` | {} | vlm_diagnose-20261102T195821Z (d2d7d9d6) |
 

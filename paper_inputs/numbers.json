@@ -5343,6 +5343,14 @@
   "script": "evaluation/supervised_transfer.py",
   "value": 0.0
  },
+ "vlmdiag.gemma-3-4b-it.funsd.ok_empty_list": {
+  "as_written": "11",
+  "claim": "gemma FUNSD empty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 11.0
+ },
  "vlmdiag.gemma-3-4b-it.funsd.ok_nonempty": {
   "as_written": "182",
   "claim": "gemma FUNSD nonempty",
@@ -5358,6 +5366,54 @@
   "run_id": "vlm_diagnose-20261102T195821Z",
   "script": "evaluation/vlm_diagnose.py",
   "value": 511.0
+ },
+ "vlmdiag.gemma-3-4b-it.funsd.status_error:BadRequestError": {
+  "as_written": "6",
+  "claim": "gemma FUNSD errors",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 6.0
+ },
+ "vlmdiag.gemma-3-4b-it.funsd.status_ok": {
+  "as_written": "193",
+  "claim": "gemma FUNSD valid",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 193.0
+ },
+ "vlmdiag.gemma-3-4b-it.v1.ok_empty_list": {
+  "as_written": "11",
+  "claim": "gemma v1 empty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 11.0
+ },
+ "vlmdiag.gemma-3-4b-it.v2.ok_empty_list": {
+  "as_written": "5",
+  "claim": "gemma v2 empty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 5.0
+ },
+ "vlmdiag.gemma-3-4b-it.v2.status_error:BadRequestError": {
+  "as_written": "2",
+  "claim": "gemma v2 errors",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 2.0
+ },
+ "vlmdiag.gemma-3-4b-it.v2.status_ok": {
+  "as_written": "238",
+  "claim": "gemma v2 valid",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 238.0
  },
  "vlmdiag.qwen2-5-vl-3b-instruct.funsd.completion_tokens_median": {
   "as_written": "2",
@@ -5415,6 +5471,14 @@
   "script": "evaluation/vlm_diagnose.py",
   "value": 1222.0
  },
+ "vlmdiag.qwen2-5-vl-3b-instruct.funsd.status_malformed_json": {
+  "as_written": "16",
+  "claim": "3B FUNSD malformed",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 16.0
+ },
  "vlmdiag.qwen2-5-vl-3b-instruct.funsd.status_ok": {
   "as_written": "183",
   "claim": "3B FUNSD valid",
@@ -5422,6 +5486,30 @@
   "run_id": "vlm_diagnose-20261102T195821Z",
   "script": "evaluation/vlm_diagnose.py",
   "value": 183.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.v1.ok_empty_list": {
+  "as_written": "67",
+  "claim": "3B v1 empty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 67.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.v1.ok_nonempty": {
+  "as_written": "13",
+  "claim": "3B v1 nonempty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 13.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.v1.status_ok": {
+  "as_written": "80",
+  "claim": "3B v1 valid",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 80.0
  },
  "vlmdiag.qwen2-5-vl-3b-instruct.v2.ok_empty_list": {
   "as_written": "177",
@@ -5431,6 +5519,22 @@
   "script": "evaluation/vlm_diagnose.py",
   "value": 177.0
  },
+ "vlmdiag.qwen2-5-vl-3b-instruct.v2.ok_nonempty": {
+  "as_written": "26",
+  "claim": "3B v2 nonempty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 26.0
+ },
+ "vlmdiag.qwen2-5-vl-3b-instruct.v2.status_malformed_json": {
+  "as_written": "37",
+  "claim": "3B v2 malformed",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 37.0
+ },
  "vlmdiag.qwen2-5-vl-3b-instruct.v2.status_ok": {
   "as_written": "203",
   "claim": "3B v2 valid",
@@ -5439,6 +5543,14 @@
   "script": "evaluation/vlm_diagnose.py",
   "value": 203.0
  },
+ "vlmdiag.qwen2-5-vl-7b-instruct.funsd.ok_empty_list": {
+  "as_written": "162",
+  "claim": "7B FUNSD empty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 162.0
+ },
  "vlmdiag.qwen2-5-vl-7b-instruct.funsd.ok_nonempty": {
   "as_written": "37",
   "claim": "7B FUNSD nonempty",
@@ -5446,5 +5558,29 @@
   "run_id": "vlm_diagnose-20261102T195821Z",
   "script": "evaluation/vlm_diagnose.py",
   "value": 37.0
+ },
+ "vlmdiag.qwen2-5-vl-7b-instruct.v1.ok_empty_list": {
+  "as_written": "12",
+  "claim": "7B v1 empty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 12.0
+ },
+ "vlmdiag.qwen2-5-vl-7b-instruct.v2.ok_empty_list": {
+  "as_written": "31",
+  "claim": "7B v2 empty",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 31.0
+ },
+ "vlmdiag.qwen2-5-vl-7b-instruct.v2.status_ok": {
+  "as_written": "240",
+  "claim": "7B v2 valid",
+  "git_hash": "d2d7d9d63ad243c673fb1ba37c6c0ecaf4894af5",
+  "run_id": "vlm_diagnose-20261102T195821Z",
+  "script": "evaluation/vlm_diagnose.py",
+  "value": 240.0
  }
 }
