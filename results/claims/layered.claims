@@ -1,0 +1,37 @@
+# F9 layered evaluation (D-034)
+hybrid or CUSUM seen ep recall | layered.hybrid_or_cusum.seen_episode_recall.point | 0.885
+layered GB seen ep recall | layered.layered_gb.seen_episode_recall.point | 0.983
+GB minus hC seen | layered.paired.layered_gb_minus_hybrid_or_cusum.seen_episode_recall.point | 0.098
+GB minus hC seen low | layered.paired.layered_gb_minus_hybrid_or_cusum.seen_episode_recall.ci_lo | 0.065
+GB minus hC seen high | layered.paired.layered_gb_minus_hybrid_or_cusum.seen_episode_recall.ci_hi | 0.135
+hybrid or CUSUM F1 | layered.hybrid_or_cusum.f1.point | 0.619
+layered GB F1 | layered.layered_gb.f1.point | 0.698
+GB minus hC F1 | layered.paired.layered_gb_minus_hybrid_or_cusum.f1.point | 0.079
+GB minus hC F1 low | layered.paired.layered_gb_minus_hybrid_or_cusum.f1.ci_lo | 0.054
+GB minus hC F1 high | layered.paired.layered_gb_minus_hybrid_or_cusum.f1.ci_hi | 0.101
+layered GB precision | layered.layered_gb.precision.point | 0.753
+hybrid or CUSUM precision | layered.hybrid_or_cusum.precision.point | 0.750
+GB minus hC precision low | layered.paired.layered_gb_minus_hybrid_or_cusum.precision.ci_lo | -0.012
+GB minus hC precision high | layered.paired.layered_gb_minus_hybrid_or_cusum.precision.ci_hi | 0.017
+layered GB FPR | layered.layered_gb.fpr.point | 0.010
+hybrid or CUSUM FPR | layered.hybrid_or_cusum.fpr.point | 0.008
+layered GB unseen | layered.layered_gb.unseen_episode_recall.point | 0.885
+hybrid or CUSUM unseen | layered.hybrid_or_cusum.unseen_episode_recall.point | 0.871
+GB minus hC unseen low | layered.paired.layered_gb_minus_hybrid_or_cusum.unseen_episode_recall.ci_lo | 0.004
+GB minus hC unseen high | layered.paired.layered_gb_minus_hybrid_or_cusum.unseen_episode_recall.ci_hi | 0.027
+layered GB unseen malicious | layered.unseen_episode_recall_by_held_out_class.layered_gb.malicious_insider | 0.57
+GB alone unseen malicious | layered.unseen_episode_recall_by_held_out_class.sup_gb.malicious_insider | 0.00
+LR alone unseen malicious | layered.unseen_episode_recall_by_held_out_class.sup_lr.malicious_insider | 0.00
+LR minus hC seen | layered.paired.layered_lr_minus_hybrid_or_cusum.seen_episode_recall.point | 0.088
+layered LR precision | layered.layered_lr.precision.point | 0.582
+LR minus hC precision | layered.paired.layered_lr_minus_hybrid_or_cusum.precision.point | -0.167
+LR minus hC precision low | layered.paired.layered_lr_minus_hybrid_or_cusum.precision.ci_lo | -0.190
+LR minus hC precision high | layered.paired.layered_lr_minus_hybrid_or_cusum.precision.ci_hi | -0.147
+layered LR FPR | layered.layered_lr.fpr.point | 0.022
+LR minus hC F1 | layered.paired.layered_lr_minus_hybrid_or_cusum.f1.point | -0.020
+LR minus hC F1 low | layered.paired.layered_lr_minus_hybrid_or_cusum.f1.ci_lo | -0.057
+LR minus hC F1 high | layered.paired.layered_lr_minus_hybrid_or_cusum.f1.ci_hi | 0.006
+layered burst | layered.layered_gb.burst_alarm_rate.point | 0.214
+layered burst low | layered.layered_gb.burst_alarm_rate.ci_lo | 0.173
+layered burst high | layered.layered_gb.burst_alarm_rate.ci_hi | 0.249
+hybrid burst | layered.hybrid.burst_alarm_rate.point | 0.015

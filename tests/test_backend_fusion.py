@@ -22,3 +22,16 @@ def test_low_anomaly_follows_the_bands():
 def test_both_tiers_call_decide():
     assert "decide(" in inspect.getsource(tier1.tier1_score)
     assert "decide(" in inspect.getsource(tier1._run_tier2)
+
+
+def test_no_text_cutoff_without_config_or_env(monkeypatch):
+    monkeypatch.delenv("HYBRIDSAAS_TIER1_MAX_TEXT_BYTES", raising=False)
+    if "tier1" not in final_config.config():
+        assert tier1.text_cutoff_bytes() is None
+
+
+def test_env_overrides_text_cutoff(monkeypatch):
+    monkeypatch.setenv("HYBRIDSAAS_TIER1_MAX_TEXT_BYTES", "2048")
+    assert tier1.text_cutoff_bytes() == 2048
+    monkeypatch.setenv("HYBRIDSAAS_TIER1_MAX_TEXT_BYTES", "0")
+    assert tier1.text_cutoff_bytes() is None

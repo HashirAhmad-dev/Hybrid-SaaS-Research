@@ -1970,120 +1970,120 @@
  "drift.summary.cusum.hybrid_only.f1.mean": {
   "as_written": "0.6348",
   "claim": "Hybrid only F1",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.6347775650793376
  },
  "drift.summary.cusum.hybrid_only.fpr.mean": {
   "as_written": "0.0025",
   "claim": "Hybrid only FPR",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.002545006383264642
  },
  "drift.summary.cusum.hybrid_only.malicious_episode_recall.mean": {
   "as_written": "0.1333",
   "claim": "Hybrid only malicious episode recall",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.13333333333333333
  },
  "drift.summary.cusum.hybrid_or_drift.f1.mean": {
   "as_written": "0.6188",
   "claim": "Hybrid OR CUSUM F1",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.6187845803927005
  },
  "drift.summary.cusum.hybrid_or_drift.fpr.mean": {
   "as_written": "0.0080",
   "claim": "Hybrid OR CUSUM FPR",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.008049682386389126
  },
  "drift.summary.cusum.hybrid_or_drift.malicious_episode_recall.mean": {
   "as_written": "0.5667",
   "claim": "Hybrid OR CUSUM malicious episode recall",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.5666666666666667
  },
  "drift.summary.cusum.hybrid_or_drift.recall.mean": {
   "as_written": "0.5319",
   "claim": "Hybrid OR CUSUM recall",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.5319382761962099
  },
  "drift.summary.cusum.per_class.malicious_insider.episode_recall.mean": {
   "as_written": "0.4833",
   "claim": "CUSUM malicious episode recall",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.4833333333333333
  },
  "drift.summary.cusum.per_class.malicious_insider.ttd_hours_median.mean": {
   "as_written": "8.9000",
   "claim": "CUSUM malicious ttd median hours",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 8.9
  },
  "drift.summary.cusum.test_false_alarm_rate_benign_bursts.mean": {
   "as_written": "20.3%",
   "claim": "CUSUM burst hour alarm rate",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.2027165610570783
  },
  "drift.summary.cusum.test_false_alarm_rate_ordinary_negatives.mean": {
   "as_written": "0.0032",
   "claim": "CUSUM false alarm ordinary negatives",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.003178666442934991
  },
  "drift.summary.ph.hybrid_or_drift.f1.mean": {
   "as_written": "0.5862",
   "claim": "Hybrid OR PH F1",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.5862217659988236
  },
  "drift.summary.ph.per_class.malicious_insider.episode_recall.mean": {
   "as_written": "0.4333",
   "claim": "PH malicious episode recall",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.4333333333333333
  },
  "drift.summary.supervised_probe.test_auc_malicious.mean": {
   "as_written": "0.8699",
   "claim": "Supervised probe malicious AUC",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.8699475418868676
  },
  "drift.summary.supervised_probe.test_malicious_window_recall.mean": {
   "as_written": "0.2140",
   "claim": "Supervised probe malicious window recall",
-  "git_hash": "37360dda6bb3f6d34622d60a84587ea77da5ce9b",
-  "run_id": "drift_detector-20261102T182002Z",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "drift_detector-20261104T050713Z",
   "script": "evaluation/drift_detector.py",
   "value": 0.2140133432483245
  },
@@ -2638,6 +2638,294 @@
   "run_id": "tier_latency_extra-20261102T211326Z",
   "script": "evaluation/tier_latency_extra.py",
   "value": 11337.181840022095
+ },
+ "layered.hybrid.burst_alarm_rate.point": {
+  "as_written": "0.015",
+  "claim": "hybrid burst",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.014814814814814814
+ },
+ "layered.hybrid_or_cusum.f1.point": {
+  "as_written": "0.619",
+  "claim": "hybrid or CUSUM F1",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.6187845803927005
+ },
+ "layered.hybrid_or_cusum.fpr.point": {
+  "as_written": "0.008",
+  "claim": "hybrid or CUSUM FPR",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.008049682386389126
+ },
+ "layered.hybrid_or_cusum.precision.point": {
+  "as_written": "0.750",
+  "claim": "hybrid or CUSUM precision",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.7499494255445329
+ },
+ "layered.hybrid_or_cusum.seen_episode_recall.point": {
+  "as_written": "0.885",
+  "claim": "hybrid or CUSUM seen ep recall",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.8850734265734266
+ },
+ "layered.hybrid_or_cusum.unseen_episode_recall.point": {
+  "as_written": "0.871",
+  "claim": "hybrid or CUSUM unseen",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.8712121212121211
+ },
+ "layered.layered_gb.burst_alarm_rate.ci_hi": {
+  "as_written": "0.249",
+  "claim": "layered burst high",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.2494967315286877
+ },
+ "layered.layered_gb.burst_alarm_rate.ci_lo": {
+  "as_written": "0.173",
+  "claim": "layered burst low",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.17299437312304797
+ },
+ "layered.layered_gb.burst_alarm_rate.point": {
+  "as_written": "0.214",
+  "claim": "layered burst",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.2138276721681894
+ },
+ "layered.layered_gb.f1.point": {
+  "as_written": "0.698",
+  "claim": "layered GB F1",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.6980565018141731
+ },
+ "layered.layered_gb.fpr.point": {
+  "as_written": "0.010",
+  "claim": "layered GB FPR",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.00969504182486321
+ },
+ "layered.layered_gb.precision.point": {
+  "as_written": "0.753",
+  "claim": "layered GB precision",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.7525528324383415
+ },
+ "layered.layered_gb.seen_episode_recall.point": {
+  "as_written": "0.983",
+  "claim": "layered GB seen ep recall",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.9829720279720281
+ },
+ "layered.layered_gb.unseen_episode_recall.point": {
+  "as_written": "0.885",
+  "claim": "layered GB unseen",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.8848484848484848
+ },
+ "layered.layered_lr.fpr.point": {
+  "as_written": "0.022",
+  "claim": "layered LR FPR",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.022498753260042716
+ },
+ "layered.layered_lr.precision.point": {
+  "as_written": "0.582",
+  "claim": "layered LR precision",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.5824518273195688
+ },
+ "layered.paired.layered_gb_minus_hybrid_or_cusum.f1.ci_hi": {
+  "as_written": "0.101",
+  "claim": "GB minus hC F1 high",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.10120961846452352
+ },
+ "layered.paired.layered_gb_minus_hybrid_or_cusum.f1.ci_lo": {
+  "as_written": "0.054",
+  "claim": "GB minus hC F1 low",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.05354911193015713
+ },
+ "layered.paired.layered_gb_minus_hybrid_or_cusum.f1.point": {
+  "as_written": "0.079",
+  "claim": "GB minus hC F1",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.07927192142147266
+ },
+ "layered.paired.layered_gb_minus_hybrid_or_cusum.precision.ci_hi": {
+  "as_written": "0.017",
+  "claim": "GB minus hC precision high",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.016549680645807863
+ },
+ "layered.paired.layered_gb_minus_hybrid_or_cusum.precision.ci_lo": {
+  "as_written": "-0.012",
+  "claim": "GB minus hC precision low",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": -0.012105264082551432
+ },
+ "layered.paired.layered_gb_minus_hybrid_or_cusum.seen_episode_recall.ci_hi": {
+  "as_written": "0.135",
+  "claim": "GB minus hC seen high",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.1350267995782079
+ },
+ "layered.paired.layered_gb_minus_hybrid_or_cusum.seen_episode_recall.ci_lo": {
+  "as_written": "0.065",
+  "claim": "GB minus hC seen low",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.0645829667405477
+ },
+ "layered.paired.layered_gb_minus_hybrid_or_cusum.seen_episode_recall.point": {
+  "as_written": "0.098",
+  "claim": "GB minus hC seen",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.09789860139860151
+ },
+ "layered.paired.layered_gb_minus_hybrid_or_cusum.unseen_episode_recall.ci_hi": {
+  "as_written": "0.027",
+  "claim": "GB minus hC unseen high",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.02672635957792209
+ },
+ "layered.paired.layered_gb_minus_hybrid_or_cusum.unseen_episode_recall.ci_lo": {
+  "as_written": "0.004",
+  "claim": "GB minus hC unseen low",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.0035684523809522586
+ },
+ "layered.paired.layered_lr_minus_hybrid_or_cusum.f1.ci_hi": {
+  "as_written": "0.006",
+  "claim": "LR minus hC F1 high",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.006262067097823415
+ },
+ "layered.paired.layered_lr_minus_hybrid_or_cusum.f1.ci_lo": {
+  "as_written": "-0.057",
+  "claim": "LR minus hC F1 low",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": -0.05743071625109159
+ },
+ "layered.paired.layered_lr_minus_hybrid_or_cusum.f1.point": {
+  "as_written": "-0.020",
+  "claim": "LR minus hC F1",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": -0.020381592976459473
+ },
+ "layered.paired.layered_lr_minus_hybrid_or_cusum.precision.ci_hi": {
+  "as_written": "-0.147",
+  "claim": "LR minus hC precision high",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": -0.14707703663652785
+ },
+ "layered.paired.layered_lr_minus_hybrid_or_cusum.precision.ci_lo": {
+  "as_written": "-0.190",
+  "claim": "LR minus hC precision low",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": -0.19006423042041995
+ },
+ "layered.paired.layered_lr_minus_hybrid_or_cusum.precision.point": {
+  "as_written": "-0.167",
+  "claim": "LR minus hC precision",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": -0.16749759822496413
+ },
+ "layered.paired.layered_lr_minus_hybrid_or_cusum.seen_episode_recall.point": {
+  "as_written": "0.088",
+  "claim": "LR minus hC seen",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.08802972027972034
+ },
+ "layered.unseen_episode_recall_by_held_out_class.layered_gb.malicious_insider": {
+  "as_written": "0.57",
+  "claim": "layered GB unseen malicious",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.5666666666666667
+ },
+ "layered.unseen_episode_recall_by_held_out_class.sup_gb.malicious_insider": {
+  "as_written": "0.00",
+  "claim": "GB alone unseen malicious",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.0
+ },
+ "layered.unseen_episode_recall_by_held_out_class.sup_lr.malicious_insider": {
+  "as_written": "0.00",
+  "claim": "LR alone unseen malicious",
+  "git_hash": "4638d8a8a8d9a7d15549bdbe397f578437d6b30e",
+  "run_id": "layered_eval-20261104T050553Z",
+  "script": "evaluation/layered_eval.py",
+  "value": 0.0
  },
  "oppoints.summary.enforcement_per_dataset_alert_or_block.f1.mean": {
   "as_written": "0.4382",

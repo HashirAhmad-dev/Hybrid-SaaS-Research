@@ -54,11 +54,27 @@ def sensitivity(entities: List[Dict[str, str]]) -> int:
     return int(min(10 * h + 5 * m + l, 100))
 
 
+def text_cutoff_bytes() -> Optional[int]:
+    """F12 (D-035): text above this size skips inline PII and goes to the Tier 2 queue.
+    HYBRIDSAAS_TIER1_MAX_TEXT_BYTES overrides the configured value (0 = no cutoff);
+    without either, there is no cutoff (the T3.6 behaviour)."""
+    import os
+    env = os.getenv("HYBRIDSAAS_TIER1_MAX_TEXT_BYTES")
+    if env is not None:
+        return int(env) or None
+    from .final_config import config
+    c = config().get("tier1", {}).get("max_text_bytes")
+    return int(c["value"]) if c else None
+
+
 def tier1_score(text: str, user_id: Optional[str], features: List[float],
                 history: Optional[List[List[float]]] = None,
                 beta: float = DEFAULT_BETA) -> Dict[str, Any]:
     from evaluation.pii_v2 import analyse
     t0 = time.perf_counter()
+    cut = text_cutoff_bytes()
+    if cut and len((text or "").encode("utf-8")) > cut:
+        return _tier1_large_text(text, user_id, features, history, t0)
     ents = analyse(analyzer(), text or "", plus=True)
     S = sensitivity(ents)
     t1 = time.perf_counter()
@@ -80,6 +96,52 @@ def tier1_score(text: str, user_id: Optional[str], features: List[float],
             "drift_alarm": drift, "action": final["action"], "decision": final,
             "timing_ms": {"pii_text": (t1 - t0) * 1e3, "anomaly": (t2 - t1) * 1e3,
                           "sbrs": (t3 - t2) * 1e3, "total": (t3 - t0) * 1e3}}
+
+
+def _tier1_large_text(text, user_id, features, history, t0) -> Dict[str, Any]:
+    """Behaviour now, content later: score A inline, BLOCK if A >= tau_A, otherwise HOLD
+    and scan the text in Tier 2 (F12, D-035)."""
+    art = anomaly_engine.load_engine()
+    sc = anomaly_engine.score_features(np.asarray(features, dtype=float), user_id, float(art["alpha"]),
+                                       history=np.asarray(history, dtype=float) if history else None)
+    t1 = time.perf_counter()
+    from .final_config import DRIFT, val
+    mu, sd = art["user_stats"].get(user_id, art["global_stats"])
+    z = np.clip((np.asarray(features, dtype=float) - mu) / sd, -art["z_clip"], art["z_clip"])
+    drift = DRIFT.update(user_id or "_unknown", z)
+    blocked = sc["a_hybrid"] >= val("enforcement", "tau_A")
+    job = None if blocked else tier2_submit_text(text, sc["a_hybrid"], drift)
+    t2 = time.perf_counter()
+    return {"tier": 1, "routed_to_tier2": not blocked, "job_id": job, "sensitivity": None,
+            "a_lstm": sc["a_lstm"], "a_if": sc["a_if"], "a_hybrid": sc["a_hybrid"], "drift_alarm": drift,
+            "action": "BLOCK" if blocked else "HOLD",
+            "reason": "A >= tau_A (behaviour alone)" if blocked else "text above the Tier 1 size cutoff; held for Tier 2",
+            "timing_ms": {"pii_text": 0.0, "anomaly": (t1 - t0) * 1e3, "sbrs": (t2 - t1) * 1e3,
+                          "total": (t2 - t0) * 1e3}}
+
+
+def _run_tier2_text(job_id: str, text: str, a_hybrid: float, drift: bool) -> None:
+    from evaluation.pii_v2 import analyse
+    from .final_config import decide
+    j = _JOBS[job_id]
+    j["state"], j["started"] = "RUNNING", time.perf_counter()
+    ents = analyse(analyzer(), text, plus=True)
+    S = sensitivity(ents)
+    final = decide(S, a_hybrid, drift_alarm=drift)
+    with _LOCK:
+        j.update(state="DONE", branch="Tier2_text_Presidio", entities=ents, sensitivity=S, decision=final,
+                 final_action=final["action"], release="RELEASE" if final["action"] == "PERMIT" else final["action"],
+                 finished=time.perf_counter())
+        j["hold_ms"] = (j["finished"] - j["submitted"]) * 1e3
+        j["processing_ms"] = (j["finished"] - j["started"]) * 1e3
+
+
+def tier2_submit_text(text: str, a_hybrid: float, drift: bool = False) -> str:
+    job_id = uuid.uuid4().hex[:12]
+    with _LOCK:
+        _JOBS[job_id] = {"job_id": job_id, "state": "HELD", "submitted": time.perf_counter(), "inline_action": "HOLD"}
+    _POOL.submit(_run_tier2_text, job_id, text, a_hybrid, drift)
+    return job_id
 
 
 # ---------------------------------------------------------------------------

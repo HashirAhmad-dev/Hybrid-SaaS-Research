@@ -125,7 +125,9 @@ def run_detector_batch(Z: np.ndarray, valid: np.ndarray, k: float, h: float, kin
 
 def alarms_for(act: pd.DataFrame, zs: Dict[str, np.ndarray], k: float, h: float, kind: str,
                _cache: dict = {}) -> np.ndarray:
-    key = id(act)
+    # id() alone can be reused by a later frame once the earlier one is freed (F9 hit this
+    # across datasets); the length and first/last event ids make the key specific to the data
+    key = (id(act), len(act), act.event_id.iloc[0], act.event_id.iloc[-1])
     if key not in _cache:
         users = list(dict.fromkeys(act.user_id))          # groupby order (sorted df)
         lens = [len(zs[u]) for u in users]

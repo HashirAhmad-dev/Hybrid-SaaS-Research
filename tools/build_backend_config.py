@@ -55,6 +55,10 @@ def main() -> None:
         cfg["pii"]["tau_ocr_deployed"] = {**v(dep), "reason": "Tier 2 uses EasyOCR; gemma-3-4b-it is the best local VLM "
                                                        "(T3.3). Chosen on calib documents; routes almost every image "
                                                        "to the VLM (N-049)"}
+    cut = "latency_cutoff.chosen_bytes"
+    if cut in e:
+        # F12 (D-035): largest calibrated text size whose Tier 1 server p95 meets the 100 ms budget
+        cfg["tier1"] = {"max_text_bytes": {**v(cut), "reason": "text above this size is scanned in Tier 2 (D-035)"}}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(cfg, indent=1), encoding="utf-8")
     print(f"  -> {OUT}")
